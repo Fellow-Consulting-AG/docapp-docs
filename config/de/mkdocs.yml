@@ -1,7 +1,7 @@
 site_name: FELLOWPRO Documentation
 docs_dir: '../../docs/de'                           # Where to find the English markdown files
 site_dir: '../../generated/de'                      # Where to put the English HTML files
-site_url: https://docs.fellowpro.com
+site_url: https://docs.polydocs.io
 site_author: Daniel Jordan
 site_description: On these pages you will learn a lot about our different software helping you with digitization, digitalization and the digital transformation in your company.
 theme:
@@ -100,7 +100,8 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
 plugins:
-  - search
+  - search:
+      lang: de
   - literate-nav
   - git-revision-date-localized:
       type: date

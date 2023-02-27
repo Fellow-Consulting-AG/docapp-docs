@@ -100,7 +100,7 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
 plugins:
-  - search
+  - search:
       lang: de
   - literate-nav
   - git-revision-date-localized:
