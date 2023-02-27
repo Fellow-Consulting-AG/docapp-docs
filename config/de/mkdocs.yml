@@ -8,8 +8,8 @@ theme:
   name: material
   #custom_dir: overrides
   custom_dir: '../../overrides/'
-  logo: assets/images/LOGO.svg
-  favicon: assets/images/LOGO.svg
+  logo: _images/LOGO.svg
+  favicon: _images/LOGO.svg
   font:
     text: Open Sans
   language: de
