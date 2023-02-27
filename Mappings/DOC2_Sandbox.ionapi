@@ -1,0 +1,16 @@
+{
+  "ti": "PFAUDLER_TRN",
+  "cn": "DOC2_Sandbox",
+  "dt": "12",
+  "ci": "PFAUDLER_TRN~p9Cc6yPHJorzlwxgu07i1ZO7yTV8U2yB1F8ZHDB1TYA",
+  "cs": "5D-0hdK5kQ6dtERxaiN07X7PjErnGHe5NE3YCsvLVcGdvMC_7-ofG62Uya0eb1iwJoPN1u--LJzED9J0939UJg",
+  "iu": "https://mingle-ionapi.eu1.inforcloudsuite.com",
+  "pu": "https://mingle-sso.eu1.inforcloudsuite.com:443/PFAUDLER_TRN/as/",
+  "oa": "authorization.oauth2",
+  "ot": "token.oauth2",
+  "or": "revoke_token.oauth2",
+  "ev": "V1480769020",
+  "v": "1.0",
+  "saak": "PFAUDLER_TRN#3lVDqq4UV70i3OEjIa7ztW34dy_mvSiBcGWaOaYg7GEPFZWFVamjTPc4Teg6rmqMcxesP_Wu5djGvaplo4oIKg",
+  "sask": "KanYg-HyjiVNvw2uuW2YHRcsD_bEJexQmLtlEXcA0d0RBRNEpiZdsPGMymz7mO4vIRrAGWby4kwg2Ff8pYeB_Q"
+}

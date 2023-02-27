@@ -1,0 +1,18 @@
+{
+    "sourceFile": "docs/widgets/timeline.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1656582811748,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1656582811748,
+            "name": "Commit-0",
+            "content": "---\nid: timeline\ntitle: Timeline\n---\n# Timeline\n\nTimeline widget can be used to do a visual representation of a sequence of events\n\n\n<div style={{textAlign: 'center'}}>\n\n![Insight - Widget Reference - Timeline](/img/widgets/timeline/timeline.png)\n\n</div>\n\n## Properties\n\n### Timeline data\n\n**Data requirements:** The data needs to be an array of objects and each object should have `title`, `subTitle`, `iconBackgroundColor` and `date` keys.\n\n**Example:**\n```json\n[ \n    { \"title\": \"Product Launched\", \"subTitle\": \"First version of our product released to public\", \"date\": \"20/10/2021\", \"iconBackgroundColor\": \"#4d72fa\"},\n    { \"title\": \"First Signup\", \"subTitle\": \"Congratulations! We got our first signup\", \"date\": \"22/10/2021\", \"iconBackgroundColor\": \"#4d72fa\"}, \n    { \"title\": \"First Payment\", \"subTitle\": \"Hurray! We got our first payment\", \"date\": \"01/11/2021\", \"iconBackgroundColor\": \"#4d72fa\"} \n]\n```\n\n\n### Hide date\n\nHide date can be used to hide the date time or Left Hand Side of the timeline widget\n\n## Layout\n\n| Layout          | description                               | Expected value                                                                                              |\n| --------------- | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------- |\n| Show on desktop | Toggle on or off to display desktop view. | You can programmatically determining the value by clicking on `Fx` to set the value `{{true}}` or `{{false}}` |\n| Show on mobile  | Toggle on or off to display mobile view.  | You can programmatically determining the value by clicking on `Fx` to set the value `{{true}}` or `{{false}}` |\n\n## Styles\n\n| Style      | Description |\n| ----------- | ----------- | \n| Visibility | Toggle on or off to control the visibility of the widget. You can programmatically change its value by clicking on the `Fx` button next to it. If `{{false}}` the widget will not visible after the app is deployed. By default, it's set to `{{true}}`. |\n\n:::info\nAny property having `Fx` button next to its field can be **programmatically configured**.\n:::\n"
+        }
+    ]
+}

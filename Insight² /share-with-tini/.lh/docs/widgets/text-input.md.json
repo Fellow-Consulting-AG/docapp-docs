@@ -1,0 +1,18 @@
+{
+    "sourceFile": "docs/widgets/text-input.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1656582811802,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1656582811802,
+            "name": "Commit-0",
+            "content": "---\nid: text-input\ntitle: Text Input\n---\n# Text Input\n\nText Input widget let users enter and edit text.\n\n:::tip\nThe Text Input should be preferred when user input is a single line of text.\n:::\n\n<div style={{textAlign: 'center'}}>\n\n![Insight - Widget Reference - Text input](/img/widgets/text-input/textinput.png)\n\n</div>\n\n## Properties\n\n### Default value\n\nThe default value that the widget will hold when the app is loaded.\n\n### Placeholder\n\nIt specifies a hint that describes the expected value.\n\n## Events\n\n### On change\nThis event is fired whenever the user types something on the text input.\n\n:::info\nCheck [Action Reference](/docs/actions/show-alert) docs to get the detailed information about all the **Actions**.\n:::\n\n## Validation\n\n### Regex\n\nUse this field to enter a Regular Expression that will validate the password constraints.\n\n### Min length\n\nEnter the number for a minimum length of password allowed.\n\n### Max length\n\nEnter the number for the maximum length of password allowed.\n\n### Custom validation\n\nIf the condition is true, the validation passes, otherwise return a string that should be displayed as the error message. For example: `{{components.passwordInput1.value === 'something' ? true: 'value should be something'}}`.\n\n## Layout\n\n### Show on desktop\n\nToggle on or off to display the widget in desktop view. You can programmatically determing the value by clicking on `Fx` to set the value `{{true}}` or `{{false}}`.\n### Show on mobile\n\nToggle on or off to display the widget in mobile view. You can programmatically determing the value by clicking on `Fx` to set the value `{{true}}` or `{{false}}`.\n\n## Styles\n\n### Border Radius\n\nUse this property to modify the border radius of the widget. The field expects only numerical value from `1` to `100`, default is `0`. \n### Visibility\n\nThis is to control the visibility of the widget. If `{{false}}` the widget will not visible after the app is deployed. It can only have boolean values i.e. either `{{true}}` or `{{false}}`. By default, it's set to `{{true}}`.\n### Disable\n\nThis property only accepts boolean values. If set to `{{true}}`, the widget will be locked and becomes non-functional. By default, its value is set to `{{false}}`.\n\n:::info\nAny property having `Fx` button next to its field can be **programmatically configured**.\n:::"
+        }
+    ]
+}

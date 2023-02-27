@@ -1,0 +1,18 @@
+{
+    "sourceFile": "docs/widgets/steps.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1656582811794,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1656582811794,
+            "name": "Commit-0",
+            "content": "---\nid: steps\ntitle: Steps\n---\n# Steps\n\nSteps are used to guide users through complex processes, making them easier and more intuitive.\n\n<div style={{textAlign: 'center'}}>\n\n![Insight - Star rating Widget](/img/widgets/steps/steps.png)\n\n</div>\n\n\n### Steps\n\nThis property lets you add and the steps.\n\n\n```{{ [{ name: 'step 1', tooltip: 'some tooltip', id: 1},{ name: 'step 2', tooltip: 'some tooltip', id: 2},{ name: 'step 3', tooltip: 'some tooltip', id: 3},{ name: 'step 4', tooltip: 'some tooltip', id: 4},{ name: 'step 5', tooltip: 'some tooltip', id: 5}]}}```\n\nadd another object to add one more step.\n\n### Current step\n\nThis property lets you select the current step you want to be highlighted.\n\n### Steps selectable\n\nThis property when disabled will disable selection of steps.\n\n\n## Events\n\n### On select\nThis event is fired whenever the user selects any step.\n\n## Layout\n\n### Show on desktop\n\nToggle on or off to display the widget in desktop view. You can programmatically determing the value by clicking on `Fx` to set the value `{{true}}` or `{{false}}`.\n### Show on mobile\n\nToggle on or off to display the widget in mobile view. You can programmatically determing the value by clicking on `Fx` to set the value `{{true}}` or `{{false}}`.\n\n## Styles\n\n### Theme\n\nYou can change the theme of widget by selecting available themes from dropdown.\n\n\n### Colour\n\nYou can change the  color of the widget by entering the Hex color code or choosing a color of your choice from the color picker.\n\n\n### Text Colour\n\nYou can change the  text color of the widget by entering the Hex color code or choosing a color of your choice from the color picker.\n\n### Visibility\n\nToggle on or off to control the visibility of the widget. You can programmatically change its value by clicking on the `Fx` button next to it. If `{{false}}` the widget will not be visible after the app is deployed. By default, it's set to `{{true}}`.\n\n:::info\nAny property having `Fx` button next to its field can be **programmatically configured**.\n:::"
+        }
+    ]
+}

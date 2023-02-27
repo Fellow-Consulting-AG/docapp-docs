@@ -1,0 +1,18 @@
+{
+    "sourceFile": "docs/widgets/number-input.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1656582811777,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1656582811777,
+            "name": "Commit-0",
+            "content": "---\r\nid: number-input\r\ntitle: Number Input\r\n---\r\n# Number Input\r\n\r\nNumber Input widget lets users enter and change numbers.\r\n\r\n<div style={{textAlign: 'center'}}>\r\n\r\n![Insight - Widget Reference - Number Input](/img/widgets/number-input/number.png)\r\n\r\n</div>\r\n\r\n:::tip\r\nNumbers can be changed by using the arrow keys.\r\n:::\r\n\r\n## Properties\r\n\r\n### Default value\r\n\r\nA predefined value that can be fetched from the number input widget if no changes are made in widget.\r\n\r\n### Placeholder\r\nIt specifies a hint that describes the expected value. This field accepts any numerical value.\r\n\r\n### Maximum value\r\n\r\nIt specifies the maximum value the number input can go to. This field accepts any numerical value.\r\n\r\n### Minimum value\r\n\r\nIt specifies the minimum value the number input can go to. This field accepts any numerical value.\r\n\r\n## Layout\r\n\r\n### Show on desktop\r\n\r\nToggle on or off to display the widget in desktop view. You can programmatically determing the value by clicking on `Fx` to set the value `{{true}}` or `{{false}}`.\r\n### Show on mobile\r\n\r\nToggle on or off to display the widget in mobile view. You can programmatically determing the value by clicking on `Fx` to set the value `{{true}}` or `{{false}}`.\r\n\r\n## Styles\r\n\r\n### Border radius\r\n\r\nAdd a border radius to the number input widget using this property. It accepts any numerical value from `0` to `100`.\r\n\r\n### Visibility\r\n\r\nToggle on or off to control the visibility of the widget. You can programmatically change its value by clicking on the `Fx` button next to it. If `{{false}}` the widget will not be visible after the app is deployed. By default, it's set to `{{true}}`.\r\n\r\n### Disable\r\n\r\nThis is `off` by default, toggle `on` the switch to lock the widget and make it non-functional. You can also programmatically set the value by clicking on the `Fx` button next to it. If set to `{{true}}`, the widget will be locked and becomes non-functional. By default, its value is set to `{{false}}`.\r\n\r\n:::info\r\nAny property having `Fx` button next to its field can be **programmatically configured**.\r\n:::"
+        }
+    ]
+}

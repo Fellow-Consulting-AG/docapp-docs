@@ -1,0 +1,18 @@
+{
+    "sourceFile": "docs/widgets/range-slider.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1656582811799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1656582811799,
+            "name": "Commit-0",
+            "content": "---\nid: range-slider\ntitle: Range Slider\n---\n# Range Slider\n\nRange sliders are widely used across different UIs. One of the main purposes is to filter, explore all the related content and available in the control and settings options.\n\n:::tip\nRange Sliders have \"Two handles\" option which allows user to select within a range.\n:::\n\n<div style={{textAlign: 'center'}}>\n\n![Insight - Widget Reference - Text input](/img/widgets/range-slider/range_slider.png)\n\n</div>\n\n## Properties\n\n### Minimum value\n\nSet the minimum value for the slider. This field accepts any numerical value.\n\n### Maximum value\n\nSet the maximum value for the slider. This field accepts any numerical value.\n\n### Value\n\nSet the default value when the widget loads. This can be used to pre-fill the value based on your data and requirements.\n\n### Two handles\n\nThe slider will now have 2 dragging handles. It is used to define a range of values versus a single given value.\n\n## Layout\n\n### Show on desktop\n\nToggle on or off to display the widget in desktop view. You can programmatically determing the value by clicking on `Fx` to set the value `{{true}}` or `{{false}}`.\n### Show on mobile\n\nToggle on or off to display the widget in mobile view. You can programmatically determing the value by clicking on `Fx` to set the value `{{true}}` or `{{false}}`.\n\n## Styles\n\n### Line color\n\nEnter the hexcode to set the default color for slider's track. \n### Handle color\n\nEnter the hexcode to set the color for slider's handler. \n### Track color\n\nEnter the hexcode to set the color for slider's active portion on the track. \n### Visiblity\n\nSet the visivlity of the slider programmatically. The default value is `{{true}}`.\n\n\n:::info\nAny property having `Fx` button next to its field can be **programmatically configured**.\n:::"
+        }
+    ]
+}

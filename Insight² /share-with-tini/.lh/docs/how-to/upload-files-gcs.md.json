@@ -1,0 +1,18 @@
+{
+    "sourceFile": "docs/how-to/upload-files-gcs.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1656582811805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1656582811805,
+            "name": "Commit-0",
+            "content": "---\nid: upload-files-gcs\ntitle: Upload files using GCS\n---\n\n# Upload files using GCS\n\nIn this guide, we are going to create an interface to upload PDFs to Google Cloud Storage.\n\nBefore adding the new data source we will need to have a private key for our GCS bucket and make sure the key has the appropriate rights.\n\n## Setting up Google Cloud Storage data source\n\n1. Go to the data source manager on the left-sidebar and click on the `+` button.\n2. Add a new GCS data source from the  **APIs** section in modal that pops up.\n3. Enter the **JSON private key for service account** and test the connection.\n4. Click on **Save** to add the data source.\n\n<div style={{textAlign: 'center'}}>\n\n![Insight - How To - Upload files using GCS](/img/how-to/upload-files-gcs/adding-account.png)\n\n</div>\n\n## Adding a file picker\n\n1. Drag and drop the **file picker** widget on the canvas\n2. Configure the file picker:\n  - Change the **Accept file types** to `{{\"application/pdf\"}}` for the picker to accept only pdf files. In the screenshot below, we have set the accepted file type property to `{{\"application/pdf\"}}` so it will allow to select only pdf files:\n\n<div style={{textAlign: 'center'}}>\n\n![Insight - How To - Upload files using GCS](/img/how-to/upload-files-gcs/result-filepicker.png)\n\n</div>\n\n  - Change the **Max file count** to `{{1}}` as we are only going to upload 1 file at a time.\n\n3. Select a pdf file and hold it in the file picker.\n\n:::info\n File types must be valid **[MIME](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types)** type according to input element specification or a valid file extension.\n\n To accept any/all file type(s), set `Accept file types` to an empty value.\n:::\n\n<div style={{textAlign: 'center'}}>\n\n![Insight - How To - Upload files using GCS](/img/how-to/upload-files-gcs/config-filepicker.png)\n\n</div>\n\n## Creating a query\n\n1. Click on the `+` button of the query manager at the bottom panel of the editor and select the GCS data source\n2. Select **Upload file** operation and enter the required parameters:\n- Bucket: `gs://test-1`\n- File Name: `{{components.file1.file[0]['name']}}`\n- Content Type: `{{components.file1.file[0]['type']}}`\n- Upload data: `{{components.file1.file[0]['base64Data']}}`\n- Enconding: `base64`\n3. Click on **Save** to create the query\n\n## Running the query\n1. Add a **button** that will fire the query to upload the file\n2. Edit the properties of the button and add a **event handler** to **Run the query** on **On-Click** event.\n3. Click on **Button** to fire the query, this will upload the pdf file that you selected earlier through the file picker and will upload it on the GCS.\n\n<div style={{textAlign: 'center'}}>\n\n![Insight - How To - Upload files using GCS](/img/how-to/upload-files-gcs/final-result.png)\n\n</div>"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "docs/data-sources/mysql.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1656582811794,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1656582811794,
+            "name": "Commit-0",
+            "content": "---\nid: mysql\ntitle: MySQL\n---\n\n# MySQL\n\nInsight can connect to MySQL databases to read and write data. \n\n## Connection\n\nInsight requires the following to connect to your MySQL database. Please make sure the host/ip of the database is accessible from your VPC if you have self-hosted Insight. If you are using Insight cloud, please whitelist our IP.\n\nTo add a new MySQL database, click on the `+` button on data sources panel at left sidebar in the app editor. Select MySQL from the modal that pops up.\n\nInsight requires the following to connect to your MySQL database.\n\n- **Host**\n- **Port**\n- **Username**\n- **Password**\n\nIt is recommended to create a new MySQL database user so that you can control the access levels of Insight. \n\n<div style={{textAlign: 'center'}}>\n\n![Insight - Data source - MySQL](/img/datasource-reference/mysql/mysql.png)\n\n</div>\n\nClick on **Test connection** button to verify if the credentials are correct and that the database is accessible to Insight server. Click on **Save** button to save the data source.\n\n## Querying MySQL\n\nOnce you have added a MySQL data source, click on `+` button of the query manager to create a new query. There are two modes by which you can query SQL:\n\n  1. **[SQL mode](/docs/data-sources/mysql#sql-mode)**\n  2. **[GUI mode](/docs/data-sources/mysql#gui-mode)**\n\n#### SQL mode\n\nSQL mode can be used to write raw SQL queries. Select SQL mode from the dropdown and enter the SQL query in the editor. Click on the `run` button to run the query.\n\n**NOTE**: Query should be saved before running.\n\n<div style={{textAlign: 'center'}}>\n\n![Insight - Data source - MySQL](/img/datasource-reference/mysql/mysql-sqlmode.png)\n\n</div>\n\n\n#### GUI mode\n\nGUI mode can be used to query MySQL database without writing queries. Select GUI mode from the dropdown and then choose the operation **Bulk update using primary key**. Enter the **Table** name and **Primary key column** name. Now, in the editor enter the records in the form of an array of objects. \n\n**Example**: `{{ [ {id: 1, channel: 33}, {id:2, channel:24} ] }}`\n\n<div style={{textAlign: 'center'}}>\n\n![Insight - Data source - MySQL](/img/datasource-reference/mysql/mysql-guimode.png)\n\n</div>\n\nClick on the **run** button to run the query. **NOTE**: Query should be saved before running.\n\n:::tip\nQuery results can be transformed using transformations. Read our transformations documentation to see how: **[link](/docs/tutorial/transformations)**\n:::\n"
+        }
+    ]
+}

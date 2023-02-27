@@ -1,0 +1,18 @@
+{
+    "sourceFile": "docs/tutorial/creating-app.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1656582811807,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1656582811807,
+            "name": "Commit-0",
+            "content": "---\nid: creating-app\ntitle: Creating new app\n---\n\n# Creating new app\n\n:::info\nApps in Insight binds the widgets, data sources and queries together.\n:::\n\nThis tutorial will walk you through building a simple app to fetch customer information from a PostgreSQL database and display the data using the table widget.\nTo create a new Insight app, click on the **'Create new application'** button on the Insight dashboard. \n\n<div style={{textAlign: 'center'}}>\n\n![Insight - Creating an app](/img/tutorial/creating-new-app/dashboard.png)\n\n</div>\n\nYou will be redirected to the visual app editor once the app has been created. Create the first version of your app to start building. The name of the app can be changed by clicking on the app name at top-left of the app builder.\n\n<div style={{textAlign: 'center'}}>\n\n![Insight - Creating an app](/img/tutorial/creating-new-app/visual-app-editor.png)\n\n</div>\n\nThe main components of an app: \n\n- **[Widgets](https://docs.tooljet.com/docs/tutorial/adding-widget)** - UI components such as tables, buttons, dropdowns.\n- **[Data sources](https://docs.tooljet.com/docs/tutorial/adding-a-datasource)** - Insight can connect to databases, APIs and external services to fetch and modify data.\n- **[Queries](https://docs.tooljet.com/docs/tutorial/building-queries)** - Queries are used to access the connected data sources."
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "docs/tutorial/adding-widget.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1656582811807,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1656582811807,
+            "name": "Commit-0",
+            "content": "---\nid: adding-widget\ntitle: Adding a widget\n---\n\n# Adding a widget\n\nTo add a widget, navigate to the `Widget manager` on the right sidebar. It will display the list of built-in widgets that can be added to the app. Use the search functionality to quickly find the widget that you want. \n\n<div style={{textAlign: 'center'}}>\n\n![Insight - Tutorial - Adding a widget](/img/tutorial/adding-widget/widget.png)\n\n</div>\n\n## Drag and drop a widget\nLet's add a `table` widget to the app to show the customer data from the query that we created in the previous steps.\nTo add a widget, drag and drop the widget to the canvas.\n\n## Resize a widget\nThe widgets can be resized and repositioned within the canvas.\n\n<div style={{textAlign: 'center'}}>\n\n![Insight - Tutorial - Adding a widget](/img/tutorial/adding-widget/resize.gif)\n\n</div>\n\n## Adding widgets to Modal\nTo add a widget to Modal, we need to trigger [Show modal action](/docs/tutorial/actions#available-actions)\n\n:::info\nBefore triggering `Show modal action` we need to add a modal widget to the canvas.\n:::\n\n- Add a `modal widget` to the app\n- Trigger the **Show modal action**\n- Click on the canvas area for the `Widget manager` sidebar\n- Navigate to the Widget manager on the right sidebar and Drag and drop a widget into the Modal \n\n<div style={{textAlign: 'center'}}>\n\n![Insight - Tutorial - Adding a widget](/img/tutorial/adding-widget/modal.gif)\n\n</div>\n\n## Resize table columns\nWe can resize the column width using the resize handle of the column.\n\n<div style={{textAlign: 'center'}}>\n\n![Insight - Tutorial - Adding a widget](/img/tutorial/adding-widget/resize-table-column.gif)\n\n</div>\n\n## Change widget properties\nClick on the widget to open the inspect panel on right sidebar. Here you can change the properties of the widgets. Let's configure the table columns to display the customer data. The display order of columns can be changed by dragging icon near the column name.\n\n<div style={{textAlign: 'center'}}>\n\n![Insight - Tutorial - Adding a widget](/img/tutorial/adding-widget/inspect-panel.gif)\n\n</div>\n\n## Connecting data with widget \nNow we will connect the `data` object of the `fetch customers` query with the table. Click on the table widget to open the inspector on right sidebar. We can see that the data property of the table have an empty array as the value. The data field, like almost every other field on the editor supports single-line javascript code within double brackets. Variable suggestions will be shows as a dropdown while you type the code in the field.\n\nLet's select `data` object of the 'postgresql' query.\n\n` {{queries.postgresql1.data}}`\n\nSince we have already run the query in previous step, the data will be immediately displayed in the table.\n\n<div style={{textAlign: 'center'}}>\n\n![Insight - Tutorial - Adding a widget](/img/tutorial/adding-widget/table-data.png)\n\n</div>\n\nSo far in this tutorial, we have connected to a PostgreSQL database and displayed the data on a table.\n\n:::tip\nRead the widget reference of table [here](/docs/widgets/table) for more customizations such as server-side pagination, actions, editing data.\n:::"
+        }
+    ]
+}

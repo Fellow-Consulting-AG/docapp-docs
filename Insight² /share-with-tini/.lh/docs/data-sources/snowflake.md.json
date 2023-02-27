@@ -1,0 +1,18 @@
+{
+    "sourceFile": "docs/data-sources/snowflake.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1656582811799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1656582811799,
+            "name": "Commit-0",
+            "content": "---\nid: snowflake\ntitle: Snowflake\n---\n\n# Snowflake\n\nInsight can connect to Snowflake databases to read and write data.\n\n- [Connection](#connection)\n- [Getting Started](#querying-snowflake)\n\n## Connection\n\nPlease make sure the host/ip of the database is accessible from your VPC if you have self-hosted Insight. If you are using Insight cloud, please whitelist our IP. You can find snowflake docs on network policies **[here](https://docs.snowflake.com/en/user-guide/network-policies.html)**.\n\n\nTo add a new Snowflake database, click on the `+` button on data sources panel at the left-bottom corner of the app editor. Select Snowflake from the modal that pops up.\n\nInsight requires the following to connect to your Snowflake database.\n\n- **Account**\n- **Username**\n- **Password**\n\n:::info\nYou can also configure for **[additional optional parameters](https://docs.snowflake.com/en/user-guide/nodejs-driver-use.html#additional-connection-options)**.\n:::\n\n<div style={{textAlign: 'center'}}>\n\n![Insight - Snowflake connection](/img/datasource-reference/snowflake/snowflake-connect.png)\n\n</div>\n\n## Querying Snowflake\n\nClick on `+` button of the query manager at the bottom panel of the editor and select the database added in the previous step as the datasource. Query manager then can be used to write raw SQL queries.\n\n<div style={{textAlign: 'center'}}>\n\n![Insight - Snowflake query](/img/datasource-reference/snowflake/snowflake-query.png)\n\n</div>\n\nClick on the `run` button to run the query. \n\n**NOTE:** Query should be saved before running.\n\n:::tip\nQuery results can be transformed using transformations. Read our transformations documentation to see how: [link](/docs/tutorial/transformations)\n:::\n"
+        }
+    ]
+}

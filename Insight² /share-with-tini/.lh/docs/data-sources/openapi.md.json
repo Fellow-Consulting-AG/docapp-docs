@@ -1,0 +1,18 @@
+{
+    "sourceFile": "docs/data-sources/openapi.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1656582811750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1656582811750,
+            "name": "Commit-0",
+            "content": "---\nid: openapi\ntitle: OpenAPI\n---\n\n# OpenAPI\n\nInsight has a data source for generating REST API operations from OpenAPI Specs.\n\n## Connection\n- Connections are generated from OpenAPI specifications. Currently supports Basic Auth, API Key, Bearer Token, OAuth 2.0\n\n- Also supports specifications with multiple authentications\n  \n  [Read more](https://swagger.io/docs/specification/authentication/) \n\n## Querying OpenAPI\n- Operations will be generated from specifications and each one will be different from other  \n\n### Common fields\n- Host (Base URL)\n  \n  Some specs can have one or more base URLs/servers and specific operations may have separate Base URLs. So you can select the URL from the host select\n\n- Operation\n"
+        }
+    ]
+}

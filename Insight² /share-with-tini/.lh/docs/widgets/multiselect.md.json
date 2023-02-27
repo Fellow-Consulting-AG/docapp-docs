@@ -1,0 +1,18 @@
+{
+    "sourceFile": "docs/widgets/multiselect.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1656582811750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1656582811750,
+            "name": "Commit-0",
+            "content": "---\nid: multiselect\ntitle: Multiselect\n---\n# Multiselect\n\nMultiselect widget can be used to collect multiple user inputs from a list of options.\n\n<div style={{textAlign: 'center'}}>\n\n![Insight - Widget Reference - Multiselect](/img/widgets/multiselect/multi.gif)\n\n</div>\n\n## Event\n\n### On select\n\nOn select event is triggered when an option is selected.\n\n:::info\nCheck [Action Reference](/docs/actions/show-alert) docs to get the detailed information about all the **Actions**.\n:::\n\n## Properties\n\n### Label\n\nThe text is to be used as the label for the multiselect widget.\n\n### Default value\n\nThe value of the default option. This should always be an array.\n### Option values\n\nValues for different items/options in the list of the multiselect.\n\n### Option labels\n\nLabels for different items/options in the list of the multiselect.\n\n## Layout\n\n### Show on desktop\n\nToggle on or off to display the widget in desktop view. You can programmatically determing the value by clicking on `Fx` to set the value `{{true}}` or `{{false}}`.\n### Show on mobile\n\nToggle on or off to display the widget in mobile view. You can programmatically determing the value by clicking on `Fx` to set the value `{{true}}` or `{{false}}`.\n\n## Styles\n\n### Border radius\n\nAdd a border radius to the multiselect using this property. It accepts any numerical value from `0` to `100`.\n\n### Visibility\n\nToggle on or off to control the visibility of the widget. You can programmatically change its value by clicking on the `Fx` button next to it. If `{{false}}` the widget will not be visible after the app is deployed. By default, it's set to `{{true}}`.\n\n### Disable\n\nThis is `off` by default, toggle `on` the switch to lock the widget and make it non-functional. You can also programmatically set the value by clicking on the `Fx` button next to it. If set to `{{true}}`, the widget will be locked and becomes non-functional. By default, its value is set to `{{false}}`.\n\n:::info\nAny property having `Fx` button next to its field can be **programmatically configured**.\n:::"
+        }
+    ]
+}

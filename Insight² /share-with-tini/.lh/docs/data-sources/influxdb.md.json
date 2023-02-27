@@ -1,0 +1,18 @@
+{
+    "sourceFile": "docs/data-sources/influxdb.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1656582811796,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1656582811796,
+            "name": "Commit-0",
+            "content": "---\nid: influxdb\ntitle: InfluxDB\n---\n\n# InfluxDB\n\nInsight can connect to InfluxDB databases to read and write data. Use the Token authentication scheme to authenticate to the InfluxDB API. For more info visit [InfluxDB docs](https://docs.influxdata.com/).\n\n## Connection\n\nInsight connects to InfluxDB using :\n\n- **API Token**\n- **Host**\n- **Port**\n- **Protocol** (HTTP/HTTPS)\n\n:::info\nFor generating API Token visit [InfluxDB docs](https://docs.influxdata.com/influxdb/cloud/security/tokens/create-token/).\n:::\n\n<div style={{textAlign: 'center'}}>\n\n![Insight - Data source - influxDB](/img/datasource-reference/influxdb/influxauth.png)\n\n</div>\n\n## Supported queries:\n\n- [Write data](#write-data)\n\n- [Query data](#query-data)\n\n- [Generate an Abstract Syntax Tree (AST) from a query](#generate-an-abstract-syntax-tree-ast-from-a-query)\n\n- [Retrieve query suggestions](#retrieve-query-suggestions)\n\n- [Retrieve query suggestions for a branching suggestion](#retrieve-query-suggestions-for-a-branching-suggestion)\n\n- [Analyze a Flux query](#analyze-a-flux-query)\n\n- [List buckets](#list-buckets)\n\n- [Create a bucket](#create-a-bucket)\n\n- [Retrieve a bucket](#retrieve-a-bucket)\n\n- [Update a bucket](#update-a-bucket)\n\n- [Delete a bucket](#delete-a-bucket)\n\n<div style={{textAlign: 'center'}}>\n\n![Insight - Data source - influxDB](/img/datasource-reference/influxdb/operations.png)\n\n</div>\n\n### Write data \n\nThis operation writes data to a bucket.\n\n#### Required parameters:\n\n- **Bucket**\n- **Organization name or ID**\n\n#### Optional parameters: \n\n- **Precision**\n\n### Query data\n\nRetrieves data from InfluxDB buckets.\n\n#### Required parameters:\n- **Organization name or ID**\n\n### Generate an Abstract Syntax Tree (AST) from a query\n\nThis operation analyzes flux query and generates a query specification.\n\n#### Required parameters: \n\n- **Query**\n\n### Retrieve query suggestions \n\nThis query retrieve query suggestions.\n\n### Retrieve query suggestions for a branching suggestion \n\nThis operation retrieve query suggestions for a branching suggestion.\n\n#### Required parameters:\n- **Name**\n\n### Analyze a Flux query \n\nThis Analyzes a Flux query.\n\n#### Required parameters:\n\n- **Query**\n\n### List buckets \n\nThis operation lists all the buckets in a database.\n### Create a bucket \n\n#### Required parameters: \n\n- **Query**\n\n### Retrieve a bucket \n\nThis operation retrieve a bucket in a database.\n\n#### Required parameters:\n- **Bucket ID**\n\n### Update a bucket\n\n#### Required parameters:\n- **Bucket ID**\n- **Query**\n\n### Delete a bucket\n\n#### Required parameters:\n- **Bucket ID**\n"
+        }
+    ]
+}

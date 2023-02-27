@@ -1,0 +1,18 @@
+{
+    "sourceFile": "docs/data-sources/woocommerce.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1656582811751,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1656582811751,
+            "name": "Commit-0",
+            "content": "# woocommerce\n\nInsight can connect to Woocommerce databases to read and write data.\n\n- [Connection](#connection)\n- [Getting Started](#querying-woocommerce)\n\n## Connection\n\nAuth\nYou may use [HTTP Basic Auth] by providing the REST API Consumer Key as the username and the REST API Consumer Secret as the password.\n- **Host**\n- **Consumer key**\n- **Consumer secret**\n\n![Insight - Data Source - Woocommerce](/img/datasource-reference/woocommerce/woocomerce-auth.png)\n\n:::info\nNOTE: For generating keys visit admin dashboard of woocommerce , more info: https://woocommerce.github.io/woocommerce-rest-api-docs/?javascript#authentication\n:::\n\n## Querying Woocommerce\n\n**Operations**\n\n**Customer**\n\n- list customer\n- update customer\n- delete customer\n- batch update customer\n- create customer\n- retrieve customer\n\n**PRODUCT**\n\n- list product\n- update product\n- delete product\n- batch update product\n- create product\n- retrieve product\n\n**ORDER**\n\n- list order\n- update order\n- delete order\n- batch update order\n- create order\n- retrieve order\n\n**Coupon**\n\n- list coupon\n- create coupon\n\n:::info\nNOTE: For more info visit https://woocommerce.github.io/woocommerce-rest-api-docs/?javascript.\n:::"
+        }
+    ]
+}

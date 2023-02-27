@@ -1,0 +1,18 @@
+{
+    "sourceFile": "docs/tutorial/actions.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1656582811807,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1656582811807,
+            "name": "Commit-0",
+            "content": "---\nid: actions\ntitle: Adding actions\n---\n\n# Adding actions\n\nInsight supports several actions that can be invoked as the handler for any `event` that is triggered in an application.\n\n## To add actions\n\nTo attach an action for component events, click on the component's handle, and then click on the `Add handler` button on the\ninspector panel available on the right side.  \n  \nTo attach an action for query events, select the query, go to the `advanced` tab and then click on the `Add handler` button.\n\n## Available actions\n\nSome of the actions that Insight Support are\n\n   Action| Description|\n   ----| -----------  |\n   Show alert | Show an alert message as a bootstrap toast           |\n   Run query | Run any of the data queries that you have created           |\n   Open webpage | Go to another webpage in a new tab          |\n   Goto app | Go to another Insight application          |\n   Show modal | Open any modal that you've added          |\n   Close modal | Close any modal that you've added if its already open          |\n   Copy to clipboard | Copy any available text that you see on the application to clipboard          |\n   Set localStorage | Set a key and corresponding value to localStorage          |\n   Generate file | Construct file using data available in your application and let the user download it          |"
+        }
+    ]
+}

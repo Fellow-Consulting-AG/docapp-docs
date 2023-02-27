@@ -1,0 +1,18 @@
+{
+    "sourceFile": "docs/widgets/tabs.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1656582811778,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1656582811778,
+            "name": "Commit-0",
+            "content": "---\nid: tabs\ntitle: Tabs\n---\n# Tabs\n\nA Tabs widget contains a number of defined containers that can be navigated through the tabs. Each tab acts as a container and can have different components or widgets.\n\n<div style={{textAlign: 'center'}}>\n\n![Insight - Widget Reference - Tabs](/img/widgets/tabs/tabs.png)\n\n</div>\n\n## Properties\n\n### Tabs\n\nThis property lets you add and remove containers from the tabs widget. Each container in the tab has its unique `id` and `title`. This field expects an array of objects.\n\n### Default tab\n\nThis property selects the container in the tab which matches the corresponding `id`. By default, the value is set to `0`. \n\n## Layout\n\n### Show on desktop\n\nToggle on or off to display the widget in desktop view. You can programmatically determing the value by clicking on `Fx` to set the value `{{true}}` or `{{false}}`.\n### Show on mobile\n\nToggle on or off to display the widget in mobile view. You can programmatically determing the value by clicking on `Fx` to set the value `{{true}}` or `{{false}}`.\n\n## Styles\n\n### Highlight Color\n\nYou can change the highlight color of the selected tab by entering the Hex color code or choosing a color of your choice from the color picker.\n\n### Visibility\n\nToggle on or off to control the visibility of the widget. You can programmatically change its value by clicking on the `Fx` button next to it. If `{{false}}` the widget will not be visible after the app is deployed. By default, it's set to `{{true}}`.\n\n### Disable\n\nThis is `off` by default, toggle `on` the switch to lock the widget and make it non-functional. You can also programmatically set the value by clicking on the `Fx` button next to it. If set to `{{true}}`, the widget will be locked and becomes non-functional. By default, its value is set to `{{false}}`.\n\n:::info\nAny property having `Fx` button next to its field can be **programmatically configured**.\n:::"
+        }
+    ]
+}

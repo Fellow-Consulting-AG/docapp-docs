@@ -1,0 +1,18 @@
+{
+    "sourceFile": "docs/tutorial/versioning-and-release.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1656582811807,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1656582811807,
+            "name": "Commit-0",
+            "content": "---\nid: versioning-and-release\ntitle: Versioning and Release\n---\n\n# Versioning and Release\n\nVersioning and Release lets you version control your apps and release app changes to the users. \n\n## Versioning\n\nVersioning is really useful if multiple developers are working on an app, it allows them to save their own version of the app. This also prevents developers from overwriting the other developer's work. \n\n### Creating a Version\n\nYou can create new versions from **App Version Manager** on the top-right corner. It displays the version of the app that you're currently working and can be used to switch between the different version of the app. To create a new version:\n\n- Go to the **App Version Manager** and click on the dropdown. It will display all the versions of the app that have been created.\n\n<div style={{textAlign: 'center'}}>\n\n![Insight - Managing Users and Groups](/img/tutorial/versioning-and-release/appversion.png)\n\n</div>\n\n- Click on **Create Version** and a modal will pop-up. Enter a **Version Name** and click on **Create version from** dropdown that will include all the versions of the app, choose a version that you want to use for your new version and then click on `Create Version`.\n\n<div style={{textAlign: 'center'}}>\n\n![Insight - Managing Users and Groups](/img/tutorial/versioning-and-release/modal.png)\n\n</div>\n\n## Release\n\nMaking a release let's you publish the app and push the changes to production.\n\n### Releasing a version\n\nTo release a version:\n\n- Go to the **App Version Manager** and select the `version` from the dropdown that you want to release.\n\n<div style={{textAlign: 'center'}}>\n\n![Insight - Managing Users and Groups](/img/tutorial/versioning-and-release/versiondropdown.png)\n\n</div>\n\n- Click on the `Release` button on the top-right corner.\n\n<div style={{textAlign: 'center'}}>\n\n![Insight - Managing Users and Groups](/img/tutorial/versioning-and-release/release.png)\n\n</div>\n\n\n:::tip \n\nInsight will block editing of the `Released version` of an app and will display a prompt to create a new version to make the changes. This is to prevent accidentally pushing an unfinished app to the live version.\n\n<div style={{textAlign: 'center'}}>\n\n![Insight - Managing Users and Groups](/img/tutorial/versioning-and-release/prompt.png)\n\n</div>\n\n:::\n\n\n\n\n\n"
+        }
+    ]
+}
