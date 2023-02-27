@@ -26,11 +26,11 @@ theme:
     - navigation.tracking
     - navigation.indexes
 # https://squidfunk.github.io/mkdocs-material/customization/?h=#additional-css
-extra_css:
-  - _extra/css/extra.css
+#extra_css:
+#  - _extra/css/extra.css
 # https://squidfunk.github.io/mkdocs-material/customization/?h=#additional-javascript
-extra_javascript:
-  - _extra/javascript/extra.js
+#extra_javascript:
+#  - _extra/javascript/extra.js
 extra:
   alternate:
     - name: English
