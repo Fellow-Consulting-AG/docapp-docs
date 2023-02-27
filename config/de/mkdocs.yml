@@ -9,7 +9,7 @@ theme:
   #custom_dir: overrides
   custom_dir: '../../overrides/'
   logo: assets/images/LOGO.svg
-  favicon: assets/images/favIcon-blau.svg
+  favicon: assets/images/LOGO.svg
   font:
     text: Open Sans
   language: de
