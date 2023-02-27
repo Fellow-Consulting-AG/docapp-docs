@@ -8,7 +8,7 @@ theme:
   name: material
   #custom_dir: overrides
   custom_dir: '../../overrides/'
-  logo: assets/images/favIcon-weiss.svg
+  logo: assets/images/LOGO.svg
   favicon: assets/images/favIcon-blau.svg
   font:
     text: Open Sans
@@ -34,10 +34,10 @@ extra_javascript:
 extra:
   alternate:
     - name: English
-      link: /
+      link: https://en.docs.fellowpro.com
       lang: en
     - name: Deutsch
-      link: /de/
+      link: https://de.docs.fellowpro.com
       lang: de
   consent:
     title: Cookie consent
