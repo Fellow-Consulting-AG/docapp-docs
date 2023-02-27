@@ -1,16 +1,19 @@
-site_name: Polydocs Documentation
+site_name: FELLOWPRO Documentation
+docs_dir: '../../docs/en'                           # Where to find the English markdown files
+site_dir: '../../generated/en'                      # Where to put the English HTML files
 site_url: https://docs.polydocs.io
 site_author: Daniel Jordan
 site_description: On these pages you will learn a lot about our different software helping you with digitization, digitalization and the digital transformation in your company.
 theme:
   name: material
-  custom_dir: overrides
-  #favicon: _images/polydocs_Logo.svg
-  favicon: _images/polydocs_Icon.svg
+  #custom_dir: overrides
+  custom_dir: '../../overrides/'
+  logo: assets/images/favIcon-weiss.svg
+  favicon: assets/images/favIcon-blau.svg
   font:
     text: Open Sans
   language: en
-  logo: _images/polydocs_Icon.svg
+  #logo: assets/images/polydocs_Icon.svg
   palette:
       scheme: light
       primary: indigo
@@ -31,10 +34,10 @@ extra_javascript:
 extra:
   alternate:
     - name: English
-      link: /
+      link: https://en.docs.fellowpro.com
       lang: en
     - name: Deutsch
-      link: /de/
+      link: https://de.docs.fellowpro.com
       lang: de
   consent:
     title: Cookie consent
@@ -50,7 +53,7 @@ extra:
       link: https://www.linkedin.com/company/645725/
   analytics:
     provider: google
-    property: UA-208531131-1
+    property: G-341038327
     feedback:
       title: Was this page helpful?
       ratings:
@@ -99,6 +102,10 @@ markdown_extensions:
 plugins:
   - search
   - literate-nav
+  - git-revision-date-localized:
+      type: date
+      fallback_to_build_date: true
+  - git-authors
   - tags:
       tags_file: tags.md
 nav:
@@ -138,7 +145,7 @@ nav:
       - Integration with Infor IDM and ERP:
         - doc2/doc2-with-infor/IDM-business-context-model.md
       - Infor SSO: doc2/doc2-with-infor/configuring-sso-in-cloud.md
-    - DOC² with Workflow²: doc2/workflow.md
+    # - DOC² with Workflow²: doc2/workflow.md
     - Settings:
       - doc2/settings/index.md
       - Company Information: doc2/company-information.md
@@ -172,7 +179,6 @@ nav:
           - Infor ION API File: doc2/export/create-a-infor-ion-api-file.md
           - Export to Infor ION and IDM: doc2/export/infor-ion.md
         - Webhook: doc2/export/webhook.md
-        - XML Export: doc2/export/xml-export.md
         - Export to Flow²: doc2/export/export-to-flow2.md
 
 
@@ -191,6 +197,8 @@ nav:
     - SSO:
       - doc2/SSO/index.md
       - SSO for Azure AD with DOC²: doc2/SSO/SSO-for-Azure-AD.md
+
+
   - FLOW²:
     - Introduction: flow2/index.md
     - Getting Started: flow2/introduction.md
@@ -280,7 +288,7 @@ nav:
       - MongoDB: insight2/data-sources/mongodb.md
       - MSSQL: insight2/data-sources/mssql.md
       - MySQL: insight2/data-sources/mysql.md
-      - WF²: insight2/data-sources/WF².md
+      - n8n: insight2/data-sources/n8n.md
       - Notion: insight2/data-sources/notion.md
       - OpenAPI: insight2/data-sources/openapi.md
       - OracleDB: insight2/data-sources/oracledb.md
@@ -340,3 +348,23 @@ nav:
       - Toggle Switch: insight2/widgets/toggle-switch.md
 
 
+
+  # - Courses:
+  #   - Overview: workflow/courses/index.md
+  #   - Level one:
+  #     - Overview: workflow/courses/level-one/index.md
+  #     - Navigating the editor UI: workflow/courses/level-one/chapter-1.md
+  #     - Building a mini-workflow: workflow/courses/level-one/chapter-2.md
+  #     - Automating a (real-world) use case: workflow/courses/level-one/chapter-3.md
+  #     - Designing the workflow: workflow/courses/level-one/chapter-4.md
+  #     - Building the workflow:
+  #       - Getting data from the data warehouse: workflow/courses/level-one/chapter-5/chapter-5.1.md
+  #       - Inserting data into airtable: workflow/courses/level-one/chapter-5/chapter-5.2.md
+  #       - Filtering orders: workflow/courses/level-one/chapter-5/chapter-5.3.md
+  #       - Setting values for processing orders: workflow/courses/level-one/chapter-5/chapter-5.4.md
+  #       - Calculating booked orders: workflow/courses/level-one/chapter-5/chapter-5.5.md
+  #       - Notifying the team: workflow/courses/level-one/chapter-5/chapter-5.6.md
+  #       - Scheduling the workflow: workflow/courses/level-one/chapter-5/chapter-5.7.md
+  #       - Activating and examining the workflow: workflow/courses/level-one/chapter-5/chapter-5.8.md
+  #     - Exporting, importing, and sharing workflows: workflow/courses/level-one/chapter-6.md
+  #     - Take the quiz and get your certificate: workflow/courses/level-one/chapter-7.md
