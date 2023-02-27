@@ -11,7 +11,7 @@ theme:
   logo: _images/LOGO.svg
   favicon: _images/LOGO.svg
   font:
-    text: Open Sans
+    text: Montserrat
   language: de
   #logo: assets/images/polydocs_Icon.svg
   palette:
@@ -101,6 +101,7 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
 plugins:
   - search
+      lang: de
   - literate-nav
   - git-revision-date-localized:
       type: date
