@@ -1,0 +1,54 @@
+---
+title: Introduction
+description: When you're tired of manually entering data into the same spreadsheet every day and managing tens of different tools and systems, check out these courses.
+tags:
+  - Workflow²
+  - Course Level 2
+---
+
+# Introduction
+
+Welcome to the **WF² Course Level 2**!
+
+## Is this course right for me?
+
+This course is for you if you:
+
+- Want to automate somewhat complex business processes.
+- Want to dive deeper into WF² after taking the [Level 1 course](/workflow/courses/level-one){:target="_blank" .external}.
+
+## What will I learn in this course?
+
+The focus in this course is on working with data. You will learn how to:
+
+- Use the data structure of WF² correctly.
+- Process different data types (for example, XML, HTML, date, time, and binary data).
+- Merge data from different sources (for example, a database, spreadsheet, or CRM).
+- Use functions and JavaScript code in the [Function node](/workflow/integrations/core-nodes/workflow-nodes-base.function){:target="_blank" .external}.
+- Deal with error workflows and workflow errors.
+
+You will learn all this by completing short practical exercises after the theoretical explanations, and building a business workflow following instructions.
+
+## What do I need to get started?
+
+To follow along this course (at a comfortable pace) you will need the following:
+
+- **WF² set up**: You can use the [self-hosted version](/hosting/installation/npm/){:target="_blank" .external}, [WF².cloud](/hosting/installation/cloud/){:target="_blank" .external}, or the [desktop app](/hosting/installation/desktop-app/){:target="_blank" .external}.
+- **A user ID**: [Sign up here](https://WF²-community.typeform.com/to/HQoQ7nXg){:target="_blank" .external} to get your unique ID and other credentials you will need in the course.
+- **Basic WF² skills**. We strongly recommend taking the [Level 1 course](/workflow/courses/level-one/){:target="_blank" .external} prior to this one.
+- **Basic JavaScript understanding**.
+
+## How long does the course take?
+
+Completing the course should take around **two hours**. You do not have to complete it in one go, feel free to take breaks and resume whenever you are ready.
+
+## How do I complete the course?
+
+There are two milestones in this course that test your knowledge of what you have learned in the lessons:
+
+- [x] Building the [main workflow](/workflow/courses/level-two/chapter-5/chapter-5.0/){:target="_blank" .external}
+- [x] Passing the [quiz](https://WF²-community.typeform.com/to/r9hDbytg){:target="_blank" .external} at the end of the course
+
+You can always **check your progress** throughout the course by entering your unique ID [here](https://internal.users.WF².cloud/webhook/course-level-2/verify){:target="_blank" .external-link}.
+
+If you successfully complete the milestones above, you will get [**a badge and an avatar**](https://community.WF².io/badges/105/completed-WF²-course-level-2){:target="_blank" .external} in your forum profile. You can then share your profile and course verification ID to showcase your WF² skills to others.
