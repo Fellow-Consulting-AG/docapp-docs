@@ -73,3 +73,5 @@ webencodings==0.5.1
 zipp==3.8.0
 
 mkdocs-git-revision-date-localized-plugin
+
+mkdocs-git-authors-plugin
