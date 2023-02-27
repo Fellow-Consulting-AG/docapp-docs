@@ -34,10 +34,10 @@ extra_javascript:
 extra:
   alternate:
     - name: English
-      link: /
+      link: https://en.docs.fellowpro.com
       lang: en
     - name: Deutsch
-      link: /de/
+      link: https://de.docs.fellowpro.com
       lang: de
   consent:
     title: Cookie consent
