@@ -1,8 +1,7 @@
 ---
 title: "Layout Builder"
-description: API integration provides functions and services that connect applications and processes. Here are examples of how to make API calls through api.polydocs.io.
+description: You will find different modules in DOC² settings.These modules are important if you like to deal with PO Matching and use the table extraction functionality. 
 date: "2023-03-10"
-icons: 
 tags:
   - DOC²
   - Settings
@@ -10,3 +9,5 @@ tags:
   - Document Type
   - Layout Builder
 ---
+
+
