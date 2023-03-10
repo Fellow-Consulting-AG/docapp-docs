@@ -81,7 +81,7 @@ Is only one line selected, a delete button will be added, and it allows the user
 ![](/_images/doc2/Bildschirmfoto-2021-12-16-um-14.53.08-1024x307.png)
 
   
-7) Once the changes are saved the plugin will automatically extract the found data and display it on a table to the right.
+7. Once the changes are saved the plugin will automatically extract the found data and display it on a table to the right.
 
 ![](/_images/doc2/Table-1-1.png)
 
