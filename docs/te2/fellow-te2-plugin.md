@@ -1,6 +1,6 @@
 ---
 title: "TE² Plugin"
-description: The TE² Plugin is a cloud-based repository solution for Ephesoft Transact software which is focused on extracting autonomously and automatically the line items in a table. Through the cloud-based Table Extraction Repository, you access a pool of rules from all users of the plugin.
+description: The TE² Plugin is a cloud-based repository solution for Ephesoft Transact software which is focused on extracting the line items in a table, autonomously and automatically. Through the cloud-based Table Extraction Repository, you access a pool of rules from all users of the plugin.
 date: "2021-07-05"
 tags:
   - TE²
@@ -18,7 +18,7 @@ Welcome to TE² Plugin for Ephesoft Transact!
 <iframe width="840" height="472.5" src="https://www.youtube-nocookie.com/embed/Nmr-R3jb0Fw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-The TE² Plugin is a cloud-based repository solution for Ephesoft Transact software which is focused on extracting autonomously and automatically the line items in a table.
+The TE² Plugin is a cloud-based repository solution for Ephesoft Transact software which is focused on extracting the line items in a table, autonomously and automatically.
 
 Through the cloud-based Polydocs GmbH Table Extraction Repository, you access a pool of rules from all users of the plugin.
 
