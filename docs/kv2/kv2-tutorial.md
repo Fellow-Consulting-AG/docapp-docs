@@ -53,8 +53,8 @@ To work with this tutorial you have to complete the [Installation & Configuratio
 
 ![](/_images/doc2/validationScreen.png)
 
-- Go through all the fields by clicking the "Tab" button or with your mouse and check the values. In case you there is a missing or incorrect value, you have 3 options:
-    - Click into the particular field on the validation screen, then move your mouse over the document on the right and select the respective value by double click on it. The selected value will be marked yellow on the document and will appear in the validation field on the left (preferred - as this way you train on which position on a certain invoice you find the respective values)
+- Go through all the fields by clicking the "Tab" button or with your mouse and check the values. In case you there is a missing or incorrect value, you have 4 options:
+    - Click on the particular field on the validation screen, then move your mouse over the document on the right and select the respective value by double click on it. The selected value will be marked yellow on the document and will appear in the validation field on the left (preferred - as this way you train on which position on a certain invoice you find the respective values).
     - Click on the particular field on the validation screen, then move your mouse over the document on the right and select the respective value by right-clicking with your mouse, hold it while selecting the full value (it will be marked yellow) and confirm by clicking on the right tab again. The selected value will be marked yellow on the document and will appear in the validation field on the left (preferred - as this way you train on which position on a certain invoice you find the respective values)
     - Type the value manually to the validation cell.
     - If a value is detected wrong or incomplete, please click in respective cell, clear the value and select the correct one in the document as explained above.
