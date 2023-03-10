@@ -6,9 +6,10 @@ tags:
   - DOC²
   - Settings
   - Modules
+  - Approval
   - Purchase Order
   - PO Matching
-  - Table Extraction
+  - Document Type
 ---
 
 In DOC² you will find the "SETTINGS" menu in the "DASHBOARD". Open this menu.
