@@ -95,7 +95,7 @@ The available functions on this side of the screen are as follows:
 
 ![](/_images/doc2/advanced-settings-1.png)
 
-Once selected the following screen will pop up:
+Once selected, the following screen will pop up:
 
 ![](/_images/doc2/Table-2-1.png)
 
