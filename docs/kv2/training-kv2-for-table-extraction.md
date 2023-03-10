@@ -99,7 +99,7 @@ Once selected, the following screen will pop up:
 
 ![](/_images/doc2/Table-2-1.png)
 
-“Header row count” defines how many rows are part of the header for example if the header has two rows the corresponding number (2 in this case) must be selected.
+“Header row count” defines how many rows are part of the header for example, if the header has two rows then the corresponding number (2 in this case) must be selected.
 
 “Move Extra Row to desc”
 
