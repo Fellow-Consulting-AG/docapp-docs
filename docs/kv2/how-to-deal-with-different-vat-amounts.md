@@ -9,7 +9,7 @@ tags:
  - VAT
 ---
 
-## If you have an invoice with two different VAT amounts, teach them as follows:
+## If you have an invoice with two different VAT amounts, train them as follows:
 
 ![](/_images/doc2/image-1.png)
 
@@ -27,7 +27,7 @@ tags:
 
 * * *
 
-## If you have an invoice with 0 VAT amount, teach them as follows:
+## If you have an invoice with 0 VAT amount, train them as follows:
 
 ![](/_images/doc2/image-5.png)
 
