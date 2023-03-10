@@ -10,7 +10,7 @@ tags:
  - Database
 ---
 
-If you implemented and saved an incorrect rule, don't worry! It's easy to delete it only with one command line through Ephesoft from the database!
+If you implemented and saved an incorrect rule, don't worry! It's easy to delete it with only one command line through Ephesoft from the database!
 
 ![](/_images/doc2/Bildschirmfoto-2021-06-01-um-15.45.11-1024x388.png)
 
