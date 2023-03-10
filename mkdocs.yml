@@ -175,8 +175,13 @@ nav:
         - SSO Settings: doc2/settings-sso-settings.md
       - Document Types: doc2/settings-document-types.md
       - Email Notification: doc2/settings/email-notification.md
-      - Modules: doc2/modules/modules.md
+      - Modules:
         - doc2/modules/index.md
+        - doc2/modules.md
+        - Layout Builder: doc2/modules/layout-builder.md
+        - Models & Labels: doc2/modules/models-and-labels.md
+        - Doc Script: doc2/modules/doc-script.md
+     #  - Doc Scan: doc2/modules/doc-scan.md
       - All Import Options:
         - doc2/import/index.md
         - Email: doc2/e-mail.md
