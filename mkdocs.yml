@@ -177,7 +177,7 @@ nav:
       - Email Notification: doc2/settings/email-notification.md
       - Modules:
         - doc2/modules/index.md
-        - doc2/modules.md
+        - doc2/modules/modules.md
         - Layout Builder: doc2/modules/layout-builder.md
         - Models & Labels: doc2/modules/models-and-labels.md
         - Doc Script: doc2/modules/doc-script.md
