@@ -22,6 +22,6 @@ Note that restart process can take up to 5 minutes.
 
 ![](/_images/doc2/image-2-1024x640-1.png)
 
-After Restart you can Logout again
+After you restart, you can logout again.
 
 ![](/_images/doc2/image-3-1024x640-1.png)
