@@ -69,7 +69,7 @@ For fields you have corrected in the first run, you should see the value set cor
 
 ![](/_images/doc2/validate3Unbenannt.png)
 
-With this process you are not only validating your document but also training the plugin. With a one-time human assistance validating and exporting the documents, new extraction rules are created. For the next run for that type of document no adaptation or configuration of the batch class is needed and the plugin will recognize values which have been missing in the first run.
+With this process you are not only validating your document but also training the plugin. With a one-time human assistance validating and exporting the documents, new extraction rules are created. For the next run of that type of document no adaptation or configuration of the batch class is needed and the plugin will recognize values which have been missing in the first run.
 
 ## Usage of Fellows Feedback and Support Function
 
