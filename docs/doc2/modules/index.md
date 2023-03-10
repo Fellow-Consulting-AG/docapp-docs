@@ -1,6 +1,6 @@
 ---
 
-#### Here you can find the export options and the corresponding articles.
+#### Here you can find the specific module settings and the corresponding articles.
 
 - [Layout Builder](/doc2/modules/layout-builder/)
 - [Models and Labels](/doc2/modules/models-and-labels/)
