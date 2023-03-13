@@ -21,4 +21,4 @@ After that, go to the desired document type - in our example `Invoice`, open `Sc
 
 The result should look like this:
 
-![](docs/_images/doc2/Modules/doc-script/Script_added.png)
+![](/_images/doc2/Modules/doc-script/Script_added.png)
