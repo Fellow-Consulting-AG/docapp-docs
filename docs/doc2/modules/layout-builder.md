@@ -17,7 +17,7 @@ First of all, ensure that the Layout Manager feature is activated. This can be d
 
 ![](/_images/doc2/Modules/layout-builder/Image1-Accessing_Layout_Manager.png)
 
-After this is done you can access the Layout Builder via Settings > Document Types, once on this page you can select from the various document types you have created and either select “Edit Layout” as shown below
+After this is done you can access the Layout Builder via Settings > Document Types, once on this page you can select from the various document types you have created and either select “Edit Layout” as shown below.
 
 ![](/_images/doc2/Modules/layout-builder/Image2-Edit_Layout.png)
 
