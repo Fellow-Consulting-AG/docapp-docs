@@ -13,11 +13,11 @@ tags:
 
 ## Accessing the Layout Manager
 
-First of all, ensure that the Layout Manager feature is activated. This can be done by navigating to Settings > Document Processing > Module > Document Type and ensure that the Layout Builder slider is set to active as shown below.
+First of all, ensure that the Layout Manager feature is activated. This can be done by navigating to Settings > Document Processing > Module > Document Type and ensure that the Layout Builder slider is set too active as shown below.
 
 ![](/_images/doc2/Modules/layout-builder/Image 1 - Accessing Layout Manager.png)
 
-After this is done you can access the Layout Manager via Settings > Document Types, once on this page you can select from the various document types you have created and either select “Edit Layout” as shown below
+After this is done you can access the Layout Builder via Settings > Document Types, once on this page you can select from the various document types you have created and either select “Edit Layout” as shown below
 
 ![](/_images/doc2/Modules/layout-builder/Image 2 - Edit Layout.png)
 
@@ -25,11 +25,11 @@ or if you have sub-document types within a created document type you can select 
 
 ![](/_images/doc2/Modules/layout-builder/Image 3 - Doc Sub Types.png)
 
-## Basics of the Layout Manager 
+2. Basics of the Layout Manager 
 
 After following the previous steps you will reach a page like the one shown below.
 
-<ins>1. Uploading a document</ins>
+2.1 Uploading a document
 
 In order to upload a document to the layout builder, simply navigate to the right on the screen 
 
@@ -39,7 +39,7 @@ Click on the `Upload Documents` button or drag and drop your desired document in
 
 ![](/_images/doc2/Modules/layout-builder/Image 5 - Uploading a Doc 2.png)
 
-<ins>2. Groups</ins>
+2.2 Groups
 
 Groups can be created by selecting the following icon.
 
@@ -49,7 +49,7 @@ Groups allow you to create different sections on a layout, this makes it easier 
 
 ![](/_images/doc2/Modules/layout-builder/Image 7 -  Groups 2.png)
 
-<ins>3. Form Elements</ins>
+2.3 Form Elements
 
 ![](/_images/doc2/Modules/layout-builder/Image 8 - Form Elements.png)
 
@@ -71,13 +71,13 @@ These are a set of default fields that can be dragged and dropped into the layou
 
 `Button` - This creates a clickable button on the validation screen within the layout that can be set to one of 3 functions, including: Export, Export mit Sonderwunsch or Reject.
 
-## Creating document specific fields
+3. Creating document specific fields
 
 The user is able to create their own custom groups and fields for a document type, this can be done when originally creating a document type but also by selecting `Fields` when on the Document Types page in Settings.
 
-## Creating blank spaces
+4. Creating blank spaces
 
-<ins>1. The 100 percent rule</ins>
+4.1 The 100 percent rule
 
 ![](/_images/doc2/Modules/layout-builder/Image 10 - Blank Spaces 1.png)
 
@@ -95,7 +95,7 @@ The problem now exists that they are both the same size of 33 (this is the defau
 
 This same rule applies to all fields in the Layout Manager.
 
-<ins>2. Creating Blank Spaces</ins>
+4.2 Creating Blank Spaces
 
 Now that this rule has been explained, creating blank spaces will make more sense. As previously mentioned, in order to create a blank space you have to use a `Label` from the Form Elements.
 
@@ -117,7 +117,7 @@ The result from doing this will then be
 
 There is now a gap between the two fields. This gap can be extended or shortened according to the 100 percent rule discussed earlier, and with these functions you can create any desired layout.
 
-## Field Grouping
+5. Field Grouping
 
 This feature allows you to group multiple fields together so that only one field from each group can be selected at a time on the validation screen.
 
@@ -125,7 +125,7 @@ This feature allows you to group multiple fields together so that only one field
 
 For example, if you had multiple checkboxes all belonging to a group name `1` then only one checkbox from group `1` can be ticked on the validation screen.
 
-## KI Model Types
+6. KI Model Types
 
 ![](/_images/doc2/Modules/layout-builder/Image 19 - KI Models 1.png)
 
