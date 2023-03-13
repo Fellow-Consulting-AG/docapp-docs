@@ -95,7 +95,6 @@ The problem now exists that they are both the same size of 33 (this is the defau
 
 This same rule applies to all fields in the Layout Manager.
 
-## Creating Blank Spaces
 
 Now that this rule has been explained, creating blank spaces will make more sense. As previously mentioned, in order to create a blank space you have to use a `Label` from the Form Elements.
 
