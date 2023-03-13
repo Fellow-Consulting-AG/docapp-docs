@@ -24,6 +24,8 @@ The result should look like this:
 ![](/_images/doc2/Modules/doc-script/Script_added.png)
 
 
+<ins>Script to copy:</ins>
+
 ```script
 currency_map = {
     "€": "EUR",
