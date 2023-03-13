@@ -87,7 +87,7 @@ In order to create the above space on the layout, a `Label` from the Form Elemen
 
 This means that the user must build the layout line by line according to this rule. For example lets say you would like to add the fields `Name` and `Date` in the same line but would like the `Name` field to be larger. This can be done by dragging and dropping the `Text` field from the Form Elements drop down and naming each field `Name` and `Date` as shown.
 
-![](/_images/doc2/Modules/layout-builder/Image 12 - Blank Spaces 3png.png)
+![](/_images/doc2/Modules/layout-builder/Image 12 - Blank Spaces 3.png)
 
 The problem now exists that they are both the same size of 33 (this is the default size of all dragged and dropped fields) but you would like the `Name` field to be larger than the `Date` field and both fields should take up the entire line on the layout. Therefore, by following the 100 percent rule, you can set the `Name` and `Date` fields to any combination of 100 that you would desire. This of course depends on how large you would like each individual field but for the purpose of this example we will set the `Name` field to 70 and the `Date` field to 30, the results are:
 
@@ -131,7 +131,7 @@ For example, if you had multiple checkboxes all belonging to a group name `1` th
 
 This dropdown gives you the choice of training a specific field according to a KI model. Possible options can be seen below.
 
-![](docs/_images/doc2/Modules/layout-builder/Image 20 - KI Models 2.png)
+![](/_images/doc2/Modules/layout-builder/Image20-KI Models 2.png)
 
 KI model training can lead to more accurate extraction results on the validation screen.
 
