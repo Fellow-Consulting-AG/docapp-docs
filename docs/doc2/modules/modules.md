@@ -1,6 +1,6 @@
 ---
 title: "Modules"
-description: You will find different modules in DOC² settings.These modules are important if you like to deal with PO Matching and use the table extraction functionality. 
+description: You will find different modules in DOC² settings.These modules are important if you like to deal with Approvals, PO Matching and use individual configuration of your document types.
 date: "2022-02-25"
 tags:
   - DOC²
@@ -12,22 +12,14 @@ tags:
   - Document Type
 ---
 
-In DOC² you will find the "SETTINGS" menu in the "DASHBOARD". Open this menu.
+In DOC² you will find the `SETTINGS` menu above the `DASHBOARD`. Open this menu.
 
-![](/_images/doc2/image-44-1024x396.png)
+![](/_images/doc2/Modules/doc2_dasboard_settings.png)
 
 There you will find the menu item "Modules", open it.
 
-![](/_images/doc2/image-45-1024x355.png)
+![](/_images/doc2/Modules/doc2_settings_module.png)
 
-There you will find the option "PURCHASE ORDER" with which you can switch PO matching on or off.
+This is the overview of the individual modules:
 
-![](/_images/doc2/image-46.png)
-
-Furthermore you can define which documents should be matched via the option "Select PO Matching". There are three ways to match your purchase order. For details please check PO Matching documentation: [PO Matching](/doc2/pomatching/po-matching/)  
-
-![](/_images/doc2/image-47.png)
-
-Via the menu item "Table Extraction" the table extraction can be switched on or off. The version to be used with this account can be defined.
-
-![](/_images/doc2/image-48.png)
+![](/_images/doc2/Modules/doc2_settings_module_all.png)
