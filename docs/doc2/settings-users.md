@@ -13,11 +13,11 @@ To manage your users follow these steps:
 
 From the Dashboard navigate to `SETTINGS`:
 
-![](/_images/doc2/DOC2_Dashboard_Settings.png)
+![](/_images/doc2/Settings/Users/dashboard_settings.png)
 
 In the settings navigate to `Users`:
 
-![](/_images/doc2/DOC2_settings_users.png)
+![](/_images/doc2/Settings/Users/settings_users.png)
 
 Direct link: [https://app.polydocs.io/settings/user](https://app.polydocs.io/settings/user)
 
@@ -27,19 +27,19 @@ Once the admin is registered, you can add your employees by following these step
 
 In the user menu click on `ADD USER`:
 
-![](/_images/doc2/DOC2_settings_add-user.png)
+![](/_images/doc2/Settings/Users/settings_add-user_button.png)
 
 Enter the data of the user to be created:
 
-![](/_images/doc2/Users_4.png)
+![](/_images/doc2/Settings/Users/settings_add-user_form.png)
 
 - If it is not an administration user, do not check the "ADMIN" box
 - The password must be created initially and sent to the user
 
 As soon as the user is created it can be edited afterwards via the user overview (check/uncheck "ADMIN", edit, delete):
 
-![](/_images/doc2/Users_5.1.png)
-![](/_images/doc2/Users_5.2.png)
+![](/_images/doc2/Settings/Users/MaxMustermann_user.png)
+![](/_images/doc2/Settings/Users/MaxMustermann_admin.png)
 
 ## How to reset the password
 
