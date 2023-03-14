@@ -11,11 +11,11 @@ tags:
 ---
 
 
-If you want to use scripts that, for example, convert currency characters or written-out currency names into ISO codes, please activate this first in the settings under Module -> Document Type -> Doc Script.
+If you want to use scripts that, for example, convert currency characters or written-out currency names into ISO codes, you can activate this in the settings under Module > Document Type > Doc Script.
 
 ![](/_images/doc2/Modules/doc-script/Script_Settings_Module_Doc Script.png)
 
-After that, go to the desired document type - in our example `Invoice`, open `Scripts` , copy the script below and overwrite the example with this one. Then click on `SAVE`.
+Next, go to the desired document type, for this example we will use `Invoice`, and open `Scripts`. Copy the script below and replace the example with this one. Then click on `SAVE`.
 
 ![](/_images/doc2/Modules/doc-script/Script_Invoice_Scripts.png)
 
