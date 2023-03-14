@@ -107,7 +107,7 @@ Step one is to drag and drop a `Label` between these two fields, once added you 
 
 ![](/_images/doc2/Modules/layout-builder/Image16-Blank_Spaces_7.png)
 
-(As you can see in the above image, form element labels are assigned a random name which can be changed but this will have no effect on the layout)
+(As you can see in the above image, form element labels are assigned a random name which can be changed, but this will have no effect on the layout)
 
 The result from doing this will then be
 
