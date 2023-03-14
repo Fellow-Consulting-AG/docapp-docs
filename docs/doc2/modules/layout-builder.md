@@ -17,7 +17,7 @@ First of all, ensure that the Layout Manager feature is activated. This can be d
 
 ![](/_images/doc2/Modules/layout-builder/Image1-Accessing_Layout_Manager.png)
 
-After this is done you can access the Layout Builder via Settings > Document Types, once on this page you can select from the various document types you have created and either select `Edit Layout` as shown below.
+After this is done you can access the Layout Builder via Settings > Document Types, once on this page you can select from the various document types you have created and either select `Edit Layout` as shown below
 
 ![](/_images/doc2/Modules/layout-builder/Image2-Edit_Layout.png)
 
@@ -59,9 +59,9 @@ These are a set of default fields that can be dragged and dropped into the layou
 
 `Label` - This is a field that can be used to create uneditable text, this could be used to create sub-headings or any other desired uneditable text when on the validation screen.
 
-`Checkbox` - This creates a boolean type field which can be checked or unchecked.
+`Check Box` - This creates a boolean type field which can be checked or unchecked.
 
-`Multi Checkbox` - This functions the same way as the `Checkbox` but can be used when the user knows they will be adding multiple checkboxes in one section.
+`Multi Check Box` - This functions the same way as the `Check Box` but can be used when the user knows they will be adding multiple checkboxes in one section.
 
 `Horizontal Separator` - This creates a horizontal line on the layout that can be used to split up sections within a group on the layout.
 
