@@ -75,38 +75,35 @@ These are a set of default fields that can be dragged and dropped into the layou
 
 The user is able to create their own custom groups and fields for a document type, this can be done when originally creating a document type but also by selecting `Fields` when on the Document Types page in Settings.
 
+![](/_images/doc2/Modules/layout-builder/Image10-Blank_Spaces_1.png)
+
 ## Creating blank spaces
 
 <ins>The 100 percent rule</ins>
 
-![](/_images/doc2/Modules/layout-builder/Image10-Blank_Spaces_1.png)
+![](/_images/doc2/Modules/layout-builder/Image11-Blank_Spaces_2.png)
 
 In order to create the above space on the layout, a `Label` from the Form Elements must be used in a special way. The reason for this is that the Layout Manager operates according to a 100 space per line system in that 1 space represents 1 percent of a line, this means that fields can only take up 100 spaces per line as shown below.
 
-![](/_images/doc2/Modules/layout-builder/Image11-Blank_Spaces_2.png)
+![](/_images/doc2/Modules/layout-builder/Image12-Blank_Spaces_3.png)
 
 This means that the user must build the layout line by line according to this rule. For example lets say you would like to add the fields `Name` and `Date` in the same line but would like the `Name` field to be larger. This can be done by dragging and dropping the `Text` field from the Form Elements drop down and naming each field `Name` and `Date` as shown.
 
-![](/_images/doc2/Modules/layout-builder/Image12-Blank_Spaces_3.png)
+![](/_images/doc2/Modules/layout-builder/Image13-Blank_Spaces_4.png)
 
 The problem now exists that they are both the same size of 33 (this is the default size of all dragged and dropped fields) but you would like the `Name` field to be larger than the `Date` field and both fields should take up the entire line on the layout. Therefore, by following the 100 percent rule, you can set the `Name` and `Date` fields to any combination of 100 that you would desire. This of course depends on how large you would like each individual field but for the purpose of this example we will set the `Name` field to 70 and the `Date` field to 30, the results are:
 
-![](/_images/doc2/Modules/layout-builder/Image13-Blank_Spaces_4.png)
+![](/_images/doc2/Modules/layout-builder/Image14-Blank_Spaces_5.png)
 
 This same rule applies to all fields in the Layout Manager.
-
 
 Now that this rule has been explained, creating blank spaces will make more sense. As previously mentioned, in order to create a blank space you have to use a `Label` from the Form Elements.
 
 For example, let’s say that you would like to create a blank space between these two fields.
 
-![](/_images/doc2/Modules/layout-builder/Image14-Blank_Spaces_5.png)
-
-Step one is to drag and drop a `Label` between these two fields like so,
-
 ![](/_images/doc2/Modules/layout-builder/Image15-Blank_Spaces_6.png)
 
-once added you can click on the `Label` field you just added and on the left you will be presented with the properties of the field. Now, in the same way you would create or change the name of a field as shown previously, you will remove any name from the `Label` property like so
+Step one is to drag and drop a `Label` between these two fields, once added you can click on the `Label` field you just added and on the left you will be presented with the properties of the field. Now, in the same way you would create or change the name of a field as shown previously, you will remove any name from the `Label` property like so
 
 ![](/_images/doc2/Modules/layout-builder/Image16-Blank_Spaces_7.png)
 
