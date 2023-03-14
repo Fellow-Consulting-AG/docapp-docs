@@ -20,7 +20,7 @@ After you have uploaded a document as described [here](/doc2/dashboard/) and per
 
 ![](/_images/doc2/Document Validation/DOC2_invoice-details_2.png)
 
-On the left-hand side, you can see the documents preview, where you can also jump from one to the other page when you document has more than just one page. In the middle part of the screen, you have the big overview of the document where you can also see the extracted values marked in purple. And, finally, on the right-hand side you have all the segments of the extracted values.
+On the left-hand side, you can see the documents preview, where you can also jump from one to the other page when your document has more than just one page. In the middle part of the screen, you have the big overview of the document where you can also see the extracted values marked in purple. And, finally, on the right-hand side you have all the segments of the extracted values.
 
 Let’s focus on this last part.
 
