@@ -106,6 +106,7 @@ For example, let’s say that you would like to create a blank space between the
 Step one is to drag and drop a `Label` between these two fields, once added you can click on the `Label` field you just added and on the left you will be presented with the properties of the field. Now, in the same way you would create or change the name of a field as shown previously, you will remove any name from the `Label` property like so
 
 ![](/_images/doc2/Modules/layout-builder/Image16-Blank_Spaces_7.png)
+
 (As you can see in the above image, form element labels are assigned a random name which can be changed but this will have no effect on the layout)
 
 The result from doing this will then be
