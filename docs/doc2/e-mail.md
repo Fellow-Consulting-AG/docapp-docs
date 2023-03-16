@@ -60,7 +60,7 @@ After you click the `IMPORT` button, the documents will be fetched from the mail
 
 ### Register App on Azure AD
 
-Follow the steps below to register an App to allow email ingestion in Ephesoft Transact using OAuth2:<br>
+Follow the steps below to register an App to allow email ingestion in DOC² using OAuth2:<br>
 :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
 **Note:** The permissions may require authorization from an administrator.
 :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
