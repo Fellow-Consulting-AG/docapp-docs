@@ -54,9 +54,11 @@ After you click the `IMPORT` button, the documents will be fetched from the mail
 <!-- If you have made the right decision to also use our [Workflow² APP](https://docs.polydocs.io/workflow/), you will find the corresponding workflows [here](https://docs.polydocs.io/example/gmail-import/) to automatically import your documents from your e-mail inbox to DOC². -->
 
 
-### Configuring Microsoft Email Services with OAuth2
 
-#### Register App on Azure AD
+
+## Configuring Microsoft Email Services with OAuth2
+
+### Register App on Azure AD
 
 Follow the steps below to register an App to allow email ingestion in Ephesoft Transact using OAuth2:
 :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
@@ -69,7 +71,7 @@ Note: The permissions may require authorization from an administrator.
 
 ![](/_images/doc2/email/Azure-Active-Directory.png)
 
-3. Under the **Manage** section, select **App registrations**.
+3. Under the **Manage** section, select `App registrations`.
 
 ![](/_images/doc2/email/App-registrations.png)
 
@@ -77,7 +79,7 @@ Note: The permissions may require authorization from an administrator.
 
 ![](/_images/doc2/email/App_new-registration.png)
 
-5. The **Register an application** screen displays. Enter the user-facing display name for the App in **Name**.
+5. The **Register an application** screen displays. Enter the user-facing display name for the App in `Name`.
 
 6. Select one of the following account types depending on your needs:
 
@@ -99,7 +101,7 @@ Note: The permissions may require authorization from an administrator.
 
 ![](/_images/doc2/email/Certificates-and-secrets.png)
 
-11. In the **Certificates & secrets** screen, click on **+ New client secret** button under **Client secrets** section:
+11. In the **Certificates & secrets** screen, click on `+ New client secret` button under **Client secrets** section:
 
 ![](/_images/doc2/email/New-client-secret.png)
 
