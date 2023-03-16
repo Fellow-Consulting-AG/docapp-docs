@@ -60,9 +60,9 @@ After you click the `IMPORT` button, the documents will be fetched from the mail
 
 ### Register App on Azure AD
 
-Follow the steps below to register an App to allow email ingestion in Ephesoft Transact using OAuth2:
+Follow the steps below to register an App to allow email ingestion in Ephesoft Transact using OAuth2:<br>
 :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
-Note: The permissions may require authorization from an administrator.
+**Note:** The permissions may require authorization from an administrator.
 :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
 
 1\. Sign in to the Azure Portal using your credentials.
@@ -109,9 +109,9 @@ Note: The permissions may require authorization from an administrator.
 
 ![](/_images/doc2/email/Add-a-client-secret_validity.png)
 
-It is recommended to fill in a description to identify this secret among many (as of now the limit is 2 secrets per App).
+It is recommended to fill in a description to identify this secret among many (as of now the limit is 2 secrets per App).<br>
 :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
-<ins>Note:</ins> Select this expiration date according to your company policy. Once expired, a new client secret will need to be created and specified for each email configuration where it was used previously.
+**Note:** Select this expiration date according to your company policy. Once expired, a new client secret will need to be created and specified for each email configuration where it was used previously.
 :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
 
 13\. The newly generated client secret will be visible. Copy this client secret Value to be used when configuring email ingestion for DOC² 
@@ -119,7 +119,7 @@ It is recommended to fill in a description to identify this secret among many (a
 ![](/_images/doc2/email/client-secrets_value.png)
 
 :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
-<ins>Important:</ins> Ensure that you have copied the client secret value as it will not display again once it is closed.
+**Important:** Ensure that you have copied the client secret value as it will not display again once it is closed.
 :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
 
 14\. Select **Authentication** on the left panel. This will present the **Authentication** screen on the right-hand side.
@@ -143,8 +143,8 @@ It is recommended to fill in a description to identify this secret among many (a
 ![](/_images/doc2/email/API-permissions-name-user-read.png)
 
  :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
- <ins>Note:</ins> This is a required permission. 
- :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
+ **Note:** This is a required permission. 
+ :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }<br>
  If this permission is not available, then add the permission with the steps mentioned below for <br> `Mail.ReadWrite` permission.
 
  19\. Click **+ Add a permission**.This will open the **Request API permissions** panel.
@@ -167,8 +167,8 @@ It is recommended to fill in a description to identify this secret among many (a
 ![](/_images/doc2/email/Mail.ReadWrite_2.png)
 
 24\. :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
-<ins>Note:</ins>Administrator permissions may be required. The administrator will have to authorize the App for using these permissions. 
-:fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
+**Note:** Administrator permissions may be required. The administrator will have to authorize the App for using these permissions. 
+:fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }<br>
 Once authorized the granted status will be indicated as follows:
 
 ![](/_images/doc2/email/Configured-permissions.png)
