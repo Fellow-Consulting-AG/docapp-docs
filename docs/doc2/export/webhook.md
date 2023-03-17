@@ -21,12 +21,12 @@ Login to DOC², click on **SETTINGS** and select `Export`.
 
 Click on **+ NEW**.
 
-![](docs/_images/doc2/export webhook/DOC2_ew2.png)
+![](/_images/doc2/export webhook/DOC2_ew2.png)
 
 
 Choose **Webhook**.
 
-![](docs/_images/doc2/export webhook/DOC2_ew3.png)
+![](/_images/doc2/export webhook/DOC2_ew3.png)
 
 
 Enter the webhook URL, select document type and click on `SAVE`.
