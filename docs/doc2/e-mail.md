@@ -10,7 +10,7 @@ tags:
 
 ## Folder Import
 
-If you want to import documents from a specific email folder, <br> here are the steps you need to take:
+If you want to import documents from a specific email folder, here are the steps you need to take:
 
 Your email folder could look like this.
 
