@@ -14,26 +14,23 @@ A webhook is an easy way to exchange data between online applications.
 
 Follow these steps to configure the webhook export.
 
-Login to DOC², click on SETTINGS and select "Export".
+Login to DOC², click on **SETTINGS** and select `Export`.
 
-![](/_images/doc2/image-1-1024x695.png)
+![](/_images/doc2/export webhook/DOC2_ew1.png)
 
-SETTINGS - Export
 
-Click on "ADD INTEGRATION".
+Click on **+ NEW**.
 
-![](/_images/doc2/image-7-1024x751.png)
+![](/_images/doc2/export webhook/DOC2_ew2.png)
 
-SETTINGS - Export - ADD INTEGRATION
 
-Choose "Webhook".
+Choose **Webhook**.
 
-![](/_images/doc2/image-10-1024x344.png)
+![](/_images/doc2/export webhook/DOC2_ew3.png)
 
-Settings - Export - Add integration - Webhook
 
-Enter the webhook URL and click on "Save".
+Enter the webhook URL, select document type and click on `SAVE`.
 
-![](/_images/doc2/image-11-1024x350.png)
+![](/_images/doc2/export webhook/DOC2_ew4.png)
 
-Settings - Export - Add integration - Webhook - Webhook settings
+
