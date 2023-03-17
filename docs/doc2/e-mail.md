@@ -53,7 +53,7 @@ After you click the `IMPORT` button, the documents will be fetched from the mail
 <!-- If you have made the right decision to also use our [Workflow² APP](https://docs.polydocs.io/workflow/), you will find the corresponding workflows [here](https://docs.polydocs.io/example/gmail-import/) to automatically import your documents from your e-mail inbox to DOC². -->
 
 
-
+---
 
 ## Configuring Microsoft Email Services with OAuth2
 
