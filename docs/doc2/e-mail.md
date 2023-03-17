@@ -8,7 +8,7 @@ tags:
   - DOC²
 ---
 
-### Folder Import
+## Folder Import
 
 If you want to import documents from a specific email folder, <br> here are the steps you need to take:
 
