@@ -10,11 +10,11 @@ tags:
 
 ### Folder Import
 
-If you want to import documents from a specific email folder, here are the steps you need to take:
+If you want to import documents from a specific email folder, <br> here are the steps you need to take:
 
 Your email folder could look like this.
 
-![](/_images/doc2/email/AllImportOptions_Email_Folder.png)
+![](/_images/doc2/email/AllImportOptions_Email_Folder.png)<br>
 
 
 Go to **SETTINGS** in the top bar and click on `Import`.
@@ -34,8 +34,8 @@ What you need to do is enter the protocol (IMAP or POP3), the encryption (SSL or
 This example is for a google email account:
 
 !!! note "Important due to changes made by Google"
-		You now need to set up 2-Factor Authentication and create an App-Password which you have to use here to make sure that the E-Mail import will work.
-
+		You now need to set up 2-Factor Authentication and create an App-Password which you have to use here to make sure that the E-Mail import will work. 
+<br>
 After you have entered all required fields of your respective provider, save the data.
 
 ![](/_images/doc2/email/AllImportOptions_Email_3.png)
@@ -47,7 +47,7 @@ You can test the login by pressing the `TEST LOGIN` button. If all data is corre
 
 After you click the `IMPORT` button, the documents will be fetched from the mailbox and you will be taken directly to the Dashboard.
 
-![](/_images/doc2/email/AllImportOptions_Email_6.png)
+![](/_images/doc2/email/AllImportOptions_Email_6.png)<br>
 
 
 <!-- If you have made the right decision to also use our [Workflow² APP](https://docs.polydocs.io/workflow/), you will find the corresponding workflows [here](https://docs.polydocs.io/example/gmail-import/) to automatically import your documents from your e-mail inbox to DOC². -->
@@ -62,114 +62,70 @@ After you click the `IMPORT` button, the documents will be fetched from the mail
 Follow the steps below to register an App to allow email ingestion in DOC² using OAuth2:<br>
 :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
 **Note:** The permissions may require authorization from an administrator.
-:fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
+:fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }<br><br>
 
-**1\.** Sign in to the Azure Portal using your credentials.
-
-
+**1\.** Sign in to the Azure Portal using your credentials.<br><br>
 
 **2\.** From Azure services, locate and open Azure Active Directory (also known as Azure AD).
 
-![](/_images/doc2/email/Azure-Active-Directory.png)
-
-
+![](/_images/doc2/email/Azure-Active-Directory.png)<br><br>
 
 **3\.** Under the **Manage** section, select `App registrations`.
 
-![](/_images/doc2/email/App-registrations.png)
-
-
+![](/_images/doc2/email/App-registrations.png)<br><br>
 
 **4\.** In the App registrations screen, click **+ New registration**.
 
-![](/_images/doc2/email/App_new-registration.png)
+![](/_images/doc2/email/App_new-registration.png)<br><br>
 
-
-
-**5\.** The **Register an application** screen displays. Enter the user-facing display name for the App in `Name`.
-
-
+**5\.** The **Register an application** screen displays. Enter the user-facing display name for the App in `Name`.<br><br>
 
 **6\.** Select one of the following account types depending on your needs:
 
  - **Accounts in any organizational directory (Any Azure AD directory – Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**
 
-![](/_images/doc2/email/Register-an-application-screen.png)
+![](/_images/doc2/email/Register-an-application-screen.png)<br><br>
 
-
-
-**7\.** Leave the option **Redirect URI (optional)** as is.
-
-
+**7\.** Leave the option **Redirect URI (optional)** as is.<br><br>
 
 **8\.** Click **Register** to complete the App registration. This will return you to the screen for the new App.
-
-![](/_images/doc2/email/Register.png)
-
-
+![](/_images/doc2/email/Register.png)<br><br>
 
 **9\.** In the App screen, locate the **Application (client) ID**. Copy it to be used when configuring email ingestion for DOC².
-
-![](/_images/doc2/email/Application ID_copy-to-clipboard.png)
-
-
+![](/_images/doc2/email/Application ID_copy-to-clipboard.png)<br><br>
 
 **10\.** From left panel, select **Certificates & secrets**:
-
-![](/_images/doc2/email/Certificates-and-secrets.png)
-
-
+![](/_images/doc2/email/Certificates-and-secrets.png)<br><br>
 
 **11\.** In the **Certificates & secrets** screen, click on `+ New client secret` button under **Client secrets** section:
-
-![](/_images/doc2/email/New-client-secret.png)
-
-
+![](/_images/doc2/email/New-client-secret.png)<br><br>
 
 **12\.** In the **Add a client secret** dialog box, click the `Add` button:
-
 ![](/_images/doc2/email/Add-a-client-secret_validity.png)
 
 It is recommended to fill in a description to identify this secret among many (as of now the limit is 2 secrets per App).<br>
 :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
 **Note:** Select this expiration date according to your company policy. Once expired, a new client secret will need to be created and specified for each email configuration where it was used previously.
-:fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
-
-
+:fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }<br><br>
 
 **13\.** The newly generated client secret will be visible. Copy this client secret Value to be used when configuring email ingestion for DOC² 
-
 ![](/_images/doc2/email/client-secrets_value.png)
 
 :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
 **Important:** Ensure that you have copied the client secret value as it will not display again once it is closed.
-:fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
-
-
+:fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }<br><br>
 
 **14\.** Select **Authentication** on the left panel. This will present the **Authentication** screen on the right-hand side.
-
-![](/_images/doc2/email/Authentication.png)
-
-
+![](/_images/doc2/email/Authentication.png)<br><br>
 
 **15\.** In the **Advanced settings** section, click `Yes` for **Allow public client flows**.
-
-![](/_images/doc2/email/Allow-public-client-flows.png)
-
-
+![](/_images/doc2/email/Allow-public-client-flows.png)<br><br>
 
 **16\.** Click `Save` to confirm changes.
-
-![](/_images/doc2/email/Advanced settings_save.png)
-
-
+![](/_images/doc2/email/Advanced settings_save.png)<br><br>
 
 **17\.** Select **API permissions** on the left panel. This will present the API permissions screen.
-
-![](/_images/doc2/email/API-permissions.png)
-
-
+![](/_images/doc2/email/API-permissions.png)<br><br>
 
 **18\.** By default the **User.Read** permission from **Microsoft Graph** is present, leave this as is.
 
@@ -178,45 +134,29 @@ It is recommended to fill in a description to identify this secret among many (a
  :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
  **Note:** This is a required permission. 
  :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }<br>
- If this permission is not available, then add the permission with the steps mentioned below for <br> `Mail.ReadWrite` permission.
-
-
+ If this permission is not available, then add the permission with the steps mentioned below for <br> `Mail.ReadWrite` permission.<br><br>
 
  **19\.** Click **+ Add a permission**.This will open the **Request API permissions** panel.
 
 ![](/_images/doc2/email/Add-a-permission.png)
-![](/_images/doc2/email/Microsoft-Graph.png)
+![](/_images/doc2/email/Microsoft-Graph.png)<br><br>
 
-
-
-**20\.** Click **Microsoft Graph**.
-
-
+**20\.** Click **Microsoft Graph**.<br><br>
 
 **21\.** From the two sub-categories, select **Delegated permissions**.
- 
-![](/_images/doc2/email/Delegated-permissions.png)
-
-
+![](/_images/doc2/email/Delegated-permissions.png)<br><br>
 
 **22\.** Type `Mail.ReadWrite` in the search box. Select the Mail.ReadWrite checkbox for the permission.
-
-![](/_images/doc2/email/Mail.ReadWrite_1.png)
-
-
+![](/_images/doc2/email/Mail.ReadWrite_1.png)<br><br>
 
 **23\.** This will enable the `Add permissions` button at the bottom of the panel. Click `Add permissions`. This will add the **Mail.ReadWrite** permission to the list of **Configured permissions** for the App.
-
-![](/_images/doc2/email/Mail.ReadWrite_2.png)
-
-
+![](/_images/doc2/email/Mail.ReadWrite_2.png)<br><br>
 
 **24\.** :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
 **Note:** Administrator permissions may be required. The administrator will have to authorize the App for using these permissions. 
 :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }<br>
 Once authorized the granted status will be indicated as follows:
-
-![](/_images/doc2/email/Configured-permissions.png)
+![](/_images/doc2/email/Configured-permissions.png)<br><br>
 
 This concludes the steps for App registration for DOC²  email ingestion using OAuth2.
 
