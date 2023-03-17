@@ -42,7 +42,7 @@ After you have entered all required fields of your respective provider, save the
 
 You can test the login by pressing the `TEST LOGIN` button. If all data is correct you will get the following feedback.
 
-![](/_images/doc2/AllImportOptions_Email_4.png)
+![](/_images/doc2/email/AllImportOptions_Email_4.png)
 
 
 After you click the `IMPORT` button, the documents will be fetched from the mailbox and you will be taken directly to the Dashboard.
