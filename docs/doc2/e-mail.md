@@ -55,7 +55,7 @@ After you click the `IMPORT` button, the documents will be fetched from the mail
 
 ---
 
-## Configuring Microsoft Email Services with OAuth2<br>
+## Configuring Microsoft Email Services with OAuth2
 
 ### Register App on Azure AD
 
@@ -98,6 +98,7 @@ Follow the steps below to register an App to allow email ingestion in DOC² usin
 ![](/_images/doc2/email/Certificates-and-secrets.png)<br><br>
 
 **11\.** In the **Certificates & secrets** screen, click on `+ New client secret` button under **Client secrets** section:
+
 ![](/_images/doc2/email/New-client-secret.png)<br><br>
 
 **12\.** In the **Add a client secret** dialog box, click the `Add` button:
@@ -115,7 +116,7 @@ It is recommended to fill in a description to identify this secret among many (a
 **Important:** Ensure that you have copied the client secret value as it will not display again once it is closed.
 :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }<br><br>
 
-**14\.** Select **Authentication** on the left panel. This will present the **Authentication** screen on the right-hand side.
+**14\.** Select **Authentication** on the left panel. This will present the **Authentication** screen on the right-hand side.<br>
 ![](/_images/doc2/email/Authentication.png)<br><br>
 
 **15\.** In the **Advanced settings** section, click `Yes` for **Allow public client flows**.
@@ -134,7 +135,7 @@ It is recommended to fill in a description to identify this secret among many (a
  :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
  **Note:** This is a required permission. 
  :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }<br>
- If this permission is not available, then add the permission with the steps mentioned below for <br> `Mail.ReadWrite` permission.<br><br>
+ If this permission is not available, then add the permission with the steps mentioned below for `Mail.ReadWrite` permission.<br><br>
 
  **19\.** Click **+ Add a permission**.This will open the **Request API permissions** panel.
 
@@ -150,12 +151,14 @@ It is recommended to fill in a description to identify this secret among many (a
 ![](/_images/doc2/email/Mail.ReadWrite_1.png)<br><br>
 
 **23\.** This will enable the `Add permissions` button at the bottom of the panel. Click `Add permissions`. This will add the **Mail.ReadWrite** permission to the list of **Configured permissions** for the App.
+
 ![](/_images/doc2/email/Mail.ReadWrite_2.png)<br><br>
 
 **24\.** :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
 **Note:** Administrator permissions may be required. The administrator will have to authorize the App for using these permissions. 
 :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }<br>
 Once authorized the granted status will be indicated as follows:
+
 ![](/_images/doc2/email/Configured-permissions.png)<br><br>
 
 This concludes the steps for App registration for DOC²  email ingestion using OAuth2.
