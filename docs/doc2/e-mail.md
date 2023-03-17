@@ -47,7 +47,7 @@ You can test the login by pressing the `TEST LOGIN` button. If all data is corre
 
 After you click the `IMPORT` button, the documents will be fetched from the mailbox and you will be taken directly to the Dashboard.
 
-![](/_images/doc2/email/AllImportOptions_Email_6.png)<br>
+![](/_images/doc2/email/AllImportOptions_Email_6.png)<br><br>
 
 
 <!-- If you have made the right decision to also use our [Workflow² APP](https://docs.polydocs.io/workflow/), you will find the corresponding workflows [here](https://docs.polydocs.io/example/gmail-import/) to automatically import your documents from your e-mail inbox to DOC². -->
