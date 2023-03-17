@@ -17,7 +17,7 @@ Your email folder could look like this.
 ![](/_images/doc2/email/AllImportOptions_Email_Folder.png)
 
 
-Go to SETTINGS in the top bar and click on "Import".
+Go to **SETTINGS** in the top bar and click on `Import`.
 
 ![](/_images/doc2/email/AllImportOptions_Email_1.png)
 
@@ -36,15 +36,14 @@ This example is for a google email account:
 !!! note "Important due to changes made by Google"
 		You now need to set up 2-Factor Authentication and create an App-Password which you have to use here to make sure that the E-Mail import will work.
 
-![](/_images/doc2/email/AllImportOptions_Email_3.png)
-
 After you have entered all required fields of your respective provider, save the data.
 
-![](/_images/doc2/AllImportOptions_Email_4.png)
+![](/_images/doc2/email/AllImportOptions_Email_3.png)
 
 You can test the login by pressing the `TEST LOGIN` button. If all data is correct you will get the following feedback.
 
-![](/_images/doc2/AllImportOptions_Email_5.png)
+![](/_images/doc2/AllImportOptions_Email_4.png)
+
 
 After you click the `IMPORT` button, the documents will be fetched from the mailbox and you will be taken directly to the Dashboard.
 
