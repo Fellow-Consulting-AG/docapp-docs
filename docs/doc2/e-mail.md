@@ -55,7 +55,7 @@ After you click the `IMPORT` button, the documents will be fetched from the mail
 
 ---
 
-## Configuring Microsoft Email Services with OAuth2
+## Configuring Microsoft Email Services with OAuth2<br><br>
 
 ### Register App on Azure AD
 
