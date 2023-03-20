@@ -59,12 +59,12 @@ On this screen the approver can add comments and select who approved the documen
 
 ## Second Approval
 
-After second approval the document will go into the status of “Pending Second Approval”.
+After first approval is completed, the document will go into the status of **Pending Second Approval**.
 
 ![](/_images/doc2/Modules/Approval/Approval_9_pending2ndapproval_status.png)
 
-The same process occurs as in the 1st approval (the assignee will receive an email with a link) and they will be taken to the same screen for the 2nd approval.
+The same process occurs as in the first approval (the assignee will receive an email with a link) and they will be taken to the same screen for the second approval.
 
 ![](/_images/doc2/Modules/Approval/Approval_10_2ndApprovalscreen.png)
 
-After the 2nd approver has saved and approved the document, only then will the document be exported.
+After the second approver has saved and approved the document, only then will the document be exported.
