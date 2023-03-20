@@ -21,7 +21,6 @@ tags:
 
 ![DOC2 - SSO](/_images/doc2/DOC2_Identity-Service-Provider-Settings.png)
 
-![](/_images/doc2/DOC2_Identity-Service-Provider-Settings.png)
 
 The step by step guide to configure SSO in Infor Cloud can be found [here](/doc2/doc2-with-infor/configuring-sso-in-cloud/).
 
