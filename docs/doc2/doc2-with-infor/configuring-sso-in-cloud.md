@@ -55,13 +55,13 @@ c. Now click on the “+” sign and add DOC² as Service Provider. (View step 4
 
 a) Log in using the URL [https://app.polydocs.io/](https://app.polydocs.io/) with the login details you received from us.
 
-b) Go to SETTINGS (on top bar) and choose "SSO Settings" down at the bottom of the list.
+b) Go to SETTINGS (on top bar) and choose **Integration** where you will find all the information you need for the following steps.
 
-Here you will find all the information you need for the following steps.
+![](/_images/doc2/DOC2-Settings-Integration.png){ loading=lazy }
 
 c) Download the certificate
 
-![](/_images/doc2/DOC2_SSO-Service-Provider-Settings-1024x640.png){ loading=lazy }
+![](/_images/doc2/DOC2_SSO-Service-Provider-Settings.png){ loading=lazy }
 
 **4\. Filling in the Service Provider details with the help of SSO Service Provider Settings in DOC²**
 
@@ -93,7 +93,7 @@ a) Click on IMPORT and then choose the METADATA file that you have already downl
 
 b) Click on CONFIGURE
 
-![](/_images/doc2/DOC2_identity-service-provider-settings_completed-1024x316.png){ loading=lazy }
+![](/_images/doc2/DOC2_identity-service-provider-settings_completed.png){ loading=lazy }
 
 This part is successfully completed when you see the following pop-up.
 
@@ -119,4 +119,4 @@ c) Fill out all the required fields, like in the image below, but with your own 
 - Go back to the burger menu in Infor and select the icon you just created
 - You should then be at the dashboard of DOC²
 
-![](/_images/doc2/Sign-in-over-SSO-1024x640.png){ loading=lazy }
+![](/_images/doc2/DOC2-Sign-in-over-SSO.png){ loading=lazy }
