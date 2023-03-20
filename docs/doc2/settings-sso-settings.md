@@ -15,13 +15,12 @@ tags:
 
 1\. Log in with the URL [https://app.polydocs.io/](https://app.polydocs.io/) using the login details you received from us.
 
-2\. Go to SETTINGS (on top bar) and select SSO Settings located at the bottom of the list.
+2\. Go to SETTINGS (on top bar) and choose **Integration** where you will find all the information you need for the following steps.
 
-Here you will find all the information you need for the following steps.
+![](/_images/doc2/DOC2-Settings-Integration.png)
 
-![DOC2 - SSO](/_images/doc2/DOC2_SSO-Service-Provider-Settings_EN-1024x508.png)
+![DOC2 - SSO](/_images/doc2/DOC2_Identity-Service-Provider-Settings.png)
 
-![](/_images/doc2/DOC2_Identity-Service-Provider-Settings_EN-1024x319.png)
 
 The step by step guide to configure SSO in Infor Cloud can be found [here](/doc2/doc2-with-infor/configuring-sso-in-cloud/).
 
