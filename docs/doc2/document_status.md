@@ -18,9 +18,9 @@ tags:
 - `Upload`: The document is getting uploaded.
 - `OCR`: OCR is currently running on that document.
 - `Classification`: The document is getting classified.
-- `Zugferd import`: A Zugferd document is getting imported.
+- `ZUGFeRD import`: A ZUGFeRD document is getting imported.
 - `Ready for Validation`: The document is ready for validation.
-- `Zugferd export`: A Zugferd document is getting exported.
+- `ZUGFeRD export`: A ZUGFeRD document is getting exported.
 - `Workflow`: Workflow is currently running with this document.
 - `Pending approval`: Document has to be approved.
 - `Pending second approval`: Document has to be approved a second time.
