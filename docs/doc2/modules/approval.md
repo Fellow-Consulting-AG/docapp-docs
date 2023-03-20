@@ -10,7 +10,7 @@ tags:
 ---
 
 
-# Approve Before Export # 
+# Approve Before Export 
 
 This feature can be accessed via Settings > Document Processing > Module.
 
@@ -32,7 +32,7 @@ To edit the permissions select “View Permissions” and you will be taken to t
 
 Here you can see that you enable the Approval features to your liking.
 
-# Exporting #
+## Exporting
 
 When you are ready to export a document and have selected an export option from the dropdown at the bottom of the document, as shown below
 
@@ -48,7 +48,7 @@ You can set the approver by using the assign button on the Dashboard and you can
 
 ![](/_images/doc2/Modules/Approval/Approval_7_Settings_email-notification.png)
 
-## First Approval ##
+## First Approval
 
 The assignee will receive an email with the link to approve the document, after pressing the link in the email they will be taken to this page for First Approval.
 
@@ -57,7 +57,7 @@ The assignee will receive an email with the link to approve the document, after 
 On this screen the approver can add comments and select who approved the document. When done, the approver can save and then approve the document.
 
 
-## Second Approval ##
+## Second Approval
 
 After second approval the document will go into the status of “Pending Second Approval”.
 
