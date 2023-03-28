@@ -8,7 +8,7 @@ tags:
   - Columns
 ---
 
-**Define tables**
+### Define tables
 
 To define tables and columns on a document please import a document, open it and go to table extraction view as shown before (via "Line Items").
 
@@ -26,7 +26,7 @@ You are now able to use the autodetect tables functionality and the system will 
 
 If the system is not able to find the tables automatically, you can manually define the tables on the document like shown in the video below:
 
-**Define columns**
+### Define columns
 
 Once the tables are defined you can manually define the columns via the following button:
 
