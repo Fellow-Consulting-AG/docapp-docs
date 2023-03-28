@@ -9,7 +9,7 @@ tags:
 
 # Add new table column
 
-DOC² offers the possibility to manually create columns for extracted documents. This is necessary when there is a need to manually map columns to rows (fields) on the extracted document. When this is necessary and how it works is available here: [Manual row selection](/doc2/table/manual-row-selection/)
+DOC² offers the possibility to manually create columns for extracted documents. This is necessary when there is a need to manually map columns to rows (fields) on the extracted document. When this is necessary and how it works is available here: [Manual row selection](/doc2/table-extraction/manual-row-selection/)
 
 Import any document and open it. Navigate to table extraction view via the "LINE ITEMS" button:
 
@@ -27,6 +27,6 @@ In the window that opens, you can specify a name for the column to be generated.
 
 ![](/_images/doc2/Table Extraction/4-Add new column/Image_17_new_table_column_page.png){ loading=lazy }
 
-Once the column has been created by clicking on "PROCEED", it can be used for manual mappings ([](/doc2/doc2app/table-train/training-of-table-extraction/manual-row-selection/)[Manual row selection](/doc2/table/manual-row-selection/)).
+Once the column has been created by clicking on "PROCEED", it can be used for manual mappings ([](/doc2/doc2app/table-train/training-of-table-extraction/manual-row-selection/)[Manual row selection](/doc2/table-extraction/manual-row-selection/).
 
 ![](/_images/doc2/Table Extraction/4-Add new column/Image_18_proceed.png){ loading=lazy }

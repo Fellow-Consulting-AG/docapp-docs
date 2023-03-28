@@ -24,11 +24,11 @@ In this case it is not possible for the system to automatically define to which 
 
 To solve this issue DOC² offers you the option to manually select and map information on a document to any column.
 
-First of all, make sure "Training Mode" is activated:
+First of all, make sure **`Training Mode`** is activated:
 
 ![](/_images/doc2/Table Extraction/7-Manual row selection/Image_24_training_mode_on.png)
 
-Next you need to activate "Row Data Edit Mode":
+Next you need to activate **`Row Data Edit Mode`**:
 
 ![](/_images/doc2/Table Extraction/7-Manual row selection/Image_25_Row_data_edit_on.png)
 
@@ -38,9 +38,9 @@ Please note that the manual mapping of text to a column is only possible for ext
 
 The rows highlighted in violet can not be mapped manually as the mapping has already been done via the columns defined on the document.
 
-Extractable columns need to be created first. You can learn how to do this here: [Add new table column](/doc2/table/add-new-table-column/)
+Extractable columns need to be created first. You can learn how to do this here: [Add new table column](/doc2/table-extraction/add-new-table-column/)
 
-Once the column has been created, and you have activated both "Training Mode" and "Row Data Edit Mode" will you be able to map text on the document to the column as shown in the video below:
+Once the column has been created, and you have activated both `Training Mode` and `Row Data Edit Mode` will you be able to map text on the document to the column as shown in the video below:
 
 In the video you can see how to:
 
