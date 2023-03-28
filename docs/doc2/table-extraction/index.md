@@ -24,18 +24,14 @@ The extraction of data in tables can be achieved by following the steps below:
 
 5\. Click on the table icon inside the textbox.
 
-![](/_images/doc2/Line-Items.png)
+![](/_images/doc2/Table Extraction/1-Table Extraction/Image_1_line_items.png)
 
 You will end up in the table extraction view screen.
 
 If the document contains very simple tables it will detect and extract them automatically:
 
-![](/_images/doc2/image-17-1024x92.png)
+![](/_images/doc2/Table Extraction/1-Table Extraction/Image_2_easy_table.png)
 
-In practice, tables on documents are often much more complex and have a wide variety of formatting and arrangements. For example, text may extend across several columns or there may be several lines of text in one position line. For example, in the case of long item descriptions or similar:
-
-![](/_images/doc2/image-16.png)
-
-And this is where the advantage of DOC² and its table extraction functionality comes into play. There are several ways to train the table extraction functionality and to achieve the best possible result, even with demanding tables.
+In practice, tables on documents are often much more complex and have a wide variety of formatting and arrangements. For example, text may extend across several columns or there may be several lines of text in one position line. For example, in the case of long item descriptions or similar, this is where the advantage of DOC² and its table extraction functionality comes into play. There are several ways to train the table extraction functionality and to achieve the best possible result, even with demanding tables.
 
 In the following sections you will learn how to train a table manually and what functionalities are available for this.
