@@ -14,7 +14,7 @@ Once a table has been extracted via DOC² and the columns have been mapped ([Map
 
 [Sign up for a 30 days free trail](https://app.polydocs.io){ .md-button .md-button--primary }
 
-## What does this mean?
+### What does this mean?
 
 All documents, from order confirmations to invoices, can vary in complexity from company to company. For example, in documents, information may be presented in tables in some columns across multiple rows and in other columns across only one row.
 
@@ -26,7 +26,7 @@ At this point, another advantage of DOC² comes into play. It extracts the data 
 
 ![](/_images/doc2/Table Extraction/6-Group Function/Image_21_grouping_example_doc2.png){ loading=lazy }
 
-BUT: It is now possible to group data based on a specific column. That means that, in this case, it can be grouped by the column "Position" as shown in the following video. This in turn groups the rows of the "Description" column into one row. So that at the end you get a structured overall picture of the export and the data can now be processed further.
+**BUT**: It is now possible to group data based on a specific column. That means that, in this case, it can be grouped by the column "Position" as shown in the following video. This in turn groups the rows of the "Description" column into one row. So that at the end you get a structured overall picture of the export and the data can now be processed further.
 
 If the grouping was created by mistake, it can be removed at any time, as also shown in the video.
 

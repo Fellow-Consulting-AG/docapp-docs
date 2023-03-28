@@ -20,14 +20,14 @@ _______________________________
 
 ## Training vs Correction Mode
 
-##### Training Mode:
+### Training Mode:
 
 - Only mapped columns are read. You are not able to change the text manually.
 - The delete row button is not visible
 
 ![](/_images/doc2/Table Extraction/2-Training table extraction/Image_3_training_mode.png){ loading=lazy }
 
-##### Correction Mode:
+### Correction Mode:
 
 - The delete row and add new row options are available
 - You are able to manually change the texts of the columns 

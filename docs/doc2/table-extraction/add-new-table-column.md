@@ -17,7 +17,7 @@ Import any document and open it. Navigate to table extraction view via the "LINE
 
 ![](/_images/doc2/Table Extraction/4-Add new column/Image_15_table_train_button.png){ loading=lazy }
 
-## Activate the training mode.
+### Activate the training mode
 
 Columns can be added manually using the following button.
 
