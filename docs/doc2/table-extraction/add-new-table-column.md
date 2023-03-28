@@ -27,6 +27,6 @@ In the window that opens, you can specify a name for the column to be generated.
 
 ![](/_images/doc2/Table Extraction/4-Add new column/Image_17_new_table_column_page.png){ loading=lazy }
 
-Once the column has been created by clicking on "PROCEED", it can be used for manual mappings ([](/doc2/doc2app/table-train/training-of-table-extraction/manual-row-selection/)[Manual row selection](/doc2/table-extraction/manual-row-selection/).
+Once the column has been created by clicking on "PROCEED", it can be used for manual mappings ([](/doc2/doc2app/table-train/training-of-table-extraction/manual-row-selection/)[Manual row selection](/doc2/table-extraction/manual-row-selection/)).
 
 ![](/_images/doc2/Table Extraction/4-Add new column/Image_18_proceed.png){ loading=lazy }
