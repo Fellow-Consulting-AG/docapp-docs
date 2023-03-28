@@ -8,15 +8,15 @@ tags:
   - Columns
 ---
 
-**Define tables**
+### Define tables
 
 To define tables and columns on a document please import a document, open it and go to table extraction view as shown before (via "Line Items").
 
-You will end up in following screen where you can activate Training Mode:
+You will end up in following screen where you can activate **`Training Mode`**:
 
 ![](/_images/doc2/Table Extraction/3-Define tables and columns/Image_6_activate_training_mode.png)
 
-By pressing the "Edit" button, table selection mode will be activated and you will be able to edit the document shown on the left side:
+By pressing the `Edit` button, table selection mode will be activated and you will be able to edit the document shown on the left side:
 
 ![](/_images/doc2/Table Extraction/3-Define tables and columns/Image_7_edit_button.png)
 
@@ -26,7 +26,7 @@ You are now able to use the autodetect tables functionality and the system will 
 
 If the system is not able to find the tables automatically, you can manually define the tables on the document like shown in the video below:
 
-**Define columns**
+### Define columns
 
 Once the tables are defined you can manually define the columns via the following button:
 
@@ -48,7 +48,7 @@ If you defined a column by mistake it can be selected by clicking it and then de
 
 Note: The button is only visible if the column is selected.
 
-If you are done defining all tables and columns on your document use the "Save" button to activate your changes and to extract the data from the document:
+If you are done defining all tables and columns on your document use the `SAVE` button to activate your changes and to extract the data from the document:
 
 ![](/_images/doc2/Table Extraction/3-Define tables and columns/Image_13_save_button.png)
 
