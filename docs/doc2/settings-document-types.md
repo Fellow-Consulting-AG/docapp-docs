@@ -71,7 +71,7 @@ For each field you can check the boxes if they are:
 ![](/_images/doc2/Settings/Users/Document Types/Image_5_field_settings.png)
 
 If you have completed all your settings, and you wish to save them, please confirm this with the `SAVE SETTINGS` button. If this is not done, the settings will not be applied.<br>
-
+<br>
 
 ![](/_images/doc2/Settings/Users/Document Types/Image_6_save_settings.png)
 
