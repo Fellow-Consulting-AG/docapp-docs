@@ -68,11 +68,11 @@ For each field you can check the boxes if they are:
 - FORMULA: Creation of a formula per field.
 
 
-![](docs/_images/doc2/Settings/Users/Document Types/Image_5_field_settings.png)
+![](/_images/doc2/Settings/Users/Document Types/Image_5_field_settings.png)
 
 If you have completed all your settings, and you wish to save them, please confirm this with the `SAVE SETTINGS` button. If this is not done, the settings will not be applied.
 
-![](docs/_images/doc2/Settings/Users/Document Types/Image_6_save_settings.png)
+![](/_images/doc2/Settings/Users/Document Types/Image_6_save_settings.png)
 
 
 
