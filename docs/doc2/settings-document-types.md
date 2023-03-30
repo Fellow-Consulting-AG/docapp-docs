@@ -12,21 +12,21 @@ tags:
 
 In DOC² you will find the `SETTINGS` menu in the upper bar on `HOME` screen.
 
-![](/_images/doc2/DOC2_Dashboard_Settings.png)
+![](/_images/doc2/Settings/Users/Document Types/Image_1_settings.png)
 
 If you are logged in to DOC² as an admin, you will find all fields of a document that can be extracted under the respective document type.
 
 Open the menu **Document Types**.
 
-![](/_images/doc2/DOC2_Dashboard_Settings_Document Types.png)
+![](/_images/doc2/Settings/Users/Document Types/Image_2_doc_types_location.png)
 
 In the following overview you will find all the standard document types available to you:
 
-![](/_images/doc2/DOC2_Document Types.png)
+![](/_images/doc2/Settings/Users/Document Types/Image_3.png)
 
 To see which fields can be extracted, from an invoice for example, click on `FIELDS` for this document type.
 
-![](/_images/doc2/DOC2_Invoice_Fields.png)
+![](/_images/doc2/Settings/Users/Document Types/Image_4_fields.png)
 
 ### FIELD SETTINGS
 
@@ -68,17 +68,17 @@ For each field you can check the boxes if they are:
 - FORMULA: Creation of a formula per field.
 
 
-![](/_images/doc2/DOC2_field settings_fields.png)
+![](docs/_images/doc2/Settings/Users/Document Types/Image_5_field_settings.png)
 
 If you have completed all your settings, and you wish to save them, please confirm this with the `SAVE SETTINGS` button. If this is not done, the settings will not be applied.
 
-![](/_images/doc2/DOC2_field settings_fields_save settings.png)
+![](docs/_images/doc2/Settings/Users/Document Types/Image_6_save_settings.png)
 
 
 
 ### RECOGNITION SETTINGS
 
-![](/_images/doc2/DOC2_field settings_recognition settings.png)
+![](/_images/doc2/Settings/Users/Document Types/Image_7_recog_settings.png)
 
 **OCR:**
 
@@ -90,14 +90,14 @@ Here you can set the sensitivity of the MATCH SCORE function for all fields. Thi
 
 The button `RESTORE DEFAULTS` will reset both values back to "50".
 
-![](/_images/doc2/image-3.png)
+![](/_images/doc2/Settings/Users/Document Types/Image_8_ocr_matchscore_slider.png)
 
 
 ### PROFILE
 
 Here you can define the profile that will be used, either Default or ZUGFeRD.<br> In profile ZUGFeRD there are predefined fields that are mandatory for this type of invoice.<br> If you do not explicitly use ZUGFeRD, please select "Default".
 
-![](/_images/doc2/DOC2_field settings_profile.png)
+![](/_images/doc2/Settings/Users/Document Types/Image_9_profiles.png)
 
 
 

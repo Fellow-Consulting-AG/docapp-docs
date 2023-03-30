@@ -39,15 +39,15 @@ After completing steps **1.-3.**<br>
 
 source:   **email:{Pattern name}**  
 
-![Picture](/_images/doc2/DOC2_API_POST_document process.png){ loading=lazy }
+![Picture](/_images/doc2/Settings/Users/Integration/API calls examples/Image_4_api_call.png){ loading=lazy }
 
  
 **6.** Select the file you want to upload and click `Execute`
 
 Your document will be uploaded to your dashboard with the rules you set in [DOC²](https://app.polydocs.io/settings/classify-extract)
 
-![Picture](/_images/doc2/DOC2_classification-rules_Pattern.png){ loading=lazy }
-![Picture](/_images/doc2/DOC2_Uploaded-doc-on-dashboard.png){ loading=lazy }
+![Picture](/_images/doc2/Settings/Users/Integration/API calls examples/Image_5_classification_rules.png){ loading=lazy }
+![Picture](/_images/doc2/Settings/Users/Integration/API calls examples/Image_6_dashboard_mango.png){ loading=lazy }
 
 
 ## Document Status
