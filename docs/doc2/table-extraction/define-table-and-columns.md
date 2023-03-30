@@ -44,7 +44,7 @@ If the document is very confusing, it can be zoomed in or out using the "Zoom in
 
 If you defined a column by mistake it can be selected by clicking it and then deleted again via the following button:
 
-![](/_images/doc2/Table Extraction/3-Define tables and columns/Image_12_training_mode_slider.png)
+![](/_images/doc2/Table Extraction/3-Define tables and columns/Image_12_delete_column.png)
 
 Note: The button is only visible if the column is selected.
 
