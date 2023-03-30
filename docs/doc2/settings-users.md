@@ -17,7 +17,7 @@ From the Dashboard navigate to `SETTINGS`
 
 In the settings navigate to `Users`
 
-![](/_images/doc2/Settings/Users/settings_users.png)
+![](/_images/doc2/Settings/Users/Users/settings_users.png)
 
 Direct link: [https://app.polydocs.io/settings/user](https://app.polydocs.io/settings/user)
 
@@ -25,18 +25,18 @@ Direct link: [https://app.polydocs.io/settings/user](https://app.polydocs.io/set
 
 Once the admin is registered, you can add your employees by following these steps.
 
-In the user menu click on `ADD USER`:
+In the user menu click on `ADD USER`
 
 ![](/_images/doc2/Settings/Users/Users/settings_add-user_button.png)
 
-Enter the data of the user to be created:
+Enter the data of the user to be created
 
 ![](/_images/doc2/Settings/Users/Users/settings_add-user_form.png)
 
 - If it is not an administration user, do not check the "ADMIN" box
 - The password must be created initially and sent to the user
 
-As soon as the user is created it can be edited afterwards via the user overview (check/uncheck "ADMIN", edit, delete):
+As soon as the user is created it can be edited afterwards via the user overview (check/uncheck "ADMIN", edit, delete)
 
 ![](/_images/doc2/Settings/Users/Users/MaxMustermann_user.png)
 ![](/_images/doc2/Settings/Users/Users/MaxMustermann_admin.png)
@@ -47,7 +47,7 @@ Go to the DOC² login page ([https://app.polydocs.io/](https://app.polydocs.io/)
 
 ![](/_images/doc2/Users_6.png)
 
-You will immediately receive an email with a link to reset the password. The link will navigate you to the following page where you can enter a new password:
+You will immediately receive an email with a link to reset the password. The link will navigate you to the following page where you can enter a new password
 
 ![](/_images/doc2/Users_7.png)
 
