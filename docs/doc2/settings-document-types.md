@@ -81,12 +81,10 @@ If you have completed all your settings, and you wish to save them, please confi
 
 ![](/_images/doc2/Settings/Users/Document Types/Image_7_recog_settings.png)
 
-**OCR:**
-
+#### OCR
 Here you can set the sensitivity of the OCR (Optical Character Recognition) function for all fields. This value determines the sensitivity with which a field is marked in red if it could not be extracted with 100% certainty (OCR related!).
 
-**MATCH SCORE:**
-
+#### MATCH SCORE
 Here you can set the sensitivity of the MATCH SCORE function for all fields. This value determines, when a field is marked in red, if DOC² has not extracted the field with 100% confidence. In this case the field needs to be validated manually.
 
 The button `RESTORE DEFAULTS` will reset both values back to "50".
