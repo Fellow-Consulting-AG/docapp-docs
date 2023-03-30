@@ -20,7 +20,7 @@ To access the entire Polydocs API menu click [here](https://doc2api.cloudintegra
 
 All you need is your API Key. You will find your **Key** in the Integration menu item in `SETTINGS`.
 
-![](/_images/doc2/doc2-Settings-Integration-API Key.png)
+![](/_images/doc2/Settings/Users/Integration/API/Image_1_api_key.png)
 
 
 :fontawesome-solid-circle-info:{ style="color: #0F17E4" }
