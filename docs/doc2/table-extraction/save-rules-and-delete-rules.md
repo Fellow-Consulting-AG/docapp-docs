@@ -17,16 +17,16 @@ tags:
 
 As soon as a document has been trained in DOC² and all rules for the extraction of the tables have been stored for this document, they have to be saved so that no manual training is necessary for future imports. Instead, the documents and their tables are extracted automatically by DOC² and the data is brought into the structure defined by the training.
 
-As soon as the document/table extraction has been trained and the data is available in a satisfactory format, the rules for the table extraction can be saved using the "SAVE RULES" button.
+As soon as the document/table extraction has been trained and the data is available in a satisfactory format, the rules for the table extraction can be saved using the `SAVE RULES` button.
 
-![](/_images/doc2/image-33-1024x763.png)
+![](/_images/doc2/Table Extraction/9-Save and delete rules/Image_47_save_rules.png)
 
 As soon as this document is imported into DOC² in the future, the rules are automatically applied during extraction and will always arrange the data into the trained format.
 
 The rule indicator, illustrated below, shows how many rules have been defined and saved for this document.
 
-![](/_images/doc2/image-34.png)
+![](/_images/doc2/Table Extraction/9-Save and delete rules/Image_48_amount_of_rules.png)
 
 Rules for documents can also be deleted using the "DELETE RULES" button. This may be necessary if rules have been saved incorrectly or in a qualitatively unsatisfactory way. This allows a document to be retrained. ATTENTION: Deleting rules will affect all documents with the same or similar format, these documents must then be completely re-trained. This means that deleting any rules should be done with caution.
 
-![](/_images/doc2/image-35-1024x692.png)
+![](/_images/doc2/Table Extraction/9-Save and delete rules/Image_49_delete_rules.png)
