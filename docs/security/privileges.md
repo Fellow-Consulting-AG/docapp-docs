@@ -28,14 +28,14 @@ They are allowed to configure:
 
 ## User management
 Admins can add new users to the organization.  
-They can also grant a user admin privileges, there is no limit on how many users are allowed to be admins.<br>  
+They can also grant a user admin privileges, there is no limit on how many users are allowed to be admins.
 Every admin can revoke a user's admin rights.
 
 # Groups
 ## What is a Group?
 A group is a set of users that can be granted specific permissions for one or multiple document types.  
 The groups can be created, changed and deleted by the organization admins. Every organization admin has the rights to do this.  
-If no group is configured all privileges are granted to the users within the organization.
+:fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" } If no group is configured all privileges are granted to the users within the organization.
 
 ## Groups and Privileges management
 Groups are managed in DOC² under SETTINGS > Groups, Users and Permissions > Groups and Permissions
