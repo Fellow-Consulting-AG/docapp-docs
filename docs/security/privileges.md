@@ -32,23 +32,28 @@ They can also grant a user admin privileges, there is no limit on how many users
 Every admin can revoke a user's admin rights.
 
 # Groups
+
 ## What is a Group?
 A group is a set of users that can be granted specific permissions for one or multiple document types.  
 The groups can be created, changed and deleted by the organization admins. Every organization admin has the rights to do this.  
 :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" } If no group is configured all privileges are granted to the users within the organization.
+
 
 ## Groups and Privileges management
 Groups are managed in DOC² under SETTINGS > Groups, Users and Permissions > Groups and Permissions
 
 ![](/_images/security/groups-and-permissions.png)
 
+
 ### DOC² group user management  
 The Organization admin can add users to the groups.
 ![doc2 group user management](/_images/security/group-user.png)
 
+
 ### DOC² group permission management
 The organization admin can set the group permissions.
 ![doc2 group permission management](/_images/security/group-permissions.png)
+
 
 ## Group permissions
 When creating a group, you can specify what privileges the users have for each document type.  
@@ -64,14 +69,18 @@ The different types of Privileges are:
 ### View 
 If a user doesn't have the view permission, the document type will not be shown to him on the dashboard.  
 
+
 ### Update
 Exporting documents is only possible if the user has the update permission.
+
 
 ### Delete
 Permission to delete documents.
 
+
 ### First Approval
 Permission to grant the first approval, if configured.
+
 
 ### Second Approval
 Permission to grant the second approval, if configured.
