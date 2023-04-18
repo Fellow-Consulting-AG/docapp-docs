@@ -35,7 +35,7 @@ Navigate to the **Export** menu item in the settings:
 
 ![](/_images/doc2/DOC2_Settings_Export.png)
 
-You need to create a new configuration via the `NEW` button:
+You need to create a new configuration via the `+ NEW` button:
 
 ![DOC2 Export Settings](/_images/doc2/DOC2_ExportSettings_new.png)
 
