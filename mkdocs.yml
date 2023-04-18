@@ -214,7 +214,7 @@ nav:
       - Delivery Note: doc2/pomatching/po-matching-delivery-notes.md
       - Order Confirmation: doc2/pomatching/po-matching-order-confirmation.md
 
-    - ZUGFeRD: doc2/zugpferd.md
+    - ZUGFeRD: doc2/zugferd.md
 
     - Groups & Privileges: security/privileges.md
     - Admin-Guides: doc2/admin-guides/postman-projects.md
