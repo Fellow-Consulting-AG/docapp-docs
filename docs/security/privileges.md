@@ -10,7 +10,7 @@ tags:
 The first user of DOC² is the default organization admin.
 
 ## Privileges
-Organisation admins are able to access the settings in DOC².
+Organization admins are able to access the settings in DOC².
 They are allowed to configure:
 
 - Company information
