@@ -14,7 +14,7 @@ In this section you will find all the settings to customize DOC² to your compan
 ## GLOBAL SETTINGS
 
 - [Company Information](/doc2/company-information/)
-- [Groups, Users and Permissions](/security/privileges/)
+- [Groups, Users and Permissions](/doc2/settings/groups-users-permissions/)
 - [Integration](/doc2/settings/integration/)
 - [Document Types](/doc2/settings-document-types/)
 - [Email notification](/doc2/settings/email-notification/)

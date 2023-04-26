@@ -1,5 +1,5 @@
 ---
-title: Groups, Users and Permissons
+title: Groups, Users and Permissions
 description: In this area you can manage users and their roles, create sub-organizations, configure groupsas well as their users and permissions for different document types.
 date: "2022-09-23"
 tags:
@@ -12,6 +12,6 @@ tags:
 
 In this area you can manage your organizations users and their roles, create sub-organizations, configure groups as well as their users and permissions for different document types.
 
-- [Users](/doc2/settings-users/)
+- [Users](/doc2/settings/groups-users-permissions/users/)
 - [Sub-Organizations](/security/privileges/)
 - [Groups and Permissions](/security/privileges/#groups)
