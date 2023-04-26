@@ -7,9 +7,11 @@ tags:
   - DOC²
   - ZUGFeRD
   - Subscription
+  - Usage
 ---
 
-### You will need this information filled in for exporting documents in [ZUGFeRD](/doc2/zugpferd/) format.
+
+**You will need this information filled in for exporting documents in [ZUGFeRD](/doc2/zugpferd/) format.**
 
 ![](/_images/doc2/Settings/Users/Company Information/Image_1_company_information_location.png){ loading=lazy }
 
