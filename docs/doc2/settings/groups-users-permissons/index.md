@@ -14,4 +14,4 @@ In this area you can manage your organizations users and their roles, create sub
 
 - [Users](/doc2/settings-users/)
 - [Sub-Organizations](/security/privileges/)
-- [Groups and Permissions](/security/privileges/)
+- [Groups and Permissions](/security/privileges/#groups)
