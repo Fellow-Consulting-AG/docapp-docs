@@ -5,7 +5,7 @@ date: "2022-09-23"
 tags:
   - DOC²
   - Settings
-  - Global
+  - Global Settings
   - Document Processing
 ---
 
