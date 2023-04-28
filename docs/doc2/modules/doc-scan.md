@@ -33,19 +33,20 @@ As soon as following screen is displayed you’re almost done.
 ![](/_images/doc2/Modules/doc-scan/DOC2-Scan-Manager-installation-completed.png)
 
 Open web browser to test if the app works by entering: <https://local.polydocs.io:12500/> <br>
-If you see this message on the screen, you must first make some settings in your FritzBox if you are using one.
+If you see this message on the screen, you must first make some settings in your FritzBox network settings if you are using one.
 ![](/_images/doc2/Modules/doc-scan/DOC2-this site cant be reached.png)
 
 All information can be found **[here](http://127.0.0.1:8000/doc2/modules/doc-scan/#fritzbox-network-settings)**.
 
 When you see this screen you are ready to click on `Doc2`.
+
 ![](/_images/doc2/Modules/doc-scan/DOC2-main-website.png)
 
 You will be redirected to the DOC² login page where you can enter your credentials to access your dashboard.
 
 ![](/_images/doc2/Modules/doc-scan/DOC2_Login_EN.png)
 
-Now all you have to do is activate the Doc Scan module in the settings and you're ready to go.
+All you need to do now is to activate Doc Scan in the settings under Modules.
 ![](/_images/doc2/Modules/doc-scan/DOC2-Settings-Modules-Doc Scan.png)
 
 ---
@@ -63,13 +64,13 @@ For security reasons, FRITZ!Box suppresses DNS responses that point to IP addres
 
 So if you use a FritzBox you have to make the following settings in the menu of the FritzBox first:
 
-1. click on `Home Network` in the user interface of the FRITZ!Box.
+1. Click on `Home Network` in the user interface of the FRITZ!Box.
 
-2. click on `Network` in the `Home network` menu.
+2. Click on `Network` in the `Home network` menu.
 
 3. Click the `Network Settings` tab.
 
-    In the `DNS rebind protection` section, enter `local.polydocs.io` in the **Host name exceptions** input field for which DNS rebind protection should not apply.Confirm with `Apply`.
+    In the `DNS rebind protection` section, enter `local.polydocs.io` in the **Host name exceptions** input field for which DNS rebind protection should not apply.                                            Confirm with `Apply`.
 
 ---
 
