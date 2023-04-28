@@ -22,7 +22,7 @@ As your scanner is not installed yet you’ll get according message
 
 ![](/_images/doc2/Modules/doc-scan/DOC2-download-scanner.png)
 
-:fontawesome-solid-circle-info:{ style="color: #0F17E4" } 
+:fontawesome-solid-circle-info:{ style="color: #0F17E4" } <br>
 Depending on which operating system you use, press the appropriate button to download.
 
 Open the installation file and you will see the following
@@ -42,7 +42,7 @@ If you see this message on the screen, you must first make some settings in your
 
 ![](/_images/doc2/Modules/doc-scan/DOC2-this site cant be reached.png)
 
-All information can be found **[here](http://127.0.0.1:8000/doc2/modules/doc-scan/#fritzbox-network-settings)**.
+All information can be found **[here](https://polydocs.io/doc2/modules/doc-scan/#fritzbox-network-settings)**.
 
 When you see this screen you are ready to click on `Doc2`.
 
@@ -53,6 +53,7 @@ You will be redirected to the DOC² login page where you can enter your credenti
 ![](/_images/doc2/Modules/doc-scan/DOC2_Login_EN.png)
 
 All you need to do now is to activate Doc Scan in the settings under Modules.
+
 ![](/_images/doc2/Modules/doc-scan/DOC2-Settings-Modules-Doc Scan.png)
 
 ---
@@ -68,7 +69,7 @@ If you get the following error after installing and going to url <https://local.
 <ins>Cause</ins><br>
 For security reasons, FRITZ!Box suppresses DNS responses that point to IP addresses in its own home network. This is a security feature of the FRITZ!Box to protect against so called DNS rebinding attacks.
 
-So if you use a FritzBox you have to make the following settings in the menu of the FritzBox:
+If you use a FritzBox you have to make the following settings in the menu of the FritzBox:
 
 1. Click on `Home Network` in the user interface of the FRITZ!Box.
 
