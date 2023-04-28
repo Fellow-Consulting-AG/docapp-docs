@@ -12,7 +12,6 @@ tags:
 
 Already using DOC² and want to upload documents to your dashboard right after scanning? 
 This is how it works:
-
 ## Download Scanner Software
 
 Click on **Scan Document** on DOC² Dashboard
@@ -26,23 +25,24 @@ Depending on which operating system you use, press the appropriate button to dow
 Open the installation file and you will see the following
 ![](/_images/doc2/Modules/doc-scan/DOC2-welcome-to-doc2scan-installer.png)
 
-Click on `Continue`, accept the Software License Agreement with `Agree` and continue to install the software. 
-:fontawesome-solid-circle-info:{ style="color: #0F17E4" } Installing this software requires 33,6 MB of space. 
+Click on `Continue`, accept the Software License Agreement with `Agree` and continue to install the software.<br> 
+:fontawesome-solid-circle-info:{ style="color: #0F17E4" } Installing this software requires 33,6 MB of space.<br> 
 You can change install location before clicking `Install` in the next step.
 
 As soon as following screen is displayed you’re almost done.
 ![](/_images/doc2/Modules/doc-scan/DOC2-Scan-Manager-installation-completed.png)
 
-Open web browser to test if the app works by entering:<https://local.polydocs.io:12500/>
+Open web browser to test if the app works by entering: <https://local.polydocs.io:12500/> <br>
 If you see this message on the screen, you must first make some settings in your FritzBox if you are using one.
 ![](/_images/doc2/Modules/doc-scan/DOC2-this site cant be reached.png)
 
-All information can be found **[here]()**.
+All information can be found **[here](http://127.0.0.1:8000/doc2/modules/doc-scan/#fritzbox-network-settings)**.
 
 When you see this screen you are ready to click on `Doc2`.
 ![](/_images/doc2/Modules/doc-scan/DOC2-main-website.png)
 
 You will be redirected to the DOC² login page where you can enter your credentials to access your dashboard.
+
 ![](/_images/doc2/Modules/doc-scan/DOC2_Login_EN.png)
 
 Now all you have to do is activate the Doc Scan module in the settings and you're ready to go.
