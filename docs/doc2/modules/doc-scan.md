@@ -14,15 +14,19 @@ Already using DOC² and want to upload documents to your dashboard right after s
 This is how it works:
 ## Download Scanner Software
 
-Click on **Scan Document** on DOC² Dashboard
+Click **Scan Document** on DOC² Dashboard
+
 ![](/_images/doc2/Modules/doc-scan/DOC2-dashboard-scan-document.png)
 
 As your scanner is not installed yet you’ll get according message
+
 ![](/_images/doc2/Modules/doc-scan/DOC2-download-scanner.png)
 
+:fontawesome-solid-circle-info:{ style="color: #0F17E4" } 
 Depending on which operating system you use, press the appropriate button to download.
 
 Open the installation file and you will see the following
+
 ![](/_images/doc2/Modules/doc-scan/DOC2-welcome-to-doc2scan-installer.png)
 
 Click on `Continue`, accept the Software License Agreement with `Agree` and continue to install the software.<br> 
@@ -30,10 +34,12 @@ Click on `Continue`, accept the Software License Agreement with `Agree` and cont
 You can change install location before clicking `Install` in the next step.
 
 As soon as following screen is displayed you’re almost done.
+
 ![](/_images/doc2/Modules/doc-scan/DOC2-Scan-Manager-installation-completed.png)
 
 Open web browser to test if the app works by entering: <https://local.polydocs.io:12500/> <br>
 If you see this message on the screen, you must first make some settings in your FritzBox network settings if you are using one.
+
 ![](/_images/doc2/Modules/doc-scan/DOC2-this site cant be reached.png)
 
 All information can be found **[here](http://127.0.0.1:8000/doc2/modules/doc-scan/#fritzbox-network-settings)**.
@@ -53,16 +59,16 @@ All you need to do now is to activate Doc Scan in the settings under Modules.
 
 ## FritzBox Network Settings
 
-If you get the following error after installing and going to url <https://local.polydocs.io:12500/>, here are the reasons:
-* DNS resolution of private IP addresses not possible.
-* DNS resolution for domain names pointing to private IP addresses in the FRITZ!Box home network is not possible via FRITZ!Box. As a result, no access to server services in the FRITZ!Box home network is possible via the domain name. In this case, one of the following error messages may be displayed:
-"DNS timed out"
+If you get the following error after installing and going to url <https://local.polydocs.io:12500/>, here are the reasons:<br>
+* DNS resolution of private IP addresses not possible.<br>
+* DNS resolution for domain names pointing to private IP addresses in the FRITZ!Box home network is not possible via FRITZ!Box. As a result, no access to server services in the FRITZ!Box home network is possible via the domain name. In this case, one of the following error messages may be displayed:<br>
+"DNS timed out"<br>
 "DNS request timed out"
 
-<ins>Cause</ins>
+<ins>Cause</ins><br>
 For security reasons, FRITZ!Box suppresses DNS responses that point to IP addresses in its own home network. This is a security feature of the FRITZ!Box to protect against so called DNS rebinding attacks.
 
-So if you use a FritzBox you have to make the following settings in the menu of the FritzBox first:
+So if you use a FritzBox you have to make the following settings in the menu of the FritzBox:
 
 1. Click on `Home Network` in the user interface of the FRITZ!Box.
 
@@ -70,7 +76,7 @@ So if you use a FritzBox you have to make the following settings in the menu of 
 
 3. Click the `Network Settings` tab.
 
-    In the `DNS rebind protection` section, enter `local.polydocs.io` in the **Host name exceptions** input field for which DNS rebind protection should not apply.                                            Confirm with `Apply`.
+    In the `DNS rebind protection` section, enter `local.polydocs.io` in the **Host name exceptions** input field for which DNS rebind protection should not apply.<br>                                           Confirm with `Apply`.
 
 ---
 
