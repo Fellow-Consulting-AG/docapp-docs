@@ -166,8 +166,8 @@ nav:
       - doc2/settings/index.md
       - Company Information: doc2/company-information.md
       - Groups, Users and Permissions:
-        - doc2/settings/groups-users-permissons/index.md
-        - Users: doc2/settings-users.md
+        - doc2/settings/groups-users-permissions/index.md
+        - Users: doc2/settings/groups-users-permissions/users.md
       - Integration:
         - doc2/settings/integration/index.md
         - API: doc2/settings/integration/api-integration.md
@@ -177,12 +177,12 @@ nav:
       - Email Notification: doc2/settings/email-notification.md
       - Modules:
         - doc2/modules/index.md
-        - doc2/modules/modules.md
+        - Access to Modules: doc2/modules/modules-overview.md
         - Approval: doc2/modules/approval.md
         - Layout Builder: doc2/modules/layout-builder.md
-        - Models & Labels: doc2/modules/models-and-labels.md
+        # - Models & Labels: doc2/modules/models-and-labels.md
         - Doc Script: doc2/modules/doc-script.md
-     #  - Doc Scan: doc2/modules/doc-scan.md
+        - Doc Scan: doc2/modules/doc-scan.md
       - All Import Options:
         - doc2/import/index.md
         - Email: doc2/e-mail.md
