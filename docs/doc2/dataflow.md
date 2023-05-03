@@ -25,9 +25,12 @@ sequenceDiagram
 ```
 
 The diagram shows that data delivery is done in three steps:
+
 1. Doc2API calls the Fellow2KV API to receive data.
 2. Fellow2KV calls the OCR server to process the received data.
 3. the OCR server sends the OCR results back to Fellow2KV, which in turn returns them to Doc2API.
+
+
 This process allows Doc2API to receive OCR information generated from the data processed by Fellow2KV.
 To ensure data delivery, all systems involved are configured to meet data protection requirements. This includes compliance with data protection laws and the implementation of security measures to ensure the confidentiality, integrity and availability of the data. Overall, this diagram shows how data is delivered between different systems to obtain the OCR information required by Doc2API.
 
@@ -51,7 +54,7 @@ stateDiagram-v2
     }
     state KV_Step2 {
         [*] --> Classify
-        [*] --> OCR Data
+        [*] --> OCR
         [*] --> TFIDF
         [*] --> Fields
         [*] --> Table
