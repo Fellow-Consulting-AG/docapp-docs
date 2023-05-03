@@ -8,7 +8,7 @@ tags:
   - List of Values
 ---
 
-## How to access List of Values in Settings
+## How to access List of Values in DOC²
 
 This feature allows you to create and store different lists or sets of related information that can be used to create a drop-down box on the validation screen.
 
@@ -26,7 +26,7 @@ On this screen you have access to existing lists as well as the ability to creat
 
 ## How to enable this feature for a field in a layout
 
-DOC2 Dashboard → Settings 
+DOC² Dashboard → Settings 
 
 ![](/_images/doc2/List of Values - Images/image_4_lov.png)
 
