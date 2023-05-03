@@ -1,43 +1,19 @@
 site_name: FELLOWPRO Documentation
 docs_dir: '../../docs/de'                           # Where to find the English markdown files
 site_dir: '../../generated/de'                      # Where to put the English HTML files
-site_url: https://docs.fellowpro.com
+site_url: https://de.docs.fellowpro.com
 site_author: Daniel Jordan
 site_description: On these pages you will learn a lot about our different software helping you with digitization, digitalization and the digital transformation in your company.
 theme:
   name: material
-  palette:
-
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
-
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default 
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      toggle:
-        icon: material/brightness-4
-        name: Switch to system preference
- # custom_dir: overrides
- # custom_dir: '../../overrides/'
   logo: _images/LOGO.svg
   favicon: _images/LOGO.svg
   font:
     text: Montserrat
   language: de
-  #logo: assets/images/polydocs_Icon.svg
   palette:
       scheme: light
-      primary: indigo
+      primary: custom
   features:
     - navigation.instant
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/?h=navigation+tabs#navigation-tabs
@@ -47,11 +23,11 @@ theme:
     - navigation.tracking
     - navigation.indexes
 # https://squidfunk.github.io/mkdocs-material/customization/?h=#additional-css
-#extra_css:
-#  - _extra/css/extra.css
+extra_css:
+  - _extra/css/extra.css
 # https://squidfunk.github.io/mkdocs-material/customization/?h=#additional-javascript
-#extra_javascript:
-#  - _extra/javascript/extra.js
+extra_javascript:
+  - _extra/javascript/extra.js
 extra:
   alternate:
     - name: English
@@ -68,7 +44,7 @@ extra:
       find what they're searching for. With your consent, you're helping us to
       make our documentation better.
   generator: false
-  copyright: Copyright &copy; 2022 Polydocs GmbH
+  copyright: Copyright &copy; 2023 FellowPRO AG
   social:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/645725/
@@ -220,126 +196,7 @@ nav:
       - doc2/SSO/index.md
       - SSO for Azure AD with DOC²: doc2/SSO/SSO-for-Azure-AD.md
 
-  - Workflow²:
-    - Overview: workflow/index.md
-    - Try it out:
-      - workflow/try-it-out/index.md
-      - workflow/quickstart.md
-      - workflow/try-it-out/quickstart.md
-      - workflow/try-it-out/longer-introduction.md
-    - Courses:
-      - workflow/courses/index.md
-      - Level 1:
-        - workflow/courses/level-one/index.md
-        - workflow/courses/level-one/chapter-1.md
-        - workflow/courses/level-one/chapter-2.md
-        - workflow/courses/level-one/chapter-3.md
-        - workflow/courses/level-one/chapter-4.md
-        - workflow/courses/level-one/chapter-5/chapter-5.1.md
-        - workflow/courses/level-one/chapter-5/chapter-5.2.md
-        - workflow/courses/level-one/chapter-5/chapter-5.3.md
-        - workflow/courses/level-one/chapter-5/chapter-5.4.md
-        - workflow/courses/level-one/chapter-5/chapter-5.5.md
-        - workflow/courses/level-one/chapter-5/chapter-5.6.md
-        - workflow/courses/level-one/chapter-5/chapter-5.7.md
-        - workflow/courses/level-one/chapter-5/chapter-5.8.md
-        - workflow/courses/level-one/chapter-6.md
-        - workflow/courses/level-one/chapter-7.md
-      - Level 2:
-        - workflow/courses/level-two/index.md
-        - workflow/courses/level-two/chapter-1.md
-        - workflow/courses/level-two/chapter-2.md
-        - workflow/courses/level-two/chapter-3.md
-        - workflow/courses/level-two/chapter-4.md
-        - workflow/courses/level-two/chapter-5/chapter-5.0.md
-        - workflow/courses/level-two/chapter-5/chapter-5.1.md
-        - workflow/courses/level-two/chapter-5/chapter-5.2.md
-        - workflow/courses/level-two/chapter-5/chapter-5.3.md
-        - workflow/courses/level-two/chapter-6.md
-    - WF² Examples:
-      - example/workflows/index.md
-      - Rename Keys: example/rename.md
-      - Weather:
-        - example/weather/index.md
-        - Weather in the City: example/weather/weather.md
-        - Rain: example/weather/weather_rain.md
-      - Gmail Import to DOC²: example/gmail-import.md
-      - Outlook Import to DOC²: example/outlook-import.md
-      - Approval with DOC²: example/approval.md
-      - Second Approval: example/second-approval.md
-      - DOC² to Excel: example/export-excel.md
-      - New Order Workflow: example/workflow_mautic1.md
-      - New Customer Workflow: example/workflow_mautic2.md
-      - DOC² to Google Drive:
-        - example/export-to-gdrive/index.md
-        - Create blank workflow: example/export-to-gdrive/create-blank-workflow.md
-        - Configure Doc2StatusTrigger Node: example/export-to-gdrive/configure-doc2-status-trigger.md
-        - Configure Google Drive Node: example/export-to-gdrive/configure-gdrive-node.md
-        - Activate Workflow: example/export-to-gdrive/activate-workflow.md
-    - Editor UI: workflow/editor-ui.md
-    - Understand workflows:
-      - Overview: workflow/workflows/index.md
-      - Workflows: workflow/workflows/workflows.md
-      - Connections: workflow/workflows/connections.md
-      - Nodes: workflow/workflows/nodes.md
-      - Sticky Notes: workflow/workflows/sticky-notes.md
-      - Items: workflow/workflows/items.md
-    - API:
-      - REST API: workflow/api/index.md
-      - API authentication: workflow/api/authentication.md
-      - API pagination: workflow/api/pagination.md
-      - API playground: workflow/api/using-api-playground.md
-      - API reference: workflow/api/api-reference.md
-    - Flow logic:
-      - Overview: workflow/flow-logic/index.md
-      - Merging: workflow/flow-logic/merging.md
-      - Looping: workflow/flow-logic/looping.md
-      - Error handling: workflow/flow-logic/error-handling.md
-    - Mapping and transforming data:
-      - Overview: workflow/data/index.md
-      - Data structure: workflow/data/data-structure.md
-      - Transforming data: workflow/data/transforming-data.md
-      - Using code: workflow/data/code.md
-    - Code examples:
-      - Overview: workflow/code-examples/index.md
-      - Expressions:
-        - Overview: workflow/code-examples/expressions/index.md
-        - Methods: workflow/code-examples/expressions/methods.md
-        - Variables: workflow/code-examples/expressions/variables.md
-        - Data and time with Luxon: workflow/code-examples/expressions/luxon.md
-        - JSON with JMESPath: workflow/code-examples/expressions/jmespath.md
-      - JavaScript for workflows:
-        - Overview: workflow/code-examples/javascript-functions/index.md
-        - Methods: workflow/code-examples/javascript-functions/methods.md
-        - Variables: workflow/code-examples/javascript-functions/variables.md
-        - Get number of items returned by last node: workflow/code-examples/javascript-functions/number-items-last-node.md
-        - Check incoming data: workflow/code-examples/javascript-functions/check-incoming-data.md
-    - Reference:
-      - Overview: workflow/reference/index.md
-      - Release notes: workflow/reference/release-notes.md
-      - CLI commands: workflow/reference/cli-commands.md
-      - Keyboard shortcuts: workflow/reference/keyboard-shortcuts.md
-      - Glossary: workflow/reference/glossary.md
-      - License: workflow/reference/license.md
-      - Data collection: workflow/reference/data-collection.md
-    - Integrations:
-      - Overview: workflow/integrations/index.md
-      - Core nodes: workflow/integrations/core-nodes/
-      - Nodes: workflow/integrations/nodes/
-      - Trigger nodes: workflow/integrations/trigger-nodes/
-      - Credentials: workflow/integrations/credentials/
-      - Creating nodes:
-        - workflow/integrations/creating-nodes/index.md
-        - Standards: workflow/integrations/creating-nodes/code/standards.md
-        - Create your first node: workflow/integrations/creating-nodes/code/create-first-node.md
-        - Creating WF-nodes-module: workflow/integrations/creating-nodes/code/create-wf-nodes-module.md
-        - Create a trigger node: workflow/integrations/creating-nodes/code/create-trigger-node.md
-        - Use the node developer CLI: workflow/integrations/creating-nodes/code/node-developer-cli.md
-        - Node UI elements: workflow/integrations/creating-nodes/code/ui-elements.md
-        - Making HTTP Requests: workflow/integrations/creating-nodes/code/http-helpers.md
-        - Nodelinter: workflow/integrations/creating-nodes/code/node-linter.md
-        - Node Review Checklist: workflow/integrations/creating-nodes/code/review-checklist.md
-        - Troubleshooting: workflow/integrations/creating-nodes/code/troubleshooting-node-development.md
+
   - FLOW²:
     - Introduction: flow2/index.md
     - Getting Started: flow2/introduction.md
