@@ -18,7 +18,7 @@ Click **Scan Document** on DOC² Dashboard
 
 ![](/_images/doc2/Modules/doc-scan/DOC2-dashboard-scan-document.png)
 
-As your scanner is not installed yet you’ll get according message
+As your scanner is not installed yet, you’ll get the following message
 
 ![](/_images/doc2/Modules/doc-scan/DOC2-download-scanner.png)
 
@@ -31,14 +31,14 @@ Open the installation file and you will see the following
 
 Click on `Continue`, accept the Software License Agreement with `Agree` and continue to install the software.<br> 
 :fontawesome-solid-circle-info:{ style="color: #0F17E4" } Installing this software requires 33,6 MB of space.<br> 
-You can change install location before clicking `Install` in the next step.
+You can change the install location before clicking `Install` in the next step.
 
 As soon as following screen is displayed you’re almost done.
 
 ![](/_images/doc2/Modules/doc-scan/DOC2-Scan-Manager-installation-completed.png)
 
 Open web browser to test if the app works by entering: <https://local.polydocs.io:12500/> <br>
-If you see this message on the screen, you must first make some settings in your FritzBox network settings if you are using one.
+If you see this message on the screen, you must first configure some settings in your FritzBox network settings if you are using one.
 
 ![](/_images/doc2/Modules/doc-scan/DOC2-this site cant be reached.png)
 
@@ -69,7 +69,7 @@ If you get the following error after installing and going to url <https://local.
 <ins>Cause</ins><br>
 For security reasons, FRITZ!Box suppresses DNS responses that point to IP addresses in its own home network. This is a security feature of the FRITZ!Box to protect against so called DNS rebinding attacks.
 
-If you use a FritzBox you have to make the following settings in the menu of the FritzBox:
+If you use a FritzBox you have to configure the following settings in the menu of the FritzBox:
 
 1. Click on `Home Network` in the user interface of the FRITZ!Box.
 
