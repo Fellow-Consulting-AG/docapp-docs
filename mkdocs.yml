@@ -207,7 +207,7 @@ nav:
 
 
       - Amount: doc2/settings-amount-settings.md
-      - Supplier Validation: doc2/settings-master-data-validation.md
+      - Master Data Validation: doc2/settings-master-data-validation.md
     - PO Matching:
       - doc2/pomatching/po-matching/index.md
       - Invoice: doc2/pomatching/po-matching-invoices.md
