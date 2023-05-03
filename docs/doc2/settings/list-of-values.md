@@ -10,7 +10,7 @@ tags:
 
 This feature allows you to create and store different lists or sets of related information that can be used to create a drop-down box on the validation screen.
 
-In order to create a list, navigate to the DOC2 Dashboard → Settings as shown below.
+In order to create a list, navigate to the DOC² Dashboard → Settings as shown below.
 
 ![](/_images/doc2/List of Values - Images/image_1_lov.png)
 
@@ -20,7 +20,7 @@ Document processing → List of Values
 
 On this screen you have access to existing lists as well as the ability to create new lists
 
-![](docs/_images/doc2/List of Values - Images/image_3_lov.png)
+![](/_images/doc2/List of Values - Images/image_3_lov.png)
 
 How to enable this feature for a field in a layout?
 

@@ -25,6 +25,6 @@ In this section you will find all the settings to customize DOC² to your compan
 - [OCR Settings](/doc2/document-validation/ocr-view/)
 - [Classification and Extraction](/doc2/document-validation/)
 - [Master Data Validation](/doc2/settings-master-data-validation/)
-- [List of Values](/doc2/settings-list-of-values/)
+- [List of Values](/doc2/settings/list-of-values/)
 - [Export](/doc2/export/)
 - [Modules](/doc2/modules/)  
