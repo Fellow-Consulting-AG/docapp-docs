@@ -5,7 +5,7 @@ date: "2022-09-23"
 tags:
   - DOC²
   - Settings
-  - Global
+  - Global Settings
   - Document Processing
 ---
 
@@ -14,7 +14,7 @@ In this section you will find all the settings to customize DOC² to your compan
 ## GLOBAL SETTINGS
 
 - [Company Information](/doc2/company-information/)
-- [Groups, Users and Permissions](/security/privileges/)
+- [Groups, Users and Permissions](/doc2/settings/groups-users-permissions/)
 - [Integration](/doc2/settings/integration/)
 - [Document Types](/doc2/settings-document-types/)
 - [Email notification](/doc2/settings/email-notification/)
@@ -24,6 +24,7 @@ In this section you will find all the settings to customize DOC² to your compan
 - [Import](/doc2/import/)
 - [OCR Settings](/doc2/document-validation/ocr-view/)
 - [Classification and Extraction](/doc2/document-validation/)
-- [Supplier Validation](/doc2/settings-master-data-validation/)
+- [Master Data Validation](/doc2/settings-master-data-validation/)
+- [List of Values](/doc2/settings/list-of-values/)
 - [Export](/doc2/export/)
-- [Approval](/example/approval/)  :fontawesome-solid-circle-info:{ style="color: #0F17E4" }documentation for DOC² coming soon :fontawesome-solid-circle-info:{ style="color: #0F17E4" }
+- [Modules](/doc2/modules/)  
