@@ -42,7 +42,7 @@ If you see this message on the screen, you must first make some settings in your
 
 ![](/_images/doc2/Modules/doc-scan/DOC2-this site cant be reached.png)
 
-All information can be found **[here](https://polydocs.io/doc2/modules/doc-scan/#fritzbox-network-settings)**.
+All information can be found **[here](https://docs.polydocs.io/doc2/modules/doc-scan/#fritzbox-network-settings)**.
 
 When you see this screen you are ready to click on `Doc2`.
 
