@@ -39,7 +39,7 @@ Here is your step by step guide to set up
 
 After logging in, you'll need to add users to your tenant. When you add a user, they'll receive an onboarding email with a username and temporary password.
 
-You can add users from **Settings** > **Users**. For help, refer to [Adding Users](/doc2/settings-users/).
+You can add users from **Settings** > **Users**. For help, refer to [Adding Users](/doc2/settings/groups-users-permissions/users/).
 
 ## **Understanding Document Review**
 
