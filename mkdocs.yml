@@ -40,6 +40,13 @@ extra_javascript:
 copyright: >
   <a href="#__consent">Change cookie settings</a>
 extra:
+  alternate:
+    - name: English
+      link: /
+      lang: en
+    - name: Deutsch
+      link: /de/
+      lang: de
   consent:
     title: Cookie consent
     description: >-
@@ -369,6 +376,3 @@ nav:
       - Timeline: insight2/widgets/timeline.md
       - Timer: insight2/widgets/timer.md
       - Toggle Switch: insight2/widgets/toggle-switch.md
-
-
-

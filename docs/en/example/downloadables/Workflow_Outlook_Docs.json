@@ -1,0 +1,434 @@
+{
+  "meta": {
+    "instanceId": "eb73f4ffdc88a336ed06723651bb7b7abb2d020a5b45cd3b91150b837f59c98c"
+  },
+  "nodes": [
+    {
+      "parameters": {
+        "resource": "folderMessage",
+        "operation": "getAll",
+        "folderId": "={{Object.values($json)[0]}}",
+        "additionalFields": {
+          "filter": "isRead eq false"
+        }
+      },
+      "name": "Get unread messages",
+      "type": "n8n-nodes-base.microsoftOutlook",
+      "typeVersion": 1,
+      "position": [
+        1160,
+        480
+      ],
+      "id": "23a77cf1-9f71-40e9-9ae9-f5417fe76421",
+      "alwaysOutputData": true,
+      "credentials": {
+        "microsoftOutlookOAuth2Api": {
+          "id": "11",
+          "name": "Microsoft Outlook DocDemo"
+        }
+      },
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "messageId": "={{ $json[\"id\"] }}",
+        "updateFields": {
+          "isRead": true
+        }
+      },
+      "name": "Mark message as read",
+      "type": "n8n-nodes-base.microsoftOutlook",
+      "typeVersion": 1,
+      "position": [
+        1500,
+        0
+      ],
+      "id": "9c2c6467-e6f4-4d89-ba81-6045a7ac63e6",
+      "credentials": {
+        "microsoftOutlookOAuth2Api": {
+          "id": "11",
+          "name": "Microsoft Outlook DocDemo"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "interval": 10
+      },
+      "name": "Interval",
+      "type": "n8n-nodes-base.interval",
+      "typeVersion": 1,
+      "position": [
+        120,
+        580
+      ],
+      "id": "88cf517a-035c-4bf1-993d-12133ee5ba6c"
+    },
+    {
+      "parameters": {
+        "label": "={{$binary.data.fileName}}",
+        "doc_type": "INVOICE",
+        "importtype": "email",
+        "address": "={{$node[\"Get unread messages\"].json[\"sender\"][\"emailAddress\"][\"address\"]}}",
+        "inbox": "={{Object.keys($node[\"SplitInBatches\"].json)[0]}}",
+        "sub_org": "fcb1d623-1953-4f4a-8309-b3506b65933c"
+      },
+      "id": "30d39327-c9a8-4ed7-ad95-8da701d73dc5",
+      "name": "Upload Document",
+      "type": "n8n-nodes-base.upload",
+      "typeVersion": 1,
+      "position": [
+        2240,
+        220
+      ],
+      "alwaysOutputData": false,
+      "credentials": {
+        "Doc2AppApi": {
+          "id": "12",
+          "name": "Doc2App"
+        }
+      },
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "resource": "messageAttachment",
+        "operation": "getAll",
+        "messageId": "={{ $json[\"id\"] }}",
+        "additionalFields": {}
+      },
+      "id": "589491a9-182a-4b14-bfa9-30af3365fc69",
+      "name": "Get Attachments",
+      "type": "n8n-nodes-base.microsoftOutlook",
+      "typeVersion": 1,
+      "position": [
+        1600,
+        460
+      ],
+      "credentials": {
+        "microsoftOutlookOAuth2Api": {
+          "id": "11",
+          "name": "Microsoft Outlook DocDemo"
+        }
+      },
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "resource": "messageAttachment",
+        "operation": "download",
+        "messageId": "={{ $node[\"Get unread messages\"].json[\"id\"] }}",
+        "attachmentId": "={{$json[\"id\"]}}"
+      },
+      "id": "1a6c6c83-a29a-483e-9ee1-74141af17339",
+      "name": "Download Attachment",
+      "type": "n8n-nodes-base.microsoftOutlook",
+      "typeVersion": 1,
+      "position": [
+        1820,
+        460
+      ],
+      "credentials": {
+        "microsoftOutlookOAuth2Api": {
+          "id": "11",
+          "name": "Microsoft Outlook DocDemo"
+        }
+      },
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "functionCode": "checker = {\n  '101_Kostenrechnung':'',\n  '102_Wareneingangsrechnung':''\n}\nmapping = {}\n\nitem = $node[\"Microsoft getFolders\"].json\n\nif (item.displayName in checker) {\n  mapping[item.displayName]=item.id\n}\n\nreturn mapping;"
+      },
+      "id": "27a256b1-b2a7-4616-a29c-95e331cd7ad9",
+      "name": "FunctionItem",
+      "type": "n8n-nodes-base.functionItem",
+      "typeVersion": 1,
+      "position": [
+        500,
+        580
+      ],
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{$json}}",
+              "operation": "isNotEmpty"
+            }
+          ]
+        }
+      },
+      "id": "c1835878-1d80-4a84-9c11-9bba82b23262",
+      "name": "IF",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        700,
+        580
+      ]
+    },
+    {
+      "parameters": {
+        "resource": "folder",
+        "operation": "getAll",
+        "additionalFields": {}
+      },
+      "id": "0d534627-6ed8-40f6-a72f-4e96386be0e9",
+      "name": "Microsoft getFolders",
+      "type": "n8n-nodes-base.microsoftOutlook",
+      "typeVersion": 1,
+      "position": [
+        300,
+        580
+      ],
+      "credentials": {
+        "microsoftOutlookOAuth2Api": {
+          "id": "11",
+          "name": "Microsoft Outlook DocDemo"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "857d2847-44ff-48a0-a458-e3cad5420826",
+      "name": "SplitInBatches",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 1,
+      "position": [
+        920,
+        480
+      ]
+    },
+    {
+      "parameters": {
+        "dataType": "string",
+        "value1": "={{Object.keys($node[\"SplitInBatches\"].json)[0]}}",
+        "rules": {
+          "rules": [
+            {
+              "value2": "101_Kostenrechnung"
+            },
+            {
+              "value2": "102_Wareneingangsrechnung",
+              "output": 1
+            }
+          ]
+        }
+      },
+      "id": "6fa095dc-425f-4f0d-9267-6f243df4ffaf",
+      "name": "Switch",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 1,
+      "position": [
+        2000,
+        460
+      ]
+    },
+    {
+      "parameters": {
+        "label": "={{$binary.data.fileName}}",
+        "doc_type": "INVOICE",
+        "importtype": "email",
+        "address": "={{$node[\"Get unread messages\"].json[\"sender\"][\"emailAddress\"][\"address\"]}}",
+        "inbox": "={{Object.keys($node[\"SplitInBatches\"].json)[0]}}",
+        "sub_org": "bc7ed89e-1b23-4e7e-ad3e-89791f357864"
+      },
+      "id": "b7236cc8-1590-4421-a809-8af328883928",
+      "name": "Upload Document1",
+      "type": "n8n-nodes-base.upload",
+      "typeVersion": 1,
+      "position": [
+        2240,
+        440
+      ],
+      "alwaysOutputData": false,
+      "credentials": {
+        "Doc2AppApi": {
+          "id": "12",
+          "name": "Doc2App"
+        }
+      },
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{$node[\"Get unread messages\"].json}}",
+              "operation": "isNotEmpty"
+            }
+          ]
+        }
+      },
+      "id": "1d1d96ce-0d07-4bca-b280-db209fb840cf",
+      "name": "IF1",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        1340,
+        480
+      ]
+    }
+  ],
+  "connections": {
+    "Get unread messages": {
+      "main": [
+        [
+          {
+            "node": "IF1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Interval": {
+      "main": [
+        [
+          {
+            "node": "Microsoft getFolders",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upload Document": {
+      "main": [
+        [
+          {
+            "node": "SplitInBatches",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Attachments": {
+      "main": [
+        [
+          {
+            "node": "Download Attachment",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Download Attachment": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "FunctionItem": {
+      "main": [
+        [
+          {
+            "node": "IF",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF": {
+      "main": [
+        [
+          {
+            "node": "SplitInBatches",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft getFolders": {
+      "main": [
+        [
+          {
+            "node": "FunctionItem",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "SplitInBatches": {
+      "main": [
+        [
+          {
+            "node": "Get unread messages",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "Upload Document",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Upload Document1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upload Document1": {
+      "main": [
+        [
+          {
+            "node": "SplitInBatches",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF1": {
+      "main": [
+        [
+          {
+            "node": "Get Attachments",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Mark message as read",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "SplitInBatches",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}
