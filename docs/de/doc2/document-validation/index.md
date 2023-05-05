@@ -40,19 +40,15 @@ All values that have been correctly extracted and confirmed with the check mark 
 
 ![](/_images/doc2/document validation/DOC2_correct-fields_5.png)
 
-A great example is on the next segment of field IBAN, where the IBAN is not even extracted, as confidence level is equal to 0. To train and extract the value, just enter the field and mark the IBAN on the invoice. You get this message if you are sure of your selection, so click yes.
+A great example is on the next segment of field IBAN, where the IBAN is not even extracted, as confidence level is equal to 0. To train and extract the value, just enter the field and mark the IBAN on the invoice. The selected value will be extracted to the IBAN field and displayed on the invoice. Please confirm the value with the checkmark to finalize it. 
 
 ![](/_images/doc2/document validation/DOC2_click-check_7.png)
 
-The selected value will be extracted to the IBAN field and displayed on the invoice. Please confirm the value with the checkmark to finalize it.
+The procedure for each extracted or non-extracted value is always the same. Here are some examples of the values extracted from an invoice:
 
 ![](/_images/doc2/document validation/DOC2_vat-rate_8.png)
 
-The procedure for each extracted or non-extracted value is always the same. Here are some examples of the values extracted from an invoice:
-
 ![](/_images/doc2/document validation/DOC2_supplier-name_9.png)
-
-![](/_images/doc2/document validation/DOC2_save_10.png)
 
 For the vendor details we have configured the Fuzzy search, where the supplier identification is matched by the master data imported from your ERP system. If for example the supplier’s name was missing you could also look it up in this table. Everything is set up very easily and user-friendly so this job of making the validation is faster.
 
