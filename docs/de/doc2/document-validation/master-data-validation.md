@@ -16,22 +16,22 @@ There are currently two ways to do this.
 
 The VAT number is extracted from the document using DOC²:
 
-![](/_images/doc2/DOC2_master-data-validation_1.png)
+![](/_images/doc2/master data validation/vat-number.png)
 
 In the background, the VAT number is matched with the supplier master data which is provided by you to DOC² and the supplier ID including the corresponding supplier data like the name and address are determined automatically.
 
 The user can manually intervene at any time and call up the supplier provided. This is done via the following button:
 
-![](/_images/doc2/image-21.png)
+![](/_images/doc2/master data validation/vendor-details.png)
 
 The following window is called up and displays the supplier data for the corresponding VAT number. Using the search field, any VAT number can be entered and thereby the supplier master, provided by you to DOC², can be searched. If the correct supplier is found, it can be selected and accepted.
 
-![](/_images/doc2/image-23-1024x276.png)
+![](/_images/doc2/master data validation/search-vat-number.png)
 
 Second possibility is **finding the supplier via the supplier name**:
 
 Using the button in the supplier name field, the supplier master (which is provided by you to DOC²) can also be called up. In this case, the supplier name can be searched in the supplier master:
 
-![](/_images/doc2/image-24.png)
+![](/_images/doc2/master data validation/fuzzy-search.png)
 
-![](/_images/doc2/image-25-1024x192.png)
+![](/_images/doc2/master data validation/search-vendor-name.png)
