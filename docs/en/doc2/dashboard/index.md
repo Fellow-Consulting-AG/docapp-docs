@@ -14,7 +14,7 @@ After logging in with your credentials you are redirected to the DASHBOARD homep
 
 This is the main page and overview where you can capture, work and manage your imported documents.
 
-![DOC2 Dashboard](/_images/doc2/DOC2_Dashboard_1.png){ loading=lazy }
+![DOC2 Dashboard](/_images/doc2/dashboard/DOC2_Dashboard_1.png){ loading=lazy }
 
 The first upper bar is a very simple and easy reporting tool where you can filter by week, month, year or more.
 
