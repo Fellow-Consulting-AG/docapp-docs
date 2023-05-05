@@ -19,6 +19,7 @@ There you will find the "OCR" button:
 
 When you click this button a new window will be opened which displays the document and its data in pure OCR view. This can be useful, for example, if data is not extracted correctly and you want to troubleshoot the actual values contained in the document to be extracted:
 
+![](/_images/doc2/ocr view/Image_3_OCRview1.png)
 ![](/_images/doc2/ocr view/Image_4_OCRview2.png)
 
 In addition, the following button can be used to switch to debug view. This allows you to see exactly how DOC² extracts the individual values in the background and whether these are recognized correctly:
