@@ -11,26 +11,26 @@ In document view you will find options to display the quality of the extraction 
 
 To do this, open a document as known via the dashboard:
 
-![](/_images/doc2/image-50-1024x391.png)
+![](/_images/doc2/ai indicator/Image_1_DocView.png)
 
 In document view there are two indicators for the quality of the extraction.
 
 - Extraction quality in percent per field and current document
 - Overall extraction quality including previous extractions of documents of the same type.
 
-![](/_images/doc2/image-51-1024x474.png){ loading=lazy }
+![](/_images/doc2/ai indicator/Image_2_AI_Indicator.png){ loading=lazy }
 
 **Extraction quality in percent per field and current document**
 
 For each field there is a value available on the right side which indicates the quality of extraction for the current document. A percentage value will be displayed:
 
-![](/_images/doc2/image-52.png){ loading=lazy }
+![](/_images/doc2/ai indicator/Image_3_Field_Accuracy.png){ loading=lazy }
 
 **Overall extraction quality including previous extractions of documents of the same type**
 
 Furthermore, there is a graph that shows the quality of all previous extractions for a document type. This refers in each case to the extraction value with the lowest quality:
 
-![](/_images/doc2/image-53.png){ loading=lazy }
+![](/_images/doc2/ai indicator/Image_4_AI_Indicator_Icon.png){ loading=lazy }
 
 **Technical Details:**
 
