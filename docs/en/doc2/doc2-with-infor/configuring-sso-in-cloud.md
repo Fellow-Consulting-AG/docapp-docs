@@ -61,11 +61,11 @@ Here you will find all the information you need for the following steps
 
 c) Download the certificate
 
-![](/_images/doc2/DOC2_SSO-Service-Provider-Settings-1024x640.png){ loading=lazy }
+![](/_images/doc2/infor sso/SSO-download-certificate.png){ loading=lazy }
 
 **4\. Filling the Service Provider with the help of SSO Service Provider Settings in DOC²**
 
-![](/_images/doc2/infor_Service-Provider_3-1024x891.png)
+![](/_images/doc2/infor sso/SSO-service-provider-settings.png)
 
 <table><tbody><tr><td><strong>Field</strong></td><td><strong>Value</strong></td></tr><tr><td><strong>Application Type</strong></td><td>DEFAULT_SAML</td></tr><tr><td><strong>Display Name</strong></td><td>DOC²</td></tr><tr><td><strong>Entity ID</strong></td><td>See Entity ID under SSO SERVICE SETTINGS</td></tr><tr><td><strong>SSO Endpoint</strong></td><td>Copy the SSO URL from SSO SERVICE SETTINGS and paste it in the <strong>SSO Endpoint </strong>field.</td></tr><tr><td><strong>SLO Endpoint</strong></td><td>Copy SLO URL from SSO SERVICE SETTINGS and paste it in the <strong>SLO Endpoint </strong>field.</td></tr><tr><td><strong>Signing Certificate</strong></td><td>Upload the appropriate .cer file you have downloaded in step 3c) from SSO SERVICE SETTINGS</td></tr><tr><td><strong>Name ID Format and Mapping</strong></td><td>emailaddress</td></tr></tbody></table>
 
@@ -97,7 +97,7 @@ b) Click on CONFIGURE
 
 This part is successfully completed when you see the following popup
 
-![](/_images/doc2/DOC2_File-successfully-saved.png){ loading=lazy }
+![](/_images/doc2/infor sso/SSO-file-saved-successfully.png){ loading=lazy }
 
 **6\. Add new Application in infor Ming.le**
 
