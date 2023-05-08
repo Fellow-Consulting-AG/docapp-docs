@@ -100,24 +100,24 @@ This part is successfully completed when you see the following popup
 
 ![](/_images/doc2/infor sso/SSO-file-saved-successfully.png){ loading=lazy }
 
-**6\. Add new Application in infor Ming.le**
+**6\. Adding a new Application in infor Ming.le**
 
-a) got to Admin settings and
+a) Go to Admin settings
 
 ![](/_images/doc2/infor sso/infor_Admin-Settings_Manage-Applications.png){ loading=lazy }
 
-b) click on ADD APPLICATION top right
+b) Click on ADD APPLICATION in the top right corner
 
 ![](/_images/doc2/infor sso/infor_Add-Application.png){ loading=lazy }
 
-c) fill out all fields like on following picture but with your own SSO Url, don't forget to choose icon and click on SAVE
+c) Fill out all the required fields, like in the image below, but with your own SSO Url. Don't forget to choose an icon and click on SAVE
 
 ![](/_images/doc2/infor sso/infor_Add-New-Application.png){ loading=lazy }
 
 **And now the last step:**
 
 - Log out of DOC².
-- Go back to the burger menu in infor and select the icon you just created.
-- And you are already on the dashboard of DOC².
+- Go back to the burger menu in Infor and select the icon you just created
+- You should then be at the dashboard of DOC²
 
 ![](/_images/doc2/infor sso/Sign-in-over-SSO.png){ loading=lazy }
