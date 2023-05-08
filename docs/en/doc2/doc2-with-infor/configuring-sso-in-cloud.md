@@ -23,23 +23,23 @@ URL starts with [https://mingle-portal.eu1.inforcloudsuite.com/<TENANT\_NAME](ht
 
 ![](/_images/doc2/infor sso/infor-signin.png){ loading=lazy }
 
-a) Choose the option Cloud Identities and use your login details
+a) Choose the option "Cloud Identities" and use your login details
 
 ![](/_images/doc2/infor sso/LogIn-infor.png){ loading=lazy }
 
-b) After login you will have access to the Infor Cloud. In this case we enter this page, but on the burger menu you will find access to all application.
+b) After you have logged in, you will have access to the Infor Cloud. You will be taken to this page, but on the burger menu you will find access to all the applications.
 
 ![](/_images/doc2/infor sso/Welcome-to-infor-Ming.le.png){ loading=lazy }
 
 ![](/_images/doc2/infor sso/infor_Burger-Menu.png){ loading=lazy }
 
-**2\. Open User Management for adding new Service Provider**
+**2\. Open "User Management" to add a new Service Provider**
 
-On the right hand side of the bar menu, you will find the user menu and there you can access the user management
+On the right hand side of the bar menu, you will find the user menu and that is where you can access user management
 
 ![](/_images/doc2/infor sso/infor_User-Management.png){ loading=lazy }
 
-a) Then you need to select in the left hand side menu the option **Security Administration** and **Service Provider**.
+a) Then, in the left hand side menu, you need to select the option **Security Administration** and **Service Provider**.
 
 ![](/_images/doc2/infor sso/infor_Service-Provider-1.png){ loading=lazy }
 
@@ -47,13 +47,13 @@ b. You will see this window with the Service Providers.
 
 ![](/_images/doc2/infor sso/infor_Service-Provider-2.png){ loading=lazy }
 
-c. Now click on the “+” sign and add our DOC² as Service Provider. (View step 4)
+c. Now click on the “+” sign and add DOC² as Service Provider. (View step 4)
 
 ![](/_images/doc2/infor sso/infor_Service-Provider-3.png){ loading=lazy }
 
 **3\. Access the SSO SERVICE PROVIDER SETTINGS in DOC²**
 
-a) Log in on URL [https://app.polydocs.io/](https://app.polydocs.io/) with the login details you received from us.
+a) Log in using the URL [https://app.polydocs.io/](https://app.polydocs.io/) with the login details you received from us.
 
 b) Go to SETTINGS (on top bar) and choose **Integration** where you will find all the information you need for the following steps.
 
@@ -64,7 +64,7 @@ c) Download the certificate
 
 ![](/_images/doc2/infor sso/SSO-download-certificate.png){ loading=lazy }
 
-**4\. Filling the Service Provider with the help of SSO Service Provider Settings in DOC²**
+**4\. Filling in the Service Provider details with the help of SSO Service Provider Settings in DOC²**
 
 ![](/_images/doc2/infor sso/infor_Service-Provider-4.png)
 
@@ -74,7 +74,7 @@ c) Download the certificate
 
 a) When you have filled out everything remember to save it with the disk icon above Application Type
 
-b) Then, enter the service provider DOC² again.
+b) Then, enter the details of the service provider DOC² again.
 
 c) Click on "VIEW" underneath Identity Provider Information.
 
@@ -82,13 +82,13 @@ c) Click on "VIEW" underneath Identity Provider Information.
 
 ![](/_images/doc2/infor sso/infor_Identity-Provider-Information.png){ loading=lazy }
 
-d) Export the **SAML METADATA.**
+d) Export the **SAML METADATA**.
 
-File looks like this: ServiceProviderSAMLMetadata\_10\_20\_2021.xml
+The file looks like this: ServiceProviderSAMLMetadata\_10\_20\_2021.xml
 
 **5\. Import the SAML METADATA in the SSO Settings.**
 
-Go to IDENTITY SERVICE PROVIDER SETTINGS, enter your Tenant ID (e.g. FELLOWCONSULTING\_DEV and underneath that line you see Upload file and the IMPORT Button, where you need to upload the previously exported SAML METADATA file.
+Go to IDENTITY SERVICE PROVIDER SETTINGS, enter your Tenant ID (e.g. FELLOWPRO\_DEV and underneath that line you see Upload file and the IMPORT Button, this is where you need to upload the previously exported SAML METADATA file.
 
 a) Click on IMPORT an then choose the METADATA file that you have already downloaded from the SSO SERVICE PROVIDER SETTINGS
 
@@ -96,7 +96,7 @@ b) Click on CONFIGURE
 
 ![](/_images/doc2/infor sso/SSO-service-provider-settings.png){ loading=lazy }
 
-This part is successfully completed when you see the following popup
+This part is successfully completed when you see the following pop-up.
 
 ![](/_images/doc2/infor sso/SSO-file-saved-successfully.png){ loading=lazy }
 
