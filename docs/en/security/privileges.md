@@ -10,21 +10,19 @@ tags:
 The first user of DOC² is the default organization admin.
 
 ## Privileges
-Organisation admins are able to access the settings in DOC².
-They are allowed to configure:
+Organization admins are able to access the settings in DOC². They are allowed to configure:
 
-- document types
-- general settings
-- ocr settings
-- company information
-- modules
-- users
-- groups & roles
-- import methods
-- export settings
-- filter regexes
-- master data validation
-- SSO settings
+- Company information
+- Groups, users and permissions
+- Integration (API-Key and SSO Settings)
+- Document types
+- Import methods
+- OCR settings
+- Classification and Extraction
+- Master Data Lookup
+- List of Values
+- Export settings
+- Modules
 
 ## User management
 Admins can add new users to the organization.
@@ -34,30 +32,32 @@ Every admin can revoke a user's admin rights.
 # Groups
 ## What is a Group?
 A group is a set of users that can be granted specific permissions for one or multiple document types.
-The groups can be created, changed and deleted by the organization admins. Every organization admin has the rights to do this.
-If no group is configured all privileges are granted to the users within the organization.
+The groups can be created, changed and deleted by the organization admins. Every organization admin has the rights to do this.<br>
+:fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }If no group is configured all privileges are granted to the users within the organization.
 
-## Groups and Priveleges management
-Groups are managed in DOC² under Settings -> Groups & Roles
+## Groups and Privileges management
+Groups are managed in DOC² under SETTINGS > Groups, Users and Permissions > Groups and Permissions
 
-### DOC² group user mangement
-The Organization admin can add users to the groups.
-![doc2 group user mangement](/_images/security/group-user.png)
+![](/_images/doc2/security privileges/groups-and-permissions.png)
 
-### DOC² group permission mangement
-The Organization admin can set the group permissions.
-![doc2 group permission mangement](/_images/security/group-permissions.png)
+### DOC² group user management
+The organization admin can add users to the groups.
+![doc2 group user mangement](/_images/doc2/security privileges/group-user.png)
+
+### DOC² group permission management
+The organization admin can set the group permissions.
+![doc2 group permission mangement](/_images/doc2/security privileges/group-permissions.png)
 
 ## Group permissions
 When creating a group, you can specify what privileges the users have for each document type.
 
 The different types of Privileges are:
 
-- view
-- update
-- delete
-- approve
-- second approval
+- View
+- Update
+- Delete
+- First Approval
+- Second Approval
 
 ### View
 If a user doesn't have the view permission, the document type will not be shown to him on the dashboard.
@@ -68,11 +68,11 @@ Exporting documents is only possible if the user has the update permission.
 ### Delete
 Permission to delete documents
 
-### Approve
-Permission to approve documents
+### First Approval
+Permission to grant the first approval, if configured.
 
 ### Second Approval
-Permission to grant the second approval if configured
+Permission to grant the second approval, if configured.
 
 
 
