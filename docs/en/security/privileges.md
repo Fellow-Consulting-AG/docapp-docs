@@ -32,7 +32,7 @@ Every admin can revoke a user's admin rights.
 # Groups
 ## What is a Group?
 A group is a set of users that can be granted specific permissions for one or multiple document types.
-The groups can be created, changed and deleted by the organization admins. Every organization admin has the rights to do this.
+The groups can be created, changed and deleted by the organization admins. Every organization admin has the rights to do this.<br>
 :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }If no group is configured all privileges are granted to the users within the organization.
 
 ## Groups and Privileges management
