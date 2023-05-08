@@ -20,7 +20,7 @@ To access the hole Polydocs API menu click [here](https://doc2api.cloudintegrati
 
 All you need is your API Key. You will find your **Key** in the Integration menu item in the settings.
 
-![](/_images/doc2/doc2-Settings-Integration-API Key.png)
+![](/en/_images/doc2/Settings/Integration/API/Image_1_api_key.png)
 
 
 :fontawesome-solid-circle-info:{ style="color: #0F17E4" }

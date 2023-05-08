@@ -11,19 +11,19 @@ tags:
 
 ### You will need this information filled for exporting documents in [ZUGFeRD](/doc2/zugpferd/) format.
 
-![](/_images/doc2/Company_1.png){ loading=lazy }
+![](/en/_images/doc2/Settings/Company Information/Image_1_company_information_location.png){ loading=lazy }
 
 Enter company specific information here so they can be used for various exports you might use.
 
 You will end up in the following screen.
 
-![](/_images/doc2/Company_2.png){ loading=lazy }
+![](/en/_images/doc2/Settings/Company Information/Image_2_info_page.png){ loading=lazy }
 
 Please enter your personal company information.
 
 Example:
 
-![](/_images/doc2/Company_3.png){ loading=lazy }
+![](/en/_images/doc2/Settings/Company Information/Image_3_example_info.png){ loading=lazy }
 
 When you are done, click on `SAVE`.
 
