@@ -57,6 +57,8 @@ a) Log in on URL [https://app.polydocs.io/](https://app.polydocs.io/) with the l
 
 b) Go to SETTINGS (on top bar) and choose SSO Settings down at the bottom of the list.
 
+![](/_images/doc2/infor sso/DOC2-Settings-Integration.png){ loading=lazy }
+
 Here you will find all the information you need for the following steps
 
 c) Download the certificate
