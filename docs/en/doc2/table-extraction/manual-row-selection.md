@@ -14,7 +14,7 @@ tags:
 
 It is possible that on some documents text in rows is not only written under one column. It might happen that it is written through different columns like in the example below:
 
-![](/_images/doc2/image-10-1024x606.png)
+![](/en/_images/doc2/Table-Extraction/7-Manual row selection/Image_23_doc_example.png)
 
 On the screenshot you can see that the table and columns have already been defined. Having a detailed look on the highlighted information (PRAEF) you will recognize that the text is written through columns "Bezeichnung", "Menge", "ME" and "Preis in EUR".
 
@@ -26,15 +26,15 @@ To solve this issue DOC² offers a possibility to manually select and map inform
 
 First of all make sure training mode is activated:
 
-![](/_images/doc2/image-11.png)
+![](/en/_images/doc2/Table-Extraction/7-Manual row selection/Image_24_training_mode_on.png)
 
 In addition you need to activate the row edit mode:
 
-![](/_images/doc2/image-13-1024x314.png)
+![](/en/_images/doc2/Table-Extraction/7-Manual row selection/Image_25_Row_data_edit_on.png)
 
 Please note that the manual mapping of text to a column is only possible for extractable columns (blue colour):
 
-![](/_images/doc2/image-14-1024x669.png)
+![](/en/_images/doc2/Table-Extraction/7-Manual row selection/Image_25(1)_result.png)
 
 The violet ones can not be mapped manually as the mapping has already been done via the columns defined on the document.
 
