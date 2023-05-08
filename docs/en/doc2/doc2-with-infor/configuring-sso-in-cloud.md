@@ -55,11 +55,10 @@ c. Now click on the “+” sign and add our DOC² as Service Provider. (View st
 
 a) Log in on URL [https://app.polydocs.io/](https://app.polydocs.io/) with the login details you received from us.
 
-b) Go to SETTINGS (on top bar) and choose SSO Settings down at the bottom of the list.
+b) Go to SETTINGS (on top bar) and choose **Integration** where you will find all the information you need for the following steps.
 
 ![](/_images/doc2/infor sso/DOC2-Settings-Integration.png){ loading=lazy }
 
-Here you will find all the information you need for the following steps
 
 c) Download the certificate
 
@@ -67,7 +66,7 @@ c) Download the certificate
 
 **4\. Filling the Service Provider with the help of SSO Service Provider Settings in DOC²**
 
-![](/_images/doc2/infor sso/SSO-service-provider-settings.png)
+![](/_images/doc2/infor sso/infor_Service-Provider-4.png)
 
 <table><tbody><tr><td><strong>Field</strong></td><td><strong>Value</strong></td></tr><tr><td><strong>Application Type</strong></td><td>DEFAULT_SAML</td></tr><tr><td><strong>Display Name</strong></td><td>DOC²</td></tr><tr><td><strong>Entity ID</strong></td><td>See Entity ID under SSO SERVICE SETTINGS</td></tr><tr><td><strong>SSO Endpoint</strong></td><td>Copy the SSO URL from SSO SERVICE SETTINGS and paste it in the <strong>SSO Endpoint </strong>field.</td></tr><tr><td><strong>SLO Endpoint</strong></td><td>Copy SLO URL from SSO SERVICE SETTINGS and paste it in the <strong>SLO Endpoint </strong>field.</td></tr><tr><td><strong>Signing Certificate</strong></td><td>Upload the appropriate .cer file you have downloaded in step 3c) from SSO SERVICE SETTINGS</td></tr><tr><td><strong>Name ID Format and Mapping</strong></td><td>emailaddress</td></tr></tbody></table>
 
