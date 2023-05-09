@@ -23,7 +23,7 @@ Import any document and open it. Navigate to the table extraction view like via 
 
 Columns can be added manually using the following button.
 
-![](/_images/doc2/Table-Extraction/4-Add new column/Image_16_new_table_column_button.png){ loading=lazy }
+![Table Extraction](/_images/doc2/Table-Extraction/4-Add new column/Image_16_new_table_column_button.png){ loading=lazy }
 
 In the window that opens, you can specify a name for the column to be generated. Furthermore, you can set whether it is an optional or a mandatory field. You can also specify whether the column is a field that contains text (column type STRING), that contains numerical values (column type AMOUNT) or that contains a date (column type DATE).
 
