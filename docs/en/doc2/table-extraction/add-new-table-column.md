@@ -15,7 +15,7 @@ Import any document and open it. Navigate to the table extraction view like via 
 
 [Sign up for a 30 days free trail](https://app.polydocs.io){ .md-button .md-button--primary }
 
-![](/en/_images/doc2/Table-Extraction/4-Add new column/Image_15_table_train_button.png){ loading=lazy }
+![Table Extraction](_images/Table-Extraction/4-Add new column/Image_15_table_train_button.png){ loading=lazy }
 
 ## Activate the training mode.
 
