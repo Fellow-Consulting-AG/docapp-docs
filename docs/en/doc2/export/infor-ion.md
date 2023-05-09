@@ -12,35 +12,33 @@ tags:
   - IDM
 ---
 
-####
-Export to Infor Document Management with publishing the document values in a seperate BOD
+#### Export to Infor ION and IDM
 
-Step by Step guide how to export documents to Infor Document Management (IDM) with publishing the values in a seperate Sync.CaptureDocument BOD.
+Export to Infor Document Management by publishing the document values in a seperate BOD
 
-**Prerequisites:**
+Step by step guide on how to export documents to Infor Document Management (IDM) by publishing the values in a seperate Sync.CaptureDocument BOD.
+
+## **Prerequisites:**
 
 - An admin user für InforOS with the security roles "ION Desk Admin", "ION API Admin", "IDM Admin".
 - An ION API file to create the communication between DOC² and Infor IDM. Follow the documentation here: [How to create an Infor ION file](/doc2/export/create-a-infor-ion-file/)
-- A IDM document type where the documents shall be exported to.
+- An IDM document type where the documents will be exported to.
 
 #### DOC² steps
 
-Login to DOC², click on settings and select "Export".
+Login to DOC², click on settings and select **Export**.
 
-![This image has an empty alt attribute; its file name is image-1-1024x695.png](/_images/doc2/image-1-1024x695.png)
+![](/_images/doc2/export to Infor ion and idm/DOC2_Settings-Export.png)
 
 
-Settings - Export
+Click on `+ NEW`
 
-Click on "Add integration"
+![](/_images/doc2/export to Infor ion and idm/DOC2_Export-Settings-NEW.png)
 
-![This image has an empty alt attribute; its file name is image-7-1024x751.png](/_images/doc2/image-7-1024x751.png)
 
-Settings - Export - Add integration
+Select **Infor IDM + ION BOD**
 
-Choose "Infor ION"
-
-![](/_images/doc2/image-31-1024x342.png)
+![](/_images/doc2/export to Infor ion and idm/DOC2_Select Integration-Infor IDM ION BOD.png)
 
 Click on the ION API File section and select the ION API file that you want to use for the communication between DOC² and IDM. If you don't have a ION API file follow this documentation to create one: [How to create an Infor ION file](/doc2/export/create-a-infor-ion-file/)
 
@@ -56,7 +54,7 @@ You find a example of the BOD mapping file on this page: [How to create a BOD ma
 
 ![](/_images/doc2/image-34-1024x343.png)
 
-Click "Save" to the save the export setting.
+Click `SAVE` to the save the export settings.
 
 #### Infor ION steps
 
