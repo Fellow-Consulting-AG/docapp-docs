@@ -16,7 +16,7 @@ tags:
 
 A step by step guide on how to export documents to Infor Document Management (IDM) without publishing the values in a seperate BOD.
 
-**Prerequisites:**
+## **Prerequisites:**
 
 - An admin user für InforOS with the security roles "ION Desk Admin", "ION API Admin", "IDM Admin".
 - An ION API file to create the communication between DOC² and Infor IDM. Follow the documentation here: [How to create an Infor ION file](/doc2/export/create-a-infor-ion-file/)
