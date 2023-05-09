@@ -12,11 +12,11 @@ In this section you can configure all types of email notifications for your docu
 
 Go to Settings and open the **Email notification** menu.
 
-![](/_images/doc2/DOC2_email-notification_1.png)
+![](/en/_images/doc2/Settings/Email Notification/Image_1_email_location.png)
 
 To add a new notification, click `+ NEW` in the top right corner and the following window will open.
 
-![](/_images/doc2/DOC2_email-notification_2.png)
+![](/en/_images/doc2/Settings/Email Notification/Image_2_new_email.png)
 
 In this you can define a custom name for the notification, select the document type and status as well as the time unit and enter the e-mail address of the person who should receive the corresponding notification.
 
