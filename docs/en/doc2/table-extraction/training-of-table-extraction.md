@@ -25,16 +25,16 @@ _______________________________
 - Mapped columns are read only. You are not be able to change the text manually.
 - Delete row button is not visible
 
-![](/en/_images/doc2/Table-Extraction/2-Training table extraction/Image_3_training_mode.png){ loading=lazy }
+![Table Extraction](/_images/doc2/Table-Extraction/2-Training table extraction/Image_3_training_mode.png){ loading=lazy }
 
 ##### Correction Mode:
 
 - Delete row and add new row option is available
 - You are able to manually change the texts of the columns
 
-![](/en/_images/doc2/Table-Extraction/2-Training table extraction/Image_4_correction_mode.png){ loading=lazy }
+![Table Extraction](/_images/doc2/Table-Extraction/2-Training table extraction/Image_4_correction_mode.png){ loading=lazy }
 
 After deleting the first row and adding the bottom row:
 
-![](/en/_images/doc2/Table-Extraction/2-Training table extraction/Image_5_result.png){ loading=lazy }
+![Table Extraction](/_images/doc2/Table-Extraction/2-Training table extraction/Image_5_result.png){ loading=lazy }
 

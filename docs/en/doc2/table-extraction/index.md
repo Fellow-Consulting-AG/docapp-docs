@@ -24,13 +24,13 @@ The extraction of data in tables can be achieved by following the steps describe
 
 5\. Click on the table icon inside the textbox
 
-![](/en/_images/doc2/Table-Extraction/1-Table Extraction/Image_1_line_items.png)
+![Table Extraction](/_images/doc2/Table-Extraction/1-Table Extraction/Image_1_line_items.png)
 
 You will end up in the table extraction view.
 
 If the document contains very simple tables it will detect and extract them automatically:
 
-![](/en/_images/doc2/Table-Extraction/1-Table Extraction/Image_2_easy_table.png)
+![Table Extraction](/_images/doc2/Table-Extraction/1-Table Extraction/Image_2_easy_table.png)
 
 In practice, tables on documents are often much more complex and have a wide variety of formatting and arrangements. For example, text may extend across several columns or there may be several lines of text in one position line. This is where the advantage of DOC² and its table extraction functionality comes into play. There are several ways to train the table extraction functionality and to achieve the best possible result, even with demanding tables.
 

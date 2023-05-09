@@ -15,18 +15,20 @@ Import any document and open it. Navigate to the table extraction view like via 
 
 [Sign up for a 30 days free trail](https://app.polydocs.io){ .md-button .md-button--primary }
 
-![](/en/_images/doc2/Table-Extraction/4-Add new column/Image_15_table_train_button.png){ loading=lazy }
+
+![Table Extraction](/_images/doc2/Table-Extraction/4-Add new column/Image_15_table_train_button.png){ loading=lazy }
+
 
 ## Activate the training mode.
 
 Columns can be added manually using the following button.
 
-![](/en/_images/doc2/Table-Extraction/4-Add new column/Image_16_new_table_column_button.png){ loading=lazy }
+![Table Extraction](/_images/doc2/Table-Extraction/4-Add new column/Image_16_new_table_column_button.png){ loading=lazy }
 
 In the window that opens, you can specify a name for the column to be generated. Furthermore, you can set whether it is an optional or a mandatory field. You can also specify whether the column is a field that contains text (column type STRING), that contains numerical values (column type AMOUNT) or that contains a date (column type DATE).
 
-![](/en/_images/doc2/Table-Extraction/4-Add new column/Image_17_new_table_column_page.png){ loading=lazy }
+![](/_images/doc2/Table-Extraction/4-Add new column/Image_17_new_table_column_page.png){ loading=lazy }
 
 Once the column has been created by clicking on "PROCEED", it can be used for manual mappings ([](/doc2/doc2app/table-train/training-of-table-extraction/manual-row-selection/)[Manual row selection](/doc2/table/manual-row-selection/)).
 
-![](/en/_images/doc2/Table-Extraction/4-Add new column/Image_18_proceed.png){ loading=lazy }
+![](/_images/doc2/Table-Extraction/4-Add new column/Image_18_proceed.png){ loading=lazy }
