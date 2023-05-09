@@ -10,9 +10,11 @@ tags:
   - DOC²
 ---
 
-#### Export to Infor Document Management without publishing the document values in a seperate BOD
+#### Export to Infor IDM
 
-Step by Step guide how to export documents to Infor Document Management (IDM) without publishing the values in a seperate BOD.
+**How to export to Infor Document Management without publishing the document values in a seperate BOD**
+
+A step by step guide on how to export documents to Infor Document Management (IDM) without publishing the values in a seperate BOD.
 
 **Prerequisites:**
 
@@ -23,36 +25,38 @@ Step by Step guide how to export documents to Infor Document Management (IDM) wi
 
 Login to DOC², click on settings and select "Export".
 
-![](/_images/doc2/ExportToInforIDM_1.png)
+![](/_images/doc2/export to Infor idm/DOC2_Settings-Export.png)
 
 
 Settings - Export
 
-Click on "Add integration"
+Click on `+ NEW`
 
-![](/_images/doc2/ExportToInforIDM_2.png)
+![](/_images/doc2/export to Infor idm/DOC2_Export-Settings-NEW.png)
 
-Settings - Export - Add integration
 
-Choose "Infor IDM"
+Select "Infor IDM"
 
-![](/_images/doc2/ExportToInforIDM_3.png)
+![](/_images/doc2/export to Infor idm/DOC2_Select Integration-Infor IDM.png)
 
-Click on the ION API File section and select the ION API file that you want to use for the communation between DOC² and IDM. If you don´t have a ION API file follow this documentation to create one: [How to create an Infor ION file](/doc2/export/create-a-infor-ion-file/)
+Click on the ION Mapping File section and select the ION API file that you want to use for the communication between DOC² and IDM. If you don´t have an ION API file follow this documentation to create one: [How to create an Infor ION file](/doc2/export/create-a-infor-ion-file/)
 
-On normal exports you will have to pick "CLOUD" on the left slider.
-With the right slider you can choose if you want to export the normal PDF Invoice to Infor or if you want to export the Invoice as ZUGfERD (PDF with X-Rechnung format ZUGfERD XML attachment).
-![](/_images/doc2/ExportToInforIDM_4_PDF_Cloud.png)
-![](/_images/doc2/ExportToInforIDM_4_ZUGfERD_Cloud.png)
-On exports using [Watchdog](/doc2/fileshare/), you will have to pick "ONPREM" on the left slider.
-![](/_images/doc2/ExportToInforIDM_4_PDF_OnPrem.png)
-![](/_images/doc2/ExportToInforIDM_4_ZUGfERD_OnPrem.png)
+For normal exports you will have to pick "CLOUD" on the left slider.
+Using the right slider, you can choose if you want to export the invoice as a PDF to Infor or if you want to export the invoice in ZUGFeRD format (PDF with X-Rechnung format ZUGFeRD XML attachment).
 
-Click on the IDM Mapping file section and choose the IDM Mapping file you want to use for the export.
-You find a example of the IDM mapping file on this page: [How to create a IDM mapping file](/doc2/export/how-to-create-a-idm-mapping-file/)
-![](/_images/doc2/ExportToInforIDM_5_PDF_Cloud.png)
-![](/_images/doc2/ExportToInforIDM_5_ZUGfERD_Cloud.png)
-![](/_images/doc2/ExportToInforIDM_5_PDF_OnPrem.png)
-![](/_images/doc2/ExportToInforIDM_5_ZUGfERD_OnPrem.png)
+![](/_images/doc2/export to Infor idm/Infor-IDM-PDF-cloud-ION-Mapping-file.png)
+![](/_images/doc2/export to Infor idm/Infor-IDM-ZUGFeRD-cloud-ION-Mapping-file.png)
 
-Click "Save" to the save the export setting.
+For exports using [Watchdog](/doc2/fileshare/), you will have to pick "ONPREM" on the left slider.
+
+![](/_images/doc2/export to Infor idm/Infor-IDM-PDF-onprem-ION-Mapping-file.png)
+![](/_images/doc2/export to Infor idm/Infor-IDM-ZUGFeRD-onprem-ION-Mapping-file.png)
+
+Click on the IDM Mapping File section and choose the IDM Mapping file you want to use for the export.
+You find an example of the IDM mapping file on this page: [How to create a IDM mapping file](/doc2/export/how-to-create-a-idm-mapping-file/)
+![](/_images/doc2/export to Infor idm/Infor-IDM-PDF-cloud-IDM-Mapping-properties.png)
+![](/_images/doc2/export to Infor idm/Infor-IDM-ZUGFeRD-cloud-IDM-Mapping-properties.png)
+![](/_images/doc2/export to Infor idm/Infor-IDM-PDF-onprem-IDM-Mapping-properties.png)
+![](/_images/doc2/export to Infor idm/Infor-IDM-ZUGFeRD-onprem-IDM-Mapping-properties.png)
+
+Click `SAVE` to the save the export settings.
