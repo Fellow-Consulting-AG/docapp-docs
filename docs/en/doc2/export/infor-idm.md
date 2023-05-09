@@ -23,31 +23,29 @@ A step by step guide on how to export documents to Infor Document Management (ID
 - A IDM document type where the documents shall be exported to.
 - A IDM Mapping file which IDM uses to know which document content represents which information. You find a example of the IDM mapping file on this page: [How to create a IDM mapping file](/doc2/export/how-to-create-a-idm-mapping-file/)
 
-Login to DOC², click on settings and select "Export".
+Login to DOC², click on settings and select **Export**.
 
 ![](/_images/doc2/export to Infor idm/DOC2_Settings-Export.png)
 
-
-Settings - Export
 
 Click on `+ NEW`
 
 ![](/_images/doc2/export to Infor idm/DOC2_Export-Settings-NEW.png)
 
 
-Select "Infor IDM"
+Select **Infor IDM**
 
 ![](/_images/doc2/export to Infor idm/DOC2_Select Integration-Infor IDM.png)
 
-Click on the ION Mapping File section and select the ION API file that you want to use for the communication between DOC² and IDM. If you don´t have an ION API file follow this documentation to create one: [How to create an Infor ION file](/doc2/export/create-a-infor-ion-file/)
+Click on the ION Mapping File section and select the ION API file that you want to use for the communication between DOC² and IDM. If you don´t have an ION API file follow this documentation to create one: [How to create an Infor ION file](/doc2/export/create-a-infor-ion-api-file/)
 
-For normal exports you will have to pick "CLOUD" on the left slider.
+For normal exports you will have to pick `CLOUD` on the left slider.
 Using the right slider, you can choose if you want to export the invoice as a PDF to Infor or if you want to export the invoice in ZUGFeRD format (PDF with X-Rechnung format ZUGFeRD XML attachment).
 
 ![](/_images/doc2/export to Infor idm/Infor-IDM-PDF-cloud-ION-Mapping-file.png)
 ![](/_images/doc2/export to Infor idm/Infor-IDM-ZUGFeRD-cloud-ION-Mapping-file.png)
 
-For exports using [Watchdog](/doc2/fileshare/), you will have to pick "ONPREM" on the left slider.
+For exports using [Watchdog](/doc2/fileshare/), you will have to pick `ONPREM` on the left slider.
 
 ![](/_images/doc2/export to Infor idm/Infor-IDM-PDF-onprem-ION-Mapping-file.png)
 ![](/_images/doc2/export to Infor idm/Infor-IDM-ZUGFeRD-onprem-ION-Mapping-file.png)
