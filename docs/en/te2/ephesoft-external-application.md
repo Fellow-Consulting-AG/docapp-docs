@@ -1,7 +1,8 @@
+
 ---
-title: "Ephesoft - External Application"
-description: In this documentation you will find how to use DOC² as External Application for Ephesoft to easily train tables step by step.
-date: "2022-02-11"
+title: "How to Use DOC² as an External Application for Ephesoft"
+description: "Learn how to easily train tables step by step using DOC² as an external application for Ephesoft. Improve your table extraction with this guide."
+date: "2022-10-19"
 tags:
   - TE²
   - Plugin
@@ -12,74 +13,25 @@ tags:
   - External Application
 ---
 
-Upload your document in Ephesoft
+If you're looking to improve your table extraction process, you've come to the right place. In this guide, we'll show you how to use DOC² as an external application for Ephesoft to easily train tables step by step.
 
-as soon as the document is Ready For Validation open the Batch Id
+To get started, upload your document in Ephesoft. Once the document is ready for validation, open the Batch Id. From there, select "More" from the upper green boxes, then "External Application," and finally "DOC²."
 
-![](/_images/doc2/Ephesoft_open-Batch-1024x584.png)
+A popup window will open with DOC² and your document from the Batch Id. If you've reached this point, you can continue with the detailed description (with videos) [here](/doc2/doc2app/table-train/) (starting from point 6).
 
-in the next step, select **More** from the upper green boxes, then **External Application** and finally **DOC²**
+Alternatively, you can take the shortcut with the instructions below:
 
-![](/_images/doc2/Ephsoft_External-Application-1024x583.png)
+1. Press "Autodetect Tables."
+2. If no table is found, choose the Edit icon.
+3. Select the table.
+4. Click on "Add Column."
+5. Map the columns accordingly and click on the "Save Changes" button.
+6. Select the correct name of the columns so that the exclamation marks disappear and press the "Save" button.
 
-A popup window opens with DOC² and your document from the Batch Id.
-
-![](/_images/doc2/External-Application-DOC2_EN-1024x640.png)
-
-If you have reached this point, you can continue with the detailed description (with videos) [here](/doc2/doc2app/table-train/) (starting from point 6.)
-
-* * *
-
-Or you can take the shortcut with the instructions here:
-
-![](/_images/doc2/DOC2_Autodetect-Table_EN-1024x550.png)
-
-Press Autodetect Tables.
-
-If no table is found choose the Edit icon
-
-![](/_images/doc2/DOC2_Edit-Table_EN-1024x549.png)
-
-![](/_images/doc2/DOC2_Select-table_EN-1024x549.png)
-
-Select the table
-
-![](/_images/doc2/DOC2_Add-column_EN-1024x549.png)
-
-Click on Add Column
-
-![](/_images/doc2/DOC2_map-columns-and-save_EN-1024x550.png)
-
-Map the columns accordingly and click on Save Changes button
-
-The extracted data with the table Headers and data will be shown in the section on the right.
-
-Select the correct name of the columns so that the exclamation marks disappear and press the Save button.
-
-- ![](/_images/doc2/DOC2_POS-NO-3-1024x551.png)
-
-- ![](/_images/doc2/DOC2_QTY-3-1024x548.png)
-
-
-- ![](/_images/doc2/DOC2_CAT-NO-SIZE-4-1024x549.png)
-
-- ![](/_images/doc2/DOC2_YOUR-POS-NO-4-1024x548.png)
-
-
-- ![](/_images/doc2/DOC2_MATERIAL-DESCRIPTION-4-1024x550.png)
-
-- ![](/_images/doc2/DOC2_UNIT-PRICE-2-1024x548.png)
-
-
-- ![](/_images/doc2/DOC2_DISCOUNT-2-1024x549.png)
-
-- ![](/_images/doc2/DOC2_TOTAL-EUR-2-1024x549.png)
-
-
-![](/_images/doc2/DOC2_final-save_EN-1024x549.png)
-
-We can achieve extraction of Table data in this way easily.
+The extracted data with the table headers and data will be shown in the section on the right. We recommend selecting the correct name of the columns to ensure the best results.
 
 When you go back to Ephesoft and open the table, you will see the edited table as follows:
 
-![](/_images/doc2/Ephesoft_Table-1024x640.png)
+![Edited Table in Ephesoft](/_images/doc2/Ephesoft_Table-1024x640.png)
+
+By following these steps, you can achieve extraction of table data easily and efficiently. Improve your table extraction process today with DOC² as an external application for Ephesoft.

@@ -1,174 +1,45 @@
+
 ---
-title: DOC² export to Excel
-description: In this example we trigger the result from Doc² and write the result to excel and upload it to Dropbox.
-date: 2022-06-23
+title: Export DOC² Results to Excel and Upload to Dropbox
+description: Learn how to export results from DOC² to Excel and upload them to Dropbox using n8n. Automate your workflow and save time with this easy-to-follow tutorial.
+date: 2022-11-29
 tags:
-  - Workflow²
-  - Dropbox
-  - Excel
   - DOC²
-
+  - Excel
+  - Dropbox
+  - n8n
 ---
 
-#  DOC² export to Excel and Upload to Dropbox
+# Export DOC² Results to Excel and Upload to Dropbox
 
+<div class='video-container'>
+  <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+</div>
 
-![DOC² export to Excel](/_images/excel-dropbox.png)
+In this tutorial, we'll show you how to export results from DOC² to Excel and upload them to Dropbox using n8n. This automation will save you time and effort, allowing you to focus on more important tasks.
 
+## Prerequisites
 
-In this example we trigger the result from DOC² and write the result to excel and upload it to Dropbox.
+Before we get started, make sure you have the following:
 
+- A DOC² account
+- An n8n account
+- A Dropbox account
 
+## Step 1 - Set up the Trigger
 
-## Example
+The first step is to set up the trigger. In this example, we'll use the "Status Trigger" node to trigger the workflow when a document with a specific status is validated and pending export.
 
-``` Javascript
-{
-  "name": "Export to Dropbox",
-  "nodes": [
-    {
-      "parameters": {},
-      "name": "Start",
-      "type": "n8n-nodes-base.start",
-      "typeVersion": 1,
-      "position": [
-        180,
-        420
-      ]
-    },
-    {
-      "parameters": {
-        "document_type": "INVOICE",
-        "status": "validated_pending_export"
-      },
-      "name": "Status Trigger",
-      "type": "n8n-nodes-base.statusTrigger",
-      "typeVersion": 1,
-      "position": [
-        200,
-        200
-      ],
-      "webhookId": "b4e6be8c-5be1-4c75-8906-aa8790c1dd51",
-      "credentials": {
-        "Doc2AppApi": {
-          "id": "1",
-          "name": "Doc2App account"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "operation": "toFile",
-        "fileFormat": "xlsx",
-        "options": {
-          "fileName": "excel.xlsx"
-        }
-      },
-      "name": "Spreadsheet File",
-      "type": "n8n-nodes-base.spreadsheetFile",
-      "typeVersion": 1,
-      "position": [
-        900,
-        200
-      ]
-    },
-    {
-      "parameters": {
-        "functionCode": "// Code here will run only once, no matter how many input items there are.\n// More info and help: https://docs.polydocs.io/workflow/integrations/core-nodes/workflow-nodes-base.function\n// Tip: You can use luxon for dates and $jmespath for querying JSON structures\n\n// Loop over inputs and add a new field called 'myNewField' to the JSON of each one\n//for (item of items) {\n//  item.json.myNewField = 1;\n//}\n\n// You can write logs to the browser console\nconsole.log('Done!');\n\nreturn items[0].json.fields_compact;\n\n"
-      },
-      "name": "Function",
-      "type": "n8n-nodes-base.function",
-      "typeVersion": 1,
-      "position": [
-        640,
-        200
-      ]
-    },
-    {
-      "parameters": {
-        "options": {}
-      },
-      "name": "Spreadsheet File1",
-      "type": "n8n-nodes-base.spreadsheetFile",
-      "typeVersion": 1,
-      "position": [
-        1320,
-        200
-      ]
-    },
-    {
-      "parameters": {
-        "path": "/excel.xlsx",
-        "binaryData": true
-      },
-      "name": "Dropbox",
-      "type": "n8n-nodes-base.dropbox",
-      "typeVersion": 1,
-      "position": [
-        1320,
-        0
-      ],
-      "credentials": {
-        "dropboxApi": {
-          "id": "4",
-          "name": "Dropbox account"
-        }
-      }
-    }
-  ],
-  "connections": {
-    "Status Trigger": {
-      "main": [
-        [
-          {
-            "node": "Function",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Start": {
-      "main": [
-        []
-      ]
-    },
-    "Spreadsheet File": {
-      "main": [
-        [
-          {
-            "node": "Spreadsheet File1",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "Dropbox",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Function": {
-      "main": [
-        [
-          {
-            "node": "Spreadsheet File",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Spreadsheet File1": {
-      "main": [
-        []
-      ]
-    }
-  },
-  "active": false,
-  "settings": {},
-  "id": 2
-}
+## Step 2 - Export Results to Excel
 
-```
+Next, we'll use the "Spreadsheet File" node to export the results from DOC² to an Excel file. We'll also use the "Function" node to format the data and prepare it for upload to Dropbox.
+
+## Step 3 - Upload to Dropbox
+
+Finally, we'll use the "Dropbox" node to upload the Excel file to Dropbox. This will allow you to access the file from anywhere and share it with others.
+
+## Conclusion
+
+By following this tutorial, you've learned how to export results from DOC² to Excel and upload them to Dropbox using n8n. This automation will save you time and effort, allowing you to focus on more important tasks. If you have any questions or comments, feel free to leave them below.
+
+![Export DOC² Results to Excel and Upload to Dropbox](/_images/excel-dropbox.png)

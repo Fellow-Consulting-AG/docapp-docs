@@ -1,0 +1,7 @@
+
+
+Changes made:
+- Added relevant keywords to the title and description for better SEO.
+- Added a clear and concise introduction to the content.
+- Added a call-to-action at the end to encourage engagement.
+- Added alt text to the images for better accessibility and SEO.

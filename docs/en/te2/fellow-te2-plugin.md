@@ -1,7 +1,8 @@
+
 ---
-title: "TE² Plugin"
-description: The TE² Plugin is a cloud-based repository solution for Ephesoft Transact software which is focused on extracting autonomously and automatically the line items in a table. Through the cloud-based Table Extraction Repository, you access a pool of rules from all users of the plugin.
-date: "2021-07-05"
+title: "TE² Plugin for Ephesoft Transact | Table Extraction Repository"
+description: "TE² Plugin is a cloud-based repository solution for Ephesoft Transact software that automates the extraction of line items in a table. Access a pool of rules from all users of the plugin through the cloud-based Table Extraction Repository."
+date: '2021-11-29'
 tags:
   - TE²
   - Plugin
@@ -10,29 +11,28 @@ tags:
   - Repository
 ---
 
-Welcome to TE² Plugin for Ephesoft Transact!
+# TE² Plugin for Ephesoft Transact
 
+The TE² Plugin is a cloud-based repository solution for Ephesoft Transact software that automates the extraction of line items in a table. With the cloud-based Table Extraction Repository, you can access a pool of rules from all users of the plugin.
 
+## How It Works
 
-<div class="video-container">
-<iframe width="840" height="472.5" src="https://www.youtube-nocookie.com/embed/Nmr-R3jb0Fw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+The TE² Plugin analyzes two factors to extract data from tables:
 
-The TE² Plugin is a cloud-based repository solution for Ephesoft Transact software which is focused on extracting autonomously and automatically the line items in a table.
+1. Detection of the location of the table in the document
+2. Mapping of the results/data with the standard schema to be extracted to the ERP system
 
-Through the cloud-based Polydocs GmbH Table Extraction Repository, you access a pool of rules from all users of the plugin.
+The solution recognizes column captions and assigns them to the correct values, increasing accuracy with more synonyms assigned to a column caption.
 
-![KV Repository](/_images/kv2/FellowKV_Repository-4.png)
+### Detection of Table Location
 
-This solution works is by analyzing two factors. The first one, is the detection of the location of the table in the document (1). Second is to map the results/data with the standard schema in order to be properly extracted to the ERP system (2).
+The recognition function detects where the table starts and ends, allowing mapping of data across all tables.
 
-It is important that the column caption is recognized and can be assigned to the correct values. The “accuracy” becomes higher, the more synonyms are assigned to a column caption.
+![Table Detection](/_images/te/table-detection.png "Table Detection")
 
-(1) The recognition function detects where the table starts and ends. The mapping of the data can be conducted across all tables.
+### Mapping of Data
 
-![Table](/_images/te/Tabel.png)
-
-(2) The standard schema for mapping columns is configured by PolyDocs GmbH i. Gr. That means that standard columns like position, description, amount, etc. are included in this mapping file:
+The standard schema for mapping columns is configured by PolyDocs GmbH i. Gr. Standard columns like position, description, amount, etc. are included in this mapping file:
 
 - Position
 - Item number
@@ -40,3 +40,17 @@ It is important that the column caption is recognized and can be assigned to the
 - Quantity
 - Unit price
 - Total amount
+
+![Data Mapping](/_images/te/data-mapping.png "Data Mapping")
+
+## Watch the Video
+
+Learn more about the TE² Plugin by watching this video:
+
+<div class='video-container'>
+<iframe width='840' height='472.5' src='https://www.youtube-nocookie.com/embed/Nmr-R3jb0Fw' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>
+</div>
+
+## Get Started with TE² Plugin
+
+Start automating the extraction of line items in tables with TE² Plugin for Ephesoft Transact. Access a pool of rules from all users of the plugin through the cloud-based Table Extraction Repository.

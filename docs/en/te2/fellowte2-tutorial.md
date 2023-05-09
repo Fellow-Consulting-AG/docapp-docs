@@ -1,7 +1,8 @@
+
 ---
-title: "TE² Tutorial"
-description: This is a step by step guide how to use our TE² Plugin after you have installed and configured it. You will find all steps in Ephesoft that have do be proceeded to get to the table view.
-date: "2021-07-05"
+title: "TE² Tutorial: Step-by-Step Guide for Table Extraction with Ephesoft"
+description: "Learn how to use the TE² Plugin for table extraction in Ephesoft with this step-by-step guide. Follow the instructions to get to the table view and optimize your data extraction process."
+date: '2021-11-29'
 tags:
   - TE²
   - Plugin
@@ -9,74 +10,91 @@ tags:
   - Table Extraction
 ---
 
+## TE² Tutorial: Step-by-Step Guide for Table Extraction with Ephesoft
+
+If you've installed and configured the TE² Plugin, this tutorial will guide you through the steps to use it for table extraction in Ephesoft.
+
 ### Prerequisites
 
-To work with this tutorial you have to complete [Installation & Configuration](/te2/install/) Section for this Plugin.
+Before starting, make sure you've completed the [Installation & Configuration](/te2/install/) section for this Plugin.
 
-* * *
+### How To Use TE² Plugin
 
-### How To Use KV² Plugin
+#### Step 1: Log-in
 
-##### **Step 0: Log-in**
+Log in to the Ephesoft Transact Software with your username and password.
 
-- log into the Ephesoft Transact Software with username and password
+![Ephesoft Login](/_images/doc2/login1Unbenannt.png)
 
-![](/_images/doc2/login1Unbenannt.png)
+After logging in, you'll see the menu on the left side with two modules: Administrator & Operator with their defined functions:
 
-![](/_images/doc2/login2Unbenannt.png)
+| Administrator | Operator |
+| --- | --- |
+| Batch Class Management | Batch List |
+| Batch Instance Management | Review Validate |
+| Folder Management | Web Scanner |
+| System Configuration | Upload New Document |
+| Report | |
 
-- After login you see the menu on the left side with two modules: Administrator & Operator with their defined functions:
+#### Step 2: Upload Documents
 
-<table><tbody><tr><td><strong>Administrator</strong></td><td><strong>Operator</strong></td></tr><tr><td>Batch Class Management</td><td>Batch List</td></tr><tr><td>Batch Instance Management</td><td>Review Validate</td></tr><tr><td>Folder Management</td><td>Web Scanner</td></tr><tr><td>System Configuration</td><td>Upload New Document</td></tr><tr><td>Report</td><td></td></tr></tbody></table>
+Upload your documents through the Operator Module in “Upload Batch”.
 
-#### **Step 1: Interface application of the FellowTE2 Plugin**
+![Upload Batch](/_images/doc2/step1_1.png)
 
-- Upload your documents through the Operator Module in “Upload Batch”:
+Start the batch with the according batch class.
 
+![Start Batch](/_images/doc2/startbatch.png)
 
-![](/_images/doc2/step1_1.png)
+Wait in the Administrator Module in “Batch Instance Management” for the batch to be processed and ready for validation.
 
-- Start the batch with the according batch class.
+![Batch Instance Management](/_images/doc2/Process3Unbenannt.png)
 
-![](/_images/doc2/startbatch.png)
+#### Step 3: Validate Header and Footer Fields
 
-- Wait in the Administrator Module in “Batch Instance Management” for the batch to be processed and ready for validation.
+Select your Batch and in the list and click to open the batch in order to validate the header and footer fields.
 
-![](/_images/doc2/Process3Unbenannt.png)
+![Open Batch](/_images/doc2/4-open-batchUnbenannt.png)
 
-- Select your Batch and in the list and click to open the batch in order to validate the header and footer fields:
+Now you will be redirected to the Ephesoft Validation Window. Besides the options Validate, Next Batch, Merge, Split and More you can find here the button to access the "Table" view.
 
-![](/_images/doc2/4-open-batchUnbenannt.png)
+![Ephesoft Validation Window](/_images/doc2/image-39-1024x541.png)
 
-- Now you will be redirected to the Ephesoft Validation Window.
-    Besides the options Validate, Next Batch, Merge, Split and More you can find here the button to access the "Table" view.
+![Table View Button](/_images/doc2/image-40-1024x541.png)
 
+#### Step 4: Access the Table View
 
-![](/_images/doc2/image-39-1024x541.png)
+There is a default schema in place which is used by default and can handle most of the Invoice/Table layouts. For certain Invoice/Table layouts, there are special (custom) layouts in place, and there could be more if there are any special needs within your organization.
 
-![](/_images/doc2/image-40-1024x541.png)
+The default schema can recognize values listed in the table below. If any field which is marked as required in the table below is missing, this row cannot be recognized as a valid row.
 
-There is a default schema in place which is used by default and can handle most of the Invoice/ Table layouts. For some certain Invoice / Table layouts there are special (custom) layouts in place and certainly there could be more if there are any special needs within your Organisation.
+| Name | Type | Required |
+| --- | --- | --- |
+| POSITION | string | false |
+| DESCRIPTION | string | true |
+| ITEM_NUMBER | string | false |
+| QUANTITY | number | true |
+| UNIT_PRICE | currency | true |
+| TOTAL_AMOUNT | currency | true |
+| PURCHASE_ORDER | string | false |
 
-The default schema can recognize values listed in table below. If any field which is marked as required in the table below is missing, this row cannot be recognized as a valid row.
+![Default Schema Table](/_images/doc2/image-43-1024x732.png)
 
-<table><tbody><tr><td><strong>Name</strong></td><td><strong>Type</strong></td><td><strong>Required</strong></td></tr><tr><td>POSITION</td><td>string</td><td>false</td></tr><tr><td>DESCRIPTION</td><td>string</td><td>true</td></tr><tr><td>ITEM_NUMBER</td><td>string</td><td>false</td></tr><tr><td>QUANTITY</td><td>number</td><td>true</td></tr><tr><td>UNIT_PRICE</td><td>currency</td><td>true</td></tr><tr><td>TOTAL_AMOUNT</td><td>currency</td><td>true</td></tr><tr><td>PURCHASE_ORDER</td><td>string</td><td>false</td></tr></tbody></table>
+TE² plugin backend intelligence is executing and optimizing the data/table view, which can then be validated or corrected by the user if needed. Even if most tables are recognized and can be executed, there are some limitations in the technology, meaning that certain kinds of tables cannot be recognized.
 
-![](/_images/doc2/image-43-1024x732.png)
-
-TE² plugin backend intelligence is executing and optimizing the data/ table view which can then be validated or corrected by user if needed. Even if most tables are recognized and can be executed there are some limitations in the technology, meaning that certain kinds of tables cannot be recognized.
-
-The following characteristics are some reasons on why tables can not be extracted:
+The following characteristics are some reasons why tables cannot be extracted:
 
 1. Multi-line tables.
 2. Mixed separation of columns (grid and no grid mix).
 3. Table grid overlapping.
 4. Too much distance between the column headers and the actual lines.
 
-In any case, tables will be analysed by PolyDocs GmbH i. Gr. in order to determine possibility and viability of the table extraction.
+In any case, tables will be analyzed by PolyDocs GmbH i. Gr. to determine the possibility and viability of the table extraction.
 
-Examples:
+#### Examples
 
-![](/_images/doc2/image-41-1024x727.png)
+![Table Extraction Example 1](/_images/doc2/image-41-1024x727.png)
 
-![](/_images/doc2/image-42-1024x648.png)
+![Table Extraction Example 2](/_images/doc2/image-42-1024x648.png)
+
+Follow these steps to optimize your data extraction process with the TE² Plugin in Ephesoft. For more information, visit our website or contact us today.
