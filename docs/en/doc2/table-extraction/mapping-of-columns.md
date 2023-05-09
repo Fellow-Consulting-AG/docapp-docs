@@ -15,7 +15,7 @@ That can be done via selecting the header of a column in the extraction view.
 
 A dropdown will open and you are able to select the column that you want to map.
 
-![](/en/_images/doc2/Table-Extraction/5-Mapping of Columns/Image_19_change_column.png)
+![Table Extraction](/_images/doc2/Table-Extraction/5-Mapping of Columns/Image_19_change_column.png)
 
 If a column has been mapped incorrectly you can simply re-map the column by clicking the dropdown menu again.
 
