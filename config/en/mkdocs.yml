@@ -1,7 +1,7 @@
 site_name: FELLOWPRO Documentation
 docs_dir: '../../docs/en'                           # Where to find the English markdown files
 site_dir: '../../generated/en'                      # Where to put the English HTML files
-site_url: https://docs.polydocs.io
+site_url: https://docs.fellowpro.com
 site_author: Daniel Jordan
 site_description: On these pages you will learn a lot about our different software helping you with digitization, digitalization and the digital transformation in your company.
 theme:
@@ -47,11 +47,11 @@ theme:
     - navigation.tracking
     - navigation.indexes
 # https://squidfunk.github.io/mkdocs-material/customization/?h=#additional-css
-#extra_css:
-#  - _extra/css/extra.css
+extra_css:
+  - _extra/css/extra.css
 # https://squidfunk.github.io/mkdocs-material/customization/?h=#additional-javascript
-#extra_javascript:
-#  - _extra/javascript/extra.js
+extra_javascript:
+  - _extra/javascript/extra.js
 extra:
   alternate:
     - name: English
