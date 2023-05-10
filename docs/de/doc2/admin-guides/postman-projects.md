@@ -47,9 +47,9 @@ Es sollte so aussehen:
 
 ![Picture](/_images/doc2/admin_guides_doc2-api-authorize_key.png){ loading=lazy }
 
-## Erstellen eines neuen Workspaces in Postman
+## Erstellen eines neuen Workspace in Postman
 
-**1.** Klicken Sie auf Workspaces und erstellen Sie einen neuen Workspace (Sie können ihn nennen, wie Sie möchten).<br>
+**1.** Klicken Sie auf Workspace und erstellen Sie einen neuen Workspace (Sie können ihn nennen, wie Sie möchten).<br>
 
 ![Picture](/_images/doc2/admin_guides_postman_guide_workspace_1.png){ loading=lazy }
 
@@ -70,7 +70,7 @@ In dieser Sammlung können Sie mehrere HTTP-Anfragen hinzufügen. Klicken Sie da
 Die GET-Methode ist sehr nützlich, um Informationen über Benutzer, Unterorganisationen, verarbeitete Dokumente und vieles mehr zu erhalten.
 
 **1.** Wählen Sie die GET-Methode in Ihrer HTTP-Anfrage aus.<br>
-**2.** Autorisieren Sie sich wie oben beschrieben [Autorisierung](/doc2/admin-guides/postman-projects/#autorisation).<br>
+**2.** Autorisieren Sie sich wie oben beschrieben [Autorisierung](/doc2/admin-guides/postman-projects/#autorisierung).<br>
 **3.** Öffnen Sie <a href="https://api.polydocs.io">api.polydocs.io</a> und fügen Sie den Pfad der Funktion hinter der Polydocs URL ein. Zum Beispiel:
 
 ![Picture](/_images/doc2/admin_guide_get_api.png){ loading=lazy }
@@ -82,7 +82,7 @@ Die GET-Methode ist sehr nützlich, um Informationen über Benutzer, Unterorgani
 
 **4.** Fügen Sie diesen Link nun in das Textfeld neben der GET-Methode in Postman ein.
 
-Klicken Sie auf `Senden` und Sie sollten alle Informationen über jeden Benutzer in Ihrer Organisation erhalten.
+Klicken Sie auf `Send` und Sie sollten alle Informationen über jeden Benutzer in Ihrer Organisation erhalten.
 
 
 ## Beispiele für die "POST"-Methode
@@ -92,7 +92,7 @@ Die POST-Methode wird üblicherweise verwendet, um z.B. Benutzer oder Organisati
 ### Benutzer anlegen
 
 **1.**  Wählen Sie die POST-Methode<br>
-**2.**  Autorisieren Sie sich wie oben beschrieben [Autorisierung](/doc2/admin-guides/postman-projects/#autorisation).<br>
+**2.**  Autorisieren Sie sich wie oben beschrieben [Autorisierung](/doc2/admin-guides/postman-projects/#autorisierung).<br>
 **3.**  Öffnen Sie <a href="https://api.polydocs.io">api.polydocs.io</a> und fügen Sie den Pfad der Funktion hinter der Polydocs URL ein. In diesem Fall:
 
 ![Picture](/_images/doc2/admin_guides_post_api.png){ loading=lazy }
@@ -121,7 +121,7 @@ Klicken Sie abschließend auf `Send` und Sie können alle von Ihnen festgelegten
 Sie können die POST-Methode auch verwenden, um ein Dokument in DOC² hochzuladen.
 
 **1.**  Wählen Sie die POST-Methode<br>
-**2.**  Autorisieren Sie sich wie oben beschrieben [Autorisierung](/doc2/admin-guides/postman-projects/#autorisation).<br>
+**2.**  Autorisieren Sie sich wie oben beschrieben [Autorisierung](/doc2/admin-guides/postman-projects/#autorisierung).<br>
 **3.**  Öffnen Sie <a href="https://api.polydocs.io">api.polydocs.io</a> und fügen Sie den Pfad der Funktion hinter der Polydocs URL ein. In diesem Fall:
 
 ![Picture](/_images/doc2/admin_guides_post_document-process.png){ loading=lazy }
@@ -148,7 +148,7 @@ Es sollte so aussehen:
 Die DELETE-Methode wird verwendet, um z.B. Benutzer, Organisationen usw. zu löschen.
 
 **1.**  Wählen Sie die DELETE-Methode<br>
-**2.**  Autorisieren Sie sich wie oben beschrieben [Autorisierung](/doc2/admin-guides/postman-projects/#autorisation).<br>
+**2.**  Autorisieren Sie sich wie oben beschrieben [Autorisierung](/doc2/admin-guides/postman-projects/#autorisierung).<br>
 **3.**  Öffnen Sie <a href="https://api.polydocs.io">api.polydocs.io</a> und fügen Sie den Pfad der Funktion hinter der Polydocs URL ein. Zum Beispiel:
 
 
@@ -175,7 +175,7 @@ Es sollte so aussehen:
 Die PUT-Methode wird hauptsächlich zur Aktualisierung von Benutzer- oder Organisationsdaten verwendet. Sie ist sehr einfach zu verstehen und anzuwenden.
 
 **1.**  Wählen Sie die PUT-Methode<br>
-**2.**  Autorisieren Sie sich wie oben beschrieben [Autorisierung](/doc2/admin-guides/postman-projects/#autorisation).<br>
+**2.**  Autorisieren Sie sich wie oben beschrieben [Autorisierung](/doc2/admin-guides/postman-projects/#autorisierung).<br>
 **3.**  Öffnen Sie <a href="https://api.polydocs.io">api.polydocs.io</a> und fügen Sie den Pfad der Funktion hinter der Polydocs URL ein. Zum Beispiel:
 
 ![Picture](/_images/doc2/admin_guides_put_api.png){ loading=lazy }
@@ -191,7 +191,7 @@ Die PUT-Methode wird hauptsächlich zur Aktualisierung von Benutzer- oder Organi
 
 Angenommen, Sie möchten die E-Mail-Adresse eines Benutzers in Ihrer Organisation ändern.
 
-**1.**  Geben Sie im `body`, `email` als `KEY` und die neue E-Mail-Adresse als `VALUE` ein.<br>
+**1.**  Geben Sie im `body`, "email" als `KEY` und die neue E-Mail-Adresse als `VALUE` ein.<br>
 **2.**  Klicken Sie dann einfach auf `Send` und in der Antwort sollte „success“ angezeigt werden.
 
 
