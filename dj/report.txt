@@ -663,3 +663,637 @@ Code changes:
 +2.0.507
 \ No newline at end of file
 - 45a7b076691e635ce259cc0d41c56ff3d17d3b84: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.505
+\ No newline at end of file
++2.0.506
+\ No newline at end of file
+- 443105cc53c75449332919dbfc846940a4bbfdd4: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.504
+\ No newline at end of file
++2.0.505
+\ No newline at end of file
+- 5e69fa4596b5101585e0ea2ec63780ffeeb76f8c: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.503
+\ No newline at end of file
++2.0.504
+\ No newline at end of file
+- c51383d55b16d74e45a4565f5098d5e6bfd1e93f: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.502
+\ No newline at end of file
++2.0.503
+\ No newline at end of file
+- 4e679cdac3673edd18a03af8fb8e45168d1bf8b5: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.501
+\ No newline at end of file
++2.0.502
+\ No newline at end of file
+Week 2023-W11:
+- 15c64027ee13aa72bb3a5596ab2987b9f0c0a9eb: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.500
+\ No newline at end of file
++2.0.501
+\ No newline at end of file
+- 562a5e1c22724a34ffce6961e2bbf2faea0045de: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.499
+\ No newline at end of file
++2.0.500
+\ No newline at end of file
+- 68049d4e58aca95c2768b604f2ce8c69cf85f54d: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.498
+\ No newline at end of file
++2.0.499
+\ No newline at end of file
+- e82cabbc4bd23e303ed16ce11475165fc11cb2bd: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.497
++2.0.498
+\ No newline at end of file
+- f8d7c99f87acfdd8d2ce8d4e8318358abc74b90e: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.496
+\ No newline at end of file
++2.0.497
+\ No newline at end of file
+- 1464c94ad4cc67dc11d0d679b5fdf3c26c9a527a: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.495
+\ No newline at end of file
++2.0.496
+\ No newline at end of file
+- 27ba69737699192f7d4e012f5aa123509b00faf1: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.494
+\ No newline at end of file
++2.0.495
+\ No newline at end of file
+- dfe277e4fd690ebcf99c1531f601a987642c5a44: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.493
++2.0.494
+\ No newline at end of file
+- 5cccc7d33a66428e971141404ff6cdbb0897495b: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.492
+\ No newline at end of file
++2.0.493
+\ No newline at end of file
+- 6a655fcf9bc973e552de1bbc020b919599ee0bb8: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.491
+\ No newline at end of file
++2.0.491.1
+\ No newline at end of file
+- 37d2cb4ebb3987a472715bf85550ef22fc7c4032: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.491
+\ No newline at end of file
++2.0.491.1
+\ No newline at end of file
+- b5af34e95f9c23b9a47ea976e480cc5443df7527: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.491
+\ No newline at end of file
++2.0.492
+\ No newline at end of file
+- f50aee431ccbee703941a2679d9ea3cb772694c5: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.490
+\ No newline at end of file
++2.0.491
+\ No newline at end of file
+- 148833f992e5262cb835d4320b83e46b6e44a479: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.489
+\ No newline at end of file
++2.0.490
+\ No newline at end of file
+- c6c3a64accdf222a0cebcc0d796acb70db5a47c7: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.488
+\ No newline at end of file
++2.0.489
+\ No newline at end of file
+- 054e50b410239a7cd5764171a4ae4d344221a3ca: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.487
+\ No newline at end of file
++2.0.488
+\ No newline at end of file
+- 62b134c459264dca729153393bce7ee85d34c275: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.486
+\ No newline at end of file
++2.0.487
+\ No newline at end of file
+- 7029383b373e7a6783c92b1547a36e9259334867: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.485
+\ No newline at end of file
++2.0.486
+\ No newline at end of file
+- 0c9c17e4fbfe0c610388ddfcffcd9fcf4ec56e60: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.485
++2.0.485.1
+\ No newline at end of file
+- 9f979d7a425f1271861847fd5577a8141261339b: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.484
+\ No newline at end of file
++2.0.485
+\ No newline at end of file
+- e5dfddfc4097856213fac1929182e69672e68830: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.483
+\ No newline at end of file
++2.0.484
+\ No newline at end of file
+- d1ea5c99efd4bd542cd962219b3f7dbfbadb1757: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.482
+\ No newline at end of file
++2.0.483
+\ No newline at end of file
+- 8404ddd73783e73330521c36c2bf438f6df17954: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.482
+\ No newline at end of file
++2.0.482.1
+\ No newline at end of file
+- 400fdcc7eaeed29634702f361ca1307e75dda4bf: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.481
+\ No newline at end of file
++2.0.482
+\ No newline at end of file
+- c43eec90e3655fc4a41ab81a180522ed90ff825d: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.480
+\ No newline at end of file
++2.0.481
+\ No newline at end of file
+- c76bbcc31c8b5e0db3e368518ec93eaf5883f760: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.479
+\ No newline at end of file
++2.0.480
+\ No newline at end of file
+- d6609839527f0ba236f9769e9b6371b0aab6227b: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.478
+\ No newline at end of file
++2.0.479
+\ No newline at end of file
+- c832ffee40de70e051cbae3425a0d2a3fb68f4b2: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.477
+\ No newline at end of file
++2.0.478
+\ No newline at end of file
+- c7281861ba3aad531d5804471ba934e940f48b37: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.476
+\ No newline at end of file
++2.0.477
+\ No newline at end of file
+Week 2023-W10:
+- 689b3946700318472d37bcf1151df24bd74a1238: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.476
+\ No newline at end of file
++2.0.476.1
+\ No newline at end of file
+- edbc81fd41384b2e72f178a4e37c7909143fa93a: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.475
+\ No newline at end of file
++2.0.476
+\ No newline at end of file
+- f03abcc3578b547363abbd1d04aaff578be1a881: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.474
+\ No newline at end of file
++2.0.475
+\ No newline at end of file
+- 9093d45f4fceae63cb49fcf22422d4683e9f5582: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.473
+\ No newline at end of file
++2.0.474
+\ No newline at end of file
+- 12c88a326ec3a5cf438c883251bacba2698cf89f: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.472
+\ No newline at end of file
++2.0.473
+\ No newline at end of file
+Week 2023-W09:
+- 5208f72f5ebe5f9082c511b8b9c2e6567162ed0d: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.471
+\ No newline at end of file
++2.0.472
+\ No newline at end of file
+- acc5d0f1370fa1618e743b0ecedc281487e7c730: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.470
+\ No newline at end of file
++2.0.471
+\ No newline at end of file
+- 7e8f2ba9dc2b194777ffd389b26434e18c120bb0: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.469
+\ No newline at end of file
++2.0.470
+\ No newline at end of file
+- 78d910d56e3c7c8f35746e4b8f993e7c09a48225: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.468
+\ No newline at end of file
++2.0.469
+\ No newline at end of file
+- 5f9d93bdd8e78bc9a37025554b860ab80dedff59: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.467
+\ No newline at end of file
++2.0.468
+\ No newline at end of file
+- abd97fa46d22cae39ac130ec33a5b57b03619616: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.466
+\ No newline at end of file
++2.0.467
+\ No newline at end of file
+- d0fb08dff8c75c0f84dee0c4d405baaf7cc652ff: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.465
+\ No newline at end of file
++2.0.466
+\ No newline at end of file
+- cb3d338666b7c0fca664b3fef949a78f8e2e4971: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.464
+\ No newline at end of file
++2.0.465
+\ No newline at end of file
+- 4aec4b3ede1bb885b3ec7c6242bceb0cde23767e: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.463
+\ No newline at end of file
++2.0.464
+\ No newline at end of file
+- dac4fba2becb8e6eef0a662225b8848f0032276e: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.462
+\ No newline at end of file
++2.0.463
+\ No newline at end of file
+- 468464202cb65fc0775614af7c34b9623d826c73: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.461
+\ No newline at end of file
++2.0.462
+\ No newline at end of file
+- ccf107c687da4edd94332a9cd39aef85d12588fb: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.460
+\ No newline at end of file
++2.0.461
+\ No newline at end of file
+- 59fdd4753486e7410e300d258988b762ba75e1ef: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.459
+\ No newline at end of file
++2.0.460
+\ No newline at end of file
+- c6597aeac71f2f1ee0114db58a546725a63c8a82: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.458
+\ No newline at end of file
++2.0.459
+\ No newline at end of file
+Week 2023-W08:
+- 5f956d96d20bab8124e593c7ea0b08d5af852c75: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.457
+\ No newline at end of file
++2.0.458
+\ No newline at end of file
+- ecf6ca55ff15c81f81147bfba826426f282a8431: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.456
+\ No newline at end of file
++2.0.457
+\ No newline at end of file
+- aeb6a5883fd79cb556df1db019a0e84ab8ed446a: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.455
+\ No newline at end of file
++2.0.456
+\ No newline at end of file
+- 63b3cb264b805b8023f172c6184475758971064e: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.454
+\ No newline at end of file
++2.0.455
+\ No newline at end of file
+- d3adb36580ce26a25f28cd43042889b4da049045: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.453
+\ No newline at end of file
++2.0.454
+\ No newline at end of file
+- 2a697d540c814f47e2f6a5ed739a45b0c388ee3e: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.450
+\ No newline at end of file
++2.0.450.1
+\ No newline at end of file
+- ee764187a6c49391808f75a97f023f016215ddfa: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.452
+\ No newline at end of file
++2.0.453
+\ No newline at end of file
+- ff027849c5da64df18b0492cbbb97cf9a676ff4b: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.451
+\ No newline at end of file
++2.0.452
+\ No newline at end of file
+- 38e9946f07c09fc996b4c004860392041baf3ff8: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.450
+\ No newline at end of file
++2.0.451
+\ No newline at end of file
+- 2c5b56eec655f474d52cefc3bff5e7bf3f575697: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.449
+\ No newline at end of file
++2.0.450
+\ No newline at end of file
+- 363394266d3f37c04f03a5e155aaa60bee6bf6b7: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.448
+\ No newline at end of file
++2.0.449
+\ No newline at end of file
+- 346707226d0c15c5afa0b9e366773f3b1795ccf9: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.447
+\ No newline at end of file
++2.0.448
+\ No newline at end of file
+- 308b50902ac79d9e701f9cb1c86f34795a857d8c: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.446
+\ No newline at end of file
++2.0.446.1
+\ No newline at end of file
+- 2a2429e25f6e70d7984bd53dc8ead95b701dfb9b: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.446
+\ No newline at end of file
++2.0.447
+\ No newline at end of file
+- f3e295141826e4c49d07cc1178f7282d7f83a376: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.445
+\ No newline at end of file
++2.0.446
+\ No newline at end of file
+Week 2023-W07:
+- c21cd2379ada8ca6f9ff8d6d92742e389e6c9f69: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.445
+\ No newline at end of file
++2.0.445.1
+\ No newline at end of file
+- 777b8fec03e211882959407be6c17226bcd58164: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.444
+\ No newline at end of file
++2.0.445
+\ No newline at end of file
+- 933e335e262d76910b16f227f694f4a1011e704c: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.443
+\ No newline at end of file
++2.0.444
+\ No newline at end of file
+- 23a167c86d058023966eed90a44e8944231fc361: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.442
+\ No newline at end of file
++2.0.443
+\ No newline at end of file
+- bb06ba67cbbf300e9f5a364818eddc97fddef931: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.441
+\ No newline at end of file
++2.0.442
+\ No newline at end of file
+- 80e1dd25bdb41c1d4454cac2c6a37f4af94f12a1: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.440
+\ No newline at end of file
++2.0.441
+\ No newline at end of file
+- 9fa4cd7cba3a2aa7e0feeecf359663e841d96476: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.439
+\ No newline at end of file
++2.0.440
+\ No newline at end of file
+- c58c13e6401ea215ee3f7955db197cbd38600892: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.438
+\ No newline at end of file
++2.0.439
+\ No newline at end of file
+- f57896354986a0db61862bbb4490db938ea1b9e4: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.437
+\ No newline at end of file
++2.0.438
+\ No newline at end of file
+- 56aaae73f23441fbf971b4faf05d00c4969932bc: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.436
+\ No newline at end of file
++2.0.437
+\ No newline at end of file
+- 49ab108a1413661a434652c1738192e47ed452da: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.435
+\ No newline at end of file
++2.0.436
+\ No newline at end of file
+- 91a3508478b3d271b983daa5314ae10ad1809985: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.435
+\ No newline at end of file
++2.0.435.1
+\ No newline at end of file
+- a641fccad955d19dd4cccca2c5b5b367eb29188c: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.434
+\ No newline at end of file
++2.0.435
+\ No newline at end of file
+Week 2023-W06:
+- ef4587c87a357f8e0572fbe5c531c11ebca9215d: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.433
+\ No newline at end of file
++2.0.434
+\ No newline at end of file
+- fd4478e2328285aab6e0c7ce47de43c867d46734: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.432
+\ No newline at end of file
++2.0.433
+\ No newline at end of file
+- 0b5907a8d30e9672b6900e69ab08003921e28d85: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.431
+\ No newline at end of file
++2.0.432
+\ No newline at end of file
+- 04ad9246184a15edb6dd049c0e568cff59c90920: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.430
+\ No newline at end of file
++2.0.431
+\ No newline at end of file
+None: 217 commits
+Author image: https://avatars.githubusercontent.com/u/83513548?v=4
+Week 2023-W19:
+- 4bf5fa3b4a578bc29cd1f7dab8c77d87d4465813: fd
+Code changes:
+@@ -0,0 +1,30 @@
++"""empty message
++
++Revision ID: 8de61b51c2db
++Revises: 94e7ca15c0d3
++Create Date: 2023-05-10 10:54:50.447513
++
++"""
++from alembic import op
++import sqlalchemy as sa
++
++
++# revision identifiers, used by Alembic.
++revision = '8de61b51c2db'
++down_revision = '94e7ca15c0d3'
++branch_labels = None
++depends_on = None
++
++
++def upgrade():
++    # ### commands auto generated by Alembic - please adjust! ###
++    op.add_column('field', sa.Column('list_of_values', sa.String(length=100), nullable=True))
++    op.add_column('field', sa.Column('enforce_list_of_values', sa.Boolean(), server_default='f', nullable=False))
++    # ### end Alembic commands ###
++
++
++def downgrade():
++    # ### commands auto generated by Alembic - please adjust! ###
++    op.drop_column('field', 'enforce_list_of_values')
++    op.drop_column('field', 'list_of_values')
++    # ### end Alembic commands ###
+- 00ea3a94078428343d19cca53465cf8a0891c6c6: Merge branch 'stage' into dev
