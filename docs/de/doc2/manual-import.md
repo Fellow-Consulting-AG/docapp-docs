@@ -39,3 +39,22 @@ Sobald die Datei verarbeitet wurde, erhält sie den Status "Bereit zur Validieru
 ![Status "Bereit zur Validierung" in DOC²](/_images/doc2/DOC2_manual-import_4.png "Status 'Bereit zur Validierung' in DOC²")
 
 Details zum Validierungsprozess finden Sie hier: [Dokumentvalidierung](/doc2/document-validation/)
+
+
+to add on top:
+
+Um eine Rechnung manuell zu importieren, klicken Sie einfach auf die Schaltfläche **HOCHLADEN** und wählen Sie das Dokument aus, das Sie hochladen möchten.
+
+![](/_images/doc2/DOC2_Dashboard_4.png)
+
+Sie können auch Dateien überall auf dem Dashboard ablegen, um sie hochzuladen.
+
+![](/_images/doc2/DOC2_Dashboard_5.png)
+
+Bedeutsame Daten werden innerhalb von Sekunden extrahiert und der Status ändert sich von "In Bearbeitung" zu "Bereit zur Validierung".
+
+![](/_images/doc2/DOC2_Dashboard_1.png)
+
+Was Sie jetzt sehen, ist der Validierungsbildschirm, auf dem Sie alle importierten Dokumente überprüfen, bearbeiten und validieren können.
+
+Von links nach rechts sehen Sie zuerst den Namen des Dokuments, dann aus wie vielen Seiten es besteht. Die folgenden Informationen sind das Datum, an dem das Dokument importiert wurde, und sein Status.

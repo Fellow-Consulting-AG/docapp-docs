@@ -25,13 +25,15 @@ Hier sehen Sie die Gesamtzahl der importierten Dokumente. Außerdem können Sie 
 
 ![](/_images/doc2/dashboard/dashboard-erweiterte einstellungen.png)
 
-Wählen Sie das Tabellensymbol unter den erweiterten Einstellungen, können sie hier die Spalten auf Ihrem Dasboard individuell für Ihre Organisation anpassen.
+Wählen Sie das Tabellensymbol in den erweiterten Einstellungen, können sie hier die Spalten auf Ihrem Dasboard individuell für Ihre Organisation anpassen.
 
 ![](/_images/doc2/dashboard/dashboard-erweiterte einstellungen-tabellenspalten.png)
 
 Indem Sie die Spaltennamen anhand der Kästchen markieren, können Sie diese mit den Pfeilen in der Mitte auf die jeweilig gewünschte Seite (sichtbar oder ausgeblendet) schieben.
 
 ![](/_images/doc2/dashboard/dashboard-spalten-einstellungen.png)
+
+Zusätzlich habe Sie die Möglichkeit sich einzelne Felder aus den verwendeten Dokumententypen anzeigen zu lassen, indem Sie 
 
 
 to check:
@@ -40,21 +42,7 @@ Wie Sie sich vorstellen können, ist der zweite Teil des Dashboards die Liste/Ü
 
 ![](/_images/doc2/DOC2_Dashboard_3.png)
 
-Um eine Rechnung manuell zu importieren, klicken Sie einfach auf die Schaltfläche **HOCHLADEN** und wählen Sie das Dokument aus, das Sie hochladen möchten.
 
-![](/_images/doc2/DOC2_Dashboard_4.png)
-
-Sie können auch Dateien überall auf dem Dashboard ablegen, um sie hochzuladen.
-
-![](/_images/doc2/DOC2_Dashboard_5.png)
-
-Bedeutsame Daten werden innerhalb von Sekunden extrahiert und der Status ändert sich von "In Bearbeitung" zu "Bereit zur Validierung".
-
-![](/_images/doc2/DOC2_Dashboard_1.png)
-
-Was Sie jetzt sehen, ist der Validierungsbildschirm, auf dem Sie alle importierten Dokumente überprüfen, bearbeiten und validieren können.
-
-Von links nach rechts sehen Sie zuerst den Namen des Dokuments, dann aus wie vielen Seiten es besteht. Die folgenden Informationen sind das Datum, an dem das Dokument importiert wurde, und sein Status.
 
 In der rechten Spalte sehen Sie die Schaltfläche "Aktionen". Wenn Sie darauf klicken, werden alle verfügbaren Optionen geöffnet: Zuweisen, Neustart, Validieren und Löschen.
 
