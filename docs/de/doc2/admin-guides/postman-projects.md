@@ -27,11 +27,11 @@ Folgen Sie nun dieser Schritt-für-Schritt-Anleitung, um zu erfahren, wie HTTP-A
 
 Bevor Sie Ihre HTTP-Anfragen erstellen können, müssen Sie Ihren API-Schlüssel von DOC² eingeben, um sie zu autorisieren.
 
-**1.** Klicken Sie auf die Registerkarte `Autorisierung` und wählen Sie `API-Schlüssel` als Autorisierungstyp aus.
+**1.** Klicken Sie auf die Registerkarte `Authorization` und wählen Sie `API Key` als Autorisierungstyp aus.
 
 ![Picture](/_images/doc2/admin_guides_authorization_API Key.png){ loading=lazy }
 
-**2.** Füllen Sie die Werte aus. Geben Sie "x-api-key" in das Feld `Schlüssel` ein und Ihren API-Schlüssel als Wert (zu finden im DOC²-Einstellungsmenü **Integration**). Wählen Sie `Zum Header hinzufügen`.
+**2.** Füllen Sie die Werte aus. Geben Sie "x-api-key" in das Feld `Key` ein und Ihren API-Schlüssel als `Value` (zu finden im DOC²-Einstellungsmenü **Integration**). Wählen Sie `Zum Header hinzufügen`.
 
 Es sollte so aussehen:
 
@@ -39,11 +39,11 @@ Es sollte so aussehen:
 
 ### Auf <a href="https://api.polydocs.io">api.polydocs.io</a>
 
-**1.** Klicken Sie oben rechts auf **Autorisieren**
+**1.** Klicken Sie oben rechts auf **Authorize**
 
 ![Picture](/_images/doc2/admin_guides_doc2-api-authorize.png){ loading=lazy }
 
-**2.** Geben Sie Ihren API-Schlüssel ein und bestätigen Sie mit einem Klick auf `Autorisieren`
+**2.** Geben Sie Ihren API-Schlüssel ein und bestätigen Sie mit einem Klick auf `Authorize`
 
 ![Picture](/_images/doc2/admin_guides_doc2-api-authorize_key.png){ loading=lazy }
 
@@ -57,11 +57,11 @@ Es sollte so aussehen:
 
 ![Picture](/_images/doc2/admin_guides_postman_guide_create-workspace-visibility.png){ loading=lazy }
 
-**3.** Nachdem Sie Ihre Auswahl getroffen und auf `Workspace erstellen` geklickt haben, wählen Sie auf der linken Seite der Anwendung `Collections` aus und erstellen Sie eine neue Sammlung für Ihre HTTP-Anfragen, indem Sie auf `+` klicken.
+**3.** Nachdem Sie Ihre Auswahl getroffen und auf `Create Workspace` geklickt haben, wählen Sie auf der linken Seite der Anwendung `Collections` aus und erstellen Sie eine neue Sammlung für Ihre HTTP-Anfragen, indem Sie auf `+` klicken.
 
 ![Picture](/_images/doc2/admin_guides_postman_guide_new collection.png){ loading=lazy }
 
-In dieser Sammlung können Sie mehrere HTTP-Anfragen hinzufügen. Klicken Sie dazu auf die 3 Punkte der Sammlung und wählen Sie `Anfrage hinzufügen`.
+In dieser Sammlung können Sie mehrere HTTP-Anfragen hinzufügen. Klicken Sie dazu auf die 3 Punkte der Sammlung und wählen Sie `Add request`.
 
 ![Picture](/_images/doc2/admin_guides_add_request.png){ loading=lazy }
 
