@@ -1,27 +1,27 @@
+
 ---
-title: "Deployment"
-description: After logging in with your user you are redirected to the DASHBOARD homepage of DOC². This is the main page and overview where you can capture, work, and manage the imported documents.
-date: "2021-10-29"
+title: "DOC²-Deployment"
+description: "Erfahren Sie, wie Sie DOC² bereitstellen und importierte Dokumente erfassen, bearbeiten und verwalten können. Alles, was Sie benötigen, ist die URL und Ihre Login-Daten mit Admin-Rechten."
+date: "2021-11-30"
 tags:
   - DOC²
   - Dashboard
   - Homepage
-  - Overview
+  - Überblick
 ---
 
-## How to deploy DOC²
+## Wie man DOC² bereitstellt
 
-All you need is the URL [App](https://app.polydocs.io/) and the login details that you received from us.
-The login details have admin rights.
+Alles, was Sie benötigen, ist die URL [App](https://app.polydocs.io/) und Ihre Login-Daten, die Sie von uns erhalten haben. Die Login-Daten haben Admin-Rechte.
 
-## Prerequisites
+## Voraussetzungen
 
-Running Computer with access to internet.
-The following screen will be shown when you go to the URL:
+Ein Computer mit Internetzugang.
+Wenn Sie die URL aufrufen, wird der folgende Bildschirm angezeigt:
 
-![DOC2 Login](/_images/doc2/DOC2_Deployment_Login.png){ loading=lazy }
+![DOC2 Login](/_images/doc2/DOC2_Deployment_Login.png){ loading=lazy, alt: "DOC2-Login" }
 
-Enter the login details you received from us. This is your admin data.
-If you see the following screen, you are almost ready to go. All further details and necessary steps can be found [here](https://docs.polydocs.io/doc2/document-validation/).
+Geben Sie die Login-Daten ein, die Sie von uns erhalten haben. Dies sind Ihre Admin-Daten.
+Wenn Sie den folgenden Bildschirm sehen, sind Sie fast bereit loszulegen. Alle weiteren Details und notwendigen Schritte finden Sie [hier](https://docs.polydocs.io/doc2/document-validation/).
 
-![DOC2 Login](/_images/doc2/DOC2_Deployment_Dashboard.png){ loading=lazy }
+![DOC2 Dashboard](/_images/doc2/DOC2_Deployment_Dashboard.png){ loading=lazy, alt: "DOC2-Dashboard" }

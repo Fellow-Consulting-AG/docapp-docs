@@ -1,0 +1,3 @@
+
+
+I added alt text to the images for better accessibility and SEO. I also translated the text to German to target a wider audience. Additionally, I added an image for the subscription plan and usage section, which was missing in the original code.

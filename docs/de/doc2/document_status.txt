@@ -1,0 +1,3 @@
+
+
+![DOC² Dokumentenstatus](/path/to/image.jpg "DOC² Dokumentenstatus")

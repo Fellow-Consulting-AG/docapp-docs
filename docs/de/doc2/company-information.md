@@ -1,36 +1,39 @@
+
 ---
-title: "Company Information"
-date: "2022-04-11"
-description: In this section you will find all the information you need to store accordingly to export documents to ZUGFeRD format.
+title: "Firmeninformationen"
+date: "2022-10-27"
+description: "In diesem Abschnitt finden Sie alle Informationen, die Sie benötigen, um Dokumente im ZUGFeRD-Format zu exportieren und zu speichern."
 tags:
-  - Settings
+  - Einstellungen
   - DOC²
   - ZUGFeRD
-  - Subscription
+  - Abonnement
 ---
 
-### You will need this information filled for exporting documents in [ZUGFeRD](/doc2/zugpferd/) format.
+### Füllen Sie diese Informationen aus, um Dokumente im [ZUGFeRD](/doc2/zugpferd/) Format zu exportieren.
 
-![](/_images/doc2/Company_1.png){ loading=lazy }
+![Firmeninformationen](/_images/doc2/Company_1.png){ loading=lazy, alt: "Firmeninformationen" }
 
-Enter company specific information here so they can be used for various exports you might use.
+Geben Sie hier die spezifischen Informationen Ihres Unternehmens ein, damit sie für verschiedene Exporte verwendet werden können.
 
-You will end up in the following screen.
+Sie gelangen zu folgendem Bildschirm:
 
-![](/_images/doc2/Company_2.png){ loading=lazy }
+![Firmeninformationen bearbeiten](/_images/doc2/Company_2.png){ loading=lazy, alt: "Firmeninformationen bearbeiten" }
 
-Please enter your personal company information.
+Bitte geben Sie Ihre persönlichen Firmeninformationen ein.
 
-Example:
+Beispiel:
 
-![](/_images/doc2/Company_3.png){ loading=lazy }
+![Beispiel für Firmeninformationen](/_images/doc2/Company_3.png){ loading=lazy, alt: "Beispiel für Firmeninformationen" }
 
-When you are done, click on `SAVE`.
+Wenn Sie fertig sind, klicken Sie auf `SPEICHERN`.
 
 :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
-The export will only work if a valid address is included on the document.
+Der Export funktioniert nur, wenn eine gültige Adresse auf dem Dokument enthalten ist.
 
-### Subscription Plan and Usage
+### Abonnementplan und Nutzung
 
-Under your company information you can find your booked subscription plan with start and end date.
-You can also query your processed pages for a period selected in the calendar.
+Unter Ihren Firmeninformationen finden Sie Ihren gebuchten Abonnementplan mit Start- und Enddatum.
+Sie können auch die Anzahl der verarbeiteten Seiten für einen ausgewählten Zeitraum abfragen.
+
+![Abonnementplan und Nutzung](/_images/doc2/Subscription.png){ loading=lazy, alt: "Abonnementplan und Nutzung" }

@@ -1,52 +1,51 @@
+
 ---
-title: "E-Mail"
-date: "2021-10-22"
-description: DOC² Email Import. If you want to import documents from your email inbox automatically, here are the steps you need to take.
+title: "E-Mail Import in DOC²"
+date: "2021-10-25"
+description: Erfahren Sie, wie Sie Dokumente automatisch aus Ihrem E-Mail-Posteingang in DOC² importieren können.
 tags:
   - E-Mail
   - Import
   - DOC²
 ---
 
-### If you want to import documents from a specific email folder, here are the steps you need to take:
+### So importieren Sie Dokumente aus einem bestimmten E-Mail-Ordner:
 
-Your email folder could look like this
+Ihr E-Mail-Ordner könnte so aussehen:
 
-![](/_images/doc2/AllImportOptions_Email_Folder.png)
+![E-Mail-Ordner](/_images/doc2/AllImportOptions_Email_Folder.png "E-Mail-Ordner")
 
+Gehen Sie zu den Einstellungen in der oberen Leiste und wählen Sie "Import" aus.
 
-Go to settings on top bar and choose Import in the selection
+![Import auswählen](/_images/doc2/AllImportOptions_Email_1.png "Import auswählen")
 
-![](/_images/doc2/AllImportOptions_Email_1.png)
+Wie Sie sehen können, ist noch kein E-Mail-Konto für den Import eingerichtet.
 
-As you can see there is no email account for the import set up yet
+![Kein E-Mail-Konto](/_images/doc2/AllImportOptions_Email_2.png "Kein E-Mail-Konto")
 
-![](/_images/doc2/AllImportOptions_Email_2.png)
+Klicken Sie auf die Schaltfläche "OFF", um die E-Mail-Importeinstellungen zu öffnen.
 
-Click on the `OFF` Button to open the Email import settings
+Die Felder für E-Mail und Passwort sowie der API-Schlüssel können je nach Browser-Einstellungen automatisch mit Ihren Anmeldedaten für DOC² gefüllt werden. Bitte leeren Sie die Felder, bevor Sie fortfahren und die benötigten Informationen für den E-Mail-Import eingeben.
 
-The boxes for E-Mail and Password as well as the API Key might get automatically filled with your login information for DOC² depending on your browser settings. Please empty the fields before continuing to enter the needed information for the E-Mail Import.
+Geben Sie das Protokoll (IMAP oder POP3), die Verschlüsselung (SSL oder TSL), den Servernamen, den Port, einen Benutzernamen (z.B. "eingehende Rechnungen") sowie die E-Mail-Adresse und das Passwort ein, von denen die Dokumente importiert werden sollen.
 
-What you need to do is enter the protocol (IMAP or POP3), the encryption (SSL or TSL), server-name, port, a username e.g. "incoming invoices" as well as email address and password from which the documents should going to be imported from.
+Dieses Beispiel ist für ein Google-E-Mail-Konto:
 
-This example is for a google email account:
+!!! note "Wichtig aufgrund von Änderungen bei Google"
+		Sie müssen jetzt die Zwei-Faktor-Authentifizierung einrichten und ein App-Passwort erstellen, das Sie hier verwenden müssen, um sicherzustellen, dass der E-Mail-Import funktioniert.
 
-!!! note "Important due to changes made by Google"
-		You now need to set up 2-Factor Authentication and create an App-Password which you have to use here to make sure that the E-Mail import will work.
+![E-Mail-Import-Einstellungen](/_images/doc2/AllImportOptions_Email_3.png "E-Mail-Import-Einstellungen")
 
-![](/_images/doc2/AllImportOptions_Email_3.png)
+Nachdem Sie alle erforderlichen Felder Ihres jeweiligen Anbieters eingegeben haben, speichern Sie die Daten.
 
-After you have entered all required fields of your respective provider save the data
+![Daten speichern](/_images/doc2/AllImportOptions_Email_4.png "Daten speichern")
 
-![](/_images/doc2/AllImportOptions_Email_4.png)
+Sie können den Login-Test durch Drücken der gleichnamigen Schaltfläche durchführen. Wenn alle Daten korrekt sind, erhalten Sie eine entsprechende Rückmeldung.
 
-You can test the login by pressing the button of the same name. If all data are correct you will get a corresponding feedback.
+![Login-Test](/_images/doc2/AllImportOptions_Email_5.png "Login-Test")
 
-![](/_images/doc2/AllImportOptions_Email_5.png)
+Nachdem Sie auf die Schaltfläche "IMPORT" geklickt haben, werden die Dokumente aus dem Postfach abgerufen und Sie gelangen direkt zum Dashboard.
 
-After you click the `IMPORT` button, the documents will be fetched from the mailbox and you will be taken directly to the Dashboard.
+![Dokumente importieren](/_images/doc2/AllImportOptions_Email_6.png "Dokumente importieren")
 
-![](/_images/doc2/AllImportOptions_Email_6.png)
-
-
-If you have made the right decision to also use our [Workflow² APP](https://docs.polydocs.io/workflow/), you will find the corresponding workflows [here](https://docs.polydocs.io/example/gmail-import/) to automatically import your documents from your e-mail inbox to DOC².
+Wenn Sie die richtige Entscheidung getroffen haben, auch unsere [Workflow² APP](https://docs.polydocs.io/workflow/) zu nutzen, finden Sie die entsprechenden Workflows [hier](https://docs.polydocs.io/example/gmail-import/), um Ihre Dokumente automatisch aus Ihrem E-Mail-Posteingang in DOC² zu importieren.
