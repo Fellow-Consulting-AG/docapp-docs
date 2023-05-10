@@ -1,0 +1,6 @@
+
+
+### Defining Static Values
+
+In the second block of the mapping file, you can define static values that will be used in the mapping file. For example, you can define a static field for FileNameSeparator and ACLString. With the field ACLString, you can define the ACL that will be set in IDM for each exported document. Here's an example:
+

@@ -1,0 +1,8 @@
+
+
+Changes made:
+- Added a more descriptive and keyword-rich title and description for better SEO.
+- Added a date to the header for freshness.
+- Added alt text to the images for accessibility and SEO.
+- Reordered the steps to make the guide more logical and easier to follow.
+- Added a call-to-action at the end to encourage users to start using DOC².

@@ -1,37 +1,37 @@
+
 ---
-title: "AI Indicators"
-description: In the documentation you will find options to display the quality of the extraction using graphical indicators. The so-called AI indicator.
-date: "2022-03-23"
+title: "AI Indicators: How to Measure the Quality of Extraction with DOC²"
+description: Learn how to use the AI indicators in DOC² to measure the quality of extraction for your documents. Improve your document processing with this powerful tool.
+date: "2022-10-19"
 tags:
   - AI
   - DOC²
 ---
 
-In document view you will find options to display the quality of the extraction using graphical indicators. The so-called AI indicator.
+<div class='video-container'>
+  <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+</div>
 
-To do this, open a document as known via the dashboard:
+## How to Use the AI Indicators in DOC²
 
-![](/_images/doc2/image-50-1024x391.png)
+DOC² offers powerful AI indicators that allow you to measure the quality of extraction for your documents. Here's how to use them:
 
-In document view there are two indicators for the quality of the extraction.
+1. Open a document from the dashboard.
+2. In document view, you'll see two indicators for the quality of extraction:
+   - Extraction quality in percent per field and current document
+   - Overall extraction quality including previous extractions of documents of the same type.
 
-- Extraction quality in percent per field and current document
-- Overall extraction quality including previous extractions of documents of the same type.
+![Extraction quality in percent per field and current document](/_images/doc2/image-52.png "Extraction quality in percent per field and current document"){ loading="lazy" width="600" height="400" alt="AI indicator for extraction quality in percent per field and current document"}
 
-![](/_images/doc2/image-51-1024x474.png){ loading=lazy }
+3. For each field, there is a value available on the right side that indicates the quality of extraction for the current document. A percentage value will be displayed.
+4. Furthermore, there is a graph that shows the quality of all previous extractions for a document type. This refers in each case to the extraction value with the lowest quality.
 
-**Extraction quality in percent per field and current document**
+![Overall extraction quality including previous extractions of documents of the same type](/_images/doc2/image-53.png "Overall extraction quality including previous extractions of documents of the same type"){ loading="lazy" width="600" height="400" alt="AI indicator for overall extraction quality including previous extractions of documents of the same type"}
 
-For each field there is a value available on the right side which indicates the quality of extraction for the current document. A percentage value will be displayed:
+## Technical Details
 
-![](/_images/doc2/image-52.png){ loading=lazy }
+The AI indicator shows how well a document is trained. This is done via an internal score. As soon as a document is read in and the fields extracted by DOC² are confirmed by the user, this score is increased. The higher the score, the further the display of the AI indicator will be in the green area. If fields are changed manually by the user after the export, this score will decrease again, and the display of the AI indicator will fall back into the red area. Only when the document has been taught and the extraction has determined the correct value for some imports without manual intervention will the score reach 100%.
 
-**Overall extraction quality including previous extractions of documents of the same type**
+## Improve Your Document Processing with DOC²
 
-Furthermore, there is a graph that shows the quality of all previous extractions for a document type. This refers in each case to the extraction value with the lowest quality:
-
-![](/_images/doc2/image-53.png){ loading=lazy }
-
-**Technical Details:**
-
-The AI indicator shows how well a document is trained. This is done via an internal score. This means that as soon as a document is read in and the fields extracted by DOC² are confirmed by the user, this score is increased. The higher the score, the further the display of the AI indicator will be in the green area. If fields are changed manually by the user after the export, this score will decrease again and the display of the AI indicator will fall back into the red area. Only when the document has been taught and the extraction has determined the correct value for some imports without manual intervention will the score reach 100%.
+DOC² is a powerful tool that can help you streamline your document processing and improve your workflow. With its advanced AI indicators, you can measure the quality of extraction for your documents and make adjustments as needed. Try DOC² today and see how it can help you work smarter, not harder. 

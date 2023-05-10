@@ -1,7 +1,8 @@
+
 ---
-title: "DOC² - Infor Use Cases"
-description: Here you will find different use cases how processes of your different document types look like and are going to be integrated to Infor. 
-date: "2022-01-24"
+title: "DOC² - Infor Use Cases for Efficient Document Management"
+description: "Explore different use cases of how DOC² can help you manage your documents efficiently with Infor. From simple invoice processing to complex PO matching and ZUGFeRD conversion, we've got you covered."
+date: "2022-10-27"
 tags:
   - DOC²
   - PO Matching
@@ -10,11 +11,9 @@ tags:
   - Use Cases
 ---
 
-## Different Use Cases
+## Efficient Document Management with DOC² and Infor
 
-### Only Invoice
-
-This is the simplest use case. 95% of all Ephesoft (IDM Capture) customers use this use case.
+DOC² is a powerful document management solution that can help you streamline your document processing workflows. With seamless integration with Infor LN and Infor M3, DOC² can help you manage your documents efficiently and accurately. Here are some of the use cases where DOC² can help you:
 
 ``` mermaid
 graph LR
@@ -27,6 +26,7 @@ graph LR
   D --> E;
   B ---->|No| E[End];
 ```
+
 
 With DOC² you can do more
 
@@ -42,6 +42,10 @@ graph LR
   F --> Z;
   B ---->|No| Z[End];
 ```
+
+### Simple Invoice Processing
+
+This is the most common use case for DOC². With its advanced OCR capabilities, DOC² can extract relevant information from invoices and send it to Infor for further processing. Here's how it works:
 
 ### Invoice and Delivery Note
 

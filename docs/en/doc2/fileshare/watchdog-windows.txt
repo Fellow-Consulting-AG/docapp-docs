@@ -1,0 +1,8 @@
+
+
+To start Watchdog in headless mode, follow these steps:
+
+1. Open a cmd window with admin privileges.
+2. `cd` to the directory where the **Watchdog.exe** file is located.
+3. Execute the following commands:
+

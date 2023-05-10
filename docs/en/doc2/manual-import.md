@@ -1,43 +1,40 @@
+
 ---
-title: "Manual Import"
-description: This is a step by step guide how to import documents manually in DOC². From uploading documents over all processed status until they are ready for validation.
-date: "2021-10-22"
+title: "Manual Import Guide for DOC²"
+description: "Learn how to import documents manually in DOC² with this step-by-step guide. From uploading documents to the processing status and validation, everything is covered."
+date: "2021-10-27"
 tags:
-  - Doc²
-  - Dashboard
+  - DOC²
   - Import
+  - Manual Import
 ---
 
-Documents can be imported manually into DOC² as described below.
+If you're looking to import documents manually into DOC², follow these simple steps:
 
-Click on the `Upload` button on the Dashboard:
+1. Click on the `Upload` button on the DOC² Dashboard.
 
-![](/_images/doc2/DOC2_manual-import_1.png)
+![Upload button on DOC² Dashboard](/_images/doc2/DOC2_manual-import_1.png "Upload button on DOC² Dashboard")
 
-The following window opens:
+2. A window will appear where you can upload your documents via file browser or drag and drop. You can upload up to 10 documents at once.
 
-![](/_images/doc2/DOC2_manual-import_2.png)
+![Upload window on DOC² Dashboard](/_images/doc2/DOC2_manual-import_2.png "Upload window on DOC² Dashboard")
 
-Documents can be uploaded to DOC² via file browser or drag and drop. Furthermore, it is possible to upload multiple documents (**up to a maximum of 10**) at once.
+3. To upload documents via file browser, click on the `Upload Documents` button and select the files you want to upload. Once you've selected the files, click on `Confirm` to start the upload process.
 
-- Click on the button `Upload Documents` to upload documents via file browser. Select the files to be uploaded in your file browser and confirm your selection. The files will then be uploaded to DOC².
+4. Alternatively, you can drag and drop your files onto the DOC² import window.
 
-
-- Alternatively, drag and drop your files onto the DOC² import window as shown in the video below:
-
-
-<div class="video-container">
-<iframe width="840" height="472.5" src="https://www.youtube-nocookie.com/embed/Wwg86UY8JbE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class='video-container'>
+<iframe width='840' height='472.5' src='https://www.youtube-nocookie.com/embed/Wwg86UY8JbE' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>
 </div>
 
-Dragging and dropping files directly on the DOC² dashboard is also possible for uploading.
+5. After the files have been uploaded, they will have the initial status of "Running". During this time, the upload is being processed and editing the file is not possible. The processing time may vary depending on the size and complexity of the file.
 
-As soon as the files have been uploaded, they have the initial status "Running". During this time the upload is processed. Editing the file is not possible at this time. Depending on the size and complexity of the file, processing may take a while:
+![Running status on DOC² Dashboard](/_images/doc2/DOC2_manual-import_3.png "Running status on DOC² Dashboard")
 
-![](/_images/doc2/DOC2_manual-import_3.png)
+6. Once the file has been processed, it will receive the status of "Ready For Validation". You can now start the validation process.
 
-As soon as the file has been processed, it receives the status "Ready For Validation". As soon as the document is in this status, validation can be started:
+![Ready for Validation status on DOC² Dashboard](/_images/doc2/DOC2_manual-import_4.png "Ready for Validation status on DOC² Dashboard")
 
-![](/_images/doc2/DOC2_manual-import_4.png)
+For more information on the validation process, please refer to our [Document Validation](/doc2/document-validation/) guide.
 
-Details about the validation process can be found here: [Document Validation](/doc2/document-validation/)
+By following these steps, you can easily import your documents manually into DOC². Start using DOC² today and streamline your document management process!

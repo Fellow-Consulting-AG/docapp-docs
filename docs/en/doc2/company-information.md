@@ -1,36 +1,37 @@
+
 ---
-title: "Company Information"
-date: "2022-04-11"
-description: In this section you will find all the information you need to store accordingly to export documents to ZUGFeRD format.
+title: "Export Documents to ZUGFeRD Format - Company Information | DOC²"
+date: "2022-10-19"
+description: "Learn how to export documents to ZUGFeRD format by filling in your company information in DOC². Get all the information you need to store accordingly for a successful export."
 tags:
-  - Settings
-  - DOC²
   - ZUGFeRD
-  - Subscription
+  - export documents
+  - DOC²
+  - subscription plan
 ---
 
-### You will need this information filled for exporting documents in [ZUGFeRD](/doc2/zugpferd/) format.
+# Export Documents to ZUGFeRD Format - Company Information
 
-![](/_images/doc2/Company_1.png){ loading=lazy }
+If you want to export your documents in [ZUGFeRD](/doc2/zugpferd/) format, you need to fill in your company information in DOC². This will ensure that your exports are successful and compliant with ZUGFeRD standards.
 
-Enter company specific information here so they can be used for various exports you might use.
+## Fill in Your Company Information
 
-You will end up in the following screen.
+To fill in your company information, follow these steps:
 
-![](/_images/doc2/Company_2.png){ loading=lazy }
+1. Go to the Company Information section in DOC².
+2. Enter your company-specific information, such as your company name, address, and contact details.
+3. Click on `SAVE` when you're done.
 
-Please enter your personal company information.
+![Fill in Your Company Information in DOC²](/_images/doc2/Company_3.png "Fill in Your Company Information in DOC²")
 
-Example:
+Please note that a valid address is required for the export to work.
 
-![](/_images/doc2/Company_3.png){ loading=lazy }
+## Subscription Plan and Usage
 
-When you are done, click on `SAVE`.
+In the Company Information section, you can also find information about your subscription plan, including the start and end dates. You can also view your processed pages for a selected period using the calendar.
 
-:fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
-The export will only work if a valid address is included on the document.
+![View Your Subscription Plan and Usage in DOC²](/_images/doc2/Company_2.png "View Your Subscription Plan and Usage in DOC²")
 
-### Subscription Plan and Usage
+Make sure to keep your subscription plan up-to-date to ensure uninterrupted access to DOC²'s features and services.
 
-Under your company information you can find your booked subscription plan with start and end date.
-You can also query your processed pages for a period selected in the calendar.
+Exporting your documents to ZUGFeRD format has never been easier with DOC². Follow these simple steps to get started today!

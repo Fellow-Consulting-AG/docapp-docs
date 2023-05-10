@@ -1,7 +1,8 @@
+
 ---
-title: "Settings"
-description: In this area you will find all the settings to customize DOC² to your company. From Global settings to all needed settings to process your documents.
-date: "2022-09-23"
+title: "Customize DOC² to Your Company with These Settings"
+description: "Find all the settings you need to customize DOC² to your company, from global settings to document processing options. Improve your document management with DOC²."
+date: "2022-10-19"
 tags:
   - DOC²
   - Settings
@@ -9,21 +10,29 @@ tags:
   - Document Processing
 ---
 
-In this section you will find all the settings to customize DOC² to your company.<br> From Global settings to all needed settings to process your documents.
+<div class='video-container'>
+  <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+</div>
 
-## GLOBAL SETTINGS
+# Customize DOC² to Your Company with These Settings
 
-- [Company Information](/doc2/company-information/)
-- [Groups, Users and Permissions](/security/privileges/)
-- [Integration](/doc2/settings/integration/)
-- [Document Types](/doc2/settings-document-types/)
-- [Email notification](/doc2/settings/email-notification/)
+In this section, you'll find all the settings you need to customize DOC² to your company's needs. From global settings to document processing options, DOC² has everything you need to improve your document management.
 
-## DOCUMENT PROCESSING
+## Global Settings
 
-- [Import](/doc2/import/)
-- [OCR Settings](/doc2/document-validation/ocr-view/)
-- [Classification and Extraction](/doc2/document-validation/)
-- [Supplier Validation](/doc2/settings-master-data-validation/)
-- [Export](/doc2/export/)
-- [Approval](/example/approval/)  :fontawesome-solid-circle-info:{ style="color: #0F17E4" }documentation for DOC² coming soon :fontawesome-solid-circle-info:{ style="color: #0F17E4" }
+- [Company Information](/doc2/company-information/) - Add your company's information to personalize DOC².
+- [Groups, Users and Permissions](/security/privileges/) - Manage user access and permissions.
+- [Integration](/doc2/settings/integration/) - Integrate DOC² with other tools and software.
+- [Document Types](/doc2/settings-document-types/) - Customize document types to fit your needs.
+- [Email Notification](/doc2/settings/email-notification/) - Set up email notifications for important events.
+
+## Document Processing
+
+- [Import](/doc2/import/) - Import documents into DOC².
+- [OCR Settings](/doc2/document-validation/ocr-view/) - Customize OCR settings for accurate document processing.
+- [Classification and Extraction](/doc2/document-validation/) - Classify and extract data from documents.
+- [Supplier Validation](/doc2/settings-master-data-validation/) - Validate supplier data for accurate processing.
+- [Export](/doc2/export/) - Export processed documents.
+- [Approval](/example/approval/) - Approve documents for further processing.
+
+Improve your document management with DOC². Watch the video above to learn more about how DOC² can help your business.

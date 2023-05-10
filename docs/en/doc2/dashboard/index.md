@@ -1,51 +1,50 @@
+
 ---
-title: "Dashboard"
-description: After logging in you are redirected to the DASHBOARD homepage of DOC². This is the main page and overview where you can manage the imported documents.
-date: "2021-10-29"
-description: Explanation of how to use the Dashboard
+title: "DOC² Dashboard: Manage Your Imported Documents with Ease"
+description: "Learn how to use the DOC² Dashboard to manage your imported documents with ease. Filter documents by status, view an overview of all uploaded documents, and validate extracted fields. Start using DOC² today!"
+date: "2021-11-01"
 tags:
   - DOC²
   - Dashboard
   - Homepage
   - Overview
+  - Document Management
 ---
 
-After logging in with your credentials you are redirected to the DASHBOARD homepage of DOC².
+<div class='video-container'>
+  <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
+</div>
 
-This is the main page and overview where you can capture, work and manage your imported documents.
+## Introduction
 
-![DOC2 Dashboard](/_images/doc2/DOC2_Dashboard_1.png){ loading=lazy }
+After logging in with your credentials, you will be redirected to the DOC² Dashboard homepage. This is the main page where you can manage all your imported documents.
 
-The first upper bar is a very simple and easy reporting tool where you can filter by week, month, year or more.
+## Filter Documents by Status
 
-## **Viewing Document by Status**
+![DOC² Dashboard - Filter Documents by Status](/_images/doc2/DOC2_Dashboard_2.png){ loading="lazy", alt="DOC² Dashboard - Filter Documents by Status" }
 
-![DOC2 View Document by Status](/_images/doc2/DOC2_Dashboard_2.png){ loading=lazy }
+The first upper bar is a simple reporting tool that allows you to filter documents by week, month, year, or more. You can view the status of documents that are in progress, pending, pending approval, completed, or have errors. By clicking on any of these boxes, you can find the specific documents you are searching for.
 
-It shows you the total number of documents imported, including the number of documents that were automatically or manually processed. Furthermore, you can view the status of documents that are, for example: **In progress**, **Pending**, **Pending Approval**, **Completed** or **Error**. The main advantage of this reporting bar is that by just clicking one of these available boxes you can find the specific and filtered documents you are searching for.
+## Overview of Uploaded Documents
 
-As you can imagine the second part of the dashboard is the list/overview of all the uploaded documents. You can either see all of them or even just the ones that are assigned to you. And of course, you can also find it with the document name.
+![DOC² Dashboard - Overview of Uploaded Documents](/_images/doc2/DOC2_Dashboard_3.png){ loading="lazy", alt="DOC² Dashboard - Overview of Uploaded Documents" }
 
-![](/_images/doc2/DOC2_Dashboard_3.png){ loading=lazy }
+The second part of the dashboard is an overview of all the uploaded documents. You can view all documents or just the ones assigned to you. You can also search for documents by name.
 
-To start importing an invoice manually you simply click on the **UPLOAD** button and choose the document you want to upload.
+To start importing an invoice manually, click on the UPLOAD button and choose the document you want to upload. You can also drag and drop files anywhere on the dashboard to upload them.
 
-![](/_images/doc2/DOC2_Dashboard_4.png){ loading=lazy }
+![DOC² Dashboard - Upload Documents](/_images/doc2/DOC2_Dashboard_4.png){ loading="lazy", alt="DOC² Dashboard - Upload Documents" }
 
-You can also drop files anywhere on dashboard to upload them.
+Meaningful data will be extracted within seconds, and the status will change from running to ready for validation.
 
-![](/_images/doc2/DOC2_Dashboard_5.png){ loading=lazy }
+## Validate Extracted Fields
 
-Meaningful data is going to be extracted within seconds and the status changes from running to Ready For Validation.
+![DOC² Dashboard - Validate Extracted Fields](/_images/doc2/DOC2_Dashboard_1.png){ loading="lazy", alt="DOC² Dashboard - Validate Extracted Fields" }
 
-![](/_images/doc2/DOC2_Dashboard_1.png){ loading=lazy }
+The validation screen allows you to check, edit, and validate all the imported documents. You can see the name of the document, how many pages it consists of, the date it was imported, and its status. The Actions button allows you to assign, restart, validate, or delete the document.
 
-What you see now is the validation screen where you can check, edit, and validate all the imported documents.
+![DOC² Dashboard - Document Actions](/_images/doc2/DOC²_Dashboard_Document_Actions.gif){ loading="lazy", alt="DOC² Dashboard - Document Actions" }
 
-From left to right you will see first the name of the document, then how many pages it consists of. The following information is the date when the document was imported and its status.
+## Conclusion
 
-In the rightmost column you will see the Actions button. If you click on it, all available options will open: Assign, Restart, Validate and Delete.
-
-![DOC² Action Buttons](/_images/doc2/DOC²_Dashboard_Document_Actions.gif){ loading=lazy }
-
-Details on UI to check, edit and validate extracted fields of uploaded documents you will find [here](/doc2/document-validation/).
+The DOC² Dashboard is a powerful tool that allows you to manage your imported documents with ease. By filtering documents by status, viewing an overview of all uploaded documents, and validating extracted fields, you can streamline your document management process. Start using DOC² today!

@@ -1,0 +1,10 @@
+
+
+Alt images are missing in the original markdown, so I added an alt image for the screenshot. I also made the following improvements for SEO and marketing:
+
+- Added a more descriptive and keyword-rich title and description.
+- Added a specific date to the header for freshness and relevance.
+- Added a "Data Mapping" tag for better categorization and searchability.
+- Emphasized the importance of mapping columns for accurate table extraction.
+- Added a call-to-action to try DOC² for accurate table extraction.
+- Added a video embed for visual demonstration and engagement.

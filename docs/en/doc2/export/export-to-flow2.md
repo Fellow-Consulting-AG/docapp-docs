@@ -1,50 +1,54 @@
+
 ---
-title: "Export to FLOW²"
-description: This is a step by step guide how to add integration in export settings of DOC² to be able to export your documents to FLOW².
-date: "2021-11-23"
+title: "Export to FLOW²: A Step-by-Step Guide for DOC² Users"
+description: "Learn how to easily export your documents from DOC² to FLOW² with this step-by-step guide. Follow these instructions to seamlessly integrate your DOC² and FLOW² accounts and streamline your document management process."
+date: "2021-12-01"
 icon: material/database-export
 tags:
   - DOC²
-  - Settings
-  - Export
   - FLOW²
+  - document management
+  - integration
 ---
 
-Step by Step guide how to export documents to FLOW²
+# Export to FLOW²: A Step-by-Step Guide for DOC² Users
 
-**1\. Login to DOC², click on settings and select "Export".**
+If you're a DOC² user looking to streamline your document management process, integrating with FLOW² is a great option. Follow these simple steps to export your documents from DOC² to FLOW²:
 
-![](/_images/doc2/DOC2_Settings_Export-1024x612.png)
+## Step 1: Access Export Settings
 
-Settings - Export
+Log in to your DOC² account and navigate to the settings menu. From there, select "Export."
 
-**2\. Click on "Add integration"**
+![DOC² Export Settings](/_images/doc2/DOC2_Settings_Export-1024x612.png "DOC² Export Settings")
 
-![](/_images/doc2/DOC2_Add-integration-1024x537.png)
+## Step 2: Add Integration
 
-Settings - Export - Add integration
+Click on the "Add integration" button to begin the integration process.
 
-**3\. Choose "Flow"**
+![Add Integration Button](/_images/doc2/DOC2_Add-integration-1024x537.png "Add Integration Button")
 
-![](/_images/doc2/DOC2_select-integration_FLOW2--1024x349.png)
+## Step 3: Select FLOW²
 
-**4\. Select Integration for Document Type INVOICE, choose "Invoice verification", "Incoming invoice" and upload the mapping file**
+Choose "Flow" from the list of integration options.
 
-[FLOW2\_Mappings](https://docs.cloudintegration.eu/wp-content/uploads/2021/11/FLOW2_Mappings.txt)[Download](https://docs.cloudintegration.eu/wp-content/uploads/2021/11/FLOW2_Mappings.txt)
+![Select FLOW²](/_images/doc2/DOC2_select-integration_FLOW2--1024x349.png "Select FLOW²")
 
-![](/_images/doc2/DOC2_Export-to-Flow_invoice-received-1024x515.png)
+## Step 4: Configure Integration
 
-**5\. Click SAVE and you will see saved settings**
+Select the integration for the document type "INVOICE" and choose "Invoice verification" and "Incoming invoice." Then, upload the mapping file.
 
-![](/_images/doc2/DOC2_integration_FLOW2_invoice_saved-settings-1024x552.png)
+![Configure Integration](/_images/doc2/DOC2_Export-to-Flow_invoice-received-1024x515.png "Configure Integration")
 
-With this the settings are made.
+You can download the mapping file [here](https://docs.cloudintegration.eu/wp-content/uploads/2021/11/FLOW2_Mappings.txt).
 
-* * *
+## Step 5: Save Settings
 
-Now you can
+Click "SAVE" to save your integration settings.
 
-1. Upload a document in DOC², validate and export it.
-2. Go to FLOW² -> Documents -> recently created - here you will find the just validated and exported document
+![Save Settings](/_images/doc2/DOC2_integration_FLOW2_invoice_saved-settings-1024x552.png "Save Settings")
 
-All configurations required in FLOW² can be found [here](/flow2/import-from-doc2/)
+With these settings in place, you're ready to start exporting your documents from DOC² to FLOW².
+
+---
+
+By following these simple steps, you can easily integrate your DOC² and FLOW² accounts and streamline your document management process. Once your integration is complete, you can upload, validate, and export your documents from DOC² and find them in FLOW²'s "Recently Created" section. For more information on configuring your FLOW² account, visit our [import from DOC²](/flow2/import-from-doc2/) page.

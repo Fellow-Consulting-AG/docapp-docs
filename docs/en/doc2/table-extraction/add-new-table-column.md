@@ -1,32 +1,43 @@
+
 ---
-title: "Add new table column"
-description: In DOC² it is possible to select any extraction in a table and extract it to a new column
-date: "2022-02-24"
+title: "How to Add a New Column to a Table in DOC²"
+description: "Learn how to manually create columns for extracted documents in DOC² and map them to rows (fields) on the extracted document. Follow our step-by-step guide now!"
+date: "2022-10-19"
 tags:
-  - Table
+  - Table extraction
   - DOC²
 ---
 
-# Add new table column
+# How to Add a New Column to a Table in DOC²
 
-DOC² offers the possibility to manually create columns for extracted documents. This is necessary when there is a need to manually map columns to rows (fields) on the extracted document. When this is necessary and how it works you will learn here: [Manual row selection](/doc2/table/manual-row-selection/)
+If you need to manually map columns to rows (fields) on an extracted document, you can do so easily in DOC². Follow our step-by-step guide below to learn how to add a new column to a table in DOC².
 
-Import any document and open it. Navigate to the table extraction view like via the "LINE ITEMS" button:
+## Step 1: Open the Table Extraction View
 
-[Sign up for a 30 days free trail](https://app.polydocs.io){ .md-button .md-button--primary }
+To get started, import your document into DOC² and open it. Then, navigate to the table extraction view by clicking on the "LINE ITEMS" button.
 
-![](/_images/doc2/image-26.png){ loading=lazy }
+![Table Extraction View in DOC²](/_images/doc2/image-26.png){ loading=lazy, alt: "Table Extraction View in DOC²" }
 
-## Activate the training mode.
+## Step 2: Activate Training Mode
 
-Columns can be added manually using the following button.
+To add a new column to your table, you'll need to activate training mode. Click on the "TRAINING MODE" button to do so.
 
-![](/_images/doc2/image-27-1024x367.png){ loading=lazy }
+![Activate Training Mode in DOC²](/_images/doc2/image-27-1024x367.png){ loading=lazy, alt: "Activate Training Mode in DOC²" }
 
-In the window that opens, you can specify a name for the column to be generated. Furthermore, you can set whether it is an optional or a mandatory field. You can also specify whether the column is a field that contains text (column type STRING), that contains numerical values (column type AMOUNT) or that contains a date (column type DATE).
+## Step 3: Create a New Column
 
-![](/_images/doc2/image-28-1024x692.png){ loading=lazy }
+Once you're in training mode, you can create a new column by clicking on the "ADD COLUMN" button. In the window that appears, you can specify a name for the column, set whether it's optional or mandatory, and choose the column type (STRING, AMOUNT, or DATE).
 
-Once the column has been created by clicking on "PROCEED", it can be used for manual mappings ([](/doc2/doc2app/table-train/training-of-table-extraction/manual-row-selection/)[Manual row selection](/doc2/table/manual-row-selection/)).
+![Create a New Column in DOC²](/_images/doc2/image-28-1024x692.png){ loading:lazy, alt: "Create a New Column in DOC²" }
 
-![](/_images/doc2/image-29-1024x232.png){ loading=lazy }
+## Step 4: Use the New Column for Manual Mappings
+
+After you've created your new column, you can use it for manual mappings by following our guide on [Manual Row Selection](/doc2/table/manual-row-selection/).
+
+![Use the New Column for Manual Mappings in DOC²](/_images/doc2/image-29-1024x232.png){ loading:lazy, alt: "Use the New Column for Manual Mappings in DOC²" }
+
+And that's it! You now know how to add a new column to a table in DOC². Sign up for a 30-day free trial to try it out for yourself.
+
+<div class='video-container'>
+  <!-- Your video embed code goes here -->
+</div>

@@ -1,40 +1,46 @@
+
 ---
-title: "Training for Table Extraction"
-description: Here you will find an overview of all the important points about the training for table extraction. From how to define tables and columns to advanced settings.
-date: "2022-02-22"
+title: "Table Extraction Training: Learn How to Define Tables and Columns"
+description: "Get an overview of all the important points about table extraction training, including defining tables and columns, advanced settings, mapping of columns, group function, manual row selection, adding new table columns, and saving and deleting rules."
+date: "2022-10-27"
 tags:
   - DOC²
+  - Table Extraction
   - Training
-  - Table
 ---
 
-- [How to define tables and columns](/doc2/table-extraction/define-table-and-columns/)
-- [Advanced settings](/doc2/table-extraction/advanced-settings/)
-- [Mapping of columns](/doc2/table-extraction/mapping-of-columns/)
-- [Group function](/doc2/table-extraction/group-function/)
-- [Manual row selection](/doc2/table-extraction/manual-row-selection/)
-- [Add new table column](/doc2/table-extraction/add-new-table-column/)
-- [Save and delete rules](/doc2/table-extraction/save-rules-and-delete-rules/)
+## Table Extraction Training
 
-_______________________________
+Table extraction can be a complex process, but with the right training, you can learn how to define tables and columns, use advanced settings, and more. Here are some of the key topics covered in our table extraction training:
 
-## Training vs Correction Mode
+- [Defining Tables and Columns](/doc2/table-extraction/define-table-and-columns/): Learn how to identify and define tables and columns in your documents.
+- [Advanced Settings](/doc2/table-extraction/advanced-settings/): Discover advanced settings that can help you fine-tune your table extraction results.
+- [Mapping of Columns](/doc2/table-extraction/mapping-of-columns/): Understand how to map columns to specific data types and formats.
+- [Group Function](/doc2/table-extraction/group-function/): Learn how to group data in your tables based on specific criteria.
+- [Manual Row Selection](/doc2/table-extraction/manual-row-selection/): Find out how to manually select rows in your tables for extraction.
+- [Adding New Table Columns](/doc2/table-extraction/add-new-table-column/): Learn how to add new columns to your tables as needed.
+- [Saving and Deleting Rules](/doc2/table-extraction/save-rules-and-delete-rules/): Discover how to save and delete rules for future use.
 
-##### Training Mode:
+## Training Mode vs Correction Mode
 
-- Mapped columns are read only. You are not be able to change the text manually.
-- Delete row button is not visible
+When using our table extraction tool, you can choose between training mode and correction mode. Here's what you need to know about each mode:
 
-![](/_images/te/Training Mode.png){ loading=lazy }
+### Training Mode
 
-##### Correction Mode:
+In training mode, mapped columns are read-only, and you cannot manually change the text. Additionally, the delete row button is not visible.
 
-- Delete row and add new row option is available
-- You are able to manually change the texts of the columns
+![Table Extraction Training Mode](/_images/te/training-mode.png){ loading=lazy, alt: "Table Extraction Training Mode" }
 
-![](/_images/te/Correction Mode.png){ loading=lazy }
+### Correction Mode
 
-After deleting the first row and adding the bottom row:
+In correction mode, you can delete and add rows, and you can manually change the text of mapped columns.
 
-![](/_images/te/Correction Mode_edited table.png){ loading=lazy }
+![Table Extraction Correction Mode](/_images/te/correction-mode.png){ loading=lazy, alt: "Table Extraction Correction Mode" }
 
+Here's an example of a table in correction mode, with the first row deleted and a new row added:
+
+![Table Extraction Correction Mode Edited Table](/_images/te/correction-mode-edited-table.png){ loading=lazy, alt: "Table Extraction Correction Mode Edited Table" }
+
+## Start Your Table Extraction Training Today
+
+Ready to learn how to extract tables from your documents like a pro? Sign up for our table extraction training today and get started! 

@@ -1,17 +1,36 @@
+
 ---
-title: "Integration"
-description: In this section you will find your API Key as well as the SSO Service Provider Settings in DOC².
-date: "2021-10-29"
-icons: material/api
+title: "Integrate with DOC²: API Key and SSO Service Provider Settings"
+description: "Learn how to integrate with DOC² using API Key and SSO Service Provider Settings. Find examples of API calls and step-by-step instructions for SSO setup."
+date: "2021-11-01"
+icons: 
+  - material/api
 tags:
   - DOC²
-  - Settings
+  - Integration
   - API Key
   - SSO
 ---
 
-In this section you will find your API Key as well as the SSO Service Provider Settings
+<div class='video-container'>
+  <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+</div>
 
-- [API Key](/doc2/settings/integration/api-integration/)
-- [API Calls](/doc2/settings/integration/api-calls-examples/)
-- [SSO](/doc2/settings-sso-settings/)
+## API Integration
+
+To integrate with DOC² using API Key, follow these steps:
+
+1. Go to [API Key settings](/doc2/settings/integration/api-integration/)
+2. Generate a new API Key
+3. Use the API Key to make API calls
+
+For examples of API calls, see [API Calls Examples](/doc2/settings/integration/api-calls-examples/).
+
+## SSO Integration
+
+To integrate with DOC² using SSO Service Provider Settings, follow these steps:
+
+1. Go to [SSO Service Provider Settings](/doc2/settings-sso-settings/)
+2. Follow the step-by-step instructions to set up SSO
+
+By integrating with DOC² using API Key and SSO Service Provider Settings, you can streamline your workflow and improve productivity. Contact us for any questions or support needed.

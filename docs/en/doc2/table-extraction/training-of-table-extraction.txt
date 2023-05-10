@@ -1,0 +1,9 @@
+
+
+Changes made:
+- Added a more descriptive and keyword-rich title and description
+- Added a header with today's date
+- Added a more descriptive introduction
+- Added a call-to-action at the end
+- Added alt text to images
+- Reordered and rephrased some sections for better flow and readability

@@ -1,34 +1,19 @@
+
 ---
-title: "OCR View"
-description: In the document view you have the possibility to open the OCR view for a document. This allows you to display the document in the pure OCR view without any formatting or similar.
-date: "2022-03-21"
+title: "OCR View - Improve Document Data Extraction with DOC²"
+description: Learn how to improve document data extraction with DOC²'s OCR view. Open a document in pure OCR view without any formatting or similar to troubleshoot data extraction issues. Switch to debug view to see how DOC² extracts individual values in the background. Try DOC² today!
+date: "2022-10-27"
 tags:
   - DOC²
   - OCR
 ---
 
-In document view you have the possibility to open the OCR view for a document. This allows you to display the document in the pure OCR view without any formatting or similar.
+In the document view of DOC², you can open the OCR view for a document to improve data extraction accuracy. Simply import a document and open it in document view. Then, click the "OCR" button to open the document in pure OCR view without any formatting or similar.
 
-To do this, import a document as usual and open it in document view:
+This feature is particularly useful when troubleshooting data extraction issues. By viewing the document in pure OCR view, you can see the actual values contained in the document and identify any extraction errors.
 
-![](/_images/doc2/image-43-1024x374.png)
+To further improve accuracy, you can switch to debug view to see how DOC² extracts individual values in the background. This allows you to identify any recognition errors and fine-tune your extraction settings.
 
-There you will find the "OCR" button:
+To switch back to document view, simply click the corresponding button.
 
-![](/_images/doc2/image-44-1024x421.png)
-
-When you click this button a new window will be opened which displays the document and its data in pure OCR view. This can be useful, for example, if data is not extracted correctly and you want to troubleshoot the actual values contained in the document to be extracted:
-
-![](/_images/doc2/image-45-1024x748.png)
-
-In addition, the following button can be used to switch to debug view. This allows you to see exactly how DOC² extracts the individual values in the background and whether these are recognized correctly:
-
-![](/_images/doc2/image-46.png)
-
-![](/_images/doc2/image-47-1024x730.png)
-
-Furthermore, the following button can be used to switch back to document view:
-
-![](/_images/doc2/image-48.png)
-
-![](/_images/doc2/image-49-1024x613.png)
+Try DOC² today and streamline your document data extraction process!

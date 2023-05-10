@@ -1,8 +1,30 @@
 import openai, os
 import fnmatch
 import time
-os.environ["OPENAI_API_KEY"] = "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"
+import mistune
+
+from retry import retry
+from openai.error import RateLimitError, APIError
+
+
+
+
 openai.api_key = os.getenv("OPENAI_API_KEY")
+
+MODEL = "gpt-3.5-turbo"
+
+@retry((RateLimitError, APIError), tries=5, delay=90, backoff=2)
+def generate_response(text):
+    response = openai.ChatCompletion.create(
+        model=MODEL,
+        messages=[
+            {"role": "system", "content": f"You are SEO and Marketing Expert please return only a Code. Use this Text: {text}"},
+            {"role": "user", "content": "Analyze the given markdown and improve it for SEO and Marketing. If Alt Images are missing Add alt images in the Markdown. <div class='video-container'> or other code oder javascript do not remove it. in the header please set it on today. Please return only a Code."},
+        ],
+        temperature=0,
+    )
+    return response
+
 
 
 def is_valid_markdown(text):
@@ -18,25 +40,29 @@ def find_md_files(directory):
     for root, dirs, files in os.walk(directory):
         for basename in files:
             if fnmatch.fnmatch(basename, "*.md"):
-                file1 = os.path.join(root, basename)
+                file = os.path.join(root, basename)
+                file_base, _ = os.path.splitext(file)
+                old_file = file_base + ".old"
 
-                with open(file1, "r") as f:
+                if os.path.exists(old_file):
+                    print(f"Skipping {file} because {old_file} already exists.")
+                    continue
+
+
+                with open(file, "r") as f:
                     text = f.read()
 
                 f.close()
 
                 print("Waiting for 1 minute...")
-                time.sleep(60)  # Wait for 60 seconds (1 minute)
+                time.sleep(10)  # Wait for 60 seconds (1 minute)
 
                 MODEL = "gpt-3.5-turbo"
-                response = openai.ChatCompletion.create(
-                    model=MODEL,
-                    messages=[
-                        {"role": "system", "content": f"You are SEO and Marketing Expert please return only a Code. Use this Text: {text}"},
-                        {"role": "user", "content": "Analyze the given markdown and improve it for SEO and Marketing. If Alt Images are missing Add alt images in the Markdown. <div class='video-container'> or other code oder javascript do not remove it. in the header please set it on today. Please return only a Code."},
-                    ],
-                    temperature=0,
-                )
+                try:
+                    response = generate_response(text)
+                    # Process the response as needed
+                except RateLimitError:
+                    print("Failed after multiple retries due to rate limit error.")
 
                 response = response["choices"][0]["message"]["content"]
                 file_base, file_extension = os.path.splitext(file)
@@ -73,9 +99,9 @@ def find_md_files(directory):
 
                         f.close()
                     else:
-                        print (f"No change for {file1}")
+                        print (f"No change for {file}")
 
 file = "/Users/daniel/dev/docapp-docs/docs/en/doc2/keyboard.md"
-directory_path = "/Users/daniel/dev/docapp-docs/docs/en/"
+directory_path = "/Users/daniel/dev/docapp-docs/docs/en/doc2/"
 find_md_files(directory_path)
 

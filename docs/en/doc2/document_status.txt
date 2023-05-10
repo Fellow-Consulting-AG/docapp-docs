@@ -1,0 +1,8 @@
+mermaid
+sequenceDiagram
+  Upload->>Status: Get DocId from Upload?
+  loop Status
+      Status->>Status: Until FinalStatus is not Classify
+  end
+  Status->>Classify: FinalStatus is Classify
+  Classify->>Delete: Delete Document with DocId

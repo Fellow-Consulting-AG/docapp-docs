@@ -1,7 +1,8 @@
+
 ---
-title: "Save and delete rules"
-description: This is an important documentation that shows you how to save and delete rules. Make sure to read it before deleting any rules.
-date: "2022-02-24"
+title: "Save and Delete Rules for Table Extraction in DOC²"
+description: "Learn how to save and delete rules for table extraction in DOC². This important documentation will guide you through the process to ensure you don't lose any valuable data."
+date: "2022-10-27"
 tags:
   - DOC²
   - Table Extraction
@@ -10,23 +11,30 @@ tags:
   - Delete
 ---
 
-# Save and delete rules
+# Save and Delete Rules for Table Extraction in DOC²
 
+If you're using DOC² for document/table extraction, it's important to save and delete rules properly to ensure your data is extracted accurately. This guide will walk you through the process.
 
-[Sign up for a 30 days free trail](https://app.polydocs.io){ .md-button .md-button--primary }
+## Save Rules
 
-As soon as a document has been trained in DOC² and all rules for the extraction of the tables have been stored for this document, they have to be saved so that no manual training is necessary for future imports. Instead, the documents and their tables are extracted fully automatically by DOC² and the data is brought into the structure defined by the training.
+Once you've trained a document in DOC² and defined all the rules for table extraction, you can save those rules for future imports. This means that the tables in your documents will be extracted automatically, without any manual training required.
 
-As soon as the document/table extraction has been trained and the data is available in a satisfactory format, the rules for the table extraction can be saved using the "SAVE RULES" button.
+To save your rules, simply click the "SAVE RULES" button. You'll see a rule indicator that shows how many rules have been defined and saved for that document.
 
-![](/_images/doc2/image-33-1024x763.png)
+![Save Rules Button](/_images/doc2/image-33-1024x763.png "Save Rules Button")
 
-As soon as this document is imported into DOC² in the future, the rules are automatically applied during extraction and always bring the data into the trained format.
+## Delete Rules
 
-The rule indicator shows how many rules have been defined and saved for this document.
+If you need to delete rules for a document, you can do so using the "DELETE RULES" button. This may be necessary if rules have been saved incorrectly or if you need to retrain a document.
 
-![](/_images/doc2/image-34.png)
+However, it's important to note that deleting rules will affect all documents with the same or similar format. This means that you'll need to retrain those documents from scratch. So, be sure to use this feature with caution.
 
-Rules for documents can also be deleted using the "DELETE RULES" button. This may be necessary if rules have been saved incorrectly or in a qualitatively unsatisfactory way. This allows a document to be retrained. ATTENTION: Deleting rules will affect all documents with the same or similar format. And these documents must then be completely re-trained. This means that deleting the rules should be done with great care.
+![Delete Rules Button](/_images/doc2/image-35-1024x692.png "Delete Rules Button")
 
-![](/_images/doc2/image-35-1024x692.png)
+## Sign Up for a Free Trial
+
+Ready to try DOC² for yourself? Sign up for a 30-day free trial today and see how easy it is to extract tables from your documents.
+
+<div class='video-container'>
+  <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
+</div>

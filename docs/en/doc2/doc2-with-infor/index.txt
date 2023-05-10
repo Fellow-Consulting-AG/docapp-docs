@@ -1,0 +1,3 @@
+
+
+Note: Replace `VIDEO_ID` in the first image with the actual ID of the video to embed. Also, make sure to replace the image file names and alt text with appropriate ones.

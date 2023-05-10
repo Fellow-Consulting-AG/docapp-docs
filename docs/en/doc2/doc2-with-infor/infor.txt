@@ -1,0 +1,10 @@
+ mermaid
+graph LR
+  A[Start] --> B{Invoice?};
+  Infor[Infor] --> |Master Data Validation| C;
+  B -->|Yes| C[Extract Header Fields];
+  C -->|Optional| T[Table Fields];
+  T -->C;
+  C --> D[Send to Infor];
+  D --> E;
+  B ---->|No| E[End];

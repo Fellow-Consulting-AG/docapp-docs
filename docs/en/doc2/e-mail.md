@@ -1,52 +1,36 @@
+
 ---
-title: "E-Mail"
-date: "2021-10-22"
-description: DOC² Email Import. If you want to import documents from your email inbox automatically, here are the steps you need to take.
+title: "Import Documents from Email Inbox with DOC²"
+date: "2021-10-25"
+description: Learn how to import documents from your email inbox automatically with DOC². Follow these simple steps to streamline your document management process.
 tags:
-  - E-Mail
-  - Import
+  - email import
+  - document management
   - DOC²
 ---
 
-### If you want to import documents from a specific email folder, here are the steps you need to take:
+<div class='video-container'>
+  <iframe src='https://www.youtube.com/embed/VIDEO_ID_HERE' frameborder='0' allowfullscreen></iframe>
+</div>
 
-Your email folder could look like this
+## How to Import Documents from Email Inbox with DOC²
 
-![](/_images/doc2/AllImportOptions_Email_Folder.png)
+If you're tired of manually importing documents from your email inbox, DOC² has got you covered. With our email import feature, you can automate the process and save time. Here's how:
 
+1. Go to the settings menu and select "Import".
+2. Click on the "OFF" button to open the email import settings.
+3. Enter the required information for your email provider, including the protocol, encryption, server name, port, username, email address, and password.
+4. Save the data and test the login to ensure everything is working correctly.
+5. Click the "IMPORT" button to fetch the documents from your mailbox and import them into DOC².
 
-Go to settings on top bar and choose Import in the selection
+It's that simple! With just a few clicks, you can streamline your document management process and save time.
 
-![](/_images/doc2/AllImportOptions_Email_1.png)
+<div class='video-container'>
+  <iframe src='https://www.youtube.com/embed/VIDEO_ID_HERE' frameborder='0' allowfullscreen></iframe>
+</div>
 
-As you can see there is no email account for the import set up yet
+## Take Your Document Management to the Next Level with Workflow²
 
-![](/_images/doc2/AllImportOptions_Email_2.png)
+If you want to take your document management to the next level, consider using our Workflow² app. With Workflow², you can automate your document workflows and save even more time. Check out our [Gmail import workflow](https://docs.polydocs.io/example/gmail-import/) to learn how to automatically import your documents from your email inbox to DOC².
 
-Click on the `OFF` Button to open the Email import settings
-
-The boxes for E-Mail and Password as well as the API Key might get automatically filled with your login information for DOC² depending on your browser settings. Please empty the fields before continuing to enter the needed information for the E-Mail Import.
-
-What you need to do is enter the protocol (IMAP or POP3), the encryption (SSL or TSL), server-name, port, a username e.g. "incoming invoices" as well as email address and password from which the documents should going to be imported from.
-
-This example is for a google email account:
-
-!!! note "Important due to changes made by Google"
-		You now need to set up 2-Factor Authentication and create an App-Password which you have to use here to make sure that the E-Mail import will work.
-
-![](/_images/doc2/AllImportOptions_Email_3.png)
-
-After you have entered all required fields of your respective provider save the data
-
-![](/_images/doc2/AllImportOptions_Email_4.png)
-
-You can test the login by pressing the button of the same name. If all data are correct you will get a corresponding feedback.
-
-![](/_images/doc2/AllImportOptions_Email_5.png)
-
-After you click the `IMPORT` button, the documents will be fetched from the mailbox and you will be taken directly to the Dashboard.
-
-![](/_images/doc2/AllImportOptions_Email_6.png)
-
-
-If you have made the right decision to also use our [Workflow² APP](https://docs.polydocs.io/workflow/), you will find the corresponding workflows [here](https://docs.polydocs.io/example/gmail-import/) to automatically import your documents from your e-mail inbox to DOC².
+Start streamlining your document management process today with DOC² and Workflow²!

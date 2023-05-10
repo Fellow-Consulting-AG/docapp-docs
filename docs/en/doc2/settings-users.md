@@ -1,57 +1,44 @@
+
 ---
-title: "Users"
-description: How to add a user and reset the password. Users can be managed in User Settings. Find all options here.
-date: "2021-10-29"
+title: "How to Manage Users in DOC²: Adding and Resetting Passwords"
+description: Learn how to manage users in DOC², including adding new users and resetting passwords. Follow these simple steps to get started. 
+date: "2021-11-01"
 tags:
   - DOC²
-  - Settings
-  - Users
-  - Password
+  - User Management
+  - Password Reset
 ---
 
-To manage your users follow these steps:
+# How to Manage Users in DOC²: Adding and Resetting Passwords
 
-From the Dashboard navigate to `SETTINGS`:
+Managing users in DOC² is easy with our simple step-by-step guide. Follow these instructions to add new users and reset passwords.
 
-![](/_images/doc2/DOC2_Dashboard_Settings.png)
+## Adding a User
 
-In the settings navigate to `Users`:
+To add a new user to your DOC² account, follow these steps:
 
-![](/_images/doc2/DOC2_settings_users.png)
+1. Log in to your DOC² account and navigate to the **Settings** page.
+2. Click on **Users** to access the user management page.
+3. Click on **Add User** to create a new user.
+4. Enter the user's information, including their name, email address, and password.
+5. If the user is an administrator, check the "Admin" box.
+6. Click **Save** to create the new user.
 
-Direct link: [https://app.polydocs.io/settings/user](https://app.polydocs.io/settings/user)
+![Adding a User in DOC²](/path/to/image.png "Adding a User in DOC²")
 
-## How to add a user
+## Resetting a Password
 
-Once the admin is registered, you can add your employees via following steps.
+If a user forgets their password, you can easily reset it by following these steps:
 
-In the user menu click on `ADD USER`:
+1. Go to the DOC² login page and click on **Forgot Password**.
+2. Enter the user's email address and click **Submit**.
+3. The user will receive an email with a link to reset their password.
+4. Click on the link in the email and follow the instructions to reset the password.
 
-![](/_images/doc2/DOC2_settings_add-user.png)
+![Resetting a Password in DOC²](/path/to/image.png "Resetting a Password in DOC²")
 
-Enter the data of the user to be created:
+By following these simple steps, you can easily manage your users in DOC². Sign up for a 30-day free trial today to see how DOC² can help streamline your document management process.
 
-![](/_images/doc2/Users_4.png)
-
-- If it is not an administration user, do not check the "ADMIN" box
-- The password must be created initially and sent to the user
-
-As soon as the user is created it can be edited afterwards via the user overview (check/uncheck "ADMIN", edit, delete):
-
-![](/_images/doc2/Users_5.1.png)
-![](/_images/doc2/Users_5.2.png)
-
-## How to reset the password
-
-Go to the DOC² log-in page ([https://app.polydocs.io/](https://app.polydocs.io/)) enter your mail address and click on <ins>Forgot Password?</ins>
-
-![](/_images/doc2/Users_6.png)
-
-You will immediately receive an email with a link to reset the password. The link will navigate you to following page where you can enter a new password:
-
-![](/_images/doc2/Users_7.png)
-
-As soon as the new password has been entered and confirmed, it can be used for login from now on.
-
-
-[Sign up for a 30 days free trail](https://polydocs.io/free-trail/){ .md-button .md-button--primary }
+<div class='video-container'>
+  <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
+</div>
