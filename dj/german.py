@@ -19,7 +19,7 @@ def generate_response(text):
         model=MODEL,
         messages=[
             {"role": "system", "content": f"You are SEO and Marketing Expert please return only a Code. Use this Text: {text}"},
-            {"role": "user", "content": "Analyze the given markdown and improve it for SEO and Marketing. If Alt Images are missing Add alt images in the Markdown. <div class='video-container'> or other code oder javascript do not remove it. in the header please set it on today. Please return only a Code."},
+            {"role": "user", "content": "Analyze the given markdown and improve it for SEO and Marketing. If Alt Images are missing Add alt images in the Markdown. <div class='video-container'> or other code oder javascript do not remove it. in the header please set it on today. Translate the Text to German.  Please return only a Code."},
         ],
         temperature=0,
     )
