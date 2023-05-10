@@ -143,8 +143,6 @@ plugins:
   - git-authors
   - tags:
       tags_file: tags.md
-  - optimize:
-      optimize_jpg: false
   - minify:
       minify_html: true
 
