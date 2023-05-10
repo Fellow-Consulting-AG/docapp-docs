@@ -11,31 +11,33 @@ tags:
 
 Nach dem Einloggen mit Ihren Zugangsdaten werden Sie zur DASHBOARD-Homepage von DOC² weitergeleitet. Hier können Sie Ihre importierten Dokumente verwalten und bearbeiten.
 
-![DOC2 Dashboard](/_images/doc2/DOC2_Dashboard_1.png){ loading=lazy, alt: "DOC2 Dashboard" }
+![DOC2 Dashboard](/_images/doc2/dashboard/dashboard.png)
 
-Die obere Leiste ist ein einfaches Reporting-Tool, mit dem Sie nach Woche, Monat, Jahr oder mehr filtern können.
+Über `Erweiterte Einstellungen`, haben Sie die Möglichkeit die Dokumente nach dem heutigen Tag, Woche, Monat und Jahr zu filtern.
+
+![](/_images/doc2/dashboard/dashboard-erweiterte einstellungen.png)
 
 ## **Dokumente nach Status anzeigen**
 
-![DOC2 Dokumente nach Status anzeigen](/_images/doc2/DOC2_Dashboard_2.png){ loading=lazy, alt: "DOC2 Dokumente nach Status anzeigen" }
+![](/_images/doc2/dashboard/dashboard-analytik.png)
 
-Hier sehen Sie die Gesamtzahl der importierten Dokumente, einschließlich der automatisch oder manuell verarbeiteten Dokumente. Außerdem können Sie den Status von Dokumenten anzeigen, die beispielsweise "In Bearbeitung", "Ausstehend", "Zur Genehmigung ausstehend", "Abgeschlossen" oder "Fehlerhaft" sind. Der Hauptvorteil dieser Reporting-Leiste besteht darin, dass Sie durch Klicken auf eine der verfügbaren Boxen die spezifischen und gefilterten Dokumente finden können, die Sie suchen.
+Hier sehen Sie die Gesamtzahl der importierten Dokumente. Außerdem können Sie den Status von Dokumenten anzeigen, die beispielsweise "In Bearbeitung", "Ausstehend", "Zur Genehmigung ausstehend", "Exportiert" oder auf "Fehler" gelaufen sind. Der Hauptvorteil dieser Reporting-Leiste besteht darin, dass Sie durch Klicken auf eine der verfügbaren Boxen die spezifischen und gefilterten Dokumente finden können, die Sie suchen.
 
 Wie Sie sich vorstellen können, ist der zweite Teil des Dashboards die Liste/Übersicht aller hochgeladenen Dokumente. Sie können entweder alle oder nur die Ihnen zugewiesenen Dokumente sehen. Und natürlich können Sie es auch mit dem Dokumentennamen finden.
 
-![](/_images/doc2/DOC2_Dashboard_3.png){ loading=lazy, alt: "DOC2 Dokumentenliste" }
+![](/_images/doc2/DOC2_Dashboard_3.png)
 
 Um eine Rechnung manuell zu importieren, klicken Sie einfach auf die Schaltfläche **HOCHLADEN** und wählen Sie das Dokument aus, das Sie hochladen möchten.
 
-![](/_images/doc2/DOC2_Dashboard_4.png){ loading=lazy, alt: "DOC2 Dokument hochladen" }
+![](/_images/doc2/DOC2_Dashboard_4.png)
 
 Sie können auch Dateien überall auf dem Dashboard ablegen, um sie hochzuladen.
 
-![](/_images/doc2/DOC2_Dashboard_5.png){ loading=lazy, alt: "DOC2 Dateien hochladen" }
+![](/_images/doc2/DOC2_Dashboard_5.png)
 
 Bedeutsame Daten werden innerhalb von Sekunden extrahiert und der Status ändert sich von "In Bearbeitung" zu "Bereit zur Validierung".
 
-![](/_images/doc2/DOC2_Dashboard_1.png){ loading=lazy, alt: "DOC2 Dashboard" }
+![](/_images/doc2/DOC2_Dashboard_1.png)
 
 Was Sie jetzt sehen, ist der Validierungsbildschirm, auf dem Sie alle importierten Dokumente überprüfen, bearbeiten und validieren können.
 
