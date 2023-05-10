@@ -11,9 +11,25 @@ theme:
   font:
     text: Montserrat
   language: de
+  #palette:
+      #scheme: light
+      #primary: custom
   palette:
-      scheme: light
+    - scheme: default
       primary: custom
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: custom
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+
+
   features:
     - navigation.instant
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/?h=navigation+tabs#navigation-tabs
@@ -106,6 +122,10 @@ plugins:
   - git-authors
   - tags:
       tags_file: tags.md
+  - optimize:
+      optimize_jpg: false
+  - minify:
+      minify_html: true
 nav:
   - Changelog: Release/Release_notes.md
   - DOC²:
@@ -345,25 +365,4 @@ nav:
       - Timer: insight2/widgets/timer.md
       - Toggle Switch: insight2/widgets/toggle-switch.md
 
-
-
-  # - Courses:
-  #   - Overview: workflow/courses/index.md
-  #   - Level one:
-  #     - Overview: workflow/courses/level-one/index.md
-  #     - Navigating the editor UI: workflow/courses/level-one/chapter-1.md
-  #     - Building a mini-workflow: workflow/courses/level-one/chapter-2.md
-  #     - Automating a (real-world) use case: workflow/courses/level-one/chapter-3.md
-  #     - Designing the workflow: workflow/courses/level-one/chapter-4.md
-  #     - Building the workflow:
-  #       - Getting data from the data warehouse: workflow/courses/level-one/chapter-5/chapter-5.1.md
-  #       - Inserting data into airtable: workflow/courses/level-one/chapter-5/chapter-5.2.md
-  #       - Filtering orders: workflow/courses/level-one/chapter-5/chapter-5.3.md
-  #       - Setting values for processing orders: workflow/courses/level-one/chapter-5/chapter-5.4.md
-  #       - Calculating booked orders: workflow/courses/level-one/chapter-5/chapter-5.5.md
-  #       - Notifying the team: workflow/courses/level-one/chapter-5/chapter-5.6.md
-  #       - Scheduling the workflow: workflow/courses/level-one/chapter-5/chapter-5.7.md
-  #       - Activating and examining the workflow: workflow/courses/level-one/chapter-5/chapter-5.8.md
-  #     - Exporting, importing, and sharing workflows: workflow/courses/level-one/chapter-6.md
-  #     - Take the quiz and get your certificate: workflow/courses/level-one/chapter-7.md
 
