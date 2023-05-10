@@ -1,0 +1,56 @@
+Amna: 2 commits for week 2023-W07
+Author image: https://avatars.githubusercontent.com/u/42763988?v=4
+- 60b7abdbb7f64f54a6b26b5679924db5e74a1933: Merge pull request #747 from Fellow-Consulting-AG/stage
+
+Stage to sandbox
+Code changes:
+@@ -4,6 +4,7 @@ def execute_query(db, query):
+     results_list = [dict(r) for r in results]
+     return results_list
+ 
++
+ def get_single_result(db, query):
+     results_list = execute_query(db, query)
+-    return results_list[0] if results_list else None
+\ No newline at end of file
++    return results_list[0] if results_list else None
+- db9f742c0a2d0d4558d64b10cae2479610582009: Merge pull request #746 from Fellow-Consulting-AG/dev
+
+dev to stage
+Code changes:
+@@ -5,20 +5,16 @@
+ from enum import Enum
+ from operator import or_
+ 
+-from authenticator import UserAuthentication
+-from fellow2kv.extension import api, db, multi_auth
+ from flask import request
+ from flask_restx import Namespace, Resource, abort
++
++from authenticator import UserAuthentication
++from fellow2kv.extension import api, db, multi_auth
+ from helper import util
+ from helper.layout import layout_fields_helper as lfh
+ from logger import get_logger
+-from models import (
+-    AlchemyEncoder,
+-    ColumnValidationRules,
+-    DocumentTable,
+-    DocumentTableColumn,
+-    DocumentType,
+-)
++from models import (AlchemyEncoder, ColumnValidationRules, DocumentTable,
++                    DocumentTableColumn, DocumentType)
+ 
+ logger = get_logger("document_table_settings")
+ 
+@@ -144,7 +140,8 @@ def get(self):
+                     when cvr.id is not null then cvr.is_hidden
+                     else dcvr.is_hidden
+                 end as is_hidden,
+-                dtc.org_id
++                dtc.org_id,
++                dtc.column_type
+ 
+             from
+                 document_table dt

@@ -1,0 +1,128 @@
+Lint Action: 3 commits for week 2023-W18
+Author image: https://avatars.githubusercontent.com/u/59283862?v=4
+- 9c2d32048fc8090ab1a20690bf4638132f23731a: Fix code style issues with Black
+Code changes:
+@@ -73,7 +73,7 @@ def get_pages_to_ocr(file):
+         logger.info("Getting the pages required to be ocr")
+         with fitz.open(file) as doc:
+             try:
+-                if doc.metadata['creator'].lower() == 'pscript5.dll version 5.2.2':
++                if doc.metadata["creator"].lower() == "pscript5.dll version 5.2.2":
+                     return "ALL"
+             except:
+                 pass
+- ce36bbdcedee8fce6a0c2321605e697a186ad0b8: Fix code style issues with Black
+Code changes:
+@@ -48,7 +48,7 @@ def get_ocr_text(file):
+         logger.info("Trying if document has e-text")
+         with fitz.open(file) as doc:
+             try:
+-                if doc.metadata['creator'].lower() == 'pscript5.dll version 5.2.2':
++                if doc.metadata["creator"].lower() == "pscript5.dll version 5.2.2":
+                     return ""
+             except:
+                 pass
+@@ -213,7 +213,10 @@ def __get_ocr_file(
+             )
+             urllib.request.urlretrieve(durl, f.name)
+             f.seek(0)
+-        logger.customer("OCR completed successfully. The new OCRed document has been saved at: " + destination)
++        logger.customer(
++            "OCR completed successfully. The new OCRed document has been saved at: "
++            + destination
++        )
+     else:
+         if with_cleaning:
+             return __get_ocr_file(
+- 2fb1fa6c3986ddcfd33184dd3762621fd738d3d6: Fix code style issues with Black
+Code changes:
+@@ -52,44 +52,54 @@ def verify_token(token):
+             res = UserAuthentication.verify_auth_token(token)
+             return res
+ 
+-        from namespaces.block_table_extract import \
+-            namespace as namespace_block_table_extract
++        from namespaces.block_table_extract import (
++            namespace as namespace_block_table_extract,
++        )
+         from namespaces.cache import namespace as namespace_cache
+-        from namespaces.custom_classifier import \
+-            namespace as namespace_custom_classifier
+-        from namespaces.custom_classifier_v2 import \
+-            namespace as namespace_custom_classifier_v2
+-        from namespaces.custom_models.custom_model import \
+-            namespace as namespace_custom_model_v2
+-        from namespaces.custom_models.custom_model_label import \
+-            namespace as namespace_custom_model_labels_v2
++        from namespaces.custom_classifier import (
++            namespace as namespace_custom_classifier,
++        )
++        from namespaces.custom_classifier_v2 import (
++            namespace as namespace_custom_classifier_v2,
++        )
++        from namespaces.custom_models.custom_model import (
++            namespace as namespace_custom_model_v2,
++        )
++        from namespaces.custom_models.custom_model_label import (
++            namespace as namespace_custom_model_labels_v2,
++        )
++
+         # from namespaces.db_import_export import namespace as namespace_db
+         from namespaces.doc2_v2 import namespace as namespace_doc2_v2
+-        from namespaces.document_and_fields import \
+-            namespace as namespace_document_and_fields
+-        from namespaces.document_layout_template import \
+-            namespace as namespace_document_layout_template
+-        from namespaces.document_table import \
+-            namespace as namespace_document_table
++        from namespaces.document_and_fields import (
++            namespace as namespace_document_and_fields,
++        )
++        from namespaces.document_layout_template import (
++            namespace as namespace_document_layout_template,
++        )
++        from namespaces.document_table import namespace as namespace_document_table
+         from namespaces.export import namespace as namespace_export
+         from namespaces.extract import namespace as namespace_extract
+         from namespaces.health import namespace as namespace_health
+         from namespaces.internal import namespace as namespace_internal
+-        from namespaces.list_of_values.list_of_values import \
+-            namespace as namespace_list_of_values
++        from namespaces.list_of_values.list_of_values import (
++            namespace as namespace_list_of_values,
++        )
+         from namespaces.migration import namespace as namespace_migration
+-        from namespaces.ocr_configurations import \
+-            namespace as namespace_ocr_configurations
++        from namespaces.ocr_configurations import (
++            namespace as namespace_ocr_configurations,
++        )
+         from namespaces.pdf import namespace as namespace_pdf
+         from namespaces.preferences import namespace as preferences
+ 
+-        from namespaces.process_document_new_system import \
+-            namespace as namespace_new_system
++        from namespaces.process_document_new_system import (
++            namespace as namespace_new_system,
++        )
+ 
+-        from namespaces.sub_document_type import \
+-            namespace as namespace_sub_document_type
+-        from namespaces.table_extract_v3 import \
+-            namespace as namespace_table_extract_v3
++        from namespaces.sub_document_type import (
++            namespace as namespace_sub_document_type,
++        )
++        from namespaces.table_extract_v3 import namespace as namespace_table_extract_v3
+ 
+         api.add_namespace(namespace_extract, path="/extract")
+         api.add_namespace(namespace_export, path="/export")
+@@ -121,7 +131,7 @@ def verify_token(token):
+         api.add_namespace(namespace_cache, path="/cache")
+         api.add_namespace(namespace_health, path="/api")
+ 
+-        #if config.IS_DEBUG:
++        # if config.IS_DEBUG:
+         api.add_namespace(namespace_internal, path="/internal")
+ 
+         from fellow2kv.cli.ml import ml_blueprint

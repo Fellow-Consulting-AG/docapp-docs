@@ -1,0 +1,24 @@
+Lint Action: 1 commits for week 2023-W14
+Author image: https://avatars.githubusercontent.com/u/59283862?v=4
+- 084d2339a33933745e6e4eb0e0c79177e976046a: Fix code style issues with Black
+Code changes:
+@@ -49,15 +49,17 @@ def populate_custom_lines(document):
+                 )
+             )
+ 
+-
+             token_max_height = float(
+                 gdvh.get_float_value(
+                     db, "TOKEN_MAX_HEIGHT", document.get("org_id", None), 0.05
+                 )
+             )
+ 
+             page["tokens"] = [
+-                t for t in page["tokens"] if abs(t.get("normalizedY1", 0) - t.get("normalizedY0", 0)) < token_max_height
++                t
++                for t in page["tokens"]
++                if abs(t.get("normalizedY1", 0) - t.get("normalizedY0", 0))
++                < token_max_height
+             ]
+ 
+             first_tokens = [

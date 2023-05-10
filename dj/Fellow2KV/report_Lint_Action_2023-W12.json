@@ -1,0 +1,23 @@
+{
+    "author": "Lint Action",
+    "week": "2023-W12",
+    "total_commits": 3,
+    "author_image": "https://avatars.githubusercontent.com/u/59283862?v=4",
+    "commits": [
+        {
+            "sha": "bf85fd7aad4423c9f22872385a04a0867cd108df",
+            "message": "Fix code style issues with Black",
+            "code_changes": "@@ -159,7 +159,6 @@ def convert_to_higher_dpi(file_path: str, dpi: int):\n \n @sync_wrapper(module=\"process\")\n def preprocess_document(file_path: str, deskew=False, high_dpi=False):\n-\n     if not deskew and not high_dpi:\n         return\n \n@@ -174,7 +173,6 @@ def preprocess_document(file_path: str, deskew=False, high_dpi=False):\n     jpegopt = {\"quality\": 100, \"progressive\": True}\n \n     with tempfile.TemporaryDirectory() as tmp_dir:\n-\n         images = convert_from_path(\n             file_path,\n             dpi=dpi,\n@@ -184,7 +182,6 @@ def preprocess_document(file_path: str, deskew=False, high_dpi=False):\n             paths_only=True,\n         )\n \n-\n         low_images = convert_from_path(\n             file_path,\n             output_folder=tmp_dir,\n@@ -196,7 +193,6 @@ def preprocess_document(file_path: str, deskew=False, high_dpi=False):\n \n         if images:\n             for image in images:\n-\n                 skew_image = cv2.imread(image)\n \n                 height, width, _ = skew_image.shape"
+        },
+        {
+            "sha": "57261a29a1bccf110e27fd3e1aede38021b56210",
+            "message": "Fix code style issues with Black",
+            "code_changes": "@@ -326,7 +326,9 @@ def preprocess_and_ocr_document(\n     deskew = gdvh.get_bool_value(db, \"DESKEW_DOCUMENT\", org_id, False)\n     disable_ocr_server = gdvh.get_bool_value(db, \"DISABLE_OCR_SERVER\", org_id, False)\n     try:\n-        pdf_helper.preprocess_document(output_path, deskew, use_high_dpi, disable_ocr_server)\n+        pdf_helper.preprocess_document(\n+            output_path, deskew, use_high_dpi, disable_ocr_server\n+        )\n     except Exception as ex:\n         logger.error(ex)\n         pass"
+        },
+        {
+            "sha": "2032527e27ed64758d6331a35903f1eb22103145",
+            "message": "Fix code style issues with Black",
+            "code_changes": "@@ -15,8 +15,7 @@\n import constants\n import helper.ocr as ocr_helper\n from authenticator import UserAuthentication\n-from fellow2kv.extension import (api, db, multi_auth, storagemanager,\n-                                 storagemanager_doc2)\n+from fellow2kv.extension import api, db, multi_auth, storagemanager, storagemanager_doc2\n from helper import doc_type_helper as dth\n from helper import generic_data_vault_helper as gdvh\n from helper import pdf as pdf_helper\n@@ -25,8 +24,11 @@\n from helper.document_classifier import document_classifier\n from helper.document_extraction import document_extraction_helper as deh\n from helper.extract_util import Extractor\n-from helper.util import (str_to_bool, transform_from_normalized_coords_object,\n-                         transform_to_normalized)\n+from helper.util import (\n+    str_to_bool,\n+    transform_from_normalized_coords_object,\n+    transform_to_normalized,\n+)\n from logger import get_logger\n from util import sync_wrapper\n \n@@ -185,12 +187,16 @@ def post(self):\n             with tempfile.NamedTemporaryFile(suffix=\".pdf\") as f:\n                 storagemanager_doc2.download_file_on_stream(f, doc_path)\n                 f.seek(0)\n-                disable_ocr_server = gdvh.get_bool_value(db, \"DISABLE_OCR_SERVER\", org_id, False)\n+                disable_ocr_server = gdvh.get_bool_value(\n+                    db, \"DISABLE_OCR_SERVER\", org_id, False\n+                )\n                 if (\n                     extract_tables\n                     and (\n-                        disable_ocr_server or # so no need for other checks, it will only deskew and not send to ocrserver\n-                        not ocr_helper.is_doc_ocr(f.name)\n+                        disable_ocr_server\n+                        or not ocr_helper.is_doc_ocr(  # so no need for other checks, it will only deskew and not send to ocrserver\n+                            f.name\n+                        )\n                         or (\n                             force_ocr and not ocr_helper.is_ocred_by_doc2(f.name)\n                         )  # no point in OCR again if already done with doc2"
+        }
+    ]
+}

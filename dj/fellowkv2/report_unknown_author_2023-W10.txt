@@ -1,0 +1,164 @@
+None: 8 commits for week 2023-W10
+Author image: https://avatars.githubusercontent.com/u/83513548?v=4
+- ae5d1fafa3aa97ecbbc7586d5f9eba0f0990539c: Merge branch 'prod' into sandbox
+Code changes:
+@@ -27,6 +27,7 @@ class AI_REQUEST_TYPE:
+ ]
+ 
+ 
++
+ AMOUNT_STANDARD_FIELDS = [
+     "NET_AMOUNT",
+     "TAX_AMOUNT",
+- ba45ef856d7ce2b1021535a499b99d9250de0cb2: Merge pull request #804 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -125,6 +125,7 @@ class ClassificationMethods:
+ USE_RULES_EXTRACTION = "USE_RULES_EXTRACTION"
+ USE_MODEL_EXTRACTION = "USE_MODEL_EXTRACTION"
+ USE_MODEL_ONLY_FOR_CLASSIFICATION = "USE_MODEL_ONLY_FOR_CLASSIFICATION"
++CLASSIFY_ONLY = "CLASSIFY_ONLY"
+ 
+ 
+ class CLASSIFICATION_MODELS:
+- b4294661e20fddd3b2f5c557adeeea531793ea6c: Merge pull request #803 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -218,15 +218,14 @@ def post(self):
+                     else:
+                         cc_res = classifier.get_classification_results(user, f.name)
+ 
+-
+                     classify_only = gdvh.get_bool_value(
+                         db, constants.CLASSIFY_ONLY, org_id, False
+                     )
+                     if cc_res and classify_only:
+                         cc_res["doc_type"] = None
+                         cc_res["sub_doc_type"] = None
+-                        for page in cc_res['pages']:
+-                            page['label_doc_type'] = None
++                        for page in cc_res["pages"]:
++                            page["label_doc_type"] = None
+ 
+                     resp_json["classification"] = cc_res
+ 
+- 5035869b7ac350a2ba329926b4aab8382d4b3151: Merge pull request #802 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -125,6 +125,7 @@ class ClassificationMethods:
+ USE_RULES_EXTRACTION = "USE_RULES_EXTRACTION"
+ USE_MODEL_EXTRACTION = "USE_MODEL_EXTRACTION"
+ USE_MODEL_ONLY_FOR_CLASSIFICATION = "USE_MODEL_ONLY_FOR_CLASSIFICATION"
++CLASSIFY_ONLY = "CLASSIFY_ONLY"
+ 
+ 
+ class CLASSIFICATION_MODELS:
+- cfdfd068f7753b414cf52c40fd82289331e8ab78: fd
+Code changes:
+@@ -213,7 +213,19 @@ def post(self):
+ 
+                     else:
+                         cc_res = classifier.get_classification_results(user, f.name)
++
++
++                    classify_only = gdvh.get_bool_value(
++                        db, constants.CLASSIFY_ONLY, org_id, False
++                    )
++                    if cc_res and classify_only:
++                        cc_res["doc_type"] = None
++                        cc_res["sub_doc_type"] = None
++                        for page in cc_res['pages']:
++                            page['label_doc_type'] = None
++
+                     resp_json["classification"] = cc_res
++
+                     doc_type = cc_res.get("doc_type", None)
+                     sub_doc_type = cc_res.get("sub_doc_type", None)
+                     doc_locale = "de_DE"
+@@ -226,14 +238,7 @@ def post(self):
+                             "message": "Custom model classification successful",
+                         }
+                     )
+-
+-                    
+-                    classify_only = gdvh.get_bool_value(
+-                        db, constants.CLASSIFY_ONLY, org_id, False
+-                    )
+-                    if not doc_type or classify_only or True:
+-                        doc_type = None
+-                        sub_doc_type = None
++                    if not doc_type:
+                         destination_dir = doc_path.replace(f"/{doc_id}.pdf", "")
+                         document = ocr_processor.get_extracted_ocr_data_and_images(
+                             storagemanager_doc2,
+- ee788e04426d95093735e0330e99ca7cc9f7ed61: fd
+Code changes:
+@@ -231,7 +231,9 @@ def post(self):
+                     classify_only = gdvh.get_bool_value(
+                         db, constants.CLASSIFY_ONLY, org_id, False
+                     )
+-                    if not doc_type or classify_only:
++                    if not doc_type or classify_only or True:
++                        doc_type = None
++                        sub_doc_type = None
+                         destination_dir = doc_path.replace(f"/{doc_id}.pdf", "")
+                         document = ocr_processor.get_extracted_ocr_data_and_images(
+                             storagemanager_doc2,
+- ec5b9123a76c3226cdd6e96ec9854b31ed944dcd: fd
+Code changes:
+@@ -125,6 +125,7 @@ class ClassificationMethods:
+ USE_RULES_EXTRACTION = "USE_RULES_EXTRACTION"
+ USE_MODEL_EXTRACTION = "USE_MODEL_EXTRACTION"
+ USE_MODEL_ONLY_FOR_CLASSIFICATION = "USE_MODEL_ONLY_FOR_CLASSIFICATION"
++CLASSIFY_ONLY = "CLASSIFY_ONLY"
+ 
+ 
+ class CLASSIFICATION_MODELS:
+- 28061dbd6f6b335bfde4daceb1a7a94b8e7c78c6: fd
+Code changes:
+@@ -2,23 +2,23 @@
+ import statistics
+ import tempfile
+ 
+-import constants
+-from constants import INVOICE_STANDARD_FIELDS, MAX_FULL_TAX_RATE, MIN_FULL_TAX_RATE
+-from fellow2kv.extension import api, db, multi_auth
+ from flask import jsonify, request
+ from flask_restx import Namespace, Resource, abort
++from sqlalchemy import or_
++from werkzeug.datastructures import FileStorage
++
++import constants
++from constants import (INVOICE_STANDARD_FIELDS, MAX_FULL_TAX_RATE,
++                       MIN_FULL_TAX_RATE)
++from fellow2kv.extension import api, db, multi_auth
+ from helper import pdf as pdf_helper
+ from helper.ai import ai_invoice, ai_ocr
+-from helper.plugin_extraction_util import (
+-    get_rules_from_db,
+-    get_tf_idf_neighbours_2,
+-    save_original_file,
+-)
++from helper.plugin_extraction_util import (get_rules_from_db,
++                                           get_tf_idf_neighbours_2,
++                                           save_original_file)
+ from helper.util import format_currency
+ from logger import get_logger
+ from models import FellowKVRuleAI, FellowKVRuleWeight
+-from sqlalchemy import or_
+-from werkzeug.datastructures import FileStorage
+ 
+ logger = get_logger("fellowkv-extract")
+ 
+@@ -445,7 +445,7 @@ def post(self):
+                 mean_weight = statistics.mean(all_weights_list) / 10
+ 
+             mean_effective_weight = 0
+-            if len(all_weights_list) > 0:
++            if len(non_zero_values_list) > 0:
+                 mean_effective_weight = statistics.mean(non_zero_values_list) / 10
+ 
+             # End of Field weights

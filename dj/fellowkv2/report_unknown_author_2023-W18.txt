@@ -1,0 +1,420 @@
+None: 8 commits for week 2023-W18
+Author image: https://avatars.githubusercontent.com/u/83513548?v=4
+- 72050a45186a059f01c4c20582054732993189a4: Merge pull request #888 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -68,15 +68,15 @@ def get_ocr_text(file):
+ 
+ @sync_wrapper(module="ocr")
+ def get_pages_to_ocr(file):
+-    """
+-    Extract text using OCR with PDF Reader
+-    Args:
+-        file: write your description
+-    """
+     pages = []
+     try:
+-        logger.info("Trying if document has e-text")
++        logger.info("Getting the pages required to be ocr")
+         with fitz.open(file) as doc:
++            try:
++                if doc.metadata['creator'].lower() == 'pscript5.dll version 5.2.2':
++                    return "ALL"
++            except:
++                pass
+             for index, page in enumerate(doc):
+                 if not page_digitally_created(page):
+                     pages.append(str(index + 1))
+@@ -163,6 +163,8 @@ def __get_ocr_file(
+ 
+     files = [("file", ("Rechnung.pdf", open(file, "rb"), "application/pdf"))]
+     pages = get_pages_to_ocr(file)
++    if not pages:
++        pages = "ALL"
+     token = user.get_subscription_token()
+ 
+     logger.info("Sending ocr request.")
+@@ -181,7 +183,7 @@ def __get_ocr_file(
+             headers={"Authorization": f"Bearer {token}"},
+             files=files,
+             data={
+-                "force": False,
++                "force": True,
+                 "deskew": False,
+                 "clean": False,
+                 "final": False,
+- f4c5fda44852ad6b75659a3ec4b561b3b5dbc211: fd
+Code changes:
+@@ -68,15 +68,15 @@ def get_ocr_text(file):
+ 
+ @sync_wrapper(module="ocr")
+ def get_pages_to_ocr(file):
+-    """
+-    Extract text using OCR with PDF Reader
+-    Args:
+-        file: write your description
+-    """
+     pages = []
+     try:
+-        logger.info("Trying if document has e-text")
++        logger.info("Getting the pages required to be ocr")
+         with fitz.open(file) as doc:
++            try:
++                if doc.metadata['creator'].lower() == 'pscript5.dll version 5.2.2':
++                    return "ALL"
++            except:
++                pass
+             for index, page in enumerate(doc):
+                 if not page_digitally_created(page):
+                     pages.append(str(index + 1))
+@@ -163,6 +163,8 @@ def __get_ocr_file(
+ 
+     files = [("file", ("Rechnung.pdf", open(file, "rb"), "application/pdf"))]
+     pages = get_pages_to_ocr(file)
++    if not pages:
++        pages = "ALL"
+     token = user.get_subscription_token()
+ 
+     logger.info("Sending ocr request.")
+@@ -181,7 +183,7 @@ def __get_ocr_file(
+             headers={"Authorization": f"Bearer {token}"},
+             files=files,
+             data={
+-                "force": False,
++                "force": True,
+                 "deskew": False,
+                 "clean": False,
+                 "final": False,
+- 5bf21456c6db7b8fd6c72f44d2d454c3df795584: Merge pull request #886 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -47,6 +47,11 @@ def get_ocr_text(file):
+     try:
+         logger.info("Trying if document has e-text")
+         with fitz.open(file) as doc:
++            try:
++                if doc.metadata['creator'].lower() == 'pscript5.dll version 5.2.2':
++                    return ""
++            except:
++                pass
+             for page in doc:
+                 if not page_digitally_created(page):
+                     return ""
+@@ -208,7 +213,7 @@ def __get_ocr_file(
+             )
+             urllib.request.urlretrieve(durl, f.name)
+             f.seek(0)
+-        logger.customer("OCRed Document saved successfully")
++        logger.customer("OCR completed successfully. The new OCRed document has been saved at: " + destination)
+     else:
+         if with_cleaning:
+             return __get_ocr_file(
+@@ -267,15 +272,15 @@ def page_digitally_created(page):
+     page_area = abs(page.rect)  # Total page area
+ 
+     img_area = 0.0
+-    for block in page.getText("RAWDICT")["blocks"]:
++    for block in page.get_text("RAWDICT")["blocks"]:
+         if block["type"] == 1:  # Type=1 are images
+             bbox = block["bbox"]
+             img_area += (bbox[2] - bbox[0]) * (bbox[3] - bbox[1])  # width*height
+     img_perc = img_area / page_area
+     # print("Image area proportion: " + str(img_perc))
+ 
+     text_area = 0.0
+-    for b in page.getTextBlocks():
++    for b in page.get_text_blocks():
+         r = fitz.Rect(b[:4])  # Rectangle where block text appears
+         text_area = text_area + abs(r)
+     text_perc = text_area / page_area
+- c521c001cf761a714c296e65d7cb61fc25a207c1: CLOU-5187
+Code changes:
+@@ -47,6 +47,11 @@ def get_ocr_text(file):
+     try:
+         logger.info("Trying if document has e-text")
+         with fitz.open(file) as doc:
++            try:
++                if doc.metadata['creator'].lower() == 'pscript5.dll version 5.2.2':
++                    return ""
++            except:
++                pass
+             for page in doc:
+                 if not page_digitally_created(page):
+                     return ""
+- f08f407a197f13390279cd2013dada0dbc90f749: updated logtail
+Code changes:
+@@ -208,7 +208,7 @@ def __get_ocr_file(
+             )
+             urllib.request.urlretrieve(durl, f.name)
+             f.seek(0)
+-        logger.customer("OCRed Document saved successfully")
++        logger.customer("OCR completed successfully. The new OCRed document has been saved at: " + destination)
+     else:
+         if with_cleaning:
+             return __get_ocr_file(
+- f9ec6004754eb5d7854aefb64217a3c7cd8ab6fc: fd
+Code changes:
+@@ -267,15 +267,15 @@ def page_digitally_created(page):
+     page_area = abs(page.rect)  # Total page area
+ 
+     img_area = 0.0
+-    for block in page.getText("RAWDICT")["blocks"]:
++    for block in page.get_text("RAWDICT")["blocks"]:
+         if block["type"] == 1:  # Type=1 are images
+             bbox = block["bbox"]
+             img_area += (bbox[2] - bbox[0]) * (bbox[3] - bbox[1])  # width*height
+     img_perc = img_area / page_area
+     # print("Image area proportion: " + str(img_perc))
+ 
+     text_area = 0.0
+-    for b in page.getTextBlocks():
++    for b in page.get_text_blocks():
+         r = fitz.Rect(b[:4])  # Rectangle where block text appears
+         text_area = text_area + abs(r)
+     text_perc = text_area / page_area
+- 268b74cc9e9fddec8c947d09403010bc2fff5f50: Merge pull request #884 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -1,13 +1,13 @@
+ # venv image
+-#FROM ubuntu:20.04 as venv-image
+-FROM python:3.9.16-bullseye as venv-image
++FROM ubuntu:20.04 as venv-image
++# FROM python:3.9.16-bullseye as venv-image
+ 
+-# RUN apt update
+-# RUN apt install -y software-properties-common
++RUN apt update
++RUN apt install -y software-properties-common
+ 
+-# RUN add-apt-repository ppa:deadsnakes/ppa
++RUN add-apt-repository ppa:deadsnakes/ppa
+ 
+-# RUN apt install -y python3.9 python3.9-venv
++RUN apt install -y python3.9 python3.9-venv
+ 
+ 
+ 
+@@ -27,15 +27,15 @@ RUN pip3 install gunicorn opencv-python camelot-py[all] uvicorn
+ 
+ 
+ # debian custom image
+-#FROM ubuntu:20.04 as base-image
+-FROM python:3.9.16-bullseye as base-image
++FROM ubuntu:20.04 as base-image
++# FROM python:3.9.16-bullseye as base-image
+ 
+-# RUN apt update
+-# RUN apt install -y software-properties-common
++RUN apt update
++RUN apt install -y software-properties-common
+ 
+-# RUN add-apt-repository ppa:deadsnakes/ppa
++RUN add-apt-repository ppa:deadsnakes/ppa
+ 
+-# RUN apt install -y python3.9
++RUN apt install -y python3.9
+ 
+ 
+ 
+- 0140c041260d32ac32fe1a7984dbabd39a8ce5e3: fd
+Code changes:
+@@ -8,14 +8,17 @@
+ import traceback
+ from datetime import datetime
+ 
++import img2pdf
+ from flask import jsonify, request, send_file
+ from flask_restx import Namespace, Resource, abort
++from pdf2image import convert_from_path
+ from werkzeug.datastructures import FileStorage
+ 
+ import constants
+ import helper.ocr as ocr_helper
+ from authenticator import UserAuthentication
+-from fellow2kv.extension import api, db, multi_auth, storagemanager, storagemanager_doc2
++from fellow2kv.extension import (api, db, multi_auth, storagemanager,
++                                 storagemanager_doc2)
+ from helper import doc_type_helper as dth
+ from helper import generic_data_vault_helper as gdvh
+ from helper import pdf as pdf_helper
+@@ -24,11 +27,8 @@
+ from helper.document_classifier import document_classifier
+ from helper.document_extraction import document_extraction_helper as deh
+ from helper.extract_util import Extractor
+-from helper.util import (
+-    str_to_bool,
+-    transform_from_normalized_coords_object,
+-    transform_to_normalized,
+-)
++from helper.util import (str_to_bool, transform_from_normalized_coords_object,
++                         transform_to_normalized)
+ from logger import get_logger
+ from util import sync_wrapper
+ 
+@@ -37,6 +37,7 @@
+ doc2_base_directory = "documents"
+ 
+ 
++
+ aiparser = api.parser()
+ aiparser.add_argument("doc_id", type=str, required=True, location="form")
+ aiparser.add_argument("doc_path", type=str, required=False, location="form")
+@@ -202,6 +203,7 @@ def post(self):
+                         )  # no point in OCR again if already done with doc2
+                     )
+                     or improve_quality
++                    or disable_ocr_server # right now for medi to fix inverted documents
+                 ):
+                     ocr_helper.ocr_document(
+                         user,
+@@ -885,3 +887,145 @@ def get(self, doc_id, filename):
+             )
+         except:
+             abort(404)
++
++
++
++aiparser = api.parser()
++
++aiparser.add_argument("extracted_data", type=str, required=False, location="form")
++@namespace.route("/hussain", methods=["POST"])
++@namespace.doc(
++    params={
++        "Authorization": {
++            "in": "header",
++            "description": "Authorization: Bearer <access_token>",
++        }
++    }
++)
++class Hussain(Resource):
++    @namespace.expect(aiparser)
++    @multi_auth.login_required
++    @namespace.doc("Mock process the document to extract fields and tables")
++    def post(self):
++        """
++        TODO: How extraction will work
++
++        - It will be checked if ocr data has been extracted and document
++        has been classified or not.
++        - Document will be classified
++        - Document fields and tables information will be populated
++        - Fields will be extracted
++        - Table will be extracted. Only V3 from now on.
++        - Validation for the fields and table, we can keep in doc2api for now
++        """
++
++        request_data = request.form
++        user: UserAuthentication = multi_auth.current_user()
++        org_id = user.get_org_id()
++
++
++        jpegopt = {"quality": 100, "progressive": True}
++        annotations_path = f"debugging/ocr_json/annotations/"
++        if not os.path.exists(annotations_path):
++            os.makedirs(annotations_path)
++        images_path = f"debugging/ocr_json/images/"
++        if not os.path.exists(images_path):
++            os.makedirs(images_path)
++        pdf_path = f"debugging/ocr_json/pdf/"
++        if not os.path.exists(pdf_path):
++            os.makedirs(pdf_path)
++
++        export_data = json.loads(request.form.get("data", "[]"))
++        
++        for item in export_data:
++            try:
++                if not item['tables'] or not item['tables'][0]['rows']:
++                    continue
++                doc_id = item['id']
++                table = item['tables'][0]
++                document = json.loads(
++                    storagemanager_doc2.get_file_content(
++                        f"documents/{doc_id}/{doc_id}_ai_transform.json"
++                    ).decode("UTF-8")
++                )
++                ai_extractor = Extractor(document, "", 0)
++                coords_object = {}
++                for location in table['locations']:
++                    for page in document["pages"]:
++                        if int(page["pageNumber"]) == location['page']:
++                            page_to_use = page
++                            break
++
++                    height = page_to_use["height"]
++                    width = page_to_use["width"]
++                    coords_object[str(location['page'])] = {
++                        "x0": round(float(location['coords'][0]) * width), 
++                        "x1": round(float(location['coords'][1]) * height), 
++                        "y0": round(float(location['coords'][2]) * width), 
++                        "y1": round(float(location['coords'][3]) * height)
++                    }
++                    lines, last_line_found = ai_extractor.get_custom_lines_from_coordinates(
++                        coords_object[str(location['page'])], location['page'] - 1
++                    )
++
++                form = []
++                for row in table['rows']:
++                    for page in document["pages"]:
++                        if int(page["pageNumber"]) == row['locations'][0]['page']:
++                            page_to_use = page
++                            break
++
++                    height = page_to_use["height"]
++                    width = page_to_use["width"]
++                    box = [
++                        round(float(row['locations'][0]['coords'][0]) * width),
++                        round(float(row['locations'][0]['coords'][1]) * height),
++                        round(float(row['locations'][0]['coords'][2]) * width),
++                        round(float(row['locations'][0]['coords'][3]) * height),
++                    ]
++
++                    words = [
++                        {
++                            "text": row['content'],
++                            "box": box
++                        }
++                    ]
++                    
++                    row_object = {
++                        "text": row['content'],
++                        "label": "TABLE BODY",
++                        "box": box,
++                        "words": words,
++                        "linking": [],
++                        "id": len(form) + 1
++                    }
++                    form.append(row_object)
++
++                
++
++                json_object = {
++                    "documentName": f"{doc_id}.pdf",
++                    "document": document['tfidfCustomPageText'],
++                    "form": form
++                }
++                doc_path = f"documents/{doc_id}/{doc_id}.pdf"
++                with open(f"{annotations_path}{doc_id}.json", "w") as outfile:
++                    outfile.write(json.dumps([json_object], indent=4))
++                with tempfile.TemporaryDirectory() as tmp_dir:
++                    with tempfile.NamedTemporaryFile() as tf:
++                        storagemanager_doc2.download_file_on_stream(tf, doc_path)
++                        images = convert_from_path(
++                            tf.name, dpi=300, output_folder=tmp_dir,fmt='jpeg', jpegopt=jpegopt
++                        )
++
++                        for index, img_path in enumerate(images):
++                            with open(f"{pdf_path}{doc_id}_{index+1}.pdf", "wb") as out_file:
++                                out_file.write(img2pdf.convert([img_path.filename]))
++                            img_path.save(f'{images_path}{doc_id}_{index+1}.jpg', 'JPEG')
++
++
++                
++                print(json.dumps(json_object))
++            except Exception as ex:
++                print(f"An Error occurred. Message: {ex}")
++                continue
+\ No newline at end of file

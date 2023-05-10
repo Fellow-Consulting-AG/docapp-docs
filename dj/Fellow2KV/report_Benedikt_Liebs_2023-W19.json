@@ -1,0 +1,63 @@
+{
+    "author": "Benedikt Liebs",
+    "week": "2023-W19",
+    "total_commits": 11,
+    "author_image": "https://avatars.githubusercontent.com/u/74979180?v=4",
+    "commits": [
+        {
+            "sha": "d8b4ad1159380a3a619f4ccc7f736eceb6aaa51c",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.581\n\\ No newline at end of file\n+2.0.582\n\\ No newline at end of file"
+        },
+        {
+            "sha": "22802fa4cf24262bf76799b94eed42f0ac05f2cc",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.580\n\\ No newline at end of file\n+2.0.581\n\\ No newline at end of file"
+        },
+        {
+            "sha": "6d9bed5a1a04a435d3583666eafeaee45f463cd1",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.579\n\\ No newline at end of file\n+2.0.580\n\\ No newline at end of file"
+        },
+        {
+            "sha": "c46c9e46ee39cdae1c909386100c695042f56dcf",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.578\n\\ No newline at end of file\n+2.0.579\n\\ No newline at end of file"
+        },
+        {
+            "sha": "49fc14fe0e3ae60107d25e84c14b663d2dd8c49b",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.577\n\\ No newline at end of file\n+2.0.578\n\\ No newline at end of file"
+        },
+        {
+            "sha": "e519b4ba0b735ea20612f589296540e97fc64fa6",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.576\n\\ No newline at end of file\n+2.0.577\n\\ No newline at end of file"
+        },
+        {
+            "sha": "f035d3f98dd7d313e26762853239e3019ea9eced",
+            "message": "Merge pull request #890 from Fellow-Consulting-AG/dev\n\nUpdate dockerfile",
+            "code_changes": "@@ -0,0 +1,18 @@\n+on:\n+  pull_request:\n+    types: [opened, synchronize]\n+\n+jobs:\n+  hello_world_job:\n+    runs-on: ubuntu-latest\n+    name: ChatGPT code reviewer\n+    steps:\n+      - name: ChatGTP code reviewer code\n+        uses: fr33d00m/chatgpt-github-actions@v2-turbo\n+        with:\n+          openai_api_key: ${{ secrets.openai_api_key }}\n+          github_token: ${{ secrets.GITHUB_TOKEN }}\n+          github_pr_id: ${{ github.event.number }}\n+          openai_engine: \"gpt-3.5-turbo\" #optional\n+          openai_temperature: 0.2 #optional\n+          openai_max_tokens: 2048 #optional"
+        },
+        {
+            "sha": "578d78bf3d2bc8c6d1eb1e3e1ea6cdaf897420b4",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.575\n\\ No newline at end of file\n+2.0.576\n\\ No newline at end of file"
+        },
+        {
+            "sha": "4d2250cd50d2ced50c57f2140b2567a96dbbc2c9",
+            "message": "push",
+            "code_changes": "@@ -1,19 +1,10 @@\n # venv image\n-FROM ubuntu:20.04 as venv-image\n-# FROM python:3.9.16-bullseye as venv-image\n+# FROM ubuntu:20.04 as venv-image\n+FROM python:3.9.16-bullseye as venv-image\n \n RUN apt update\n-RUN apt install -y software-properties-common\n-\n-RUN add-apt-repository ppa:deadsnakes/ppa\n-\n-RUN apt install -y python3.9 python3.9-venv\n-\n-\n \n ARG DEBIAN_FRONTEND=noninteractive\n-RUN apt update -y && \\\n-    apt install -y python3 python3-venv python3-pip\n \n RUN mkdir /app\n RUN python3 -m venv /app/venv\n@@ -27,16 +18,10 @@ RUN pip3 install gunicorn opencv-python camelot-py[all] uvicorn\n \n \n # debian custom image\n-FROM ubuntu:20.04 as base-image\n-# FROM python:3.9.16-bullseye as base-image\n+# FROM ubuntu:20.04 as base-image\n+FROM python:3.9.16-bullseye as base-image\n \n RUN apt update\n-RUN apt install -y software-properties-common\n-\n-RUN add-apt-repository ppa:deadsnakes/ppa\n-\n-RUN apt install -y python3.9\n-\n \n \n # make sure all messages always reach console"
+        },
+        {
+            "sha": "025a98902e90f13714729d5c67f6206cf9c5c5a4",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.574\n\\ No newline at end of file\n+2.0.575\n\\ No newline at end of file"
+        },
+        {
+            "sha": "8133ba047735aa65a6ee6740fe5745e1651d037a",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.573\n\\ No newline at end of file\n+2.0.574\n\\ No newline at end of file"
+        }
+    ]
+}

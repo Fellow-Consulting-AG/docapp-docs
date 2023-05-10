@@ -1,0 +1,950 @@
+None: 30 commits for week 2023-W11
+Author image: https://avatars.githubusercontent.com/u/83513548?v=4
+- 2d2dea2613c70e4193ea49b51773b50bfcadea0d: fd
+Code changes:
+@@ -42,13 +42,12 @@ def populate_custom_lines(document):
+             db, "REMOVE_BOUNDRY_TOKENS", document.get("org_id", None), True
+         )
+ 
+-        remove_boundry_width_percentage = float(
+-            gdvh.get_float_value(
+-                db, "REMOVE_BOUNDRY_TOKENS", document.get("org_id", None), 0.05
+-            )
+-        )
+-
+         if remove_boundry_tokens:
++            remove_boundry_width_percentage = float(
++                gdvh.get_float_value(
++                    db, "REMOVE_BOUNDRY_TOKENS", document.get("org_id", None), 0.05
++                )
++            )
+             first_tokens = [
+                 t
+                 for t in page["tokens"]
+- 954fafc76d7ebe25a3729b2808e85f0bc9025086: Merge pull request #824 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -9,14 +9,21 @@
+ from fellow2kv.extension import db, storagemanager
+ from helpdesk import create_new_customer, create_ticket
+ from helper import doc2_util
+-from helper.ai.ai_ocr import (generate_hard_regex_from_string,
+-                              generate_regex_from_string)
+-from helper.util import (get_page, transform_from_normalized,
+-                         transform_from_normalized_coords_object)
++from helper.ai.ai_ocr import generate_hard_regex_from_string, generate_regex_from_string
++from helper.util import (
++    get_page,
++    transform_from_normalized,
++    transform_from_normalized_coords_object,
++)
+ from logger import get_logger
+-from models import (DocOriginRules, FellowKVRule, FellowKVRuleUser,
+-                    FellowKVSourceFile, FellowKVTableColumnRule,
+-                    FellowKVTableRule)
++from models import (
++    DocOriginRules,
++    FellowKVRule,
++    FellowKVRuleUser,
++    FellowKVSourceFile,
++    FellowKVTableColumnRule,
++    FellowKVTableRule,
++)
+ from models import TableFormattingRules as TFR
+ from models import TfidfDocs
+ 
+- a074a3aa331bd7d1e121293f0e91bbf3501c14dd: Merge pull request #823 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -2,14 +2,15 @@
+ from datetime import datetime
+ 
+ import camelot
++import logtail
++from sqlalchemy import or_
++
+ import helper.plugin_extraction_util as ext_util
+ import helper.table_extractors.azure_table_extractor as ate
+-import logtail
+ from fellow2kv.extension import db
+ from helper import doc2_util
+ from logger import get_logger
+ from models import BlockTableExtraction
+-from sqlalchemy import or_
+ 
+ logger = get_logger()
+ 
+@@ -30,6 +31,7 @@ def extract_tables(user, ai_ocr_document, document_path_local, table_name="table
+     logger.customer("Extraced Table using database rules")
+ 
+     if not extracted_tables or len(extracted_tables) == 0:
++        return []
+         extracted_tables = extract_tables_from_pdf(document_path_local)
+         extracted_tables = filter_tables_on_width(document_path_local, extracted_tables)
+         logger.customer("Rules from similar document used for rows and columns")
+- d3d94e129d44b1ccf4fd17a5ca3e769b44495da5: fd
+Code changes:
+@@ -2,14 +2,15 @@
+ from datetime import datetime
+ 
+ import camelot
++import logtail
++from sqlalchemy import or_
++
+ import helper.plugin_extraction_util as ext_util
+ import helper.table_extractors.azure_table_extractor as ate
+-import logtail
+ from fellow2kv.extension import db
+ from helper import doc2_util
+ from logger import get_logger
+ from models import BlockTableExtraction
+-from sqlalchemy import or_
+ 
+ logger = get_logger()
+ 
+@@ -30,6 +31,7 @@ def extract_tables(user, ai_ocr_document, document_path_local, table_name="table
+     logger.customer("Extraced Table using database rules")
+ 
+     if not extracted_tables or len(extracted_tables) == 0:
++        return []
+         extracted_tables = extract_tables_from_pdf(document_path_local)
+         extracted_tables = filter_tables_on_width(document_path_local, extracted_tables)
+         logger.customer("Rules from similar document used for rows and columns")
+- d934486a9e048e4db04ba72778ecd3bbadca7ba2: Merge pull request #822 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -5,7 +5,9 @@
+ from authenticator import UserAuthentication
+ from helper.custom_classifier_v2 import common
+ from helper.document_classifier.document_classifier import (
+-    extract_ocr_data, get_first_page_text)
++    extract_ocr_data,
++    get_first_page_text,
++)
+ from helper.pdf import get_page_count
+ from helper.util import str_to_bool
+ 
+- 74bd4570199e2000e3e148219287b0de931d8d92: Merge pull request #821 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -9,21 +9,14 @@
+ from fellow2kv.extension import db, storagemanager
+ from helpdesk import create_new_customer, create_ticket
+ from helper import doc2_util
+-from helper.ai.ai_ocr import generate_hard_regex_from_string, generate_regex_from_string
+-from helper.util import (
+-    get_page,
+-    transform_from_normalized,
+-    transform_from_normalized_coords_object,
+-)
++from helper.ai.ai_ocr import (generate_hard_regex_from_string,
++                              generate_regex_from_string)
++from helper.util import (get_page, transform_from_normalized,
++                         transform_from_normalized_coords_object)
+ from logger import get_logger
+-from models import (
+-    DocOriginRules,
+-    FellowKVRule,
+-    FellowKVRuleUser,
+-    FellowKVSourceFile,
+-    FellowKVTableColumnRule,
+-    FellowKVTableRule,
+-)
++from models import (DocOriginRules, FellowKVRule, FellowKVRuleUser,
++                    FellowKVSourceFile, FellowKVTableColumnRule,
++                    FellowKVTableRule)
+ from models import TableFormattingRules as TFR
+ from models import TfidfDocs
+ 
+@@ -1347,11 +1340,14 @@ def get_table_rules_for_export_v3(extractor, table):
+ 
+         if len(document.get("pages")) == 1:
+             is_single_page = True
+-        elif pageNumber >= len(document.get("pages")) - 1:
++
++        if pageNumber >= len(document.get("pages")) - 1:
+             is_last_page = True  # as sometimes the final page is the second last
+-        elif pageNumber == 1:
++
++        if pageNumber == 1:
+             is_first_page = True
+-        elif pageNumber < len(document.get("pages")):
++
++        if pageNumber < len(document.get("pages")):
+             is_middle_page = True
+ 
+         width = page.get("width", 0)
+- 4a1239f451ca103cbafd147ee2170bc68afa0db3: fd
+Code changes:
+@@ -9,21 +9,14 @@
+ from fellow2kv.extension import db, storagemanager
+ from helpdesk import create_new_customer, create_ticket
+ from helper import doc2_util
+-from helper.ai.ai_ocr import generate_hard_regex_from_string, generate_regex_from_string
+-from helper.util import (
+-    get_page,
+-    transform_from_normalized,
+-    transform_from_normalized_coords_object,
+-)
++from helper.ai.ai_ocr import (generate_hard_regex_from_string,
++                              generate_regex_from_string)
++from helper.util import (get_page, transform_from_normalized,
++                         transform_from_normalized_coords_object)
+ from logger import get_logger
+-from models import (
+-    DocOriginRules,
+-    FellowKVRule,
+-    FellowKVRuleUser,
+-    FellowKVSourceFile,
+-    FellowKVTableColumnRule,
+-    FellowKVTableRule,
+-)
++from models import (DocOriginRules, FellowKVRule, FellowKVRuleUser,
++                    FellowKVSourceFile, FellowKVTableColumnRule,
++                    FellowKVTableRule)
+ from models import TableFormattingRules as TFR
+ from models import TfidfDocs
+ 
+@@ -1347,11 +1340,14 @@ def get_table_rules_for_export_v3(extractor, table):
+ 
+         if len(document.get("pages")) == 1:
+             is_single_page = True
+-        elif pageNumber >= len(document.get("pages")) - 1:
++
++        if pageNumber >= len(document.get("pages")) - 1:
+             is_last_page = True  # as sometimes the final page is the second last
+-        elif pageNumber == 1:
++
++        if pageNumber == 1:
+             is_first_page = True
+-        elif pageNumber < len(document.get("pages")):
++
++        if pageNumber < len(document.get("pages")):
+             is_middle_page = True
+ 
+         width = page.get("width", 0)
+- b4f7e9a01095588c020a8ffd6460f7fa285ea931: Merge pull request #818 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -52,42 +52,49 @@ def verify_token(token):
+             res = UserAuthentication.verify_auth_token(token)
+             return res
+ 
+-        from namespaces.block_table_extract import \
+-            namespace as namespace_block_table_extract
++        from namespaces.block_table_extract import (
++            namespace as namespace_block_table_extract,
++        )
+         from namespaces.cache import namespace as namespace_cache
+-        from namespaces.custom_classifier import \
+-            namespace as namespace_custom_classifier
+-        from namespaces.custom_classifier_v2 import \
+-            namespace as namespace_custom_classifier_v2
+-        from namespaces.custom_models.custom_model import \
+-            namespace as namespace_custom_model_v2
+-        from namespaces.custom_models.custom_model_label import \
+-            namespace as namespace_custom_model_labels_v2
++        from namespaces.custom_classifier import (
++            namespace as namespace_custom_classifier,
++        )
++        from namespaces.custom_classifier_v2 import (
++            namespace as namespace_custom_classifier_v2,
++        )
++        from namespaces.custom_models.custom_model import (
++            namespace as namespace_custom_model_v2,
++        )
++        from namespaces.custom_models.custom_model_label import (
++            namespace as namespace_custom_model_labels_v2,
++        )
++
+         # from namespaces.db_import_export import namespace as namespace_db
+         from namespaces.doc2_v2 import namespace as namespace_doc2_v2
+-        from namespaces.document_and_fields import \
+-            namespace as namespace_document_and_fields
+-        from namespaces.document_layout_template import \
+-            namespace as namespace_document_layout_template
+-        from namespaces.document_table import \
+-            namespace as namespace_document_table
++        from namespaces.document_and_fields import (
++            namespace as namespace_document_and_fields,
++        )
++        from namespaces.document_layout_template import (
++            namespace as namespace_document_layout_template,
++        )
++        from namespaces.document_table import namespace as namespace_document_table
+         from namespaces.export import namespace as namespace_export
+         from namespaces.extract import namespace as namespace_extract
+         from namespaces.health import namespace as namespace_health
+         from namespaces.internal import namespace as namespace_internal
+-        from namespaces.list_of_values.list_of_values import \
+-            namespace as namespace_list_of_values
++        from namespaces.list_of_values.list_of_values import (
++            namespace as namespace_list_of_values,
++        )
+         from namespaces.migration import namespace as namespace_migration
+-        from namespaces.ocr_configurations import \
+-            namespace as namespace_ocr_configurations
++        from namespaces.ocr_configurations import (
++            namespace as namespace_ocr_configurations,
++        )
+         from namespaces.pdf import namespace as namespace_pdf
+         from namespaces.preferences import namespace as preferences
+-        from namespaces.sub_document_type import \
+-            namespace as namespace_sub_document_type
+-        from namespaces.table_extract_v3 import \
+-            namespace as namespace_table_extract_v3
+-
+-        
++        from namespaces.sub_document_type import (
++            namespace as namespace_sub_document_type,
++        )
++        from namespaces.table_extract_v3 import namespace as namespace_table_extract_v3
+ 
+         api.add_namespace(namespace_extract, path="/extract")
+         api.add_namespace(namespace_export, path="/export")
+@@ -121,7 +128,6 @@ def verify_token(token):
+         if config.IS_DEBUG:
+             api.add_namespace(namespace_internal, path="/internal")
+ 
+-
+         from fellow2kv.cli.ml import ml_blueprint
+ 
+         app.register_blueprint(ml_blueprint)
+- 4c7c9b829809c16c0c0de87e6ec4863e54652133: Merge pull request #817 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -4,9 +4,8 @@
+ from authenticator import UserAuthentication
+ from constants import CLASSIFICATION_MODELS
+ from fellow2kv.extension import db
+-from helper.custom_classifier_v2.iclassifier_model_processor import (
+-    IClassifierModelProcessor,
+-)
++from helper.custom_classifier_v2.iclassifier_model_processor import \
++    IClassifierModelProcessor
+ from util import sync_wrapper
+ 
+ from . import common, mlp_classifier_processor, service_classifier_processor
+@@ -79,6 +78,7 @@ def classify_document(user: UserAuthentication, model, local_file_path, pages=No
+     if res.score == -1:
+         result["classification_label"] = res.label
+         result["classification_message"] = res.message
++        result["classification_score"] = res.score
+         if res.label in model_labels:
+             result["classification_label_class"] = model_labels[res.label][
+                 "label_category"
+- da3b63cc03765f1291a49782cb6a1d7ddfb0efc7: Merge branch 'stage' into dev
+Code changes:
+@@ -52,42 +52,49 @@ def verify_token(token):
+             res = UserAuthentication.verify_auth_token(token)
+             return res
+ 
+-        from namespaces.block_table_extract import \
+-            namespace as namespace_block_table_extract
++        from namespaces.block_table_extract import (
++            namespace as namespace_block_table_extract,
++        )
+         from namespaces.cache import namespace as namespace_cache
+-        from namespaces.custom_classifier import \
+-            namespace as namespace_custom_classifier
+-        from namespaces.custom_classifier_v2 import \
+-            namespace as namespace_custom_classifier_v2
+-        from namespaces.custom_models.custom_model import \
+-            namespace as namespace_custom_model_v2
+-        from namespaces.custom_models.custom_model_label import \
+-            namespace as namespace_custom_model_labels_v2
++        from namespaces.custom_classifier import (
++            namespace as namespace_custom_classifier,
++        )
++        from namespaces.custom_classifier_v2 import (
++            namespace as namespace_custom_classifier_v2,
++        )
++        from namespaces.custom_models.custom_model import (
++            namespace as namespace_custom_model_v2,
++        )
++        from namespaces.custom_models.custom_model_label import (
++            namespace as namespace_custom_model_labels_v2,
++        )
++
+         # from namespaces.db_import_export import namespace as namespace_db
+         from namespaces.doc2_v2 import namespace as namespace_doc2_v2
+-        from namespaces.document_and_fields import \
+-            namespace as namespace_document_and_fields
+-        from namespaces.document_layout_template import \
+-            namespace as namespace_document_layout_template
+-        from namespaces.document_table import \
+-            namespace as namespace_document_table
++        from namespaces.document_and_fields import (
++            namespace as namespace_document_and_fields,
++        )
++        from namespaces.document_layout_template import (
++            namespace as namespace_document_layout_template,
++        )
++        from namespaces.document_table import namespace as namespace_document_table
+         from namespaces.export import namespace as namespace_export
+         from namespaces.extract import namespace as namespace_extract
+         from namespaces.health import namespace as namespace_health
+         from namespaces.internal import namespace as namespace_internal
+-        from namespaces.list_of_values.list_of_values import \
+-            namespace as namespace_list_of_values
++        from namespaces.list_of_values.list_of_values import (
++            namespace as namespace_list_of_values,
++        )
+         from namespaces.migration import namespace as namespace_migration
+-        from namespaces.ocr_configurations import \
+-            namespace as namespace_ocr_configurations
++        from namespaces.ocr_configurations import (
++            namespace as namespace_ocr_configurations,
++        )
+         from namespaces.pdf import namespace as namespace_pdf
+         from namespaces.preferences import namespace as preferences
+-        from namespaces.sub_document_type import \
+-            namespace as namespace_sub_document_type
+-        from namespaces.table_extract_v3 import \
+-            namespace as namespace_table_extract_v3
+-
+-        
++        from namespaces.sub_document_type import (
++            namespace as namespace_sub_document_type,
++        )
++        from namespaces.table_extract_v3 import namespace as namespace_table_extract_v3
+ 
+         api.add_namespace(namespace_extract, path="/extract")
+         api.add_namespace(namespace_export, path="/export")
+@@ -121,7 +128,6 @@ def verify_token(token):
+         if config.IS_DEBUG:
+             api.add_namespace(namespace_internal, path="/internal")
+ 
+-
+         from fellow2kv.cli.ml import ml_blueprint
+ 
+         app.register_blueprint(ml_blueprint)
+- 9426cfa171b32d66fb8b4772c733cf7a2dbf45d2: fd
+Code changes:
+@@ -472,7 +472,7 @@ class TableFormattingRules(db.Model):
+     split_text_on_separators = db.Column(db.Boolean, default=False)
+     columns_to_hide = db.Column(db.String(500))
+     merge_extra_lines_to_desc = db.Column(db.Boolean, default=False)
+-    merge_extra_lines_to = db.Column(db.String(100), default=False)
++    merge_extra_lines_to = db.Column(db.String(100))
+     extra_columns = db.Column(db.Text)
+ 
+     created_on = db.Column(db.DateTime(timezone=True), server_default=func.now())
+- ac24a7274d6fd35056ec03153e7edd6620d43c4d: fd
+Code changes:
+@@ -604,7 +604,7 @@ def get_table_column_confs(org_id: str, table_name: str, column_name=None):
+ 
+ def get_fuzzy_fields_list(db, org_id, doc_type, sub_doc_type):
+     query = f"""select
+-        f.doc_type, f.field_name, fuzzy_name, f.fuzzy_field, f.fuzzy_primary_field,
++        f.doc_type, f.field_name, fuzzy_name, f.fuzzy_field, f.fuzzy_primary_field
+     from
+         field f
+     Where ((f.doc_type in ('{doc_type}') and f.is_sub_doc_type_field = False)
+- 63b38c2ca18e309fb6a0cc34a55455775e5b47a3: fd
+Code changes:
+@@ -4,9 +4,8 @@
+ from authenticator import UserAuthentication
+ from constants import CLASSIFICATION_MODELS
+ from fellow2kv.extension import db
+-from helper.custom_classifier_v2.iclassifier_model_processor import (
+-    IClassifierModelProcessor,
+-)
++from helper.custom_classifier_v2.iclassifier_model_processor import \
++    IClassifierModelProcessor
+ from util import sync_wrapper
+ 
+ from . import common, mlp_classifier_processor, service_classifier_processor
+@@ -79,6 +78,7 @@ def classify_document(user: UserAuthentication, model, local_file_path, pages=No
+     if res.score == -1:
+         result["classification_label"] = res.label
+         result["classification_message"] = res.message
++        result["classification_score"] = res.score
+         if res.label in model_labels:
+             result["classification_label_class"] = model_labels[res.label][
+                 "label_category"
+- ea9b95cc897e1762e6d796c34629e0174d22758b: Merge pull request #814 from Fellow-Consulting-AG/sandbox
+
+Sandbox
+Code changes:
+@@ -66,8 +66,8 @@ def extract_ocr_data_and_images(
+         return document
+ 
+     def transform_ai_response(ai_resp_json):
+-        document = {"text": ""}
+-        # document = {}
++        # document = {"text": ""}
++        document = {}
+         if not ai_resp_json:
+             return document
+ 
+@@ -193,7 +193,7 @@ def transform_ai_response(ai_resp_json):
+                     pageStartIndex = 0
+                     pageEndIndex = 0
+ 
+-            document["text"] += hocr_content
++            # document["text"] += hocr_content
+         document["pages"] = pages
+ 
+         return document
+- 8dbcfe368ee070dff137e0591a193bdfaa239d24: Merge branch 'stage' into sandbox
+Code changes:
+@@ -9,10 +9,12 @@
+ from fellow2kv.extension import db, storagemanager
+ from helpdesk import create_new_customer, create_ticket
+ from helper import doc2_util
+-from helper.ai.ai_ocr import (generate_hard_regex_from_string,
+-                              generate_regex_from_string)
+-from helper.util import (get_page, transform_from_normalized,
+-                         transform_from_normalized_coords_object)
++from helper.ai.ai_ocr import generate_hard_regex_from_string, generate_regex_from_string
++from helper.util import (
++    get_page,
++    transform_from_normalized,
++    transform_from_normalized_coords_object,
++)
+ from logger import get_logger
+ from models import (DocOriginRules, FellowKVRule, FellowKVRuleUser,
+                     FellowKVSourceFile, FellowKVTableColumnRule,
+- 1b419d3c849ad7a5a92f645fd983bb22b2a3f16c: Merge pull request #813 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -66,7 +66,7 @@ def extract_ocr_data_and_images(
+         return document
+ 
+     def transform_ai_response(ai_resp_json):
+-        #document = {"text": ""}
++        # document = {"text": ""}
+         document = {}
+         if not ai_resp_json:
+             return document
+@@ -193,7 +193,7 @@ def transform_ai_response(ai_resp_json):
+                     pageStartIndex = 0
+                     pageEndIndex = 0
+ 
+-            #document["text"] += hocr_content
++            # document["text"] += hocr_content
+         document["pages"] = pages
+ 
+         return document
+- ab5629a038e08d0db3e4fdcd2e0781e9061cc8da: fd
+Code changes:
+@@ -7,23 +7,16 @@
+ from typing import Any, Iterable
+ 
+ from pdfminer.high_level import extract_pages
+-from pdfminer.layout import (
+-    LAParams,
+-    LTAnno,
+-    LTChar,
+-    LTFigure,
+-    LTPage,
+-    LTTextBox,
+-    LTTextLine,
+-    LTTextLineHorizontal,
+-)
++from pdfminer.layout import (LAParams, LTAnno, LTChar, LTFigure, LTPage,
++                             LTTextBox, LTTextLine, LTTextLineHorizontal)
+ from shapely.geometry import Polygon
+ 
+ from fellow2kv.extension import storagemanager_doc2 as storage_manager_doc2
+ from helper.ai.ai_ocr import check_for_existing_line
+ from helper.ai.google_ocr import GOOGLE_OCR
+ from helper.extract_util import Extractor
+-from helper.table_extractors.table_formatter_v3 import get_intersection_area_percent
++from helper.table_extractors.table_formatter_v3 import \
++    get_intersection_area_percent
+ 
+ pattern = re.compile("^\(cid:\d+\)+$")
+ 
+@@ -105,8 +98,8 @@ def get_transform_json_from_local_file(local_file_path):
+         resp_document["pages"].append(t_page)
+         lastIndex = t_page["endIndex"]
+ 
+-    page_texts = [p["pageText"] for p in resp_document["pages"]]
+-    resp_document["text"] = " ".join(page_texts)
++    # page_texts = [p["pageText"] for p in resp_document["pages"]]
++    # resp_document["text"] = " ".join(page_texts)
+     resp_document["etext_fixed"] = e_text_fixed
+     if e_text_fixed:
+         extractor = get_ai_extractor(local_file_path, get_ttl_hash())
+- 02296d5540b5c7efc3877cb364ed1ba17218b30d: Merge pull request #812 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -66,8 +66,8 @@ def extract_ocr_data_and_images(
+         return document
+ 
+     def transform_ai_response(ai_resp_json):
+-        document = {"text": ""}
+-        # document = {}
++        #document = {"text": ""}
++        document = {}
+         if not ai_resp_json:
+             return document
+ 
+@@ -193,7 +193,7 @@ def transform_ai_response(ai_resp_json):
+                     pageStartIndex = 0
+                     pageEndIndex = 0
+ 
+-            document["text"] += hocr_content
++            #document["text"] += hocr_content
+         document["pages"] = pages
+ 
+         return document
+- 8d7674a01efb91a96e71e10206c5b14536868668: Merge branch 'sandbox' into dev
+Code changes:
+@@ -4,8 +4,10 @@
+ 
+ from shapely.geometry import Polygon
+ 
+-from helper.form_extractor.fill_ratio import (get_field_fill_ratio,
+-                                              get_opencv_image_from_url)
++from helper.form_extractor.fill_ratio import (
++    get_field_fill_ratio,
++    get_opencv_image_from_url,
++)
+ from helper.util import clean_amount_fields, clean_string
+ 
+ sys.path.append(".")
+@@ -16,9 +18,9 @@
+ 
+ import fellow2kv.config as config
+ from fellow2kv.extension import storagemanager_doc2
+-from helper.common_regex import (CURRENCY_REGEX,
+-                                 NUMERIC_AND_AMOUNT_SEPARATORS_REGEX)
++from helper.common_regex import CURRENCY_REGEX, NUMERIC_AND_AMOUNT_SEPARATORS_REGEX
+ from helper.extract_util_errors import InvalidDirectionError, UndifiendError
++
+ # from fellow2kv.extension storagemanager_doc2
+ from logger import get_logger
+ 
+@@ -879,7 +881,7 @@ def custom_lines_within_bounds(self, custom_lines, coordinates):
+         new_custom_lines = []
+         for line in custom_lines:
+             if line["y1"] > coordinates["y0"]:
+-                if not new_custom_lines and line['normalizedX0'] > 0.5:
++                if not new_custom_lines and line["normalizedX0"] > 0.5:
+                     continue
+                     # table headers dont start from middle of the pagel so avoid making bad patterns.
+                 coords = None
+- 06f4494353de54ad49e7dc15905cccf8be41602b: fd
+Code changes:
+@@ -66,8 +66,8 @@ def extract_ocr_data_and_images(
+         return document
+ 
+     def transform_ai_response(ai_resp_json):
+-        document = {"text": ""}
+-        #document = {}
++        #document = {"text": ""}
++        document = {}
+         if not ai_resp_json:
+             return document
+ 
+@@ -193,7 +193,7 @@ def transform_ai_response(ai_resp_json):
+                     pageStartIndex = 0
+                     pageEndIndex = 0
+ 
+-            document["text"] += hocr_content
++            #document["text"] += hocr_content
+         document["pages"] = pages
+ 
+         return document
+- d0d6317c6e17b93b7d137f61902d2243a088d206: Merge pull request #811 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -4,8 +4,10 @@
+ 
+ from shapely.geometry import Polygon
+ 
+-from helper.form_extractor.fill_ratio import (get_field_fill_ratio,
+-                                              get_opencv_image_from_url)
++from helper.form_extractor.fill_ratio import (
++    get_field_fill_ratio,
++    get_opencv_image_from_url,
++)
+ from helper.util import clean_amount_fields, clean_string
+ 
+ sys.path.append(".")
+@@ -16,9 +18,9 @@
+ 
+ import fellow2kv.config as config
+ from fellow2kv.extension import storagemanager_doc2
+-from helper.common_regex import (CURRENCY_REGEX,
+-                                 NUMERIC_AND_AMOUNT_SEPARATORS_REGEX)
++from helper.common_regex import CURRENCY_REGEX, NUMERIC_AND_AMOUNT_SEPARATORS_REGEX
+ from helper.extract_util_errors import InvalidDirectionError, UndifiendError
++
+ # from fellow2kv.extension storagemanager_doc2
+ from logger import get_logger
+ 
+@@ -879,7 +881,7 @@ def custom_lines_within_bounds(self, custom_lines, coordinates):
+         new_custom_lines = []
+         for line in custom_lines:
+             if line["y1"] > coordinates["y0"]:
+-                if not new_custom_lines and line['normalizedX0'] > 0.5:
++                if not new_custom_lines and line["normalizedX0"] > 0.5:
+                     continue
+                     # table headers dont start from middle of the pagel so avoid making bad patterns.
+                 coords = None
+- d3f3e99843355246f5500ee06ecde57bbf5f25b9: Merge pull request #810 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -9,23 +9,14 @@
+ from fellow2kv.extension import db, storagemanager
+ from helpdesk import create_new_customer, create_ticket
+ from helper import doc2_util
+-from helper.ai.ai_ocr import generate_hard_regex_from_string, generate_regex_from_string
+-from helper.util import (
+-    get_page,
+-    transform_from_normalized,
+-    transform_from_normalized_coords_object,
+-)
++from helper.ai.ai_ocr import (generate_hard_regex_from_string,
++                              generate_regex_from_string)
++from helper.util import (get_page, transform_from_normalized,
++                         transform_from_normalized_coords_object)
+ from logger import get_logger
+-from models import (
+-    DocOriginRules,
+-    FellowKVRule,
+-    FellowKVRuleUser,
+-    FellowKVSourceFile,
+-    FellowKVTableColumnRule,
+-    FellowKVTableRule,
+-    TableFormattingRules,
+-    TfidfDocs,
+-)
++from models import (DocOriginRules, FellowKVRule, FellowKVRuleUser,
++                    FellowKVSourceFile, FellowKVTableColumnRule,
++                    FellowKVTableRule, TableFormattingRules, TfidfDocs)
+ 
+ logger = get_logger("plugin-export-util")
+ 
+@@ -1352,8 +1343,8 @@ def get_table_rules_for_export_v3(extractor, table):
+ 
+         if len(document.get("pages")) == 1:
+             is_single_page = True
+-        elif pageNumber == len(document.get("pages")):
+-            is_last_page = True
++        elif pageNumber >= len(document.get("pages")) - 1:
++            is_last_page = True # as sometimes the final page is the second last
+         elif pageNumber == 1:
+             is_first_page = True
+         elif pageNumber < len(document.get("pages")):
+- 6f907985c857ed422c626ac29c8b979bc8dcb91a: fd
+Code changes:
+@@ -9,23 +9,14 @@
+ from fellow2kv.extension import db, storagemanager
+ from helpdesk import create_new_customer, create_ticket
+ from helper import doc2_util
+-from helper.ai.ai_ocr import generate_hard_regex_from_string, generate_regex_from_string
+-from helper.util import (
+-    get_page,
+-    transform_from_normalized,
+-    transform_from_normalized_coords_object,
+-)
++from helper.ai.ai_ocr import (generate_hard_regex_from_string,
++                              generate_regex_from_string)
++from helper.util import (get_page, transform_from_normalized,
++                         transform_from_normalized_coords_object)
+ from logger import get_logger
+-from models import (
+-    DocOriginRules,
+-    FellowKVRule,
+-    FellowKVRuleUser,
+-    FellowKVSourceFile,
+-    FellowKVTableColumnRule,
+-    FellowKVTableRule,
+-    TableFormattingRules,
+-    TfidfDocs,
+-)
++from models import (DocOriginRules, FellowKVRule, FellowKVRuleUser,
++                    FellowKVSourceFile, FellowKVTableColumnRule,
++                    FellowKVTableRule, TableFormattingRules, TfidfDocs)
+ 
+ logger = get_logger("plugin-export-util")
+ 
+@@ -1352,8 +1343,8 @@ def get_table_rules_for_export_v3(extractor, table):
+ 
+         if len(document.get("pages")) == 1:
+             is_single_page = True
+-        elif pageNumber == len(document.get("pages")):
+-            is_last_page = True
++        elif pageNumber >= len(document.get("pages")) - 1:
++            is_last_page = True # as sometimes the final page is the second last
+         elif pageNumber == 1:
+             is_first_page = True
+         elif pageNumber < len(document.get("pages")):
+- 38ff56d021d601f820b05fec9ed235dc3970e41f: Merge pull request #809 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -67,7 +67,7 @@ def extract_ocr_data_and_images(
+ 
+     def transform_ai_response(ai_resp_json):
+         document = {"text": ""}
+-        #document = {}
++        # document = {}
+         if not ai_resp_json:
+             return document
+ 
+- 8df7270dd62a7319d8d90dac846a6bd3ffc73795: Merge pull request #808 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -4,10 +4,8 @@
+ 
+ from shapely.geometry import Polygon
+ 
+-from helper.form_extractor.fill_ratio import (
+-    get_field_fill_ratio,
+-    get_opencv_image_from_url,
+-)
++from helper.form_extractor.fill_ratio import (get_field_fill_ratio,
++                                              get_opencv_image_from_url)
+ from helper.util import clean_amount_fields, clean_string
+ 
+ sys.path.append(".")
+@@ -18,9 +16,9 @@
+ 
+ import fellow2kv.config as config
+ from fellow2kv.extension import storagemanager_doc2
+-from helper.common_regex import CURRENCY_REGEX, NUMERIC_AND_AMOUNT_SEPARATORS_REGEX
++from helper.common_regex import (CURRENCY_REGEX,
++                                 NUMERIC_AND_AMOUNT_SEPARATORS_REGEX)
+ from helper.extract_util_errors import InvalidDirectionError, UndifiendError
+-
+ # from fellow2kv.extension storagemanager_doc2
+ from logger import get_logger
+ 
+@@ -881,6 +879,9 @@ def custom_lines_within_bounds(self, custom_lines, coordinates):
+         new_custom_lines = []
+         for line in custom_lines:
+             if line["y1"] > coordinates["y0"]:
++                if not new_custom_lines and line['normalizedX0'] > 0.5:
++                    continue
++                    # table headers dont start from middle of the pagel so avoid making bad patterns.
+                 coords = None
+                 line_text = ""
+                 for token in line["tokens"]:
+- 0f7c31d7dd07b9faf7912bf7fc24106ead4b3470: fd
+Code changes:
+@@ -4,10 +4,8 @@
+ 
+ from shapely.geometry import Polygon
+ 
+-from helper.form_extractor.fill_ratio import (
+-    get_field_fill_ratio,
+-    get_opencv_image_from_url,
+-)
++from helper.form_extractor.fill_ratio import (get_field_fill_ratio,
++                                              get_opencv_image_from_url)
+ from helper.util import clean_amount_fields, clean_string
+ 
+ sys.path.append(".")
+@@ -18,9 +16,9 @@
+ 
+ import fellow2kv.config as config
+ from fellow2kv.extension import storagemanager_doc2
+-from helper.common_regex import CURRENCY_REGEX, NUMERIC_AND_AMOUNT_SEPARATORS_REGEX
++from helper.common_regex import (CURRENCY_REGEX,
++                                 NUMERIC_AND_AMOUNT_SEPARATORS_REGEX)
+ from helper.extract_util_errors import InvalidDirectionError, UndifiendError
+-
+ # from fellow2kv.extension storagemanager_doc2
+ from logger import get_logger
+ 
+@@ -881,6 +879,9 @@ def custom_lines_within_bounds(self, custom_lines, coordinates):
+         new_custom_lines = []
+         for line in custom_lines:
+             if line["y1"] > coordinates["y0"]:
++                if not new_custom_lines and line['normalizedX0'] > 0.5:
++                    continue
++                    # table headers dont start from middle of the pagel so avoid making bad patterns.
+                 coords = None
+                 line_text = ""
+                 for token in line["tokens"]:
+- 561691dd30a29a603dbd3ed4f4601d42c34d44ea: Merge pull request #807 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -67,6 +67,7 @@ def extract_ocr_data_and_images(
+ 
+     def transform_ai_response(ai_resp_json):
+         document = {"text": ""}
++        #document = {}
+         if not ai_resp_json:
+             return document
+ 
+@@ -176,9 +177,9 @@ def transform_ai_response(ai_resp_json):
+                                 "normalizedY0": nv0["y"],
+                                 "normalizedX1": nv2["x"],
+                                 "normalizedY1": nv2["y"],
+-                                "normalizedVertices": item["layout"]["boundingPoly"][
+-                                    "normalizedVertices"
+-                                ],
++                                # "normalizedVertices": item["layout"]["boundingPoly"][
++                                #     "normalizedVertices"
++                                # ],
+                             }
+                         )
+ 
+- 0f9efeb44869a457b006f640f2bbee8d3716317e: Merge branch 'sandbox' into stage
+- 016a95ef4b4d61872bd10d5312345e9068011cb7: Merge pull request #806 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -67,6 +67,7 @@ def extract_ocr_data_and_images(
+ 
+     def transform_ai_response(ai_resp_json):
+         document = {"text": ""}
++        #document = {}
+         if not ai_resp_json:
+             return document
+ 
+@@ -176,9 +177,9 @@ def transform_ai_response(ai_resp_json):
+                                 "normalizedY0": nv0["y"],
+                                 "normalizedX1": nv2["x"],
+                                 "normalizedY1": nv2["y"],
+-                                "normalizedVertices": item["layout"]["boundingPoly"][
+-                                    "normalizedVertices"
+-                                ],
++                                # "normalizedVertices": item["layout"]["boundingPoly"][
++                                #     "normalizedVertices"
++                                # ],
+                             }
+                         )
+ 
+- fd6b453592907f15f7845378bf52e9c883711beb: fd
+Code changes:
+@@ -67,6 +67,7 @@ def extract_ocr_data_and_images(
+ 
+     def transform_ai_response(ai_resp_json):
+         document = {"text": ""}
++        #document = {}
+         if not ai_resp_json:
+             return document
+ 
+@@ -176,9 +177,9 @@ def transform_ai_response(ai_resp_json):
+                                 "normalizedY0": nv0["y"],
+                                 "normalizedX1": nv2["x"],
+                                 "normalizedY1": nv2["y"],
+-                                "normalizedVertices": item["layout"]["boundingPoly"][
+-                                    "normalizedVertices"
+-                                ],
++                                # "normalizedVertices": item["layout"]["boundingPoly"][
++                                #     "normalizedVertices"
++                                # ],
+                             }
+                         )
+ 

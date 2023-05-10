@@ -1,0 +1,89 @@
+Syed Amier Haider Shah: 1 commits for week 2023-W17
+Author image: https://avatars.githubusercontent.com/u/2101825?v=4
+- a0bfd95c641ca2ae802002c2c8f9e385744f4098: added internal temporarily
+Code changes:
+@@ -52,49 +52,40 @@ def verify_token(token):
+             res = UserAuthentication.verify_auth_token(token)
+             return res
+ 
+-        from namespaces.block_table_extract import (
+-            namespace as namespace_block_table_extract,
+-        )
++        from namespaces.block_table_extract import \
++            namespace as namespace_block_table_extract
+         from namespaces.cache import namespace as namespace_cache
+-        from namespaces.custom_classifier import (
+-            namespace as namespace_custom_classifier,
+-        )
+-        from namespaces.custom_classifier_v2 import (
+-            namespace as namespace_custom_classifier_v2,
+-        )
+-        from namespaces.custom_models.custom_model import (
+-            namespace as namespace_custom_model_v2,
+-        )
+-        from namespaces.custom_models.custom_model_label import (
+-            namespace as namespace_custom_model_labels_v2,
+-        )
+-
++        from namespaces.custom_classifier import \
++            namespace as namespace_custom_classifier
++        from namespaces.custom_classifier_v2 import \
++            namespace as namespace_custom_classifier_v2
++        from namespaces.custom_models.custom_model import \
++            namespace as namespace_custom_model_v2
++        from namespaces.custom_models.custom_model_label import \
++            namespace as namespace_custom_model_labels_v2
+         # from namespaces.db_import_export import namespace as namespace_db
+         from namespaces.doc2_v2 import namespace as namespace_doc2_v2
+-        from namespaces.document_and_fields import (
+-            namespace as namespace_document_and_fields,
+-        )
+-        from namespaces.document_layout_template import (
+-            namespace as namespace_document_layout_template,
+-        )
+-        from namespaces.document_table import namespace as namespace_document_table
++        from namespaces.document_and_fields import \
++            namespace as namespace_document_and_fields
++        from namespaces.document_layout_template import \
++            namespace as namespace_document_layout_template
++        from namespaces.document_table import \
++            namespace as namespace_document_table
+         from namespaces.export import namespace as namespace_export
+         from namespaces.extract import namespace as namespace_extract
+         from namespaces.health import namespace as namespace_health
+         from namespaces.internal import namespace as namespace_internal
+-        from namespaces.list_of_values.list_of_values import (
+-            namespace as namespace_list_of_values,
+-        )
++        from namespaces.list_of_values.list_of_values import \
++            namespace as namespace_list_of_values
+         from namespaces.migration import namespace as namespace_migration
+-        from namespaces.ocr_configurations import (
+-            namespace as namespace_ocr_configurations,
+-        )
++        from namespaces.ocr_configurations import \
++            namespace as namespace_ocr_configurations
+         from namespaces.pdf import namespace as namespace_pdf
+         from namespaces.preferences import namespace as preferences
+-        from namespaces.sub_document_type import (
+-            namespace as namespace_sub_document_type,
+-        )
+-        from namespaces.table_extract_v3 import namespace as namespace_table_extract_v3
++        from namespaces.sub_document_type import \
++            namespace as namespace_sub_document_type
++        from namespaces.table_extract_v3 import \
++            namespace as namespace_table_extract_v3
+ 
+         api.add_namespace(namespace_extract, path="/extract")
+         api.add_namespace(namespace_export, path="/export")
+@@ -125,8 +116,8 @@ def verify_token(token):
+         api.add_namespace(namespace_cache, path="/cache")
+         api.add_namespace(namespace_health, path="/api")
+ 
+-        if config.IS_DEBUG:
+-            api.add_namespace(namespace_internal, path="/internal")
++        #if config.IS_DEBUG:
++        api.add_namespace(namespace_internal, path="/internal")
+ 
+         from fellow2kv.cli.ml import ml_blueprint
+ 

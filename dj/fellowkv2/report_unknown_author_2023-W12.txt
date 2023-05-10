@@ -1,0 +1,466 @@
+None: 14 commits for week 2023-W12
+Author image: https://avatars.githubusercontent.com/u/83513548?v=4
+- 155979a809f09343345634f31adb1ffb6c321397: Merge pull request #843 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -326,12 +326,13 @@ def preprocess_and_ocr_document(
+     deskew = gdvh.get_bool_value(db, "DESKEW_DOCUMENT", org_id, False)
+     disable_ocr_server = gdvh.get_bool_value(db, "DISABLE_OCR_SERVER", org_id, False)
+     try:
+-        pdf_helper.preprocess_document(output_path, deskew, use_high_dpi, disable_ocr_server)
++        pdf_helper.preprocess_document(output_path, deskew, use_high_dpi)
++
+     except Exception as ex:
+         logger.error(ex)
+         pass
+ 
+-    if not disable_ocr_server:
++    if True or not disable_ocr_server:
+         start_time = datetime.now()
+         flow_meta = "ocr_by_fellow"
+         get_ocred_document(
+- 32f477dcf7c17d1e4525de16ade884c49ff0def3: Merge pull request #842 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -326,14 +326,13 @@ def preprocess_and_ocr_document(
+     deskew = gdvh.get_bool_value(db, "DESKEW_DOCUMENT", org_id, False)
+     disable_ocr_server = gdvh.get_bool_value(db, "DISABLE_OCR_SERVER", org_id, False)
+     try:
+-        pdf_helper.preprocess_document(
+-            output_path, deskew, use_high_dpi, disable_ocr_server
+-        )
++        pdf_helper.preprocess_document(output_path, deskew, use_high_dpi)
++
+     except Exception as ex:
+         logger.error(ex)
+         pass
+ 
+-    if not disable_ocr_server:
++    if True or not disable_ocr_server:
+         start_time = datetime.now()
+         flow_meta = "ocr_by_fellow"
+         get_ocred_document(
+- 8742c0c132bf699571758ff6225f4f9c2c4f960a: Merge branch 'stage' into dev
+Code changes:
+@@ -327,6 +327,7 @@ def preprocess_and_ocr_document(
+     disable_ocr_server = gdvh.get_bool_value(db, "DISABLE_OCR_SERVER", org_id, False)
+     try:
+         pdf_helper.preprocess_document(output_path, deskew, use_high_dpi)
++
+     except Exception as ex:
+         logger.error(ex)
+         pass
+- 0f63b0684371f7def90e808cab300f0d44dcaab9: fd
+Code changes:
+@@ -326,7 +326,7 @@ def preprocess_and_ocr_document(
+     deskew = gdvh.get_bool_value(db, "DESKEW_DOCUMENT", org_id, False)
+     disable_ocr_server = gdvh.get_bool_value(db, "DISABLE_OCR_SERVER", org_id, False)
+     try:
+-        pdf_helper.preprocess_document(output_path, deskew, use_high_dpi, disable_ocr_server)
++        pdf_helper.preprocess_document(output_path, deskew, use_high_dpi)
+     except Exception as ex:
+         logger.error(ex)
+         pass
+- 3114230f0fc039f8e525029bb336447e4aee8f28: fd
+Code changes:
+@@ -331,7 +331,7 @@ def preprocess_and_ocr_document(
+         logger.error(ex)
+         pass
+ 
+-    if not disable_ocr_server:
++    if True or not disable_ocr_server:
+         start_time = datetime.now()
+         flow_meta = "ocr_by_fellow"
+         get_ocred_document(
+- ceeddeeb19d02974bdcc5c2ac6b976a502d8e9fe: Merge pull request #841 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -324,13 +324,13 @@ def preprocess_and_ocr_document(
+     org_id = user.get_org_id()
+     use_high_dpi = gdvh.get_bool_value(db, "CONVERT_TO_HIGHER_DPI", org_id, False)
+     deskew = gdvh.get_bool_value(db, "DESKEW_DOCUMENT", org_id, False)
++    disable_ocr_server = gdvh.get_bool_value(db, "DISABLE_OCR_SERVER", org_id, False)
+     try:
+-        pdf_helper.preprocess_document(output_path, deskew, use_high_dpi)
++        pdf_helper.preprocess_document(output_path, deskew, use_high_dpi, disable_ocr_server)
+     except Exception as ex:
+         logger.error(ex)
+         pass
+ 
+-    disable_ocr_server = gdvh.get_bool_value(db, "DISABLE_OCR_SERVER", org_id, False)
+     if not disable_ocr_server:
+         start_time = datetime.now()
+         flow_meta = "ocr_by_fellow"
+- 9323fa5cce302dd2818208035e9e301d9a1bd38a: Merge pull request #840 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -324,13 +324,13 @@ def preprocess_and_ocr_document(
+     org_id = user.get_org_id()
+     use_high_dpi = gdvh.get_bool_value(db, "CONVERT_TO_HIGHER_DPI", org_id, False)
+     deskew = gdvh.get_bool_value(db, "DESKEW_DOCUMENT", org_id, False)
++    disable_ocr_server = gdvh.get_bool_value(db, "DISABLE_OCR_SERVER", org_id, False)
+     try:
+-        pdf_helper.preprocess_document(output_path, deskew, use_high_dpi)
++        pdf_helper.preprocess_document(output_path, deskew, use_high_dpi, disable_ocr_server)
+     except Exception as ex:
+         logger.error(ex)
+         pass
+ 
+-    disable_ocr_server = gdvh.get_bool_value(db, "DISABLE_OCR_SERVER", org_id, False)
+     if not disable_ocr_server:
+         start_time = datetime.now()
+         flow_meta = "ocr_by_fellow"
+- 3ef839ef7ffa612d6fe6d5a9a5fc3626fe061fce: fd
+Code changes:
+@@ -324,13 +324,13 @@ def preprocess_and_ocr_document(
+     org_id = user.get_org_id()
+     use_high_dpi = gdvh.get_bool_value(db, "CONVERT_TO_HIGHER_DPI", org_id, False)
+     deskew = gdvh.get_bool_value(db, "DESKEW_DOCUMENT", org_id, False)
++    disable_ocr_server = gdvh.get_bool_value(db, "DISABLE_OCR_SERVER", org_id, False)
+     try:
+-        pdf_helper.preprocess_document(output_path, deskew, use_high_dpi)
++        pdf_helper.preprocess_document(output_path, deskew, use_high_dpi, disable_ocr_server)
+     except Exception as ex:
+         logger.error(ex)
+         pass
+ 
+-    disable_ocr_server = gdvh.get_bool_value(db, "DISABLE_OCR_SERVER", org_id, False)
+     if not disable_ocr_server:
+         start_time = datetime.now()
+         flow_meta = "ocr_by_fellow"
+- 2212e03bf18617e1721e1d6ab66798e103991722: Merge pull request #839 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -330,37 +330,39 @@ def preprocess_and_ocr_document(
+         logger.error(ex)
+         pass
+ 
+-    start_time = datetime.now()
+-    flow_meta = "ocr_by_fellow"
+-    get_ocred_document(
+-        user,
+-        output_path,
+-        output_path,
+-        force_ocr,
+-        improve_quality=improve_quality,
+-    )
+-    # storagemanager_doc2.save_file(output_path, doc_path, None)
+-    end_time = datetime.now()
+-    if "time_logs" not in resp_json:
+-        resp_json["time_logs"] = {}
+-    resp_json["time_logs"]["ocr_document"] = str(
+-        (end_time - start_time).total_seconds()
+-    )
++    disable_ocr_server = gdvh.get_bool_value(db, "DISABLE_OCR_SERVER", org_id, False)
++    if not disable_ocr_server:
++        start_time = datetime.now()
++        flow_meta = "ocr_by_fellow"
++        get_ocred_document(
++            user,
++            output_path,
++            output_path,
++            force_ocr,
++            improve_quality=improve_quality,
++        )
++        # storagemanager_doc2.save_file(output_path, doc_path, None)
++        end_time = datetime.now()
++        if "time_logs" not in resp_json:
++            resp_json["time_logs"] = {}
++        resp_json["time_logs"]["ocr_document"] = str(
++            (end_time - start_time).total_seconds()
++        )
+ 
+-    if "ocr_processor" in resp_json:
+-        ocr_module = resp_json["ocr_processor"]
+-    else:
+-        ocr_module = "OCR Server"
+-
+-    if "flow_meta" not in resp_json:
+-        resp_json["flow_meta"] = []
+-    resp_json["flow_meta"].append(
+-        {
+-            "name": flow_meta,
+-            "type": "ocr",
+-            "data": "true",
+-            "time": f'{time.strftime("%M:%S", time.gmtime(int(float(resp_json["time_logs"]["ocr_document"]))))}',
+-            "module": "ocr",
+-            "message": f"OCR successful. Module used: {ocr_module}",
+-        }
+-    )
++        if "ocr_processor" in resp_json:
++            ocr_module = resp_json["ocr_processor"]
++        else:
++            ocr_module = "OCR Server"
++
++        if "flow_meta" not in resp_json:
++            resp_json["flow_meta"] = []
++        resp_json["flow_meta"].append(
++            {
++                "name": flow_meta,
++                "type": "ocr",
++                "data": "true",
++                "time": f'{time.strftime("%M:%S", time.gmtime(int(float(resp_json["time_logs"]["ocr_document"]))))}',
++                "module": "ocr",
++                "message": f"OCR successful. Module used: {ocr_module}",
++            }
++        )
+- 964409f488eb33aa5701aecdfd0ad15986006e30: Merge pull request #838 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -330,37 +330,39 @@ def preprocess_and_ocr_document(
+         logger.error(ex)
+         pass
+ 
+-    start_time = datetime.now()
+-    flow_meta = "ocr_by_fellow"
+-    get_ocred_document(
+-        user,
+-        output_path,
+-        output_path,
+-        force_ocr,
+-        improve_quality=improve_quality,
+-    )
+-    # storagemanager_doc2.save_file(output_path, doc_path, None)
+-    end_time = datetime.now()
+-    if "time_logs" not in resp_json:
+-        resp_json["time_logs"] = {}
+-    resp_json["time_logs"]["ocr_document"] = str(
+-        (end_time - start_time).total_seconds()
+-    )
++    disable_ocr_server = gdvh.get_bool_value(db, "DISABLE_OCR_SERVER", org_id, False)
++    if not disable_ocr_server:
++        start_time = datetime.now()
++        flow_meta = "ocr_by_fellow"
++        get_ocred_document(
++            user,
++            output_path,
++            output_path,
++            force_ocr,
++            improve_quality=improve_quality,
++        )
++        # storagemanager_doc2.save_file(output_path, doc_path, None)
++        end_time = datetime.now()
++        if "time_logs" not in resp_json:
++            resp_json["time_logs"] = {}
++        resp_json["time_logs"]["ocr_document"] = str(
++            (end_time - start_time).total_seconds()
++        )
+ 
+-    if "ocr_processor" in resp_json:
+-        ocr_module = resp_json["ocr_processor"]
+-    else:
+-        ocr_module = "OCR Server"
+-
+-    if "flow_meta" not in resp_json:
+-        resp_json["flow_meta"] = []
+-    resp_json["flow_meta"].append(
+-        {
+-            "name": flow_meta,
+-            "type": "ocr",
+-            "data": "true",
+-            "time": f'{time.strftime("%M:%S", time.gmtime(int(float(resp_json["time_logs"]["ocr_document"]))))}',
+-            "module": "ocr",
+-            "message": f"OCR successful. Module used: {ocr_module}",
+-        }
+-    )
++        if "ocr_processor" in resp_json:
++            ocr_module = resp_json["ocr_processor"]
++        else:
++            ocr_module = "OCR Server"
++
++        if "flow_meta" not in resp_json:
++            resp_json["flow_meta"] = []
++        resp_json["flow_meta"].append(
++            {
++                "name": flow_meta,
++                "type": "ocr",
++                "data": "true",
++                "time": f'{time.strftime("%M:%S", time.gmtime(int(float(resp_json["time_logs"]["ocr_document"]))))}',
++                "module": "ocr",
++                "message": f"OCR successful. Module used: {ocr_module}",
++            }
++        )
+- ba5088d628153f6ae1d1906256c0a0aabb872678: fd
+Code changes:
+@@ -330,37 +330,39 @@ def preprocess_and_ocr_document(
+         logger.error(ex)
+         pass
+ 
+-    start_time = datetime.now()
+-    flow_meta = "ocr_by_fellow"
+-    get_ocred_document(
+-        user,
+-        output_path,
+-        output_path,
+-        force_ocr,
+-        improve_quality=improve_quality,
+-    )
+-    # storagemanager_doc2.save_file(output_path, doc_path, None)
+-    end_time = datetime.now()
+-    if "time_logs" not in resp_json:
+-        resp_json["time_logs"] = {}
+-    resp_json["time_logs"]["ocr_document"] = str(
+-        (end_time - start_time).total_seconds()
+-    )
++    disable_ocr_server = gdvh.get_bool_value(db, "DISABLE_OCR_SERVER", org_id, False)
++    if not disable_ocr_server:
++        start_time = datetime.now()
++        flow_meta = "ocr_by_fellow"
++        get_ocred_document(
++            user,
++            output_path,
++            output_path,
++            force_ocr,
++            improve_quality=improve_quality,
++        )
++        # storagemanager_doc2.save_file(output_path, doc_path, None)
++        end_time = datetime.now()
++        if "time_logs" not in resp_json:
++            resp_json["time_logs"] = {}
++        resp_json["time_logs"]["ocr_document"] = str(
++            (end_time - start_time).total_seconds()
++        )
+ 
+-    if "ocr_processor" in resp_json:
+-        ocr_module = resp_json["ocr_processor"]
+-    else:
+-        ocr_module = "OCR Server"
+-
+-    if "flow_meta" not in resp_json:
+-        resp_json["flow_meta"] = []
+-    resp_json["flow_meta"].append(
+-        {
+-            "name": flow_meta,
+-            "type": "ocr",
+-            "data": "true",
+-            "time": f'{time.strftime("%M:%S", time.gmtime(int(float(resp_json["time_logs"]["ocr_document"]))))}',
+-            "module": "ocr",
+-            "message": f"OCR successful. Module used: {ocr_module}",
+-        }
+-    )
++        if "ocr_processor" in resp_json:
++            ocr_module = resp_json["ocr_processor"]
++        else:
++            ocr_module = "OCR Server"
++
++        if "flow_meta" not in resp_json:
++            resp_json["flow_meta"] = []
++        resp_json["flow_meta"].append(
++            {
++                "name": flow_meta,
++                "type": "ocr",
++                "data": "true",
++                "time": f'{time.strftime("%M:%S", time.gmtime(int(float(resp_json["time_logs"]["ocr_document"]))))}',
++                "module": "ocr",
++                "message": f"OCR successful. Module used: {ocr_module}",
++            }
++        )
+- eb9704af01a7b3f3dd010d9826e17e6bacf99304: Merge pull request #837 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -3,13 +3,14 @@
+ import time
+ 
+ import requests
+-from authenticator import UserAuthentication
+ from flask_sqlalchemy import SQLAlchemy
++from pdf2image import convert_from_path
++from PIL import Image
++
++from authenticator import UserAuthentication
+ from helper.ai import ai_common
+ from helper.custom_classifier_v2 import common
+ from logger import get_logger
+-from pdf2image import convert_from_path
+-from PIL import Image
+ 
+ from .iclassifier_model_processor import IClassifierModelProcessor
+ 
+@@ -51,7 +52,11 @@ def classify_pages(self, local_file_path, pages=None):
+                 if pages and not page in pages:
+                     continue
+ 
+-                label, prob = self.__classify_image(image_path)
++                try:
++                    label, prob = self.__classify_image(image_path)
++                except:
++                    label = "ALLGEM"
++                    prob = 0.5
+                 page_results.append(
+                     {
+                         "page": page,
+- c2f857090656c8d5a9368a8d5c800bc59219246f: Merge pull request #836 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -3,13 +3,14 @@
+ import time
+ 
+ import requests
+-from authenticator import UserAuthentication
+ from flask_sqlalchemy import SQLAlchemy
++from pdf2image import convert_from_path
++from PIL import Image
++
++from authenticator import UserAuthentication
+ from helper.ai import ai_common
+ from helper.custom_classifier_v2 import common
+ from logger import get_logger
+-from pdf2image import convert_from_path
+-from PIL import Image
+ 
+ from .iclassifier_model_processor import IClassifierModelProcessor
+ 
+@@ -51,7 +52,11 @@ def classify_pages(self, local_file_path, pages=None):
+                 if pages and not page in pages:
+                     continue
+ 
+-                label, prob = self.__classify_image(image_path)
++                try:
++                    label, prob = self.__classify_image(image_path)
++                except:
++                    label = "ALLGEM"
++                    prob = 0.5
+                 page_results.append(
+                     {
+                         "page": page,
+- 48136b260111f008d5a6cfafd5971a74b686e578: fd
+Code changes:
+@@ -3,13 +3,14 @@
+ import time
+ 
+ import requests
+-from authenticator import UserAuthentication
+ from flask_sqlalchemy import SQLAlchemy
++from pdf2image import convert_from_path
++from PIL import Image
++
++from authenticator import UserAuthentication
+ from helper.ai import ai_common
+ from helper.custom_classifier_v2 import common
+ from logger import get_logger
+-from pdf2image import convert_from_path
+-from PIL import Image
+ 
+ from .iclassifier_model_processor import IClassifierModelProcessor
+ 
+@@ -51,7 +52,11 @@ def classify_pages(self, local_file_path, pages=None):
+                 if pages and not page in pages:
+                     continue
+ 
+-                label, prob = self.__classify_image(image_path)
++                try:
++                    label, prob = self.__classify_image(image_path)
++                except:
++                    label = "ALLGEM"
++                    prob = 0.5
+                 page_results.append(
+                     {
+                         "page": page,

@@ -1,0 +1,153 @@
+{
+    "author": "Benedikt Liebs",
+    "week": "2023-W11",
+    "total_commits": 29,
+    "author_image": "https://avatars.githubusercontent.com/u/74979180?v=4",
+    "commits": [
+        {
+            "sha": "15c64027ee13aa72bb3a5596ab2987b9f0c0a9eb",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.500\n\\ No newline at end of file\n+2.0.501\n\\ No newline at end of file"
+        },
+        {
+            "sha": "562a5e1c22724a34ffce6961e2bbf2faea0045de",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.499\n\\ No newline at end of file\n+2.0.500\n\\ No newline at end of file"
+        },
+        {
+            "sha": "68049d4e58aca95c2768b604f2ce8c69cf85f54d",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.498\n\\ No newline at end of file\n+2.0.499\n\\ No newline at end of file"
+        },
+        {
+            "sha": "e82cabbc4bd23e303ed16ce11475165fc11cb2bd",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.497\n+2.0.498\n\\ No newline at end of file"
+        },
+        {
+            "sha": "f8d7c99f87acfdd8d2ce8d4e8318358abc74b90e",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.496\n\\ No newline at end of file\n+2.0.497\n\\ No newline at end of file"
+        },
+        {
+            "sha": "1464c94ad4cc67dc11d0d679b5fdf3c26c9a527a",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.495\n\\ No newline at end of file\n+2.0.496\n\\ No newline at end of file"
+        },
+        {
+            "sha": "27ba69737699192f7d4e012f5aa123509b00faf1",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.494\n\\ No newline at end of file\n+2.0.495\n\\ No newline at end of file"
+        },
+        {
+            "sha": "dfe277e4fd690ebcf99c1531f601a987642c5a44",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.493\n+2.0.494\n\\ No newline at end of file"
+        },
+        {
+            "sha": "5cccc7d33a66428e971141404ff6cdbb0897495b",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.492\n\\ No newline at end of file\n+2.0.493\n\\ No newline at end of file"
+        },
+        {
+            "sha": "6a655fcf9bc973e552de1bbc020b919599ee0bb8",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.491\n\\ No newline at end of file\n+2.0.491.1\n\\ No newline at end of file"
+        },
+        {
+            "sha": "37d2cb4ebb3987a472715bf85550ef22fc7c4032",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.491\n\\ No newline at end of file\n+2.0.491.1\n\\ No newline at end of file"
+        },
+        {
+            "sha": "b5af34e95f9c23b9a47ea976e480cc5443df7527",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.491\n\\ No newline at end of file\n+2.0.492\n\\ No newline at end of file"
+        },
+        {
+            "sha": "f50aee431ccbee703941a2679d9ea3cb772694c5",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.490\n\\ No newline at end of file\n+2.0.491\n\\ No newline at end of file"
+        },
+        {
+            "sha": "148833f992e5262cb835d4320b83e46b6e44a479",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.489\n\\ No newline at end of file\n+2.0.490\n\\ No newline at end of file"
+        },
+        {
+            "sha": "c6c3a64accdf222a0cebcc0d796acb70db5a47c7",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.488\n\\ No newline at end of file\n+2.0.489\n\\ No newline at end of file"
+        },
+        {
+            "sha": "054e50b410239a7cd5764171a4ae4d344221a3ca",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.487\n\\ No newline at end of file\n+2.0.488\n\\ No newline at end of file"
+        },
+        {
+            "sha": "62b134c459264dca729153393bce7ee85d34c275",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.486\n\\ No newline at end of file\n+2.0.487\n\\ No newline at end of file"
+        },
+        {
+            "sha": "7029383b373e7a6783c92b1547a36e9259334867",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.485\n\\ No newline at end of file\n+2.0.486\n\\ No newline at end of file"
+        },
+        {
+            "sha": "0c9c17e4fbfe0c610388ddfcffcd9fcf4ec56e60",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.485\n+2.0.485.1\n\\ No newline at end of file"
+        },
+        {
+            "sha": "9f979d7a425f1271861847fd5577a8141261339b",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.484\n\\ No newline at end of file\n+2.0.485\n\\ No newline at end of file"
+        },
+        {
+            "sha": "e5dfddfc4097856213fac1929182e69672e68830",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.483\n\\ No newline at end of file\n+2.0.484\n\\ No newline at end of file"
+        },
+        {
+            "sha": "d1ea5c99efd4bd542cd962219b3f7dbfbadb1757",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.482\n\\ No newline at end of file\n+2.0.483\n\\ No newline at end of file"
+        },
+        {
+            "sha": "8404ddd73783e73330521c36c2bf438f6df17954",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.482\n\\ No newline at end of file\n+2.0.482.1\n\\ No newline at end of file"
+        },
+        {
+            "sha": "400fdcc7eaeed29634702f361ca1307e75dda4bf",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.481\n\\ No newline at end of file\n+2.0.482\n\\ No newline at end of file"
+        },
+        {
+            "sha": "c43eec90e3655fc4a41ab81a180522ed90ff825d",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.480\n\\ No newline at end of file\n+2.0.481\n\\ No newline at end of file"
+        },
+        {
+            "sha": "c76bbcc31c8b5e0db3e368518ec93eaf5883f760",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.479\n\\ No newline at end of file\n+2.0.480\n\\ No newline at end of file"
+        },
+        {
+            "sha": "d6609839527f0ba236f9769e9b6371b0aab6227b",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.478\n\\ No newline at end of file\n+2.0.479\n\\ No newline at end of file"
+        },
+        {
+            "sha": "c832ffee40de70e051cbae3425a0d2a3fb68f4b2",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.477\n\\ No newline at end of file\n+2.0.478\n\\ No newline at end of file"
+        },
+        {
+            "sha": "c7281861ba3aad531d5804471ba934e940f48b37",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.476\n\\ No newline at end of file\n+2.0.477\n\\ No newline at end of file"
+        }
+    ]
+}

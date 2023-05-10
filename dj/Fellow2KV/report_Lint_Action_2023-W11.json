@@ -1,0 +1,88 @@
+{
+    "author": "Lint Action",
+    "week": "2023-W11",
+    "total_commits": 16,
+    "author_image": "https://avatars.githubusercontent.com/u/59283862?v=4",
+    "commits": [
+        {
+            "sha": "61e249ce18532d12898845a35ab70fec365b0a4f",
+            "message": "Fix code style issues with Black",
+            "code_changes": "@@ -4,8 +4,10 @@\n \n from shapely.geometry import Polygon\n \n-from helper.form_extractor.fill_ratio import (get_field_fill_ratio,\n-                                              get_opencv_image_from_url)\n+from helper.form_extractor.fill_ratio import (\n+    get_field_fill_ratio,\n+    get_opencv_image_from_url,\n+)\n from helper.util import clean_amount_fields, clean_string\n \n sys.path.append(\".\")\n@@ -15,9 +17,9 @@\n \n import fellow2kv.config as config\n from fellow2kv.extension import storagemanager_doc2\n-from helper.common_regex import (CURRENCY_REGEX,\n-                                 NUMERIC_AND_AMOUNT_SEPARATORS_REGEX)\n+from helper.common_regex import CURRENCY_REGEX, NUMERIC_AND_AMOUNT_SEPARATORS_REGEX\n from helper.extract_util_errors import InvalidDirectionError, UndifiendError\n+\n # from fellow2kv.extension storagemanager_doc2\n from logger import get_logger\n \n@@ -1327,9 +1329,8 @@ def is_multi_line(tokens):\n     return True\n \n \n-\n def remove_duplicate_tokens(tokens):\n-    entries_to_remove = ('startIndex', 'endIndex', 'customStartIndex', 'customEndIndex')\n+    entries_to_remove = (\"startIndex\", \"endIndex\", \"customStartIndex\", \"customEndIndex\")\n     filtered_tokens = []\n     seen = set()\n     for token in tokens:"
+        },
+        {
+            "sha": "3a2e005c1477f0bf34594cb172366489bb89e92c",
+            "message": "Fix code style issues with Black",
+            "code_changes": "@@ -182,7 +182,7 @@ def __classify_document__(\n \n         if not doc_type_csn.value in active_doc_types:\n             doc_type_csn = None\n-        \n+\n         if doc_type_csn:\n             resp_json[\"flow_meta\"].append(\n                 {"
+        },
+        {
+            "sha": "2863b8799c027cbc713daae559ababdb3996a338",
+            "message": "Fix code style issues with Black",
+            "code_changes": "@@ -182,7 +182,7 @@ def __classify_document__(\n \n         if not doc_type_csn.value in active_doc_types:\n             doc_type_csn = None\n-        \n+\n         if doc_type_csn:\n             resp_json[\"flow_meta\"].append(\n                 {"
+        },
+        {
+            "sha": "10d084b1231ab14e9ad57bf4e464b69390e0b6d4",
+            "message": "Fix code style issues with Black",
+            "code_changes": "@@ -203,7 +203,10 @@ def get_highest_priority_label(model_labels, result):\n         # first label returned, if there is no entry for the classified label found\n         result_page = result_pages_all[0]\n         cr = ClassificationResult(\n-            result_page[\"classification\"], result_page[\"page\"], result_page[\"prob\"], f\"First label\"\n+            result_page[\"classification\"],\n+            result_page[\"page\"],\n+            result_page[\"prob\"],\n+            f\"First label\",\n         )\n         return cr\n "
+        },
+        {
+            "sha": "824a4190721f21bb9462716dd23a4d48482edc88",
+            "message": "Fix code style issues with Black",
+            "code_changes": "@@ -203,7 +203,10 @@ def get_highest_priority_label(model_labels, result):\n         # first label returned, if there is no entry for the classified label found\n         result_page = result_pages_all[0]\n         cr = ClassificationResult(\n-            result_page[\"classification\"], result_page[\"page\"], result_page[\"prob\"], f\"First label\"\n+            result_page[\"classification\"],\n+            result_page[\"page\"],\n+            result_page[\"prob\"],\n+            f\"First label\",\n         )\n         return cr\n "
+        },
+        {
+            "sha": "50dfc489aa0b3f182be1b64e0a75f521e2c75f2f",
+            "message": "Fix code style issues with Black",
+            "code_changes": "@@ -4,8 +4,9 @@\n from authenticator import UserAuthentication\n from constants import CLASSIFICATION_MODELS\n from fellow2kv.extension import db\n-from helper.custom_classifier_v2.iclassifier_model_processor import \\\n-    IClassifierModelProcessor\n+from helper.custom_classifier_v2.iclassifier_model_processor import (\n+    IClassifierModelProcessor,\n+)\n from util import sync_wrapper\n \n from . import common, mlp_classifier_processor, service_classifier_processor"
+        },
+        {
+            "sha": "ab4e845cd1f5ff78f658168dbeb1b6ee16b170cc",
+            "message": "Fix code style issues with Black",
+            "code_changes": "@@ -9,14 +9,21 @@\n from fellow2kv.extension import db, storagemanager\n from helpdesk import create_new_customer, create_ticket\n from helper import doc2_util\n-from helper.ai.ai_ocr import (generate_hard_regex_from_string,\n-                              generate_regex_from_string)\n-from helper.util import (get_page, transform_from_normalized,\n-                         transform_from_normalized_coords_object)\n+from helper.ai.ai_ocr import generate_hard_regex_from_string, generate_regex_from_string\n+from helper.util import (\n+    get_page,\n+    transform_from_normalized,\n+    transform_from_normalized_coords_object,\n+)\n from logger import get_logger\n-from models import (DocOriginRules, FellowKVRule, FellowKVRuleUser,\n-                    FellowKVSourceFile, FellowKVTableColumnRule,\n-                    FellowKVTableRule)\n+from models import (\n+    DocOriginRules,\n+    FellowKVRule,\n+    FellowKVRuleUser,\n+    FellowKVSourceFile,\n+    FellowKVTableColumnRule,\n+    FellowKVTableRule,\n+)\n from models import TableFormattingRules as TFR\n from models import TfidfDocs\n "
+        },
+        {
+            "sha": "d305ded41712f83cdb32dc1b6c210cf2cf3b0079",
+            "message": "Fix code style issues with Black",
+            "code_changes": "@@ -5,7 +5,9 @@\n from authenticator import UserAuthentication\n from helper.custom_classifier_v2 import common\n from helper.document_classifier.document_classifier import (\n-    extract_ocr_data, get_first_page_text)\n+    extract_ocr_data,\n+    get_first_page_text,\n+)\n from helper.pdf import get_page_count\n from helper.util import str_to_bool\n "
+        },
+        {
+            "sha": "3b4ee651194b3984e23e273e61333676390d85de",
+            "message": "Fix code style issues with Black",
+            "code_changes": "@@ -4,8 +4,9 @@\n from authenticator import UserAuthentication\n from constants import CLASSIFICATION_MODELS\n from fellow2kv.extension import db\n-from helper.custom_classifier_v2.iclassifier_model_processor import \\\n-    IClassifierModelProcessor\n+from helper.custom_classifier_v2.iclassifier_model_processor import (\n+    IClassifierModelProcessor,\n+)\n from util import sync_wrapper\n \n from . import common, mlp_classifier_processor, service_classifier_processor"
+        },
+        {
+            "sha": "6a0aedb8b6ad41e685d6fc357be0ec919491c54f",
+            "message": "Fix code style issues with Black",
+            "code_changes": "@@ -4,8 +4,9 @@\n from authenticator import UserAuthentication\n from constants import CLASSIFICATION_MODELS\n from fellow2kv.extension import db\n-from helper.custom_classifier_v2.iclassifier_model_processor import \\\n-    IClassifierModelProcessor\n+from helper.custom_classifier_v2.iclassifier_model_processor import (\n+    IClassifierModelProcessor,\n+)\n from util import sync_wrapper\n \n from . import common, mlp_classifier_processor, service_classifier_processor"
+        },
+        {
+            "sha": "b1f20c7767004c65e302eb5c6ebc5884bc19c9f5",
+            "message": "Fix code style issues with Black",
+            "code_changes": "@@ -52,42 +52,49 @@ def verify_token(token):\n             res = UserAuthentication.verify_auth_token(token)\n             return res\n \n-        from namespaces.block_table_extract import \\\n-            namespace as namespace_block_table_extract\n+        from namespaces.block_table_extract import (\n+            namespace as namespace_block_table_extract,\n+        )\n         from namespaces.cache import namespace as namespace_cache\n-        from namespaces.custom_classifier import \\\n-            namespace as namespace_custom_classifier\n-        from namespaces.custom_classifier_v2 import \\\n-            namespace as namespace_custom_classifier_v2\n-        from namespaces.custom_models.custom_model import \\\n-            namespace as namespace_custom_model_v2\n-        from namespaces.custom_models.custom_model_label import \\\n-            namespace as namespace_custom_model_labels_v2\n+        from namespaces.custom_classifier import (\n+            namespace as namespace_custom_classifier,\n+        )\n+        from namespaces.custom_classifier_v2 import (\n+            namespace as namespace_custom_classifier_v2,\n+        )\n+        from namespaces.custom_models.custom_model import (\n+            namespace as namespace_custom_model_v2,\n+        )\n+        from namespaces.custom_models.custom_model_label import (\n+            namespace as namespace_custom_model_labels_v2,\n+        )\n+\n         # from namespaces.db_import_export import namespace as namespace_db\n         from namespaces.doc2_v2 import namespace as namespace_doc2_v2\n-        from namespaces.document_and_fields import \\\n-            namespace as namespace_document_and_fields\n-        from namespaces.document_layout_template import \\\n-            namespace as namespace_document_layout_template\n-        from namespaces.document_table import \\\n-            namespace as namespace_document_table\n+        from namespaces.document_and_fields import (\n+            namespace as namespace_document_and_fields,\n+        )\n+        from namespaces.document_layout_template import (\n+            namespace as namespace_document_layout_template,\n+        )\n+        from namespaces.document_table import namespace as namespace_document_table\n         from namespaces.export import namespace as namespace_export\n         from namespaces.extract import namespace as namespace_extract\n         from namespaces.health import namespace as namespace_health\n         from namespaces.internal import namespace as namespace_internal\n-        from namespaces.list_of_values.list_of_values import \\\n-            namespace as namespace_list_of_values\n+        from namespaces.list_of_values.list_of_values import (\n+            namespace as namespace_list_of_values,\n+        )\n         from namespaces.migration import namespace as namespace_migration\n-        from namespaces.ocr_configurations import \\\n-            namespace as namespace_ocr_configurations\n+        from namespaces.ocr_configurations import (\n+            namespace as namespace_ocr_configurations,\n+        )\n         from namespaces.pdf import namespace as namespace_pdf\n         from namespaces.preferences import namespace as preferences\n-        from namespaces.sub_document_type import \\\n-            namespace as namespace_sub_document_type\n-        from namespaces.table_extract_v3 import \\\n-            namespace as namespace_table_extract_v3\n-\n-        \n+        from namespaces.sub_document_type import (\n+            namespace as namespace_sub_document_type,\n+        )\n+        from namespaces.table_extract_v3 import namespace as namespace_table_extract_v3\n \n         api.add_namespace(namespace_extract, path=\"/extract\")\n         api.add_namespace(namespace_export, path=\"/export\")\n@@ -121,7 +128,6 @@ def verify_token(token):\n         if config.IS_DEBUG:\n             api.add_namespace(namespace_internal, path=\"/internal\")\n \n-\n         from fellow2kv.cli.ml import ml_blueprint\n \n         app.register_blueprint(ml_blueprint)"
+        },
+        {
+            "sha": "32365653aa375b2a507a341e99b79cb7a82ca5ae",
+            "message": "Fix code style issues with Black",
+            "code_changes": "@@ -7,16 +7,23 @@\n from typing import Any, Iterable\n \n from pdfminer.high_level import extract_pages\n-from pdfminer.layout import (LAParams, LTAnno, LTChar, LTFigure, LTPage,\n-                             LTTextBox, LTTextLine, LTTextLineHorizontal)\n+from pdfminer.layout import (\n+    LAParams,\n+    LTAnno,\n+    LTChar,\n+    LTFigure,\n+    LTPage,\n+    LTTextBox,\n+    LTTextLine,\n+    LTTextLineHorizontal,\n+)\n from shapely.geometry import Polygon\n \n from fellow2kv.extension import storagemanager_doc2 as storage_manager_doc2\n from helper.ai.ai_ocr import check_for_existing_line\n from helper.ai.google_ocr import GOOGLE_OCR\n from helper.extract_util import Extractor\n-from helper.table_extractors.table_formatter_v3 import \\\n-    get_intersection_area_percent\n+from helper.table_extractors.table_formatter_v3 import get_intersection_area_percent\n \n pattern = re.compile(\"^\\(cid:\\d+\\)+$\")\n "
+        },
+        {
+            "sha": "ffb0b76c85928c146b986b2569c8ec0a2136de25",
+            "message": "Fix code style issues with Black",
+            "code_changes": "@@ -66,7 +66,7 @@ def extract_ocr_data_and_images(\n         return document\n \n     def transform_ai_response(ai_resp_json):\n-        #document = {\"text\": \"\"}\n+        # document = {\"text\": \"\"}\n         document = {}\n         if not ai_resp_json:\n             return document\n@@ -193,7 +193,7 @@ def transform_ai_response(ai_resp_json):\n                     pageStartIndex = 0\n                     pageEndIndex = 0\n \n-            #document[\"text\"] += hocr_content\n+            # document[\"text\"] += hocr_content\n         document[\"pages\"] = pages\n \n         return document"
+        },
+        {
+            "sha": "4cff7462c9305dd2e86c923af3431f9ae208d9e9",
+            "message": "Fix code style issues with Black",
+            "code_changes": "@@ -9,14 +9,23 @@\n from fellow2kv.extension import db, storagemanager\n from helpdesk import create_new_customer, create_ticket\n from helper import doc2_util\n-from helper.ai.ai_ocr import (generate_hard_regex_from_string,\n-                              generate_regex_from_string)\n-from helper.util import (get_page, transform_from_normalized,\n-                         transform_from_normalized_coords_object)\n+from helper.ai.ai_ocr import generate_hard_regex_from_string, generate_regex_from_string\n+from helper.util import (\n+    get_page,\n+    transform_from_normalized,\n+    transform_from_normalized_coords_object,\n+)\n from logger import get_logger\n-from models import (DocOriginRules, FellowKVRule, FellowKVRuleUser,\n-                    FellowKVSourceFile, FellowKVTableColumnRule,\n-                    FellowKVTableRule, TableFormattingRules, TfidfDocs)\n+from models import (\n+    DocOriginRules,\n+    FellowKVRule,\n+    FellowKVRuleUser,\n+    FellowKVSourceFile,\n+    FellowKVTableColumnRule,\n+    FellowKVTableRule,\n+    TableFormattingRules,\n+    TfidfDocs,\n+)\n \n logger = get_logger(\"plugin-export-util\")\n \n@@ -1344,7 +1353,7 @@ def get_table_rules_for_export_v3(extractor, table):\n         if len(document.get(\"pages\")) == 1:\n             is_single_page = True\n         elif pageNumber >= len(document.get(\"pages\")) - 1:\n-            is_last_page = True # as sometimes the final page is the second last\n+            is_last_page = True  # as sometimes the final page is the second last\n         elif pageNumber == 1:\n             is_first_page = True\n         elif pageNumber < len(document.get(\"pages\")):"
+        },
+        {
+            "sha": "86a03ff6a4fb366dfe32f9b1496683b4325762f8",
+            "message": "Fix code style issues with Black",
+            "code_changes": "@@ -4,8 +4,10 @@\n \n from shapely.geometry import Polygon\n \n-from helper.form_extractor.fill_ratio import (get_field_fill_ratio,\n-                                              get_opencv_image_from_url)\n+from helper.form_extractor.fill_ratio import (\n+    get_field_fill_ratio,\n+    get_opencv_image_from_url,\n+)\n from helper.util import clean_amount_fields, clean_string\n \n sys.path.append(\".\")\n@@ -16,9 +18,9 @@\n \n import fellow2kv.config as config\n from fellow2kv.extension import storagemanager_doc2\n-from helper.common_regex import (CURRENCY_REGEX,\n-                                 NUMERIC_AND_AMOUNT_SEPARATORS_REGEX)\n+from helper.common_regex import CURRENCY_REGEX, NUMERIC_AND_AMOUNT_SEPARATORS_REGEX\n from helper.extract_util_errors import InvalidDirectionError, UndifiendError\n+\n # from fellow2kv.extension storagemanager_doc2\n from logger import get_logger\n \n@@ -879,7 +881,7 @@ def custom_lines_within_bounds(self, custom_lines, coordinates):\n         new_custom_lines = []\n         for line in custom_lines:\n             if line[\"y1\"] > coordinates[\"y0\"]:\n-                if not new_custom_lines and line['normalizedX0'] > 0.5:\n+                if not new_custom_lines and line[\"normalizedX0\"] > 0.5:\n                     continue\n                     # table headers dont start from middle of the pagel so avoid making bad patterns.\n                 coords = None"
+        },
+        {
+            "sha": "ff4ce451f2d724a22617e876865b11730a554741",
+            "message": "Fix code style issues with Black",
+            "code_changes": "@@ -67,7 +67,7 @@ def extract_ocr_data_and_images(\n \n     def transform_ai_response(ai_resp_json):\n         document = {\"text\": \"\"}\n-        #document = {}\n+        # document = {}\n         if not ai_resp_json:\n             return document\n "
+        }
+    ]
+}

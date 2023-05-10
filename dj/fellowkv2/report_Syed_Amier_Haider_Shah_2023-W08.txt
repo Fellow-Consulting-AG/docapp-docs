@@ -1,0 +1,105 @@
+Syed Amier Haider Shah: 3 commits for week 2023-W08
+Author image: https://avatars.githubusercontent.com/u/2101825?v=4
+- 31e43c255acbd7a965287c9a120b0a9d9166271f: Merge pull request #778 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -44,7 +44,9 @@ def extract_form_fields(user, document, layout, fields_to_extract, non_coords_fi
+     populate_tr_ocr_info(document, text_fields_result)
+     populate_tr_ocr_info(document, checkbox_fields_result)
+     # check_for_trocr(user, document, text_fields_result)
+-    fields_result = checkbox_fields_result + text_fields_result + non_coords_fields_result
++    fields_result = (
++        checkbox_fields_result + text_fields_result + non_coords_fields_result
++    )
+ 
+     # TODO: Remove overlapping text fields
+     return fields_result
+- bd79c2a3b74a199b205863c981a59c6c14673a62: Merge pull request #777 from Fellow-Consulting-AG/dev
+
+stage
+Code changes:
+@@ -3,7 +3,6 @@
+ import io
+ import json
+ import os
+-import shutil
+ import tempfile
+ import time
+ import traceback
+@@ -16,7 +15,8 @@
+ import constants
+ import helper.ocr as ocr_helper
+ from authenticator import UserAuthentication
+-from fellow2kv.extension import api, db, multi_auth, storagemanager, storagemanager_doc2
++from fellow2kv.extension import (api, db, multi_auth, storagemanager,
++                                 storagemanager_doc2)
+ from helper import doc_type_helper as dth
+ from helper import generic_data_vault_helper as gdvh
+ from helper import pdf as pdf_helper
+@@ -25,11 +25,8 @@
+ from helper.document_classifier import document_classifier
+ from helper.document_extraction import document_extraction_helper as deh
+ from helper.extract_util import Extractor
+-from helper.util import (
+-    str_to_bool,
+-    transform_from_normalized_coords_object,
+-    transform_to_normalized,
+-)
++from helper.util import (str_to_bool, transform_from_normalized_coords_object,
++                         transform_to_normalized)
+ from logger import get_logger
+ from util import sync_wrapper
+ 
+@@ -244,7 +241,7 @@ def post(self):
+ 
+                         user.update_classification_usage_log(
+                             constants.KEY_FELLOW_DOC2,
+-                            pdf_helper.get_page_count(f.name) * 0.2,
++                            pdf_helper.get_page_count(f.name),
+                             "CUSTOM_MODEL_CLASSIFICATION",
+                         )
+ 
+- 70a52852a2cce1b4b6d8c783d5c7bba1be714cf4: sf
+Code changes:
+@@ -3,7 +3,6 @@
+ import io
+ import json
+ import os
+-import shutil
+ import tempfile
+ import time
+ import traceback
+@@ -16,7 +15,8 @@
+ import constants
+ import helper.ocr as ocr_helper
+ from authenticator import UserAuthentication
+-from fellow2kv.extension import api, db, multi_auth, storagemanager, storagemanager_doc2
++from fellow2kv.extension import (api, db, multi_auth, storagemanager,
++                                 storagemanager_doc2)
+ from helper import doc_type_helper as dth
+ from helper import generic_data_vault_helper as gdvh
+ from helper import pdf as pdf_helper
+@@ -25,11 +25,8 @@
+ from helper.document_classifier import document_classifier
+ from helper.document_extraction import document_extraction_helper as deh
+ from helper.extract_util import Extractor
+-from helper.util import (
+-    str_to_bool,
+-    transform_from_normalized_coords_object,
+-    transform_to_normalized,
+-)
++from helper.util import (str_to_bool, transform_from_normalized_coords_object,
++                         transform_to_normalized)
+ from logger import get_logger
+ from util import sync_wrapper
+ 
+@@ -244,7 +241,7 @@ def post(self):
+ 
+                         user.update_classification_usage_log(
+                             constants.KEY_FELLOW_DOC2,
+-                            pdf_helper.get_page_count(f.name) * 0.2,
++                            pdf_helper.get_page_count(f.name),
+                             "CUSTOM_MODEL_CLASSIFICATION",
+                         )
+ 

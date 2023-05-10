@@ -1,0 +1,1172 @@
+None: 30 commits for week 2023-W15
+Author image: https://avatars.githubusercontent.com/u/83513548?v=4
+- 491a42e8537bddd9353231bef5bf50937fa84faa: fd
+Code changes:
+@@ -552,8 +552,8 @@ def get_field_confs(org_id: str, doc_type: str, sub_doc_type: str, field_name=No
+     if field_name:
+         query += f" and f.field_name ilike '{field_name}'"
+ 
+-    results = dbh.execute_scalar_query(db, query)
+-    results = [r._asdict() for r in results]
++    results = dbh.execute_query(db, query)
++    # results = [r._asdict() for r in results]
+     return {r["field_name"].lower(): r for r in results}
+ 
+ 
+@@ -592,8 +592,8 @@ def get_table_column_confs(org_id: str, table_name: str, column_name=None):
+     if column_name and len(column_name.strip()) > 0:
+         query += f""" and dtc.column_name ILike '{column_name}'"""
+ 
+-    results = dbh.execute_scalar_query(db, query)
+-    results = [r._asdict() for r in results]
++    results = dbh.execute_query(db, query)
++    # results = [r._asdict() for r in results]
+     return {r["column_name"]: r for r in results}
+ 
+ 
+- b266336e02df867f44977adfbaf98be0fc64e9b7: fd
+Code changes:
+@@ -362,8 +362,8 @@ def get_label_train_data(org_id):
+             and ccd.is_deleted = false;    
+     """
+ 
+-    result = dbh.execute_scalar_query(db, sql)
+-    result = json.dumps([r._asdict() for r in result])
++    result = dbh.execute_query(db, sql)
++    result = json.dumps(result)
+     result = json.loads(result)
+ 
+     docs_dict = {r["doc_id"]: r for r in result}
+@@ -386,8 +386,8 @@ def get_label_train_data(org_id):
+     for rec, val in docs_dict.items():
+         val["tag_ids"] = []
+ 
+-    tags_result = dbh.execute_scalar_query(db, sql_tags)
+-    tags_result = json.dumps([r._asdict() for r in tags_result])
++    tags_result = dbh.execute_query(db, sql_tags)
++    tags_result = json.dumps(tags_result)
+     tags_result = json.loads(tags_result)
+ 
+     for rec in tags_result:
+- bef11111d0d118e4c62b084d4da1c7f664f795eb: Merge pull request #877 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -9,28 +9,20 @@
+ from helper.ai.ai_invoice import transform_fields_to_dict
+ from helper.ai.ocr_process_util import generate_hard_regex_from_string
+ from helper.extract_util import Extractor
+-from helper.plugin_export_util import (
+-    create_pending_tickets,
+-    create_rules_in_db,
+-    create_table_column_rules_in_db,
+-    create_table_rules_in_db,
+-    transform_to_rules,
+-    transform_to_table_rules,
+-    update_table_column_rule_patterns,
+-)
++from helper.plugin_export_util import (create_pending_tickets,
++                                       create_rules_in_db,
++                                       create_table_column_rules_in_db,
++                                       create_table_rules_in_db,
++                                       transform_to_rules,
++                                       transform_to_table_rules,
++                                       update_table_column_rule_patterns)
+ from helper.plugin_extraction_util import delete_table_rules_from_db
+ from helper.rule_weight.rule_weight import update_weights
+ from helper.table_extractors.table_draft_helper import get_table_draft
+ from helper.tfidf_helper import handle_tfidf_v4_simple
+ from logger import get_logger
+-from models import (
+-    FellowKVRegexes,
+-    FellowKVRule,
+-    FellowKVTableColumnRule,
+-    FellowKVTableRule,
+-    TableFormattingRules,
+-    TfidfDocs,
+-)
++from models import (FellowKVRegexes, FellowKVRule, FellowKVTableColumnRule,
++                    FellowKVTableRule, TableFormattingRules, TfidfDocs)
+ 
+ logger = get_logger("fellowkv-export")
+ 
+@@ -98,7 +90,7 @@ def post(self):
+             self: write your description
+         """
+         user = multi_auth.current_user()
+-        logger.info("Request JSON:" + json.dumps(request.json))
++        # logger.info("Request JSON:" + json.dumps(request.json))
+         request_data = request.json
+         docs = request_data.get("docs", [])
+         return create_rules_in_db(docs, user)
+@@ -179,7 +171,7 @@ def post(self):
+             self: write your description
+         """
+         user = multi_auth.current_user()
+-        logger.info("Request JSON:" + json.dumps(request.json))
++        # logger.info("Request JSON:" + json.dumps(request.json))
+         export_data = json.loads(request.form.get("data", "[]"))
+         docs = []
+         table_docs = []
+- 22d94ee37bd5ee1309fc305643a360f017bc74f9: fd
+Code changes:
+@@ -9,28 +9,20 @@
+ from helper.ai.ai_invoice import transform_fields_to_dict
+ from helper.ai.ocr_process_util import generate_hard_regex_from_string
+ from helper.extract_util import Extractor
+-from helper.plugin_export_util import (
+-    create_pending_tickets,
+-    create_rules_in_db,
+-    create_table_column_rules_in_db,
+-    create_table_rules_in_db,
+-    transform_to_rules,
+-    transform_to_table_rules,
+-    update_table_column_rule_patterns,
+-)
++from helper.plugin_export_util import (create_pending_tickets,
++                                       create_rules_in_db,
++                                       create_table_column_rules_in_db,
++                                       create_table_rules_in_db,
++                                       transform_to_rules,
++                                       transform_to_table_rules,
++                                       update_table_column_rule_patterns)
+ from helper.plugin_extraction_util import delete_table_rules_from_db
+ from helper.rule_weight.rule_weight import update_weights
+ from helper.table_extractors.table_draft_helper import get_table_draft
+ from helper.tfidf_helper import handle_tfidf_v4_simple
+ from logger import get_logger
+-from models import (
+-    FellowKVRegexes,
+-    FellowKVRule,
+-    FellowKVTableColumnRule,
+-    FellowKVTableRule,
+-    TableFormattingRules,
+-    TfidfDocs,
+-)
++from models import (FellowKVRegexes, FellowKVRule, FellowKVTableColumnRule,
++                    FellowKVTableRule, TableFormattingRules, TfidfDocs)
+ 
+ logger = get_logger("fellowkv-export")
+ 
+@@ -98,7 +90,7 @@ def post(self):
+             self: write your description
+         """
+         user = multi_auth.current_user()
+-        logger.info("Request JSON:" + json.dumps(request.json))
++        # logger.info("Request JSON:" + json.dumps(request.json))
+         request_data = request.json
+         docs = request_data.get("docs", [])
+         return create_rules_in_db(docs, user)
+@@ -179,7 +171,7 @@ def post(self):
+             self: write your description
+         """
+         user = multi_auth.current_user()
+-        logger.info("Request JSON:" + json.dumps(request.json))
++        # logger.info("Request JSON:" + json.dumps(request.json))
+         export_data = json.loads(request.form.get("data", "[]"))
+         docs = []
+         table_docs = []
+- a9904d019b7406111a95aa243e9c19704cca12dd: Merge pull request #875 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -23,10 +23,14 @@ def execute_scalar_query(db, query):
+         pass
+     with db.engine.connect() as conn:
+         try:
+-            return conn.execute(text(query))
++            result = conn.execute(text(query))
++            conn.commit()
++            return result
+         except:
+             pass
+-        return conn.execute(query)
++        result = conn.execute(query)
++        conn.commit()
++        return result
+ 
+ 
+ def get_single_result(db, query):
+- cab57d1447f8690c22f15c214c59bc24e14da570: fd
+Code changes:
+@@ -23,10 +23,14 @@ def execute_scalar_query(db, query):
+         pass
+     with db.engine.connect() as conn:
+         try:
+-            return conn.execute(text(query))
++            result = conn.execute(text(query))
++            conn.commit()
++            return result
+         except:
+             pass
+-        return conn.execute(query)
++        result = conn.execute(query)
++        conn.commit()
++        return result
+ 
+ 
+ def get_single_result(db, query):
+- ee418aaa80dd50623adfde6807bce072bbd98fd9: Merge branch 'sandbox' into stage
+- 25ec1a4798e26a0ec71370a8dd3ab6e0ae88572e: Merge pull request #873 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -1 +1 @@
+-2.0.560.1
+\ No newline at end of file
++2.0.561
+\ No newline at end of file
+- bab31c50317bc4a922e263a3df50ebd7d60de705: Merge branch 'stage' into dev
+- b957f9db5bf319dfd359daa1e7a87ed0dcd5b3c2: Merge pull request #872 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -6,6 +6,9 @@
+ import time
+ import warnings
+ 
++from sqlalchemy import create_engine
++from sqlalchemy import text as sql_text
++
+ from helper.ai.ocr_process_util import populate_custom_lines
+ 
+ warnings.simplefilter(action="ignore", category=FutureWarning)
+@@ -89,8 +92,7 @@ def get_all_similar_docs_above_threshold(source_record_id, threshold, org_id):
+                     created_on DESC"""
+ 
+     tfidf_query = tfidf_query.replace("\n", "")
+-
+-    df1 = pd.read_sql(sql=tfidf_query, con=os.getenv("SQLALCHEMY_DATABASE_AURI"))
++    df1 = get_dataframe_from_query(os.getenv("SQLALCHEMY_DATABASE_AURI"), tfidf_query)
+ 
+     # getting text and cleaning it
+     df1["clean_text"] = df1["doc_text"].pipe(hero.clean)
+@@ -166,9 +168,7 @@ def get_similar_documents(threshold, record: TfidfDocs):  # , auto_types=[]
+ 
+     tfidf_query = tfidf_query.replace("\n", "")
+ 
+-    df1 = pd.read_sql(
+-        sql=tfidf_query, con=os.getenv("SQLALCHEMY_DATABASE_AURI")
+-    )  # , index_col='id')
++    df1 = get_dataframe_from_query(os.getenv("SQLALCHEMY_DATABASE_AURI"), tfidf_query)  # , index_col='id')
+     logger.info(f"Total TFIDF records found = {len(df1)}")
+     # getting text and cleaning it
+     df1["clean_text"] = df1["doc_text"].pipe(hero.clean)
+@@ -279,9 +279,7 @@ def get_similar_documents_simple(document, threshold, source_record_id):
+         + where_clause
+         + ") order by sort_order asc, created_on desc"
+     )
+-    df1 = pd.read_sql(
+-        sql=tfidf_query, con=os.getenv("SQLALCHEMY_DATABASE_AURI")
+-    )  # , index_col='id')
++    df1 = get_dataframe_from_query(os.getenv("SQLALCHEMY_DATABASE_AURI"), tfidf_query)  # , index_col='id')
+ 
+     # getting text and cleaning it
+     df1["clean_text"] = df1["doc_text"].pipe(hero.clean)
+@@ -594,3 +592,10 @@ def handle_tfidf_v4_simple(document):
+ 
+     # document["filter_values"] = [document["tfidf_id"]]
+     return document
++
++def get_dataframe_from_query(connection_string, query):
++    connection = create_engine(connection_string)
++    # df1 = pd.read_sql(sql=tfidf_query, con=os.getenv("SQLALCHEMY_DATABASE_AURI"))
++    df = pd.read_sql_query(con=connection.connect(), 
++                                  sql=sql_text(query))
++    return df
+\ No newline at end of file
+- e6c2cc3a3abe24f8f6cefc0121828f22e4dfbb0f: Merge pull request #871 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -6,6 +6,9 @@
+ import time
+ import warnings
+ 
++from sqlalchemy import create_engine
++from sqlalchemy import text as sql_text
++
+ from helper.ai.ocr_process_util import populate_custom_lines
+ 
+ warnings.simplefilter(action="ignore", category=FutureWarning)
+@@ -89,8 +92,7 @@ def get_all_similar_docs_above_threshold(source_record_id, threshold, org_id):
+                     created_on DESC"""
+ 
+     tfidf_query = tfidf_query.replace("\n", "")
+-
+-    df1 = pd.read_sql(sql=tfidf_query, con=os.getenv("SQLALCHEMY_DATABASE_AURI"))
++    df1 = get_dataframe_from_query(os.getenv("SQLALCHEMY_DATABASE_AURI"), tfidf_query)
+ 
+     # getting text and cleaning it
+     df1["clean_text"] = df1["doc_text"].pipe(hero.clean)
+@@ -166,9 +168,7 @@ def get_similar_documents(threshold, record: TfidfDocs):  # , auto_types=[]
+ 
+     tfidf_query = tfidf_query.replace("\n", "")
+ 
+-    df1 = pd.read_sql(
+-        sql=tfidf_query, con=os.getenv("SQLALCHEMY_DATABASE_AURI")
+-    )  # , index_col='id')
++    df1 = get_dataframe_from_query(os.getenv("SQLALCHEMY_DATABASE_AURI"), tfidf_query)  # , index_col='id')
+     logger.info(f"Total TFIDF records found = {len(df1)}")
+     # getting text and cleaning it
+     df1["clean_text"] = df1["doc_text"].pipe(hero.clean)
+@@ -279,9 +279,7 @@ def get_similar_documents_simple(document, threshold, source_record_id):
+         + where_clause
+         + ") order by sort_order asc, created_on desc"
+     )
+-    df1 = pd.read_sql(
+-        sql=tfidf_query, con=os.getenv("SQLALCHEMY_DATABASE_AURI")
+-    )  # , index_col='id')
++    df1 = get_dataframe_from_query(os.getenv("SQLALCHEMY_DATABASE_AURI"), tfidf_query)  # , index_col='id')
+ 
+     # getting text and cleaning it
+     df1["clean_text"] = df1["doc_text"].pipe(hero.clean)
+@@ -594,3 +592,10 @@ def handle_tfidf_v4_simple(document):
+ 
+     # document["filter_values"] = [document["tfidf_id"]]
+     return document
++
++def get_dataframe_from_query(connection_string, query):
++    connection = create_engine(connection_string)
++    # df1 = pd.read_sql(sql=tfidf_query, con=os.getenv("SQLALCHEMY_DATABASE_AURI"))
++    df = pd.read_sql_query(con=connection.connect(), 
++                                  sql=sql_text(query))
++    return df
+\ No newline at end of file
+- a626c0537cabade12061e1632d7dfaab0476e0f8: fd
+Code changes:
+@@ -6,6 +6,9 @@
+ import time
+ import warnings
+ 
++from sqlalchemy import create_engine
++from sqlalchemy import text as sql_text
++
+ from helper.ai.ocr_process_util import populate_custom_lines
+ 
+ warnings.simplefilter(action="ignore", category=FutureWarning)
+@@ -89,8 +92,7 @@ def get_all_similar_docs_above_threshold(source_record_id, threshold, org_id):
+                     created_on DESC"""
+ 
+     tfidf_query = tfidf_query.replace("\n", "")
+-
+-    df1 = pd.read_sql(sql=tfidf_query, con=os.getenv("SQLALCHEMY_DATABASE_AURI"))
++    df1 = get_dataframe_from_query(os.getenv("SQLALCHEMY_DATABASE_AURI"), tfidf_query)
+ 
+     # getting text and cleaning it
+     df1["clean_text"] = df1["doc_text"].pipe(hero.clean)
+@@ -166,9 +168,7 @@ def get_similar_documents(threshold, record: TfidfDocs):  # , auto_types=[]
+ 
+     tfidf_query = tfidf_query.replace("\n", "")
+ 
+-    df1 = pd.read_sql(
+-        sql=tfidf_query, con=os.getenv("SQLALCHEMY_DATABASE_AURI")
+-    )  # , index_col='id')
++    df1 = get_dataframe_from_query(os.getenv("SQLALCHEMY_DATABASE_AURI"), tfidf_query)  # , index_col='id')
+     logger.info(f"Total TFIDF records found = {len(df1)}")
+     # getting text and cleaning it
+     df1["clean_text"] = df1["doc_text"].pipe(hero.clean)
+@@ -279,9 +279,7 @@ def get_similar_documents_simple(document, threshold, source_record_id):
+         + where_clause
+         + ") order by sort_order asc, created_on desc"
+     )
+-    df1 = pd.read_sql(
+-        sql=tfidf_query, con=os.getenv("SQLALCHEMY_DATABASE_AURI")
+-    )  # , index_col='id')
++    df1 = get_dataframe_from_query(os.getenv("SQLALCHEMY_DATABASE_AURI"), tfidf_query)  # , index_col='id')
+ 
+     # getting text and cleaning it
+     df1["clean_text"] = df1["doc_text"].pipe(hero.clean)
+@@ -594,3 +592,10 @@ def handle_tfidf_v4_simple(document):
+ 
+     # document["filter_values"] = [document["tfidf_id"]]
+     return document
++
++def get_dataframe_from_query(connection_string, query):
++    connection = create_engine(connection_string)
++    # df1 = pd.read_sql(sql=tfidf_query, con=os.getenv("SQLALCHEMY_DATABASE_AURI"))
++    df = pd.read_sql_query(con=connection.connect(), 
++                                  sql=sql_text(query))
++    return df
+\ No newline at end of file
+- 9d4cfedbf8e9b6d0304c021184a67abc48a9bd39: Merge pull request #870 from Fellow-Consulting-AG/stage
+
+Stage
+- 5de0e8f6a212e85dbab9a4687ac3d42fbc506d0c: Merge pull request #869 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -7,7 +7,11 @@ def execute_query(db, query):
+     except:
+         pass
+     with db.engine.connect() as conn:
+-        results = conn.execute(text(query))
++        try:
++            results = conn.execute(text(query))
++        except:
++            results = conn.execute(query)
++
+         results_list = [r._asdict() for r in results]
+         return results_list
+ 
+@@ -18,7 +22,11 @@ def execute_scalar_query(db, query):
+     except:
+         pass
+     with db.engine.connect() as conn:
+-        return conn.execute(text(query))
++        try:
++            return conn.execute(text(query))
++        except:
++            pass
++        return conn.execute(query)
+ 
+ 
+ def get_single_result(db, query):
+- ee71cba57c80b39faed95087e52eb5aa94302ef7: Merge pull request #868 from Fellow-Consulting-AG/CLOU-5092
+
+dev-fix
+Code changes:
+@@ -7,7 +7,11 @@ def execute_query(db, query):
+     except:
+         pass
+     with db.engine.connect() as conn:
+-        results = conn.execute(text(query))
++        try:
++            results = conn.execute(text(query))
++        except:
++            results = conn.execute(query)
++
+         results_list = [r._asdict() for r in results]
+         return results_list
+ 
+@@ -18,7 +22,11 @@ def execute_scalar_query(db, query):
+     except:
+         pass
+     with db.engine.connect() as conn:
+-        return conn.execute(text(query))
++        try:
++            return conn.execute(text(query))
++        except:
++            pass
++        return conn.execute(query)
+ 
+ 
+ def get_single_result(db, query):
+- 513b525351ad0e5a22ee0f43f3901d0e7c6ba4ed: fd
+Code changes:
+@@ -553,7 +553,8 @@ def get_field_confs(org_id: str, doc_type: str, sub_doc_type: str, field_name=No
+         query += f" and f.field_name ilike '{field_name}'"
+ 
+     results = dbh.execute_scalar_query(db, query)
+-    return {r["field_name"].lower(): r._asdict() for r in results}
++    results = [r._asdict() for r in results]
++    return {r["field_name"].lower(): r for r in results}
+ 
+ 
+ def get_table_layout(db, table_name, org_id):
+@@ -592,7 +593,8 @@ def get_table_column_confs(org_id: str, table_name: str, column_name=None):
+         query += f""" and dtc.column_name ILike '{column_name}'"""
+ 
+     results = dbh.execute_scalar_query(db, query)
+-    return {r["column_name"]: r._asdict() for r in results}
++    results = [r._asdict() for r in results]
++    return {r["column_name"]: r for r in results}
+ 
+ 
+ ######
+- 0aa08ad62a6b0c0a5e7a2257eb498a7c59b9492b: fd
+Code changes:
+@@ -39,7 +39,7 @@ def get(self):
+         # common.get_models_list.cache_clear()
+         ttl = common.get_ttl_hash()
+         models = common.get_models_list(org_id, ttl)
+-        return json.loads(json.dumps([r._asdict() for r in models], default=alchemyencoder))
++        return json.loads(json.dumps([dict(r) for r in models], default=alchemyencoder))
+ 
+ 
+ aiparser = api.parser()
+- 54502f5d8293e2f0294597c8a93dbac3dadb5633: fd
+Code changes:
+@@ -93,7 +93,7 @@ requests-oauthlib==1.3
+ rsa==4.8
+ s3transfer==0.6
+ scikit-image==0.19.2
+-scikit-learn==1.2.2
++scikit-learn==1.0.2
+ scipy==1.10.1
+ Shapely==2.0.1
+ six==1.16
+- e8c2b72efa6e2e0f2e4f3c85af677a0a63ed7fc2: _asdict
+Code changes:
+@@ -363,7 +363,7 @@ def get_label_train_data(org_id):
+     """
+ 
+     result = dbh.execute_scalar_query(db, sql)
+-    result = json.dumps([dict(r) for r in result])
++    result = json.dumps([r._asdict() for r in result])
+     result = json.loads(result)
+ 
+     docs_dict = {r["doc_id"]: r for r in result}
+@@ -387,7 +387,7 @@ def get_label_train_data(org_id):
+         val["tag_ids"] = []
+ 
+     tags_result = dbh.execute_scalar_query(db, sql_tags)
+-    tags_result = json.dumps([dict(r) for r in tags_result])
++    tags_result = json.dumps([r._asdict() for r in tags_result])
+     tags_result = json.loads(tags_result)
+ 
+     for rec in tags_result:
+- f12db22d46e52ef13226f584b22b9f9185aaef58: Merge pull request #865 from Fellow-Consulting-AG/CLOU-5092
+
+fd
+Code changes:
+@@ -2,17 +2,23 @@
+ 
+ 
+ def execute_query(db, query):
+-    query = query.replace("\n", "")
++    try:
++        query = query.replace("\n", "")
++    except:
++        pass
+     with db.engine.begin() as conn:
+         results = conn.execute(text(query))
+         results_list = [dict(r) for r in results]
+         return results_list
+ 
+ 
+ def execute_scalar_query(db, query):
+-    query = query.replace("\n", "")
++    try:
++        query = query.replace("\n", "")
++    except:
++        pass
+     with db.engine.begin() as conn:
+-        return conn.execute(query)
++        return conn.execute(text(query))
+ 
+ 
+ def get_single_result(db, query):
+- 2a844c128a9bed73db0b09457d0d733c98aa6150: Merge pull request #864 from Fellow-Consulting-AG/CLOU-5092
+
+fd
+Code changes:
+@@ -1,7 +1,10 @@
++from sqlalchemy.sql import text
++
++
+ def execute_query(db, query):
+     query = query.replace("\n", "")
+     with db.engine.begin() as conn:
+-        results = conn.execute(query)
++        results = conn.execute(text(query))
+         results_list = [dict(r) for r in results]
+         return results_list
+ 
+- a322798fefac5edfb2b8b77cac21a3f53f2bad84: fd
+Code changes:
+@@ -29,7 +29,7 @@ Flask-RESTful==0.3.9
+ flask-restx==1.1.0
+ Flask-SQLAlchemy==3.0.2
+ fonttools==4.31.2
+-gensim==3.6.0
++gensim==3.8.3
+ gevent==22.10.2
+ google-auth==2.16
+ greenlet==2.0.2
+@@ -92,9 +92,9 @@ requests==2.28.2
+ requests-oauthlib==1.3
+ rsa==4.8
+ s3transfer==0.6
+-scikit-image==0.20.0
++scikit-image==0.19.2
+ scikit-learn==1.2.2
+-scipy==1.8.1
++scipy==1.10.1
+ Shapely==2.0.1
+ six==1.16
+ smart-open==5.2
+- 8417c8548b188c8767576ebba1289aa8467e55e3: Merge pull request #862 from Fellow-Consulting-AG/CLOU-5092
+
+fd
+Code changes:
+@@ -96,13 +96,13 @@ def post(self):
+             }, 400
+ 
+         query = f"""
+-                Select * from {data_type} dt
++                Select * from "{data_type}" dt
+             """
+ 
+         if last_synced_on:
+             query += f" WHERE (dt.created_on > to_timestamp('{last_synced_on}', 'YYYY-MM-DD HH24:MI:SS') or dt.last_modified_on > to_timestamp('{last_synced_on}', 'YYYY-MM-DD HH24:MI:SS'))"
+ 
+-        query = query.replace("\n", " ").strip()
++        query = query.replace("\n", "")
+ 
+         # result = db.engine.execute(query)
+ 
+- 5bc46d8d7c73ba440439455ffdb8821718600960: Merge pull request #861 from Fellow-Consulting-AG/CLOU-5092
+
+Error-Analyzing
+Code changes:
+@@ -9,18 +9,22 @@
+ import pytz
+ import requests
+ from flask_dance.consumer.storage.sqla import OAuthConsumerMixin
+-#from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
++
++# from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
+ from itsdangerous import BadSignature, SignatureExpired
+ from itsdangerous import URLSafeTimedSerializer as Serializer
++
+ # import URLSafeTimedSerializer as Serializer
+ from sqlalchemy.sql import func
+ from sqlalchemy.sql.functions import current_user
+ from werkzeug.security import check_password_hash, generate_password_hash
+ 
+ import fellow2kv.config as app_config
+ from fellow2kv.config import AUTH_SERVICE_URL
++
+ # from fellow2kv.app_initializer import db, ma
+ from fellow2kv.extension import db
++
+ # from fellow2kv.extension import db, ma
+ from logger import get_logger
+ 
+- 4b40a461316c03c4869ea5575cb4c7a42a7c31d8: Merge pull request #860 from Fellow-Consulting-AG/CLOU-5092
+
+code-adjustments for KV
+Code changes:
+@@ -4,9 +4,9 @@
+ from authenticator import UserAuthentication
+ from constants import CLASSIFICATION_MODELS
+ from fellow2kv.extension import db
+-from helper.custom_classifier_v2.iclassifier_model_processor import (
+-    IClassifierModelProcessor,
+-)
++from helper import db_helper as dbh
++from helper.custom_classifier_v2.iclassifier_model_processor import \
++    IClassifierModelProcessor
+ from util import sync_wrapper
+ 
+ from . import common, mlp_classifier_processor, service_classifier_processor
+@@ -284,8 +284,7 @@ def get_model_labels_metadata(org_id, model_name=None, ttl_hash=None):
+         query += f" and al.model_name ilike '{model_name}'"
+ 
+     query = query.replace("\n", "").strip()
+-    results = db.engine.execute(query)
+-    result_list = [dict(r) for r in results]
++    result_list = dbh.execute_query(db, query)
+ 
+     final_results = defaultdict(lambda: defaultdict())
+     for rec in result_list:
+@@ -318,8 +317,7 @@ def get_model_label_metadata(org_id, label_id=None, label_name=None):
+         query += f" and label_name ilike '{label_name}'"
+ 
+     query = query.replace("\n", "").strip()
+-    results = db.engine.execute(query)
+-    result_list = [dict(r) for r in results]
++    result_list = dbh.execute_query(db, query)
+ 
+     if result_list:
+         return result_list[0]
+- cfab6fc667b0e96f8555cb0890a05ad29991265b: fd
+Code changes:
+@@ -94,7 +94,7 @@ rsa==4.8
+ s3transfer==0.6
+ scikit-image==0.20.0
+ scikit-learn==1.2.2
+-scipy==1.10.1
++scipy==1.8.1
+ Shapely==2.0.1
+ six==1.16
+ smart-open==5.2
+- 581fecb4b24a80f2b1b960e0c93a017023b02c35: fd
+Code changes:
+@@ -94,7 +94,7 @@ rsa==4.8
+ s3transfer==0.6
+ scikit-image==0.20.0
+ scikit-learn==1.2.2
+-scipy==1.8.1
++scipy==1.10.1
+ Shapely==2.0.1
+ six==1.16
+ smart-open==5.2
+- 17ea2e0fe935b1810ccd41cff81668b8c5281cd3: fd
+Code changes:
+@@ -1,168 +1,127 @@
+-aiohttp==3.8.4
+-aiosignal==1.3.1
+ alembic==1.10.3
+-aniso8601==9.0.0
+-async-timeout==4.0.2
+-attrs==21.4.0
+-Babel==2.9.0
++aniso8601==9.0
++attrs==21.4
++Babel==2.9
+ blis==0.7.9
+ boto3==1.26.108
+ botocore==1.29.108
+-cachetools==4.2.0
+-camelot-py==0.11.0
+-catalogue==1.0.0
++cachetools==4.2
++camelot-py==0.11
++catalogue==1.0
+ certifi==2022.12.7
+-cffi==1.15.0
+-chardet==4.0.0
++cffi==1.15
++chardet==4.0
+ charset-normalizer==3.1.0
+-ci-info==0.3.0
+ click==8.1.3
+-configobj==5.0.8
+-configparser==5.3.0
+-contourpy==1.0.7
+ cryptography==40.0.1
+-cycler==0.11.0
++cycler==0.11
+ cymem==2.0.7
+-decorator==5.1.0
+-deprecation==2.1.0
++decorator==5.1
+ deskew==1.4.3
+ en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz
+ et-xmlfile==1.1.0
+-etelemetry==0.3.0
+-exceptiongroup==1.1.1
+-filelock==3.11.0
+ Flask==2.2.3
+ Flask-Dance==6.2.0
+ Flask-HTTPAuth==4.7.0
+-flask-marshmallow==0.15.0
+-Flask-Migrate==3.0.0
++flask-marshmallow==0.15
++Flask-Migrate==3.0
+ Flask-RESTful==0.3.9
+ flask-restx==1.1.0
+ Flask-SQLAlchemy==3.0.2
+ fonttools==4.31.2
+-frozenlist==1.3.3
+-future==0.18.3
+ gensim==3.6.0
+ gevent==22.10.2
+-google-auth==2.16.0
++google-auth==2.16
+ greenlet==2.0.2
+-gunicorn==20.1.0
+-hocr-tools==1.1.0
+-httplib2==0.22.0
++gunicorn==20.1
++hocr-tools==1.1
+ idna==3.3
+-imageio==2.16.0
+-img2pdf==0.4.0
+-importlib-metadata==6.1.0
+-importlib-resources==5.6.0
+-iniconfig==2.0.0
+-isodate==0.6.1
++imageio==2.16
++img2pdf==0.4
++importlib-resources==5.6
+ itsdangerous==2.1.2
+ Jinja2==3.1.2
+-jmespath==1.0.0
+-joblib==1.2.0
+-jsonschema==4.4.0
++jmespath==1.0
++joblib==1.2
++jsonschema==4.4
+ jwt==1.3.1
+-kiwisolver==1.4.0
+-langdetect==1.0.0
+-lazy_loader==0.2
+-logtail==1.0.1
++kiwisolver==1.4
++langdetect==1.0
+ logtail-python==0.2.3
+-looseversion==1.1.2
+-lxml==4.8.0
++lxml==4.8
+ Mako==1.2.0
+ MarkupSafe==2.1.1
+ marshmallow==3.12.2
+-marshmallow-sqlalchemy==0.29.0
+-matplotlib==3.5.0
+-msgpack==1.0.5
+-multidict==6.0.4
+-murmurhash==1.0.0
++marshmallow-sqlalchemy==0.29
++matplotlib==3.5
++murmurhash==1.0
+ networkx==3.1
+-nibabel==5.1.0
+-nipype==1.8.6
+ nltk==3.7
+ numpy==1.24.2
+ oauthlib==3.1.1
+-openai==0.27.4
+ opencv-python==4.7.0.68
+ openpyxl==3.1.2
+ packaging==21.3
+ pandas==1.5.3
+-pathlib==1.0.1
+-pbr==5.6.0
+-pdf2image==1.16.0
+-pdfminer.six==20221105
+-pdfrw==0.4
+-pikepdf==5.1.0
+-Pillow==9.1.0
+-plac==1.1.0
+-plotly==5.7.0
+-pluggy==1.0.0
++pbr==5.6
++pdf2image==1.16
++pdfminer.six==20220319
++pikepdf==5.1
++Pillow==9.1
++plac==1.1
++plotly==5.7
+ preshed==3.0.8
+-protobuf==4.22.1
+-prov==2.0.0
+ psycopg2-binary==2.9.6
+-py==1.11.0
+ pyasn1==0.4.8
+ pyasn1-modules==0.2.8
+ pycparser==2.21
+-pycryptodome==3.17
+-pydot==1.4.2
+-PyJWT==2.6.0
+ PyMuPDF==1.21.1
+-pyparsing==3.0.0
+-pypdf==3.7.0
+-PyPDF2==2.12.0
+-pyrsistent==0.18.0
+-pytesseract==0.3.0
+-pytest==7.1.0
++pyparsing==3.0
++PyPDF2==2.12
++pyrsistent==0.18
++pytesseract==0.3
+ python-dateutil==2.8.2
+-python-dotenv==0.18.0
++python-dotenv==0.18
+ python-editor==1.0
+ pytz==2022.1
+-PyWavelets==1.3.0
+-pyxnat==1.5
++PyWavelets==1.3
+ PyYAML==6.0
+-rdflib==6.3.2
+ regex==2023.3.23
+ reportlab==3.6.9
+ requests==2.28.2
+-requests-oauthlib==1.3.0
++requests-oauthlib==1.3
+ rsa==4.8
+-s3transfer==0.6.0
++s3transfer==0.6
+ scikit-image==0.20.0
+ scikit-learn==1.2.2
+ scipy==1.8.1
+-setuptools-scm==7.1.0
+-shapely==2.0.1
+-simplejson==3.19.1
+-six==1.16.0
+-smart-open==5.2.0
++Shapely==2.0.1
++six==1.16
++smart-open==5.2
+ spacy==2.3.7
+ SQLAlchemy==2.0.9
+-sqlalchemy-migrate==0.13.0
++sqlalchemy-migrate==0.13
+ SQLAlchemy-Utils==0.40.0
+ sqlparse==0.4.3
+ srsly==1.0.2
+ tabulate==0.9.0
+ Tempita==0.5.2
+-tenacity==8.0.0
+-texthero==1.1.0
++tenacity==8.0
++texthero==1.1
+ thinc==7.4.5
+-threadpoolctl==3.1.0
++threadpoolctl==3.1
+ tifffile==2023.3.21
+-tomli==2.0.1
+-tqdm==4.64.0
+-traits==6.3.2
+-typing_extensions==4.5.0
+-tzdata==2023.3
+-Unidecode==1.3.0
+-urllib3==1.26.0
+-URLObject==2.4.0
+-wasabi==0.9.0
++tqdm==4.64
++Unidecode==1.3
++urllib3==1.26
++URLObject==2.4
++wasabi==0.9
+ Werkzeug==2.2.3
+ wordcloud==1.8.2.2
+-yarl==1.8.2
+-zipp==3.8.0
+-zope.event==4.5.0
+-zope.interface==5.4.0
++zipp==3.8
++zope.event==4.5
++zope.interface==5.4
++pytest==7.1
++pdfrw==0.4
++wheel==0.40
++openai==0.27.4
+\ No newline at end of file
+- 2c3f43de07bfd0735791fad8937e7eed090407ee: fd
+Code changes:
+@@ -10,7 +10,7 @@ boto3==1.26.108
+ botocore==1.29.108
+ cachetools==4.2.0
+ camelot-py==0.11.0
+-catalogue==1.0.0a
++catalogue==1.0.0
+ certifi==2022.12.7
+ cffi==1.15.0
+ chardet==4.0.0
+- 8be1ebb9932cdc18ae3c6040b8ca108d1dc5bbf4: fd
+Code changes:
+@@ -1,127 +1,168 @@
++aiohttp==3.8.4
++aiosignal==1.3.1
+ alembic==1.10.3
+-aniso8601==9.0
+-attrs==21.4
+-Babel==2.9
++aniso8601==9.0.0
++async-timeout==4.0.2
++attrs==21.4.0
++Babel==2.9.0
+ blis==0.7.9
+ boto3==1.26.108
+ botocore==1.29.108
+-cachetools==4.2
+-camelot-py==0.11
+-catalogue==1.0
++cachetools==4.2.0
++camelot-py==0.11.0
++catalogue==1.0.0a
+ certifi==2022.12.7
+-cffi==1.15
+-chardet==4.0
++cffi==1.15.0
++chardet==4.0.0
+ charset-normalizer==3.1.0
++ci-info==0.3.0
+ click==8.1.3
++configobj==5.0.8
++configparser==5.3.0
++contourpy==1.0.7
+ cryptography==40.0.1
+-cycler==0.11
++cycler==0.11.0
+ cymem==2.0.7
+-decorator==5.1
++decorator==5.1.0
++deprecation==2.1.0
+ deskew==1.4.3
+ en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz
+ et-xmlfile==1.1.0
++etelemetry==0.3.0
++exceptiongroup==1.1.1
++filelock==3.11.0
+ Flask==2.2.3
+ Flask-Dance==6.2.0
+ Flask-HTTPAuth==4.7.0
+-flask-marshmallow==0.15
+-Flask-Migrate==3.0
++flask-marshmallow==0.15.0
++Flask-Migrate==3.0.0
+ Flask-RESTful==0.3.9
+ flask-restx==1.1.0
+ Flask-SQLAlchemy==3.0.2
+ fonttools==4.31.2
++frozenlist==1.3.3
++future==0.18.3
+ gensim==3.6.0
+ gevent==22.10.2
+-google-auth==2.16
++google-auth==2.16.0
+ greenlet==2.0.2
+-gunicorn==20.1
+-hocr-tools==1.1
++gunicorn==20.1.0
++hocr-tools==1.1.0
++httplib2==0.22.0
+ idna==3.3
+-imageio==2.16
+-img2pdf==0.4
+-importlib-resources==5.6
++imageio==2.16.0
++img2pdf==0.4.0
++importlib-metadata==6.1.0
++importlib-resources==5.6.0
++iniconfig==2.0.0
++isodate==0.6.1
+ itsdangerous==2.1.2
+ Jinja2==3.1.2
+-jmespath==1.0
+-joblib==1.2
+-jsonschema==4.4
++jmespath==1.0.0
++joblib==1.2.0
++jsonschema==4.4.0
+ jwt==1.3.1
+-kiwisolver==1.4
+-langdetect==1.0
++kiwisolver==1.4.0
++langdetect==1.0.0
++lazy_loader==0.2
++logtail==1.0.1
+ logtail-python==0.2.3
+-lxml==4.8
++looseversion==1.1.2
++lxml==4.8.0
+ Mako==1.2.0
+ MarkupSafe==2.1.1
+ marshmallow==3.12.2
+-marshmallow-sqlalchemy==0.29
+-matplotlib==3.5
+-murmurhash==1.0
++marshmallow-sqlalchemy==0.29.0
++matplotlib==3.5.0
++msgpack==1.0.5
++multidict==6.0.4
++murmurhash==1.0.0
+ networkx==3.1
++nibabel==5.1.0
++nipype==1.8.6
+ nltk==3.7
+ numpy==1.24.2
+ oauthlib==3.1.1
++openai==0.27.4
+ opencv-python==4.7.0.68
+ openpyxl==3.1.2
+ packaging==21.3
+ pandas==1.5.3
+-pbr==5.6
+-pdf2image==1.16
+-pdfminer.six==20220319
+-pikepdf==5.1
+-Pillow==9.1
+-plac==1.1
+-plotly==5.7
++pathlib==1.0.1
++pbr==5.6.0
++pdf2image==1.16.0
++pdfminer.six==20221105
++pdfrw==0.4
++pikepdf==5.1.0
++Pillow==9.1.0
++plac==1.1.0
++plotly==5.7.0
++pluggy==1.0.0
+ preshed==3.0.8
++protobuf==4.22.1
++prov==2.0.0
+ psycopg2-binary==2.9.6
++py==1.11.0
+ pyasn1==0.4.8
+ pyasn1-modules==0.2.8
+ pycparser==2.21
++pycryptodome==3.17
++pydot==1.4.2
++PyJWT==2.6.0
+ PyMuPDF==1.21.1
+-pyparsing==3.0
+-PyPDF2==2.12
+-pyrsistent==0.18
+-pytesseract==0.3
++pyparsing==3.0.0
++pypdf==3.7.0
++PyPDF2==2.12.0
++pyrsistent==0.18.0
++pytesseract==0.3.0
++pytest==7.1.0
+ python-dateutil==2.8.2
+-python-dotenv==0.18
++python-dotenv==0.18.0
+ python-editor==1.0
+ pytz==2022.1
+-PyWavelets==1.3
++PyWavelets==1.3.0
++pyxnat==1.5
+ PyYAML==6.0
++rdflib==6.3.2
+ regex==2023.3.23
+ reportlab==3.6.9
+ requests==2.28.2
+-requests-oauthlib==1.3
++requests-oauthlib==1.3.0
+ rsa==4.8
+-s3transfer==0.6
++s3transfer==0.6.0
+ scikit-image==0.20.0
+ scikit-learn==1.2.2
+ scipy==1.8.1
+-Shapely==2.0.1
+-six==1.16
+-smart-open==5.2
++setuptools-scm==7.1.0
++shapely==2.0.1
++simplejson==3.19.1
++six==1.16.0
++smart-open==5.2.0
+ spacy==2.3.7
+ SQLAlchemy==2.0.9
+-sqlalchemy-migrate==0.13
++sqlalchemy-migrate==0.13.0
+ SQLAlchemy-Utils==0.40.0
+ sqlparse==0.4.3
+ srsly==1.0.2
+ tabulate==0.9.0
+ Tempita==0.5.2
+-tenacity==8.0
+-texthero==1.1
++tenacity==8.0.0
++texthero==1.1.0
+ thinc==7.4.5
+-threadpoolctl==3.1
++threadpoolctl==3.1.0
+ tifffile==2023.3.21
+-tqdm==4.64
+-Unidecode==1.3
+-urllib3==1.26
+-URLObject==2.4
+-wasabi==0.9
++tomli==2.0.1
++tqdm==4.64.0
++traits==6.3.2
++typing_extensions==4.5.0
++tzdata==2023.3
++Unidecode==1.3.0
++urllib3==1.26.0
++URLObject==2.4.0
++wasabi==0.9.0
+ Werkzeug==2.2.3
+ wordcloud==1.8.2.2
+-zipp==3.8
+-zope.event==4.5
+-zope.interface==5.4
+-pytest==7.1
+-pdfrw==0.4
+-wheel==0.40
+-#openai
+\ No newline at end of file
++yarl==1.8.2
++zipp==3.8.0
++zope.event==4.5.0
++zope.interface==5.4.0

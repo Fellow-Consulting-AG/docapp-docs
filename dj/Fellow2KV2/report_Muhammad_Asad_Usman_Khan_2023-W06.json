@@ -1,0 +1,23 @@
+{
+    "author": "Muhammad Asad Usman Khan",
+    "week": "2023-W06",
+    "total_commits": 3,
+    "author_image": "https://avatars.githubusercontent.com/u/83513548?v=4",
+    "commits": [
+        {
+            "sha": "4a9e9f6a9a203859ef33b02a3ea1182f3e7e8030",
+            "message": "fd",
+            "code_changes": "@@ -153,17 +153,27 @@ def post(self):\n class DocLayoutTemplateR(Resource):\n     @multi_auth.login_required\n     def get(self, id):\n-        user = multi_auth.current_user()\n+        user: UserAuthentication = multi_auth.current_user()\n         query = f\"\"\"select\n                 dlt.id, \n                 dlt.doc_type_key, \n                 dlt.layout_json, \n                 dlt.title, \n                 dlt.sub_doc_type_key, \n                 dlt.org_id, \n-                dt.extraction_type\n+                coalesce(odt.extraction_type, dt.extraction_type) as extraction_type\n             from\n-                document_layout_template dlt left join document_type dt on dlt.doc_type_key = dt.document_key\n+                document_layout_template dlt \n+            left join \n+                document_type dt \n+                on \n+                dlt.doc_type_key = dt.document_key\n+            left join\n+                organisation_document_type odt\n+                on\n+                odt.org_id = '{user.get_org_id()}'\n+                and odt.document_type_id = dt.id\n+                and odt.is_deleted = false\n             where\n                 dlt.id = '{id}'\n                 and dlt.is_deleted = False"
+        },
+        {
+            "sha": "fd518ce8836aba4e2bb94d330ef65b8a8db30f2e",
+            "message": "fd",
+            "code_changes": "@@ -0,0 +1,9 @@\n+def execute_query(db, query):\n+    query = query.replace(\"\\n\", \"\")\n+    results = db.engine.execute(query)\n+    results_list = [dict(r) for r in results]\n+    return results_list\n+\n+def get_single_result(db, query):\n+    results_list = execute_query(db, query)\n+    return results_list[0] if results_list else None\n\\ No newline at end of file"
+        },
+        {
+            "sha": "c0d551383bb61ed9d6b6e68e71f8a99c94b24986",
+            "message": "fd",
+            "code_changes": "@@ -1582,7 +1582,7 @@ def process_tax_pairs(fields, source_locale):\n                 if (\n                     additional_amount_value\n                     and additional_amount_value != 0\n-                    and additional_amount[\"score\"] > 0.76\n+                    and additional_amount[\"score\"] > 0.76 # this score can change in future\n                 ):\n                     fields_dict[additional_amount_key] = additional_amount\n                     running_total_net_amount = ("
+        }
+    ]
+}

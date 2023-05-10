@@ -1,0 +1,277 @@
+Lint Action: 8 commits for week 2023-W07
+Author image: https://avatars.githubusercontent.com/u/59283862?v=4
+- ecec14597cf75d8009164e695e030b27d4c4ef7b: Fix code style issues with Black
+Code changes:
+@@ -17,8 +17,10 @@
+ 
+ import fellow2kv.config as app_config
+ from fellow2kv.config import AUTH_SERVICE_URL
++
+ # from fellow2kv.app_initializer import db, ma
+ from fellow2kv.extension import db
++
+ # from fellow2kv.extension import db, ma
+ from logger import get_logger
+ 
+@@ -195,12 +197,10 @@ def check_for_app_authorization(self, app_key, quota=1):
+             if current_date > sub_end_date:
+                 return -1
+ 
+-
+             if (
+                 app_config.ENFORCE_QUOTA
+                 and int(float(found_app["pending_credit"])) < quota
+             ):
+-
+                 return -2
+ 
+             return 1
+@@ -265,7 +265,6 @@ def update_usage_log(self, app_key, quota_used=1, method_used=None):
+     def update_classification_usage_log(
+         self, app_key, classification_quota_used=1, method_used=None
+     ):
+-
+         """
+         It updates the usage log of the app
+ 
+@@ -282,7 +281,6 @@ def update_classification_usage_log(
+     def __update_usage_log(
+         self, app_key, credit_used=None, classification_credit_used=None, method=None
+     ):  #
+-
+         if not self.get_subscription_token():
+             return False
+ 
+@@ -306,7 +304,6 @@ def __update_usage_log(
+                     filtered_app["pending_credit"]
+                 ) - Decimal(classification_credit_used)
+ 
+-
+         try:
+             headers = {"Authorization": "Bearer " + self.get_subscription_token()}
+             payload = {
+- 7010e8425221b440fdc6f30f6b00bdf18077ad85: Fix code style issues with Black
+Code changes:
+@@ -264,6 +264,7 @@ def page_digitally_created(page):
+         return True
+     return page_type
+ 
++
+ @sync_wrapper(module="ocr")
+ def ocr_document(
+     user, doc_path_pre_ocr, output_path, force_ocr, improve_quality, resp_json
+@@ -281,12 +282,17 @@ def ocr_document(
+         storagemanager_doc2.save_file(output_path, doc_path_pre_ocr, None)
+         pass
+ 
+-    preprocess_and_ocr_document(user, output_path, force_ocr, improve_quality, resp_json)
++    preprocess_and_ocr_document(
++        user, output_path, force_ocr, improve_quality, resp_json
++    )
+ 
+     # storagemanager_doc2.save_file(output_path, doc_path, None)
+ 
++
+ @sync_wrapper(module="ocr")
+-def preprocess_and_ocr_document(user, output_path, force_ocr, improve_quality, resp_json):
++def preprocess_and_ocr_document(
++    user, output_path, force_ocr, improve_quality, resp_json
++):
+     org_id = user.get_org_id()
+     use_high_dpi = gdvh.get_bool_value(db, "CONVERT_TO_HIGHER_DPI", org_id, False)
+     deskew = gdvh.get_bool_value(db, "DESKEW_DOCUMENT", org_id, False)
+@@ -329,4 +335,4 @@ def preprocess_and_ocr_document(user, output_path, force_ocr, improve_quality, r
+             "module": "ocr",
+             "message": f"OCR successful. Module used: {ocr_module}",
+         }
+-    )
+\ No newline at end of file
++    )
+- daf6ae3183df9ffaba60fbc975917b69cbcfffc4: Fix code style issues with Black
+Code changes:
+@@ -10,9 +10,11 @@
+ from helper.extract_util import Extractor
+ from helper.field_extractors.adjusted_coordinates import get_adjusted_coords
+ from helper.form_extractor.fill_ratio import (
+-    get_fill_percentage_from_image_url, strip_box, strip_box_special)
+-from helper.util import (transform_from_normalized_coords_object,
+-                         transform_to_normalized)
++    get_fill_percentage_from_image_url,
++    strip_box,
++    strip_box_special,
++)
++from helper.util import transform_from_normalized_coords_object, transform_to_normalized
+ from logger.logger import get_logger
+ 
+ logger = get_logger("fellowkv-deh")
+@@ -28,7 +30,7 @@ def extract_form_fields(user, document, layout, fields_to_extract, non_coords_fi
+ 
+     checkbox_fields = [df for df in fields_to_extract if df["field_type"] == "BOOLEAN"]
+     fields_result = extract_checkbox_fields(
+-       user, document, layout, checkbox_fields, document_first_page
++        user, document, layout, checkbox_fields, document_first_page
+     )
+ 
+     text_fields = [df for df in fields_to_extract if not df["field_type"] == "BOOLEAN"]
+@@ -127,8 +129,8 @@ def extract_checkbox_fields(user, document, layout, checkbox_fields, start_page=
+     for index, checkbox_field in enumerate(checkbox_fields):
+         # checkbox_field['fill_ratio'] = results[checkbox_field['field_name']]
+         field_type = checkbox_field["field_type"]
+-        if not checkbox_field.get("tr_ocr_model_id",None):
+-            checkbox_field["tr_ocr_model_id"] = '5a3e526f-371a-470b-aacd-75460c0b8a16'
++        if not checkbox_field.get("tr_ocr_model_id", None):
++            checkbox_field["tr_ocr_model_id"] = "5a3e526f-371a-470b-aacd-75460c0b8a16"
+         field_name = checkbox_field["field_name"]
+         adjusted_coords = checkbox_field["adjusted_coords"]
+         coords = transform_to_normalized(
+@@ -155,7 +157,7 @@ def extract_checkbox_fields(user, document, layout, checkbox_fields, start_page=
+             "validation_message": "",
+             "threshold": threshold,
+             "type": field_type,
+-            "tr_ocr_model_id": checkbox_field["tr_ocr_model_id"]
++            "tr_ocr_model_id": checkbox_field["tr_ocr_model_id"],
+         }
+         fields.append(field)
+     return fields
+@@ -349,8 +351,10 @@ def populate_tr_ocr_info(document, field_results):
+                 field, field["adjusted_coords"]
+             )  # to show on UI
+ 
+-            is_checkbox_field = (field.get("field_type",None) == "BOOLEAN")
+-            adjusted_coords = get_trocr_adjusted_coords(field, page_image, is_checkbox_field)
++            is_checkbox_field = field.get("field_type", None) == "BOOLEAN"
++            adjusted_coords = get_trocr_adjusted_coords(
++                field, page_image, is_checkbox_field
++            )
+             if not adjusted_coords:
+                 field["adjusted_coords"] = None
+                 field.pop("confidence", None)
+@@ -377,9 +381,13 @@ def populate_tr_ocr_info(document, field_results):
+ 
+ def get_trocr_adjusted_coords(field_data, page_image, is_checkbox_field=False):
+     if is_checkbox_field:
+-        strip_dim = 0,0,0,0
++        strip_dim = 0, 0, 0, 0
+         return trocr_common.readjust_coordinates(
+-            page_image, field_data["adjusted_coords"], strip_dim, v_padding=5, h_padding=5
++            page_image,
++            field_data["adjusted_coords"],
++            strip_dim,
++            v_padding=5,
++            h_padding=5,
+         )
+ 
+     field_cropped_image = trocr_common.get_image_from_coords(
+- 5a9e7cf67f831aff65d0759450b124d40433a8f5: Fix code style issues with Black
+Code changes:
+@@ -701,24 +701,24 @@ def get_layout_templates(doc_type_key, sub_doc_type_key, org_id):
+ 
+ 
+ def remove_duplicate_layout(layouts):
+-    default_layouts = [ly for ly in  layouts if ly['org_id'] == 'DEFAULT']
++    default_layouts = [ly for ly in layouts if ly["org_id"] == "DEFAULT"]
+ 
+     filtered_layouts = {}
+     for ly in layouts:
+-        doc_type = ly['doc_type_key']
+-        sub_doc_type = ly.get('sub_doc_type_key','')
++        doc_type = ly["doc_type_key"]
++        sub_doc_type = ly.get("sub_doc_type_key", "")
+         if not sub_doc_type:
+-            sub_doc_type = ''
+-        key = doc_type + '_' + sub_doc_type
++            sub_doc_type = ""
++        key = doc_type + "_" + sub_doc_type
+         filtered_layouts[key] = ly
+ 
+     for dly in default_layouts:
+-        doc_type = ly['doc_type_key']
+-        sub_doc_type = ly.get('sub_doc_type_key','')
++        doc_type = ly["doc_type_key"]
++        sub_doc_type = ly.get("sub_doc_type_key", "")
+         if not sub_doc_type:
+-            sub_doc_type = ''
+-        key = doc_type + '_' + sub_doc_type
++            sub_doc_type = ""
++        key = doc_type + "_" + sub_doc_type
+         if not key in filtered_layouts:
+             filtered_layouts[key] = dly
+ 
+-    return list(filtered_layouts.values())
+\ No newline at end of file
++    return list(filtered_layouts.values())
+- ca9892f061fa9ee028ba2e5cbbc6b018c2feddd7: Fix code style issues with Black
+Code changes:
+@@ -16,8 +16,7 @@
+ import constants
+ import helper.ocr as ocr_helper
+ from authenticator import UserAuthentication
+-from fellow2kv.extension import (api, db, multi_auth, storagemanager,
+-                                 storagemanager_doc2)
++from fellow2kv.extension import api, db, multi_auth, storagemanager, storagemanager_doc2
+ 
+ from helper import doc_type_helper as dth
+ from helper import generic_data_vault_helper as gdvh
+@@ -799,7 +798,9 @@ def post(self):
+ 
+                 doc_already_ocred = ocr_helper.is_doc_ocr(ufile.name)
+                 # force_ocr = False
+-                if not ocr_helper.is_doc_ocr(ufile.name) or (force_ocr and ocr_helper.is_ocred_by_doc2(ufile.name)):
++                if not ocr_helper.is_doc_ocr(ufile.name) or (
++                    force_ocr and ocr_helper.is_ocred_by_doc2(ufile.name)
++                ):
+                     ocr_document(
+                         user,
+                         doc_path_pre_ocr,
+- c49e3678ff84f339ec66cfec3e885d95087b8b2e: Fix code style issues with Black
+Code changes:
+@@ -16,8 +16,7 @@
+ import constants
+ import helper.ocr as ocr_helper
+ from authenticator import UserAuthentication
+-from fellow2kv.extension import (api, db, multi_auth, storagemanager,
+-                                 storagemanager_doc2)
++from fellow2kv.extension import api, db, multi_auth, storagemanager, storagemanager_doc2
+ 
+ from helper import doc_type_helper as dth
+ from helper import generic_data_vault_helper as gdvh
+@@ -799,7 +798,9 @@ def post(self):
+ 
+                 doc_already_ocred = ocr_helper.is_doc_ocr(ufile.name)
+                 # force_ocr = False
+-                if not ocr_helper.is_doc_ocr(ufile.name) or (force_ocr and ocr_helper.is_ocred_by_doc2(ufile.name)):
++                if not ocr_helper.is_doc_ocr(ufile.name) or (
++                    force_ocr and ocr_helper.is_ocred_by_doc2(ufile.name)
++                ):
+                     ocr_document(
+                         user,
+                         doc_path_pre_ocr,
+- 7274d7dfca3c5c19283004998dd27e7d089a2fd7: Fix code style issues with Black
+Code changes:
+@@ -317,7 +317,7 @@ def __get_layout_groups(db, doc_type, sub_doc_type, profile, org_id, layout_type
+             for i in range(row_order - len(rows)):
+                 rows.append([])
+         if row_order != None:
+-            if field.get("field_type",'') == "CURRENCY":
++            if field.get("field_type", "") == "CURRENCY":
+                 field["enforce_list_of_values"] = True
+                 field["list_of_values"] = "ISO_Currency"
+             rows[row_order - 1].append(field)
+- bd98ee08b329db08a1471b084f093649a4fc2c29: Fix code style issues with Black
+Code changes:
+@@ -13,8 +13,13 @@
+ from helper import util
+ from helper.layout import layout_fields_helper as lfh
+ from logger import get_logger
+-from models import (AlchemyEncoder, ColumnValidationRules, DocumentTable,
+-                    DocumentTableColumn, DocumentType)
++from models import (
++    AlchemyEncoder,
++    ColumnValidationRules,
++    DocumentTable,
++    DocumentTableColumn,
++    DocumentType,
++)
+ 
+ logger = get_logger("document_table_settings")
+ 

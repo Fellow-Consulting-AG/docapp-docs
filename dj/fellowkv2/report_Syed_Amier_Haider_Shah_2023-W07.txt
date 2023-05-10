@@ -1,0 +1,574 @@
+Syed Amier Haider Shah: 10 commits for week 2023-W07
+Author image: https://avatars.githubusercontent.com/u/2101825?v=4
+- 31cdb289a6df0d1e80d4553d087e372445921f1d: Merge pull request #764 from Fellow-Consulting-AG/stage
+
+ocr service name changed
+Code changes:
+@@ -33,7 +33,7 @@ def __get_ocr_data__(self, source_file_path, doc_id=None):
+         document["doc_origin"] = "DE"
+         document["doc_locale"] = "de_DE"
+         document["ocr_lang"] = "de"
+-        document["ocr_processor"] = "google-ai"
++        document["ocr_processor"] = "ai-ocr-service"
+ 
+         GOOGLE_OCR.populate_origin_and_locale(ai_resp_json, document)
+ 
+@@ -50,7 +50,7 @@ def extract_ocr_data_and_images(
+         document, ai_resp_json = self.__get_ocr_data__(source_file_path, None)
+ 
+         document["doc_id"] = doc_id
+-        document["ocr_processor"] = "google-ai"
++        document["ocr_processor"] = "ai-ocr-service"
+ 
+         logger.info(f"Going to save extracted image and ocr document")
+         start_time = time.perf_counter()
+- abc3c420d161eaa90d0b0b297e32e09007260e0a: Merge pull request #763 from Fellow-Consulting-AG/dev
+
+changed service name
+Code changes:
+@@ -33,7 +33,7 @@ def __get_ocr_data__(self, source_file_path, doc_id=None):
+         document["doc_origin"] = "DE"
+         document["doc_locale"] = "de_DE"
+         document["ocr_lang"] = "de"
+-        document["ocr_processor"] = "google-ai"
++        document["ocr_processor"] = "ai-ocr-service"
+ 
+         GOOGLE_OCR.populate_origin_and_locale(ai_resp_json, document)
+ 
+@@ -50,7 +50,7 @@ def extract_ocr_data_and_images(
+         document, ai_resp_json = self.__get_ocr_data__(source_file_path, None)
+ 
+         document["doc_id"] = doc_id
+-        document["ocr_processor"] = "google-ai"
++        document["ocr_processor"] = "ai-ocr-service"
+ 
+         logger.info(f"Going to save extracted image and ocr document")
+         start_time = time.perf_counter()
+- 52fd5051a10bd92b23bd39a6f63d82c0f16723fe: changed service name
+Code changes:
+@@ -33,7 +33,7 @@ def __get_ocr_data__(self, source_file_path, doc_id=None):
+         document["doc_origin"] = "DE"
+         document["doc_locale"] = "de_DE"
+         document["ocr_lang"] = "de"
+-        document["ocr_processor"] = "google-ai"
++        document["ocr_processor"] = "ai-ocr-service"
+ 
+         GOOGLE_OCR.populate_origin_and_locale(ai_resp_json, document)
+ 
+@@ -50,7 +50,7 @@ def extract_ocr_data_and_images(
+         document, ai_resp_json = self.__get_ocr_data__(source_file_path, None)
+ 
+         document["doc_id"] = doc_id
+-        document["ocr_processor"] = "google-ai"
++        document["ocr_processor"] = "ai-ocr-service"
+ 
+         logger.info(f"Going to save extracted image and ocr document")
+         start_time = time.perf_counter()
+- 3d2d33c0d6808524ff924b345948edd2fb0c8ee8: Merge pull request #760 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -2,18 +2,17 @@
+ import math
+ 
+ import cv2
+-import fellow2kv.config as config
+ import numpy
++
++import fellow2kv.config as config
+ from fellow2kv.extension import config
+ from helper.custom_classifier_v2 import trocr_common
+ from helper.extract_util import Extractor
+ from helper.field_extractors.adjusted_coordinates import get_adjusted_coords
+ from helper.form_extractor.fill_ratio import (
+-    get_fill_percentage_from_image_url,
+-    strip_box,
+-    strip_box_special,
+-)
+-from helper.util import transform_from_normalized_coords_object, transform_to_normalized
++    get_fill_percentage_from_image_url, strip_box, strip_box_special)
++from helper.util import (transform_from_normalized_coords_object,
++                         transform_to_normalized)
+ from logger.logger import get_logger
+ 
+ logger = get_logger("fellowkv-deh")
+@@ -29,7 +28,7 @@ def extract_form_fields(user, document, layout, fields_to_extract, non_coords_fi
+ 
+     checkbox_fields = [df for df in fields_to_extract if df["field_type"] == "BOOLEAN"]
+     fields_result = extract_checkbox_fields(
+-        user, document, layout, checkbox_fields, document_first_page
++       user, document, layout, checkbox_fields, document_first_page
+     )
+ 
+     text_fields = [df for df in fields_to_extract if not df["field_type"] == "BOOLEAN"]
+@@ -119,29 +118,6 @@ def extract_checkbox_fields(user, document, layout, checkbox_fields, start_page=
+         if value:
+             filled_count += 1
+         checkbox_field["content"] = value
+-        # field_name = checkbox_field["field_name"]
+-        # checkbox_values[field_name] = value
+-
+-    # first_section = ([f for f in checkbox_fields
+-    #     if f.get('checkbox_group', '') == '1'
+-    #     and f['content']])
+-    # if first_section:
+-    #     checked_field = first_section[0]
+-    #     checkbox_prefix = checked_field['field_name'][:-1]
+-    #     second_section = ([f for f in checkbox_fields
+-    #         if f.get('checkbox_group', '') == '2'
+-    #         and f['content']])
+-    #     if second_section:
+-    #         second_checked_field = second_section[0]
+-    #         if not second_checked_field['field_name'].startswith(checkbox_prefix):
+-    #             second_checked_field['content'] = False
+-    #             field["old_fill_ratio"] = field["fill_ratio"]
+-    #             field["fill_ratio"] = 0
+-
+-    #         second_sub_section_top_field = ([f for f in checkbox_fields
+-    #             if f.get('checkbox_group', '') == '2'
+-    #             and f['field_name'].startswith(checkbox_prefix)][0])
+-    #         second_sub_section_top_field['content'] = True
+ 
+     # TODO: Handling for the parent checkbox. Where a checkbox need to be checked for and child checkbox to be check.
+     # If parent checkbox is not checked, all child checkbox will be unchecked.
+@@ -150,6 +126,9 @@ def extract_checkbox_fields(user, document, layout, checkbox_fields, start_page=
+     fields = []
+     for index, checkbox_field in enumerate(checkbox_fields):
+         # checkbox_field['fill_ratio'] = results[checkbox_field['field_name']]
++        field_type = checkbox_field["field_type"]
++        if not checkbox_field.get("tr_ocr_model_id",None):
++            checkbox_field["tr_ocr_model_id"] = '5a3e526f-371a-470b-aacd-75460c0b8a16'
+         field_name = checkbox_field["field_name"]
+         adjusted_coords = checkbox_field["adjusted_coords"]
+         coords = transform_to_normalized(
+@@ -175,6 +154,8 @@ def extract_checkbox_fields(user, document, layout, checkbox_fields, start_page=
+             "is_valid": True,
+             "validation_message": "",
+             "threshold": threshold,
++            "type": field_type,
++            "tr_ocr_model_id": checkbox_field["tr_ocr_model_id"]
+         }
+         fields.append(field)
+     return fields
+@@ -367,7 +348,9 @@ def populate_tr_ocr_info(document, field_results):
+             populate_coords_from_adjusted_coords(
+                 field, field["adjusted_coords"]
+             )  # to show on UI
+-            adjusted_coords = get_trocr_adjusted_coords(field, page_image)
++
++            is_checkbox_field = (field.get("field_type",None) == "BOOLEAN")
++            adjusted_coords = get_trocr_adjusted_coords(field, page_image, is_checkbox_field)
+             if not adjusted_coords:
+                 field["adjusted_coords"] = None
+                 field.pop("confidence", None)
+@@ -392,7 +375,13 @@ def populate_tr_ocr_info(document, field_results):
+         logger.exception(ex)
+ 
+ 
+-def get_trocr_adjusted_coords(field_data, page_image):
++def get_trocr_adjusted_coords(field_data, page_image, is_checkbox_field=False):
++    if is_checkbox_field:
++        strip_dim = 0,0,0,0
++        return trocr_common.readjust_coordinates(
++            page_image, field_data["adjusted_coords"], strip_dim, v_padding=5, h_padding=5
++        )
++
+     field_cropped_image = trocr_common.get_image_from_coords(
+         page_image, field_data["adjusted_coords"]
+     )
+- 72aa345e24e229f7ff37f2e1813f80e27ea62b85: Merge pull request #759 from Fellow-Consulting-AG/dev
+
+stage
+Code changes:
+@@ -2,18 +2,17 @@
+ import math
+ 
+ import cv2
+-import fellow2kv.config as config
+ import numpy
++
++import fellow2kv.config as config
+ from fellow2kv.extension import config
+ from helper.custom_classifier_v2 import trocr_common
+ from helper.extract_util import Extractor
+ from helper.field_extractors.adjusted_coordinates import get_adjusted_coords
+ from helper.form_extractor.fill_ratio import (
+-    get_fill_percentage_from_image_url,
+-    strip_box,
+-    strip_box_special,
+-)
+-from helper.util import transform_from_normalized_coords_object, transform_to_normalized
++    get_fill_percentage_from_image_url, strip_box, strip_box_special)
++from helper.util import (transform_from_normalized_coords_object,
++                         transform_to_normalized)
+ from logger.logger import get_logger
+ 
+ logger = get_logger("fellowkv-deh")
+@@ -29,7 +28,7 @@ def extract_form_fields(user, document, layout, fields_to_extract, non_coords_fi
+ 
+     checkbox_fields = [df for df in fields_to_extract if df["field_type"] == "BOOLEAN"]
+     fields_result = extract_checkbox_fields(
+-        user, document, layout, checkbox_fields, document_first_page
++       user, document, layout, checkbox_fields, document_first_page
+     )
+ 
+     text_fields = [df for df in fields_to_extract if not df["field_type"] == "BOOLEAN"]
+@@ -119,29 +118,6 @@ def extract_checkbox_fields(user, document, layout, checkbox_fields, start_page=
+         if value:
+             filled_count += 1
+         checkbox_field["content"] = value
+-        # field_name = checkbox_field["field_name"]
+-        # checkbox_values[field_name] = value
+-
+-    # first_section = ([f for f in checkbox_fields
+-    #     if f.get('checkbox_group', '') == '1'
+-    #     and f['content']])
+-    # if first_section:
+-    #     checked_field = first_section[0]
+-    #     checkbox_prefix = checked_field['field_name'][:-1]
+-    #     second_section = ([f for f in checkbox_fields
+-    #         if f.get('checkbox_group', '') == '2'
+-    #         and f['content']])
+-    #     if second_section:
+-    #         second_checked_field = second_section[0]
+-    #         if not second_checked_field['field_name'].startswith(checkbox_prefix):
+-    #             second_checked_field['content'] = False
+-    #             field["old_fill_ratio"] = field["fill_ratio"]
+-    #             field["fill_ratio"] = 0
+-
+-    #         second_sub_section_top_field = ([f for f in checkbox_fields
+-    #             if f.get('checkbox_group', '') == '2'
+-    #             and f['field_name'].startswith(checkbox_prefix)][0])
+-    #         second_sub_section_top_field['content'] = True
+ 
+     # TODO: Handling for the parent checkbox. Where a checkbox need to be checked for and child checkbox to be check.
+     # If parent checkbox is not checked, all child checkbox will be unchecked.
+@@ -150,6 +126,9 @@ def extract_checkbox_fields(user, document, layout, checkbox_fields, start_page=
+     fields = []
+     for index, checkbox_field in enumerate(checkbox_fields):
+         # checkbox_field['fill_ratio'] = results[checkbox_field['field_name']]
++        field_type = checkbox_field["field_type"]
++        if not checkbox_field.get("tr_ocr_model_id",None):
++            checkbox_field["tr_ocr_model_id"] = '5a3e526f-371a-470b-aacd-75460c0b8a16'
+         field_name = checkbox_field["field_name"]
+         adjusted_coords = checkbox_field["adjusted_coords"]
+         coords = transform_to_normalized(
+@@ -175,6 +154,8 @@ def extract_checkbox_fields(user, document, layout, checkbox_fields, start_page=
+             "is_valid": True,
+             "validation_message": "",
+             "threshold": threshold,
++            "type": field_type,
++            "tr_ocr_model_id": checkbox_field["tr_ocr_model_id"]
+         }
+         fields.append(field)
+     return fields
+@@ -367,7 +348,9 @@ def populate_tr_ocr_info(document, field_results):
+             populate_coords_from_adjusted_coords(
+                 field, field["adjusted_coords"]
+             )  # to show on UI
+-            adjusted_coords = get_trocr_adjusted_coords(field, page_image)
++
++            is_checkbox_field = (field.get("field_type",None) == "BOOLEAN")
++            adjusted_coords = get_trocr_adjusted_coords(field, page_image, is_checkbox_field)
+             if not adjusted_coords:
+                 field["adjusted_coords"] = None
+                 field.pop("confidence", None)
+@@ -392,7 +375,13 @@ def populate_tr_ocr_info(document, field_results):
+         logger.exception(ex)
+ 
+ 
+-def get_trocr_adjusted_coords(field_data, page_image):
++def get_trocr_adjusted_coords(field_data, page_image, is_checkbox_field=False):
++    if is_checkbox_field:
++        strip_dim = 0,0,0,0
++        return trocr_common.readjust_coordinates(
++            page_image, field_data["adjusted_coords"], strip_dim, v_padding=5, h_padding=5
++        )
++
+     field_cropped_image = trocr_common.get_image_from_coords(
+         page_image, field_data["adjusted_coords"]
+     )
+- 948b59186926c097453a08b592a506a697e57394: TROCR for checkboxes
+Code changes:
+@@ -2,18 +2,17 @@
+ import math
+ 
+ import cv2
+-import fellow2kv.config as config
+ import numpy
++
++import fellow2kv.config as config
+ from fellow2kv.extension import config
+ from helper.custom_classifier_v2 import trocr_common
+ from helper.extract_util import Extractor
+ from helper.field_extractors.adjusted_coordinates import get_adjusted_coords
+ from helper.form_extractor.fill_ratio import (
+-    get_fill_percentage_from_image_url,
+-    strip_box,
+-    strip_box_special,
+-)
+-from helper.util import transform_from_normalized_coords_object, transform_to_normalized
++    get_fill_percentage_from_image_url, strip_box, strip_box_special)
++from helper.util import (transform_from_normalized_coords_object,
++                         transform_to_normalized)
+ from logger.logger import get_logger
+ 
+ logger = get_logger("fellowkv-deh")
+@@ -29,7 +28,7 @@ def extract_form_fields(user, document, layout, fields_to_extract, non_coords_fi
+ 
+     checkbox_fields = [df for df in fields_to_extract if df["field_type"] == "BOOLEAN"]
+     fields_result = extract_checkbox_fields(
+-        user, document, layout, checkbox_fields, document_first_page
++       user, document, layout, checkbox_fields, document_first_page
+     )
+ 
+     text_fields = [df for df in fields_to_extract if not df["field_type"] == "BOOLEAN"]
+@@ -119,29 +118,6 @@ def extract_checkbox_fields(user, document, layout, checkbox_fields, start_page=
+         if value:
+             filled_count += 1
+         checkbox_field["content"] = value
+-        # field_name = checkbox_field["field_name"]
+-        # checkbox_values[field_name] = value
+-
+-    # first_section = ([f for f in checkbox_fields
+-    #     if f.get('checkbox_group', '') == '1'
+-    #     and f['content']])
+-    # if first_section:
+-    #     checked_field = first_section[0]
+-    #     checkbox_prefix = checked_field['field_name'][:-1]
+-    #     second_section = ([f for f in checkbox_fields
+-    #         if f.get('checkbox_group', '') == '2'
+-    #         and f['content']])
+-    #     if second_section:
+-    #         second_checked_field = second_section[0]
+-    #         if not second_checked_field['field_name'].startswith(checkbox_prefix):
+-    #             second_checked_field['content'] = False
+-    #             field["old_fill_ratio"] = field["fill_ratio"]
+-    #             field["fill_ratio"] = 0
+-
+-    #         second_sub_section_top_field = ([f for f in checkbox_fields
+-    #             if f.get('checkbox_group', '') == '2'
+-    #             and f['field_name'].startswith(checkbox_prefix)][0])
+-    #         second_sub_section_top_field['content'] = True
+ 
+     # TODO: Handling for the parent checkbox. Where a checkbox need to be checked for and child checkbox to be check.
+     # If parent checkbox is not checked, all child checkbox will be unchecked.
+@@ -150,6 +126,9 @@ def extract_checkbox_fields(user, document, layout, checkbox_fields, start_page=
+     fields = []
+     for index, checkbox_field in enumerate(checkbox_fields):
+         # checkbox_field['fill_ratio'] = results[checkbox_field['field_name']]
++        field_type = checkbox_field["field_type"]
++        if not checkbox_field.get("tr_ocr_model_id",None):
++            checkbox_field["tr_ocr_model_id"] = '5a3e526f-371a-470b-aacd-75460c0b8a16'
+         field_name = checkbox_field["field_name"]
+         adjusted_coords = checkbox_field["adjusted_coords"]
+         coords = transform_to_normalized(
+@@ -175,6 +154,8 @@ def extract_checkbox_fields(user, document, layout, checkbox_fields, start_page=
+             "is_valid": True,
+             "validation_message": "",
+             "threshold": threshold,
++            "type": field_type,
++            "tr_ocr_model_id": checkbox_field["tr_ocr_model_id"]
+         }
+         fields.append(field)
+     return fields
+@@ -367,7 +348,9 @@ def populate_tr_ocr_info(document, field_results):
+             populate_coords_from_adjusted_coords(
+                 field, field["adjusted_coords"]
+             )  # to show on UI
+-            adjusted_coords = get_trocr_adjusted_coords(field, page_image)
++
++            is_checkbox_field = (field.get("field_type",None) == "BOOLEAN")
++            adjusted_coords = get_trocr_adjusted_coords(field, page_image, is_checkbox_field)
+             if not adjusted_coords:
+                 field["adjusted_coords"] = None
+                 field.pop("confidence", None)
+@@ -392,7 +375,13 @@ def populate_tr_ocr_info(document, field_results):
+         logger.exception(ex)
+ 
+ 
+-def get_trocr_adjusted_coords(field_data, page_image):
++def get_trocr_adjusted_coords(field_data, page_image, is_checkbox_field=False):
++    if is_checkbox_field:
++        strip_dim = 0,0,0,0
++        return trocr_common.readjust_coordinates(
++            page_image, field_data["adjusted_coords"], strip_dim, v_padding=5, h_padding=5
++        )
++
+     field_cropped_image = trocr_common.get_image_from_coords(
+         page_image, field_data["adjusted_coords"]
+     )
+- 8f553cf55ba9a946ee17a6a5f6e94e137ce0f9bf: Merge pull request #758 from Fellow-Consulting-AG/stage
+
+Default layout fix
+Code changes:
+@@ -674,11 +674,11 @@ def get_doc_type_key_and_sub_doc_key(db, doc_type, is_sub_doc_type, org_id):
+ 
+ def get_layout_templates(doc_type_key, sub_doc_type_key, org_id):
+     query = f"""select
+-                dlt.id, dlt.doc_type_key, dlt.sub_doc_type_key, dlt.title
++                dlt.id, dlt.org_id, dlt.doc_type_key, dlt.sub_doc_type_key, dlt.title
+             from
+                 document_layout_template dlt
+             where
+-                dlt.org_id IN ('DEFAULT_NOT_FOR_NOW','{org_id}')
++                dlt.org_id IN ('DEFAULT','{org_id}')
+                 and dlt.is_deleted = False
+     """
+ 
+@@ -693,4 +693,32 @@ def get_layout_templates(doc_type_key, sub_doc_type_key, org_id):
+     query = query.replace("\n", "").strip()
+     results = db.engine.execute(query)
+     result_list = [dict(r) for r in results]
++
++    if result_list:
++        return remove_duplicate_layout(result_list)
++
+     return result_list
++
++
++def remove_duplicate_layout(layouts):
++    default_layouts = [ly for ly in  layouts if ly['org_id'] == 'DEFAULT']
++
++    filtered_layouts = {}
++    for ly in layouts:
++        doc_type = ly['doc_type_key']
++        sub_doc_type = ly.get('sub_doc_type_key','')
++        if not sub_doc_type:
++            sub_doc_type = ''
++        key = doc_type + '_' + sub_doc_type
++        filtered_layouts[key] = ly
++
++    for dly in default_layouts:
++        doc_type = ly['doc_type_key']
++        sub_doc_type = ly.get('sub_doc_type_key','')
++        if not sub_doc_type:
++            sub_doc_type = ''
++        key = doc_type + '_' + sub_doc_type
++        if not key in filtered_layouts:
++            filtered_layouts[key] = dly
++
++    return list(filtered_layouts.values())
+\ No newline at end of file
+- 2ed8a51b5eacbc2d29a9f2d0782ab152e6cc465b: Merge pull request #757 from Fellow-Consulting-AG/dev
+
+stage
+Code changes:
+@@ -674,11 +674,11 @@ def get_doc_type_key_and_sub_doc_key(db, doc_type, is_sub_doc_type, org_id):
+ 
+ def get_layout_templates(doc_type_key, sub_doc_type_key, org_id):
+     query = f"""select
+-                dlt.id, dlt.doc_type_key, dlt.sub_doc_type_key, dlt.title
++                dlt.id, dlt.org_id, dlt.doc_type_key, dlt.sub_doc_type_key, dlt.title
+             from
+                 document_layout_template dlt
+             where
+-                dlt.org_id IN ('DEFAULT_NOT_FOR_NOW','{org_id}')
++                dlt.org_id IN ('DEFAULT','{org_id}')
+                 and dlt.is_deleted = False
+     """
+ 
+@@ -693,4 +693,32 @@ def get_layout_templates(doc_type_key, sub_doc_type_key, org_id):
+     query = query.replace("\n", "").strip()
+     results = db.engine.execute(query)
+     result_list = [dict(r) for r in results]
++
++    if result_list:
++        return remove_duplicate_layout(result_list)
++
+     return result_list
++
++
++def remove_duplicate_layout(layouts):
++    default_layouts = [ly for ly in  layouts if ly['org_id'] == 'DEFAULT']
++
++    filtered_layouts = {}
++    for ly in layouts:
++        doc_type = ly['doc_type_key']
++        sub_doc_type = ly.get('sub_doc_type_key','')
++        if not sub_doc_type:
++            sub_doc_type = ''
++        key = doc_type + '_' + sub_doc_type
++        filtered_layouts[key] = ly
++
++    for dly in default_layouts:
++        doc_type = ly['doc_type_key']
++        sub_doc_type = ly.get('sub_doc_type_key','')
++        if not sub_doc_type:
++            sub_doc_type = ''
++        key = doc_type + '_' + sub_doc_type
++        if not key in filtered_layouts:
++            filtered_layouts[key] = dly
++
++    return list(filtered_layouts.values())
+\ No newline at end of file
+- 73e2b3e2f839a5be04c503462ba3c2e73c004e1c: small fix
+Code changes:
+@@ -674,11 +674,11 @@ def get_doc_type_key_and_sub_doc_key(db, doc_type, is_sub_doc_type, org_id):
+ 
+ def get_layout_templates(doc_type_key, sub_doc_type_key, org_id):
+     query = f"""select
+-                dlt.id, dlt.doc_type_key, dlt.sub_doc_type_key, dlt.title
++                dlt.id, dlt.org_id, dlt.doc_type_key, dlt.sub_doc_type_key, dlt.title
+             from
+                 document_layout_template dlt
+             where
+-                dlt.org_id IN ('DEFAULT_NOT_FOR_NOW','{org_id}')
++                dlt.org_id IN ('DEFAULT','{org_id}')
+                 and dlt.is_deleted = False
+     """
+ 
+@@ -693,4 +693,32 @@ def get_layout_templates(doc_type_key, sub_doc_type_key, org_id):
+     query = query.replace("\n", "").strip()
+     results = db.engine.execute(query)
+     result_list = [dict(r) for r in results]
++
++    if result_list:
++        return remove_duplicate_layout(result_list)
++
+     return result_list
++
++
++def remove_duplicate_layout(layouts):
++    default_layouts = [ly for ly in  layouts if ly['org_id'] == 'DEFAULT']
++
++    filtered_layouts = {}
++    for ly in layouts:
++        doc_type = ly['doc_type_key']
++        sub_doc_type = ly.get('sub_doc_type_key','')
++        if not sub_doc_type:
++            sub_doc_type = ''
++        key = doc_type + '_' + sub_doc_type
++        filtered_layouts[key] = ly
++
++    for dly in default_layouts:
++        doc_type = ly['doc_type_key']
++        sub_doc_type = ly.get('sub_doc_type_key','')
++        if not sub_doc_type:
++            sub_doc_type = ''
++        key = doc_type + '_' + sub_doc_type
++        if not key in filtered_layouts:
++            filtered_layouts[key] = dly
++
++    return list(filtered_layouts.values())
+\ No newline at end of file
+- 7616397b07816af3ce1c198c63c897b217470900: Merge pull request #748 from Fellow-Consulting-AG/stage
+
+Fix code style issues with Black
+Code changes:
+@@ -13,8 +13,13 @@
+ from helper import util
+ from helper.layout import layout_fields_helper as lfh
+ from logger import get_logger
+-from models import (AlchemyEncoder, ColumnValidationRules, DocumentTable,
+-                    DocumentTableColumn, DocumentType)
++from models import (
++    AlchemyEncoder,
++    ColumnValidationRules,
++    DocumentTable,
++    DocumentTableColumn,
++    DocumentType,
++)
+ 
+ logger = get_logger("document_table_settings")
+ 

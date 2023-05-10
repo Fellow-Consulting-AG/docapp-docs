@@ -1,0 +1,13 @@
+{
+    "author": "Syed Amier Haider Shah",
+    "week": "2023-W19",
+    "total_commits": 1,
+    "author_image": "https://avatars.githubusercontent.com/u/2101825?v=4",
+    "commits": [
+        {
+            "sha": "69c03426aed5b8166d7fc50d772afecbacb752b4",
+            "message": "multiple attempts",
+            "code_changes": "@@ -1,32 +1,24 @@\n import json\n-from datetime import date, datetime\n+from datetime import datetime\n from decimal import Decimal\n-from hashlib import md5\n-from os import abort\n-from time import time\n \n-import jwt\n import pytz\n import requests\n-from flask_dance.consumer.storage.sqla import OAuthConsumerMixin\n-\n # from itsdangerous import TimedJSONWebSignatureSerializer as Serializer\n from itsdangerous import BadSignature, SignatureExpired\n from itsdangerous import URLSafeTimedSerializer as Serializer\n \n-# import URLSafeTimedSerializer as Serializer\n-from sqlalchemy.sql import func\n-from sqlalchemy.sql.functions import current_user\n-from werkzeug.security import check_password_hash, generate_password_hash\n-\n import fellow2kv.config as app_config\n from fellow2kv.config import AUTH_SERVICE_URL\n+# from fellow2kv.extension import db, ma\n+from logger import get_logger\n+\n+# import URLSafeTimedSerializer as Serializer\n+\n \n # from fellow2kv.app_initializer import db, ma\n-from fellow2kv.extension import db\n+#from fellow2kv.extension import db\n \n-# from fellow2kv.extension import db, ma\n-from logger import get_logger\n \n utc = pytz.UTC\n logger = get_logger(\"authenticator\")"
+        }
+    ]
+}

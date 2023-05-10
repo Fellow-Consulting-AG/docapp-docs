@@ -1,0 +1,13 @@
+{
+    "author": "Daniel Jordan",
+    "week": "2023-W19",
+    "total_commits": 1,
+    "author_image": "https://avatars.githubusercontent.com/u/922524?v=4",
+    "commits": [
+        {
+            "sha": "9fdc2d24c489e58ad3786df30a783228b8b3035a",
+            "message": "Create review.yaml",
+            "code_changes": "@@ -0,0 +1,18 @@\n+on:\n+  pull_request:\n+    types: [opened, synchronize]\n+\n+jobs:\n+  hello_world_job:\n+    runs-on: ubuntu-latest\n+    name: ChatGPT code reviewer\n+    steps:\n+      - name: ChatGTP code reviewer code\n+        uses: fr33d00m/chatgpt-github-actions@v2-turbo\n+        with:\n+          openai_api_key: ${{ secrets.openai_api_key }}\n+          github_token: ${{ secrets.GITHUB_TOKEN }}\n+          github_pr_id: ${{ github.event.number }}\n+          openai_engine: \"gpt-3.5-turbo\" #optional\n+          openai_temperature: 0.2 #optional\n+          openai_max_tokens: 2048 #optional"
+        }
+    ]
+}

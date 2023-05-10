@@ -1,0 +1,18 @@
+{
+    "author": "Amna",
+    "week": "2023-W07",
+    "total_commits": 2,
+    "author_image": "https://avatars.githubusercontent.com/u/42763988?v=4",
+    "commits": [
+        {
+            "sha": "60b7abdbb7f64f54a6b26b5679924db5e74a1933",
+            "message": "Merge pull request #747 from Fellow-Consulting-AG/stage\n\nStage to sandbox",
+            "code_changes": "@@ -4,6 +4,7 @@ def execute_query(db, query):\n     results_list = [dict(r) for r in results]\n     return results_list\n \n+\n def get_single_result(db, query):\n     results_list = execute_query(db, query)\n-    return results_list[0] if results_list else None\n\\ No newline at end of file\n+    return results_list[0] if results_list else None"
+        },
+        {
+            "sha": "db9f742c0a2d0d4558d64b10cae2479610582009",
+            "message": "Merge pull request #746 from Fellow-Consulting-AG/dev\n\ndev to stage",
+            "code_changes": "@@ -5,20 +5,16 @@\n from enum import Enum\n from operator import or_\n \n-from authenticator import UserAuthentication\n-from fellow2kv.extension import api, db, multi_auth\n from flask import request\n from flask_restx import Namespace, Resource, abort\n+\n+from authenticator import UserAuthentication\n+from fellow2kv.extension import api, db, multi_auth\n from helper import util\n from helper.layout import layout_fields_helper as lfh\n from logger import get_logger\n-from models import (\n-    AlchemyEncoder,\n-    ColumnValidationRules,\n-    DocumentTable,\n-    DocumentTableColumn,\n-    DocumentType,\n-)\n+from models import (AlchemyEncoder, ColumnValidationRules, DocumentTable,\n+                    DocumentTableColumn, DocumentType)\n \n logger = get_logger(\"document_table_settings\")\n \n@@ -144,7 +140,8 @@ def get(self):\n                     when cvr.id is not null then cvr.is_hidden\n                     else dcvr.is_hidden\n                 end as is_hidden,\n-                dtc.org_id\n+                dtc.org_id,\n+                dtc.column_type\n \n             from\n                 document_table dt"
+        }
+    ]
+}

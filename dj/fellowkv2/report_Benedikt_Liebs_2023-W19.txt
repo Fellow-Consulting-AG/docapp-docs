@@ -1,0 +1,131 @@
+Benedikt Liebs: 11 commits for week 2023-W19
+Author image: https://avatars.githubusercontent.com/u/74979180?v=4
+- d8b4ad1159380a3a619f4ccc7f736eceb6aaa51c: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.581
+\ No newline at end of file
++2.0.582
+\ No newline at end of file
+- 22802fa4cf24262bf76799b94eed42f0ac05f2cc: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.580
+\ No newline at end of file
++2.0.581
+\ No newline at end of file
+- 6d9bed5a1a04a435d3583666eafeaee45f463cd1: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.579
+\ No newline at end of file
++2.0.580
+\ No newline at end of file
+- c46c9e46ee39cdae1c909386100c695042f56dcf: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.578
+\ No newline at end of file
++2.0.579
+\ No newline at end of file
+- 49fc14fe0e3ae60107d25e84c14b663d2dd8c49b: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.577
+\ No newline at end of file
++2.0.578
+\ No newline at end of file
+- e519b4ba0b735ea20612f589296540e97fc64fa6: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.576
+\ No newline at end of file
++2.0.577
+\ No newline at end of file
+- f035d3f98dd7d313e26762853239e3019ea9eced: Merge pull request #890 from Fellow-Consulting-AG/dev
+
+Update dockerfile
+Code changes:
+@@ -0,0 +1,18 @@
++on:
++  pull_request:
++    types: [opened, synchronize]
++
++jobs:
++  hello_world_job:
++    runs-on: ubuntu-latest
++    name: ChatGPT code reviewer
++    steps:
++      - name: ChatGTP code reviewer code
++        uses: fr33d00m/chatgpt-github-actions@v2-turbo
++        with:
++          openai_api_key: ${{ secrets.openai_api_key }}
++          github_token: ${{ secrets.GITHUB_TOKEN }}
++          github_pr_id: ${{ github.event.number }}
++          openai_engine: "gpt-3.5-turbo" #optional
++          openai_temperature: 0.2 #optional
++          openai_max_tokens: 2048 #optional
+- 578d78bf3d2bc8c6d1eb1e3e1ea6cdaf897420b4: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.575
+\ No newline at end of file
++2.0.576
+\ No newline at end of file
+- 4d2250cd50d2ced50c57f2140b2567a96dbbc2c9: push
+Code changes:
+@@ -1,19 +1,10 @@
+ # venv image
+-FROM ubuntu:20.04 as venv-image
+-# FROM python:3.9.16-bullseye as venv-image
++# FROM ubuntu:20.04 as venv-image
++FROM python:3.9.16-bullseye as venv-image
+ 
+ RUN apt update
+-RUN apt install -y software-properties-common
+-
+-RUN add-apt-repository ppa:deadsnakes/ppa
+-
+-RUN apt install -y python3.9 python3.9-venv
+-
+-
+ 
+ ARG DEBIAN_FRONTEND=noninteractive
+-RUN apt update -y && \
+-    apt install -y python3 python3-venv python3-pip
+ 
+ RUN mkdir /app
+ RUN python3 -m venv /app/venv
+@@ -27,16 +18,10 @@ RUN pip3 install gunicorn opencv-python camelot-py[all] uvicorn
+ 
+ 
+ # debian custom image
+-FROM ubuntu:20.04 as base-image
+-# FROM python:3.9.16-bullseye as base-image
++# FROM ubuntu:20.04 as base-image
++FROM python:3.9.16-bullseye as base-image
+ 
+ RUN apt update
+-RUN apt install -y software-properties-common
+-
+-RUN add-apt-repository ppa:deadsnakes/ppa
+-
+-RUN apt install -y python3.9
+-
+ 
+ 
+ # make sure all messages always reach console
+- 025a98902e90f13714729d5c67f6206cf9c5c5a4: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.574
+\ No newline at end of file
++2.0.575
+\ No newline at end of file
+- 8133ba047735aa65a6ee6740fe5745e1651d037a: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.573
+\ No newline at end of file
++2.0.574
+\ No newline at end of file

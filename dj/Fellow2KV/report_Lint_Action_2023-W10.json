@@ -1,0 +1,18 @@
+{
+    "author": "Lint Action",
+    "week": "2023-W10",
+    "total_commits": 2,
+    "author_image": "https://avatars.githubusercontent.com/u/59283862?v=4",
+    "commits": [
+        {
+            "sha": "3c41e307b7333eab66cc452ee80adaaa2ff2c75c",
+            "message": "Fix code style issues with Black",
+            "code_changes": "@@ -27,7 +27,6 @@ class AI_REQUEST_TYPE:\n ]\n \n \n-\n AMOUNT_STANDARD_FIELDS = [\n     \"NET_AMOUNT\",\n     \"TAX_AMOUNT\","
+        },
+        {
+            "sha": "97efae6ee2547fb68a46b7d97e36f06428b0f06f",
+            "message": "Fix code style issues with Black",
+            "code_changes": "@@ -165,7 +165,7 @@ def populate_custom_lines(document):\n     c_lines_text = list()\n     for page in document[\"pages\"]:\n         c_lines_text.append(page[\"customPageText\"])\n-    #document[\"customText\"] = \" \".join(c_lines_text)\n+    # document[\"customText\"] = \" \".join(c_lines_text)\n \n     # for line in custom_lines:\n     #     print(line['text'])"
+        }
+    ]
+}

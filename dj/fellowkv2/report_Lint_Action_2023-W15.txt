@@ -1,0 +1,222 @@
+Lint Action: 6 commits for week 2023-W15
+Author image: https://avatars.githubusercontent.com/u/59283862?v=4
+- 8cb12466c674e0c0ab77874504d5f9b018a5dda4: Fix code style issues with Black
+Code changes:
+@@ -14,21 +14,29 @@
+ from sqlalchemy.sql.expression import text
+ 
+ import constants
++
+ # from fellow2kv.extension import db, storagemanager
+-from constants import (AMOUNT_STANDARD_FIELDS, INVOICE_MAPPING,
+-                       MAX_FULL_TAX_RATE, MIN_FULL_TAX_RATE,
+-                       REVERSE_INVOICE_MAPPING)
++from constants import (
++    AMOUNT_STANDARD_FIELDS,
++    INVOICE_MAPPING,
++    MAX_FULL_TAX_RATE,
++    MIN_FULL_TAX_RATE,
++    REVERSE_INVOICE_MAPPING,
++)
+ from fellow2kv.extension import db, storagemanager
+ from helper import db_helper as dbh
+ from helper import generic_data_vault_helper as gdvh
+ from helper import util as hutil
+-from helper.ai.ai_invoice import (transform_dict_to_array,
+-                                  transform_fields_to_dict)
++from helper.ai.ai_invoice import transform_dict_to_array, transform_fields_to_dict
++
+ # from helper.document_extraction import model_extraction_helper as meh
+ from helper.extract_util import Extractor
+ from helper.tfidf_helper import get_all_similar_docs_above_threshold
+-from helper.util import (get_page, transform_from_normalized_coords_object,
+-                         transform_to_normalized)
++from helper.util import (
++    get_page,
++    transform_from_normalized_coords_object,
++    transform_to_normalized,
++)
+ from logger import get_logger
+ from models import FellowKVRegexes, FellowKVSourceFile
+ 
+- afbb70799e1d9e813f2aec2670b332560a92935e: Fix code style issues with Black
+Code changes:
+@@ -9,20 +9,28 @@
+ from helper.ai.ai_invoice import transform_fields_to_dict
+ from helper.ai.ocr_process_util import generate_hard_regex_from_string
+ from helper.extract_util import Extractor
+-from helper.plugin_export_util import (create_pending_tickets,
+-                                       create_rules_in_db,
+-                                       create_table_column_rules_in_db,
+-                                       create_table_rules_in_db,
+-                                       transform_to_rules,
+-                                       transform_to_table_rules,
+-                                       update_table_column_rule_patterns)
++from helper.plugin_export_util import (
++    create_pending_tickets,
++    create_rules_in_db,
++    create_table_column_rules_in_db,
++    create_table_rules_in_db,
++    transform_to_rules,
++    transform_to_table_rules,
++    update_table_column_rule_patterns,
++)
+ from helper.plugin_extraction_util import delete_table_rules_from_db
+ from helper.rule_weight.rule_weight import update_weights
+ from helper.table_extractors.table_draft_helper import get_table_draft
+ from helper.tfidf_helper import handle_tfidf_v4_simple
+ from logger import get_logger
+-from models import (FellowKVRegexes, FellowKVRule, FellowKVTableColumnRule,
+-                    FellowKVTableRule, TableFormattingRules, TfidfDocs)
++from models import (
++    FellowKVRegexes,
++    FellowKVRule,
++    FellowKVTableColumnRule,
++    FellowKVTableRule,
++    TableFormattingRules,
++    TfidfDocs,
++)
+ 
+ logger = get_logger("fellowkv-export")
+ 
+- 3303688289d41a57d024c155b8b8da46b6ab9aad: Fix code style issues with Black
+Code changes:
+@@ -168,7 +168,9 @@ def get_similar_documents(threshold, record: TfidfDocs):  # , auto_types=[]
+ 
+     tfidf_query = tfidf_query.replace("\n", "")
+ 
+-    df1 = get_dataframe_from_query(os.getenv("SQLALCHEMY_DATABASE_AURI"), tfidf_query)  # , index_col='id')
++    df1 = get_dataframe_from_query(
++        os.getenv("SQLALCHEMY_DATABASE_AURI"), tfidf_query
++    )  # , index_col='id')
+     logger.info(f"Total TFIDF records found = {len(df1)}")
+     # getting text and cleaning it
+     df1["clean_text"] = df1["doc_text"].pipe(hero.clean)
+@@ -279,7 +281,9 @@ def get_similar_documents_simple(document, threshold, source_record_id):
+         + where_clause
+         + ") order by sort_order asc, created_on desc"
+     )
+-    df1 = get_dataframe_from_query(os.getenv("SQLALCHEMY_DATABASE_AURI"), tfidf_query)  # , index_col='id')
++    df1 = get_dataframe_from_query(
++        os.getenv("SQLALCHEMY_DATABASE_AURI"), tfidf_query
++    )  # , index_col='id')
+ 
+     # getting text and cleaning it
+     df1["clean_text"] = df1["doc_text"].pipe(hero.clean)
+@@ -593,9 +597,9 @@ def handle_tfidf_v4_simple(document):
+     # document["filter_values"] = [document["tfidf_id"]]
+     return document
+ 
++
+ def get_dataframe_from_query(connection_string, query):
+     connection = create_engine(connection_string)
+     # df1 = pd.read_sql(sql=tfidf_query, con=os.getenv("SQLALCHEMY_DATABASE_AURI"))
+-    df = pd.read_sql_query(con=connection.connect(), 
+-                                  sql=sql_text(query))
+-    return df
+\ No newline at end of file
++    df = pd.read_sql_query(con=connection.connect(), sql=sql_text(query))
++    return df
+- d3b03b74e7776d49ea51b1fea0d0b5b3d5f992f6: Fix code style issues with Black
+Code changes:
+@@ -168,7 +168,9 @@ def get_similar_documents(threshold, record: TfidfDocs):  # , auto_types=[]
+ 
+     tfidf_query = tfidf_query.replace("\n", "")
+ 
+-    df1 = get_dataframe_from_query(os.getenv("SQLALCHEMY_DATABASE_AURI"), tfidf_query)  # , index_col='id')
++    df1 = get_dataframe_from_query(
++        os.getenv("SQLALCHEMY_DATABASE_AURI"), tfidf_query
++    )  # , index_col='id')
+     logger.info(f"Total TFIDF records found = {len(df1)}")
+     # getting text and cleaning it
+     df1["clean_text"] = df1["doc_text"].pipe(hero.clean)
+@@ -279,7 +281,9 @@ def get_similar_documents_simple(document, threshold, source_record_id):
+         + where_clause
+         + ") order by sort_order asc, created_on desc"
+     )
+-    df1 = get_dataframe_from_query(os.getenv("SQLALCHEMY_DATABASE_AURI"), tfidf_query)  # , index_col='id')
++    df1 = get_dataframe_from_query(
++        os.getenv("SQLALCHEMY_DATABASE_AURI"), tfidf_query
++    )  # , index_col='id')
+ 
+     # getting text and cleaning it
+     df1["clean_text"] = df1["doc_text"].pipe(hero.clean)
+@@ -593,9 +597,9 @@ def handle_tfidf_v4_simple(document):
+     # document["filter_values"] = [document["tfidf_id"]]
+     return document
+ 
++
+ def get_dataframe_from_query(connection_string, query):
+     connection = create_engine(connection_string)
+     # df1 = pd.read_sql(sql=tfidf_query, con=os.getenv("SQLALCHEMY_DATABASE_AURI"))
+-    df = pd.read_sql_query(con=connection.connect(), 
+-                                  sql=sql_text(query))
+-    return df
+\ No newline at end of file
++    df = pd.read_sql_query(con=connection.connect(), sql=sql_text(query))
++    return df
+- 7d4ec65e29f34c365249f8317fe6848c19fb8e13: Fix code style issues with Black
+Code changes:
+@@ -14,21 +14,29 @@
+ from sqlalchemy.sql.expression import text
+ 
+ import constants
++
+ # from fellow2kv.extension import db, storagemanager
+-from constants import (AMOUNT_STANDARD_FIELDS, INVOICE_MAPPING,
+-                       MAX_FULL_TAX_RATE, MIN_FULL_TAX_RATE,
+-                       REVERSE_INVOICE_MAPPING)
++from constants import (
++    AMOUNT_STANDARD_FIELDS,
++    INVOICE_MAPPING,
++    MAX_FULL_TAX_RATE,
++    MIN_FULL_TAX_RATE,
++    REVERSE_INVOICE_MAPPING,
++)
+ from fellow2kv.extension import db, storagemanager
+ from helper import db_helper as dbh
+ from helper import generic_data_vault_helper as gdvh
+ from helper import util as hutil
+-from helper.ai.ai_invoice import (transform_dict_to_array,
+-                                  transform_fields_to_dict)
++from helper.ai.ai_invoice import transform_dict_to_array, transform_fields_to_dict
++
+ # from helper.document_extraction import model_extraction_helper as meh
+ from helper.extract_util import Extractor
+ from helper.tfidf_helper import get_all_similar_docs_above_threshold
+-from helper.util import (get_page, transform_from_normalized_coords_object,
+-                         transform_to_normalized)
++from helper.util import (
++    get_page,
++    transform_from_normalized_coords_object,
++    transform_to_normalized,
++)
+ from logger import get_logger
+ from models import FellowKVRegexes, FellowKVSourceFile
+ 
+- d6779780bc6cfe3d147be2856742976a17e337d9: Fix code style issues with Black
+Code changes:
+@@ -9,18 +9,22 @@
+ import pytz
+ import requests
+ from flask_dance.consumer.storage.sqla import OAuthConsumerMixin
+-#from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
++
++# from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
+ from itsdangerous import BadSignature, SignatureExpired
+ from itsdangerous import URLSafeTimedSerializer as Serializer
++
+ # import URLSafeTimedSerializer as Serializer
+ from sqlalchemy.sql import func
+ from sqlalchemy.sql.functions import current_user
+ from werkzeug.security import check_password_hash, generate_password_hash
+ 
+ import fellow2kv.config as app_config
+ from fellow2kv.config import AUTH_SERVICE_URL
++
+ # from fellow2kv.app_initializer import db, ma
+ from fellow2kv.extension import db
++
+ # from fellow2kv.extension import db, ma
+ from logger import get_logger
+ 

@@ -1,0 +1,13 @@
+{
+    "author": null,
+    "week": "2023-W18",
+    "total_commits": 1,
+    "author_image": "https://avatars.githubusercontent.com/u/117294423?v=4",
+    "commits": [
+        {
+            "sha": "f08f407a197f13390279cd2013dada0dbc90f749",
+            "message": "updated logtail",
+            "code_changes": "@@ -208,7 +208,7 @@ def __get_ocr_file(\n             )\n             urllib.request.urlretrieve(durl, f.name)\n             f.seek(0)\n-        logger.customer(\"OCRed Document saved successfully\")\n+        logger.customer(\"OCR completed successfully. The new OCRed document has been saved at: \" + destination)\n     else:\n         if with_cleaning:\n             return __get_ocr_file("
+        }
+    ]
+}

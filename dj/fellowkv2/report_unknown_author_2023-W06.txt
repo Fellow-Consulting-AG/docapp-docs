@@ -1,0 +1,59 @@
+None: 3 commits for week 2023-W06
+Author image: https://avatars.githubusercontent.com/u/83513548?v=4
+- 4a9e9f6a9a203859ef33b02a3ea1182f3e7e8030: fd
+Code changes:
+@@ -153,17 +153,27 @@ def post(self):
+ class DocLayoutTemplateR(Resource):
+     @multi_auth.login_required
+     def get(self, id):
+-        user = multi_auth.current_user()
++        user: UserAuthentication = multi_auth.current_user()
+         query = f"""select
+                 dlt.id, 
+                 dlt.doc_type_key, 
+                 dlt.layout_json, 
+                 dlt.title, 
+                 dlt.sub_doc_type_key, 
+                 dlt.org_id, 
+-                dt.extraction_type
++                coalesce(odt.extraction_type, dt.extraction_type) as extraction_type
+             from
+-                document_layout_template dlt left join document_type dt on dlt.doc_type_key = dt.document_key
++                document_layout_template dlt 
++            left join 
++                document_type dt 
++                on 
++                dlt.doc_type_key = dt.document_key
++            left join
++                organisation_document_type odt
++                on
++                odt.org_id = '{user.get_org_id()}'
++                and odt.document_type_id = dt.id
++                and odt.is_deleted = false
+             where
+                 dlt.id = '{id}'
+                 and dlt.is_deleted = False
+- fd518ce8836aba4e2bb94d330ef65b8a8db30f2e: fd
+Code changes:
+@@ -0,0 +1,9 @@
++def execute_query(db, query):
++    query = query.replace("\n", "")
++    results = db.engine.execute(query)
++    results_list = [dict(r) for r in results]
++    return results_list
++
++def get_single_result(db, query):
++    results_list = execute_query(db, query)
++    return results_list[0] if results_list else None
+\ No newline at end of file
+- c0d551383bb61ed9d6b6e68e71f8a99c94b24986: fd
+Code changes:
+@@ -1582,7 +1582,7 @@ def process_tax_pairs(fields, source_locale):
+                 if (
+                     additional_amount_value
+                     and additional_amount_value != 0
+-                    and additional_amount["score"] > 0.76
++                    and additional_amount["score"] > 0.76 # this score can change in future
+                 ):
+                     fields_dict[additional_amount_key] = additional_amount
+                     running_total_net_amount = (

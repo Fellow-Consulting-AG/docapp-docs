@@ -1,0 +1,401 @@
+Lint Action: 16 commits for week 2023-W11
+Author image: https://avatars.githubusercontent.com/u/59283862?v=4
+- 61e249ce18532d12898845a35ab70fec365b0a4f: Fix code style issues with Black
+Code changes:
+@@ -4,8 +4,10 @@
+ 
+ from shapely.geometry import Polygon
+ 
+-from helper.form_extractor.fill_ratio import (get_field_fill_ratio,
+-                                              get_opencv_image_from_url)
++from helper.form_extractor.fill_ratio import (
++    get_field_fill_ratio,
++    get_opencv_image_from_url,
++)
+ from helper.util import clean_amount_fields, clean_string
+ 
+ sys.path.append(".")
+@@ -15,9 +17,9 @@
+ 
+ import fellow2kv.config as config
+ from fellow2kv.extension import storagemanager_doc2
+-from helper.common_regex import (CURRENCY_REGEX,
+-                                 NUMERIC_AND_AMOUNT_SEPARATORS_REGEX)
++from helper.common_regex import CURRENCY_REGEX, NUMERIC_AND_AMOUNT_SEPARATORS_REGEX
+ from helper.extract_util_errors import InvalidDirectionError, UndifiendError
++
+ # from fellow2kv.extension storagemanager_doc2
+ from logger import get_logger
+ 
+@@ -1327,9 +1329,8 @@ def is_multi_line(tokens):
+     return True
+ 
+ 
+-
+ def remove_duplicate_tokens(tokens):
+-    entries_to_remove = ('startIndex', 'endIndex', 'customStartIndex', 'customEndIndex')
++    entries_to_remove = ("startIndex", "endIndex", "customStartIndex", "customEndIndex")
+     filtered_tokens = []
+     seen = set()
+     for token in tokens:
+- 3a2e005c1477f0bf34594cb172366489bb89e92c: Fix code style issues with Black
+Code changes:
+@@ -182,7 +182,7 @@ def __classify_document__(
+ 
+         if not doc_type_csn.value in active_doc_types:
+             doc_type_csn = None
+-        
++
+         if doc_type_csn:
+             resp_json["flow_meta"].append(
+                 {
+- 2863b8799c027cbc713daae559ababdb3996a338: Fix code style issues with Black
+Code changes:
+@@ -182,7 +182,7 @@ def __classify_document__(
+ 
+         if not doc_type_csn.value in active_doc_types:
+             doc_type_csn = None
+-        
++
+         if doc_type_csn:
+             resp_json["flow_meta"].append(
+                 {
+- 10d084b1231ab14e9ad57bf4e464b69390e0b6d4: Fix code style issues with Black
+Code changes:
+@@ -203,7 +203,10 @@ def get_highest_priority_label(model_labels, result):
+         # first label returned, if there is no entry for the classified label found
+         result_page = result_pages_all[0]
+         cr = ClassificationResult(
+-            result_page["classification"], result_page["page"], result_page["prob"], f"First label"
++            result_page["classification"],
++            result_page["page"],
++            result_page["prob"],
++            f"First label",
+         )
+         return cr
+ 
+- 824a4190721f21bb9462716dd23a4d48482edc88: Fix code style issues with Black
+Code changes:
+@@ -203,7 +203,10 @@ def get_highest_priority_label(model_labels, result):
+         # first label returned, if there is no entry for the classified label found
+         result_page = result_pages_all[0]
+         cr = ClassificationResult(
+-            result_page["classification"], result_page["page"], result_page["prob"], f"First label"
++            result_page["classification"],
++            result_page["page"],
++            result_page["prob"],
++            f"First label",
+         )
+         return cr
+ 
+- 50dfc489aa0b3f182be1b64e0a75f521e2c75f2f: Fix code style issues with Black
+Code changes:
+@@ -4,8 +4,9 @@
+ from authenticator import UserAuthentication
+ from constants import CLASSIFICATION_MODELS
+ from fellow2kv.extension import db
+-from helper.custom_classifier_v2.iclassifier_model_processor import \
+-    IClassifierModelProcessor
++from helper.custom_classifier_v2.iclassifier_model_processor import (
++    IClassifierModelProcessor,
++)
+ from util import sync_wrapper
+ 
+ from . import common, mlp_classifier_processor, service_classifier_processor
+- ab4e845cd1f5ff78f658168dbeb1b6ee16b170cc: Fix code style issues with Black
+Code changes:
+@@ -9,14 +9,21 @@
+ from fellow2kv.extension import db, storagemanager
+ from helpdesk import create_new_customer, create_ticket
+ from helper import doc2_util
+-from helper.ai.ai_ocr import (generate_hard_regex_from_string,
+-                              generate_regex_from_string)
+-from helper.util import (get_page, transform_from_normalized,
+-                         transform_from_normalized_coords_object)
++from helper.ai.ai_ocr import generate_hard_regex_from_string, generate_regex_from_string
++from helper.util import (
++    get_page,
++    transform_from_normalized,
++    transform_from_normalized_coords_object,
++)
+ from logger import get_logger
+-from models import (DocOriginRules, FellowKVRule, FellowKVRuleUser,
+-                    FellowKVSourceFile, FellowKVTableColumnRule,
+-                    FellowKVTableRule)
++from models import (
++    DocOriginRules,
++    FellowKVRule,
++    FellowKVRuleUser,
++    FellowKVSourceFile,
++    FellowKVTableColumnRule,
++    FellowKVTableRule,
++)
+ from models import TableFormattingRules as TFR
+ from models import TfidfDocs
+ 
+- d305ded41712f83cdb32dc1b6c210cf2cf3b0079: Fix code style issues with Black
+Code changes:
+@@ -5,7 +5,9 @@
+ from authenticator import UserAuthentication
+ from helper.custom_classifier_v2 import common
+ from helper.document_classifier.document_classifier import (
+-    extract_ocr_data, get_first_page_text)
++    extract_ocr_data,
++    get_first_page_text,
++)
+ from helper.pdf import get_page_count
+ from helper.util import str_to_bool
+ 
+- 3b4ee651194b3984e23e273e61333676390d85de: Fix code style issues with Black
+Code changes:
+@@ -4,8 +4,9 @@
+ from authenticator import UserAuthentication
+ from constants import CLASSIFICATION_MODELS
+ from fellow2kv.extension import db
+-from helper.custom_classifier_v2.iclassifier_model_processor import \
+-    IClassifierModelProcessor
++from helper.custom_classifier_v2.iclassifier_model_processor import (
++    IClassifierModelProcessor,
++)
+ from util import sync_wrapper
+ 
+ from . import common, mlp_classifier_processor, service_classifier_processor
+- 6a0aedb8b6ad41e685d6fc357be0ec919491c54f: Fix code style issues with Black
+Code changes:
+@@ -4,8 +4,9 @@
+ from authenticator import UserAuthentication
+ from constants import CLASSIFICATION_MODELS
+ from fellow2kv.extension import db
+-from helper.custom_classifier_v2.iclassifier_model_processor import \
+-    IClassifierModelProcessor
++from helper.custom_classifier_v2.iclassifier_model_processor import (
++    IClassifierModelProcessor,
++)
+ from util import sync_wrapper
+ 
+ from . import common, mlp_classifier_processor, service_classifier_processor
+- b1f20c7767004c65e302eb5c6ebc5884bc19c9f5: Fix code style issues with Black
+Code changes:
+@@ -52,42 +52,49 @@ def verify_token(token):
+             res = UserAuthentication.verify_auth_token(token)
+             return res
+ 
+-        from namespaces.block_table_extract import \
+-            namespace as namespace_block_table_extract
++        from namespaces.block_table_extract import (
++            namespace as namespace_block_table_extract,
++        )
+         from namespaces.cache import namespace as namespace_cache
+-        from namespaces.custom_classifier import \
+-            namespace as namespace_custom_classifier
+-        from namespaces.custom_classifier_v2 import \
+-            namespace as namespace_custom_classifier_v2
+-        from namespaces.custom_models.custom_model import \
+-            namespace as namespace_custom_model_v2
+-        from namespaces.custom_models.custom_model_label import \
+-            namespace as namespace_custom_model_labels_v2
++        from namespaces.custom_classifier import (
++            namespace as namespace_custom_classifier,
++        )
++        from namespaces.custom_classifier_v2 import (
++            namespace as namespace_custom_classifier_v2,
++        )
++        from namespaces.custom_models.custom_model import (
++            namespace as namespace_custom_model_v2,
++        )
++        from namespaces.custom_models.custom_model_label import (
++            namespace as namespace_custom_model_labels_v2,
++        )
++
+         # from namespaces.db_import_export import namespace as namespace_db
+         from namespaces.doc2_v2 import namespace as namespace_doc2_v2
+-        from namespaces.document_and_fields import \
+-            namespace as namespace_document_and_fields
+-        from namespaces.document_layout_template import \
+-            namespace as namespace_document_layout_template
+-        from namespaces.document_table import \
+-            namespace as namespace_document_table
++        from namespaces.document_and_fields import (
++            namespace as namespace_document_and_fields,
++        )
++        from namespaces.document_layout_template import (
++            namespace as namespace_document_layout_template,
++        )
++        from namespaces.document_table import namespace as namespace_document_table
+         from namespaces.export import namespace as namespace_export
+         from namespaces.extract import namespace as namespace_extract
+         from namespaces.health import namespace as namespace_health
+         from namespaces.internal import namespace as namespace_internal
+-        from namespaces.list_of_values.list_of_values import \
+-            namespace as namespace_list_of_values
++        from namespaces.list_of_values.list_of_values import (
++            namespace as namespace_list_of_values,
++        )
+         from namespaces.migration import namespace as namespace_migration
+-        from namespaces.ocr_configurations import \
+-            namespace as namespace_ocr_configurations
++        from namespaces.ocr_configurations import (
++            namespace as namespace_ocr_configurations,
++        )
+         from namespaces.pdf import namespace as namespace_pdf
+         from namespaces.preferences import namespace as preferences
+-        from namespaces.sub_document_type import \
+-            namespace as namespace_sub_document_type
+-        from namespaces.table_extract_v3 import \
+-            namespace as namespace_table_extract_v3
+-
+-        
++        from namespaces.sub_document_type import (
++            namespace as namespace_sub_document_type,
++        )
++        from namespaces.table_extract_v3 import namespace as namespace_table_extract_v3
+ 
+         api.add_namespace(namespace_extract, path="/extract")
+         api.add_namespace(namespace_export, path="/export")
+@@ -121,7 +128,6 @@ def verify_token(token):
+         if config.IS_DEBUG:
+             api.add_namespace(namespace_internal, path="/internal")
+ 
+-
+         from fellow2kv.cli.ml import ml_blueprint
+ 
+         app.register_blueprint(ml_blueprint)
+- 32365653aa375b2a507a341e99b79cb7a82ca5ae: Fix code style issues with Black
+Code changes:
+@@ -7,16 +7,23 @@
+ from typing import Any, Iterable
+ 
+ from pdfminer.high_level import extract_pages
+-from pdfminer.layout import (LAParams, LTAnno, LTChar, LTFigure, LTPage,
+-                             LTTextBox, LTTextLine, LTTextLineHorizontal)
++from pdfminer.layout import (
++    LAParams,
++    LTAnno,
++    LTChar,
++    LTFigure,
++    LTPage,
++    LTTextBox,
++    LTTextLine,
++    LTTextLineHorizontal,
++)
+ from shapely.geometry import Polygon
+ 
+ from fellow2kv.extension import storagemanager_doc2 as storage_manager_doc2
+ from helper.ai.ai_ocr import check_for_existing_line
+ from helper.ai.google_ocr import GOOGLE_OCR
+ from helper.extract_util import Extractor
+-from helper.table_extractors.table_formatter_v3 import \
+-    get_intersection_area_percent
++from helper.table_extractors.table_formatter_v3 import get_intersection_area_percent
+ 
+ pattern = re.compile("^\(cid:\d+\)+$")
+ 
+- ffb0b76c85928c146b986b2569c8ec0a2136de25: Fix code style issues with Black
+Code changes:
+@@ -66,7 +66,7 @@ def extract_ocr_data_and_images(
+         return document
+ 
+     def transform_ai_response(ai_resp_json):
+-        #document = {"text": ""}
++        # document = {"text": ""}
+         document = {}
+         if not ai_resp_json:
+             return document
+@@ -193,7 +193,7 @@ def transform_ai_response(ai_resp_json):
+                     pageStartIndex = 0
+                     pageEndIndex = 0
+ 
+-            #document["text"] += hocr_content
++            # document["text"] += hocr_content
+         document["pages"] = pages
+ 
+         return document
+- 4cff7462c9305dd2e86c923af3431f9ae208d9e9: Fix code style issues with Black
+Code changes:
+@@ -9,14 +9,23 @@
+ from fellow2kv.extension import db, storagemanager
+ from helpdesk import create_new_customer, create_ticket
+ from helper import doc2_util
+-from helper.ai.ai_ocr import (generate_hard_regex_from_string,
+-                              generate_regex_from_string)
+-from helper.util import (get_page, transform_from_normalized,
+-                         transform_from_normalized_coords_object)
++from helper.ai.ai_ocr import generate_hard_regex_from_string, generate_regex_from_string
++from helper.util import (
++    get_page,
++    transform_from_normalized,
++    transform_from_normalized_coords_object,
++)
+ from logger import get_logger
+-from models import (DocOriginRules, FellowKVRule, FellowKVRuleUser,
+-                    FellowKVSourceFile, FellowKVTableColumnRule,
+-                    FellowKVTableRule, TableFormattingRules, TfidfDocs)
++from models import (
++    DocOriginRules,
++    FellowKVRule,
++    FellowKVRuleUser,
++    FellowKVSourceFile,
++    FellowKVTableColumnRule,
++    FellowKVTableRule,
++    TableFormattingRules,
++    TfidfDocs,
++)
+ 
+ logger = get_logger("plugin-export-util")
+ 
+@@ -1344,7 +1353,7 @@ def get_table_rules_for_export_v3(extractor, table):
+         if len(document.get("pages")) == 1:
+             is_single_page = True
+         elif pageNumber >= len(document.get("pages")) - 1:
+-            is_last_page = True # as sometimes the final page is the second last
++            is_last_page = True  # as sometimes the final page is the second last
+         elif pageNumber == 1:
+             is_first_page = True
+         elif pageNumber < len(document.get("pages")):
+- 86a03ff6a4fb366dfe32f9b1496683b4325762f8: Fix code style issues with Black
+Code changes:
+@@ -4,8 +4,10 @@
+ 
+ from shapely.geometry import Polygon
+ 
+-from helper.form_extractor.fill_ratio import (get_field_fill_ratio,
+-                                              get_opencv_image_from_url)
++from helper.form_extractor.fill_ratio import (
++    get_field_fill_ratio,
++    get_opencv_image_from_url,
++)
+ from helper.util import clean_amount_fields, clean_string
+ 
+ sys.path.append(".")
+@@ -16,9 +18,9 @@
+ 
+ import fellow2kv.config as config
+ from fellow2kv.extension import storagemanager_doc2
+-from helper.common_regex import (CURRENCY_REGEX,
+-                                 NUMERIC_AND_AMOUNT_SEPARATORS_REGEX)
++from helper.common_regex import CURRENCY_REGEX, NUMERIC_AND_AMOUNT_SEPARATORS_REGEX
+ from helper.extract_util_errors import InvalidDirectionError, UndifiendError
++
+ # from fellow2kv.extension storagemanager_doc2
+ from logger import get_logger
+ 
+@@ -879,7 +881,7 @@ def custom_lines_within_bounds(self, custom_lines, coordinates):
+         new_custom_lines = []
+         for line in custom_lines:
+             if line["y1"] > coordinates["y0"]:
+-                if not new_custom_lines and line['normalizedX0'] > 0.5:
++                if not new_custom_lines and line["normalizedX0"] > 0.5:
+                     continue
+                     # table headers dont start from middle of the pagel so avoid making bad patterns.
+                 coords = None
+- ff4ce451f2d724a22617e876865b11730a554741: Fix code style issues with Black
+Code changes:
+@@ -67,7 +67,7 @@ def extract_ocr_data_and_images(
+ 
+     def transform_ai_response(ai_resp_json):
+         document = {"text": ""}
+-        #document = {}
++        # document = {}
+         if not ai_resp_json:
+             return document
+ 

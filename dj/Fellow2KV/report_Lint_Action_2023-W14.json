@@ -1,0 +1,13 @@
+{
+    "author": "Lint Action",
+    "week": "2023-W14",
+    "total_commits": 1,
+    "author_image": "https://avatars.githubusercontent.com/u/59283862?v=4",
+    "commits": [
+        {
+            "sha": "084d2339a33933745e6e4eb0e0c79177e976046a",
+            "message": "Fix code style issues with Black",
+            "code_changes": "@@ -49,15 +49,17 @@ def populate_custom_lines(document):\n                 )\n             )\n \n-\n             token_max_height = float(\n                 gdvh.get_float_value(\n                     db, \"TOKEN_MAX_HEIGHT\", document.get(\"org_id\", None), 0.05\n                 )\n             )\n \n             page[\"tokens\"] = [\n-                t for t in page[\"tokens\"] if abs(t.get(\"normalizedY1\", 0) - t.get(\"normalizedY0\", 0)) < token_max_height\n+                t\n+                for t in page[\"tokens\"]\n+                if abs(t.get(\"normalizedY1\", 0) - t.get(\"normalizedY0\", 0))\n+                < token_max_height\n             ]\n \n             first_tokens = ["
+        }
+    ]
+}

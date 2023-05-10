@@ -1,0 +1,95 @@
+Lint Action: 3 commits for week 2023-W12
+Author image: https://avatars.githubusercontent.com/u/59283862?v=4
+- bf85fd7aad4423c9f22872385a04a0867cd108df: Fix code style issues with Black
+Code changes:
+@@ -159,7 +159,6 @@ def convert_to_higher_dpi(file_path: str, dpi: int):
+ 
+ @sync_wrapper(module="process")
+ def preprocess_document(file_path: str, deskew=False, high_dpi=False):
+-
+     if not deskew and not high_dpi:
+         return
+ 
+@@ -174,7 +173,6 @@ def preprocess_document(file_path: str, deskew=False, high_dpi=False):
+     jpegopt = {"quality": 100, "progressive": True}
+ 
+     with tempfile.TemporaryDirectory() as tmp_dir:
+-
+         images = convert_from_path(
+             file_path,
+             dpi=dpi,
+@@ -184,7 +182,6 @@ def preprocess_document(file_path: str, deskew=False, high_dpi=False):
+             paths_only=True,
+         )
+ 
+-
+         low_images = convert_from_path(
+             file_path,
+             output_folder=tmp_dir,
+@@ -196,7 +193,6 @@ def preprocess_document(file_path: str, deskew=False, high_dpi=False):
+ 
+         if images:
+             for image in images:
+-
+                 skew_image = cv2.imread(image)
+ 
+                 height, width, _ = skew_image.shape
+- 57261a29a1bccf110e27fd3e1aede38021b56210: Fix code style issues with Black
+Code changes:
+@@ -326,7 +326,9 @@ def preprocess_and_ocr_document(
+     deskew = gdvh.get_bool_value(db, "DESKEW_DOCUMENT", org_id, False)
+     disable_ocr_server = gdvh.get_bool_value(db, "DISABLE_OCR_SERVER", org_id, False)
+     try:
+-        pdf_helper.preprocess_document(output_path, deskew, use_high_dpi, disable_ocr_server)
++        pdf_helper.preprocess_document(
++            output_path, deskew, use_high_dpi, disable_ocr_server
++        )
+     except Exception as ex:
+         logger.error(ex)
+         pass
+- 2032527e27ed64758d6331a35903f1eb22103145: Fix code style issues with Black
+Code changes:
+@@ -15,8 +15,7 @@
+ import constants
+ import helper.ocr as ocr_helper
+ from authenticator import UserAuthentication
+-from fellow2kv.extension import (api, db, multi_auth, storagemanager,
+-                                 storagemanager_doc2)
++from fellow2kv.extension import api, db, multi_auth, storagemanager, storagemanager_doc2
+ from helper import doc_type_helper as dth
+ from helper import generic_data_vault_helper as gdvh
+ from helper import pdf as pdf_helper
+@@ -25,8 +24,11 @@
+ from helper.document_classifier import document_classifier
+ from helper.document_extraction import document_extraction_helper as deh
+ from helper.extract_util import Extractor
+-from helper.util import (str_to_bool, transform_from_normalized_coords_object,
+-                         transform_to_normalized)
++from helper.util import (
++    str_to_bool,
++    transform_from_normalized_coords_object,
++    transform_to_normalized,
++)
+ from logger import get_logger
+ from util import sync_wrapper
+ 
+@@ -185,12 +187,16 @@ def post(self):
+             with tempfile.NamedTemporaryFile(suffix=".pdf") as f:
+                 storagemanager_doc2.download_file_on_stream(f, doc_path)
+                 f.seek(0)
+-                disable_ocr_server = gdvh.get_bool_value(db, "DISABLE_OCR_SERVER", org_id, False)
++                disable_ocr_server = gdvh.get_bool_value(
++                    db, "DISABLE_OCR_SERVER", org_id, False
++                )
+                 if (
+                     extract_tables
+                     and (
+-                        disable_ocr_server or # so no need for other checks, it will only deskew and not send to ocrserver
+-                        not ocr_helper.is_doc_ocr(f.name)
++                        disable_ocr_server
++                        or not ocr_helper.is_doc_ocr(  # so no need for other checks, it will only deskew and not send to ocrserver
++                            f.name
++                        )
+                         or (
+                             force_ocr and not ocr_helper.is_ocred_by_doc2(f.name)
+                         )  # no point in OCR again if already done with doc2

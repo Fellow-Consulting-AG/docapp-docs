@@ -1,0 +1,50 @@
+Syed Amier Haider Shah: 3 commits for week 2023-W06
+Author image: https://avatars.githubusercontent.com/u/2101825?v=4
+- f3846fd545eaa3dc1e36a0305b6ea0bb197fcf32: Merge pull request #745 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -0,0 +1,9 @@
++def execute_query(db, query):
++    query = query.replace("\n", "")
++    results = db.engine.execute(query)
++    results_list = [dict(r) for r in results]
++    return results_list
++
++def get_single_result(db, query):
++    results_list = execute_query(db, query)
++    return results_list[0] if results_list else None
+\ No newline at end of file
+- b8e6c630afc8ff4a21492e8bbb16073e39b906d0: Merge pull request #744 from Fellow-Consulting-AG/dev
+
+fix
+Code changes:
+@@ -0,0 +1,9 @@
++def execute_query(db, query):
++    query = query.replace("\n", "")
++    results = db.engine.execute(query)
++    results_list = [dict(r) for r in results]
++    return results_list
++
++def get_single_result(db, query):
++    results_list = execute_query(db, query)
++    return results_list[0] if results_list else None
+\ No newline at end of file
+- f09aa67f9dfa158ca5388bd6776248fca0d392f2: fix
+Code changes:
+@@ -282,10 +282,11 @@ def __classify_document__(
+     if extraction_type == EXTRACTION_TYPES.FIX_COORDINATES:
+         document["filter_values"] = [f"{str(document['doc_type'])}_{str(sub_doc_type)}"]
+ 
+-    if "tfidf_locale" in document and document["tfidf_locale"]:
+-        rel_locale = locale_helper.find_related_locale(document["tfidf_locale"])
+-    else:
+-        rel_locale = locale_helper.find_related_locale(doc_locale_csn.value)
++    locale_to_check = doc_locale_csn.value
++    if not doc_locale and "tfidf_locale" in document and document["tfidf_locale"]:
++        locale_to_check = document["tfidf_locale"]
++
++    rel_locale = locale_helper.find_related_locale(locale_to_check)
+     if not rel_locale[:5] == doc_locale_csn.value[:5]:
+         doc_locale_csn = ClassificationResult("related", rel_locale, 0)
+ 

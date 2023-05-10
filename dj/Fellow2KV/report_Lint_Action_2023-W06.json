@@ -1,0 +1,13 @@
+{
+    "author": "Lint Action",
+    "week": "2023-W06",
+    "total_commits": 1,
+    "author_image": "https://avatars.githubusercontent.com/u/59283862?v=4",
+    "commits": [
+        {
+            "sha": "da662e611f99b3591e30f80be5bd331b96e036ff",
+            "message": "Fix code style issues with Black",
+            "code_changes": "@@ -4,6 +4,7 @@ def execute_query(db, query):\n     results_list = [dict(r) for r in results]\n     return results_list\n \n+\n def get_single_result(db, query):\n     results_list = execute_query(db, query)\n-    return results_list[0] if results_list else None\n\\ No newline at end of file\n+    return results_list[0] if results_list else None"
+        }
+    ]
+}

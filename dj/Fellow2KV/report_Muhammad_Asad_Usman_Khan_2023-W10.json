@@ -1,0 +1,48 @@
+{
+    "author": "Muhammad Asad Usman Khan",
+    "week": "2023-W10",
+    "total_commits": 8,
+    "author_image": "https://avatars.githubusercontent.com/u/83513548?v=4",
+    "commits": [
+        {
+            "sha": "ae5d1fafa3aa97ecbbc7586d5f9eba0f0990539c",
+            "message": "Merge branch 'prod' into sandbox",
+            "code_changes": "@@ -27,6 +27,7 @@ class AI_REQUEST_TYPE:\n ]\n \n \n+\n AMOUNT_STANDARD_FIELDS = [\n     \"NET_AMOUNT\",\n     \"TAX_AMOUNT\","
+        },
+        {
+            "sha": "ba45ef856d7ce2b1021535a499b99d9250de0cb2",
+            "message": "Merge pull request #804 from Fellow-Consulting-AG/stage\n\nStage",
+            "code_changes": "@@ -125,6 +125,7 @@ class ClassificationMethods:\n USE_RULES_EXTRACTION = \"USE_RULES_EXTRACTION\"\n USE_MODEL_EXTRACTION = \"USE_MODEL_EXTRACTION\"\n USE_MODEL_ONLY_FOR_CLASSIFICATION = \"USE_MODEL_ONLY_FOR_CLASSIFICATION\"\n+CLASSIFY_ONLY = \"CLASSIFY_ONLY\"\n \n \n class CLASSIFICATION_MODELS:"
+        },
+        {
+            "sha": "b4294661e20fddd3b2f5c557adeeea531793ea6c",
+            "message": "Merge pull request #803 from Fellow-Consulting-AG/dev\n\nfd",
+            "code_changes": "@@ -218,15 +218,14 @@ def post(self):\n                     else:\n                         cc_res = classifier.get_classification_results(user, f.name)\n \n-\n                     classify_only = gdvh.get_bool_value(\n                         db, constants.CLASSIFY_ONLY, org_id, False\n                     )\n                     if cc_res and classify_only:\n                         cc_res[\"doc_type\"] = None\n                         cc_res[\"sub_doc_type\"] = None\n-                        for page in cc_res['pages']:\n-                            page['label_doc_type'] = None\n+                        for page in cc_res[\"pages\"]:\n+                            page[\"label_doc_type\"] = None\n \n                     resp_json[\"classification\"] = cc_res\n "
+        },
+        {
+            "sha": "5035869b7ac350a2ba329926b4aab8382d4b3151",
+            "message": "Merge pull request #802 from Fellow-Consulting-AG/dev\n\nfd",
+            "code_changes": "@@ -125,6 +125,7 @@ class ClassificationMethods:\n USE_RULES_EXTRACTION = \"USE_RULES_EXTRACTION\"\n USE_MODEL_EXTRACTION = \"USE_MODEL_EXTRACTION\"\n USE_MODEL_ONLY_FOR_CLASSIFICATION = \"USE_MODEL_ONLY_FOR_CLASSIFICATION\"\n+CLASSIFY_ONLY = \"CLASSIFY_ONLY\"\n \n \n class CLASSIFICATION_MODELS:"
+        },
+        {
+            "sha": "cfdfd068f7753b414cf52c40fd82289331e8ab78",
+            "message": "fd",
+            "code_changes": "@@ -213,7 +213,19 @@ def post(self):\n \n                     else:\n                         cc_res = classifier.get_classification_results(user, f.name)\n+\n+\n+                    classify_only = gdvh.get_bool_value(\n+                        db, constants.CLASSIFY_ONLY, org_id, False\n+                    )\n+                    if cc_res and classify_only:\n+                        cc_res[\"doc_type\"] = None\n+                        cc_res[\"sub_doc_type\"] = None\n+                        for page in cc_res['pages']:\n+                            page['label_doc_type'] = None\n+\n                     resp_json[\"classification\"] = cc_res\n+\n                     doc_type = cc_res.get(\"doc_type\", None)\n                     sub_doc_type = cc_res.get(\"sub_doc_type\", None)\n                     doc_locale = \"de_DE\"\n@@ -226,14 +238,7 @@ def post(self):\n                             \"message\": \"Custom model classification successful\",\n                         }\n                     )\n-\n-                    \n-                    classify_only = gdvh.get_bool_value(\n-                        db, constants.CLASSIFY_ONLY, org_id, False\n-                    )\n-                    if not doc_type or classify_only or True:\n-                        doc_type = None\n-                        sub_doc_type = None\n+                    if not doc_type:\n                         destination_dir = doc_path.replace(f\"/{doc_id}.pdf\", \"\")\n                         document = ocr_processor.get_extracted_ocr_data_and_images(\n                             storagemanager_doc2,"
+        },
+        {
+            "sha": "ee788e04426d95093735e0330e99ca7cc9f7ed61",
+            "message": "fd",
+            "code_changes": "@@ -231,7 +231,9 @@ def post(self):\n                     classify_only = gdvh.get_bool_value(\n                         db, constants.CLASSIFY_ONLY, org_id, False\n                     )\n-                    if not doc_type or classify_only:\n+                    if not doc_type or classify_only or True:\n+                        doc_type = None\n+                        sub_doc_type = None\n                         destination_dir = doc_path.replace(f\"/{doc_id}.pdf\", \"\")\n                         document = ocr_processor.get_extracted_ocr_data_and_images(\n                             storagemanager_doc2,"
+        },
+        {
+            "sha": "ec5b9123a76c3226cdd6e96ec9854b31ed944dcd",
+            "message": "fd",
+            "code_changes": "@@ -125,6 +125,7 @@ class ClassificationMethods:\n USE_RULES_EXTRACTION = \"USE_RULES_EXTRACTION\"\n USE_MODEL_EXTRACTION = \"USE_MODEL_EXTRACTION\"\n USE_MODEL_ONLY_FOR_CLASSIFICATION = \"USE_MODEL_ONLY_FOR_CLASSIFICATION\"\n+CLASSIFY_ONLY = \"CLASSIFY_ONLY\"\n \n \n class CLASSIFICATION_MODELS:"
+        },
+        {
+            "sha": "28061dbd6f6b335bfde4daceb1a7a94b8e7c78c6",
+            "message": "fd",
+            "code_changes": "@@ -2,23 +2,23 @@\n import statistics\n import tempfile\n \n-import constants\n-from constants import INVOICE_STANDARD_FIELDS, MAX_FULL_TAX_RATE, MIN_FULL_TAX_RATE\n-from fellow2kv.extension import api, db, multi_auth\n from flask import jsonify, request\n from flask_restx import Namespace, Resource, abort\n+from sqlalchemy import or_\n+from werkzeug.datastructures import FileStorage\n+\n+import constants\n+from constants import (INVOICE_STANDARD_FIELDS, MAX_FULL_TAX_RATE,\n+                       MIN_FULL_TAX_RATE)\n+from fellow2kv.extension import api, db, multi_auth\n from helper import pdf as pdf_helper\n from helper.ai import ai_invoice, ai_ocr\n-from helper.plugin_extraction_util import (\n-    get_rules_from_db,\n-    get_tf_idf_neighbours_2,\n-    save_original_file,\n-)\n+from helper.plugin_extraction_util import (get_rules_from_db,\n+                                           get_tf_idf_neighbours_2,\n+                                           save_original_file)\n from helper.util import format_currency\n from logger import get_logger\n from models import FellowKVRuleAI, FellowKVRuleWeight\n-from sqlalchemy import or_\n-from werkzeug.datastructures import FileStorage\n \n logger = get_logger(\"fellowkv-extract\")\n \n@@ -445,7 +445,7 @@ def post(self):\n                 mean_weight = statistics.mean(all_weights_list) / 10\n \n             mean_effective_weight = 0\n-            if len(all_weights_list) > 0:\n+            if len(non_zero_values_list) > 0:\n                 mean_effective_weight = statistics.mean(non_zero_values_list) / 10\n \n             # End of Field weights"
+        }
+    ]
+}

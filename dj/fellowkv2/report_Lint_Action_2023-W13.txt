@@ -1,0 +1,103 @@
+Lint Action: 5 commits for week 2023-W13
+Author image: https://avatars.githubusercontent.com/u/59283862?v=4
+- 81ce7491818c56ba2b9989179249d2271eed4c24: Fix code style issues with Black
+Code changes:
+@@ -76,14 +76,18 @@ def transform_ai_response(ai_resp_json):
+         indexIncrement = 0
+         pageNumberIncrement = 0
+         for resp_json in ai_resp_json:
+-            hocr_content = resp_json.get("document",{}).get("text", "")
++            hocr_content = resp_json.get("document", {}).get("text", "")
+             pageStartIndex = 0
+             pageEndIndex = 0
+-            for index, page in enumerate(resp_json.get("document",{}).get("pages", [])):
++            for index, page in enumerate(
++                resp_json.get("document", {}).get("pages", [])
++            ):
+                 if (
+-                    not "width" in page.get("dimension", {}) and not "width" in page.get("image", {})
++                    not "width" in page.get("dimension", {})
++                    and not "width" in page.get("image", {})
+                 ) or (
+-                    not "height" in page.get("dimension", {}) and not "height" in page.get("image", {})
++                    not "height" in page.get("dimension", {})
++                    and not "height" in page.get("image", {})
+                 ):
+                     continue
+                 width = page["dimension"].get("width", page["image"]["width"])
+@@ -202,7 +206,7 @@ def get_detailed_images(ai_resp_json):
+         images = []
+         page_number = 1
+         for resp_json in ai_resp_json:
+-            document = resp_json.get("document",{})
++            document = resp_json.get("document", {})
+             ai_pages = document.get("pages", [])
+ 
+             for ai_page in ai_pages:
+- b7c8a1b7b2630fb97732972ab37ef3888889698f: Fix code style issues with Black
+Code changes:
+@@ -262,4 +262,3 @@ def remove_unused_attributes(table):
+     # for row in rows:
+     #     row.pop("content", None)
+     return table
+-
+- bb9e04b64052045a80d5edbd3e88abc7bf9bff83: Fix code style issues with Black
+Code changes:
+@@ -262,4 +262,3 @@ def remove_unused_attributes(table):
+     # for row in rows:
+     #     row.pop("content", None)
+     return table
+-
+- b5727e98f7a6fa6c71d32ab27b80c174aacea922: Fix code style issues with Black
+Code changes:
+@@ -5,11 +5,12 @@
+ from fellow2kv.extension import storagemanager_doc2
+ from helper import util
+ from helper.ai import ocr_process_util, ocr_processor
+-from helper.ai.ai_invoice import (transform_dict_to_array,
+-                                  transform_fields_to_dict)
++from helper.ai.ai_invoice import transform_dict_to_array, transform_fields_to_dict
+ from helper.extract_util import Extractor
+-from helper.plugin_extraction_util import (extract_table_column_fields,
+-                                           get_table_column_rules_from_db)
++from helper.plugin_extraction_util import (
++    extract_table_column_fields,
++    get_table_column_rules_from_db,
++)
+ from helper.table_extractors import common_table_helper, table_draft_helper
+ from logger import get_logger
+ from vendor_specific.nedschroef import check_grundpreis
+@@ -252,9 +253,10 @@ def get_locations_array_from_match(match):
+         }
+     ]
+ 
++
+ def remove_unused_attributes(table):
+     table.pop("content", None)
+     rows = table.get("rows", [])
+     for row in rows:
+         row.pop("content", None)
+-    return table
+\ No newline at end of file
++    return table
+- f3dc4a4a4a46c776e5765a939ce946239664b3b8: Fix code style issues with Black
+Code changes:
+@@ -65,7 +65,6 @@ def populate_custom_lines(document):
+                     if len([t for t in page["tokens"] if t["x0"] < token["x1"]]) < 5:
+                         token["is_deleted"] = True
+ 
+-
+             last_tokens = [
+                 t
+                 for t in page["tokens"]
+@@ -81,7 +80,9 @@ def populate_custom_lines(document):
+                 #     if t["x0"] <= width * (1 - remove_boundry_width_percentage)
+                 # ]
+ 
+-            page["tokens"] = [t for t in page["tokens"] if not t.get("is_deleted", False)]
++            page["tokens"] = [
++                t for t in page["tokens"] if not t.get("is_deleted", False)
++            ]
+         tokens = page["tokens"]
+         tokens = sorted(tokens, key=lambda d: d["x1"])
+ 

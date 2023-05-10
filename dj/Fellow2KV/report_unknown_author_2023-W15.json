@@ -1,0 +1,38 @@
+{
+    "author": null,
+    "week": "2023-W15",
+    "total_commits": 6,
+    "author_image": "https://avatars.githubusercontent.com/u/117294423?v=4",
+    "commits": [
+        {
+            "sha": "ee71cba57c80b39faed95087e52eb5aa94302ef7",
+            "message": "Merge pull request #868 from Fellow-Consulting-AG/CLOU-5092\n\ndev-fix",
+            "code_changes": "@@ -7,7 +7,11 @@ def execute_query(db, query):\n     except:\n         pass\n     with db.engine.connect() as conn:\n-        results = conn.execute(text(query))\n+        try:\n+            results = conn.execute(text(query))\n+        except:\n+            results = conn.execute(query)\n+\n         results_list = [r._asdict() for r in results]\n         return results_list\n \n@@ -18,7 +22,11 @@ def execute_scalar_query(db, query):\n     except:\n         pass\n     with db.engine.connect() as conn:\n-        return conn.execute(text(query))\n+        try:\n+            return conn.execute(text(query))\n+        except:\n+            pass\n+        return conn.execute(query)\n \n \n def get_single_result(db, query):"
+        },
+        {
+            "sha": "f12db22d46e52ef13226f584b22b9f9185aaef58",
+            "message": "Merge pull request #865 from Fellow-Consulting-AG/CLOU-5092\n\nfd",
+            "code_changes": "@@ -2,17 +2,23 @@\n \n \n def execute_query(db, query):\n-    query = query.replace(\"\\n\", \"\")\n+    try:\n+        query = query.replace(\"\\n\", \"\")\n+    except:\n+        pass\n     with db.engine.begin() as conn:\n         results = conn.execute(text(query))\n         results_list = [dict(r) for r in results]\n         return results_list\n \n \n def execute_scalar_query(db, query):\n-    query = query.replace(\"\\n\", \"\")\n+    try:\n+        query = query.replace(\"\\n\", \"\")\n+    except:\n+        pass\n     with db.engine.begin() as conn:\n-        return conn.execute(query)\n+        return conn.execute(text(query))\n \n \n def get_single_result(db, query):"
+        },
+        {
+            "sha": "2a844c128a9bed73db0b09457d0d733c98aa6150",
+            "message": "Merge pull request #864 from Fellow-Consulting-AG/CLOU-5092\n\nfd",
+            "code_changes": "@@ -1,7 +1,10 @@\n+from sqlalchemy.sql import text\n+\n+\n def execute_query(db, query):\n     query = query.replace(\"\\n\", \"\")\n     with db.engine.begin() as conn:\n-        results = conn.execute(query)\n+        results = conn.execute(text(query))\n         results_list = [dict(r) for r in results]\n         return results_list\n "
+        },
+        {
+            "sha": "8417c8548b188c8767576ebba1289aa8467e55e3",
+            "message": "Merge pull request #862 from Fellow-Consulting-AG/CLOU-5092\n\nfd",
+            "code_changes": "@@ -96,13 +96,13 @@ def post(self):\n             }, 400\n \n         query = f\"\"\"\n-                Select * from {data_type} dt\n+                Select * from \"{data_type}\" dt\n             \"\"\"\n \n         if last_synced_on:\n             query += f\" WHERE (dt.created_on > to_timestamp('{last_synced_on}', 'YYYY-MM-DD HH24:MI:SS') or dt.last_modified_on > to_timestamp('{last_synced_on}', 'YYYY-MM-DD HH24:MI:SS'))\"\n \n-        query = query.replace(\"\\n\", \" \").strip()\n+        query = query.replace(\"\\n\", \"\")\n \n         # result = db.engine.execute(query)\n "
+        },
+        {
+            "sha": "5bc46d8d7c73ba440439455ffdb8821718600960",
+            "message": "Merge pull request #861 from Fellow-Consulting-AG/CLOU-5092\n\nError-Analyzing",
+            "code_changes": "@@ -9,18 +9,22 @@\n import pytz\n import requests\n from flask_dance.consumer.storage.sqla import OAuthConsumerMixin\n-#from itsdangerous import TimedJSONWebSignatureSerializer as Serializer\n+\n+# from itsdangerous import TimedJSONWebSignatureSerializer as Serializer\n from itsdangerous import BadSignature, SignatureExpired\n from itsdangerous import URLSafeTimedSerializer as Serializer\n+\n # import URLSafeTimedSerializer as Serializer\n from sqlalchemy.sql import func\n from sqlalchemy.sql.functions import current_user\n from werkzeug.security import check_password_hash, generate_password_hash\n \n import fellow2kv.config as app_config\n from fellow2kv.config import AUTH_SERVICE_URL\n+\n # from fellow2kv.app_initializer import db, ma\n from fellow2kv.extension import db\n+\n # from fellow2kv.extension import db, ma\n from logger import get_logger\n "
+        },
+        {
+            "sha": "4b40a461316c03c4869ea5575cb4c7a42a7c31d8",
+            "message": "Merge pull request #860 from Fellow-Consulting-AG/CLOU-5092\n\ncode-adjustments for KV",
+            "code_changes": "@@ -4,9 +4,9 @@\n from authenticator import UserAuthentication\n from constants import CLASSIFICATION_MODELS\n from fellow2kv.extension import db\n-from helper.custom_classifier_v2.iclassifier_model_processor import (\n-    IClassifierModelProcessor,\n-)\n+from helper import db_helper as dbh\n+from helper.custom_classifier_v2.iclassifier_model_processor import \\\n+    IClassifierModelProcessor\n from util import sync_wrapper\n \n from . import common, mlp_classifier_processor, service_classifier_processor\n@@ -284,8 +284,7 @@ def get_model_labels_metadata(org_id, model_name=None, ttl_hash=None):\n         query += f\" and al.model_name ilike '{model_name}'\"\n \n     query = query.replace(\"\\n\", \"\").strip()\n-    results = db.engine.execute(query)\n-    result_list = [dict(r) for r in results]\n+    result_list = dbh.execute_query(db, query)\n \n     final_results = defaultdict(lambda: defaultdict())\n     for rec in result_list:\n@@ -318,8 +317,7 @@ def get_model_label_metadata(org_id, label_id=None, label_name=None):\n         query += f\" and label_name ilike '{label_name}'\"\n \n     query = query.replace(\"\\n\", \"\").strip()\n-    results = db.engine.execute(query)\n-    result_list = [dict(r) for r in results]\n+    result_list = dbh.execute_query(db, query)\n \n     if result_list:\n         return result_list[0]"
+        }
+    ]
+}

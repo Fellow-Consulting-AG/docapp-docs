@@ -1,0 +1,14 @@
+Lint Action: 1 commits for week 2023-W06
+Author image: https://avatars.githubusercontent.com/u/59283862?v=4
+- da662e611f99b3591e30f80be5bd331b96e036ff: Fix code style issues with Black
+Code changes:
+@@ -4,6 +4,7 @@ def execute_query(db, query):
+     results_list = [dict(r) for r in results]
+     return results_list
+ 
++
+ def get_single_result(db, query):
+     results_list = execute_query(db, query)
+-    return results_list[0] if results_list else None
+\ No newline at end of file
++    return results_list[0] if results_list else None

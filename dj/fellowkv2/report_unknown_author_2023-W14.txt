@@ -1,0 +1,509 @@
+None: 12 commits for week 2023-W14
+Author image: https://avatars.githubusercontent.com/u/83513548?v=4
+- 108fd7e9b9417b61f40997ab7dbab45ce922e89f: fd
+Code changes:
+@@ -59,7 +59,6 @@ networkx~=2.7
+ nltk==3.7
+ numpy==1.24.2
+ oauthlib==3.1.1
+-openai==0.27.4
+ opencv-python~=4.5
+ openpyxl~=3.0
+ packaging~=21.3
+- 1a45eef5758cf7d8d955d095fbe56abc4b0850f7: fd
+Code changes:
+@@ -177,6 +177,7 @@ def transform_ai_response(ai_resp_json):
+                                 "normalizedY0": nv0["y"],
+                                 "normalizedX1": nv2["x"],
+                                 "normalizedY1": nv2["y"],
++                                "mergeNextToken": len(hocr_content[startIndex:endIndex]) == len(text),
+                                 # "normalizedVertices": item["layout"]["boundingPoly"][
+                                 #     "normalizedVertices"
+                                 # ],
+- e3cf3c75fa1e1795be700bb8d4957d871294c033: fd
+Code changes:
+@@ -47,7 +47,8 @@ def post(self):
+             self: write your description
+         """
+         try:
+-            import openai
++            #import openai
++            pass
+         except Exception as ex:
+             return {
+                 "success": False,
+- 8003956974ac99f5f8d80338d1874a69c4fa69f7: fd
+Code changes:
+@@ -24,6 +24,39 @@
+ namespace = Namespace("Table Extract V3", description="Table Extract Endpoints")
+ doc2_base_directory = "documents"
+ 
++get_auto_table_parser = api.parser()
++
++
++@namespace.route("/doc2/test_openai", methods=["POST"])
++@namespace.doc(
++    params={
++        "Authorization": {
++            "in": "header",
++            "description": "Authorization: Bearer <access_token>",
++        }
++    }
++)
++class TestOpenAI(Resource):
++    @namespace.expect(get_auto_table_parser)
++    @multi_auth.login_required
++    @namespace.doc("Gets table from the co-ordinates")
++    def post(self):
++        """
++        Extracts tables from OCR document.
++        Args:
++            self: write your description
++        """
++        try:
++            import openai
++        except Exception as ex:
++            return {
++                "success": False,
++                "message": str(ex),
++                "error_message": repr(ex) + "\n" + traceback.format_exc(),
++            }
++        return {
++                "success": True,
++            } 
+ 
+ get_auto_table_parser = api.parser()
+ get_auto_table_parser.add_argument(
+- 5511844fb6430d440902872c12f36ca68ab78129: Merge pull request #857 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -111,6 +111,7 @@ class OCR_SERVICE_TYPES:
+     EASYOCR = "EASYOCR"
+     TESSERACT = "TESSERACT"
+     GOOGLE = "GOOGLE"
++    AI = "AI"
+     PDF_MINER = "PDF_MINER"
+     E_TEXT = "E_TEXT"
+ 
+- 6771f31ea997e40520f78a69853f6e88cd8d54bd: Merge pull request #856 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -111,6 +111,7 @@ class OCR_SERVICE_TYPES:
+     EASYOCR = "EASYOCR"
+     TESSERACT = "TESSERACT"
+     GOOGLE = "GOOGLE"
++    AI = "AI"
+     PDF_MINER = "PDF_MINER"
+     E_TEXT = "E_TEXT"
+ 
+- adf55591149fa06b6cd07e505fdcfb2e66b47bb5: Delete google_ocr.py
+Code changes:
+@@ -1,278 +0,0 @@
+-import json
+-import logging
+-import tempfile
+-import time
+-from base64 import decodebytes
+-
+-import constants
+-import helper.ai.ai_common as ai
+-from helper.util import find_related_locale
+-from logger import get_logger
+-from models import OCRConfigurations
+-from util import sync_wrapper
+-
+-from .iocr import IOCRService
+-
+-logger = get_logger("google_ocr")
+-
+-url = "https://eu-documentai.googleapis.com/v1/projects/342434080717/locations/eu/processors/4bfbf986c18da072:process"
+-
+-
+-class GOOGLE_OCR(IOCRService):
+-    def __init__(self, config: OCRConfigurations, **kwargs):
+-        self.config: OCRConfigurations = config
+-        pass
+-
+-    def __get_ocr_data__(self, source_file_path, doc_id=None):
+-        ai_resp_json = ai.get_ai_response_v3(
+-            constants.AI_REQUEST_TYPE.OCR, url, source_file_path, None, doc_id
+-        )
+-        document = GOOGLE_OCR.transform_ai_response(ai_resp_json)
+-
+-        document["doc_lang"] = "de"
+-        document["doc_origin"] = "DE"
+-        document["doc_locale"] = "de_DE"
+-        document["ocr_lang"] = "de"
+-        document["ocr_processor"] = "ai-ocr-service"
+-
+-        GOOGLE_OCR.populate_origin_and_locale(ai_resp_json, document)
+-
+-        return document, ai_resp_json
+-
+-    def get_ocr_data(self, user, source_file_path):
+-        document, _ = self.__get_ocr_data__(source_file_path, None)
+-        return document
+-
+-    @sync_wrapper(module="ocr")
+-    def extract_ocr_data_and_images(
+-        self, storage_manager, source_file_path, destination_dir, doc_id, user
+-    ):
+-        document, ai_resp_json = self.__get_ocr_data__(source_file_path, None)
+-
+-        document["doc_id"] = doc_id
+-        document["ocr_processor"] = "ai-ocr-service"
+-
+-        logger.info(f"Going to save extracted image and ocr document")
+-        start_time = time.perf_counter()
+-        # extracting and saving images
+-        images_paths, quality = GOOGLE_OCR.extract_and_save_images(
+-            ai_resp_json, doc_id, storage_manager, destination_dir
+-        )
+-        document["images"] = images_paths
+-        document["qualitycheck"] = quality
+-        end_time = time.perf_counter()
+-        logger.customer("Document successfully OCRed with AI")
+-        logger.customer(f"Saved document and images.")
+-        return document
+-
+-    def transform_ai_response(ai_resp_json):
+-        # document = {"text": ""}
+-        document = {}
+-        if not ai_resp_json:
+-            return document
+-
+-        pages = []
+-
+-        indexIncrement = 0
+-        pageNumberIncrement = 0
+-        for resp_json in ai_resp_json:
+-            hocr_content = resp_json.get("document", {}).get("text", "")
+-            pageStartIndex = 0
+-            pageEndIndex = 0
+-            for index, page in enumerate(
+-                resp_json.get("document", {}).get("pages", [])
+-            ):
+-                if (
+-                    not "width" in page.get("dimension", {})
+-                    and not "width" in page.get("image", {})
+-                ) or (
+-                    not "height" in page.get("dimension", {})
+-                    and not "height" in page.get("image", {})
+-                ):
+-                    continue
+-                width = page["dimension"].get("width", page["image"]["width"])
+-                height = page["dimension"].get("height", page["image"]["height"])
+-
+-                first_text_segment = page["layout"]["textAnchor"]["textSegments"][0]
+-
+-                if "startIndex" in first_text_segment:
+-                    pageStartIndex = int(first_text_segment["startIndex"])
+-                elif index > 0:
+-                    pass
+-                    # previous_page = resp_json.get("document",{})["pages"][index-1]
+-                    # previous_page_first_text_segment = previous_page["layout"]["textAnchor"]["textSegments"][0]
+-                    # pageStartIndex = int(pages[len(pages)-1]['endIndex'])
+-
+-                if "endIndex" in first_text_segment:
+-                    pageEndIndex = int(first_text_segment["endIndex"])
+-
+-                current_page = {
+-                    "startIndex": pageStartIndex + indexIncrement,
+-                    "endIndex": pageEndIndex + indexIncrement,
+-                    "pageText": hocr_content[pageStartIndex:pageEndIndex],
+-                    "pageNumber": page["pageNumber"] + pageNumberIncrement,
+-                    "width": width,
+-                    "height": height,
+-                    # "indexIncrement": indexIncrement,
+-                }
+-                # sections = ["blocks", "paragraphs", "lines", "tokens"]
+-                sections = ["tokens"]
+-                for section in sections:
+-                    adjustment_factor = 0
+-                    items = []
+-                    if section not in page:
+-                        current_page[section] = items
+-                        continue
+-                    for item in page[section]:
+-                        textSegment = item["layout"]["textAnchor"]["textSegments"][0]
+-                        startIndex = 0
+-                        if "startIndex" in textSegment:
+-                            startIndex = int(textSegment["startIndex"])
+-
+-                        endIndex = 0
+-                        if "endIndex" in textSegment:
+-                            endIndex = int(textSegment["endIndex"])
+-
+-                        startIndex = startIndex + adjustment_factor
+-                        endIndex = endIndex + adjustment_factor
+-
+-                        if (
+-                            section == "tokens"
+-                            and "\n" in hocr_content[startIndex:endIndex].rstrip()
+-                        ):
+-                            adjustment_factor = adjustment_factor + 1
+-                            startIndex += 1
+-                            endIndex += 1
+-
+-                        text = hocr_content[startIndex:endIndex].strip()
+-                        nv0 = item["layout"]["boundingPoly"]["normalizedVertices"][0]
+-                        nv2 = item["layout"]["boundingPoly"]["normalizedVertices"][2]
+-                        if (
+-                            "x" not in nv0
+-                            or "x" not in nv2
+-                            or "y" not in nv0
+-                            or "y" not in nv2
+-                            or nv2["x"] < 0
+-                            or nv0["x"] < 0
+-                            or nv2["y"] < 0
+-                            or nv0["y"] < 0
+-                            or nv2["x"] > 1
+-                            or nv0["x"] > 1
+-                            or nv2["y"] > 1
+-                            or nv0["y"] > 1
+-                            or nv2["x"] < nv0["x"]
+-                            or nv2["y"]
+-                            < nv0["y"]  # to remove garbage for table extraction
+-                        ):
+-                            continue
+-
+-                        confidence = round(item["layout"].get("confidence", 1) * 100)
+-                        items.append(
+-                            {
+-                                "text": text,
+-                                "startIndex": startIndex + indexIncrement,
+-                                "endIndex": endIndex + indexIncrement,
+-                                "confidence": confidence,
+-                                "x0": round(nv0["x"] * width),
+-                                "y0": round(nv0["y"] * height),
+-                                "x1": round(nv2["x"] * width),
+-                                "y1": round(nv2["y"] * height),
+-                                "normalizedX0": nv0["x"],
+-                                "normalizedY0": nv0["y"],
+-                                "normalizedX1": nv2["x"],
+-                                "normalizedY1": nv2["y"],
+-                                # "normalizedVertices": item["layout"]["boundingPoly"][
+-                                #     "normalizedVertices"
+-                                # ],
+-                            }
+-                        )
+-
+-                    current_page[section] = items
+-
+-                pages.append(current_page)
+-
+-                if page["pageNumber"] == 10:
+-                    indexIncrement = indexIncrement + pageEndIndex
+-                    pageNumberIncrement = pageNumberIncrement + 10
+-                    pageStartIndex = 0
+-                    pageEndIndex = 0
+-
+-            # document["text"] += hocr_content
+-        document["pages"] = pages
+-
+-        return document
+-
+-    def get_detailed_images(ai_resp_json):
+-        images = []
+-        page_number = 1
+-        for resp_json in ai_resp_json:
+-            document = resp_json.get("document", {})
+-            ai_pages = document.get("pages", [])
+-
+-            for ai_page in ai_pages:
+-                image = ai_page["image"]
+-                image["pageNumber"] = page_number
+-                images.append(image)
+-                page_number += 1
+-
+-        return images
+-
+-    def extract_and_save_images(ai_resp_json, doc_id, storage_manager, dest_dir):
+-        images_paths = []
+-        doc_quality = []
+-        counter = 0
+-        ai_images = GOOGLE_OCR.get_detailed_images(ai_resp_json)
+-
+-        image_dest_path = dest_dir + "/images"
+-
+-        for ai_image in ai_images:
+-            page = str(ai_image["pageNumber"])
+-            img_data = decodebytes(ai_image["content"].encode())
+-            storage_manager.save_file_data(img_data, f"{page}.png", image_dest_path)
+-            img_data = {
+-                "path": f"doc2/images/{doc_id}/{page}.png",
+-                "filename": f"{page}.png",
+-                "pageNumber": ai_image["pageNumber"],
+-                "height": ai_image["height"],
+-                "width": ai_image["width"],
+-            }
+-
+-            if "entities" in ai_resp_json[0]["document"]:
+-                for entity in ai_resp_json[0]["document"]["entities"]:
+-                    conf_percent = entity["confidence"]
+-                    doc_quality.append(
+-                        {"page": page, "overall": f"{conf_percent*100}%"}
+-                    )
+-
+-                    for prop in entity["properties"]:
+-                        if "confidence" in prop:
+-                            conf_percent = prop["confidence"]
+-                            doc_quality[counter][prop["type"]] = f"{conf_percent*100}%"
+-                    break
+-                counter += 1
+-
+-            images_paths.append(img_data)
+-        return images_paths, doc_quality
+-
+-    def save_ocr_content(document, doc_id, storage_manager, dest_dir):
+-        with tempfile.NamedTemporaryFile(
+-            suffix=".json", mode="w", encoding="utf8"
+-        ) as outfile:
+-            outfile.write(json.dumps(document) + "\n")
+-            outfile.seek(0)
+-            storage_manager.save_file(
+-                outfile.name, doc_id + "_ai_transform.json", dest_dir
+-            )
+-
+-    def populate_origin_and_locale(ai_resp, document):
+-        ai_resp_document = ai_resp[0]["document"]
+-        first_page = ai_resp_document["pages"][0]
+-
+-        document["doc_lang"] = "de"
+-        if len(first_page.get("detectedLanguages", [])) > 0:
+-            document["doc_lang"] = first_page.get("detectedLanguages")[0].get(
+-                "languageCode"
+-            )
+-        document["ocr_lang"] = document["doc_lang"]
+-        doc_locale = document.get("doc_lang") + "_" + document.get("doc_origin")
+-        document["doc_locale"] = find_related_locale(doc_locale, prefer_lang=True)
+- 541e0000983484cd3b5bf9a592c930d9f38a8ea2: fd
+Code changes:
+@@ -4,10 +4,8 @@
+ 
+ from shapely.geometry import Polygon
+ 
+-from helper.form_extractor.fill_ratio import (
+-    get_field_fill_ratio,
+-    get_opencv_image_from_url,
+-)
++from helper.form_extractor.fill_ratio import (get_field_fill_ratio,
++                                              get_opencv_image_from_url)
+ from helper.util import clean_amount_fields, clean_string
+ 
+ sys.path.append(".")
+@@ -17,9 +15,9 @@
+ 
+ import fellow2kv.config as config
+ from fellow2kv.extension import storagemanager_doc2
+-from helper.common_regex import CURRENCY_REGEX, NUMERIC_AND_AMOUNT_SEPARATORS_REGEX
++from helper.common_regex import (CURRENCY_REGEX,
++                                 NUMERIC_AND_AMOUNT_SEPARATORS_REGEX)
+ from helper.extract_util_errors import InvalidDirectionError, UndifiendError
+-
+ # from fellow2kv.extension storagemanager_doc2
+ from logger import get_logger
+ 
+@@ -884,7 +882,7 @@ def custom_lines_within_bounds(self, custom_lines, coordinates):
+         new_custom_lines = []
+         for line in custom_lines:
+             if line["y1"] > coordinates["y0"]:
+-                if not new_custom_lines and line["normalizedX0"] > 0.5:
++                if not new_custom_lines and line["normalizedX0"] > 0.25:
+                     continue
+                     # table headers dont start from middle of the pagel so avoid making bad patterns.
+                 coords = None
+- 487f22a407148e95717f9f0c381df6ef86c1cf51: fd
+Code changes:
+@@ -1346,8 +1346,7 @@ def get_table_rules_for_export_v3(extractor, table):
+ 
+         if pageNumber == 1:
+             is_first_page = True
+-
+-        if pageNumber < len(document.get("pages")):
++        elif pageNumber < len(document.get("pages")):
+             is_middle_page = True
+ 
+         width = page.get("width", 0)
+- 6126217dcb0e31042d67165af29fd946432f4c68: Merge pull request #855 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -76,14 +76,18 @@ def transform_ai_response(ai_resp_json):
+         indexIncrement = 0
+         pageNumberIncrement = 0
+         for resp_json in ai_resp_json:
+-            hocr_content = resp_json.get("document",{}).get("text", "")
++            hocr_content = resp_json.get("document", {}).get("text", "")
+             pageStartIndex = 0
+             pageEndIndex = 0
+-            for index, page in enumerate(resp_json.get("document",{}).get("pages", [])):
++            for index, page in enumerate(
++                resp_json.get("document", {}).get("pages", [])
++            ):
+                 if (
+-                    not "width" in page.get("dimension", {}) and not "width" in page.get("image", {})
++                    not "width" in page.get("dimension", {})
++                    and not "width" in page.get("image", {})
+                 ) or (
+-                    not "height" in page.get("dimension", {}) and not "height" in page.get("image", {})
++                    not "height" in page.get("dimension", {})
++                    and not "height" in page.get("image", {})
+                 ):
+                     continue
+                 width = page["dimension"].get("width", page["image"]["width"])
+@@ -202,7 +206,7 @@ def get_detailed_images(ai_resp_json):
+         images = []
+         page_number = 1
+         for resp_json in ai_resp_json:
+-            document = resp_json.get("document",{})
++            document = resp_json.get("document", {})
+             ai_pages = document.get("pages", [])
+ 
+             for ai_page in ai_pages:
+- 2bd7f7649054e5a7878c8e2f9c7048d89ecff82d: Merge pull request #854 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -48,6 +48,18 @@ def populate_custom_lines(document):
+                     db, "REMOVE_BOUNDRY_TOKENS", document.get("org_id", None), 0.05
+                 )
+             )
++
++
++            token_max_height = float(
++                gdvh.get_float_value(
++                    db, "TOKEN_MAX_HEIGHT", document.get("org_id", None), 0.05
++                )
++            )
++
++            page["tokens"] = [
++                t for t in page["tokens"] if abs(t.get("normalizedY1", 0) - t.get("normalizedY0", 0)) < token_max_height
++            ]
++
+             first_tokens = [
+                 t
+                 for t in page["tokens"]
+- 7cf3be6478267bc146f38c2841368003789bd1c0: fd
+Code changes:
+@@ -48,6 +48,18 @@ def populate_custom_lines(document):
+                     db, "REMOVE_BOUNDRY_TOKENS", document.get("org_id", None), 0.05
+                 )
+             )
++
++
++            token_max_height = float(
++                gdvh.get_float_value(
++                    db, "TOKEN_MAX_HEIGHT", document.get("org_id", None), 0.05
++                )
++            )
++
++            page["tokens"] = [
++                t for t in page["tokens"] if abs(t.get("normalizedY1", 0) - t.get("normalizedY0", 0)) < token_max_height
++            ]
++
+             first_tokens = [
+                 t
+                 for t in page["tokens"]

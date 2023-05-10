@@ -1,0 +1,44 @@
+Benedikt Liebs: 6 commits for week 2023-W12
+Author image: https://avatars.githubusercontent.com/u/74979180?v=4
+- 1a3f8605ad80d389a414829d60b083ed40613ea8: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.506
+\ No newline at end of file
++2.0.507
+\ No newline at end of file
+- 45a7b076691e635ce259cc0d41c56ff3d17d3b84: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.505
+\ No newline at end of file
++2.0.506
+\ No newline at end of file
+- 443105cc53c75449332919dbfc846940a4bbfdd4: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.504
+\ No newline at end of file
++2.0.505
+\ No newline at end of file
+- 5e69fa4596b5101585e0ea2ec63780ffeeb76f8c: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.503
+\ No newline at end of file
++2.0.504
+\ No newline at end of file
+- c51383d55b16d74e45a4565f5098d5e6bfd1e93f: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.502
+\ No newline at end of file
++2.0.503
+\ No newline at end of file
+- 4e679cdac3673edd18a03af8fb8e45168d1bf8b5: [ci skip] version update
+Code changes:
+@@ -1 +1 @@
+-2.0.501
+\ No newline at end of file
++2.0.502
+\ No newline at end of file

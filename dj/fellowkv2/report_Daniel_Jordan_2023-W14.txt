@@ -1,0 +1,255 @@
+Daniel Jordan: 3 commits for week 2023-W14
+Author image: https://avatars.githubusercontent.com/u/922524?v=4
+- 5258c4a3ba4bf8c53a613d596fabb8feab7fd747: remove openai
+Code changes:
+@@ -124,4 +124,4 @@ zope.interface==5.4
+ pytest==7.1
+ pdfrw==0.4
+ wheel==0.40
+-openai
+\ No newline at end of file
++#openai
+\ No newline at end of file
+- c0fd2a44677b789c43c682c8a22ea9ff86001599: Check flash 2.2
+- c3ddeb373a7a330309aa4d1ff27f2081c9bb974c: Check
+Code changes:
+@@ -1,126 +1,127 @@
+-alembic~=1.6
+-aniso8601~=9.0
+-attrs~=21.4
+-Babel~=2.9
+-blis~=0.7
+-boto3~=1.21
+-botocore~=1.24
+-cachetools~=4.2
+-camelot-py~=0.11
+-catalogue~=1.0
+-certifi~=2022.12
+-cffi~=1.15
+-chardet~=4.0
+-charset-normalizer~=2.1
+-click~=7.1
+-cryptography~=3.4
+-cycler~=0.11
+-cymem~=2.0
+-decorator~=5.1
+-deskew~=0.10
++alembic==1.10.3
++aniso8601==9.0
++attrs==21.4
++Babel==2.9
++blis==0.7.9
++boto3==1.26.108
++botocore==1.29.108
++cachetools==4.2
++camelot-py==0.11
++catalogue==1.0
++certifi==2022.12.7
++cffi==1.15
++chardet==4.0
++charset-normalizer==3.1.0
++click==8.1.3
++cryptography==40.0.1
++cycler==0.11
++cymem==2.0.7
++decorator==5.1
++deskew==1.4.3
+ en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz
+-et-xmlfile~=1.1
+-Flask~=1.1
+-Flask-Dance~=5.0
+-Flask-HTTPAuth~=4.4
+-flask-marshmallow~=0.14
+-Flask-Migrate~=3.0
++et-xmlfile==1.1.0
++Flask==2.2.3
++Flask-Dance==6.2.0
++Flask-HTTPAuth==4.7.0
++flask-marshmallow==0.15
++Flask-Migrate==3.0
+ Flask-RESTful==0.3.9
+-flask-restx==0.4.0
+-Flask-SQLAlchemy==2.5.1
++flask-restx==1.1.0
++Flask-SQLAlchemy==3.0.2
+ fonttools==4.31.2
+-gensim==3.8.3
+-gevent~=21.1
+-google-auth~=2.16
+-greenlet~=1.1
+-gunicorn~=20.1
+-hocr-tools~=1.1
++gensim==3.6.0
++gevent==22.10.2
++google-auth==2.16
++greenlet==2.0.2
++gunicorn==20.1
++hocr-tools==1.1
+ idna==3.3
+-imageio~=2.16
+-img2pdf~=0.4
+-importlib-resources~=5.6
+-itsdangerous==1.1.0
+-Jinja2==2.11.3
+-jmespath~=1.0
+-joblib~=1.2
+-jsonschema~=4.4
+-jwt~=1.2
+-kiwisolver~=1.4
+-langdetect~=1.0
+-logtail-python~=0.1
+-lxml~=4.8
++imageio==2.16
++img2pdf==0.4
++importlib-resources==5.6
++itsdangerous==2.1.2
++Jinja2==3.1.2
++jmespath==1.0
++joblib==1.2
++jsonschema==4.4
++jwt==1.3.1
++kiwisolver==1.4
++langdetect==1.0
++logtail-python==0.2.3
++lxml==4.8
+ Mako==1.2.0
+-MarkupSafe==2.0.1
++MarkupSafe==2.1.1
+ marshmallow==3.12.2
+-marshmallow-sqlalchemy==0.26.1
+-matplotlib~=3.5
+-murmurhash~=1.0
+-networkx~=2.7
++marshmallow-sqlalchemy==0.29
++matplotlib==3.5
++murmurhash==1.0
++networkx==3.1
+ nltk==3.7
+ numpy==1.24.2
+ oauthlib==3.1.1
+-opencv-python~=4.5
+-openpyxl~=3.0
+-packaging~=21.3
+-pandas~=1.3
+-pbr~=5.6
+-pdf2image~=1.16
++opencv-python==4.7.0.68
++openpyxl==3.1.2
++packaging==21.3
++pandas==1.5.3
++pbr==5.6
++pdf2image==1.16
+ pdfminer.six==20220319
+-pikepdf~=5.1
+-Pillow~=9.1
+-plac~=1.1
+-plotly~=5.7
+-preshed~=3.0
+-psycopg2-binary~=2.9
++pikepdf==5.1
++Pillow==9.1
++plac==1.1
++plotly==5.7
++preshed==3.0.8
++psycopg2-binary==2.9.6
+ pyasn1==0.4.8
+-pyasn1-modules~=0.2
++pyasn1-modules==0.2.8
+ pycparser==2.21
+-PyMuPDF~=1.18
+-pyparsing~=3.0
+-PyPDF2~=2.12
+-pyrsistent~=0.18
+-pytesseract~=0.3
+-python-dateutil~=2.8
+-python-dotenv~=0.18
+-python-editor~=1.0
++PyMuPDF==1.21.1
++pyparsing==3.0
++PyPDF2==2.12
++pyrsistent==0.18
++pytesseract==0.3
++python-dateutil==2.8.2
++python-dotenv==0.18
++python-editor==1.0
+ pytz==2022.1
+-PyWavelets~=1.3
+-PyYAML==5.4.1
+-regex~=2023.3
++PyWavelets==1.3
++PyYAML==6.0
++regex==2023.3.23
+ reportlab==3.6.9
+-requests~=2.28
+-requests-oauthlib~=1.3
++requests==2.28.2
++requests-oauthlib==1.3
+ rsa==4.8
+-s3transfer~=0.6
+-scikit-image~=0.19
+-scikit-learn~=1.0
+-scipy~=1.10
+-Shapely~=1.8
+-six~=1.16
+-smart-open~=5.2
++s3transfer==0.6
++scikit-image==0.20.0
++scikit-learn==1.2.2
++scipy==1.8.1
++Shapely==2.0.1
++six==1.16
++smart-open==5.2
+ spacy==2.3.7
+-SQLAlchemy~=1.4
+-sqlalchemy-migrate~=0.13
+-SQLAlchemy-Utils~=0.38
+-sqlparse~=0.4
+-srsly~=1.0
+-tabulate~=0.8
+-Tempita~=0.5
+-tenacity~=8.0
+-texthero~=1.1
+-thinc~=7.4
+-threadpoolctl~=3.1
+-tifffile~=2022.3
+-tqdm~=4.64
+-Unidecode~=1.3
+-urllib3~=1.26
+-URLObject~=2.4
+-wasabi~=0.9
+-Werkzeug~=1.0
+-wordcloud~=1.8
+-zipp~=3.8
+-zope.event~=4.5
+-zope.interface~=5.4
+-pytest~=7.1
+-pdfrw>=0.4
+-wheel~=0.40
+\ No newline at end of file
++SQLAlchemy==2.0.9
++sqlalchemy-migrate==0.13
++SQLAlchemy-Utils==0.40.0
++sqlparse==0.4.3
++srsly==1.0.2
++tabulate==0.9.0
++Tempita==0.5.2
++tenacity==8.0
++texthero==1.1
++thinc==7.4.5
++threadpoolctl==3.1
++tifffile==2023.3.21
++tqdm==4.64
++Unidecode==1.3
++urllib3==1.26
++URLObject==2.4
++wasabi==0.9
++Werkzeug==2.2.3
++wordcloud==1.8.2.2
++zipp==3.8
++zope.event==4.5
++zope.interface==5.4
++pytest==7.1
++pdfrw==0.4
++wheel==0.40
++openai
+\ No newline at end of file

@@ -1,0 +1,33 @@
+{
+    "author": "Benedikt Liebs",
+    "week": "2023-W10",
+    "total_commits": 5,
+    "author_image": "https://avatars.githubusercontent.com/u/74979180?v=4",
+    "commits": [
+        {
+            "sha": "689b3946700318472d37bcf1151df24bd74a1238",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.476\n\\ No newline at end of file\n+2.0.476.1\n\\ No newline at end of file"
+        },
+        {
+            "sha": "edbc81fd41384b2e72f178a4e37c7909143fa93a",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.475\n\\ No newline at end of file\n+2.0.476\n\\ No newline at end of file"
+        },
+        {
+            "sha": "f03abcc3578b547363abbd1d04aaff578be1a881",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.474\n\\ No newline at end of file\n+2.0.475\n\\ No newline at end of file"
+        },
+        {
+            "sha": "9093d45f4fceae63cb49fcf22422d4683e9f5582",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.473\n\\ No newline at end of file\n+2.0.474\n\\ No newline at end of file"
+        },
+        {
+            "sha": "12c88a326ec3a5cf438c883251bacba2698cf89f",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.472\n\\ No newline at end of file\n+2.0.473\n\\ No newline at end of file"
+        }
+    ]
+}

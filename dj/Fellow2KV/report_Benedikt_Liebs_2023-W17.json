@@ -1,0 +1,28 @@
+{
+    "author": "Benedikt Liebs",
+    "week": "2023-W17",
+    "total_commits": 4,
+    "author_image": "https://avatars.githubusercontent.com/u/74979180?v=4",
+    "commits": [
+        {
+            "sha": "02d74f9d4e1850112f3ad9f6f4350d55b3430078",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.567\n\\ No newline at end of file\n+2.0.568\n\\ No newline at end of file"
+        },
+        {
+            "sha": "aa667753e5f503429664fd4714929ac7e29a8f3b",
+            "message": "fix dockerfile",
+            "code_changes": "@@ -1,13 +1,13 @@\n # venv image\n-#FROM ubuntu:20.04 as venv-image\n-FROM python:3.9.16-bullseye as venv-image\n+FROM ubuntu:20.04 as venv-image\n+# FROM python:3.9.16-bullseye as venv-image\n \n-# RUN apt update\n-# RUN apt install -y software-properties-common\n+RUN apt update\n+RUN apt install -y software-properties-common\n \n-# RUN add-apt-repository ppa:deadsnakes/ppa\n+RUN add-apt-repository ppa:deadsnakes/ppa\n \n-# RUN apt install -y python3.9 python3.9-venv\n+RUN apt install -y python3.9 python3.9-venv\n \n \n \n@@ -27,15 +27,15 @@ RUN pip3 install gunicorn opencv-python camelot-py[all] uvicorn\n \n \n # debian custom image\n-#FROM ubuntu:20.04 as base-image\n-FROM python:3.9.16-bullseye as base-image\n+FROM ubuntu:20.04 as base-image\n+# FROM python:3.9.16-bullseye as base-image\n \n-# RUN apt update\n-# RUN apt install -y software-properties-common\n+RUN apt update\n+RUN apt install -y software-properties-common\n \n-# RUN add-apt-repository ppa:deadsnakes/ppa\n+RUN add-apt-repository ppa:deadsnakes/ppa\n \n-# RUN apt install -y python3.9\n+RUN apt install -y python3.9\n \n \n "
+        },
+        {
+            "sha": "70f109d0b92c22dab9392ebf75151a20c7444e1b",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.566\n\\ No newline at end of file\n+2.0.567\n\\ No newline at end of file"
+        },
+        {
+            "sha": "da0775de206c323cee2ab6cae219b50622ddb24f",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.565\n\\ No newline at end of file\n+2.0.566\n\\ No newline at end of file"
+        }
+    ]
+}

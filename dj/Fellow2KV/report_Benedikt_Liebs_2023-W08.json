@@ -1,0 +1,83 @@
+{
+    "author": "Benedikt Liebs",
+    "week": "2023-W08",
+    "total_commits": 15,
+    "author_image": "https://avatars.githubusercontent.com/u/74979180?v=4",
+    "commits": [
+        {
+            "sha": "5f956d96d20bab8124e593c7ea0b08d5af852c75",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.457\n\\ No newline at end of file\n+2.0.458\n\\ No newline at end of file"
+        },
+        {
+            "sha": "ecf6ca55ff15c81f81147bfba826426f282a8431",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.456\n\\ No newline at end of file\n+2.0.457\n\\ No newline at end of file"
+        },
+        {
+            "sha": "aeb6a5883fd79cb556df1db019a0e84ab8ed446a",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.455\n\\ No newline at end of file\n+2.0.456\n\\ No newline at end of file"
+        },
+        {
+            "sha": "63b3cb264b805b8023f172c6184475758971064e",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.454\n\\ No newline at end of file\n+2.0.455\n\\ No newline at end of file"
+        },
+        {
+            "sha": "d3adb36580ce26a25f28cd43042889b4da049045",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.453\n\\ No newline at end of file\n+2.0.454\n\\ No newline at end of file"
+        },
+        {
+            "sha": "2a697d540c814f47e2f6a5ed739a45b0c388ee3e",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.450\n\\ No newline at end of file\n+2.0.450.1\n\\ No newline at end of file"
+        },
+        {
+            "sha": "ee764187a6c49391808f75a97f023f016215ddfa",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.452\n\\ No newline at end of file\n+2.0.453\n\\ No newline at end of file"
+        },
+        {
+            "sha": "ff027849c5da64df18b0492cbbb97cf9a676ff4b",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.451\n\\ No newline at end of file\n+2.0.452\n\\ No newline at end of file"
+        },
+        {
+            "sha": "38e9946f07c09fc996b4c004860392041baf3ff8",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.450\n\\ No newline at end of file\n+2.0.451\n\\ No newline at end of file"
+        },
+        {
+            "sha": "2c5b56eec655f474d52cefc3bff5e7bf3f575697",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.449\n\\ No newline at end of file\n+2.0.450\n\\ No newline at end of file"
+        },
+        {
+            "sha": "363394266d3f37c04f03a5e155aaa60bee6bf6b7",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.448\n\\ No newline at end of file\n+2.0.449\n\\ No newline at end of file"
+        },
+        {
+            "sha": "346707226d0c15c5afa0b9e366773f3b1795ccf9",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.447\n\\ No newline at end of file\n+2.0.448\n\\ No newline at end of file"
+        },
+        {
+            "sha": "308b50902ac79d9e701f9cb1c86f34795a857d8c",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.446\n\\ No newline at end of file\n+2.0.446.1\n\\ No newline at end of file"
+        },
+        {
+            "sha": "2a2429e25f6e70d7984bd53dc8ead95b701dfb9b",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.446\n\\ No newline at end of file\n+2.0.447\n\\ No newline at end of file"
+        },
+        {
+            "sha": "f3e295141826e4c49d07cc1178f7282d7f83a376",
+            "message": "[ci skip] version update",
+            "code_changes": "@@ -1 +1 @@\n-2.0.445\n\\ No newline at end of file\n+2.0.446\n\\ No newline at end of file"
+        }
+    ]
+}

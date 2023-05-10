@@ -1,0 +1,903 @@
+None: 32 commits for week 2023-W09
+Author image: https://avatars.githubusercontent.com/u/83513548?v=4
+- f08b8616d719a27715032a1c6bf6cb758911b414: fd
+Code changes:
+@@ -527,7 +527,7 @@ def get_closest_references(
+ 
+         average_distance = total_distance / len(distances_list)
+         for key, _ in distances_list:
+-            if _ < average_distance:
++            if _ < average_distance or len(closest_references) < 3:
+                 closest_references.append(ref_tokens_dict[key])
+ 
+         # closest_reference = min(distances_list, key=distances_list.get)
+- 5d2f880cfb7a91e9019a2b8a125fcd2470599555: Merge pull request #801 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -165,7 +165,7 @@ def populate_custom_lines(document):
+     c_lines_text = list()
+     for page in document["pages"]:
+         c_lines_text.append(page["customPageText"])
+-    document["customText"] = " ".join(c_lines_text)
++    #document["customText"] = " ".join(c_lines_text)
+ 
+     # for line in custom_lines:
+     #     print(line['text'])
+- 1189c63d749e1828193aa941990e047703b0df36: Merge pull request #800 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -165,7 +165,7 @@ def populate_custom_lines(document):
+     c_lines_text = list()
+     for page in document["pages"]:
+         c_lines_text.append(page["customPageText"])
+-    document["customText"] = " ".join(c_lines_text)
++    #document["customText"] = " ".join(c_lines_text)
+ 
+     # for line in custom_lines:
+     #     print(line['text'])
+- 9d1023853db755af2a3017cc88468f46a6c1ea17: fd
+Code changes:
+@@ -165,7 +165,7 @@ def populate_custom_lines(document):
+     c_lines_text = list()
+     for page in document["pages"]:
+         c_lines_text.append(page["customPageText"])
+-    document["customText"] = " ".join(c_lines_text)
++    #document["customText"] = " ".join(c_lines_text)
+ 
+     # for line in custom_lines:
+     #     print(line['text'])
+- 586c49c5c2216f67ed9db3513ee8c3c7489e4ca8: Merge pull request #799 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -61,6 +61,29 @@ def get_ocr_text(file):
+     return text
+ 
+ 
++@sync_wrapper(module="ocr")
++def get_pages_to_ocr(file):
++    """
++    Extract text using OCR with PDF Reader
++    Args:
++        file: write your description
++    """
++    pages = []
++    try:
++        logger.info("Trying if document has e-text")
++        with fitz.open(file) as doc:
++            for index, page in enumerate(doc):
++                if not page_digitally_created(page):
++                    pages.append(str(index+1))
++
++    except Exception as e:
++        pages = []
++        logger.error("OCR with fitz failed. Error -> " + str(e))
++
++    pages = ','.join(pages)
++    # logger.info("Extracted text: " + text)
++    return pages
++
+ @sync_wrapper(module="ocr")
+ def get_ocred_document(user, filepath, destination, force=False, improve_quality=False):
+     """
+@@ -133,7 +156,7 @@ def __get_ocr_file(
+     """
+ 
+     files = [("file", ("Rechnung.pdf", open(file, "rb"), "application/pdf"))]
+-
++    pages = get_pages_to_ocr(file)
+     token = user.get_subscription_token()
+ 
+     logger.info("Sending ocr request.")
+@@ -143,7 +166,7 @@ def __get_ocr_file(
+             url=url_upload,
+             headers={"Authorization": f"Bearer {token}"},
+             files=files,
+-            data={"force": True, "improve_quality": improve_quality},
++            data={"force": True, "improve_quality": improve_quality, "pages": pages},
+             timeout=300,
+         )
+     else:
+@@ -160,6 +183,7 @@ def __get_ocr_file(
+                 "rotate": False,
+                 "blank_pages": False,
+                 "improve_quality": improve_quality,
++                "pages": pages,
+             },
+             timeout=300,
+         )
+- e1e46336a13df21d8282b2bab30b579c34919364: Merge pull request #798 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -61,6 +61,29 @@ def get_ocr_text(file):
+     return text
+ 
+ 
++@sync_wrapper(module="ocr")
++def get_pages_to_ocr(file):
++    """
++    Extract text using OCR with PDF Reader
++    Args:
++        file: write your description
++    """
++    pages = []
++    try:
++        logger.info("Trying if document has e-text")
++        with fitz.open(file) as doc:
++            for index, page in enumerate(doc):
++                if not page_digitally_created(page):
++                    pages.append(str(index+1))
++
++    except Exception as e:
++        pages = []
++        logger.error("OCR with fitz failed. Error -> " + str(e))
++
++    pages = ','.join(pages)
++    # logger.info("Extracted text: " + text)
++    return pages
++
+ @sync_wrapper(module="ocr")
+ def get_ocred_document(user, filepath, destination, force=False, improve_quality=False):
+     """
+@@ -133,7 +156,7 @@ def __get_ocr_file(
+     """
+ 
+     files = [("file", ("Rechnung.pdf", open(file, "rb"), "application/pdf"))]
+-
++    pages = get_pages_to_ocr(file)
+     token = user.get_subscription_token()
+ 
+     logger.info("Sending ocr request.")
+@@ -143,7 +166,7 @@ def __get_ocr_file(
+             url=url_upload,
+             headers={"Authorization": f"Bearer {token}"},
+             files=files,
+-            data={"force": True, "improve_quality": improve_quality},
++            data={"force": True, "improve_quality": improve_quality, "pages": pages},
+             timeout=300,
+         )
+     else:
+@@ -160,6 +183,7 @@ def __get_ocr_file(
+                 "rotate": False,
+                 "blank_pages": False,
+                 "improve_quality": improve_quality,
++                "pages": pages,
+             },
+             timeout=300,
+         )
+- 034a8541f4dd03d0c8ffa04d7a1ec6d3e75e38f2: fd
+Code changes:
+@@ -190,7 +190,7 @@ def post(self):
+                     extract_tables
+                     and (
+                         not ocr_helper.is_doc_ocr(f.name)
+-                        or (force_ocr and ocr_helper.is_ocred_by_doc2(f.name))
++                        or (force_ocr and not ocr_helper.is_ocred_by_doc2(f.name)) # no point in OCR again if already done with doc2
+                     )
+                     or improve_quality
+                 ):
+@@ -793,7 +793,7 @@ def post(self):
+                     abort(400, f"document with doc_id {doc_id} not found")
+                 # force_ocr = False
+                 if not ocr_helper.is_doc_ocr(ufile.name) or (
+-                    force_ocr and ocr_helper.is_ocred_by_doc2(ufile.name)
++                    force_ocr and not ocr_helper.is_ocred_by_doc2(ufile.name)
+                 ):
+                     ocr_helper.ocr_document(
+                         user,
+- f0d050e5f25046e2988120c2d769bd106aad2cf5: fd
+Code changes:
+@@ -61,6 +61,29 @@ def get_ocr_text(file):
+     return text
+ 
+ 
++@sync_wrapper(module="ocr")
++def get_pages_to_ocr(file):
++    """
++    Extract text using OCR with PDF Reader
++    Args:
++        file: write your description
++    """
++    pages = []
++    try:
++        logger.info("Trying if document has e-text")
++        with fitz.open(file) as doc:
++            for index, page in enumerate(doc):
++                if not page_digitally_created(page):
++                    pages.append(str(index+1))
++
++    except Exception as e:
++        pages = []
++        logger.error("OCR with fitz failed. Error -> " + str(e))
++
++    pages = ','.join(pages)
++    # logger.info("Extracted text: " + text)
++    return pages
++
+ @sync_wrapper(module="ocr")
+ def get_ocred_document(user, filepath, destination, force=False, improve_quality=False):
+     """
+@@ -133,7 +156,7 @@ def __get_ocr_file(
+     """
+ 
+     files = [("file", ("Rechnung.pdf", open(file, "rb"), "application/pdf"))]
+-
++    pages = get_pages_to_ocr(file)
+     token = user.get_subscription_token()
+ 
+     logger.info("Sending ocr request.")
+@@ -143,7 +166,7 @@ def __get_ocr_file(
+             url=url_upload,
+             headers={"Authorization": f"Bearer {token}"},
+             files=files,
+-            data={"force": True, "improve_quality": improve_quality},
++            data={"force": True, "improve_quality": improve_quality, "pages": pages},
+             timeout=300,
+         )
+     else:
+@@ -160,6 +183,7 @@ def __get_ocr_file(
+                 "rotate": False,
+                 "blank_pages": False,
+                 "improve_quality": improve_quality,
++                "pages": pages,
+             },
+             timeout=300,
+         )
+- 83b28aa7d5d5cc63d1efe3590df88c31c44486c0: Merge pull request #797 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -164,7 +164,10 @@ def __get_ocr_file(
+             timeout=300,
+         )
+     logger.debug("Ocr request response. " + (res).text)
+-    dict = json.loads((res).text)
++    if (res).text:
++        dict = json.loads((res).text)
++    else:
++        dict = {}
+ 
+     if "alreadyOCR" in dict and dict["alreadyOCR"]:
+         logger.error("Document is already OCR. Going to use original document")
+- ab85b074b8df9c5924660ae596c798fe9f6e069c: Merge pull request #796 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -164,7 +164,10 @@ def __get_ocr_file(
+             timeout=300,
+         )
+     logger.debug("Ocr request response. " + (res).text)
+-    dict = json.loads((res).text)
++    if (res).text:
++        dict = json.loads((res).text)
++    else:
++        dict = {}
+ 
+     if "alreadyOCR" in dict and dict["alreadyOCR"]:
+         logger.error("Document is already OCR. Going to use original document")
+- b54fed0aa7bd7c25ae70ad5b6ceac9efd5f6ecf5: fd
+Code changes:
+@@ -164,7 +164,10 @@ def __get_ocr_file(
+             timeout=300,
+         )
+     logger.debug("Ocr request response. " + (res).text)
+-    dict = json.loads((res).text)
++    if (res).text:
++        dict = json.loads((res).text)
++    else:
++        dict = {}
+ 
+     if "alreadyOCR" in dict and dict["alreadyOCR"]:
+         logger.error("Document is already OCR. Going to use original document")
+- 798fb4f8bda13f05529b8ec4fa2d102ef1f62bf5: Merge pull request #795 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -112,10 +112,11 @@ def readjust_coordinates(page_image, coords, strip_dim, v_padding=0, h_padding=0
+ 
+     return (x1, y1, x2, y2)
+ 
++
+ def keep_within_normalized_range(value):
+     if value > 1:
+         value = 1
+     elif value < 0:
+         value = 0
+ 
+-    return value
+\ No newline at end of file
++    return value
+- ef8b583d5d5269f33a2347c474764f786a2c4bbd: Merge pull request #794 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -13,13 +13,8 @@
+ from helper import util
+ from helper.layout import layout_fields_helper as lfh
+ from logger import get_logger
+-from models import (
+-    AlchemyEncoder,
+-    ColumnValidationRules,
+-    DocumentTable,
+-    DocumentTableColumn,
+-    DocumentType,
+-)
++from models import (AlchemyEncoder, ColumnValidationRules, DocumentTable,
++                    DocumentTableColumn, DocumentType)
+ 
+ logger = get_logger("document_table_settings")
+ 
+@@ -146,7 +141,8 @@ def get(self):
+                     else dcvr.is_hidden
+                 end as is_hidden,
+                 dtc.org_id,
+-                dtc.column_type
++                dtc.column_type,
++                dtc.title
+ 
+             from
+                 document_table dt
+@@ -722,6 +718,7 @@ def get(self):
+ 
+ aiparser = api.parser()
+ aiparser.add_argument("id", type=str, required=True, location="form")
++aiparser.add_argument("title", type=str, required=False, location="form")
+ aiparser.add_argument("is_hidden", type=str, required=False, location="form")
+ aiparser.add_argument("is_deleted", type=str, required=False, location="form")
+ 
+@@ -745,6 +742,7 @@ def post(self):
+             org_id = user.get_org_id()
+             request_data = request.form
+             id = request_data.get("id", None)
++            title = request_data.get("title", None)
+             is_hidden = request_data.get("is_hidden", None)
+             is_hidden = util.str_to_bool(is_hidden, None)
+ 
+@@ -762,6 +760,9 @@ def post(self):
+                 logger.info("Table Column <id> not found.")
+                 return {"success": False, "message": "Column not found."}
+ 
++            if title is not None:
++                table_column.title = title
++
+             validation_rule: ColumnValidationRules = (
+                 db.session.query(ColumnValidationRules)
+                 .filter(
+- bc0860fe7164b58d34503a7781f09afe93d222e0: fd
+Code changes:
+@@ -718,6 +718,7 @@ def get(self):
+ 
+ aiparser = api.parser()
+ aiparser.add_argument("id", type=str, required=True, location="form")
++aiparser.add_argument("title", type=str, required=False, location="form")
+ aiparser.add_argument("is_hidden", type=str, required=False, location="form")
+ aiparser.add_argument("is_deleted", type=str, required=False, location="form")
+ 
+@@ -741,6 +742,7 @@ def post(self):
+             org_id = user.get_org_id()
+             request_data = request.form
+             id = request_data.get("id", None)
++            title = request_data.get("title", None)
+             is_hidden = request_data.get("is_hidden", None)
+             is_hidden = util.str_to_bool(is_hidden, None)
+ 
+@@ -758,6 +760,9 @@ def post(self):
+                 logger.info("Table Column <id> not found.")
+                 return {"success": False, "message": "Column not found."}
+ 
++            if title is not None:
++                table_column.title = title
++
+             validation_rule: ColumnValidationRules = (
+                 db.session.query(ColumnValidationRules)
+                 .filter(
+- f1d5cf80644fd1e10ca6f1488e15c6c5f911f08e: fd
+Code changes:
+@@ -13,13 +13,8 @@
+ from helper import util
+ from helper.layout import layout_fields_helper as lfh
+ from logger import get_logger
+-from models import (
+-    AlchemyEncoder,
+-    ColumnValidationRules,
+-    DocumentTable,
+-    DocumentTableColumn,
+-    DocumentType,
+-)
++from models import (AlchemyEncoder, ColumnValidationRules, DocumentTable,
++                    DocumentTableColumn, DocumentType)
+ 
+ logger = get_logger("document_table_settings")
+ 
+@@ -146,7 +141,8 @@ def get(self):
+                     else dcvr.is_hidden
+                 end as is_hidden,
+                 dtc.org_id,
+-                dtc.column_type
++                dtc.column_type,
++                dtc.title
+ 
+             from
+                 document_table dt
+- dc8f10bc1f3720d654786ac2b1edb784a65b6b63: Merge pull request #793 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -105,9 +105,17 @@ def readjust_coordinates(page_image, coords, strip_dim, v_padding=0, h_padding=0
+     if y1 > y2:
+         y1, y2 = y2, y1
+ 
+-    x1 = x1 + adj_x1 - h_padding
+-    y1 = y1 + adj_y1 - v_padding
+-    x2 = x2 - adj_x2 + h_padding
+-    y2 = y2 - adj_y2 + v_padding
++    x1 = keep_within_normalized_range((x1 + adj_x1 - h_padding) / width)
++    y1 = keep_within_normalized_range((y1 + adj_y1 - v_padding) / height)
++    x2 = keep_within_normalized_range((x2 - adj_x2 + h_padding) / width)
++    y2 = keep_within_normalized_range((y2 - adj_y2 + v_padding) / height)
+ 
+-    return (x1 / width, y1 / height, x2 / width, y2 / height)
++    return (x1, y1, x2, y2)
++
++def keep_within_normalized_range(value):
++    if value > 1:
++        value = 1
++    elif value < 0:
++        value = 0
++
++    return value
+\ No newline at end of file
+- a26ac0e18c1fa97757be98225b2d8403a151fa38: Merge pull request #792 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -105,9 +105,17 @@ def readjust_coordinates(page_image, coords, strip_dim, v_padding=0, h_padding=0
+     if y1 > y2:
+         y1, y2 = y2, y1
+ 
+-    x1 = x1 + adj_x1 - h_padding
+-    y1 = y1 + adj_y1 - v_padding
+-    x2 = x2 - adj_x2 + h_padding
+-    y2 = y2 - adj_y2 + v_padding
++    x1 = keep_within_normalized_range((x1 + adj_x1 - h_padding) / width)
++    y1 = keep_within_normalized_range((y1 + adj_y1 - v_padding) / height)
++    x2 = keep_within_normalized_range((x2 - adj_x2 + h_padding) / width)
++    y2 = keep_within_normalized_range((y2 - adj_y2 + v_padding) / height)
+ 
+-    return (x1 / width, y1 / height, x2 / width, y2 / height)
++    return (x1, y1, x2, y2)
++
++def keep_within_normalized_range(value):
++    if value > 1:
++        value = 1
++    elif value < 0:
++        value = 0
++
++    return value
+\ No newline at end of file
+- ffb076e297e94e866315c3fb465bbf3d861df75f: fd
+Code changes:
+@@ -105,9 +105,17 @@ def readjust_coordinates(page_image, coords, strip_dim, v_padding=0, h_padding=0
+     if y1 > y2:
+         y1, y2 = y2, y1
+ 
+-    x1 = x1 + adj_x1 - h_padding
+-    y1 = y1 + adj_y1 - v_padding
+-    x2 = x2 - adj_x2 + h_padding
+-    y2 = y2 - adj_y2 + v_padding
++    x1 = keep_within_normalized_range((x1 + adj_x1 - h_padding) / width)
++    y1 = keep_within_normalized_range((y1 + adj_y1 - v_padding) / height)
++    x2 = keep_within_normalized_range((x2 - adj_x2 + h_padding) / width)
++    y2 = keep_within_normalized_range((y2 - adj_y2 + v_padding) / height)
+ 
+-    return (x1 / width, y1 / height, x2 / width, y2 / height)
++    return (x1, y1, x2, y2)
++
++def keep_within_normalized_range(value):
++    if value > 1:
++        value = 1
++    elif value < 0:
++        value = 0
++
++    return value
+\ No newline at end of file
+- 61c489da76ff9517a622ea0cd7680b0a841b115c: Merge pull request #791 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -59,6 +59,8 @@ def is_blank_image(image):
+     blackPxNum = np.count_nonzero([image <= 50])  # number of black pixels
+     whitePxNum = image.size - blackPxNum
+ 
++    if image.size == 0:
++        return True
+     black_percentage = (blackPxNum * 100) / image.size
+     white_percentage = (whitePxNum * 100) / image.size
+ 
+@@ -97,7 +99,7 @@ def readjust_coordinates(page_image, coords, strip_dim, v_padding=0, h_padding=0
+             int(y2 * height),
+         )
+     else:
+-        width, height = 1,1
++        width, height = 1, 1
+     if x1 > x2:
+         x1, x2 = x2, x1
+     if y1 > y2:
+- 49079de74b5daac1db1ef982d8aa7560c3fad501: Merge pull request #790 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -59,6 +59,8 @@ def is_blank_image(image):
+     blackPxNum = np.count_nonzero([image <= 50])  # number of black pixels
+     whitePxNum = image.size - blackPxNum
+ 
++    if image.size == 0:
++        return True
+     black_percentage = (blackPxNum * 100) / image.size
+     white_percentage = (whitePxNum * 100) / image.size
+ 
+- ae29d7599b2addc5cdb93de9e6d6172161677177: fd
+Code changes:
+@@ -359,9 +359,29 @@ def get_adjusted_points_v2(page_proximity_data, field_point1, field_point2):
+         # if count > 2:
+         #     break
+ 
+-    return (adj1_x0 / count, adj1_y0 / count), (
+-        adj2_x0 / count,
+-        adj2_y0 / count,
++    adj1_x0 = adj1_x0 / count
++    if adj1_x0 < 0:
++        adj1_x0 = 0
++    elif adj1_x0 > 1:
++        adj1_x0 = 1
++    adj1_y0 = adj1_y0 / count
++    if adj1_y0 < 0:
++        adj1_y0 = 0
++    elif adj1_y0 > 1:
++        adj1_y0 = 1
++    adj2_x0 = adj2_x0 / count
++    if adj2_x0 < 0:
++        adj2_x0 = 0
++    elif adj2_x0 > 1:
++        adj2_x0 = 1
++    adj2_y0 = adj2_y0 / count
++    if adj2_y0 < 0:
++        adj2_y0 = 0
++    elif adj2_y0 > 1:
++        adj2_y0 = 1
++    return (adj1_x0, adj1_y0), (
++        adj2_x0,
++        adj2_y0,
+     )
+ 
+ 
+- 13bc96001685a9b6faca2e31e7657eb540176644: fd
+Code changes:
+@@ -59,6 +59,8 @@ def is_blank_image(image):
+     blackPxNum = np.count_nonzero([image <= 50])  # number of black pixels
+     whitePxNum = image.size - blackPxNum
+ 
++    if image.size == 0:
++        return True
+     black_percentage = (blackPxNum * 100) / image.size
+     white_percentage = (whitePxNum * 100) / image.size
+ 
+- 6a5e1786c3d9a9be967e9c2c77a13158b273b373: Merge pull request #789 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -151,6 +151,10 @@ def transform_ai_response(ai_resp_json):
+                             or nv0["x"] < 0
+                             or nv2["y"] < 0
+                             or nv0["y"] < 0
++                            or nv2["x"] > 1
++                            or nv0["x"] > 1
++                            or nv2["y"] > 1
++                            or nv0["y"] > 1
+                             or nv2["x"] < nv0["x"]
+                             or nv2["y"]
+                             < nv0["y"]  # to remove garbage for table extraction
+- 2fe15bfc206eed31d2bd1e70ba7bf73c0bff3224: Merge pull request #788 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -151,6 +151,10 @@ def transform_ai_response(ai_resp_json):
+                             or nv0["x"] < 0
+                             or nv2["y"] < 0
+                             or nv0["y"] < 0
++                            or nv2["x"] > 1
++                            or nv0["x"] > 1
++                            or nv2["y"] > 1
++                            or nv0["y"] > 1
+                             or nv2["x"] < nv0["x"]
+                             or nv2["y"]
+                             < nv0["y"]  # to remove garbage for table extraction
+- 91a515c6c88c5013c329a72b0ba58d48f0c21736: fd
+Code changes:
+@@ -151,6 +151,10 @@ def transform_ai_response(ai_resp_json):
+                             or nv0["x"] < 0
+                             or nv2["y"] < 0
+                             or nv0["y"] < 0
++                            or nv2["x"] > 1
++                            or nv0["x"] > 1
++                            or nv2["y"] > 1
++                            or nv0["y"] > 1
+                             or nv2["x"] < nv0["x"]
+                             or nv2["y"]
+                             < nv0["y"]  # to remove garbage for table extraction
+- cbf8e4ce2330e834fd682338a2cc3c96af6b7d89: Merge pull request #787 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -9,23 +9,14 @@
+ from fellow2kv.extension import db, storagemanager
+ from helpdesk import create_new_customer, create_ticket
+ from helper import doc2_util
+-from helper.ai.ai_ocr import generate_hard_regex_from_string, generate_regex_from_string
+-from helper.util import (
+-    get_page,
+-    transform_from_normalized,
+-    transform_from_normalized_coords_object,
+-)
++from helper.ai.ai_ocr import (generate_hard_regex_from_string,
++                              generate_regex_from_string)
++from helper.util import (get_page, transform_from_normalized,
++                         transform_from_normalized_coords_object)
+ from logger import get_logger
+-from models import (
+-    DocOriginRules,
+-    FellowKVRule,
+-    FellowKVRuleUser,
+-    FellowKVSourceFile,
+-    FellowKVTableColumnRule,
+-    FellowKVTableRule,
+-    TableFormattingRules,
+-    TfidfDocs,
+-)
++from models import (DocOriginRules, FellowKVRule, FellowKVRuleUser,
++                    FellowKVSourceFile, FellowKVTableColumnRule,
++                    FellowKVTableRule, TableFormattingRules, TfidfDocs)
+ 
+ logger = get_logger("plugin-export-util")
+ 
+@@ -690,15 +681,18 @@ def create_table_rules_in_db(docs, user, is_new=False):
+                     )
+ 
+                     formatting_rules_id = str(uuid.uuid4())
++                    rule_columns = rule.get("columns", [""])
++                    if rule_columns == None:
++                        rule_columns = [""]
+                     if table_formatting_rule:
+                         formatting_rules_id = table_formatting_rule.id
+                         table_formatting_rule.ruleWeight = (
+                             table_formatting_rule.ruleWeight + 1
+                         )
++                        table_formatting_rule.columns = rule_columns[0]
++                        # update column locations because we dont use these in where clause
++                        # so they didnt get updated on change.
+                     else:
+-                        rule_columns = rule.get("columns", [""])
+-                        if rule_columns == None:
+-                            rule_columns = [""]
+                         table_formatting_rule = TableFormattingRules()
+                         table_formatting_rule.id = formatting_rules_id
+                         table_formatting_rule.docType = docType
+@@ -750,8 +744,8 @@ def create_table_rules_in_db(docs, user, is_new=False):
+                         table_formatting_rule.user_id = user_id
+                         table_formatting_rule.org_id = org_id
+                         db.session.add(table_formatting_rule)
+-                        db.session.commit()
+-                        db.session.refresh(table_formatting_rule)
++                    db.session.commit()
++                    db.session.refresh(table_formatting_rule)
+ 
+                 record = None
+                 if rule.get("rule_id"):
+- 891d12237e8dfa29f6bf39f0e5424f77a7943c5a: Merge pull request #786 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -9,23 +9,14 @@
+ from fellow2kv.extension import db, storagemanager
+ from helpdesk import create_new_customer, create_ticket
+ from helper import doc2_util
+-from helper.ai.ai_ocr import generate_hard_regex_from_string, generate_regex_from_string
+-from helper.util import (
+-    get_page,
+-    transform_from_normalized,
+-    transform_from_normalized_coords_object,
+-)
++from helper.ai.ai_ocr import (generate_hard_regex_from_string,
++                              generate_regex_from_string)
++from helper.util import (get_page, transform_from_normalized,
++                         transform_from_normalized_coords_object)
+ from logger import get_logger
+-from models import (
+-    DocOriginRules,
+-    FellowKVRule,
+-    FellowKVRuleUser,
+-    FellowKVSourceFile,
+-    FellowKVTableColumnRule,
+-    FellowKVTableRule,
+-    TableFormattingRules,
+-    TfidfDocs,
+-)
++from models import (DocOriginRules, FellowKVRule, FellowKVRuleUser,
++                    FellowKVSourceFile, FellowKVTableColumnRule,
++                    FellowKVTableRule, TableFormattingRules, TfidfDocs)
+ 
+ logger = get_logger("plugin-export-util")
+ 
+@@ -690,15 +681,18 @@ def create_table_rules_in_db(docs, user, is_new=False):
+                     )
+ 
+                     formatting_rules_id = str(uuid.uuid4())
++                    rule_columns = rule.get("columns", [""])
++                    if rule_columns == None:
++                        rule_columns = [""]
+                     if table_formatting_rule:
+                         formatting_rules_id = table_formatting_rule.id
+                         table_formatting_rule.ruleWeight = (
+                             table_formatting_rule.ruleWeight + 1
+                         )
++                        table_formatting_rule.columns = rule_columns[0]
++                        # update column locations because we dont use these in where clause
++                        # so they didnt get updated on change.
+                     else:
+-                        rule_columns = rule.get("columns", [""])
+-                        if rule_columns == None:
+-                            rule_columns = [""]
+                         table_formatting_rule = TableFormattingRules()
+                         table_formatting_rule.id = formatting_rules_id
+                         table_formatting_rule.docType = docType
+@@ -750,8 +744,8 @@ def create_table_rules_in_db(docs, user, is_new=False):
+                         table_formatting_rule.user_id = user_id
+                         table_formatting_rule.org_id = org_id
+                         db.session.add(table_formatting_rule)
+-                        db.session.commit()
+-                        db.session.refresh(table_formatting_rule)
++                    db.session.commit()
++                    db.session.refresh(table_formatting_rule)
+ 
+                 record = None
+                 if rule.get("rule_id"):
+- d86527a2e9bb29365563e82d3b3aa6d22df3928e: CLOU-4651
+Code changes:
+@@ -9,23 +9,14 @@
+ from fellow2kv.extension import db, storagemanager
+ from helpdesk import create_new_customer, create_ticket
+ from helper import doc2_util
+-from helper.ai.ai_ocr import generate_hard_regex_from_string, generate_regex_from_string
+-from helper.util import (
+-    get_page,
+-    transform_from_normalized,
+-    transform_from_normalized_coords_object,
+-)
++from helper.ai.ai_ocr import (generate_hard_regex_from_string,
++                              generate_regex_from_string)
++from helper.util import (get_page, transform_from_normalized,
++                         transform_from_normalized_coords_object)
+ from logger import get_logger
+-from models import (
+-    DocOriginRules,
+-    FellowKVRule,
+-    FellowKVRuleUser,
+-    FellowKVSourceFile,
+-    FellowKVTableColumnRule,
+-    FellowKVTableRule,
+-    TableFormattingRules,
+-    TfidfDocs,
+-)
++from models import (DocOriginRules, FellowKVRule, FellowKVRuleUser,
++                    FellowKVSourceFile, FellowKVTableColumnRule,
++                    FellowKVTableRule, TableFormattingRules, TfidfDocs)
+ 
+ logger = get_logger("plugin-export-util")
+ 
+@@ -690,15 +681,18 @@ def create_table_rules_in_db(docs, user, is_new=False):
+                     )
+ 
+                     formatting_rules_id = str(uuid.uuid4())
++                    rule_columns = rule.get("columns", [""])
++                    if rule_columns == None:
++                        rule_columns = [""]
+                     if table_formatting_rule:
+                         formatting_rules_id = table_formatting_rule.id
+                         table_formatting_rule.ruleWeight = (
+                             table_formatting_rule.ruleWeight + 1
+                         )
++                        table_formatting_rule.columns = rule_columns[0]
++                        # update column locations because we dont use these in where clause
++                        # so they didnt get updated on change.
+                     else:
+-                        rule_columns = rule.get("columns", [""])
+-                        if rule_columns == None:
+-                            rule_columns = [""]
+                         table_formatting_rule = TableFormattingRules()
+                         table_formatting_rule.id = formatting_rules_id
+                         table_formatting_rule.docType = docType
+@@ -750,8 +744,8 @@ def create_table_rules_in_db(docs, user, is_new=False):
+                         table_formatting_rule.user_id = user_id
+                         table_formatting_rule.org_id = org_id
+                         db.session.add(table_formatting_rule)
+-                        db.session.commit()
+-                        db.session.refresh(table_formatting_rule)
++                    db.session.commit()
++                    db.session.refresh(table_formatting_rule)
+ 
+                 record = None
+                 if rule.get("rule_id"):
+- 3312c74bdcce6b9183e37a435c6ca5db8c2b628f: Merge pull request #785 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -4,7 +4,7 @@
+ def get_lov_values(org_id, key):
+     query = f"""
+         Select
+-            value, org_id
++            value, org_id, synonyms
+         From
+             lov_list_of_value llov
+         Where
+- af9f9ba316f5bccf80f001e60b639c89241680e1: Merge pull request #783 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -4,7 +4,7 @@
+ def get_lov_values(org_id, key):
+     query = f"""
+         Select
+-            value, org_id
++            value, org_id, synonyms
+         From
+             lov_list_of_value llov
+         Where
+- e329af08ea5147f4d5abc4e33f51e22aedeb8589: fd
+Code changes:
+@@ -16,31 +16,6 @@
+ namespace = Namespace("List of values", description="List of values")
+ 
+ 
+-@namespace.route("/lov_list", methods=["GET"])
+-@namespace.doc(
+-    params={
+-        "Authorization": {
+-            "in": "header",
+-            "description": "Authorization: Bearer <access_token>",
+-        }
+-    }
+-)
+-class GetLovTypes(Resource):
+-    @multi_auth.login_required
+-    @namespace.doc("Get List Of Values Types")
+-    def get(self):
+-        try:
+-            user = multi_auth.current_user()
+-            org_id = user.get_org_id()
+-            values = get_lov_values(org_id, "LOV_TYPE")
+-            return {"success": True, "data": values}
+-        except Exception as ex:
+-            return {
+-                "success": False,
+-                "message": repr(ex) + "\n" + traceback.format_exc(),
+-            }
+-
+-
+ aiparser = api.parser()
+ aiparser.add_argument("name", type=str, required=True, location="form")
+ 
+- e2c8efbd022c41910dcab3769dfb3a2044f5ff55: fd
+Code changes:
+@@ -4,7 +4,7 @@
+ def get_lov_values(org_id, key):
+     query = f"""
+         Select
+-            value, org_id
++            value, org_id, synonyms
+         From
+             lov_list_of_value llov
+         Where

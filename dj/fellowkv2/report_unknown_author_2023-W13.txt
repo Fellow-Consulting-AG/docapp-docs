@@ -1,0 +1,464 @@
+None: 17 commits for week 2023-W13
+Author image: https://avatars.githubusercontent.com/u/83513548?v=4
+- b060cd8e4c09f36cdf7edf6b26e59a1e3f62c444: Merge pull request #853 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -76,14 +76,14 @@ def transform_ai_response(ai_resp_json):
+         indexIncrement = 0
+         pageNumberIncrement = 0
+         for resp_json in ai_resp_json:
+-            hocr_content = resp_json["document"].get("text", "")
++            hocr_content = resp_json.get("document",{}).get("text", "")
+             pageStartIndex = 0
+             pageEndIndex = 0
+-            for index, page in enumerate(resp_json["document"]["pages"]):
++            for index, page in enumerate(resp_json.get("document",{}).get("pages", [])):
+                 if (
+-                    not "width" in page["dimension"] and not "width" in page["image"]
++                    not "width" in page.get("dimension", {}) and not "width" in page.get("image", {})
+                 ) or (
+-                    not "height" in page["dimension"] and not "height" in page["image"]
++                    not "height" in page.get("dimension", {}) and not "height" in page.get("image", {})
+                 ):
+                     continue
+                 width = page["dimension"].get("width", page["image"]["width"])
+@@ -95,7 +95,7 @@ def transform_ai_response(ai_resp_json):
+                     pageStartIndex = int(first_text_segment["startIndex"])
+                 elif index > 0:
+                     pass
+-                    # previous_page = resp_json["document"]["pages"][index-1]
++                    # previous_page = resp_json.get("document",{})["pages"][index-1]
+                     # previous_page_first_text_segment = previous_page["layout"]["textAnchor"]["textSegments"][0]
+                     # pageStartIndex = int(pages[len(pages)-1]['endIndex'])
+ 
+@@ -202,8 +202,8 @@ def get_detailed_images(ai_resp_json):
+         images = []
+         page_number = 1
+         for resp_json in ai_resp_json:
+-            document = resp_json["document"]
+-            ai_pages = document.get("pages")
++            document = resp_json.get("document",{})
++            ai_pages = document.get("pages", [])
+ 
+             for ai_page in ai_pages:
+                 image = ai_page["image"]
+- aa52ca81b94107b8f7f26ae721c761bd78a1b5f0: Merge pull request #852 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -76,14 +76,14 @@ def transform_ai_response(ai_resp_json):
+         indexIncrement = 0
+         pageNumberIncrement = 0
+         for resp_json in ai_resp_json:
+-            hocr_content = resp_json["document"].get("text", "")
++            hocr_content = resp_json.get("document",{}).get("text", "")
+             pageStartIndex = 0
+             pageEndIndex = 0
+-            for index, page in enumerate(resp_json["document"]["pages"]):
++            for index, page in enumerate(resp_json.get("document",{}).get("pages", [])):
+                 if (
+-                    not "width" in page["dimension"] and not "width" in page["image"]
++                    not "width" in page.get("dimension", {}) and not "width" in page.get("image", {})
+                 ) or (
+-                    not "height" in page["dimension"] and not "height" in page["image"]
++                    not "height" in page.get("dimension", {}) and not "height" in page.get("image", {})
+                 ):
+                     continue
+                 width = page["dimension"].get("width", page["image"]["width"])
+@@ -95,7 +95,7 @@ def transform_ai_response(ai_resp_json):
+                     pageStartIndex = int(first_text_segment["startIndex"])
+                 elif index > 0:
+                     pass
+-                    # previous_page = resp_json["document"]["pages"][index-1]
++                    # previous_page = resp_json.get("document",{})["pages"][index-1]
+                     # previous_page_first_text_segment = previous_page["layout"]["textAnchor"]["textSegments"][0]
+                     # pageStartIndex = int(pages[len(pages)-1]['endIndex'])
+ 
+@@ -202,8 +202,8 @@ def get_detailed_images(ai_resp_json):
+         images = []
+         page_number = 1
+         for resp_json in ai_resp_json:
+-            document = resp_json["document"]
+-            ai_pages = document.get("pages")
++            document = resp_json.get("document",{})
++            ai_pages = document.get("pages", [])
+ 
+             for ai_page in ai_pages:
+                 image = ai_page["image"]
+- f560056cc63af7dbaa46b1d591476d67e602ab97: fd
+Code changes:
+@@ -76,14 +76,14 @@ def transform_ai_response(ai_resp_json):
+         indexIncrement = 0
+         pageNumberIncrement = 0
+         for resp_json in ai_resp_json:
+-            hocr_content = resp_json["document"].get("text", "")
++            hocr_content = resp_json.get("document",{}).get("text", "")
+             pageStartIndex = 0
+             pageEndIndex = 0
+-            for index, page in enumerate(resp_json["document"]["pages"]):
++            for index, page in enumerate(resp_json.get("document",{}).get("pages", [])):
+                 if (
+-                    not "width" in page["dimension"] and not "width" in page["image"]
++                    not "width" in page.get("dimension", {}) and not "width" in page.get("image", {})
+                 ) or (
+-                    not "height" in page["dimension"] and not "height" in page["image"]
++                    not "height" in page.get("dimension", {}) and not "height" in page.get("image", {})
+                 ):
+                     continue
+                 width = page["dimension"].get("width", page["image"]["width"])
+@@ -95,7 +95,7 @@ def transform_ai_response(ai_resp_json):
+                     pageStartIndex = int(first_text_segment["startIndex"])
+                 elif index > 0:
+                     pass
+-                    # previous_page = resp_json["document"]["pages"][index-1]
++                    # previous_page = resp_json.get("document",{})["pages"][index-1]
+                     # previous_page_first_text_segment = previous_page["layout"]["textAnchor"]["textSegments"][0]
+                     # pageStartIndex = int(pages[len(pages)-1]['endIndex'])
+ 
+@@ -202,8 +202,8 @@ def get_detailed_images(ai_resp_json):
+         images = []
+         page_number = 1
+         for resp_json in ai_resp_json:
+-            document = resp_json["document"]
+-            ai_pages = document.get("pages")
++            document = resp_json.get("document",{})
++            ai_pages = document.get("pages", [])
+ 
+             for ai_page in ai_pages:
+                 image = ai_page["image"]
+- 10cf4706212ba142acf2685f063ddf45c1557078: Merge pull request #851 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -257,8 +257,9 @@ def get_locations_array_from_match(match):
+ 
+ 
+ def remove_unused_attributes(table):
+-    table.pop("content", None)
+-    rows = table.get("rows", [])
+-    for row in rows:
+-        row.pop("content", None)
++    # table.pop("content", None)
++    # rows = table.get("rows", [])
++    # for row in rows:
++    #     row.pop("content", None)
+     return table
++
+- 0dba2a3b0f7a65f1c4a33ff42d1206b6273146fb: Merge pull request #850 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -257,8 +257,9 @@ def get_locations_array_from_match(match):
+ 
+ 
+ def remove_unused_attributes(table):
+-    table.pop("content", None)
+-    rows = table.get("rows", [])
+-    for row in rows:
+-        row.pop("content", None)
++    # table.pop("content", None)
++    # rows = table.get("rows", [])
++    # for row in rows:
++    #     row.pop("content", None)
+     return table
++
+- 2ab121fd77d5b7726afcc765694c54df4cfec9d3: Merge branch 'stage' into dev
+Code changes:
+@@ -65,7 +65,6 @@ def populate_custom_lines(document):
+                     if len([t for t in page["tokens"] if t["x0"] < token["x1"]]) < 5:
+                         token["is_deleted"] = True
+ 
+-
+             last_tokens = [
+                 t
+                 for t in page["tokens"]
+@@ -81,7 +80,9 @@ def populate_custom_lines(document):
+                 #     if t["x0"] <= width * (1 - remove_boundry_width_percentage)
+                 # ]
+ 
+-            page["tokens"] = [t for t in page["tokens"] if not t.get("is_deleted", False)]
++            page["tokens"] = [
++                t for t in page["tokens"] if not t.get("is_deleted", False)
++            ]
+         tokens = page["tokens"]
+         tokens = sorted(tokens, key=lambda d: d["x1"])
+ 
+- 397e1be8fa9f15907df636ee3eb00c0dd6e32f95: fd
+Code changes:
+@@ -255,8 +255,8 @@ def get_locations_array_from_match(match):
+     ]
+ 
+ def remove_unused_attributes(table):
+-    table.pop("content", None)
+-    rows = table.get("rows", [])
+-    for row in rows:
+-        row.pop("content", None)
++    # table.pop("content", None)
++    # rows = table.get("rows", [])
++    # for row in rows:
++    #     row.pop("content", None)
+     return table
+\ No newline at end of file
+- 9f8aebc5600ace514cd36682f89eb38cebcba6d0: Merge pull request #849 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -5,11 +5,12 @@
+ from fellow2kv.extension import storagemanager_doc2
+ from helper import util
+ from helper.ai import ocr_process_util, ocr_processor
+-from helper.ai.ai_invoice import (transform_dict_to_array,
+-                                  transform_fields_to_dict)
++from helper.ai.ai_invoice import transform_dict_to_array, transform_fields_to_dict
+ from helper.extract_util import Extractor
+-from helper.plugin_extraction_util import (extract_table_column_fields,
+-                                           get_table_column_rules_from_db)
++from helper.plugin_extraction_util import (
++    extract_table_column_fields,
++    get_table_column_rules_from_db,
++)
+ from helper.table_extractors import common_table_helper, table_draft_helper
+ from logger import get_logger
+ from vendor_specific.nedschroef import check_grundpreis
+@@ -97,6 +98,7 @@ def extract_custom_table_columns(document, ft_combined_table, document_table_inf
+     if not document_table_info or not ft_combined_table["rows"]:
+         return ft_combined_table
+ 
++    ft_combined_table = remove_unused_attributes(ft_combined_table)
+     table_name, table_columns = document_table_info
+ 
+     # try:
+@@ -169,6 +171,7 @@ def extract_custom_table_columns(document, ft_combined_table, document_table_inf
+                 )
+ 
+             for field_name in all_field_rules:
++                logger.info(f"Extracting field {field_name} of line {index+1}")
+                 if not check_grundpreis(ai_extractor, field_name, location_tokens):
+                     continue
+ 
+@@ -252,9 +255,10 @@ def get_locations_array_from_match(match):
+         }
+     ]
+ 
++
+ def remove_unused_attributes(table):
+     table.pop("content", None)
+     rows = table.get("rows", [])
+     for row in rows:
+         row.pop("content", None)
+-    return table
+\ No newline at end of file
++    return table
+- 5cc50994bef805c5d58c8c8d89755cbe377f00ee: Merge pull request #848 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -98,6 +98,7 @@ def extract_custom_table_columns(document, ft_combined_table, document_table_inf
+     if not document_table_info or not ft_combined_table["rows"]:
+         return ft_combined_table
+ 
++    ft_combined_table = remove_unused_attributes(ft_combined_table)
+     table_name, table_columns = document_table_info
+ 
+     # try:
+@@ -170,6 +171,7 @@ def extract_custom_table_columns(document, ft_combined_table, document_table_inf
+                 )
+ 
+             for field_name in all_field_rules:
++                logger.info(f"Extracting field {field_name} of line {index+1}")
+                 if not check_grundpreis(ai_extractor, field_name, location_tokens):
+                     continue
+ 
+- 481d45567403e9d0dcd7716dc172d4f973cdfd74: fd
+Code changes:
+@@ -97,6 +97,7 @@ def extract_custom_table_columns(document, ft_combined_table, document_table_inf
+     if not document_table_info or not ft_combined_table["rows"]:
+         return ft_combined_table
+ 
++    ft_combined_table = remove_unused_attributes(ft_combined_table)
+     table_name, table_columns = document_table_info
+ 
+     # try:
+@@ -169,6 +170,7 @@ def extract_custom_table_columns(document, ft_combined_table, document_table_inf
+                 )
+ 
+             for field_name in all_field_rules:
++                logger.info(f"Extracting field {field_name} of line {index+1}")
+                 if not check_grundpreis(ai_extractor, field_name, location_tokens):
+                     continue
+ 
+- 54cf3b6b37609f0aec293e583ac9964462a6091e: Merge pull request #847 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -1,6 +1,6 @@
+ # venv image
+ #FROM ubuntu:20.04 as venv-image
+-FROM python:3.9.6-bullseye as venv-image
++FROM python:3.9.16-bullseye as venv-image
+ 
+ # RUN apt update
+ # RUN apt install -y software-properties-common
+@@ -28,7 +28,7 @@ RUN pip3 install gunicorn opencv-python camelot-py[all] uvicorn
+ 
+ # debian custom image
+ #FROM ubuntu:20.04 as base-image
+-FROM python:3.9.6-bullseye as base-image
++FROM python:3.9.16-bullseye as base-image
+ 
+ # RUN apt update
+ # RUN apt install -y software-properties-common
+- f5be220d2a7e4a90a9cd70d2a02a7c1522128364: Merge pull request #846 from Fellow-Consulting-AG/dev
+
+fd
+Code changes:
+@@ -1,6 +1,6 @@
+ # venv image
+ #FROM ubuntu:20.04 as venv-image
+-FROM python:3.9.6-bullseye as venv-image
++FROM python:3.9.16-bullseye as venv-image
+ 
+ # RUN apt update
+ # RUN apt install -y software-properties-common
+@@ -28,7 +28,7 @@ RUN pip3 install gunicorn opencv-python camelot-py[all] uvicorn
+ 
+ # debian custom image
+ #FROM ubuntu:20.04 as base-image
+-FROM python:3.9.6-bullseye as base-image
++FROM python:3.9.16-bullseye as base-image
+ 
+ # RUN apt update
+ # RUN apt install -y software-properties-common
+- 007e04dd54a10a0964109b9e56c50fa4707c00c6: fd
+Code changes:
+@@ -5,12 +5,11 @@
+ from fellow2kv.extension import storagemanager_doc2
+ from helper import util
+ from helper.ai import ocr_process_util, ocr_processor
+-from helper.ai.ai_invoice import transform_dict_to_array, transform_fields_to_dict
++from helper.ai.ai_invoice import (transform_dict_to_array,
++                                  transform_fields_to_dict)
+ from helper.extract_util import Extractor
+-from helper.plugin_extraction_util import (
+-    extract_table_column_fields,
+-    get_table_column_rules_from_db,
+-)
++from helper.plugin_extraction_util import (extract_table_column_fields,
++                                           get_table_column_rules_from_db)
+ from helper.table_extractors import common_table_helper, table_draft_helper
+ from logger import get_logger
+ from vendor_specific.nedschroef import check_grundpreis
+@@ -83,7 +82,7 @@ def auto_extract_table_v3_from_ocr_document(
+         user.get_user_id(), user.get_org_id(), doc_id, ft_combined_table
+     )
+ 
+-    return ft_combined_table
++    return remove_unused_attributes(ft_combined_table)
+ 
+ 
+ def extract_custom_table_columns(document, ft_combined_table, document_table_info):
+@@ -252,3 +251,10 @@ def get_locations_array_from_match(match):
+             ],
+         }
+     ]
++
++def remove_unused_attributes(table):
++    table.pop("content", None)
++    rows = table.get("rows", [])
++    for row in rows:
++        row.pop("content", None)
++    return table
+\ No newline at end of file
+- 37931dbadb6ee9755076a860a9c980462998d9b0: Merge pull request #845 from Fellow-Consulting-AG/stage
+
+Stage
+- c03dcf3a7c4f8acaf3f3d703cf3c1dfef175e67a: Merge pull request #844 from Fellow-Consulting-AG/dev
+
+fd
+- 67da1b7c9521cf75ffbd59b1c92af542f250e155: fd
+Code changes:
+@@ -54,24 +54,34 @@ def populate_custom_lines(document):
+                 if t["x1"] < width * remove_boundry_width_percentage
+             ]  # page["tokens"] in docuemnts' 5% width
+             if len(first_tokens) < 5:
+-                page["tokens"] = [
+-                    t
+-                    for t in page["tokens"]
+-                    if t["x1"] >= width * remove_boundry_width_percentage
+-                ]
++                # page["tokens"] = [
++                #     t
++                #     for t in page["tokens"]
++                #     if t["x1"] >= width * remove_boundry_width_percentage
++                # ]
++                # if there are less than 5 tokens which are starting before the end of this token
++                # then remove this token as garbage
++                for token in first_tokens:
++                    if len([t for t in page["tokens"] if t["x0"] < token["x1"]]) < 5:
++                        token["is_deleted"] = True
++
+ 
+             last_tokens = [
+                 t
+                 for t in page["tokens"]
+                 if t["x0"] > width * (1 - remove_boundry_width_percentage)
+             ]
+             if len(last_tokens) < 5:
+-                page["tokens"] = [
+-                    t
+-                    for t in page["tokens"]
+-                    if t["x0"] <= width * (1 - remove_boundry_width_percentage)
+-                ]
+-
++                for token in last_tokens:
++                    if len([t for t in page["tokens"] if t["x1"] > token["x0"]]) < 5:
++                        token["is_deleted"] = True
++                # page["tokens"] = [
++                #     t
++                #     for t in page["tokens"]
++                #     if t["x0"] <= width * (1 - remove_boundry_width_percentage)
++                # ]
++
++            page["tokens"] = [t for t in page["tokens"] if not t.get("is_deleted", False)]
+         tokens = page["tokens"]
+         tokens = sorted(tokens, key=lambda d: d["x1"])
+ 
+- 7a7efc76c6b1cf23020e5922d779b1dfacf2f614: fd
+Code changes:
+@@ -1,6 +1,17 @@
+ # venv image
+ FROM ubuntu:20.04 as venv-image
+ 
++
++RUN apt update
++RUN apt install -y software-properties-common
++
++RUN add-apt-repository ppa:deadsnakes/ppa
++
++RUN apt install -y python3.9
++
++
++
++
+ ARG DEBIAN_FRONTEND=noninteractive
+ RUN apt update -y && \
+     apt install -y python3 python3-venv python3-pip
+@@ -18,6 +29,17 @@ RUN pip3 install gunicorn opencv-python camelot-py[all] uvicorn
+ 
+ # debian custom image
+ FROM ubuntu:20.04 as base-image
++
++
++RUN apt update
++RUN apt install -y software-properties-common
++
++RUN add-apt-repository ppa:deadsnakes/ppa
++
++RUN apt install -y python3.9
++
++
++
+ # make sure all messages always reach console
+ ENV PYTHONUNBUFFERED=1
+ ARG DEBIAN_FRONTEND=noninteractive

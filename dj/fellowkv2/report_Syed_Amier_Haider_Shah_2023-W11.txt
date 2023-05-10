@@ -1,0 +1,1124 @@
+Syed Amier Haider Shah: 30 commits for week 2023-W11
+Author image: https://avatars.githubusercontent.com/u/2101825?v=4
+- 0c6d32861f41d0695980cfd388649547b77c97e0: Merge pull request #835 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -4,8 +4,10 @@
+ 
+ from shapely.geometry import Polygon
+ 
+-from helper.form_extractor.fill_ratio import (get_field_fill_ratio,
+-                                              get_opencv_image_from_url)
++from helper.form_extractor.fill_ratio import (
++    get_field_fill_ratio,
++    get_opencv_image_from_url,
++)
+ from helper.util import clean_amount_fields, clean_string
+ 
+ sys.path.append(".")
+@@ -15,9 +17,9 @@
+ 
+ import fellow2kv.config as config
+ from fellow2kv.extension import storagemanager_doc2
+-from helper.common_regex import (CURRENCY_REGEX,
+-                                 NUMERIC_AND_AMOUNT_SEPARATORS_REGEX)
++from helper.common_regex import CURRENCY_REGEX, NUMERIC_AND_AMOUNT_SEPARATORS_REGEX
+ from helper.extract_util_errors import InvalidDirectionError, UndifiendError
++
+ # from fellow2kv.extension storagemanager_doc2
+ from logger import get_logger
+ 
+@@ -1327,9 +1329,8 @@ def is_multi_line(tokens):
+     return True
+ 
+ 
+-
+ def remove_duplicate_tokens(tokens):
+-    entries_to_remove = ('startIndex', 'endIndex', 'customStartIndex', 'customEndIndex')
++    entries_to_remove = ("startIndex", "endIndex", "customStartIndex", "customEndIndex")
+     filtered_tokens = []
+     seen = set()
+     for token in tokens:
+- 754158f2da3671ab6efc544c3be5f4bf0266c417: Merge pull request #834 from Fellow-Consulting-AG/dev
+
+fix
+Code changes:
+@@ -1678,10 +1678,9 @@ def get(self):
+             field_names = [fr["field_name"] for fr in field_rules]
+             field_names = ", ".join([f"'{value}'" for value in field_names])
+ 
+-            query2 = (
+-                base_query
+-                + f" and fvr.org_id = 'DEFAULT' and fvr.field_name not in ({field_names})"
+-            )
++            query2 = base_query + f" and fvr.org_id = 'DEFAULT'"
++            if field_names:
++                query2 = query2 + f" and fvr.field_name not in ({field_names})"
+             default_field_rules = dbh.execute_query(db, query2)
+ 
+             field_rules = field_rules + default_field_rules
+- a151e962abe12d50b80311dc12c51ac520f3eaf5: Merge branch 'stage' into dev
+Code changes:
+@@ -4,8 +4,10 @@
+ 
+ from shapely.geometry import Polygon
+ 
+-from helper.form_extractor.fill_ratio import (get_field_fill_ratio,
+-                                              get_opencv_image_from_url)
++from helper.form_extractor.fill_ratio import (
++    get_field_fill_ratio,
++    get_opencv_image_from_url,
++)
+ from helper.util import clean_amount_fields, clean_string
+ 
+ sys.path.append(".")
+@@ -15,9 +17,9 @@
+ 
+ import fellow2kv.config as config
+ from fellow2kv.extension import storagemanager_doc2
+-from helper.common_regex import (CURRENCY_REGEX,
+-                                 NUMERIC_AND_AMOUNT_SEPARATORS_REGEX)
++from helper.common_regex import CURRENCY_REGEX, NUMERIC_AND_AMOUNT_SEPARATORS_REGEX
+ from helper.extract_util_errors import InvalidDirectionError, UndifiendError
++
+ # from fellow2kv.extension storagemanager_doc2
+ from logger import get_logger
+ 
+@@ -1327,9 +1329,8 @@ def is_multi_line(tokens):
+     return True
+ 
+ 
+-
+ def remove_duplicate_tokens(tokens):
+-    entries_to_remove = ('startIndex', 'endIndex', 'customStartIndex', 'customEndIndex')
++    entries_to_remove = ("startIndex", "endIndex", "customStartIndex", "customEndIndex")
+     filtered_tokens = []
+     seen = set()
+     for token in tokens:
+- 616b588f68203b231636ce5513737d82960cdf6d: fix
+Code changes:
+@@ -1670,7 +1670,9 @@ def get(self):
+             field_names = [fr["field_name"] for fr in field_rules]
+             field_names = ', '.join([f"'{value}'" for value in field_names])
+ 
+-            query2 = base_query + f" and fvr.org_id = 'DEFAULT' and fvr.field_name not in ({field_names})"
++            query2 = base_query + f" and fvr.org_id = 'DEFAULT'"
++            if field_names:
++                query2 = query2 + f" and fvr.field_name not in ({field_names})"
+             default_field_rules = dbh.execute_query(db, query2)
+ 
+             field_rules = field_rules + default_field_rules
+- 1076cec8c964947d95a19bc96fed17cde18ab434: Merge pull request #833 from Fellow-Consulting-AG/stage
+
+duplicate token fix
+Code changes:
+@@ -4,23 +4,20 @@
+ 
+ from shapely.geometry import Polygon
+ 
+-from helper.form_extractor.fill_ratio import (
+-    get_field_fill_ratio,
+-    get_opencv_image_from_url,
+-)
++from helper.form_extractor.fill_ratio import (get_field_fill_ratio,
++                                              get_opencv_image_from_url)
+ from helper.util import clean_amount_fields, clean_string
+ 
+ sys.path.append(".")
+ import math
+-import time
+ 
+ import regex as re
+ 
+ import fellow2kv.config as config
+ from fellow2kv.extension import storagemanager_doc2
+-from helper.common_regex import CURRENCY_REGEX, NUMERIC_AND_AMOUNT_SEPARATORS_REGEX
++from helper.common_regex import (CURRENCY_REGEX,
++                                 NUMERIC_AND_AMOUNT_SEPARATORS_REGEX)
+ from helper.extract_util_errors import InvalidDirectionError, UndifiendError
+-
+ # from fellow2kv.extension storagemanager_doc2
+ from logger import get_logger
+ 
+@@ -623,6 +620,10 @@ def get_string_from_coordinates(
+         tokens = self.get_tokens_in_coordinates_range(
+             coordinates, page_num, use_custom_tokens
+         )
++
++        # added remove duplicate tokens as a fix for the issue where the same token is returned twice
++        tokens = remove_duplicate_tokens(tokens)
++
+         return self.get_match_data_from_matched_tokens(
+             page_num, tokens, append_tokens=append_tokens
+         )
+@@ -1324,3 +1325,20 @@ def is_multi_line(tokens):
+         return False
+ 
+     return True
++
++
++
++def remove_duplicate_tokens(tokens):
++    entries_to_remove = ('startIndex', 'endIndex', 'customStartIndex', 'customEndIndex')
++    filtered_tokens = []
++    seen = set()
++    for token in tokens:
++        token_copy = copy.deepcopy(token)
++        for k in entries_to_remove:
++            token_copy.pop(k, None)
++
++        t = tuple(token_copy.items())
++        if t not in seen:
++            seen.add(t)
++            filtered_tokens.append(token)
++    return filtered_tokens
+- e9487baaf2505773a48c5406789112802a8b0f00: Merge pull request #832 from Fellow-Consulting-AG/dev
+
+fix
+Code changes:
+@@ -4,23 +4,20 @@
+ 
+ from shapely.geometry import Polygon
+ 
+-from helper.form_extractor.fill_ratio import (
+-    get_field_fill_ratio,
+-    get_opencv_image_from_url,
+-)
++from helper.form_extractor.fill_ratio import (get_field_fill_ratio,
++                                              get_opencv_image_from_url)
+ from helper.util import clean_amount_fields, clean_string
+ 
+ sys.path.append(".")
+ import math
+-import time
+ 
+ import regex as re
+ 
+ import fellow2kv.config as config
+ from fellow2kv.extension import storagemanager_doc2
+-from helper.common_regex import CURRENCY_REGEX, NUMERIC_AND_AMOUNT_SEPARATORS_REGEX
++from helper.common_regex import (CURRENCY_REGEX,
++                                 NUMERIC_AND_AMOUNT_SEPARATORS_REGEX)
+ from helper.extract_util_errors import InvalidDirectionError, UndifiendError
+-
+ # from fellow2kv.extension storagemanager_doc2
+ from logger import get_logger
+ 
+@@ -623,6 +620,10 @@ def get_string_from_coordinates(
+         tokens = self.get_tokens_in_coordinates_range(
+             coordinates, page_num, use_custom_tokens
+         )
++
++        # added remove duplicate tokens as a fix for the issue where the same token is returned twice
++        tokens = remove_duplicate_tokens(tokens)
++
+         return self.get_match_data_from_matched_tokens(
+             page_num, tokens, append_tokens=append_tokens
+         )
+@@ -1324,3 +1325,20 @@ def is_multi_line(tokens):
+         return False
+ 
+     return True
++
++
++
++def remove_duplicate_tokens(tokens):
++    entries_to_remove = ('startIndex', 'endIndex', 'customStartIndex', 'customEndIndex')
++    filtered_tokens = []
++    seen = set()
++    for token in tokens:
++        token_copy = copy.deepcopy(token)
++        for k in entries_to_remove:
++            token_copy.pop(k, None)
++
++        t = tuple(token_copy.items())
++        if t not in seen:
++            seen.add(t)
++            filtered_tokens.append(token)
++    return filtered_tokens
+- 745632eb1d17db006b60ef7156ac4c5260f11948: remove duplicate tokens
+Code changes:
+@@ -4,23 +4,20 @@
+ 
+ from shapely.geometry import Polygon
+ 
+-from helper.form_extractor.fill_ratio import (
+-    get_field_fill_ratio,
+-    get_opencv_image_from_url,
+-)
++from helper.form_extractor.fill_ratio import (get_field_fill_ratio,
++                                              get_opencv_image_from_url)
+ from helper.util import clean_amount_fields, clean_string
+ 
+ sys.path.append(".")
+ import math
+-import time
+ 
+ import regex as re
+ 
+ import fellow2kv.config as config
+ from fellow2kv.extension import storagemanager_doc2
+-from helper.common_regex import CURRENCY_REGEX, NUMERIC_AND_AMOUNT_SEPARATORS_REGEX
++from helper.common_regex import (CURRENCY_REGEX,
++                                 NUMERIC_AND_AMOUNT_SEPARATORS_REGEX)
+ from helper.extract_util_errors import InvalidDirectionError, UndifiendError
+-
+ # from fellow2kv.extension storagemanager_doc2
+ from logger import get_logger
+ 
+@@ -623,6 +620,10 @@ def get_string_from_coordinates(
+         tokens = self.get_tokens_in_coordinates_range(
+             coordinates, page_num, use_custom_tokens
+         )
++
++        # added remove duplicate tokens as a fix for the issue where the same token is returned twice
++        tokens = remove_duplicate_tokens(tokens)
++
+         return self.get_match_data_from_matched_tokens(
+             page_num, tokens, append_tokens=append_tokens
+         )
+@@ -1324,3 +1325,20 @@ def is_multi_line(tokens):
+         return False
+ 
+     return True
++
++
++
++def remove_duplicate_tokens(tokens):
++    entries_to_remove = ('startIndex', 'endIndex', 'customStartIndex', 'customEndIndex')
++    filtered_tokens = []
++    seen = set()
++    for token in tokens:
++        token_copy = copy.deepcopy(token)
++        for k in entries_to_remove:
++            token_copy.pop(k, None)
++
++        t = tuple(token_copy.items())
++        if t not in seen:
++            seen.add(t)
++            filtered_tokens.append(token)
++    return filtered_tokens
+- f1a80ca0c3e0ee783f376770730dc73550655cac: Merge pull request #831 from Fellow-Consulting-AG/stage
+
+fix1
+Code changes:
+@@ -180,9 +180,9 @@ def __classify_document__(
+         )
+         doc_type_csn, doc_locale_csn = tfidf_classifier.classify_document(document)
+ 
+-        if not doc_type_csn.value in active_doc_types:
++        if doc_type_csn and not doc_type_csn.value in active_doc_types:
+             doc_type_csn = None
+-        
++
+         if doc_type_csn:
+             resp_json["flow_meta"].append(
+                 {
+- d66a71a5ec38b891bf87f388edeabc651123994d: Merge pull request #830 from Fellow-Consulting-AG/dev
+
+fix 1
+Code changes:
+@@ -180,7 +180,7 @@ def __classify_document__(
+         )
+         doc_type_csn, doc_locale_csn = tfidf_classifier.classify_document(document)
+ 
+-        if not doc_type_csn.value in active_doc_types:
++        if doc_type_csn and not doc_type_csn.value in active_doc_types:
+             doc_type_csn = None
+ 
+         if doc_type_csn:
+- 68e635a3e28138d6af60e00d8f044b54145143c5: fix 1
+Code changes:
+@@ -180,7 +180,7 @@ def __classify_document__(
+         )
+         doc_type_csn, doc_locale_csn = tfidf_classifier.classify_document(document)
+ 
+-        if not doc_type_csn.value in active_doc_types:
++        if doc_type_csn and not doc_type_csn.value in active_doc_types:
+             doc_type_csn = None
+ 
+         if doc_type_csn:
+- 6e65df0a828568de9f217be77ed5b2cb31c47483: Merge pull request #829 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -203,7 +203,10 @@ def get_highest_priority_label(model_labels, result):
+         # first label returned, if there is no entry for the classified label found
+         result_page = result_pages_all[0]
+         cr = ClassificationResult(
+-            result_page["classification"], result_page["page"], result_page["prob"], f"First label"
++            result_page["classification"],
++            result_page["page"],
++            result_page["prob"],
++            f"First label",
+         )
+         return cr
+ 
+- 300b35a95077758f3e047f5e74252d184e7b173c: Merge pull request #828 from Fellow-Consulting-AG/dev
+
+fix
+Code changes:
+@@ -153,6 +153,7 @@ def __classify_document__(
+         doc_type_csn = keyword_classifier.detect_document_type(
+             ai_extractor, user, keyword_types
+         )
++
+         if doc_type_csn:
+             resp_json["flow_meta"].append(
+                 {
+@@ -179,20 +180,23 @@ def __classify_document__(
+         )
+         doc_type_csn, doc_locale_csn = tfidf_classifier.classify_document(document)
+ 
+-        resp_json["flow_meta"].append(
+-            {
+-                "name": "classification",
+-                "type": "classify",
+-                "data": "true",
+-                "result": {
+-                    "doc_type_csn": doc_type_csn,
+-                    "doc_locale_csn": doc_locale_csn,
+-                },
+-                "module": "classify",
+-                "message": "TF-IDF-Classification successful",
+-            }
+-        )
++        if not doc_type_csn.value in active_doc_types:
++            doc_type_csn = None
++        
+         if doc_type_csn:
++            resp_json["flow_meta"].append(
++                {
++                    "name": "classification",
++                    "type": "classify",
++                    "data": "true",
++                    "result": {
++                        "doc_type_csn": doc_type_csn,
++                        "doc_locale_csn": doc_locale_csn,
++                    },
++                    "module": "classify",
++                    "message": "TF-IDF-Classification successful",
++                }
++            )
+             result_value = doc_type_csn.value
+             result_score = doc_type_csn.score * 100
+             logger.customer(
+- a4e84f00afa7579b38f42a372f5bfc1248d38dd1: Merge branch 'stage' into dev
+Code changes:
+@@ -1 +1 @@
+-2.0.497
+\ No newline at end of file
++2.0.497
+- 8fd98345a30cdcc7d388c2ddabbe500b200f149b: fix
+Code changes:
+@@ -153,6 +153,7 @@ def __classify_document__(
+         doc_type_csn = keyword_classifier.detect_document_type(
+             ai_extractor, user, keyword_types
+         )
++
+         if doc_type_csn:
+             resp_json["flow_meta"].append(
+                 {
+@@ -179,20 +180,23 @@ def __classify_document__(
+         )
+         doc_type_csn, doc_locale_csn = tfidf_classifier.classify_document(document)
+ 
+-        resp_json["flow_meta"].append(
+-            {
+-                "name": "classification",
+-                "type": "classify",
+-                "data": "true",
+-                "result": {
+-                    "doc_type_csn": doc_type_csn,
+-                    "doc_locale_csn": doc_locale_csn,
+-                },
+-                "module": "classify",
+-                "message": "TF-IDF-Classification successful",
+-            }
+-        )
++        if not doc_type_csn.value in active_doc_types:
++            doc_type_csn = None
++        
+         if doc_type_csn:
++            resp_json["flow_meta"].append(
++                {
++                    "name": "classification",
++                    "type": "classify",
++                    "data": "true",
++                    "result": {
++                        "doc_type_csn": doc_type_csn,
++                        "doc_locale_csn": doc_locale_csn,
++                    },
++                    "module": "classify",
++                    "message": "TF-IDF-Classification successful",
++                }
++            )
+             result_value = doc_type_csn.value
+             result_score = doc_type_csn.score * 100
+             logger.customer(
+- 133552b6ff2121c68cec4b7dc289311db0f90787: Merge pull request #827 from Fellow-Consulting-AG/stage
+
+Stage
+Code changes:
+@@ -42,13 +42,12 @@ def populate_custom_lines(document):
+             db, "REMOVE_BOUNDRY_TOKENS", document.get("org_id", None), True
+         )
+ 
+-        remove_boundry_width_percentage = float(
+-            gdvh.get_float_value(
+-                db, "REMOVE_BOUNDRY_TOKENS", document.get("org_id", None), 0.05
+-            )
+-        )
+-
+         if remove_boundry_tokens:
++            remove_boundry_width_percentage = float(
++                gdvh.get_float_value(
++                    db, "REMOVE_BOUNDRY_TOKENS", document.get("org_id", None), 0.05
++                )
++            )
+             first_tokens = [
+                 t
+                 for t in page["tokens"]
+- 98ab95ce9794e148dab23c7cbea87018e42a3daa: Merge branch 'sandbox' into stage
+Code changes:
+@@ -1 +1 @@
+-2.0.495
+\ No newline at end of file
++2.0.495
+- 3f7ccf42784f98ee3939b4fd77fc50bd86737154: Merge pull request #826 from Fellow-Consulting-AG/dev
+
+fix
+Code changes:
+@@ -42,13 +42,12 @@ def populate_custom_lines(document):
+             db, "REMOVE_BOUNDRY_TOKENS", document.get("org_id", None), True
+         )
+ 
+-        remove_boundry_width_percentage = float(
+-            gdvh.get_float_value(
+-                db, "REMOVE_BOUNDRY_TOKENS", document.get("org_id", None), 0.05
+-            )
+-        )
+-
+         if remove_boundry_tokens:
++            remove_boundry_width_percentage = float(
++                gdvh.get_float_value(
++                    db, "REMOVE_BOUNDRY_TOKENS", document.get("org_id", None), 0.05
++                )
++            )
+             first_tokens = [
+                 t
+                 for t in page["tokens"]
+- f8edf496a10f8b5d970aeb28282525c9b3069ddd: classification fix
+Code changes:
+@@ -153,22 +153,23 @@ def __classify_document__(
+         doc_type_csn = keyword_classifier.detect_document_type(
+             ai_extractor, user, keyword_types
+         )
+-        resp_json["flow_meta"].append(
+-            {
+-                "name": "classification",
+-                "type": "classify",
+-                "data": "true",
+-                "result": {"doc_type_csn": doc_type_csn},
+-                "module": "classify",
+-                "message": "Keyword-Classification successful",
+-            }
+-        )
+-        result_value = doc_type_csn.value
+-        result_score = doc_type_csn.score * 100
++        if doc_type_csn:
++            resp_json["flow_meta"].append(
++                {
++                    "name": "classification",
++                    "type": "classify",
++                    "data": "true",
++                    "result": {"doc_type_csn": doc_type_csn},
++                    "module": "classify",
++                    "message": "Keyword-Classification successful",
++                }
++            )
++            result_value = doc_type_csn.value
++            result_score = doc_type_csn.score * 100
+ 
+-        logger.customer(
+-            f"Keyword-Classification successful. Classified as {result_value} with {result_score:.2f}% confidence."
+-        )
++            logger.customer(
++                f"Keyword-Classification successful. Classified as {result_value} with {result_score:.2f}% confidence."
++            )
+ 
+     # Classifying based on TF-IDF and Trained Model
+     if not doc_type_csn and not model_only:
+- 4a573a8e601bff5ab451076d54c79dd52cca4138: Merge pull request #825 from Fellow-Consulting-AG/dev
+
+classification fix
+Code changes:
+@@ -76,7 +76,7 @@ def classify_document(user: UserAuthentication, model, local_file_path, pages=No
+ 
+     # Getting classified label with highest priority. If there are multiple high priority labels, we get default label
+     res: ClassificationResult = get_highest_priority_label(model_labels, result)
+-    if res.score == -1:
++    if res.score == -1 or not res.label in model_labels:
+         result["classification_label"] = res.label
+         result["classification_message"] = res.message
+         result["classification_score"] = res.score
+@@ -203,7 +203,7 @@ def get_highest_priority_label(model_labels, result):
+         # first label returned, if there is no entry for the classified label found
+         result_page = result_pages_all[0]
+         cr = ClassificationResult(
+-            result_page["classification"], result_page["page"], -1, f"First label"
++            result_page["classification"], result_page["page"], result_page["prob"], f"First label"
+         )
+         return cr
+ 
+- c019d859e8214ee5220171145907e51b421a5bd9: Merge branch 'stage' into dev
+Code changes:
+@@ -4,8 +4,9 @@
+ from authenticator import UserAuthentication
+ from constants import CLASSIFICATION_MODELS
+ from fellow2kv.extension import db
+-from helper.custom_classifier_v2.iclassifier_model_processor import \
+-    IClassifierModelProcessor
++from helper.custom_classifier_v2.iclassifier_model_processor import (
++    IClassifierModelProcessor,
++)
+ from util import sync_wrapper
+ 
+ from . import common, mlp_classifier_processor, service_classifier_processor
+- 8db8f50ffaf4822e9336de1a0502af6e93bbf124: classified fix
+Code changes:
+@@ -4,9 +4,8 @@
+ from authenticator import UserAuthentication
+ from constants import CLASSIFICATION_MODELS
+ from fellow2kv.extension import db
+-from helper.custom_classifier_v2.iclassifier_model_processor import (
+-    IClassifierModelProcessor,
+-)
++from helper.custom_classifier_v2.iclassifier_model_processor import \
++    IClassifierModelProcessor
+ from util import sync_wrapper
+ 
+ from . import common, mlp_classifier_processor, service_classifier_processor
+@@ -76,7 +75,7 @@ def classify_document(user: UserAuthentication, model, local_file_path, pages=No
+ 
+     # Getting classified label with highest priority. If there are multiple high priority labels, we get default label
+     res: ClassificationResult = get_highest_priority_label(model_labels, result)
+-    if res.score == -1:
++    if res.score == -1 or not res.label in model_labels:
+         result["classification_label"] = res.label
+         result["classification_message"] = res.message
+         result["classification_score"] = res.score
+@@ -203,7 +202,7 @@ def get_highest_priority_label(model_labels, result):
+         # first label returned, if there is no entry for the classified label found
+         result_page = result_pages_all[0]
+         cr = ClassificationResult(
+-            result_page["classification"], result_page["page"], -1, f"First label"
++            result_page["classification"], result_page["page"], result_page["prob"], f"First label"
+         )
+         return cr
+ 
+- 16db427173b0aa87518f9fb6d4fe524a3db1ad4b: Merge pull request #820 from Fellow-Consulting-AG/stage
+
+0 prio flach label
+Code changes:
+@@ -4,8 +4,9 @@
+ from authenticator import UserAuthentication
+ from constants import CLASSIFICATION_MODELS
+ from fellow2kv.extension import db
+-from helper.custom_classifier_v2.iclassifier_model_processor import \
+-    IClassifierModelProcessor
++from helper.custom_classifier_v2.iclassifier_model_processor import (
++    IClassifierModelProcessor,
++)
+ from util import sync_wrapper
+ 
+ from . import common, mlp_classifier_processor, service_classifier_processor
+@@ -188,7 +189,7 @@ def get_highest_priority_label(model_labels, result):
+             page["label_doc_type"] = doc_type
+             page["label_priority"] = priority
+ 
+-    # getting classification labels with priority > 0
++    # getting classification labels with priority >= 0
+     result_pages_all = copy.deepcopy(result["pages"])
+     result_pages_all = [cl for cl in result_pages_all if page["classification"]]
+     classified_pages = [
+@@ -199,13 +200,22 @@ def get_highest_priority_label(model_labels, result):
+         return None
+ 
+     if not classified_pages:
+-        # first label returned
++        # first label returned, if there is no entry for the classified label found
+         result_page = result_pages_all[0]
+         cr = ClassificationResult(
+-            result_page["classification"], result_page, -1, f"First label"
++            result_page["classification"], result_page["page"], -1, f"First label"
+         )
+         return cr
+ 
++    # If there is any label with priority 0. It should be overall label for the document
++    # irrespective of other labels and their scores.
++    for cp in classified_pages:
++        if cp.get("label_priority", -1) == 0:
++            cr = ClassificationResult(
++                cp["classification"], cp["page"], cp["prob"], f"0 Priority Label"
++            )
++            return cr
++
+     classified_pages = sorted(classified_pages, key=lambda x: x["label_priority"])
+ 
+     high_priority_labels = [
+- a0759f9b68779164199c8fed3732223a11af9f54: Merge pull request #819 from Fellow-Consulting-AG/dev
+
+0 prio flach label
+Code changes:
+@@ -189,7 +189,7 @@ def get_highest_priority_label(model_labels, result):
+             page["label_doc_type"] = doc_type
+             page["label_priority"] = priority
+ 
+-    # getting classification labels with priority > 0
++    # getting classification labels with priority >= 0
+     result_pages_all = copy.deepcopy(result["pages"])
+     result_pages_all = [cl for cl in result_pages_all if page["classification"]]
+     classified_pages = [
+@@ -200,13 +200,22 @@ def get_highest_priority_label(model_labels, result):
+         return None
+ 
+     if not classified_pages:
+-        # first label returned
++        # first label returned, if there is no entry for the classified label found
+         result_page = result_pages_all[0]
+         cr = ClassificationResult(
+-            result_page["classification"], result_page, -1, f"First label"
++            result_page["classification"], result_page["page"], -1, f"First label"
+         )
+         return cr
+ 
++    # If there is any label with priority 0. It should be overall label for the document
++    # irrespective of other labels and their scores.
++    for cp in classified_pages:
++        if cp.get("label_priority", -1) == 0:
++            cr = ClassificationResult(
++                cp["classification"], cp["page"], cp["prob"], f"0 Priority Label"
++            )
++            return cr
++
+     classified_pages = sorted(classified_pages, key=lambda x: x["label_priority"])
+ 
+     high_priority_labels = [
+- 6aa5600fae1a6d6f3c3ea5a48af1c407c4b2e9c9: flach classifier
+Code changes:
+@@ -4,9 +4,8 @@
+ from authenticator import UserAuthentication
+ from constants import CLASSIFICATION_MODELS
+ from fellow2kv.extension import db
+-from helper.custom_classifier_v2.iclassifier_model_processor import (
+-    IClassifierModelProcessor,
+-)
++from helper.custom_classifier_v2.iclassifier_model_processor import \
++    IClassifierModelProcessor
+ from util import sync_wrapper
+ 
+ from . import common, mlp_classifier_processor, service_classifier_processor
+@@ -189,7 +188,7 @@ def get_highest_priority_label(model_labels, result):
+             page["label_doc_type"] = doc_type
+             page["label_priority"] = priority
+ 
+-    # getting classification labels with priority > 0
++    # getting classification labels with priority >= 0
+     result_pages_all = copy.deepcopy(result["pages"])
+     result_pages_all = [cl for cl in result_pages_all if page["classification"]]
+     classified_pages = [
+@@ -200,13 +199,22 @@ def get_highest_priority_label(model_labels, result):
+         return None
+ 
+     if not classified_pages:
+-        # first label returned
++        # first label returned, if there is no entry for the classified label found
+         result_page = result_pages_all[0]
+         cr = ClassificationResult(
+-            result_page["classification"], result_page, -1, f"First label"
++            result_page["classification"], result_page["page"], -1, f"First label"
+         )
+         return cr
+ 
++    # If there is any label with priority 0. It should be overall label for the document
++    # irrespective of other labels and their scores.
++    for cp in classified_pages:
++        if cp.get("label_priority", -1) == 0:
++            cr = ClassificationResult(
++                cp["classification"], cp["page"], cp["prob"], f"0 Priority Label"
++            )
++            return cr
++
+     classified_pages = sorted(classified_pages, key=lambda x: x["label_priority"])
+ 
+     high_priority_labels = [
+- 4c584aa9d92ed06fcd005d9f6ea9b36015c9dfcf: Merge pull request #816 from Fellow-Consulting-AG/stage
+
+fuzzy primary field
+Code changes:
+@@ -52,48 +52,42 @@ def verify_token(token):
+             res = UserAuthentication.verify_auth_token(token)
+             return res
+ 
+-        from namespaces.block_table_extract import (
+-            namespace as namespace_block_table_extract,
+-        )
++        from namespaces.block_table_extract import \
++            namespace as namespace_block_table_extract
+         from namespaces.cache import namespace as namespace_cache
+-        from namespaces.custom_classifier import (
+-            namespace as namespace_custom_classifier,
+-        )
+-        from namespaces.custom_classifier_v2 import (
+-            namespace as namespace_custom_classifier_v2,
+-        )
+-        from namespaces.custom_models.custom_model import (
+-            namespace as namespace_custom_model_v2,
+-        )
+-        from namespaces.custom_models.custom_model_label import (
+-            namespace as namespace_custom_model_labels_v2,
+-        )
+-
++        from namespaces.custom_classifier import \
++            namespace as namespace_custom_classifier
++        from namespaces.custom_classifier_v2 import \
++            namespace as namespace_custom_classifier_v2
++        from namespaces.custom_models.custom_model import \
++            namespace as namespace_custom_model_v2
++        from namespaces.custom_models.custom_model_label import \
++            namespace as namespace_custom_model_labels_v2
+         # from namespaces.db_import_export import namespace as namespace_db
+         from namespaces.doc2_v2 import namespace as namespace_doc2_v2
+-        from namespaces.document_and_fields import (
+-            namespace as namespace_document_and_fields,
+-        )
+-        from namespaces.document_layout_template import (
+-            namespace as namespace_document_layout_template,
+-        )
+-        from namespaces.document_table import namespace as namespace_document_table
++        from namespaces.document_and_fields import \
++            namespace as namespace_document_and_fields
++        from namespaces.document_layout_template import \
++            namespace as namespace_document_layout_template
++        from namespaces.document_table import \
++            namespace as namespace_document_table
+         from namespaces.export import namespace as namespace_export
+         from namespaces.extract import namespace as namespace_extract
+         from namespaces.health import namespace as namespace_health
+-        from namespaces.list_of_values.list_of_values import (
+-            namespace as namespace_list_of_values,
+-        )
++        from namespaces.internal import namespace as namespace_internal
++        from namespaces.list_of_values.list_of_values import \
++            namespace as namespace_list_of_values
+         from namespaces.migration import namespace as namespace_migration
+-        from namespaces.ocr_configurations import (
+-            namespace as namespace_ocr_configurations,
+-        )
++        from namespaces.ocr_configurations import \
++            namespace as namespace_ocr_configurations
+         from namespaces.pdf import namespace as namespace_pdf
+         from namespaces.preferences import namespace as preferences
+-        from namespaces.sub_document_type import (
+-            namespace as namespace_sub_document_type,
+-        )
+-        from namespaces.table_extract_v3 import namespace as namespace_table_extract_v3
++        from namespaces.sub_document_type import \
++            namespace as namespace_sub_document_type
++        from namespaces.table_extract_v3 import \
++            namespace as namespace_table_extract_v3
++
++        
+ 
+         api.add_namespace(namespace_extract, path="/extract")
+         api.add_namespace(namespace_export, path="/export")
+@@ -124,6 +118,10 @@ def verify_token(token):
+         api.add_namespace(namespace_cache, path="/cache")
+         api.add_namespace(namespace_health, path="/api")
+ 
++        if config.IS_DEBUG:
++            api.add_namespace(namespace_internal, path="/internal")
++
++
+         from fellow2kv.cli.ml import ml_blueprint
+ 
+         app.register_blueprint(ml_blueprint)
+- 7a5f04001fc7617ac0bb0cd110fcc800fff797bf: Merge branch 'sandbox' into stage
+Code changes:
+@@ -7,16 +7,23 @@
+ from typing import Any, Iterable
+ 
+ from pdfminer.high_level import extract_pages
+-from pdfminer.layout import (LAParams, LTAnno, LTChar, LTFigure, LTPage,
+-                             LTTextBox, LTTextLine, LTTextLineHorizontal)
++from pdfminer.layout import (
++    LAParams,
++    LTAnno,
++    LTChar,
++    LTFigure,
++    LTPage,
++    LTTextBox,
++    LTTextLine,
++    LTTextLineHorizontal,
++)
+ from shapely.geometry import Polygon
+ 
+ from fellow2kv.extension import storagemanager_doc2 as storage_manager_doc2
+ from helper.ai.ai_ocr import check_for_existing_line
+ from helper.ai.google_ocr import GOOGLE_OCR
+ from helper.extract_util import Extractor
+-from helper.table_extractors.table_formatter_v3 import \
+-    get_intersection_area_percent
++from helper.table_extractors.table_formatter_v3 import get_intersection_area_percent
+ 
+ pattern = re.compile("^\(cid:\d+\)+$")
+ 
+- f791b931df894d1031833442c7d06351b105bfff: Merge pull request #815 from Fellow-Consulting-AG/dev
+
+fuzzy primary field
+Code changes:
+@@ -52,48 +52,42 @@ def verify_token(token):
+             res = UserAuthentication.verify_auth_token(token)
+             return res
+ 
+-        from namespaces.block_table_extract import (
+-            namespace as namespace_block_table_extract,
+-        )
++        from namespaces.block_table_extract import \
++            namespace as namespace_block_table_extract
+         from namespaces.cache import namespace as namespace_cache
+-        from namespaces.custom_classifier import (
+-            namespace as namespace_custom_classifier,
+-        )
+-        from namespaces.custom_classifier_v2 import (
+-            namespace as namespace_custom_classifier_v2,
+-        )
+-        from namespaces.custom_models.custom_model import (
+-            namespace as namespace_custom_model_v2,
+-        )
+-        from namespaces.custom_models.custom_model_label import (
+-            namespace as namespace_custom_model_labels_v2,
+-        )
+-
++        from namespaces.custom_classifier import \
++            namespace as namespace_custom_classifier
++        from namespaces.custom_classifier_v2 import \
++            namespace as namespace_custom_classifier_v2
++        from namespaces.custom_models.custom_model import \
++            namespace as namespace_custom_model_v2
++        from namespaces.custom_models.custom_model_label import \
++            namespace as namespace_custom_model_labels_v2
+         # from namespaces.db_import_export import namespace as namespace_db
+         from namespaces.doc2_v2 import namespace as namespace_doc2_v2
+-        from namespaces.document_and_fields import (
+-            namespace as namespace_document_and_fields,
+-        )
+-        from namespaces.document_layout_template import (
+-            namespace as namespace_document_layout_template,
+-        )
+-        from namespaces.document_table import namespace as namespace_document_table
++        from namespaces.document_and_fields import \
++            namespace as namespace_document_and_fields
++        from namespaces.document_layout_template import \
++            namespace as namespace_document_layout_template
++        from namespaces.document_table import \
++            namespace as namespace_document_table
+         from namespaces.export import namespace as namespace_export
+         from namespaces.extract import namespace as namespace_extract
+         from namespaces.health import namespace as namespace_health
+-        from namespaces.list_of_values.list_of_values import (
+-            namespace as namespace_list_of_values,
+-        )
++        from namespaces.internal import namespace as namespace_internal
++        from namespaces.list_of_values.list_of_values import \
++            namespace as namespace_list_of_values
+         from namespaces.migration import namespace as namespace_migration
+-        from namespaces.ocr_configurations import (
+-            namespace as namespace_ocr_configurations,
+-        )
++        from namespaces.ocr_configurations import \
++            namespace as namespace_ocr_configurations
+         from namespaces.pdf import namespace as namespace_pdf
+         from namespaces.preferences import namespace as preferences
+-        from namespaces.sub_document_type import (
+-            namespace as namespace_sub_document_type,
+-        )
+-        from namespaces.table_extract_v3 import namespace as namespace_table_extract_v3
++        from namespaces.sub_document_type import \
++            namespace as namespace_sub_document_type
++        from namespaces.table_extract_v3 import \
++            namespace as namespace_table_extract_v3
++
++        
+ 
+         api.add_namespace(namespace_extract, path="/extract")
+         api.add_namespace(namespace_export, path="/export")
+@@ -124,6 +118,10 @@ def verify_token(token):
+         api.add_namespace(namespace_cache, path="/cache")
+         api.add_namespace(namespace_health, path="/api")
+ 
++        if config.IS_DEBUG:
++            api.add_namespace(namespace_internal, path="/internal")
++
++
+         from fellow2kv.cli.ml import ml_blueprint
+ 
+         app.register_blueprint(ml_blueprint)
+- 41cdeb11266b6f0940ede751bad0f97fd5707801: fuzzy primary field
+Code changes:
+@@ -62,6 +62,7 @@ def get_document_tables(org_id, doc_type):
+     "calculation_formula",
+     "fuzzy_name",
+     "fuzzy_field",
++    "fuzzy_primary_field",
+     "is_sub_doc_type_field",
+ ]
+ 
+@@ -80,6 +81,7 @@ def get_document_tables(org_id, doc_type):
+     "sort_order",
+     "fuzzy_name",
+     "fuzzy_field",
++    "fuzzy_primary_field",
+     "is_required",
+     "is_readonly",
+     "force_validation",
+@@ -194,7 +196,7 @@ def get_field_validation_rules_compact(db, doc_type, sub_doc_type, profile, org_
+     query = f"""select
+         fg.id as group_id, fg.group_name as group_name, fg.title as group_title, fg.translation_key as group_translation_key,
+         f.id, f.org_id as field_org_id, f.doc_type, f.field_name, f.title, f.translation_key, f.calculation_formula,
+-        f.field_type,f.fuzzy_field, f.fuzzy_name, f.is_sub_doc_type_field,
++        f.field_type,f.fuzzy_field, f.fuzzy_name,fuzzy_primary_field, f.is_sub_doc_type_field,
+         case
+             when fvr.id is not null then fvr.is_required
+             else dfvr.is_required
+@@ -602,7 +604,7 @@ def get_table_column_confs(org_id: str, table_name: str, column_name=None):
+ 
+ def get_fuzzy_fields_list(db, org_id, doc_type, sub_doc_type):
+     query = f"""select
+-        f.doc_type, f.field_name, fuzzy_name, f.fuzzy_field
++        f.doc_type, f.field_name, fuzzy_name, f.fuzzy_field, f.fuzzy_primary_field,
+     from
+         field f
+     Where ((f.doc_type in ('{doc_type}') and f.is_sub_doc_type_field = False)
+- 082dd8b50f80dc9810bf4b3d4028ee9a89911320: internal endpoint added
+Code changes:
+@@ -52,48 +52,42 @@ def verify_token(token):
+             res = UserAuthentication.verify_auth_token(token)
+             return res
+ 
+-        from namespaces.block_table_extract import (
+-            namespace as namespace_block_table_extract,
+-        )
++        from namespaces.block_table_extract import \
++            namespace as namespace_block_table_extract
+         from namespaces.cache import namespace as namespace_cache
+-        from namespaces.custom_classifier import (
+-            namespace as namespace_custom_classifier,
+-        )
+-        from namespaces.custom_classifier_v2 import (
+-            namespace as namespace_custom_classifier_v2,
+-        )
+-        from namespaces.custom_models.custom_model import (
+-            namespace as namespace_custom_model_v2,
+-        )
+-        from namespaces.custom_models.custom_model_label import (
+-            namespace as namespace_custom_model_labels_v2,
+-        )
+-
++        from namespaces.custom_classifier import \
++            namespace as namespace_custom_classifier
++        from namespaces.custom_classifier_v2 import \
++            namespace as namespace_custom_classifier_v2
++        from namespaces.custom_models.custom_model import \
++            namespace as namespace_custom_model_v2
++        from namespaces.custom_models.custom_model_label import \
++            namespace as namespace_custom_model_labels_v2
+         # from namespaces.db_import_export import namespace as namespace_db
+         from namespaces.doc2_v2 import namespace as namespace_doc2_v2
+-        from namespaces.document_and_fields import (
+-            namespace as namespace_document_and_fields,
+-        )
+-        from namespaces.document_layout_template import (
+-            namespace as namespace_document_layout_template,
+-        )
+-        from namespaces.document_table import namespace as namespace_document_table
++        from namespaces.document_and_fields import \
++            namespace as namespace_document_and_fields
++        from namespaces.document_layout_template import \
++            namespace as namespace_document_layout_template
++        from namespaces.document_table import \
++            namespace as namespace_document_table
+         from namespaces.export import namespace as namespace_export
+         from namespaces.extract import namespace as namespace_extract
+         from namespaces.health import namespace as namespace_health
+-        from namespaces.list_of_values.list_of_values import (
+-            namespace as namespace_list_of_values,
+-        )
++        from namespaces.internal import namespace as namespace_internal
++        from namespaces.list_of_values.list_of_values import \
++            namespace as namespace_list_of_values
+         from namespaces.migration import namespace as namespace_migration
+-        from namespaces.ocr_configurations import (
+-            namespace as namespace_ocr_configurations,
+-        )
++        from namespaces.ocr_configurations import \
++            namespace as namespace_ocr_configurations
+         from namespaces.pdf import namespace as namespace_pdf
+         from namespaces.preferences import namespace as preferences
+-        from namespaces.sub_document_type import (
+-            namespace as namespace_sub_document_type,
+-        )
+-        from namespaces.table_extract_v3 import namespace as namespace_table_extract_v3
++        from namespaces.sub_document_type import \
++            namespace as namespace_sub_document_type
++        from namespaces.table_extract_v3 import \
++            namespace as namespace_table_extract_v3
++
++        
+ 
+         api.add_namespace(namespace_extract, path="/extract")
+         api.add_namespace(namespace_export, path="/export")
+@@ -124,6 +118,10 @@ def verify_token(token):
+         api.add_namespace(namespace_cache, path="/cache")
+         api.add_namespace(namespace_health, path="/api")
+ 
++        if config.IS_DEBUG:
++            api.add_namespace(namespace_internal, path="/internal")
++
++
+         from fellow2kv.cli.ml import ml_blueprint
+ 
+         app.register_blueprint(ml_blueprint)
+- 6ce930425f8ed6b6e2b00e3fc0fe292d1291da4d: db upgrade
+Code changes:
+@@ -0,0 +1,28 @@
++"""fuzzy_primary_field column added
++
++Revision ID: 94e7ca15c0d3
++Revises: 777bef049c09
++Create Date: 2023-03-14 10:28:39.029274
++
++"""
++from alembic import op
++import sqlalchemy as sa
++
++
++# revision identifiers, used by Alembic.
++revision = '94e7ca15c0d3'
++down_revision = '777bef049c09'
++branch_labels = None
++depends_on = None
++
++
++def upgrade():
++    # ### commands auto generated by Alembic - please adjust! ###
++    op.add_column('field', sa.Column('fuzzy_primary_field', sa.Boolean(), server_default='f', nullable=True))
++    # ### end Alembic commands ###
++
++
++def downgrade():
++    # ### commands auto generated by Alembic - please adjust! ###
++    op.drop_column('field', 'fuzzy_primary_field')
++    # ### end Alembic commands ###

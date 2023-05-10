@@ -1,0 +1,43 @@
+{
+    "author": "Lint Action",
+    "week": "2023-W09",
+    "total_commits": 7,
+    "author_image": "https://avatars.githubusercontent.com/u/59283862?v=4",
+    "commits": [
+        {
+            "sha": "76e98d4baeb0c2a4a637996db2dd41afc621e75b",
+            "message": "Fix code style issues with Black",
+            "code_changes": "@@ -165,7 +165,7 @@ def populate_custom_lines(document):\n     c_lines_text = list()\n     for page in document[\"pages\"]:\n         c_lines_text.append(page[\"customPageText\"])\n-    #document[\"customText\"] = \" \".join(c_lines_text)\n+    # document[\"customText\"] = \" \".join(c_lines_text)\n \n     # for line in custom_lines:\n     #     print(line['text'])"
+        },
+        {
+            "sha": "4355e2a1ccadbe04724e5a35ff96b78d76fcfd51",
+            "message": "Fix code style issues with Black",
+            "code_changes": "@@ -74,16 +74,17 @@ def get_pages_to_ocr(file):\n         with fitz.open(file) as doc:\n             for index, page in enumerate(doc):\n                 if not page_digitally_created(page):\n-                    pages.append(str(index+1))\n+                    pages.append(str(index + 1))\n \n     except Exception as e:\n         pages = []\n         logger.error(\"OCR with fitz failed. Error -> \" + str(e))\n \n-    pages = ','.join(pages)\n+    pages = \",\".join(pages)\n     # logger.info(\"Extracted text: \" + text)\n     return pages\n \n+\n @sync_wrapper(module=\"ocr\")\n def get_ocred_document(user, filepath, destination, force=False, improve_quality=False):\n     \"\"\""
+        },
+        {
+            "sha": "ab45e34df248ed318f82c16af4c5d36fb16232cf",
+            "message": "Fix code style issues with Black",
+            "code_changes": "@@ -13,8 +13,13 @@\n from helper import util\n from helper.layout import layout_fields_helper as lfh\n from logger import get_logger\n-from models import (AlchemyEncoder, ColumnValidationRules, DocumentTable,\n-                    DocumentTableColumn, DocumentType)\n+from models import (\n+    AlchemyEncoder,\n+    ColumnValidationRules,\n+    DocumentTable,\n+    DocumentTableColumn,\n+    DocumentType,\n+)\n \n logger = get_logger(\"document_table_settings\")\n "
+        },
+        {
+            "sha": "7b9167e15092194603902b3f87fd18c538646cc5",
+            "message": "Fix code style issues with Black",
+            "code_changes": "@@ -112,10 +112,11 @@ def readjust_coordinates(page_image, coords, strip_dim, v_padding=0, h_padding=0\n \n     return (x1, y1, x2, y2)\n \n+\n def keep_within_normalized_range(value):\n     if value > 1:\n         value = 1\n     elif value < 0:\n         value = 0\n \n-    return value\n\\ No newline at end of file\n+    return value"
+        },
+        {
+            "sha": "4e471fb9859db8d1c8953f61ad64c1fa54bc1a03",
+            "message": "Fix code style issues with Black",
+            "code_changes": "@@ -97,7 +97,7 @@ def readjust_coordinates(page_image, coords, strip_dim, v_padding=0, h_padding=0\n             int(y2 * height),\n         )\n     else:\n-        width, height = 1,1\n+        width, height = 1, 1\n     if x1 > x2:\n         x1, x2 = x2, x1\n     if y1 > y2:"
+        },
+        {
+            "sha": "b0c0cef96cc3c05c85166907c44e2bedb81df4fb",
+            "message": "Fix code style issues with Black",
+            "code_changes": "@@ -9,14 +9,23 @@\n from fellow2kv.extension import db, storagemanager\n from helpdesk import create_new_customer, create_ticket\n from helper import doc2_util\n-from helper.ai.ai_ocr import (generate_hard_regex_from_string,\n-                              generate_regex_from_string)\n-from helper.util import (get_page, transform_from_normalized,\n-                         transform_from_normalized_coords_object)\n+from helper.ai.ai_ocr import generate_hard_regex_from_string, generate_regex_from_string\n+from helper.util import (\n+    get_page,\n+    transform_from_normalized,\n+    transform_from_normalized_coords_object,\n+)\n from logger import get_logger\n-from models import (DocOriginRules, FellowKVRule, FellowKVRuleUser,\n-                    FellowKVSourceFile, FellowKVTableColumnRule,\n-                    FellowKVTableRule, TableFormattingRules, TfidfDocs)\n+from models import (\n+    DocOriginRules,\n+    FellowKVRule,\n+    FellowKVRuleUser,\n+    FellowKVSourceFile,\n+    FellowKVTableColumnRule,\n+    FellowKVTableRule,\n+    TableFormattingRules,\n+    TfidfDocs,\n+)\n \n logger = get_logger(\"plugin-export-util\")\n "
+        },
+        {
+            "sha": "13b0a412bb999d831d5a5acdb2876e77fbce87a5",
+            "message": "Fix code style issues with Black",
+            "code_changes": "@@ -127,8 +127,6 @@ def delete(self):\n aiparser.add_argument(\"name\", type=str, required=True)\n \n \n-\n-\n aiparser = api.parser()\n aiparser.add_argument(\"name\", type=str, required=True, location=\"form\")\n aiparser.add_argument(\"value\", type=str, required=True, location=\"form\")"
+        }
+    ]
+}

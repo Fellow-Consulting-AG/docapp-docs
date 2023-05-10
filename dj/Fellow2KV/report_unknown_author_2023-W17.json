@@ -1,0 +1,18 @@
+{
+    "author": null,
+    "week": "2023-W17",
+    "total_commits": 2,
+    "author_image": "https://avatars.githubusercontent.com/u/117294423?v=4",
+    "commits": [
+        {
+            "sha": "30f8681b59e2174a56f4cc6edd3d274c2e3da6c6",
+            "message": "Merge pull request #883 from Fellow-Consulting-AG/CLOU-5169\n\nNew Processing-System",
+            "code_changes": "@@ -82,6 +82,10 @@ def verify_token(token):\n             namespace as namespace_ocr_configurations\n         from namespaces.pdf import namespace as namespace_pdf\n         from namespaces.preferences import namespace as preferences\n+\n+        from namespaces.process_document_new_system import \\\n+            namespace as namespace_new_system\n+\n         from namespaces.sub_document_type import \\\n             namespace as namespace_sub_document_type\n         from namespaces.table_extract_v3 import \\\n@@ -93,6 +97,7 @@ def verify_token(token):\n         api.add_namespace(namespace_block_table_extract, path=\"/block_table_extract\")\n         api.add_namespace(preferences, path=\"/preferences\")\n \n+        api.add_namespace(namespace_new_system, path=\"/Doc2Celery\")\n         api.add_namespace(namespace_doc2_v2, path=\"/doc2_v2\")\n         api.add_namespace(namespace_custom_classifier, path=\"/custom_classifier\")\n         api.add_namespace(namespace_custom_classifier_v2, path=\"/classifier_v2\")"
+        },
+        {
+            "sha": "9a15732351d30864fd99f8618401135a42d7d112",
+            "message": "Merge branch 'dev' into CLOU-5169",
+            "code_changes": "@@ -82,8 +82,10 @@ def verify_token(token):\n             namespace as namespace_ocr_configurations\n         from namespaces.pdf import namespace as namespace_pdf\n         from namespaces.preferences import namespace as preferences\n+\n         from namespaces.process_document_new_system import \\\n             namespace as namespace_new_system\n+\n         from namespaces.sub_document_type import \\\n             namespace as namespace_sub_document_type\n         from namespaces.table_extract_v3 import \\\n@@ -119,8 +121,8 @@ def verify_token(token):\n         api.add_namespace(namespace_cache, path=\"/cache\")\n         api.add_namespace(namespace_health, path=\"/api\")\n \n-        if config.IS_DEBUG:\n-            api.add_namespace(namespace_internal, path=\"/internal\")\n+        #if config.IS_DEBUG:\n+        api.add_namespace(namespace_internal, path=\"/internal\")\n \n         from fellow2kv.cli.ml import ml_blueprint\n "
+        }
+    ]
+}

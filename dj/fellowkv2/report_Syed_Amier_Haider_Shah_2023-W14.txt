@@ -1,0 +1,351 @@
+Syed Amier Haider Shah: 2 commits for week 2023-W14
+Author image: https://avatars.githubusercontent.com/u/2101825?v=4
+- 3752ade3d44dfc3dcd1e961542878e1b689e42ad: fix
+Code changes:
+@@ -111,6 +111,7 @@ class OCR_SERVICE_TYPES:
+     EASYOCR = "EASYOCR"
+     TESSERACT = "TESSERACT"
+     GOOGLE = "GOOGLE"
++    AI = "AI"
+     PDF_MINER = "PDF_MINER"
+     E_TEXT = "E_TEXT"
+ 
+- 83520a21215fcab851de2767fdaf1a830102f15b: removed google
+Code changes:
+@@ -1,76 +1,274 @@
+ import json
++import logging
+ import tempfile
+ import time
+ from base64 import decodebytes
+ 
+ import constants
+ import helper.ai.ai_common as ai
+-import regex
++from helper.util import find_related_locale
+ from logger import get_logger
++from models import OCRConfigurations
++from util import sync_wrapper
++
++from .iocr import IOCRService
+ 
+ logger = get_logger("ai_ocr")
+ 
+ url = "https://eu-documentai.googleapis.com/v1/projects/342434080717/locations/eu/processors/4bfbf986c18da072:process"
+ 
+ 
+-def check_for_existing_line(custom_lines, y0, y1):
+-    token_mid = (y1 + y0) / 2
+-    for line in custom_lines:
+-        if y0 < line["mid"] and line["y0"] < token_mid:
+-            return line
+-        elif line["y0"] < token_mid and token_mid < line["y1"]:
+-            return line
+-
+-    return None
+-
+-
+-def detect_language(page):
+-    if len(page.get("detectedLanguages", [])) > 0:
+-        return page.get("detectedLanguages")[0].get("languageCode")
+-
+-
+-def generate_regex_from_string(string):
+-    string = (
+-        string.replace("\\", "\\\\")
+-        .replace("+", "\\+")
+-        .replace("*", "\\*")
+-        .replace("^", "\\^")
+-        .replace("|", "\\|")
+-        .replace("?", "\\?")
+-        .replace(".", "\\.")
+-        .replace("[", "\\[")
+-        .replace("]", "\\]")
+-        .replace("(", "\\(")
+-        .replace(")", "\\)")
+-        .replace("{", "\\{")
+-        .replace("}", "\\}")
+-        .replace("-", "\\-")
+-        .replace("$", "\\$")
+-    )
+-    string = regex.sub("\\p{L}", "\\\\p{L}", string)
+-    string = regex.sub("\\d{2,}(?![,.]?\\d*\\s?%)", "\\\\d+", string)
+-    string = regex.sub("\\d(?!\\d?\\s?%)", "\\\\d", string)
+-    string = regex.sub("\\s", "\\\\s?", string)
+-    return string
+-
+-
+-def generate_hard_regex_from_string(string):
+-    string = (
+-        string.replace("\\", "\\\\")
+-        .replace("+", "\\+")
+-        .replace("*", "\\*")
+-        .replace("^", "\\^")
+-        .replace("|", "\\|")
+-        .replace("?", "\\?")
+-        .replace(".", "\\.")
+-        .replace("[", "\\[")
+-        .replace("]", "\\]")
+-        .replace("(", "\\(")
+-        .replace(")", "\\)")
+-        .replace("{", "\\{")
+-        .replace("}", "\\}")
+-        .replace("-", "\\-")
+-        .replace("$", "\\$")
+-    )
+-    string = regex.sub("\\s", "\\\\s?", string)
+-    return string
++class AI_OCR_SERVICE(IOCRService):
++    def __init__(self, config: OCRConfigurations, **kwargs):
++        self.config: OCRConfigurations = config
++        pass
++
++    def __get_ocr_data__(self, source_file_path, doc_id=None):
++        ai_resp_json = ai.get_ai_response_v3(
++            constants.AI_REQUEST_TYPE.OCR, url, source_file_path, None, doc_id
++        )
++        document = AI_OCR_SERVICE.transform_ai_response(ai_resp_json)
++
++        document["doc_lang"] = "de"
++        document["doc_origin"] = "DE"
++        document["doc_locale"] = "de_DE"
++        document["ocr_lang"] = "de"
++        document["ocr_processor"] = "ai-ocr-service"
++
++        AI_OCR_SERVICE.populate_origin_and_locale(ai_resp_json, document)
++
++        return document, ai_resp_json
++
++    def get_ocr_data(self, user, source_file_path):
++        document, _ = self.__get_ocr_data__(source_file_path, None)
++        return document
++
++    @sync_wrapper(module="ocr")
++    def extract_ocr_data_and_images(
++        self, storage_manager, source_file_path, destination_dir, doc_id, user
++    ):
++        document, ai_resp_json = self.__get_ocr_data__(source_file_path, None)
++
++        document["doc_id"] = doc_id
++        document["ocr_processor"] = "ai-ocr-service"
++
++        logger.info(f"Going to save extracted image and ocr document")
++        start_time = time.perf_counter()
++        # extracting and saving images
++        images_paths, quality = AI_OCR_SERVICE.extract_and_save_images(
++            ai_resp_json, doc_id, storage_manager, destination_dir
++        )
++        document["images"] = images_paths
++        document["qualitycheck"] = quality
++        end_time = time.perf_counter()
++        logger.customer("Document successfully OCRed with AI")
++        logger.customer(f"Saved document and images.")
++        return document
++
++    def transform_ai_response(ai_resp_json):
++        # document = {"text": ""}
++        document = {}
++        if not ai_resp_json:
++            return document
++
++        pages = []
++
++        indexIncrement = 0
++        pageNumberIncrement = 0
++        for resp_json in ai_resp_json:
++            hocr_content = resp_json.get("document",{}).get("text", "")
++            pageStartIndex = 0
++            pageEndIndex = 0
++            for index, page in enumerate(resp_json.get("document",{}).get("pages", [])):
++                if (
++                    not "width" in page.get("dimension", {}) and not "width" in page.get("image", {})
++                ) or (
++                    not "height" in page.get("dimension", {}) and not "height" in page.get("image", {})
++                ):
++                    continue
++                width = page["dimension"].get("width", page["image"]["width"])
++                height = page["dimension"].get("height", page["image"]["height"])
++
++                first_text_segment = page["layout"]["textAnchor"]["textSegments"][0]
++
++                if "startIndex" in first_text_segment:
++                    pageStartIndex = int(first_text_segment["startIndex"])
++                elif index > 0:
++                    pass
++                    # previous_page = resp_json.get("document",{})["pages"][index-1]
++                    # previous_page_first_text_segment = previous_page["layout"]["textAnchor"]["textSegments"][0]
++                    # pageStartIndex = int(pages[len(pages)-1]['endIndex'])
++
++                if "endIndex" in first_text_segment:
++                    pageEndIndex = int(first_text_segment["endIndex"])
++
++                current_page = {
++                    "startIndex": pageStartIndex + indexIncrement,
++                    "endIndex": pageEndIndex + indexIncrement,
++                    "pageText": hocr_content[pageStartIndex:pageEndIndex],
++                    "pageNumber": page["pageNumber"] + pageNumberIncrement,
++                    "width": width,
++                    "height": height,
++                    # "indexIncrement": indexIncrement,
++                }
++                # sections = ["blocks", "paragraphs", "lines", "tokens"]
++                sections = ["tokens"]
++                for section in sections:
++                    adjustment_factor = 0
++                    items = []
++                    if section not in page:
++                        current_page[section] = items
++                        continue
++                    for item in page[section]:
++                        textSegment = item["layout"]["textAnchor"]["textSegments"][0]
++                        startIndex = 0
++                        if "startIndex" in textSegment:
++                            startIndex = int(textSegment["startIndex"])
++
++                        endIndex = 0
++                        if "endIndex" in textSegment:
++                            endIndex = int(textSegment["endIndex"])
++
++                        startIndex = startIndex + adjustment_factor
++                        endIndex = endIndex + adjustment_factor
++
++                        if (
++                            section == "tokens"
++                            and "\n" in hocr_content[startIndex:endIndex].rstrip()
++                        ):
++                            adjustment_factor = adjustment_factor + 1
++                            startIndex += 1
++                            endIndex += 1
++
++                        text = hocr_content[startIndex:endIndex].strip()
++                        nv0 = item["layout"]["boundingPoly"]["normalizedVertices"][0]
++                        nv2 = item["layout"]["boundingPoly"]["normalizedVertices"][2]
++                        if (
++                            "x" not in nv0
++                            or "x" not in nv2
++                            or "y" not in nv0
++                            or "y" not in nv2
++                            or nv2["x"] < 0
++                            or nv0["x"] < 0
++                            or nv2["y"] < 0
++                            or nv0["y"] < 0
++                            or nv2["x"] > 1
++                            or nv0["x"] > 1
++                            or nv2["y"] > 1
++                            or nv0["y"] > 1
++                            or nv2["x"] < nv0["x"]
++                            or nv2["y"]
++                            < nv0["y"]  # to remove garbage for table extraction
++                        ):
++                            continue
++
++                        confidence = round(item["layout"].get("confidence", 1) * 100)
++                        items.append(
++                            {
++                                "text": text,
++                                "startIndex": startIndex + indexIncrement,
++                                "endIndex": endIndex + indexIncrement,
++                                "confidence": confidence,
++                                "x0": round(nv0["x"] * width),
++                                "y0": round(nv0["y"] * height),
++                                "x1": round(nv2["x"] * width),
++                                "y1": round(nv2["y"] * height),
++                                "normalizedX0": nv0["x"],
++                                "normalizedY0": nv0["y"],
++                                "normalizedX1": nv2["x"],
++                                "normalizedY1": nv2["y"],
++                                # "normalizedVertices": item["layout"]["boundingPoly"][
++                                #     "normalizedVertices"
++                                # ],
++                            }
++                        )
++
++                    current_page[section] = items
++
++                pages.append(current_page)
++
++                if page["pageNumber"] == 10:
++                    indexIncrement = indexIncrement + pageEndIndex
++                    pageNumberIncrement = pageNumberIncrement + 10
++                    pageStartIndex = 0
++                    pageEndIndex = 0
++
++            # document["text"] += hocr_content
++        document["pages"] = pages
++
++        return document
++
++    def get_detailed_images(ai_resp_json):
++        images = []
++        page_number = 1
++        for resp_json in ai_resp_json:
++            document = resp_json.get("document",{})
++            ai_pages = document.get("pages", [])
++
++            for ai_page in ai_pages:
++                image = ai_page["image"]
++                image["pageNumber"] = page_number
++                images.append(image)
++                page_number += 1
++
++        return images
++
++    def extract_and_save_images(ai_resp_json, doc_id, storage_manager, dest_dir):
++        images_paths = []
++        doc_quality = []
++        counter = 0
++        ai_images = AI_OCR_SERVICE.get_detailed_images(ai_resp_json)
++
++        image_dest_path = dest_dir + "/images"
++
++        for ai_image in ai_images:
++            page = str(ai_image["pageNumber"])
++            img_data = decodebytes(ai_image["content"].encode())
++            storage_manager.save_file_data(img_data, f"{page}.png", image_dest_path)
++            img_data = {
++                "path": f"doc2/images/{doc_id}/{page}.png",
++                "filename": f"{page}.png",
++                "pageNumber": ai_image["pageNumber"],
++                "height": ai_image["height"],
++                "width": ai_image["width"],
++            }
++
++            if "entities" in ai_resp_json[0]["document"]:
++                for entity in ai_resp_json[0]["document"]["entities"]:
++                    conf_percent = entity["confidence"]
++                    doc_quality.append(
++                        {"page": page, "overall": f"{conf_percent*100}%"}
++                    )
++
++                    for prop in entity["properties"]:
++                        if "confidence" in prop:
++                            conf_percent = prop["confidence"]
++                            doc_quality[counter][prop["type"]] = f"{conf_percent*100}%"
++                    break
++                counter += 1
++
++            images_paths.append(img_data)
++        return images_paths, doc_quality
++
++    def save_ocr_content(document, doc_id, storage_manager, dest_dir):
++        with tempfile.NamedTemporaryFile(
++            suffix=".json", mode="w", encoding="utf8"
++        ) as outfile:
++            outfile.write(json.dumps(document) + "\n")
++            outfile.seek(0)
++            storage_manager.save_file(
++                outfile.name, doc_id + "_ai_transform.json", dest_dir
++            )
++
++    def populate_origin_and_locale(ai_resp, document):
++        ai_resp_document = ai_resp[0]["document"]
++        first_page = ai_resp_document["pages"][0]
++
++        document["doc_lang"] = "de"
++        if len(first_page.get("detectedLanguages", [])) > 0:
++            document["doc_lang"] = first_page.get("detectedLanguages")[0].get(
++                "languageCode"
++            )
++        document["ocr_lang"] = document["doc_lang"]
++        doc_locale = document.get("doc_lang") + "_" + document.get("doc_origin")
++        document["doc_locale"] = find_related_locale(doc_locale, prefer_lang=True)
