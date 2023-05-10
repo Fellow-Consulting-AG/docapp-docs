@@ -146,8 +146,6 @@ plugins:
   - minify:
       minify_html: true
 
-  - optimize:
-      cache_dir: cache/plugins/optimize
 
 
 nav:
