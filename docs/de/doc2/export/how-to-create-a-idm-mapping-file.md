@@ -1,6 +1,6 @@
 ---
-title: "How to create a IDM mapping file"
-description: This is a step by step guide how to create a IDM mapping file. Find out what to do in the first, second and third block.
+title: "Wie man eine IDM-Mapping-Datei erstellt"
+description: "Eine Schritt-für-Schritt-Anleitung zur Erstellung einer IDM-Mapping-Datei. Erfahren Sie, was im ersten, zweiten und dritten Block zu tun ist."
 date: "2021-10-26"
 tags:
   - DOC²
@@ -10,85 +10,85 @@ tags:
   - Mapping
 ---
 
-#### Step by step guide how to create a IDM mapping file.
+#### Schritt-für-Schritt-Anleitung zur Erstellung einer IDM-Mapping-Datei
 
-You can download a example mapping file here:
+Sie können hier eine Beispiel-Mapping-Datei herunterladen:
 
-[IDM mapping example](https://docs.cloudintegration.eu/wp-content/uploads/2021/10/IDM_Mappings.txt)[Download](https://docs.cloudintegration.eu/wp-content/uploads/2021/10/IDM_Mappings.txt)
+[IDM-Mapping-Beispiel](https://docs.cloudintegration.eu/wp-content/uploads/2021/10/IDM_Mappings.txt)[Herunterladen](https://docs.cloudintegration.eu/wp-content/uploads/2021/10/IDM_Mappings.txt)
 
-To use the example file, rename the file from "IDM\_Mapping.txt" to "IDM\_Mapping.properties".
+Um die Beispiel-Datei zu verwenden, benennen Sie die Datei von "IDM\_Mapping.txt" in "IDM\_Mapping.properties" um.
 
-**Here you can find an explanation how the file is structured.**
+**Hier finden Sie eine Erklärung zur Struktur der Datei.**
 
-In the first block the document type gets mapped. On the left side you see the document type name of DOC² and the right side the document type name of IDM.
+Im ersten Block wird der Dokumenttyp zugeordnet. Auf der linken Seite sehen Sie den Dokumenttypnamen von DOC² und auf der rechten Seite den Dokumenttypnamen von IDM.
 
 ```
-#Define Name of document
-#Example: <Doc2DocumentType>=<IDMDocumentType>
+#Definieren Sie den Namen des Dokuments
+#Beispiel: <Doc2DocumentType>=<IDMDocumentType>
 #Invoice=LN_SupplierInvoice
 INVOICE=LN_SupplierInvoice
 ```
 
-In the second block you can define static values which will be used in the mapping file.
+Im zweiten Block können Sie statische Werte definieren, die in der Mapping-Datei verwendet werden.
 
-In the example there is a static field for FileNameSeperator and ACLString.
+Im Beispiel gibt es ein statisches Feld für FileNameSeperator und ACLString.
 
-With the field ACLString you can define the ACL that will set in IDM for each exported document.
+Mit dem Feld ACLString können Sie die ACL definieren, die in IDM für jedes exportierte Dokument festgelegt wird.
 
 ```
-#Define mappings for the static values
-#Example: Static_Values=<StaticVariableName>:<type>
+#Definieren Sie Zuordnungen für die statischen Werte
+#Beispiel: Static_Values=<StaticVariableName>:<type>
 Static_Values=FileNameSeparator,ACLString
-#Example: SF_<StaticVariableName> = StaticValue
+#Beispiel: SF_<StaticVariableName> = StaticValue
 SV_FileNameSeparator=_
 SV_ACLString=Public
 ```
 
-In the third block you can define static values that will be transferred to IDM.
+Im dritten Block können Sie statische Werte definieren, die an IDM übertragen werden.
 
-It will be use to set the EntityType, AccountingEntity and GroupAccountingEntity in IDM.
+Es wird verwendet, um die EntityType, AccountingEntity und GroupAccountingEntity in IDM festzulegen.
 
-The values need to be set accordingly to your evironment.
+Die Werte müssen entsprechend Ihrer Umgebung festgelegt werden.
 
 ```
-#Define mappings for the static fields
-#Example: Static_Fields=<IDMAttributeId>:<type>
+#Definieren Sie Zuordnungen für die statischen Felder
+#Beispiel: Static_Fields=<IDMAttributeId>:<type>
 Static_Fields=MDS_EntityType:STRING,MDS_AccountingEntity,MDS_BodRefAccEntity
-#Example: SF_<IDMAttributeId> = StaticValue
+#Beispiel: SF_<IDMAttributeId> = StaticValue
 SF_MDS_EntityType=InforERPEnterpriseFinancialsReceivedInvoice
 SF_MDS_AccountingEntity=100
 SF_MDS_BodRefAccEntity=infor.ln.0100
 ```
 
-In the fourth block you can map the DOC² fields to the IDM attributes.
+Im vierten Block können Sie die DOC²-Felder den IDM-Attributen zuordnen.
 
 ```
-#Define index fields
-#Example: Index_Fields=<IndexFieldIdFromEphesoft>:<type>
+#Definieren Sie Indexfelder
+#Beispiel: Index_Fields=<IndexFieldIdFromEphesoft>:<type>
 Index_Fields=INVOICE_NUMBER:STRING,CORRELATION_ID:STRING,ACCOUNTING_ENTITY:STRING,INVOICE_DATE:STRING,GROUP_ACCOUNTING_ENTITY:STRING,SUPPLIER_NAME:STRING
-#Example: IF_<IndexFieldIdFromDoc2> = <IDMAttributeId>
+#Beispiel: IF_<IndexFieldIdFromDoc2> = <IDMAttributeId>
 IF_INVOICE_NUMBER=SupplierInvoiceNumber
 IF_CORRELATION_ID=MDS_id1
 IF_INVOICE_DATE=InvoiceDate
 IF_SUPPLIER_NAME=SupplierName
 ```
 
-In the fifth block the ACL String of the second block will be mapped to the ACL field of IDM. Usualy this should not be changed.
+Im fünften Block wird der ACL-String des zweiten Blocks dem ACL-Feld von IDM zugeordnet. Normalerweise sollte dies nicht geändert werden.
 
 ```
-#Define ACL Field value
-#Example: ACL_Fields= Concatenation of other defined fields that together should be a valid ACL in IDM
+#Definieren Sie den ACL-Feldwert
+#Beispiel: ACL_Fields= Konkatenation anderer definierter Felder, die zusammen eine gültige ACL in IDM ergeben sollten
 ACL_Fields=SV_ACLString
 ```
 
-In the last block you can define the "Searchable\_PDF\_Name". That will be the name if the document in IDM.
+Im letzten Block können Sie den "Searchable\_PDF\_Name" definieren. Das wird der Name des Dokuments in IDM sein.
 
-It can be a single field name or a concatenation of different fields. For example:
+Es kann ein einzelner Feldname oder eine Konkatenation verschiedener Felder sein. Zum Beispiel:
 
 Searchable\_PDF\_Name=IF\_INVOICE\_NUMBER+SV\_FileNameSeparator+IF\_SUPPLIER\_NAME
 
 ```
-#Define Resource Mapping
-#Example: Searchable_PDF_Name= Concatenation of other defined fields
+#Definieren Sie die Ressourcenzuordnung
+#Beispiel: Searchable_PDF_Name= Konkatenation anderer definierter Felder
 Searchable_PDF_Name=IF_INVOICE_NUMBER
 ```

@@ -1,19 +1,17 @@
 ---
-title: "DOC² with Infor"
-description: In this section you will find the Infor infrastructure, starting from use cases over integrations to all export options.
+title: "DOC² mit Infor: Eine Übersicht"
+description: "In diesem Abschnitt finden Sie eine umfassende Übersicht über die Infor-Infrastruktur, von Anwendungsfällen über Integrationen bis hin zu allen Exportoptionen."
 tags:
   - DOC²
   - Infor
-  - Overview
---- 
+  - Übersicht
+---
 
-In this section you will find the Infor infrastructure, starting from use cases over integrations to all export options and the corresponding links
+In diesem Abschnitt finden Sie eine umfassende Übersicht über die Infor-Infrastruktur, von Anwendungsfällen über Integrationen bis hin zu allen Exportoptionen und den entsprechenden Links.
 
-- [Infor Infrastructure](/doc2/doc2-with-infor/infrastructure/)
-- [Use Cases](/doc2/doc2-with-infor/infor/)
-- [Diagram](/doc2/doc2-with-infor/inforflow/)
-- [IDM Business Context Model](/doc2/doc2-with-infor/IDM-business-context-model/)
-- [Export](/doc2/export/export-to-infor/)
-- [SSO](/doc2/doc2-with-infor/configuring-sso-in-cloud/)
-
-
+- [Infor-Infrastruktur](/doc2/doc2-mit-infor/infrastruktur/)
+- [Anwendungsfälle](/doc2/doc2-mit-infor/infor/)
+- [Diagramm](/doc2/doc2-mit-infor/inforflow/)
+- [IDM Business Context Model](/doc2/doc2-mit-infor/idm-business-context-model/)
+- [Export](/doc2/export/export-nach-infor/)
+- [SSO](/doc2/doc2-mit-infor/sso-in-der-cloud-konfigurieren/)

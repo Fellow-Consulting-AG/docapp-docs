@@ -1,41 +1,41 @@
 ---
-title: "Table Extraction"
-description: With DOC² it is possible to extract tables from PDF-Files. That will be done via the Line Items functionality. It is used for extracting the tables from all types of documents (Invoices, Contracts, Forms, Medical Prescriptions etc.)
+title: "Tabellenextraktion"
+description: Mit DOC² können Tabellen aus PDF-Dateien extrahiert werden. Dies erfolgt über die Funktion "Line Items". Sie wird verwendet, um Tabellen aus allen Arten von Dokumenten (Rechnungen, Verträgen, Formularen, medizinischen Rezepten usw.) zu extrahieren.
 date: "2021-11-11"
 tags:
   - DOC²
-  - Table
+  - Tabelle
   - Line Items
 ---
 
-# Table Extraction
+# Tabellenextraktion
 
-With DOC² it is possible to extract tables from PDF-Files. That will be done via the "Line Items" functionality. It is used for extracting the tables from all types of documents (Invoices, Contracts, Forms, Medical Prescriptions etc.).
+Mit DOC² können Tabellen aus PDF-Dateien extrahiert werden. Dies erfolgt über die Funktion "Line Items". Sie wird verwendet, um Tabellen aus allen Arten von Dokumenten (Rechnungen, Verträgen, Formularen, medizinischen Rezepten usw.) zu extrahieren.
 
-The extraction of data in tables can be achieved by following the steps described below:
+Die Extraktion von Daten in Tabellen kann durch folgende Schritte erreicht werden:
 
-1\. Login to your account with Email and Password you are given.
+1\. Melden Sie sich mit Ihrer E-Mail-Adresse und Ihrem Passwort in Ihrem Konto an.
 
-2\. On Dashboard, import any document
+2\. Importieren Sie auf dem Dashboard ein beliebiges Dokument.
 
-3\. Click on the document to Open
+3\. Klicken Sie auf das Dokument, um es zu öffnen.
 
-4\. Now, scroll down the extracted fields page to **Line Items** section
+4\. Scrollen Sie nun auf der Seite mit den extrahierten Feldern nach unten zum Abschnitt "Line Items".
 
-5\. Click on the table icon inside the textbox
+5\. Klicken Sie auf das Tabellensymbol innerhalb des Textfeldes.
 
-![](/_images/doc2/Line-Items.png)
+![Line Items](/_images/doc2/Line-Items.png "Line Items")
 
-You will end up in the table extraction view.
+Sie gelangen zur Ansicht der Tabellenextraktion.
 
-If the document contains very simple tables it will detect and extract them automatically:
+Wenn das Dokument sehr einfache Tabellen enthält, erkennt und extrahiert es diese automatisch:
 
-![](/_images/doc2/image-17-1024x92.png)
+![Einfache Tabelle](/_images/doc2/image-17-1024x92.png "Einfache Tabelle")
 
-In practice, tables on documents are often much more complex and have a wide variety of formatting and arrangements. For example, text may extend across several columns or there may be several lines of text in one position line. For example, in the case of long item descriptions or similar:
+In der Praxis sind Tabellen auf Dokumenten jedoch oft viel komplexer und weisen eine Vielzahl von Formatierungen und Anordnungen auf. Zum Beispiel kann sich Text über mehrere Spalten erstrecken oder es können mehrere Zeilen Text in einer Positionslinie vorhanden sein. Zum Beispiel im Falle von langen Artikelbeschreibungen oder Ähnlichem:
 
-![](/_images/doc2/image-16.png)
+![Komplexe Tabelle](/_images/doc2/image-16.png "Komplexe Tabelle")
 
-And this is where the advantage of DOC² and its table extraction functionality comes into play. There are several ways to train the table extraction functionality and to achieve the best possible result, even with demanding tables.
+Und hier kommt der Vorteil von DOC² und seiner Tabellenextraktionsfunktion zum Tragen. Es gibt mehrere Möglichkeiten, die Tabellenextraktionsfunktion zu trainieren und das bestmögliche Ergebnis zu erzielen, auch bei anspruchsvollen Tabellen.
 
-In the following sections you will learn how to train a table manually and what functionalities are available for this:
+In den folgenden Abschnitten erfahren Sie, wie Sie eine Tabelle manuell trainieren und welche Funktionalitäten dafür zur Verfügung stehen:

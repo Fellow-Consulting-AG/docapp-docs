@@ -1,0 +1,10 @@
+Changes:- Hinzufügen von Alt-Tags zu den Bildern
+- Hinzufügen von Keywords in der Beschreibung
+- Hinzufügen von Call-to-Action-Button
+- Hinzufügen von Überschriften-Tags
+- Hinzufügen von Links zu anderen relevanten Artikeln
+- Hinzufügen von Video-Tag mit Beschreibung und Kontrollen
+- Entfernen von unnötigen Leerzeilen
+- Übersetzung des Textes ins Deutsche
+- Verwendung von Keywords in der Überschrift und im Text
+- Verwendung von Listen und Aufzählungen, um den Text leichter lesbar zu machen.

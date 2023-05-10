@@ -1,57 +1,56 @@
 ---
-title: "Users"
-description: How to add a user and reset the password. Users can be managed in User Settings. Find all options here.
+title: "Benutzer"
+description: Erfahren Sie, wie Sie einen Benutzer hinzufügen und das Passwort zurücksetzen. Benutzer können in den Benutzereinstellungen verwaltet werden. Hier finden Sie alle Optionen.
 date: "2021-10-29"
 tags:
   - DOC²
-  - Settings
-  - Users
-  - Password
+  - Einstellungen
+  - Benutzer
+  - Passwort
 ---
 
-To manage your users follow these steps:
+Um Ihre Benutzer zu verwalten, befolgen Sie diese Schritte:
 
-From the Dashboard navigate to `SETTINGS`:
+Navigieren Sie vom Dashboard aus zu `EINSTELLUNGEN`:
 
-![](/_images/doc2/DOC2_Dashboard_Settings.png)
+![Dashboard-Einstellungen](/_images/doc2/DOC2_Dashboard_Settings.png "Dashboard-Einstellungen")
 
-In the settings navigate to `Users`:
+In den Einstellungen gehen Sie zu `Benutzer`:
 
-![](/_images/doc2/DOC2_settings_users.png)
+![Benutzereinstellungen](/_images/doc2/DOC2_settings_users.png "Benutzereinstellungen")
 
-Direct link: [https://app.polydocs.io/settings/user](https://app.polydocs.io/settings/user)
+Direkter Link: [https://app.polydocs.io/settings/user](https://app.polydocs.io/settings/user)
 
-## How to add a user
+## Wie man einen Benutzer hinzufügt
 
-Once the admin is registered, you can add your employees via following steps.
+Sobald der Administrator registriert ist, können Sie Ihre Mitarbeiter über folgende Schritte hinzufügen.
 
-In the user menu click on `ADD USER`:
+Klicken Sie im Benutzermenü auf `BENUTZER HINZUFÜGEN`:
 
-![](/_images/doc2/DOC2_settings_add-user.png)
+![Benutzer hinzufügen](/_images/doc2/DOC2_settings_add-user.png "Benutzer hinzufügen")
 
-Enter the data of the user to be created:
+Geben Sie die Daten des zu erstellenden Benutzers ein:
 
-![](/_images/doc2/Users_4.png)
+![Benutzerdaten](/_images/doc2/Users_4.png "Benutzerdaten")
 
-- If it is not an administration user, do not check the "ADMIN" box
-- The password must be created initially and sent to the user
+- Wenn es sich nicht um einen Administrationsbenutzer handelt, aktivieren Sie das Kontrollkästchen "ADMIN" nicht.
+- Das Passwort muss zunächst erstellt und an den Benutzer gesendet werden.
 
-As soon as the user is created it can be edited afterwards via the user overview (check/uncheck "ADMIN", edit, delete):
+Sobald der Benutzer erstellt wurde, kann er über die Benutzerübersicht bearbeitet werden (Aktivieren/Deaktivieren von "ADMIN", Bearbeiten, Löschen):
 
-![](/_images/doc2/Users_5.1.png)
-![](/_images/doc2/Users_5.2.png)
+![Benutzerübersicht](/_images/doc2/Users_5.1.png "Benutzerübersicht")
+![Benutzer bearbeiten](/_images/doc2/Users_5.2.png "Benutzer bearbeiten")
 
-## How to reset the password
+## Wie man das Passwort zurücksetzt
 
-Go to the DOC² log-in page ([https://app.polydocs.io/](https://app.polydocs.io/)) enter your mail address and click on <ins>Forgot Password?</ins>
+Gehen Sie zur DOC²-Anmeldeseite ([https://app.polydocs.io/](https://app.polydocs.io/)), geben Sie Ihre E-Mail-Adresse ein und klicken Sie auf <ins>Passwort vergessen?</ins>
 
-![](/_images/doc2/Users_6.png)
+![Passwort vergessen](/_images/doc2/Users_6.png "Passwort vergessen")
 
-You will immediately receive an email with a link to reset the password. The link will navigate you to following page where you can enter a new password:
+Sie erhalten sofort eine E-Mail mit einem Link zum Zurücksetzen des Passworts. Der Link führt Sie zu folgender Seite, auf der Sie ein neues Passwort eingeben können:
 
-![](/_images/doc2/Users_7.png)
+![Passwort zurücksetzen](/_images/doc2/Users_7.png "Passwort zurücksetzen")
 
-As soon as the new password has been entered and confirmed, it can be used for login from now on.
+Sobald das neue Passwort eingegeben und bestätigt wurde, kann es ab sofort für die Anmeldung verwendet werden.
 
-
-[Sign up for a 30 days free trail](https://polydocs.io/free-trail/){ .md-button .md-button--primary }
+[Registrieren Sie sich für eine 30-tägige kostenlose Testversion](https://polydocs.io/free-trail/){ .md-button .md-button--primary }

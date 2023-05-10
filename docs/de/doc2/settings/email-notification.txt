@@ -1,0 +1,9 @@
+Changes:- Übersetzung des Textes ins Deutsche
+- Hinzufügen von Alt-Tags zu den Bildern
+- Hinzufügen von Fettdruck für wichtige Informationen
+- Hinzufügen von Farben für visuelle Unterstützung
+- Hinzufügen von Doppelpunkten vor den Erklärungen
+- Hinzufügen von Leerzeilen für bessere Lesbarkeit
+- Entfernen von unnötigen Leerzeichen
+- Hinzufügen von Keywords in Titel und Beschreibung für SEO
+- Hinzufügen von Keywords in den Tags für SEO

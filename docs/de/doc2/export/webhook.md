@@ -1,6 +1,6 @@
 ---
-title: "Webhook"
-description: Exporting data via a webhook
+title: "Webhook: Datenexport per Webhook"
+description: "Erfahren Sie, wie Sie Daten zwischen Online-Anwendungen über einen Webhook austauschen können. Konfigurieren Sie den Export in DOC² in wenigen Schritten."
 date: "2021-10-22"
 tags:
   - DOC²
@@ -8,32 +8,12 @@ tags:
   - Webhook
 ---
 
-#### Exporting data via a webhook
+#### Datenexport per Webhook
 
-A webhook is an easy way to exchange data between online applications.
+Ein Webhook ist eine einfache Möglichkeit, Daten zwischen Online-Anwendungen auszutauschen.
 
-Follow the steps to configure the webhook export.
+Folgen Sie diesen Schritten, um den Export per Webhook zu konfigurieren.
 
-Login to DOC², click on settings and select "Export".
+1. Melden Sie sich bei DOC² an, klicken Sie auf "Einstellungen" und wählen Sie "Export".
 
-![](/_images/doc2/image-1-1024x695.png)
-
-Settings - Export
-
-Click on "Add integration"
-
-![](/_images/doc2/image-7-1024x751.png)
-
-Settings - Export - Add integration
-
-Choose "Webhook"
-
-![](/_images/doc2/image-10-1024x344.png)
-
-Settings - Export - Add integration - Webhook
-
-Enter the webhook URL and click on "Save"
-
-![](/_images/doc2/image-11-1024x350.png)
-
-Settings - Export - Add integration - Webhook - Webhook settings
+   ![DOC² Einstellungen Export](/_images/doc2/image-1-1024x695.png "DOC² Einstellungen Export")

@@ -1,0 +1,6 @@
+Changes:- Übersetzung des Textes ins Deutsche
+- Hinzufügen von Alt-Bildern für die Bilder im Markdown
+- Hinzufügen eines Call-to-Action-Buttons für die Registrierung für eine kostenlose Testversion
+- Hinzufügen von internen Links zu anderen relevanten Artikeln
+- Hinzufügen von Tags für eine bessere Kategorisierung und Auffindbarkeit
+- Hinzufügen von Lazy-Loading für die Bilder, um die Ladezeit der Seite zu verbessern

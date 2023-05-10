@@ -1,21 +1,21 @@
 ---
-title: "Keyboard"
-description: In this documentation you will find Keyboard Support in DOC². You can use the Enter and Arrow-Down-Key as shortcuts without using your mouse.
+title: "Tastatur"
+description: "In dieser Dokumentation finden Sie Informationen zur Tastaturunterstützung in DOC². Sie können die Enter- und Pfeil-Abwärts-Tasten als Tastenkombinationen verwenden, ohne Ihre Maus zu benutzen."
 date: "2021-11-07"
 tags:
   - Doc²
-  - Keyboard
+  - Tastatur
 ---
 
-There are two types of Keyboard functions described below:
+Es gibt zwei Arten von Tastaturfunktionen, die im Folgenden beschrieben werden:
 
-- Enter Key
-- Arrow Down Key
+- Enter-Taste
+- Pfeil-Abwärts-Taste
 
-**Enter Key**:
+**Enter-Taste**:
 
-The Enter Key will work for exporting the document if there is no exception in the document i.e. Validation Required for the fields.
+Die Enter-Taste funktioniert für den Export des Dokuments, wenn es keine Ausnahmen im Dokument gibt, d.h. wenn keine Validierung für die Felder erforderlich ist.
 
-**Arrow-Down-Key**:
+**Pfeil-Abwärts-Taste**:
 
-The Arrow Down Key will be accepting the data in the fields which has validation required or any other exception.
+Die Pfeil-Abwärts-Taste akzeptiert die Daten in den Feldern, für die eine Validierung erforderlich ist oder eine andere Ausnahme vorliegt.

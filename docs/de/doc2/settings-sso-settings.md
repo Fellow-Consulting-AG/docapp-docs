@@ -1,28 +1,27 @@
 ---
-title: "SSO Settings"
-description: All the details you need for SSO configuration can be found in SSO Service Provider Settings of DOC². From needed Entity ID, SSO URL to the Certificate.
+title: "SSO Einstellungen"
+description: Hier finden Sie alle Details, die Sie für die SSO-Konfiguration benötigen. Von der benötigten Entity ID, SSO-URL bis zum Zertifikat.
 tags:
   - DOC²
-  - Settings
+  - Einstellungen
   - SSO
 ---
-# SSO Settings
+# SSO Einstellungen
 
+Wenn Sie Ihre Login-Daten von uns erhalten haben, finden Sie hier alle Details, die Sie für die SSO-Konfiguration benötigen.
 
-- Once you have received your Login Details from us, you will find all the details you need for SSO configuration here.
+**So greifen Sie auf die SSO SERVICE PROVIDER EINSTELLUNGEN in DOC² zu**
 
-**To access the SSO SERVICE PROVIDER SETTINGS in DOC²**
+1\. Melden Sie sich mit den von uns erhaltenen Login-Daten auf der URL [https://app.polydocs.io/](https://app.polydocs.io/) an.
 
-1\. Log in on URL [https://app.polydocs.io/](https://app.polydocs.io/) with the login details you received from us.
+2\. Gehen Sie zu EINSTELLUNGEN (in der oberen Leiste) und wählen Sie SSO Einstellungen unten in der Liste aus.
 
-2\. Go to SETTINGS (on top bar) and choose SSO Settings down at the bottom of the list.
+Hier finden Sie alle Informationen, die Sie für die folgenden Schritte benötigen:
 
-Here you will find all the information you need for the following steps
+![DOC2 - SSO](/_images/doc2/DOC2_SSO-Service-Provider-Settings_DE-1024x508.png "SSO Service Provider Einstellungen")
 
-![DOC2 - SSO](/_images/doc2/DOC2_SSO-Service-Provider-Settings_EN-1024x508.png)
+![DOC2 - Identity Service Provider Einstellungen](/_images/doc2/DOC2_Identity-Service-Provider-Settings_DE-1024x319.png "Identity Service Provider Einstellungen")
 
-![](/_images/doc2/DOC2_Identity-Service-Provider-Settings_EN-1024x319.png)
+Eine Schritt-für-Schritt-Anleitung zur Konfiguration von SSO in Infor Cloud finden Sie [hier](/doc2/doc2-with-infor/configuring-sso-in-cloud/).
 
-The step by step guide to configure SSO in Infor Cloud can be found [here](/doc2/doc2-with-infor/configuring-sso-in-cloud/).
-
-More helpful documentation can be found [here](/doc2/sso/).
+Weitere hilfreiche Dokumentationen finden Sie [hier](/doc2/sso/).

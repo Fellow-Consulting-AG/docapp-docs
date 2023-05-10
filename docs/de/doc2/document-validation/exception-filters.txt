@@ -1,0 +1,6 @@
+Changes:- Übersetzung des Textes ins Deutsche
+- Hinzufügen von Alt-Texten zu den Bildern
+- Keine Änderungen an HTML oder Code
+- Hinzufügen von Keywords in den Titel und die Beschreibung
+- Hinzufügen von Tags für bessere Kategorisierung und Auffindbarkeit
+- Hinzufügen von Emojis für eine bessere visuelle Darstellung und Aufmerksamkeit

@@ -18,8 +18,8 @@ def generate_response(text):
     response = openai.ChatCompletion.create(
         model=MODEL,
         messages=[
-            {"role": "system", "content": f"You are SEO and Marketing Expert please return only a Code. Use this Text: {text}"},
-            {"role": "user", "content": "Analyze the given markdown and improve it for SEO and Marketing. If Alt Images are missing Add alt images in the Markdown. <div class='video-container'> or other code oder javascript do not remove it. in the header please set it on today. Translate the Text to German.  Please return only a Code."},
+            {"role": "system", "content": f"You are German SEO and Marketing Expert please return only a Code. Use this Text: {text}"},
+            {"role": "user", "content": "Analysieren Sie das gegebene Markdown und verbessern Sie es für SEO und Marketing. Wenn Alt-Bilder fehlen, fügen Sie Alt-Bilder in den Markdown ein. Wenn Sie html oder Code finden, ändern Sie ihn nicht. Übersetzen Sie den Text vom Englischen ins Deutsche im Markdown-Format und erläutern Sie Ihre Änderungen zum Schluss wobei Sie immer mit Changes: <seo_changes > "},
         ],
         temperature=0,
     )
@@ -54,7 +54,7 @@ def find_md_files(directory):
 
                 f.close()
 
-                print("Waiting for 1 minute...")
+                print("Waiting for 10 seconds...")
                 time.sleep(10)  # Wait for 60 seconds (1 minute)
 
                 MODEL = "gpt-3.5-turbo"
@@ -67,16 +67,31 @@ def find_md_files(directory):
                 response = response["choices"][0]["message"]["content"]
                 file_base, file_extension = os.path.splitext(file)
                 
+                print (f"------ {file} ------")
+                print (response)
 
-                split_response = response.split("```")
+                split_marker = 'Changes:'
+                sections = response.split(split_marker)
+                
 
-                if len(split_response) < 3:
+
+
+                if len(sections) < 2:
                     print("Error: No code returned")
+                    with open(file_base + ".new", "w") as f:
+                            f.write(response)
+
+                    f.close()
 
                     
                 else:
-                    changes_made = split_response[2]
-                    code = split_response[1]
+                    main_content = sections[0].strip()
+                    seo_and_marketing = split_marker + sections[1].strip()
+
+                    changes_made = seo_and_marketing
+                    code = main_content
+
+
 
                     if is_valid_markdown(code):
                         

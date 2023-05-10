@@ -1,32 +1,30 @@
 ---
-title: "Amount Settings"
-description: This section is mainly intended for those who process invoices of countries where rounding is a matter, since some documents contain rounding errors after the decimal point in certain amounts, since these were originally three digits but are shown on the invoice with only two decimal places.
+title: "Einstellungen für Beträge"
+description: "Dieser Abschnitt ist hauptsächlich für diejenigen gedacht, die Rechnungen von Ländern verarbeiten, bei denen das Runden eine Rolle spielt, da einige Dokumente Rundungsfehler nach dem Dezimalpunkt in bestimmten Beträgen enthalten, da diese ursprünglich drei Stellen hatten, aber auf der Rechnung nur mit zwei Dezimalstellen angezeigt werden."
 date: "2021-10-29"
 tags:
   - DOC²
-  - Settings
-  - Amount Settings
-  - Rounding Errors
+  - Einstellungen
+  - Einstellungen für Beträge
+  - Rundungsfehler
 ---
 
-#### This section is mainly intended for those who process invoices of countries where rounding is a matter, since some documents contain rounding errors after the decimal point in certain amounts, since these were originally three digits but are shown on the invoice with only two decimal places.
+#### Dieser Abschnitt ist hauptsächlich für diejenigen gedacht, die Rechnungen von Ländern verarbeiten, bei denen das Runden eine Rolle spielt, da einige Dokumente Rundungsfehler nach dem Dezimalpunkt in bestimmten Beträgen enthalten, da diese ursprünglich drei Stellen hatten, aber auf der Rechnung nur mit zwei Dezimalstellen angezeigt werden.
 
 * * *
 
-Here is an example to illustrate:
+Hier ist ein Beispiel zur Veranschaulichung:
 
-![](/_images/doc2/Settings_Amount_2.png)
-
-* * *
-
-![](/_images/doc2/Settings_Amount_1.png)
-
-
-
-![](/_images/doc2/Settings_Amount_3.png)
+![Beispiel für Rundungsfehler](/images/doc2/Settings_Amount_2.png "Beispiel für Rundungsfehler")
 
 * * *
 
-If you do not process invoices where rounding is a matter, leave the selection off
+![Einstellungen für Beträge](/images/doc2/Settings_Amount_1.png "Einstellungen für Beträge")
 
-![](/_images/doc2/Settings_Amount_4.png)
+![Einstellungen für Beträge](/images/doc2/Settings_Amount_3.png "Einstellungen für Beträge")
+
+* * *
+
+Wenn Sie keine Rechnungen verarbeiten, bei denen das Runden eine Rolle spielt, lassen Sie die Auswahl aus.
+
+![Auswahl für Einstellungen für Beträge](/images/doc2/Settings_Amount_4.png "Auswahl für Einstellungen für Beträge")

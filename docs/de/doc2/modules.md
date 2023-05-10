@@ -1,32 +1,32 @@
 ---
-title: "Modules"
-description: You will find different modules in DOC² settings.These modules are important if you like to deal with PO Matching and use the table extraction functionality.
+title: "Module"
+description: "In den DOC²-Einstellungen finden Sie verschiedene Module. Diese Module sind wichtig, wenn Sie sich mit PO-Matching befassen und die Tabellenextraktionsfunktion nutzen möchten."
 date: "2022-02-25"
 tags:
   - DOC²
-  - Settings
-  - Modules
-  - Purchase Order
-  - PO Matching
-  - Table Extraction
+  - Einstellungen
+  - Module
+  - Bestellung
+  - PO-Matching
+  - Tabellenextraktion
 ---
 
-In DOC² you will find the "SETTINGS" menu in the "DASHBOARD". Open this menu.
+In DOC² finden Sie das Menü "EINSTELLUNGEN" im "DASHBOARD". Öffnen Sie dieses Menü.
 
-![](/_images/doc2/image-44-1024x396.png)
+![DOC² Einstellungen](/assets/images/doc2/image-44-1024x396.png "DOC² Einstellungen")
 
-There you will find the menu item "Modules". Open this menu.
+Dort finden Sie den Menüpunkt "Module". Öffnen Sie dieses Menü.
 
-![](/_images/doc2/image-45-1024x355.png)
+![DOC² Module](/assets/images/doc2/image-45-1024x355.png "DOC² Module")
 
-There you will find the option "PURCHASE ORDER" with which you can switch PO matching on/off.
+Dort finden Sie die Option "BESTELLUNG", mit der Sie das PO-Matching ein- oder ausschalten können.
 
-![](/_images/doc2/image-46.png)
+![DOC² Bestellung](/assets/images/doc2/image-46.png "DOC² Bestellung")
 
-Furthermore you can define which documents should be matched via the option "Select PO Matching". There are three ways to match your purchase order. For details please check PO Matching documentation: [PO Matching](/doc2/pomatching/po-matching/)
+Darüber hinaus können Sie über die Option "PO-Matching auswählen" festlegen, welche Dokumente abgeglichen werden sollen. Es gibt drei Möglichkeiten, Ihre Bestellung abzugleichen. Weitere Details finden Sie in der PO-Matching-Dokumentation: [PO-Matching](/doc2/pomatching/po-matching/)
 
-![](/_images/doc2/image-47.png)
+![DOC² PO-Matching](/assets/images/doc2/image-47.png "DOC² PO-Matching")
 
-Via the menu item "Table Extraction" the table extraction can be switched on/off. Furthermore, the version to be used with this account can be defined.
+Über den Menüpunkt "Tabellenextraktion" können Sie die Tabellenextraktion ein- oder ausschalten. Außerdem kann die Version definiert werden, die für dieses Konto verwendet werden soll.
 
-![](/_images/doc2/image-48.png)
+![DOC² Tabellenextraktion](/assets/images/doc2/image-48.png "DOC² Tabellenextraktion")

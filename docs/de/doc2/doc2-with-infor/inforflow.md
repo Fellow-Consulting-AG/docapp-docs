@@ -1,39 +1,29 @@
 ---
 title: "DOC² - Infor API Flow"
-description: Here you will find different use cases how processes of your different document types look like and are going to be integrated to Infor.
+description: Hier finden Sie verschiedene Anwendungsfälle, wie Prozesse Ihrer verschiedenen Dokumententypen aussehen und in Infor integriert werden können.
 date: "2022-01-24"
 tags:
   - DOC²
   - PO Matching
   - Infor LN
   - Infor M3
-  - Use Cases
+  - Anwendungsfälle
 ---
 
-## API with Infor OS & Infor CloudSuite
+## API mit Infor OS & Infor CloudSuite
 
+![Infor CloudSuite API Flow DOC²](/_images/doc2/infor/Doc2-Infor.png "Infor CloudSuite API Flow DOC²")
 
+Die Integration von DOC² in Infor LN / M3 erfolgt hauptsächlich über ION API, ION Desk und die Infor Standard BODs. Es gibt hauptsächlich zwei Pfade, die berücksichtigt werden müssen, wenn eine Integration durchgeführt wird: wie wir die Daten an Infor exportieren und wie wir Daten für die Validierung von Stammdaten in DOC² erhalten.
 
+Der erste Exportpfad beginnt mit der ION API, die es DOC² ermöglicht, nicht nur das PDF mit den Attributen an IDM zu senden, sondern auch das BOD Sync.CaptureDocument an ION Desk zu senden. In ION Desk transformieren wir dieses Sync.CaptureDocument über ION-Mappings in die gewünschten Ziel-BODs, abhängig davon, welcher Dokumententyp verarbeitet wird. Diese transformierten Infor BODs werden dann automatisch in LN oder M3 importiert.
 
-![Infor CloudSuite API Flow DOC²](/_images/doc2/infor/Doc2-Infor.png)
-
-The DOC² integration to Infor LN / M3 is mostly done via ION API, ION Desk and the Infor Standard BODs. There are mainly two paths that need to be considered when integrating: how we export the data to Infor and how we get data for the master data validation in DOC².
-
-
-
-The first export path starts with the ION API which allows DOC² to not only send the pdf with the attributes to IDM but to also send the BOD Sync.CaptureDocument to ION Desk. In ION Desk we transform this Sync.CaptureDocument via ION mappings to the desired target BODs, always depending on which document type we are processing. These transformed Infor BODs are then automatically imported to LN or M3.
-
-
-
-The second path is when we want to perform master data validation in DOC² to identify the supplier or to compare / match the purchase order lines. That's why we automatically activate a trigger in LN / M3 so that when a new entry or changes are made in the master data, we receive the Sync.RemitToPartyMaster, Sync.SupplierPartyMaster and the Sync.PurchaseOrder BODs to DOC². The process is configured again in ION Desk where we define the dataflow to a specific connection point to DOC².
-
+Der zweite Pfad ist dann relevant, wenn wir in DOC² eine Validierung von Stammdaten durchführen möchten, um den Lieferanten zu identifizieren oder die Bestellpositionen zu vergleichen / abzugleichen. Aus diesem Grund aktivieren wir automatisch einen Trigger in LN / M3, damit wir die Sync.RemitToPartyMaster-, Sync.SupplierPartyMaster- und Sync.PurchaseOrder-BODs in DOC² erhalten, wenn ein neuer Eintrag oder Änderungen in den Stammdaten vorgenommen werden. Der Prozess wird erneut in ION Desk konfiguriert, wo wir den Datenfluss zu einem bestimmten Verbindungspunkt zu DOC² definieren.
 
 [Infor Export](/doc2/export/export-to-infor/)
 
 [IDM Business Context Model](/doc2/doc2-with-infor/IDM-business-context-model/)
 
-[Infor SSO with DOC²](/doc2/configuring-sso-in-cloud/)
+[Infor SSO mit DOC²](/doc2/configuring-sso-in-cloud/)
 
 [Infor Infrastructure & Security](/doc2/doc2-with-infor/infrastructure/)
-
-

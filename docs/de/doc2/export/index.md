@@ -1,18 +1,18 @@
 ---
-title: "Export"
+title: "Exportieren"
 date: "2021-10-22"
-description: On this page you will find links to documentations explaining how to export documents from DOC² to other environments as Infor and FLOW² and via Webhook.
+description: Hier finden Sie Anleitungen zum Exportieren von Dokumenten aus DOC² in andere Umgebungen wie Infor und FLOW² sowie über Webhooks.
 tags:
   - DOC²
-  - Export
+  - Exportieren
   - Infor
   - Webhook
   - FLOW²
   
 ---
 
-#### Here you can find the export options and the corresponding articles.
+#### Hier finden Sie die Exportoptionen und die entsprechenden Artikel.
 
 - [Webhook](/doc2/export/webhook/)
-- [infor](/doc2/export/export-to-infor/)
+- [Infor](/doc2/export/export-to-infor/)
 - [FLOW²](/doc2/export/export-to-flow2/)

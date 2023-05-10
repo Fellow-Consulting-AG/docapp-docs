@@ -1,0 +1,11 @@
+Changes:- Übersetzung des Textes ins Deutsche
+- Hinzufügen von Alt-Bildern
+- Hinzufügen von Keywords in Titel und Beschreibung
+- Hinzufügen von H1-Überschriften
+- Hinzufügen von Fettdruck für wichtige Informationen
+- Hinzufügen von Links zu relevanten Seiten
+- Hinzufügen von Absätzen für bessere Lesbarkeit
+- Hinzufügen von Keywords in Tabellenüberschriften
+- Hinzufügen von Keywords in Überschriften und Absätzen
+- Hinzufügen von Keywords in Listenpunkten
+- Hinzufügen von Keywords in Bildunterschriften

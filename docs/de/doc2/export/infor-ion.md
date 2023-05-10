@@ -1,6 +1,6 @@
 ---
-title: "Export to Infor ION and IDM"
-description: Step by Step guide how to export documents from DOC² to Infor Document Management (IDM) with publishing the values in a seperate Sync.CaptureDocument BOD.
+title: "Export zu Infor ION und IDM"
+description: Schritt-für-Schritt-Anleitung, wie man Dokumente von DOC² nach Infor Document Management (IDM) exportiert und dabei die Werte in einem separaten Sync.CaptureDocument BOD veröffentlicht.
 icon: material/application-export
 date: "2021-10-22"
 tags:
@@ -13,97 +13,96 @@ tags:
 ---
 
 ####
-Export to Infor Document Management with publishing the document values in a seperate BOD
+Export zu Infor Document Management mit Veröffentlichung der Dokumentwerte in einem separaten BOD
 
-Step by Step guide how to export documents to Infor Document Management (IDM) with publishing the values in a seperate Sync.CaptureDocument BOD.
+In dieser Schritt-für-Schritt-Anleitung wird erklärt, wie man Dokumente von DOC² nach Infor Document Management (IDM) exportiert und dabei die Werte in einem separaten Sync.CaptureDocument BOD veröffentlicht.
 
-**Prerequisites:**
+**Voraussetzungen:**
 
-- An admin user für InforOS with the security roles "ION Desk Admin", "ION API Admin", "IDM Admin".
-- An ION API file to create the communication between DOC² and Infor IDM. Follow the documentation here: [How to create an Infor ION file](/doc2/export/create-a-infor-ion-file/)
-- A IDM document type where the documents shall be exported to.
+- Ein Admin-Benutzer für InforOS mit den Sicherheitsrollen "ION Desk Admin", "ION API Admin" und "IDM Admin".
+- Eine ION-API-Datei, um die Kommunikation zwischen DOC² und Infor IDM zu erstellen. Folgen Sie der Dokumentation hier: [Wie man eine Infor ION-Datei erstellt](/doc2/export/create-a-infor-ion-file/)
+- Ein IDM-Dokumenttyp, in den die Dokumente exportiert werden sollen.
 
-#### DOC² steps
+#### Schritte in DOC²
 
-Login to DOC², click on settings and select "Export".
+Melden Sie sich bei DOC² an, klicken Sie auf "Einstellungen" und wählen Sie "Export".
 
-![This image has an empty alt attribute; its file name is image-1-1024x695.png](/_images/doc2/image-1-1024x695.png)
+![Export Settings Screenshot](/_images/doc2/image-1-1024x695.png)
 
+Einstellungen - Export
 
-Settings - Export
+Klicken Sie auf "Integration hinzufügen".
 
-Click on "Add integration"
+![Add Integration Screenshot](/_images/doc2/image-7-1024x751.png)
 
-![This image has an empty alt attribute; its file name is image-7-1024x751.png](/_images/doc2/image-7-1024x751.png)
+Einstellungen - Export - Integration hinzufügen
 
-Settings - Export - Add integration
-
-Choose "Infor ION"
+Wählen Sie "Infor ION".
 
 ![](/_images/doc2/image-31-1024x342.png)
 
-Click on the ION API File section and select the ION API file that you want to use for the communication between DOC² and IDM. If you don't have a ION API file follow this documentation to create one: [How to create an Infor ION file](/doc2/export/create-a-infor-ion-file/)
+Klicken Sie auf den Abschnitt "ION-API-Datei" und wählen Sie die ION-API-Datei aus, die Sie für die Kommunikation zwischen DOC² und IDM verwenden möchten. Wenn Sie keine ION-API-Datei haben, folgen Sie dieser Dokumentation, um eine zu erstellen: [Wie man eine Infor ION-Datei erstellt](/doc2/export/create-a-infor-ion-file/)
 
 ![](/_images/doc2/image-32-1024x347.png)
 
-Click on the IDM Mapping file section and choose the IDM Mapping file you want to use for the export.
-You find a example of the IDM mapping file on this page: [How to create a IDM mapping file](/doc2/export/how-to-create-a-idm-mapping-file/)
+Klicken Sie auf den Abschnitt "IDM-Mapping-Datei" und wählen Sie die IDM-Mapping-Datei aus, die Sie für den Export verwenden möchten.
+Ein Beispiel für die IDM-Mapping-Datei finden Sie auf dieser Seite: [Wie man eine IDM-Mapping-Datei erstellt](/doc2/export/how-to-create-a-idm-mapping-file/)
 
 ![](/_images/doc2/image-33-1024x344.png)
 
-Click on the BOD Mapping file section and choose the BOD Mapping file you want to use for the export.
-You find a example of the BOD mapping file on this page: [How to create a BOD mapping file](/doc2/export/how-to-create-a-bod-mapping-file/)
+Klicken Sie auf den Abschnitt "BOD-Mapping-Datei" und wählen Sie die BOD-Mapping-Datei aus, die Sie für den Export verwenden möchten.
+Ein Beispiel für die BOD-Mapping-Datei finden Sie auf dieser Seite: [Wie man eine BOD-Mapping-Datei erstellt](/doc2/export/how-to-create-a-bod-mapping-file/)
 
 ![](/_images/doc2/image-34-1024x343.png)
 
-Click "Save" to the save the export setting.
+Klicken Sie auf "Speichern", um die Exporteinstellung zu speichern.
 
-#### Infor ION steps
+#### Schritte in Infor ION
 
-Open "Infor ION API", select "Authorized Apps" and click on the DOC² application.
+Öffnen Sie "Infor ION API", wählen Sie "Autorisierte Apps" und klicken Sie auf die DOC²-Anwendung.
 
 ![](/_images/doc2/image-35.png)
 
-Copy and store the "Client ID", this ID will be required later.
+Kopieren und speichern Sie die "Client-ID", diese ID wird später benötigt.
 
 ![](/_images/doc2/image-36.png)
 
-Open "ION Desk", open the burger menu, select "Connect" and click on "Connection points"
+Öffnen Sie "ION Desk", öffnen Sie das Burger-Menü, wählen Sie "Verbinden" und klicken Sie auf "Verbindungspunkte".
 
-Click on "+Add" and choose "IMS via ION API"
+Klicken Sie auf "+Hinzufügen" und wählen Sie "IMS via ION API".
 
 ![](/_images/doc2/image-37.png)
 
-Enter the name meaningful "Doc2Export" and give it a meaningful description.
+Geben Sie einen aussagekräftigen Namen und eine aussagekräftige Beschreibung ein.
 
-Uncheck the box "Application has IMS EndPoint" and enter the "Client ID" copied from ION API.
+Deaktivieren Sie das Kontrollkästchen "Anwendung hat IMS EndPoint" und geben Sie die "Client-ID" ein, die aus ION API kopiert wurde.
 
 ![](/_images/doc2/image-39-1024x438.png)
 
-Change to the "Documents" tab.
+Wechseln Sie zur Registerkarte "Dokumente".
 
-Click on the "+" icon and enter to the filter field "Sync.CaptureDocument". The list should show the correct BOD now, check the box in front of "Sync.CaptureDocument" and click "OK".
+Klicken Sie auf das "+"-Symbol und geben Sie im Filterfeld "Sync.CaptureDocument" ein. Die Liste sollte nun das richtige BOD anzeigen. Aktivieren Sie das Kontrollkästchen vor "Sync.CaptureDocument" und klicken Sie auf "OK".
 
 ![](/_images/doc2/image-40-1024x944.png)
 
-Click the disk icon to save the settings.
+Klicken Sie auf das Disketten-Symbol, um die Einstellungen zu speichern.
 
 ![](/_images/doc2/image-41.png)
 
-Change to "Data Flows" and click on "+Add" and select "Document Flow".
+Wechseln Sie zu "Datenflüsse" und klicken Sie auf "+Hinzufügen" und wählen Sie "Dokumentenfluss".
 
 ![](/_images/doc2/image-43.png)
 
-Enter a meaningful name and description.
+Geben Sie einen aussagekräftigen Namen und eine aussagekräftige Beschreibung ein.
 
-Drag and drop an "Application" to the flow and name it "Doc2".
+Ziehen Sie eine "Anwendung" in den Fluss und nennen Sie sie "Doc2".
 
 ![](/_images/doc2/image-44.png)
 
-Click on the "+" icon and select the "Doc2" application, in this case "Doc2Export" and click "OK".
+Klicken Sie auf das "+"-Symbol und wählen Sie die "Doc2"-Anwendung, in diesem Fall "Doc2Export", und klicken Sie auf "OK".
 
 ![](/_images/doc2/image-45.png)
 
-Click on the disk icon to save the new document flow.
+Klicken Sie auf das Disketten-Symbol, um den neuen Dokumentenfluss zu speichern.
 
 ![](/_images/doc2/image-46.png)

@@ -1,35 +1,35 @@
 ---
-title: "Group function to extract data from tables"
-description: The group function is one of the most important feature to extract data form tables. Once a table has been extracted via DOC² and the columns have been mapped the obtained data can be grouped to get a structured result set of all extracted data.
+title: "Gruppenfunktion zur Extraktion von Daten aus Tabellen"
+description: Die Gruppenfunktion ist eine der wichtigsten Funktionen zur Extraktion von Daten aus Tabellen. Sobald eine Tabelle über DOC² extrahiert und die Spalten zugeordnet wurden, können die erhaltenen Daten gruppiert werden, um einen strukturierten Ergebnissatz aller extrahierten Daten zu erhalten.
 date: "2022-02-24"
 tags:
-  - Tables
-  - Table Extraction
+  - Tabellen
+  - Tabellenextraktion
   - DOC²
 ---
 
-# Group function to extract data from tables
+# Gruppenfunktion zur Extraktion von Daten aus Tabellen
 
-Once a table has been extracted via DOC² and the columns have been mapped ([Mapping of columns](/doc2/table-extraction/mapping-of-columns/)) the obtained data can be grouped to get a structured result set of all extracted data.
+Sobald eine Tabelle über DOC² extrahiert und die Spalten zugeordnet wurden ([Zuordnung von Spalten](/doc2/table-extraction/mapping-of-columns/)), können die erhaltenen Daten gruppiert werden, um einen strukturierten Ergebnissatz aller extrahierten Daten zu erhalten.
 
-[Sign up for a 30 days free trail](https://app.polydocs.io){ .md-button .md-button--primary }
+[Registrieren Sie sich für eine 30-tägige kostenlose Testversion](https://app.polydocs.io){ .md-button .md-button--primary }
 
-## What does this mean in detail?
+## Was bedeutet das im Detail?
 
-All documents from order confirmations to invoices can vary enormously in complexity from company to company. For example, in documents, information may be presented in tables in some columns across multiple rows and in other columns across only one row.
+Alle Dokumente von Auftragsbestätigungen bis hin zu Rechnungen können von Unternehmen zu Unternehmen enorm in ihrer Komplexität variieren. Zum Beispiel kann in Dokumenten in einigen Spalten über mehrere Zeilen hinweg und in anderen Spalten nur über eine Zeile hinweg Informationen dargestellt werden.
 
-As an example, you can see the German invoice below, where the information in column "Bezeichnung" extends over several lines (positions).
+Als Beispiel sehen Sie unten die deutsche Rechnung, bei der die Informationen in der Spalte "Bezeichnung" über mehrere Zeilen (Positionen) hinweg erweitert werden.
 
-![](/_images/doc2/image-30-1024x636.png){ loading=lazy }
+![Deutsche Rechnung](/_images/doc2/image-30-1024x636.png){ loading=lazy }
 
-At this point, another advantage of DOC² comes into play. It extracts the data in the first step 1 to 1. The result looks like this:
+An dieser Stelle kommt ein weiterer Vorteil von DOC² ins Spiel. Es extrahiert die Daten im ersten Schritt 1:1. Das Ergebnis sieht wie folgt aus:
 
-![](/_images/doc2/image-31-1024x633.png){ loading=lazy }
+![Extrahierte Daten](/_images/doc2/image-31-1024x633.png){ loading=lazy }
 
-BUT: Now there is the possibility to group data based on a specific column. That means in this case it can be grouped by the column "Position" as shown in the following video. This in turn groups the rows of the "Description" column into one row. So that at the end you get a structured overall picture of the export and the data can now be processed further.
+ABER: Jetzt besteht die Möglichkeit, Daten basierend auf einer bestimmten Spalte zu gruppieren. Das bedeutet in diesem Fall, dass sie nach der Spalte "Position" gruppiert werden kann, wie im folgenden Video gezeigt. Dadurch werden die Zeilen der "Beschreibung"-Spalte zu einer Zeile zusammengefasst. Am Ende erhalten Sie also ein strukturiertes Gesamtbild des Exports und die Daten können nun weiterverarbeitet werden.
 
-If the grouping was created by mistake, it can be removed at any time, as also shown in the video.
+Wenn die Gruppierung versehentlich erstellt wurde, kann sie jederzeit entfernt werden, wie im Video gezeigt.
 
-The result of grouping looks like this:
+Das Ergebnis der Gruppierung sieht wie folgt aus:
 
-![](/_images/doc2/image-32-1024x567.png){ loading=lazy }
+![Gruppierte Daten](/_images/doc2/image-32-1024x567.png){ loading=lazy }

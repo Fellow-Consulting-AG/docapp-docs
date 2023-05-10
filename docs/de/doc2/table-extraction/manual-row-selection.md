@@ -1,49 +1,54 @@
 ---
-title: "Manual row selection"
+title: "Manuelle Zeilenauswahl"
 date: "2022-02-18"
-description: It is possible that on some documents text in rows is not only written under one column. It might happen that it is written through different columns. Here is how rows can be selected manually in DOC².
+description: "Es kann vorkommen, dass in einigen Dokumenten Text in Zeilen nicht nur unter einer Spalte geschrieben wird, sondern durch verschiedene Spalten hindurch. Hier erfahren Sie, wie Sie Zeilen in DOC² manuell auswählen können."
 tags:
   - DOC²
-  - Row
-  - Selection
-  - manually
-  - Table Extraction
+  - Zeile
+  - Auswahl
+  - manuell
+  - Tabellenextraktion
 ---
 
-# Manual row selection
+# Manuelle Zeilenauswahl
 
-It is possible that on some documents text in rows is not only written under one column. It might happen that it is written through different columns like in the example below:
+Es kann vorkommen, dass in einigen Dokumenten Text in Zeilen nicht nur unter einer Spalte geschrieben wird, sondern durch verschiedene Spalten hindurch, wie im folgenden Beispiel:
 
-![](/_images/doc2/image-10-1024x606.png)
+![Beispiel für Text, der durch verschiedene Spalten hindurch geschrieben wurde](/_images/doc2/image-10-1024x606.png "Beispiel für Text, der durch verschiedene Spalten hindurch geschrieben wurde")
 
-On the screenshot you can see that the table and columns have already been defined. Having a detailed look on the highlighted information (PRAEF) you will recognize that the text is written through columns "Bezeichnung", "Menge", "ME" and "Preis in EUR".
+Auf dem Screenshot sehen Sie, dass die Tabelle und Spalten bereits definiert wurden. Wenn Sie sich die markierten Informationen (PRAEF) genauer ansehen, werden Sie feststellen, dass der Text durch die Spalten "Bezeichnung", "Menge", "ME" und "Preis in EUR" geschrieben wurde.
 
-[Sign up for a 30 days free trail](https://app.polydocs.io){ .md-button .md-button--primary }
+[Registrieren Sie sich für eine 30-tägige kostenlose Testversion](https://app.polydocs.io){ .md-button .md-button--primary }
 
-In that case it is not possible for the system to automatically define to which column the information belongs.
+In diesem Fall ist es für das System nicht möglich, automatisch zu definieren, welcher Spalte die Informationen zugeordnet werden sollen.
 
-To solve this issue DOC² offers a possibility to manually select and map information on a document to any column.
+Um dieses Problem zu lösen, bietet DOC² die Möglichkeit, Informationen auf einem Dokument manuell auszuwählen und einer beliebigen Spalte zuzuordnen.
 
-First of all make sure training mode is activated:
+Stellen Sie zunächst sicher, dass der Trainingsmodus aktiviert ist:
 
-![](/_images/doc2/image-11.png)
+![Aktivierung des Trainingsmodus](/_images/doc2/image-11.png "Aktivierung des Trainingsmodus")
 
-In addition you need to activate the row edit mode:
+Zusätzlich müssen Sie den Zeilenbearbeitungsmodus aktivieren:
 
-![](/_images/doc2/image-13-1024x314.png)
+![Aktivierung des Zeilenbearbeitungsmodus](/_images/doc2/image-13-1024x314.png "Aktivierung des Zeilenbearbeitungsmodus")
 
-Please note that the manual mapping of text to a column is only possible for extractable columns (blue colour):
+Bitte beachten Sie, dass die manuelle Zuordnung von Text zu einer Spalte nur für extrahierbare Spalten (blau) möglich ist:
 
-![](/_images/doc2/image-14-1024x669.png)
+![Extrahierbare Spalten](/_images/doc2/image-14-1024x669.png "Extrahierbare Spalten")
 
-The violet ones can not be mapped manually as the mapping has already been done via the columns defined on the document.
+Die violetten Spalten können nicht manuell zugeordnet werden, da die Zuordnung bereits über die auf dem Dokument definierten Spalten erfolgt ist.
 
-Extractable columns need to be created first. You will learn here how that works: [Add new table column](/doc2/table/add-new-table-column/)
+Extrahierbare Spalten müssen zuerst erstellt werden. Hier erfahren Sie, wie das funktioniert: [Neue Tabellenspalte hinzufügen](/doc2/table/add-new-table-column/)
 
-Once the column has been created, training mode and row edit mode are activated you can map text on the document to the column as shown in the video below:
+Sobald die Spalte erstellt wurde und der Trainingsmodus sowie der Zeilenbearbeitungsmodus aktiviert sind, können Sie den Text auf dem Dokument der Spalte zuordnen, wie im folgenden Video gezeigt:
 
-In the video you can see how to:
+<video controls>
+  <source src="/_videos/doc2/manual-row-selection.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
-- select an area with your mouse
-- double click a value to select the area (only possible for values without spaces)
-- delete mapping and re-map the area
+Im Video sehen Sie, wie Sie:
+
+- einen Bereich mit der Maus auswählen
+- auf einen Wert doppelklicken, um den Bereich auszuwählen (nur für Werte ohne Leerzeichen möglich)
+- die Zuordnung löschen und den Bereich erneut zuordnen können

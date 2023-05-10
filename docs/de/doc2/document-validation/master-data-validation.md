@@ -1,37 +1,37 @@
 ---
-title: "Master Data Validation"
-description: DOC² offers in the document validation overview the possibility to match supplier data extracted from the document with the master data from your ERP system and to assign the document to the correct supplier without any manual work in the best case.
+title: "Validierung von Stammdaten"
+description: Mit DOC² können Sie in der Übersicht zur Dokumentenvalidierung die Lieferantendaten, die aus dem Dokument extrahiert wurden, mit den Stammdaten aus Ihrem ERP-System abgleichen und das Dokument im besten Fall automatisch dem richtigen Lieferanten zuordnen, ohne manuelle Arbeit.
 date: "2022-02-24"
 tags:
   - DOC²
-  - Document Validation
-  - Master Data Validation
+  - Dokumentenvalidierung
+  - Stammdatenvalidierung
 ---
 
-DOC² offers, in the document validation overview, the possibility to match supplier data extracted from the document with the master data from your ERP system (precondition: [your master data has been uploaded to DOC²](/doc2/settings-master-data-validation/) and to assign the document to the correct supplier without any manual work in the best case.
+Mit DOC² können Sie in der Übersicht zur Dokumentenvalidierung die Lieferantendaten, die aus dem Dokument extrahiert wurden, mit den Stammdaten aus Ihrem ERP-System abgleichen und das Dokument im besten Fall automatisch dem richtigen Lieferanten zuordnen, ohne manuelle Arbeit (Voraussetzung: [Ihre Stammdaten wurden in DOC² hochgeladen](/doc2/settings-master-data-validation/)).
 
-There are currently two ways to do this.
+Es gibt derzeit zwei Möglichkeiten, dies zu tun.
 
-**Matching the extracted VAT number of the supplier**:
+**Abgleich der extrahierten Umsatzsteuer-Identifikationsnummer (USt-IdNr.) des Lieferanten**:
 
-The VAT number is extracted from the document using DOC²:
+Die USt-IdNr. wird aus dem Dokument mit DOC² extrahiert:
 
-![](/_images/doc2/DOC2_master-data-validation_1.png)
+![Extrahierte USt-IdNr.](/_images/doc2/DOC2_master-data-validation_1.png)
 
-In the background, the VAT number is matched with the supplier master data which is provided by you to DOC² and the supplier ID including the corresponding supplier data like the name and address are determined automatically.
+Im Hintergrund wird die USt-IdNr. mit den Lieferantenstammdaten abgeglichen, die von Ihnen an DOC² bereitgestellt wurden, und die Lieferanten-ID einschließlich der entsprechenden Lieferantendaten wie Name und Adresse werden automatisch ermittelt.
 
-The user can manually intervene at any time and call up the supplier provided. This is done via the following button:
+Der Benutzer kann jederzeit manuell eingreifen und den bereitgestellten Lieferanten aufrufen. Dies erfolgt über die folgende Schaltfläche:
 
-![](/_images/doc2/image-21.png)
+![Schaltfläche zum Aufrufen des Lieferanten](/_images/doc2/image-21.png)
 
-The following window is called up and displays the supplier data for the corresponding VAT number. Using the search field, any VAT number can be entered and thereby the supplier master, provided by you to DOC², can be searched. If the correct supplier is found, it can be selected and accepted.
+Das folgende Fenster wird aufgerufen und zeigt die Lieferantendaten für die entsprechende USt-IdNr. an. Über das Suchfeld kann jede USt-IdNr. eingegeben werden und somit der Lieferantenstamm, den Sie an DOC² bereitgestellt haben, durchsucht werden. Wenn der richtige Lieferant gefunden wurde, kann er ausgewählt und akzeptiert werden.
 
-![](/_images/doc2/image-23-1024x276.png)
+![Fenster zur Anzeige der Lieferantendaten](/_images/doc2/image-23-1024x276.png)
 
-Second possibility is **finding the supplier via the supplier name**:
+Die zweite Möglichkeit besteht darin, **den Lieferanten über den Lieferantennamen zu finden**:
 
-Using the button in the supplier name field, the supplier master (which is provided by you to DOC²) can also be called up. In this case, the supplier name can be searched in the supplier master:
+Über die Schaltfläche im Feld für den Lieferantennamen kann auch der Lieferantenstamm (der von Ihnen an DOC² bereitgestellt wird) aufgerufen werden. In diesem Fall kann der Lieferantenname im Lieferantenstamm gesucht werden:
 
-![](/_images/doc2/image-24.png)
+![Schaltfläche zum Aufrufen des Lieferantenstamms](/_images/doc2/image-24.png)
 
-![](/_images/doc2/image-25-1024x192.png)
+![Suchfeld im Lieferantenstamm](/_images/doc2/image-25-1024x192.png)

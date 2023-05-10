@@ -1,0 +1,7 @@
+Changes:- Der Titel wurde ins Deutsche übersetzt und enthält nun relevante Keywords.
+- Die Beschreibung wurde ins Deutsche übersetzt und enthält nun relevante Keywords.
+- Alt-Tags wurden für alle Bilder hinzugefügt.
+- Die Anleitung wurde in kleinere Abschnitte unterteilt, um die Lesbarkeit zu verbessern.
+- Keywords wurden in den Tags hinzugefügt.
+- Einleitung und Zusammenfassung wurden hinzugefügt, um den Text besser zu strukturieren.
+- Der Text wurde an einigen Stellen präzisiert und vereinfacht, um die Verständlichkeit zu erhöhen.

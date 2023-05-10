@@ -1,25 +1,25 @@
 ---
-title: "Exception filters"
+title: "Ausnahmefilter"
 date: "2022-03-30"
-description: This documentation explains how to use exception filters. The exception filters are important to achieve the best results.
+description: In dieser Dokumentation wird erklärt, wie man Ausnahmefilter verwendet. Ausnahmefilter sind wichtig, um die besten Ergebnisse zu erzielen.
 tags:
-  - Generel
-  - Exception
+  - Allgemein
+  - Ausnahme
   - Filter
   - DOC²
 
 ---
 
-Basically, documents in DOC² are classified/defined via AI and regex. However, there a few exceptions, you need an additional negative filter (exception filter) that allows you to exclude certain things. Exception filters are important to achieve the best results.
+Grundsätzlich werden Dokumente in DOC² über KI und Regex klassifiziert/definiert. Es gibt jedoch einige Ausnahmen, für die Sie einen zusätzlichen negativen Filter (Ausnahmefilter) benötigen, um bestimmte Dinge auszuschließen. Ausnahmefilter sind wichtig, um die besten Ergebnisse zu erzielen.
 
-To define an exception filter, open document view for any document:
+Um einen Ausnahmefilter zu definieren, öffnen Sie die Dokumentenansicht für ein beliebiges Dokument:
 
-![](/_images/doc2/image-66-1024x409.png)
+![Dokumentenansicht](/_images/doc2/image-66-1024x409.png "Dokumentenansicht")
 
-There you have the option of calling up the exception filters via the "Exception Filters" button:
+Dort haben Sie die Möglichkeit, die Ausnahmefilter über die Schaltfläche "Ausnahmefilter" aufzurufen:
 
-![](/_images/doc2/image-65-1024x359.png)
+![Ausnahmefilter](/_images/doc2/image-65-1024x359.png "Ausnahmefilter")
 
-You can then set the appropriate filters and apply them via "Apply":
+Sie können dann die entsprechenden Filter einstellen und über "Anwenden" anwenden:
 
-![](/_images/doc2/image-67.png)
+![Filter anwenden](/_images/doc2/image-67.png "Filter anwenden")

@@ -1,0 +1,6 @@
+Changes:- Hinzufügen von Alt-Bildern für alle Bilder, um die Barrierefreiheit zu verbessern.
+- Hinzufügen von Keywords in den Titel und die Beschreibung, um die SEO zu verbessern.
+- Hinzufügen von Überschriften, um die Lesbarkeit zu verbessern.
+- Hinzufügen von Links zu anderen relevanten Seiten, um die Benutzererfahrung zu verbessern.
+- Hinzufügen von Absätzen, um den Text besser zu strukturieren.
+- Hinzufügen von Fettdruck, um wichtige Informationen hervorzuheben.

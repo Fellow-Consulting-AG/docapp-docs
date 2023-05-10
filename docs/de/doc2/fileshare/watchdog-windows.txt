@@ -1,0 +1,43 @@
+Changes:- Hinzufügen von Alt-Bildern für bessere SEO-Optimierung.
+
+## Allgemeine Konfiguration
+
+Konfigurieren Sie als nächstes die allgemeinen Parameter:
+
+#### Wählen Sie eine Umgebung aus, in die Ihre Dokumente exportiert werden sollen.
+  :fontawesome-solid-circle-info:{ style="color: #0F17E4" } Die folgenden Optionen stehen zur Verfügung:
+
+  **DOC²** → Die Dokumente werden nur in DOC² exportiert.
+
+  ![](/_images/doc2/Import_Watchdog_Windows_General_Settings_2.png)
+
+  **INFOR OS** → Hier prüft der Watchdog, ob Exportaufträge für Infor OS On-Premise von DOC² ausgestellt wurden, und das Dokument wird dann in IDM exportiert.
+
+  Es gibt zwei weitere spezifische Parameter:
+
+  Beim Exportieren in Infor OS stehen drei Dokumententypen zur Verfügung.
+
+![](/_images/doc2/Import_Watchdog_Windows_General_Settings_1.png)
+
+#### API-Schlüssel
+→ Dieser Schlüssel befindet sich unter Integrationseinstellungen Ihres DOC²-Kontos.
+
+#### Barcode-Aufteilung
+Wenn Sie Dokumente verarbeiten möchten, in denen mehrere Dokumente mit Barcodes in einer PDF-Datei kombiniert sind, werden diese durch den Barcode mit folgender Einstellung beim Hochladen in DOC² getrennt.
+
+![](/_images/doc2/Import_Watchdog_Windows_Barcode_Splitting.png)
+
+:fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
+Stellen Sie sicher, dass die Dokumentaufteilung in den Klassifizierungs- und Extraktionseinstellungen deaktiviert ist.
+
+![](/_images/doc2/DOC2_Classification_and_Extraction_Document_Splitting.png)
+
+## Installieren von Poppler
+Damit die Barcode-Aufteilung funktioniert, müssen Sie poppler.zip herunterladen, entpacken und die bin lib zum PATH-Systemvariable hinzufügen.
+
+1. Suchen Sie nach Systemvariable oder Systemumgebungsvariablen.
+2. Klicken Sie auf Systemvariablen ![](/_images/doc2/watchdog/systemeigenschaften.png)
+3. Öffnen Sie die Systemvariablen, wählen Sie Path und klicken Sie auf Bearbeiten ![](/_images/doc2/watchdog/windows-env.png)
+4. Fügen Sie den Pfad zum entpackten Poppler-Ordner + \Library\bin zum Pfad hinzu ![](/_images/doc2/watchdog/add-to-path.png)
+
+Fertig!

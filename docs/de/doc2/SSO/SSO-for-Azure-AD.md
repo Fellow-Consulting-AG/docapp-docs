@@ -1,142 +1,106 @@
 ---
-title: "SSO for Azure AD"
+title: "SSO für Azure AD"
 date: "2021-10-14"
-description: This is a step by step guide how to configure SSO in Infor Cloud. Starting with the prerequisites, getting access to the cloud and checking it to add a new service provider.
+description: In diesem Schritt-für-Schritt-Handbuch erfahren Sie, wie Sie SSO in Infor Cloud konfigurieren. Beginnend mit den Voraussetzungen, dem Zugriff auf die Cloud und der Überprüfung, um einen neuen Dienstanbieter hinzuzufügen.
 tags:
   - DOC²
   - Azure Active Directory
   - SSO
 ---
 
-# Configure Azure Active Directory
+# Konfigurieren von Azure Active Directory
 
-## Create SAML SSO in Azure AD
+## Erstellen von SAML SSO in Azure AD
 
-Perform the following steps to add SAML SSO in Azure AD:
+Führen Sie die folgenden Schritte aus, um SAML SSO in Azure AD hinzuzufügen:
 
-**1.** In Azure, go to your `Azure Active Directory` console
+**1.** Gehen Sie in Azure zu Ihrer `Azure Active Directory`-Konsole.
 
-![](/_images/doc2/SSO/Azure_1.png)
+![Azure Active Directory-Konsole](/_images/doc2/SSO/Azure_1.png "Azure Active Directory-Konsole")
 
+**2.** Klicken Sie im linken Bereich auf `Unternehmensanwendungen`.
 
+![Unternehmensanwendungen](/_images/doc2/SSO/Azure_2.png "Unternehmensanwendungen")
 
-**2.** In the left panel, click `Enterprise applications`
+**3.** Klicken Sie auf `+ Neue Anwendung`.
 
-![](/_images/doc2/SSO/Azure_2.png)
+![Neue Anwendung](/_images/doc2/SSO/Azure_3.png "Neue Anwendung")
 
+**4.** Klicken Sie auf `+ Erstellen Sie Ihre eigene Anwendung`.
 
+![Erstellen Sie Ihre eigene Anwendung](/_images/doc2/SSO/Azure_4.png "Erstellen Sie Ihre eigene Anwendung")
 
-**3.** Click `+ New application`
+**5.** Geben Sie einen Namen für Ihre Anwendung ein. Behalten Sie die restlichen Standardauswahlen bei.
 
-![](/_images/doc2/SSO/Azure_3.png)
+![Anwendungsnamen](/_images/doc2/SSO/Azure_5.png "Anwendungsnamen")
 
-
-
-
-**4.** Click `+ Create your own application`
-
-![](/_images/doc2/SSO/Azure_4.png)
-
+**6.** Klicken Sie auf `Erstellen`.
 
 
-**5.** Enter a name for your application. Keep the remaining default selections.
+## Benutzer der SSO-Konfiguration zuweisen
 
-![](/_images/doc2/SSO/Azure_5.png)
-
-
-
-**6.** Click on `Create`
-
-
-## Assign Users to the SSO Configuration
-
-Next, assign users or groups to the SSO configuration.
+Weisen Sie als Nächstes Benutzer oder Gruppen der SSO-Konfiguration zu.
 
 :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
-Important: You should already have created users and groups in Azure AD. If you don’t have any users or groups, create them now before proceeding.
+Wichtig: Sie sollten bereits Benutzer und Gruppen in Azure AD erstellt haben. Wenn Sie keine Benutzer oder Gruppen haben, erstellen Sie diese jetzt, bevor Sie fortfahren.
 :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
 
-**1.** Under `Getting Started`, click `Assign Users and Groups`.
+**1.** Klicken Sie unter `Erste Schritte` auf `Benutzer und Gruppen zuweisen`.
 
 
-**2.** Click `+ Add user`
+**2.** Klicken Sie auf `+ Benutzer hinzufügen`.
 
-![](/_images/doc2/SSO/Azure_6.png)
-
-
-**3.** Select the users and groups you want to assign to this SSO configuration. These users will be able to authenticate DOC² using SSO.
-
-![](/_images/doc2/SSO/Azure_7.png)
+![Benutzer hinzufügen](/_images/doc2/SSO/Azure_6.png "Benutzer hinzufügen")
 
 
+**3.** Wählen Sie die Benutzer und Gruppen aus, die Sie dieser SSO-Konfiguration zuweisen möchten. Diese Benutzer können sich mit SSO bei DOC² authentifizieren.
 
-**4.** Click `Select`
+![Benutzer und Gruppen auswählen](/_images/doc2/SSO/Azure_7.png "Benutzer und Gruppen auswählen")
 
-
-**5.** When you’re satisfied with your selection, click `Assign`
-
-![](/_images/doc2/SSO/Azure_8.png)
-
-![](/_images/doc2/SSO/Azure_9.png)
+**4.** Klicken Sie auf `Auswählen`.
 
 
+**5.** Wenn Sie mit Ihrer Auswahl zufrieden sind, klicken Sie auf `Zuweisen`.
+
+![Zuweisen](/_images/doc2/SSO/Azure_8.png "Zuweisen")
+
+![Zuweisen bestätigen](/_images/doc2/SSO/Azure_9.png "Zuweisen bestätigen")
+
+**6.** Gehen Sie zur Gruppenansichtsliste und suchen Sie die zugewiesenen Gruppen.
 
 
-**6.** Go to the `Groups` view list and find the assigned groups.
+## SSO in Azure einrichten
 
+Als Nächstes müssen Sie die Einrichtung der Einmalanmeldung in Azure abschließen.
 
+**1.** Klicken Sie im linken Bereich auf `Einmalanmeldung`.
 
-## Set up SSO in Azure
+![Einmalanmeldung](/_images/doc2/SSO/Azure_10.png "Einmalanmeldung")
 
-Next, you need to finish setting up single-sign-on in Azure.
+**2.** Klicken Sie auf `SAML`.
 
-**1.** In the left panel, click `Single sign-on`
+![SAML](/_images/doc2/SSO/Azure_11.png "SAML")
 
-![](/_images/doc2/SSO/Azure_10.png)
+**3.** Klicken Sie auf `Metadatendatei hochladen`.
 
+![Metadatendatei hochladen](/_images/doc2/SSO/Azure_12.png "Metadatendatei hochladen")
 
+**4.** Laden Sie die DOC² **metadata.xml** hoch, die Sie im Menü `Integration` unter `SSO Service Provider Settings` Ihres DOC²-Kontos finden.
 
-**2.** Click `SAML`
+![metadata.xml](/_images/doc2/SSO/Azure_Metadata.png "metadata.xml")
 
-![](/_images/doc2/SSO/Azure_11.png)
+**5.** Bearbeiten Sie die `Grundlegende SAML-Konfiguration`.
 
+![Grundlegende SAML-Konfiguration](/_images/doc2/SSO/Azure_13.png "Grundlegende SAML-Konfiguration")
 
+**6.** Überprüfen Sie, ob die `Entity ID`, `ACS-URL`, `Anmelde-URL` und `Logout-URL` richtig ausgefüllt sind.
 
-**3.** Click `Upload metadata file`
+![SAML-Konfiguration überprüfen](/_images/doc2/SSO/Azure_13.1.png "SAML-Konfiguration überprüfen")
 
-![](/_images/doc2/SSO/Azure_12.png)
+**7.** Laden Sie die neu generierte **Federation Metadata XML** herunter.
 
+![Federation Metadata XML herunterladen](/_images/doc2/SSO/Azure_14.png "Federation Metadata XML herunterladen")
 
+**8.** Laden Sie die FederationMetadata.xml in die **Identity Service Provider Settings** Ihres DOC²-Kontos hoch, die Sie im Menü `Integration` finden.
 
-**4.** Upload the DOC² **metadata.xml**, which you can find in the Settings menu **Integration**<br> under **SSO Service Provider Settings** of your DOC² account.
-
-![](/_images/doc2/SSO/Azure_Metadata.png)
-
-
-
-**5.** Edit the `Basic SAML Configuration`
-
-![](/_images/doc2/SSO/Azure_13.png)
-
-
-
-**6.** Check if the `Entity ID`, `ACS URL`, `Sign on URL` and `Logout URL` are populated right.
-
-![](/_images/doc2/SSO/Azure_13.1.png)
-
-
-**7.** Download the newly generated **Federation Metadata XML**.
-
-![](/_images/doc2/SSO/Azure_14.png)
-
-
-
-**8.** Upload the FederationMetadata.xml into the **Identity Service Provider Settings** of your DOC² account which you can find in the Settings menu **Integration**.
-
-![](/_images/doc2/SSO/Azure_15.png)
-
-
-
-
-
-
+![FederationMetadata.xml hochladen](/_images/doc2/SSO/Azure_15.png "FederationMetadata.xml hochladen")

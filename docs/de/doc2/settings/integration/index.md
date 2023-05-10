@@ -1,17 +1,17 @@
 ---
 title: "Integration"
-description: In this section you will find your API Key as well as the SSO Service Provider Settings in DOC².
+description: Hier finden Sie Ihre API-Schlüssel sowie die Einstellungen für den SSO-Service-Provider in DOC².
 date: "2021-10-29"
 icons: material/api
 tags:
   - DOC²
-  - Settings
-  - API Key
+  - Einstellungen
+  - API-Schlüssel
   - SSO
 ---
 
-In this section you will find your API Key as well as the SSO Service Provider Settings
+In diesem Abschnitt finden Sie Ihre API-Schlüssel sowie die Einstellungen für den SSO-Service-Provider.
 
-- [API Key](/doc2/settings/integration/api-integration/)
-- [API Calls](/doc2/settings/integration/api-calls-examples/)
+- [API-Schlüssel](/doc2/settings/integration/api-integration/)
+- [API-Aufrufe](/doc2/settings/integration/api-calls-examples/)
 - [SSO](/doc2/settings-sso-settings/)

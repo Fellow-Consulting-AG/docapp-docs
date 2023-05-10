@@ -1,27 +1,27 @@
 ---
-title: "Master Data Validation"
-description: DOC² offers the possibility to upload your master data. This has the advantage that an automatic mapping of e.g. supplier data from your ERP system can be made during the extraction of documents.
+title: "Validierung von Stammdaten"
+description: Mit DOC² können Sie Ihre Stammdaten hochladen. Dadurch kann beispielsweise eine automatische Zuordnung von Lieferantendaten aus Ihrem ERP-System während der Extraktion von Dokumenten erfolgen.
 date: "2021-10-29"
 tags:
   - DOC²
-  - Settings
-  - Master Data Validation
+  - Einstellungen
+  - Validierung von Stammdaten
 ---
 
-DOC² offers the possibility to upload your master data. This has the advantage that an automatic mapping of e.g. supplier data from your ERP system can be made during the extraction of documents.
+DOC² bietet die Möglichkeit, Ihre Stammdaten hochzuladen. Dadurch kann beispielsweise eine automatische Zuordnung von Lieferantendaten aus Ihrem ERP-System während der Extraktion von Dokumenten erfolgen.
 
-For example, the VAT number or supplier name extracted from the document can be used to identify the supplier data record from your ERP system (from the supplier data uploaded to DOC²).
+Zum Beispiel kann die aus dem Dokument extrahierte Umsatzsteuer-Identifikationsnummer oder der Lieferantenname verwendet werden, um den Lieferantendatensatz aus Ihrem ERP-System (aus den zu DOC² hochgeladenen Lieferantendaten) zu identifizieren.
 
-For more detailed information please refer to the following documentation: [Master data validation](/doc2/document-validation/master-data-validation/)
+Weitere Informationen finden Sie in der folgenden Dokumentation: [Validierung von Stammdaten](/doc2/document-validation/master-data-validation/)
 
-To upload master data to DOC², please navigate to the settings from the dashboard:
+Um Stammdaten in DOC² hochzuladen, navigieren Sie bitte von der Dashboard aus zu den Einstellungen:
 
-![](/_images/doc2/DOC2_SupplierValidation_1.png)
+![Screenshot der Einstellungen in DOC²](/_images/doc2/DOC2_SupplierValidation_1.png "Einstellungen in DOC²")
 
-There you will find the menu item **Supplier Validation**. Please open it:
+Dort finden Sie den Menüpunkt **Lieferantenvalidierung**. Bitte öffnen Sie ihn:
 
-![](/_images/doc2/DOC2_SupplierValidation_2.png)
+![Screenshot der Lieferantenvalidierung in DOC²](/_images/doc2/DOC2_SupplierValidation_2.png "Lieferantenvalidierung in DOC²")
 
-In the following view you can import the CSV file with all your data via drag and drop or via the button `BROWSE`. Additionally you can define if your file contains semicolon or comma as separator. When you are done click on `SAVE` to apply your changes.
+In der folgenden Ansicht können Sie die CSV-Datei mit all Ihren Daten per Drag & Drop oder über die Schaltfläche `DURCHSUCHEN` importieren. Zusätzlich können Sie definieren, ob Ihre Datei Semikolon oder Komma als Trennzeichen enthält. Wenn Sie fertig sind, klicken Sie auf `SPEICHERN`, um Ihre Änderungen zu übernehmen.
 
-![](/_images/doc2/DOC2_SupplierValidation_3.png)
+![Screenshot des Importvorgangs in DOC²](/_images/doc2/DOC2_SupplierValidation_3.png "Import von Stammdaten in DOC²")

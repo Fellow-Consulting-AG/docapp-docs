@@ -1,0 +1,7 @@
+Changes:- Der Titel wurde präzisiert und enthält nun das Haupt-Keyword "IDM-Mapping-Datei".
+- Die Beschreibung wurde hinzugefügt, um den Inhalt der Seite zu verdeutlichen und das Interesse der Nutzer zu wecken.
+- Die Überschrift wurde angepasst, um die Schritt-für-Schritt-Anleitung hervorzuheben.
+- Alt-Tags wurden für die Bilder hinzugefügt, um die Barrierefreiheit zu verbessern und die Bilder für Suchmaschinen zugänglicher zu machen.
+- Die Sprache wurde von Englisch auf Deutsch geändert, um die Zielgruppe anzusprechen.
+- Die Formatierung wurde verbessert, um die Lesbarkeit zu erhöhen.
+- Die Keywords wurden beibehalten und in den Text integriert, um die Relevanz für Suchmaschinen zu erhöhen.

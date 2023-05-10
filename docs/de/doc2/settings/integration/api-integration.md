@@ -1,27 +1,24 @@
 ---
-title: API Integration
-description: API Integration offers capabilities and services that connect applications, processes, people, and devices. This is where to find your API Key in DOC².
+title: API-Integration
+description: API-Integration bietet Funktionen und Dienste, die Anwendungen, Prozesse, Menschen und Geräte verbinden. Hier finden Sie Ihren API-Schlüssel in DOC².
 date: "2021-10-29"
 icons: material/api
 tags:
   - DOC²
-  - Settings
+  - Einstellungen
   - API
 ---
 
+### Was ist API-Integration?
+API-Integration bezieht sich auf den Prozess, bei dem zwei oder mehr Anwendungen über APIs miteinander verbunden werden, um miteinander zu "sprechen". Die Anwendungen können eine gemeinsame Funktion ausführen oder Informationen austauschen, um die Datenintegrität sicherzustellen.
 
-### What is API integration?
-API integration refers to a process of connecting two or more applications via APIs to "talk" to each other. The applications can perform a common function or exchange information to ensure data integrity.
+Um auf das gesamte Polydocs-API-Menü zuzugreifen, klicken Sie [hier](https://doc2api.cloudintegration.eu/docs).
 
-To access the hole Polydocs API menu click [here](https://doc2api.cloudintegration.eu/docs)
+## API-Schlüssel
 
+Alles, was Sie benötigen, ist Ihr API-Schlüssel. Sie finden Ihren **Schlüssel** im Menü "Integration" in den Einstellungen.
 
-## API Key
-
-All you need is your API Key. You will find your **Key** in the Integration menu item in the settings.
-
-![](/_images/doc2/doc2-Settings-Integration-API Key.png)
-
+![API-Schlüssel in den Einstellungen von DOC²](/_images/doc2/doc2-Settings-Integration-API Key.png "API-Schlüssel in den Einstellungen von DOC²")
 
 :fontawesome-solid-circle-info:{ style="color: #0F17E4" }
-Various examples of **API Calls** can be found [here](/doc2/settings/integration/api-calls-examples/).
+Verschiedene Beispiele für **API-Aufrufe** finden Sie [hier](/doc2/settings/integration/api-calls-examples/).

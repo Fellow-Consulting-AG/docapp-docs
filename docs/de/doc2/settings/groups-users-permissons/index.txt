@@ -1,0 +1,5 @@
+Changes:- Der Titel wurde angepasst, um relevante Keywords wie "Gruppen", "Benutzer" und "Berechtigungen" zu enthalten.
+- Die Beschreibung wurde optimiert, um die wichtigsten Funktionen des Bereichs hervorzuheben und relevante Keywords wie "Dokumententypen" und "Unterorganisationen" zu enthalten.
+- Der Text wurde ins Deutsche übersetzt, um die Zielgruppe anzusprechen.
+- Die Links zu den Unterseiten wurden aktualisiert, um eine bessere Navigation zu ermöglichen.
+- Alt-Tags wurden hinzugefügt, um die Bilder für Suchmaschinen zugänglicher zu machen.

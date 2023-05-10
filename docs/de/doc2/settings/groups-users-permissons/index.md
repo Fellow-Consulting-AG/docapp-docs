@@ -1,17 +1,17 @@
 ---
-title: Groups, Users and Permissons
-description: In this area you can manage users and their roles, create sub-organizations as well as configure groups, their users and permissions for different document types.
+title: Gruppen, Benutzer und Berechtigungen
+description: In diesem Bereich können Sie Benutzer und ihre Rollen verwalten, Unterorganisationen erstellen sowie Gruppen konfigurieren, ihre Benutzer und Berechtigungen für verschiedene Dokumententypen festlegen.
 date: "2022-09-23"
 tags:
   - DOC²
-  - Settings
-  - Groups
-  - Users
-  - Permissions
+  - Einstellungen
+  - Gruppen
+  - Benutzer
+  - Berechtigungen
 ---
 
-In this area you can manage your organizations users and their roles, create sub-organizations as well as configure groups, their users and permissions for different document types.
+In diesem Bereich können Sie die Benutzer Ihrer Organisation verwalten und ihre Rollen zuweisen, Unterorganisationen erstellen sowie Gruppen konfigurieren und ihre Benutzer sowie Berechtigungen für verschiedene Dokumententypen festlegen.
 
-- [Users](/doc2/settings-users/)
-- [Sub-Organizations](/security/privileges/)
-- [Groups and Permissions](/security/privileges/)
+- [Benutzer](/doc2/settings-users/)
+- [Unterorganisationen](/security/privileges/)
+- [Gruppen und Berechtigungen](/security/privileges/)

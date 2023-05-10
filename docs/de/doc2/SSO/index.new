@@ -1,0 +1,45 @@
+---
+title: "SSO konfigurieren"
+description: Hier finden Sie eine Übersicht zur Konfiguration von SSO in verschiedenen Umgebungen, von Infor Cloud bis hin zu Azure Active Directory. Alle Links sind hier zu finden.
+tags:
+  - SSO
+  - Konfiguration
+  - DOC²
+  - Infor OS
+  - Azure AD
+---
+
+## Was ist Single Sign On?
+Mit SSO benötigen Ihre Teams nur einen Satz Anmeldeinformationen, um bequem auf alle ihre Apps zugreifen zu können. Niemand muss sich verschiedene Varianten merken oder wiederholt Passwörter eingeben.
+
+#### Schneller Login
+Erleichtern Sie die Anmeldung, indem Sie alle oder einen Teil der Anmelde-Prompts verbannen.
+
+#### Höhere Produktivität
+Erleichtern Sie es den Mitarbeitern, Apps mit der zentralen 1-Klick-Startfunktion zu finden und darauf zuzugreifen.
+
+#### Erweiterte Sicherheit
+Vermeiden Sie das erneute Eingeben von Benutzernamen und Passwörtern in Apps, um das Sicherheitsrisiko zu minimieren.
+
+#### Größere IT-Effizienz
+Verwalten Sie Benutzerkonten an einem Ort. Gruppenmitgliedschaften oder Rollen können verwendet werden, um Benutzern automatisch den Zugriff auf Apps zu gewähren oder zu entziehen.
+
+<ins>Hier finden Sie hilfreiche Dokumentationen zum Thema SSO:</ins>
+
+* [SSO in Infor Cloud konfigurieren](/doc2/doc2-with-infor/configuring-sso-in-cloud/)
+
+* [SSO für Azure AD mit DOC²](/doc2/sso/sso-for-azure-ad/)
+
+* [SSO Service Provider Einstellungen in DOC²](/doc2/settings-sso-settings/)
+
+<seo_changes>
+- Hinzufügen eines aussagekräftigen Titels, der das Hauptthema der Seite widerspiegelt.
+- Hinzufügen einer prägnanten Beschreibung, die das Thema der Seite zusammenfasst und potenzielle Besucher dazu ermutigt, die Seite zu besuchen.
+- Hinzufügen von relevanten Tags, um die Seite für Suchmaschinen und potenzielle Besucher zu optimieren.
+- Übersetzung des Textes ins Deutsche, um die Seite für deutschsprachige Besucher zugänglicher zu machen.
+- Hinzufügen von Alt-Texten zu den Bildern, um die Barrierefreiheit zu verbessern und die Bilder für Suchmaschinen zugänglicher zu machen.
+- Hinzufügen von Überschriften, um den Text besser zu strukturieren und die Lesbarkeit zu verbessern.
+- Hinzufügen von Absätzen, um den Text besser zu gliedern und die Lesbarkeit zu verbessern.
+- Hinzufügen von Fettdruck, um wichtige Informationen hervorzuheben und die Lesbarkeit zu verbessern.
+- Hinzufügen von Links zu relevanten Dokumentationen, um den Besuchern weitere Informationen zu bieten und die Verweildauer auf der Seite zu erhöhen.
+</seo_changes>

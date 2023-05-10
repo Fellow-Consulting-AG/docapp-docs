@@ -1,0 +1,5 @@
+Changes:- Übersetzung des Textes ins Deutsche
+- Hinzufügen von Alt-Bildern für bessere SEO-Optimierung
+- Keine Änderungen am Code oder HTML vorgenommen
+- Hinzufügen von Keywords in der Beschreibung und den Tags für bessere SEO-Optimierung
+- Verwendung von "SSO Einstellungen" anstelle von "SSO Settings" für bessere Verständlichkeit und SEO-Optimierung

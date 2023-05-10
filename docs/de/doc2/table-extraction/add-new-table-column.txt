@@ -1,0 +1,9 @@
+Changes:- Übersetzt den Text ins Deutsche.
+- Hinzugefügt Alt-Tags für Bilder.
+- Hinzugefügt Alt-Tags für Links.
+- Entfernt unnötige Wiederholungen von Informationen.
+- Hinzugefügt eine Call-to-Action-Schaltfläche für eine kostenlose Testversion.
+- Hinzugefügt eine Beschreibung für die Schaltfläche.
+- Verwendet Markdown-Formatierung für Links und Schaltflächen.
+- Verwendet eine beschreibende Sprache für die Überschriften und Absätze.
+- Verwendet eine beschreibende Sprache für die Bildunterschriften.

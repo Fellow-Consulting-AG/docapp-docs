@@ -1,22 +1,18 @@
 ---
-title: "Mapping of columns"
-description: Once data is extracted from document you are able to map the extracted columns with the columns given by DOC². That can be done via selecting the header of a column in the extraction view. A dropdown will open and you are able to select the column that you want to map.
+title: "Zuordnung von Spalten"
+description: Nachdem Daten aus einem Dokument extrahiert wurden, können Sie die extrahierten Spalten den von DOC² bereitgestellten Spalten zuordnen. Dies kann durch Auswahl des Headers einer Spalte in der Extraktionsansicht erfolgen. Es öffnet sich ein Dropdown-Menü, in dem Sie die Spalte auswählen können, die Sie zuordnen möchten.
 date: "2022-02-18"
 tags:
   - DOC²
-  - Table Extraction
-  - Training
-  - Mapping
+  - Tabellenextraktion
+  - Schulung
+  - Zuordnung
 ---
 
-Once data is extracted from document you are able to map the extracted columns with the columns given by DOC².
+Nachdem Daten aus einem Dokument extrahiert wurden, können Sie die extrahierten Spalten den von DOC² bereitgestellten Spalten zuordnen. Dies kann durch Auswahl des Headers einer Spalte in der Extraktionsansicht erfolgen. Es öffnet sich ein Dropdown-Menü, in dem Sie die Spalte auswählen können, die Sie zuordnen möchten.
 
-That can be done via selecting the header of a column in the extraction view.
+![Zuordnung von Spalten in DOC²](/_images/doc2/image-8-1024x790.png "Zuordnung von Spalten in DOC²")
 
-A dropdown will open and you are able to select the column that you want to map.
+Wenn eine Spalte falsch zugeordnet wurde, können Sie die Spalte einfach erneut zuordnen, indem Sie erneut auf das Dropdown-Menü klicken.
 
-![](/_images/doc2/image-8-1024x790.png)
-
-If a column has been mapped incorrectly you can simply re-map the column by clicking the dropdown menu again.
-
-In the following video you can see in detail how to map and re-map different columns on a document:
+Im folgenden Video können Sie detailliert sehen, wie Sie verschiedene Spalten in einem Dokument zuordnen und erneut zuordnen können:

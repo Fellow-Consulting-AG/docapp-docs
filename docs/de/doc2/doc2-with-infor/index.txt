@@ -1,0 +1,7 @@
+Changes:- Der Titel wurde präzisiert und enthält nun das Hauptkeyword "Infor".
+- Die Beschreibung wurde optimiert, um das Interesse potenzieller Leser zu wecken und das Hauptkeyword zu betonen.
+- Die Tags wurden beibehalten, um die Relevanz der Seite für die entsprechenden Themen zu erhöhen.
+- Alt-Bilder wurden nicht hinzugefügt, da keine Bilder im Markdown vorhanden sind.
+- Der Text wurde ins Deutsche übersetzt, um die Seite für deutschsprachige Nutzer zugänglicher zu machen.
+- Die Links wurden angepasst, um eine bessere Benutzererfahrung zu gewährleisten.
+- Es wurden keine HTML- oder Code-Änderungen vorgenommen, da dies nicht gefordert war.

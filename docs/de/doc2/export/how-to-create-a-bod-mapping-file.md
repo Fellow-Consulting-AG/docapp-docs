@@ -1,6 +1,6 @@
 ---
-title: "How to create a BOD mapping file"
-description: This is a step by step guide how to create a BOD mapping file. You will find all values and fields that would need an adjustment in DOC² and the BOD.
+title: "Wie man eine BOD-Mapping-Datei erstellt"
+description: "Eine Schritt-für-Schritt-Anleitung zur Erstellung einer BOD-Mapping-Datei. Hier finden Sie alle Werte und Felder, die in DOC² und BOD angepasst werden müssen."
 date: "2021-10-28"
 tags:
   - DOC²
@@ -10,24 +10,24 @@ tags:
   - Mapping
 ---
 
-#### Step by step guide how to create a BOD mapping file.
+#### Schritt-für-Schritt-Anleitung zur Erstellung einer BOD-Mapping-Datei
 
-You can download a example mapping file here:
+Hier können Sie eine Beispiel-Mapping-Datei herunterladen:
 
-[BOD mapping example](https://docs.cloudintegration.eu/wp-content/uploads/2021/11/BOD_Mappings.txt)[Download](https://docs.cloudintegration.eu/wp-content/uploads/2021/11/BOD_Mappings.txt)
+[BOD-Mapping-Beispiel](https://docs.cloudintegration.eu/wp-content/uploads/2021/11/BOD_Mappings.txt)[Download](https://docs.cloudintegration.eu/wp-content/uploads/2021/11/BOD_Mappings.txt)
 
-To use the example file, rename the file from “BOD\_Mapping.txt” to “BOD\_Mapping.properties”.
+Um die Beispiel-Datei zu verwenden, benennen Sie die Datei von "BOD_Mapping.txt" in "BOD_Mapping.properties" um.
 
-****Here you can find an explanation how the file is structured.****
+****Hier finden Sie eine Erklärung zur Struktur der Datei.****
 
-In the first block, all static values will be defined. Fields that would need an adjustment are "LogicalID" and "AccountingEntityID".
+Im ersten Block werden alle statischen Werte definiert. Felder, die angepasst werden müssen, sind "LogicalID" und "AccountingEntityID".
 
-The "LogicalID" must be set to the logical ID of the IMS connection point that was defined for the DOC² BOD export.
+Die "LogicalID" muss auf die logische ID des IMS-Verbindungspunkts gesetzt werden, der für den DOC² BOD-Export definiert wurde.
 
-The "AccountingEnity" must be set to the accounting entity of the target Infor ERP system.
+Die "AccountingEntity" muss auf die Buchhaltungseinheit des Ziel-Infor-ERP-Systems gesetzt werden.
 
 ```
-#All static field attributes.
+#Alle statischen Feldattribute.
 Static_Fields=AlternateDocSchema,AlternateDocLocation,LogicalID,ConfirmationCode,actionCode,AccountingEntityID
 
 SFP_AlternateDocSchema=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\AlternateDocumentID\\ID\\schemeName
@@ -49,10 +49,10 @@ SFP_AccountingEntityID=SyncCaptureDocumentType\\DataArea\\Sync\\AccountingEntity
 SFV_AccountingEntityID=infor.ln.100
 ```
 
-In the second block you can adjust the document type mapping. On the left side you have the document type of DOC² and on the right side the document type of the BOD.
+Im zweiten Block können Sie die Dokumenttypzuordnung anpassen. Auf der linken Seite haben Sie den Dokumenttyp von DOC² und auf der rechten Seite den Dokumenttyp von BOD.
 
 ```
-#All generated fields.
+#Alle generierten Felder.
 Generated_Fields=CreationDateTime,BODID
 
 GFP_BODID=SyncCaptureDocumentType\\ApplicationArea\\BODID
@@ -61,18 +61,18 @@ GFV_BODID=BODID
 GFP_CreationDateTime=SyncCaptureDocumentType\\ApplicationArea\\CreationDateTime
 GFV_CreationDateTime=CurrentDate
 
-#Document Type path.
+#Dokumenttyp-Pfad.
 DT_Path=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\DocumentType
 
-#Mapping between doc2 document and IDM document.
+#Zuordnung zwischen doc2-Dokument und IDM-Dokument.
 Document_Types=Invoice
 Invoice=SupplierInvoice
 ```
 
-In the third block you can adjust the field mapping. On the left side are the fields of DOC² and on the right side the field names of the BOD.
+Im dritten Block können Sie die Feldzuordnung anpassen. Auf der linken Seite stehen die Felder von DOC² und auf der rechten Seite die Feldnamen von BOD.
 
 ```
-#Index Field Mapping
+#Index-Feldzuordnung
 Index_Fields=INVOICE_TYPE,PURCHASE_ORDER,INVOICE_NUMBER,INVOICE_DATE,DELIVERY_DATE,PAYMENT_TERMS,TAX_RATE,TAX_AMOUNT,NET_AMOUNT,TOTAL_AMOUNT,CURRENCY,VENDOR_ID,VENDOR_NAME,VAT_NO_EXTRACTED,IBAN_EXTRACTED,ACCOUNTING_ENTITY,CORRELATION_ID
 IF_INVOICE_TYPE=InvoiceType
 IF_PURCHASE_ORDER=PurchaseOrder
@@ -94,17 +94,17 @@ IF_CORRELATION_ID=AlternateDocumentID
 #IF_VENDOR_IBAN=BankAccount
 ```
 
-In the rest of the file should stay as is and does not need any modification.
+Der Rest der Datei sollte unverändert bleiben und keine Änderungen erfordern.
 
 ```
-#If index field value is to be used somewhere else define path here.
+#Wenn der Indexfeldwert an anderer Stelle verwendet werden soll, definieren Sie hier den Pfad.
 
 IFP_CORRELATION_ID=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\AlternateDocumentID\\ID
 IFP_INVOICE_NUMBER=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\DocumentID\\ID
 IFP_INVOICE_DATE=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\DocumentDateTime
 #IFP_ACCOUNTING_ENTITY=SyncCaptureDocumentType\\DataArea\\Sync\\AccountingEntityID
 
-#Index field common path
+#Indexfeld gemeinsamer Pfad
 IF_COMMON_PATH=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\DocumentField
 
 IF_Attributes=languageID

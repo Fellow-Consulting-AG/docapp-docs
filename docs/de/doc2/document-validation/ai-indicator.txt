@@ -1,0 +1,5 @@
+Changes:- Hinzufügen von Alt-Tags zu allen Bildern für eine bessere SEO-Optimierung.
+- Hinzufügen von Anführungszeichen in der Beschreibung, um sie als Text zu kennzeichnen.
+- Hinzufügen von Keywords in der Beschreibung und im Titel, um die Relevanz für Suchmaschinen zu erhöhen.
+- Hinzufügen von Überschriften, um den Text besser zu strukturieren und die Lesbarkeit zu verbessern.
+- Hinzufügen von Absätzen, um den Text besser zu gliedern und die Lesbarkeit zu erhöhen.

@@ -1,0 +1,5 @@
+Changes:- Übersetzung des Textes ins Deutsche
+- Hinzufügen von Alt-Texten für die Font Awesome Icons
+- Verwendung von Keywords in Titel und Beschreibung für bessere SEO
+- Verwendung von sprechenden URLs für bessere SEO
+- Hinzufügen von Links zu relevanten Seiten für bessere Navigation und SEO

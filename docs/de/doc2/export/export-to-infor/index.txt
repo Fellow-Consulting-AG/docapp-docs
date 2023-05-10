@@ -1,0 +1,8 @@
+Changes:- Der Titel wurde für SEO optimiert, indem das Keyword "Export von DOC² nach Infor OS" hinzugefügt wurde.
+- Die Beschreibung wurde für SEO optimiert, indem das Keyword "Export von DOC² nach Infor OS" hinzugefügt wurde.
+- Der Titel und die Beschreibung wurden auf Deutsch übersetzt.
+- Die Überschrift wurde für SEO optimiert, indem das Keyword "Export nach Infor" durch "Export nach Infor :fontawesome-solid-file-export:" ersetzt wurde.
+- Die Mermaid-Diagramm wurde beibehalten, da es für die technische Dokumentation geeignet ist.
+- Die Links wurden beibehalten, da sie für die technische Dokumentation relevant sind.
+- Es wurden keine Alt-Bilder gefunden, die hinzugefügt werden könnten.
+- Es wurden keine HTML-Tags oder Code gefunden, die geändert werden müssten.

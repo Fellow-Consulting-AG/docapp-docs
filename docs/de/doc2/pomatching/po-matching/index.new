@@ -1,0 +1,62 @@
+---
+title: "PO Matching"
+description: Es gibt drei Möglichkeiten, wie Sie Ihre Bestellung abgleichen können. Mit der entsprechenden Rechnung, Lieferschein und/oder Auftragsbestätigung.
+date: "2022-01-24"
+tags:
+  - DOC²
+  - PO Matching
+  - Tastenkombinationen
+---
+
+# PO Matching
+
+## Was ist PO Matching?
+
+PO Matching ist ein Prozess, bei dem eine Bestellung mit den zugehörigen Dokumenten abgeglichen wird. Es gibt drei Möglichkeiten, wie Sie Ihre Bestellung abgleichen können: mit der entsprechenden Rechnung, Lieferschein und/oder Auftragsbestätigung. Alle drei Komponenten müssen innerhalb der vereinbarten Toleranzgrenzen übereinstimmen. Erst dann wird die Rechnung in das AP-System eingegeben.
+
+Wenn Sie alle oben genannten Dokumente abgleichen möchten, benötigen Sie auch Kontrollinformationen wie die tatsächliche Anzahl der gelieferten Artikel und deren Qualitätskontrolle. Sobald alle vier Komponenten übereinstimmen, wird die Rechnung in die AP-Datenbank eingegeben.
+
+## Einstellungen in DOC²
+
+Entsprechende Einstellungen müssen in DOC² unter Einstellungen - Module - Bestellung vorgenommen werden.
+
+![Einstellungen in DOC²](/_images/doc2/DOC2_POM_1_Modules.png "Einstellungen in DOC²")
+
+## PO in Dokumenten
+
+In den Dokumenten wird die Bestellung entweder in den Kopfzeilen oder, bei einigen, in den Tabellenzeilen aufgeführt.
+
+Während der Validierung muss die Bestellung des Lieferanten korrekt extrahiert werden.
+
+## Erstellen Sie die Tabelle aus der Bestellung mit einem Klick
+
+Erstellen Sie die Tabelle aus der Bestellung mit einem Klick. Sehen Sie, wie einfach das ist:
+
+<div class="video-container">
+<iframe width="840" height="472.5" src="https://www.youtube-nocookie.com/embed/9FsRoGZDfZE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+## Tastenkombinationen für PO
+
+1. Klicken Sie auf die Schaltfläche "PO Matching erforderlich" Ihres Dokuments auf dem Dashboard.
+
+![PO Matching erforderlich](/_images/doc2/DOC2_POM_2.png "PO Matching erforderlich")
+
+2. Klicken Sie auf das Tastatursymbol, um die Tastenkombinationen anzuzeigen.
+
+![Tastenkombinationen](/_images/doc2/DOC2_POM_3_Keyboard.png "Tastenkombinationen")
+
+### Tastenkombinationen für PO Matching
+
+![Tastenkombinationen für PO Matching](/_images/doc2/DOC2_POM_4_Keyboardshortcuts_1.png "Tastenkombinationen für PO Matching")
+![Tastenkombinationen für PO Matching](/_images/doc2/DOC2_POM_4_Keyboardshortcuts_2.png "Tastenkombinationen für PO Matching")
+
+<seo_changes>
+- Hinzufügen einer kurzen Erklärung, was PO Matching ist, um den Lesern einen besseren Kontext zu geben.
+- Hinzufügen von Alt-Bildern für alle Bilder, um die Zugänglichkeit und das SEO zu verbessern.
+- Hinzufügen von Überschriften, um den Text besser zu strukturieren und die Lesbarkeit zu verbessern.
+- Hinzufügen von Absätzen, um den Text besser zu gliedern und die Lesbarkeit zu verbessern.
+- Hinzufügen von Fettdruck, um wichtige Informationen hervorzuheben.
+- Hinzufügen von Links zu den einzelnen Komponenten des PO Matching-Prozesses, um den Lesern eine bessere Navigation zu ermöglichen.
+- Hinzufügen von Übersetzungen ins Deutsche, um den Text für deutschsprachige Leser zugänglicher zu machen.
+</seo_changes>

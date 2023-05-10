@@ -1,0 +1,7 @@
+Changes:- Hinzufügen von Alt-Tags zu den Bildern für eine bessere SEO-Optimierung.
+- Übersetzung des Textes ins Deutsche.
+- Hervorhebung der Schritte zur Tabellenextraktion durch Nummerierung.
+- Hervorhebung wichtiger Begriffe durch Fettdruck.
+- Verwendung von Unterüberschriften für eine bessere Lesbarkeit.
+- Entfernung von unnötigen Wiederholungen und Vereinfachung des Textes.
+- Hinzufügen von Keywords in den Titel und die Beschreibung für eine bessere SEO-Optimierung.

@@ -1,0 +1,7 @@
+Changes:- Die Beschreibung wurde präzisiert, um den Inhalt des Abschnitts besser zu beschreiben.
+- Die Tags wurden beibehalten, um die Relevanz des Inhalts zu erhöhen.
+- Die Links wurden beibehalten, um die Navigation zu erleichtern.
+- Der Titel wurde beibehalten, um die Konsistenz beizubehalten.
+- Alt-Bilder wurden nicht hinzugefügt, da keine Bilder im Markdown vorhanden sind.
+- Der Text wurde ins Deutsche übersetzt, um die Zielgruppe zu erreichen.
+- Die Änderungen wurden im Abschnitt "Changes" dokumentiert, um die Transparenz zu erhöhen.

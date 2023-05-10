@@ -25,7 +25,7 @@ DOC² does not work in Tenant. All customers use the same cluster. Our Kubernete
 
 Here are the two ways to access the system:
 
-1.  Contact your Polydocs GmbH representative or reach out to [support@polydocs.io](mailto: support@polydocs.io) to register your company.
+1.  Contact your FellowPro AG representative or reach out to [support@polydocs.io](mailto: support@polydocs.io) to register your company.
 2. Once you have decided to let DOC² make your daily work easier, have already contacted us and have received the onboarding email, you are the first user and therefore the admin of your organization.
 
 Here is your step by step guide to set up 

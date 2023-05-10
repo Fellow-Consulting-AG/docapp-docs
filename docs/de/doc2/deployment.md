@@ -22,6 +22,6 @@ Wenn Sie die URL aufrufen, wird der folgende Bildschirm angezeigt:
 ![DOC2 Login](/_images/doc2/DOC2_Deployment_Login.png){ loading=lazy, alt: "DOC2-Login" }
 
 Geben Sie die Login-Daten ein, die Sie von uns erhalten haben. Dies sind Ihre Admin-Daten.
-Wenn Sie den folgenden Bildschirm sehen, sind Sie fast bereit loszulegen. Alle weiteren Details und notwendigen Schritte finden Sie [hier](https://docs.polydocs.io/doc2/document-validation/).
+Wenn Sie den folgenden Bildschirm sehen, sind Sie fast bereit loszulegen. Alle weiteren Details und notwendigen Schritte finden Sie [hier](https://de.docs.fellowpro.com/doc2/document-validation/).
 
 ![DOC2 Dashboard](/_images/doc2/DOC2_Deployment_Dashboard.png){ loading=lazy, alt: "DOC2-Dashboard" }

@@ -1,0 +1,5 @@
+Changes:- Hinzufügen von Alt-Bildern für eine bessere SEO-Optimierung.
+- Verwendung von deutschen Begriffen, um die Zielgruppe besser anzusprechen.
+- Hinzufügen eines Call-to-Action-Buttons, um die Conversion-Rate zu erhöhen.
+- Verwendung von aussagekräftigen Bildunterschriften, um den Inhalt besser zu erklären.
+- Keine Änderungen an HTML oder Code vorgenommen, um die Funktionalität der Seite nicht zu beeinträchtigen.

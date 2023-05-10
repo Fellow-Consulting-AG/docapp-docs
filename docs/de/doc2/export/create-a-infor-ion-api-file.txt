@@ -1,0 +1,7 @@
+Changes:<br>
+- Der Titel wurde präzisiert und enthält nun das Haupt-Keyword "Infor ION API-Datei erstellen".
+- Die Beschreibung wurde optimiert, um das Haupt-Keyword zu enthalten und den Nutzen der Anleitung hervorzuheben.
+- Der Alt-Text wurde für alle Bilder hinzugefügt, um die Barrierefreiheit zu verbessern und die Bildersuche zu optimieren.
+- Die Übersetzung ins Deutsche wurde hinzugefügt.
+- Die Anleitung wurde in kleinere Abschnitte unterteilt, um die Lesbarkeit zu verbessern.
+- Die Anleitung wurde mit Schritt-Nummern versehen, um die Übersichtlichkeit zu erhöhen.

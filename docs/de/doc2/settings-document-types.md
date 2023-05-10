@@ -1,104 +1,93 @@
 ---
-title: Document Types, Field Settings and Profile
-description: Here you will find all document types available in DOC² as invoice, credit note, delivery note, order confirmation and many more
+title: Dokumenttypen, Feld-Einstellungen und Profile
+description: Hier finden Sie alle verfügbaren Dokumenttypen in DOC² wie Rechnung, Gutschrift, Lieferschein, Auftragsbestätigung und viele mehr.
 date: "2021-10-29"
 tags:
   - DOC²
-  - Settings
-  - Document Types
-  - Field Settings
+  - Einstellungen
+  - Dokumenttypen
+  - Feld-Einstellungen
 ---
 
+Im DOC² finden Sie das Menü "Einstellungen" in der oberen Leiste auf der "Startseite".
 
-In DOC² you will find the `SETTINGS` menu in the upper bar on `HOME` screen.
+![DOC2 Dashboard Einstellungen](/_images/doc2/DOC2_Dashboard_Settings.png "DOC2 Dashboard Einstellungen")
 
-![](/_images/doc2/DOC2_Dashboard_Settings.png)
+Wenn Sie als Administrator bei DOC² angemeldet sind, finden Sie unter dem jeweiligen Dokumenttyp alle Felder, die extrahiert werden können.
 
-If you are logged in to DOC² as an admin, you will find all fields of a document that can be extracted under the respective document type.
+Öffnen Sie das Menü "Dokumenttypen".
 
-Open the menu **Document Types**.
+![DOC2 Dashboard Einstellungen Dokumenttypen](/_images/doc2/DOC2_Dashboard_Settings_Document Types.png "DOC2 Dashboard Einstellungen Dokumenttypen")
 
-![](/_images/doc2/DOC2_Dashboard_Settings_Document Types.png)
+In der folgenden Übersicht finden Sie alle Standard-Dokumenttypen, die für Sie verfügbar sind:
 
-In the following overview you will find all standard document types available for you:
+![DOC2 Dokumenttypen](/_images/doc2/DOC2_Document Types.png "DOC2 Dokumenttypen")
 
-![](/_images/doc2/DOC2_Document Types.png)
+Um zu sehen, welche Felder beispielsweise aus einer Rechnung extrahiert werden können, klicken Sie auf "Felder" für diesen Dokumenttyp.
 
-To see which fields can be extracted, for example from an invoice, click on `FIELDS` for this document type.
+![DOC2 Rechnungsfelder](/_images/doc2/DOC2_Invoice_Fields.png "DOC2 Rechnungsfelder")
 
-![](/_images/doc2/DOC2_Invoice_Fields.png)
+### Feld-Einstellungen
 
-### FIELD SETTINGS
+Hier finden Sie alle Felder, die extrahiert werden können:
 
-Here you will find all the fields that can be extracted:
-
-| INVOICE DETAILS    | PAYMENT DETAILS     |  VAT & AMOUNTS      |  VENDOR DETAILS     |
+| RECHNUNGSDETAILS   | ZAHLUNGSDETAILS     |  MWST. & BETRÄGE    |  LIEFERANTENDETAILS |
 |       :----:       |        :----:       |       :----:        |      :----:         |
-| INVOICE NUMBER     | IBAN                | CURRENCY            | ADDRESS             |
-| INVOICE DATE       | PAYMENT TERMS       | NET AMOUNT FULL     | SUPPLIER NAME       |
-| DELIVERY DATE      |                     | NET AMOUNT REDUCED  | VENDOR ID           |
-| PO NUMBER          |                     | NET AMOUNT FREE     | VENDOR VAT          |
-| ORDER DATE         |                     | TAX AMOUNT FULL     |                     |
-|                    |                     | TAX AMOUNT REDUCED  |                     |
-|                    |                     | TAX AMOUNT FREE     |                     |
-|                    |                     | VAT RATE FULL       |                     |
-|                    |                     | VAT RATE REDUCED    |                     |
-|                    |                     | VAT RATE FREE       |                     |
-|                    |                     | TOTAL NET AMOUNT    |                     |
-|                    |                     | TOTAL TAX AMOUNT    |                     |
-|                    |                     | TOTAL AMOUNT        |                     |
+| RECHNUNGSNUMMER    | IBAN                | WÄHRUNG             | ADRESSE             |
+| RECHNUNGSDATUM     | ZAHLUNGSBEDINGUNGEN | NETTOBETRAG VOLL     | LIEFERANTENNAME     |
+| LIEFERDATUM        |                     | NETTOBETRAG REDUZIERT  | LIEFERANTEN-ID           |
+| BESTELLNUMMER      |                     | NETTOBETRAG FREI     | LIEFERANTEN-MWST          |
+| BESTELLDATUM       |                     | STEUERBETRAG VOLL     |                     |
+|                    |                     | STEUERBETRAG REDUZIERT  |                     |
+|                    |                     | STEUERBETRAG FREI     |                     |
+|                    |                     | MWST.-SATZ VOLL       |                     |
+|                    |                     | MWST.-SATZ REDUZIERT    |                     |
+|                    |                     | MWST.-SATZ FREI       |                     |
+|                    |                     | GESAMT NETTOBETRAG    |                     |
+|                    |                     | GESAMT STEUERBETRAG    |                     |
+|                    |                     | GESAMTBETRAG        |                     |
 
 
+Für jeden Punkt können Sie auch **FELD ERSTELLEN** wie Fracht, Porto oder jedes Feld mit einem Betrag erstellen, den Sie aus Ihren Rechnungen extrahieren möchten.
 
+Für jedes Feld können Sie die folgenden Optionen aktivieren:
 
-For every overpoint you can also **CREATE FIELD**s like freight, postage or any field with an amount you want to extract from your invoices.
+- ERFORDERLICH: Hier können Sie definieren, ob das Feld einen Wert enthalten muss, um fortzufahren.
 
-For each field you can check the boxes if they are
+- SCHREIBGESCHÜTZT: Hier können Sie definieren, ob ein Feld nur angezeigt, aber nicht bearbeitet werden kann.
 
-- REQUIRED: Here you can define if the field must contain a value to continue.
+- VERSTECKT: Hier können Sie definieren, ob ein Feld ausgeblendet oder in der Extraktionsansicht angezeigt werden soll.
 
-- READ ONLY: Here you can define if a field can only be displayed but not edited.
+- VALIDIERUNG ERFORDERLICH: Hier können Sie definieren, ob ein Feld immer manuell validiert werden muss, auch wenn es von DOC² zu 100% gelesen wurde.
 
-- HIDDEN: Here you can define whether a field should be hidden or displayed in the extraction view.
+- OCR und MATCH SCORE: Einstellung wie unten beschrieben, pro Feld.
 
-- FORCE VALIDATION: Here you can define whether a field must always be validated manually, even if it has been read 100% by DOC².
+- FORMEL: Erstellung einer Formel pro Feld.
 
-- OCR and MATCH SCORE: Setting as described below, per field.
+![DOC2 Feld-Einstellungen](/_images/doc2/DOC2_field settings_fields.png "DOC2 Feld-Einstellungen")
 
-- FORMULA: Creation of a formula per field.
+Wenn alle Einstellungen vorgenommen wurden und gespeichert werden sollen, bestätigen Sie dies bitte mit der Schaltfläche "EINSTELLUNGEN SPEICHERN", sonst werden die Einstellungen nicht angewendet.
 
+![DOC2 Feld-Einstellungen Speichern](/_images/doc2/DOC2_field settings_fields_save settings.png "DOC2 Feld-Einstellungen Speichern")
 
-![](/_images/doc2/DOC2_field settings_fields.png)
+### ERKENNUNGSEINSTELLUNGEN
 
-If all settings are made and should be saved, please confirm this with the `SAVE SETTINGS` button, otherwise the settings will not be applied.
-
-![](/_images/doc2/DOC2_field settings_fields_save settings.png)
-
-
-
-### RECOGNITION SETTINGS
-
-![](/_images/doc2/DOC2_field settings_recognition settings.png)
+![DOC2 Feld-Einstellungen Erkennungseinstellungen](/_images/doc2/DOC2_field settings_recognition settings.png "DOC2 Feld-Einstellungen Erkennungseinstellungen")
 
 **OCR:**
 
-Here you can set the sensitivity of the OCR (Optical Character Recognition) function for all fields at once. This value determines the sensitivity with which a field is marked in red if it could not be extracted with 100% certainty (OCR related!).
+Hier können Sie die Empfindlichkeit der OCR (Optical Character Recognition) Funktion für alle Felder auf einmal einstellen. Dieser Wert bestimmt die Empfindlichkeit, mit der ein Feld rot markiert wird, wenn es nicht mit 100%iger Sicherheit extrahiert werden konnte (OCR-bezogen!).
 
 **MATCH SCORE:**
 
-Here you can set the sensitivity of the MATCH SCORE function for all fields at once. This value determines from when a field is marked in red if DOC² has not extracted the field with 100% probability. In this case the field needs to be validated manually.
+Hier können Sie die Empfindlichkeit der MATCH SCORE Funktion für alle Felder auf einmal einstellen. Dieser Wert bestimmt ab wann ein Feld rot markiert wird, wenn DOC² das Feld nicht mit 100%iger Wahrscheinlichkeit extrahiert hat. In diesem Fall muss das Feld manuell validiert werden.
 
-The button `RESTORE DEFAULTS` will set back both values to "50".
+Die Schaltfläche "STANDARDEINSTELLUNGEN WIEDERHERSTELLEN" setzt beide Werte auf "50" zurück.
 
-![](/_images/doc2/image-3.png)
+![DOC2 Feld-Einstellungen Erkennungseinstellungen Standardwerte](/_images/doc2/image-3.png "DOC2 Feld-Einstellungen Erkennungseinstellungen Standardwerte")
 
+### PROFIL
 
-### PROFILE
+Hier können Sie das Profil definieren, das verwendet werden soll. Entweder "Standard" oder "ZUGFeRD". Im Profil ZUGFeRD gibt es vorgegebene Felder, die für diesen Rechnungstyp obligatorisch sind. Wenn Sie nicht explizit ZUGFeRD verwenden, wählen Sie bitte "Standard".
 
-Here you can define the profile that shall be used. Either Default or ZUGFeRD.<br> In profile ZUGFeRD there are predefined fields that are mandatory for this type of invoice.<br> If you do not explicitly use ZUGFeRD, please select "Default".
-
-![](/_images/doc2/DOC2_field settings_profile.png)
-
-
-
-
+![DOC2 Feld-Einstellungen Profil](/_images/doc2/DOC2_field settings_profile.png "DOC2 Feld-Einstellungen Profil")

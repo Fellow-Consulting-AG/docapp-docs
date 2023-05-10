@@ -1,0 +1,6 @@
+Changes:- Übersetzung des Textes ins Deutsche
+- Hinzufügen von Alt-Tags zu den Bildern
+- Hinzufügen von Keywords in den Titel und die Beschreibung
+- Hervorheben der Vorteile der Funktion der Validierung von Stammdaten
+- Hinzufügen von Links zu relevanten Seiten
+- Verwendung von fettgedrucktem Text, um wichtige Informationen hervorzuheben

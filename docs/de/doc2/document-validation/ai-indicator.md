@@ -1,37 +1,37 @@
 ---
-title: "AI Indicators"
-description: In the documentation you will find options to display the quality of the extraction using graphical indicators. The so-called AI indicator.
+title: "AI Indikatoren"
+description: "In der Dokumentation finden Sie Optionen zur Anzeige der Extraktionsqualität mithilfe von grafischen Indikatoren. Die sogenannten AI-Indikatoren."
 date: "2022-03-23"
 tags:
   - AI
   - DOC²
 ---
 
-In document view you will find options to display the quality of the extraction using graphical indicators. The so-called AI indicator.
+In der Dokumentenansicht finden Sie Optionen zur Anzeige der Extraktionsqualität mithilfe von grafischen Indikatoren. Die sogenannten AI-Indikatoren.
 
-To do this, open a document as known via the dashboard:
+Um dies zu tun, öffnen Sie ein Dokument wie gewohnt über das Dashboard:
 
-![](/_images/doc2/image-50-1024x391.png)
+![Dokumentenansicht](/_images/doc2/image-50-1024x391.png "Dokumentenansicht")
 
-In document view there are two indicators for the quality of the extraction.
+In der Dokumentenansicht gibt es zwei Indikatoren für die Qualität der Extraktion.
 
-- Extraction quality in percent per field and current document
-- Overall extraction quality including previous extractions of documents of the same type.
+- Extraktionsqualität in Prozent pro Feld und aktuellem Dokument
+- Gesamte Extraktionsqualität einschließlich vorheriger Extraktionen von Dokumenten des gleichen Typs.
 
-![](/_images/doc2/image-51-1024x474.png){ loading=lazy }
+![Extraktionsqualität](/_images/doc2/image-51-1024x474.png "Extraktionsqualität")
 
-**Extraction quality in percent per field and current document**
+**Extraktionsqualität in Prozent pro Feld und aktuellem Dokument**
 
-For each field there is a value available on the right side which indicates the quality of extraction for the current document. A percentage value will be displayed:
+Für jedes Feld steht auf der rechten Seite ein Wert zur Verfügung, der die Extraktionsqualität für das aktuelle Dokument anzeigt. Es wird ein Prozentwert angezeigt:
 
-![](/_images/doc2/image-52.png){ loading=lazy }
+![Extraktionsqualität pro Feld](/_images/doc2/image-52.png "Extraktionsqualität pro Feld")
 
-**Overall extraction quality including previous extractions of documents of the same type**
+**Gesamte Extraktionsqualität einschließlich vorheriger Extraktionen von Dokumenten des gleichen Typs**
 
-Furthermore, there is a graph that shows the quality of all previous extractions for a document type. This refers in each case to the extraction value with the lowest quality:
+Darüber hinaus gibt es ein Diagramm, das die Qualität aller vorherigen Extraktionen für einen Dokumententyp anzeigt. Dies bezieht sich jeweils auf den Extraktionswert mit der niedrigsten Qualität:
 
-![](/_images/doc2/image-53.png){ loading=lazy }
+![Gesamte Extraktionsqualität](/_images/doc2/image-53.png "Gesamte Extraktionsqualität")
 
-**Technical Details:**
+**Technische Details:**
 
-The AI indicator shows how well a document is trained. This is done via an internal score. This means that as soon as a document is read in and the fields extracted by DOC² are confirmed by the user, this score is increased. The higher the score, the further the display of the AI indicator will be in the green area. If fields are changed manually by the user after the export, this score will decrease again and the display of the AI indicator will fall back into the red area. Only when the document has been taught and the extraction has determined the correct value for some imports without manual intervention will the score reach 100%.
+Der AI-Indikator zeigt an, wie gut ein Dokument trainiert ist. Dies geschieht über eine interne Punktzahl. Das bedeutet, dass sobald ein Dokument eingelesen wird und die von DOC² extrahierten Felder vom Benutzer bestätigt werden, diese Punktzahl erhöht wird. Je höher die Punktzahl, desto weiter wird die Anzeige des AI-Indikators im grünen Bereich sein. Wenn Felder nach dem Export manuell vom Benutzer geändert werden, wird diese Punktzahl wieder abnehmen und die Anzeige des AI-Indikators wird in den roten Bereich zurückfallen. Nur wenn das Dokument trainiert wurde und die Extraktion den korrekten Wert für einige Importe ohne manuelle Intervention bestimmt hat, wird die Punktzahl 100% erreichen.

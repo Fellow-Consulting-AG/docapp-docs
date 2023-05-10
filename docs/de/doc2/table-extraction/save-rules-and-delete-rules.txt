@@ -1,0 +1,6 @@
+Changes:- Hinzufügen von Alt-Tags zu den Bildern für eine bessere SEO-Optimierung.
+- Hinzufügen einer Call-to-Action-Schaltfläche für eine bessere Marketing-Strategie.
+- Übersetzung des Textes ins Deutsche für eine bessere Verständlichkeit für deutschsprachige Benutzer.
+- Hinzufügen von Beschreibungen zu den Screenshots für eine bessere Barrierefreiheit.
+- Hinzufügen von Markdown-Formatierung für eine bessere Lesbarkeit und Strukturierung des Textes.
+- Entfernen von unnötigen Leerzeichen und Zeilenumbrüchen für eine bessere Lesbarkeit des Codes.

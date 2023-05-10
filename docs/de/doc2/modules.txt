@@ -1,0 +1,6 @@
+Changes:- Hinzufügen von Alt-Bildern für eine bessere Barrierefreiheit und SEO-Optimierung.
+- Hinzufügen von Keywords in der Beschreibung und den Tags für eine bessere Auffindbarkeit.
+- Übersetzung des Textes ins Deutsche.
+- Hinzufügen von Keywords wie "Bestellung", "PO-Matching" und "Tabellenextraktion" für eine bessere SEO-Optimierung.
+- Hinzufügen von Links zu relevanten Seiten für eine bessere Navigation und Benutzererfahrung.
+- Entfernen von unnötigen Leerzeichen und Zeilenumbrüchen für eine bessere Lesbarkeit.

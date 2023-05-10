@@ -1,18 +1,18 @@
 ---
-title: "WEBHOOK"
-description: With the webhook attached below, you can transfer documents directly to DOC² with a POST request by making a simple call.
+title: "WEBHOOK für DOC²: Einfaches Hochladen von Dokumenten per POST-Anfrage"
+description: Mit dem unten angehängten Webhook können Sie Dokumente direkt an DOC² übertragen, indem Sie einen einfachen POST-Aufruf tätigen. Erfahren Sie hier, wie Sie den Webhook nutzen können.
 date: "2021-10-22"
 tags:
   - DOC²
   - API
 ---
 
-With the webhook attached below, you can transfer documents directly to DOC² with a POST request. All parameters are already filled in. So all you have to do is make a simple call.
+Mit dem unten angehängten Webhook können Sie Dokumente direkt an DOC² übertragen, indem Sie einen einfachen POST-Aufruf tätigen. Alle erforderlichen Parameter sind bereits vorausgefüllt, sodass Sie nur noch einen einfachen Aufruf tätigen müssen.
 
-Parameters used:
+Die folgenden Parameter werden verwendet:
 
-1. API Key
-2. System URL
-3. A file you want to upload
+1. API-Schlüssel
+2. System-URL
+3. Eine Datei, die Sie hochladen möchten
 
-[Webhook-Doc2.postman\_collection.json\_](https://docs.cloudintegration.eu/wp-content/uploads/2022/04/Webhook-Doc2.postman_collection.json_.zip)[Download](https://docs.cloudintegration.eu/wp-content/uploads/2022/04/Webhook-Doc2.postman_collection.json_.zip)
+[Webhook-Doc2.postman\_collection.json\_](https://docs.cloudintegration.eu/wp-content/uploads/2022/04/Webhook-Doc2.postman_collection.json_.zip)[Herunterladen](https://docs.cloudintegration.eu/wp-content/uploads/2022/04/Webhook-Doc2.postman_collection.json_.zip)

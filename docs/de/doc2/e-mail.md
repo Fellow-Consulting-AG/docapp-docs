@@ -48,4 +48,4 @@ Nachdem Sie auf die Schaltfläche "IMPORT" geklickt haben, werden die Dokumente 
 
 ![Dokumente importieren](/_images/doc2/AllImportOptions_Email_6.png "Dokumente importieren")
 
-Wenn Sie die richtige Entscheidung getroffen haben, auch unsere [Workflow² APP](https://docs.polydocs.io/workflow/) zu nutzen, finden Sie die entsprechenden Workflows [hier](https://docs.polydocs.io/example/gmail-import/), um Ihre Dokumente automatisch aus Ihrem E-Mail-Posteingang in DOC² zu importieren.
+Wenn Sie die richtige Entscheidung getroffen haben, auch unsere [Workflow² APP](https://de.docs.fellowpro.com/workflow/) zu nutzen, finden Sie die entsprechenden Workflows [hier](https://de.docs.fellowpro.com/example/gmail-import/), um Ihre Dokumente automatisch aus Ihrem E-Mail-Posteingang in DOC² zu importieren.

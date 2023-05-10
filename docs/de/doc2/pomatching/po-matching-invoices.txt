@@ -1,0 +1,105 @@
+Changes:- Hinzufügen eines Call-to-Action-Buttons für eine kostenlose Testversion von DOC².
+
+## Laden Sie die Rechnung in DOC2 hoch
+
+![DOC2_POM_Invoices_1](/_images/doc2/DOC2_POM_Invoices_1.png)
+
+Das Symbol unter **MATCHED** zeigt den aktuellen Abgleichstatus an - grün für abgeglichen und rot für nicht abgeglichen. Idealerweise ist es bereits grün.
+
+Öffnen Sie das Dokument und überprüfen Sie die extrahierten Felder.
+
+![DOC2_POM_Invoices_2](/_images/doc2/DOC2_POM_Invoices_2.png)
+
+* * *
+
+Nachdem Sie alle extrahierten Felder validiert haben, öffnen Sie die Abgleichübersicht, indem Sie auf **PO MATCHING** klicken.
+
+![DOC2_POM_Invoices_3](/_images/doc2/DOC2_POM_Invoices_3.png)
+
+Sie können auch direkt von der Dashboard zur Abgleichübersicht gelangen, indem Sie den folgenden Schritten folgen: [unten](/doc2/pomatching/po-matching-invoices/#case-1-matched)
+
+* * *
+
+Das Symbol unter **MATCHED** zeigt den aktuellen Abgleichstatus an - grün für abgeglichen und rot für nicht abgeglichen. Idealerweise ist es bereits grün.
+
+![DOC2_POM_Invoices_4](/_images/doc2/DOC2_POM_Invoices_4.png)
+
+### Fall 1: Abgeglichen
+
+Greifen Sie auf die Abgleichübersicht zu, indem Sie auf das Abgleichsymbol auf dem Dashboard klicken.
+
+![DOC2_POM_Invoices_5](/_images/doc2/DOC2_POM_Invoices_5.png)
+
+![DOC2_POM_Invoices_6](/_images/doc2/DOC2_POM_Invoices_6.png)
+
+In diesem Fall stimmt die bestellte Artikelmenge mit der Menge auf der Rechnung überein, der Abgleich und somit das Dokument können validiert und exportiert werden.
+
+![DOC2_POM_Invoices_7](/_images/doc2/DOC2_POM_Invoices_7.png)
+
+Rechnungsexport
+
+![DOC2_POM_Invoices_8](/_images/doc2/DOC2_POM_Invoices_8.png)
+
+Erfolgreich exportiert
+
+* * *
+
+### Fall 2: Nicht abgeglichen
+
+Greifen Sie auf die Abgleichübersicht zu, indem Sie auf das Abgleichsymbol auf dem Dashboard klicken.
+
+![DOC2_POM_Invoices_9](/_images/doc2/DOC2_POM_Invoices_9.png)
+
+![DOC2_POM_Invoices_10](/_images/doc2/DOC2_POM_Invoices_10.png)
+
+Hier sehen Sie, dass die bestellte Artikelmenge nicht mit der Menge auf der Rechnung übereinstimmt.
+
+Die Abgleiche können nun korrigiert werden:
+
+Das "x" würde den Abgleich auf der Rechnung löschen.
+
+Ein neuer Abgleich aus der Bestellung kann zur Rechnung hinzugefügt werden, indem Sie die entsprechenden Datensätze per Drag & Drop ziehen und ablegen.
+
+![DOC2_POM_Invoices_11](/_images/doc2/DOC2_POM_Invoices_11.png)
+
+Sie müssen die nicht übereinstimmenden Eigenschaften bestätigen.
+
+![DOC2_POM_Invoices_12](/_images/doc2/DOC2_POM_Invoices_12.png)
+
+![DOC2_POM_Invoices_13](/_images/doc2/DOC2_POM_Invoices_13.png)
+
+Speichern Sie, um alle Änderungen anzuwenden.
+
+![DOC2_POM_Invoices_14](/_images/doc2/DOC2_POM_Invoices_14.png)
+
+Sobald alles korrekt ist, kann das Dokument validiert und exportiert werden.
+
+![DOC2_POM_Invoices_7](/_images/doc2/DOC2_POM_Invoices_7.png)
+
+Rechnungsexport
+
+![DOC2_POM_Invoices_8](/_images/doc2/DOC2_POM_Invoices_8.png)
+
+Erfolgreich exportiert
+
+![Attention-Warning](/_images/doc2/Attention-Warning.png)
+
+Da in LN kein Vergleich bezüglich der Menge zwischen Bestellung und Rechnung möglich ist, müssen Sie in diesem Fall den Vergleich mit dem Lieferschein durchführen. Wie das funktioniert, erfahren Sie [hier](/doc2/pomatching/po-matching-delivery-notes/).
+
+* * *
+
+## Überprüfen Sie den Eingang der Rechnung in LN
+
+Um zu sehen, ob der Prozess erfolgreich war, können Sie dies in LN über "Process Payables Workbench" überprüfen.
+
+![LN_Process-Payables-Workbench](/_images/doc2/LN_Process-Payables-Workbench-702x1024.png)
+
+![LN_Search-invoice-no-1](/_images/doc2/LN_Search-invoice-no-1-1024x118.png)
+
+Suchen Sie nach der Rechnungsnummer im entsprechenden Feld.
+
+![LN_Icon-to-open-overview](/_images/doc2/LN_Icon-to-open-overview-1024x119.png)
+
+Wenn Sie auf dieses Symbol klicken, wird die folgende Übersicht geöffnet, in der Sie die Bestellung und die zugeordnete Rechnung sehen.
+
+![LN_Matched-Invoice](/_images/doc2/LN_Matched-Invoice-1024x551.png)

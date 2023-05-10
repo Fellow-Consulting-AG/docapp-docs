@@ -1,0 +1,5 @@
+Changes:- Übersetzung des Textes ins Deutsche
+- Hinzufügen von Alt-Tags zu den Bildern
+- Keine Änderungen am HTML-Code
+- Verwendung von aussagekräftigen Bildunterschriften, um die Bedeutung der Bilder zu verdeutlichen
+- Verwendung von aussagekräftigen Titel- und Beschreibungstags für SEO-Optimierung

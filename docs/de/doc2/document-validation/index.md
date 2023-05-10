@@ -1,67 +1,67 @@
 ---
-title: "Document Validation"
+title: "Dokumentenvalidierung"
 date: "2021-10-29"
-description: Explanation of how to start using DOC²
+description: Erfahren Sie, wie Sie DOC² zur Validierung von Dokumenten verwenden können.
 tags:
   - DOC²
-  - Document
-  - Validation
+  - Dokument
+  - Validierung
 ---
 
-### How to Validate a document
+### Wie man ein Dokument validiert
 
-After you have uploaded a document as described [here](/doc2/dashboard/) and perform the following steps to validate it:
+Nachdem Sie ein Dokument wie hier beschrieben [hier](/doc2/dashboard/) hochgeladen haben, führen Sie die folgenden Schritte aus, um es zu validieren:
 
-1\. Go to `HOME` where you will find the DASHBOARD with uploaded documents
+1\. Gehen Sie zu `HOME`, wo Sie das DASHBOARD mit den hochgeladenen Dokumenten finden.
 
-![](/_images/doc2/DOC2_Dashboard-1024x640.png)
+![DOC2 Dashboard](/_images/doc2/DOC2_Dashboard-1024x640.png "DOC2 Dashboard")
 
-2\. Click on the bar to open the document. In this case it doesn't matter if you click on the document name or the status.
+2\. Klicken Sie auf die Leiste, um das Dokument zu öffnen. In diesem Fall ist es egal, ob Sie auf den Dokumentennamen oder den Status klicken.
 
-![](/_images/doc2/DOC2_Document-1024x640.png)
+![DOC2 Dokument](/_images/doc2/DOC2_Document-1024x640.png "DOC2 Dokument")
 
-On the left-hand side, you can see the documents preview, where you can also jump from one to the other page when you document has more than just one page. In the middle part of the screen, you have the big overview of the document where you can also see the extracted values marked in purple. And, finally, on the right-hand side you have all the segments of the extracted values.
+Auf der linken Seite sehen Sie eine Vorschau des Dokuments, wo Sie auch von einer Seite zur anderen springen können, wenn Ihr Dokument mehr als eine Seite hat. Im mittleren Teil des Bildschirms haben Sie eine große Übersicht des Dokuments, wo Sie auch die extrahierten Werte in Lila sehen können. Und schließlich haben Sie auf der rechten Seite alle Segmente der extrahierten Werte.
 
-Let’s focus on this last part.
+Konzentrieren wir uns auf diesen letzten Teil.
 
-Firstly, on the top right side you can define the document origin if needed:
+Zunächst können Sie auf der oberen rechten Seite den Dokumentenursprung definieren, falls erforderlich:
 
-![](/_images/doc2/image-9.png)
+![DOC2 Dokumentenursprung](/_images/doc2/image-9.png "DOC2 Dokumentenursprung")
 
-For different origins the document can have different amount and date formats. To be sure dates and figures/amounts will be extracted correctly make sure the document origin is set properly.
+Für verschiedene Ursprünge kann das Dokument unterschiedliche Mengen- und Datumsformate haben. Stellen Sie sicher, dass der Dokumentenursprung richtig eingestellt ist, um sicherzustellen, dass Daten und Beträge korrekt extrahiert werden.
 
-Now, we get the basic information like invoice number, date etc. If you click on the field of invoice number for example, you get directly marked where on the invoice it was extracted.
+Nun erhalten wir die grundlegenden Informationen wie Rechnungsnummer, Datum usw. Wenn Sie beispielsweise auf das Feld der Rechnungsnummer klicken, wird direkt markiert, wo auf der Rechnung es extrahiert wurde.
 
-![](/_images/doc2/DOC2_Document_Invoice-Number-1024x640.png)
+![DOC2 Dokument Rechnungsnummer](/_images/doc2/DOC2_Document_Invoice-Number-1024x640.png "DOC2 Dokument Rechnungsnummer")
 
-You can now check if the number was extracted correctly. All values that were correctly extracted you confirm with the checkmark. You can do this with every single field. Another important point is that on the right side of each field you get a percentage of the confidence level of the DOC².
+Sie können nun überprüfen, ob die Nummer korrekt extrahiert wurde. Alle Werte, die korrekt extrahiert wurden, bestätigen Sie mit dem Häkchen. Sie können dies mit jedem einzelnen Feld tun. Ein weiterer wichtiger Punkt ist, dass Sie auf der rechten Seite jedes Feldes einen Prozentsatz des Vertrauensniveaus von DOC² erhalten.
 
-All values that have been correctly extracted and confirmed with the check mark will have a green bar at the beginning of the field.
+Alle Werte, die korrekt extrahiert und mit dem Häkchen bestätigt wurden, haben eine grüne Leiste am Anfang des Feldes.
 
-![](/_images/doc2/DOC2_Document_correct_green-colour-1024x640.png)
+![DOC2 Dokument korrekt extrahierte Werte](/_images/doc2/DOC2_Document_correct_green-colour-1024x640.png "DOC2 Dokument korrekt extrahierte Werte")
 
-A great example is on the next segment of field IBAN, where the IBAN is not even extracted, as confidence level is equal to 0. To train and extract the value, just enter the field and mark the IBAN on the invoice. You get this message if you are sure of your selection, so click yes.
+Ein großartiges Beispiel ist das nächste Segment des Feldes IBAN, wo die IBAN nicht einmal extrahiert wird, da das Vertrauensniveau gleich Null ist. Um den Wert zu trainieren und zu extrahieren, geben Sie einfach das Feld ein und markieren Sie die IBAN auf der Rechnung. Sie erhalten diese Nachricht, wenn Sie sich Ihrer Auswahl sicher sind, also klicken Sie auf Ja.
 
-![](/_images/doc2/DOC2_trained-field-confirmation-1024x640.png)
+![DOC2 trainiertes Feld Bestätigung](/_images/doc2/DOC2_trained-field-confirmation-1024x640.png "DOC2 trainiertes Feld Bestätigung")
 
-The selected value will be extracted to the IBAN field and displayed on the invoice. Please confirm the value with the checkmark to finalize it.
+Der ausgewählte Wert wird in das IBAN-Feld extrahiert und auf der Rechnung angezeigt. Bitte bestätigen Sie den Wert mit dem Häkchen, um ihn abzuschließen.
 
-![](/_images/doc2/DOC2_confirm-extracted-value-1024x640.png)
+![DOC2 extrahierter Wert Bestätigung](/_images/doc2/DOC2_confirm-extracted-value-1024x640.png "DOC2 extrahierter Wert Bestätigung")
 
-The procedure for each extracted or non-extracted value is always the same. Here are some examples of the values extracted from an invoice:
+Das Verfahren für jeden extrahierten oder nicht extrahierten Wert ist immer dasselbe. Hier sind einige Beispiele für die Werte, die aus einer Rechnung extrahiert wurden:
 
-![](/_images/doc2/DOC2-_VAT-and-amounts-1024x640.png)
+![DOC2 VAT und Beträge](/_images/doc2/DOC2-_VAT-and-amounts-1024x640.png "DOC2 VAT und Beträge")
 
-![](/_images/doc2/DOC2_Vendor-details-1024x640.png)
+![DOC2 Lieferantendetails](/_images/doc2/DOC2_Vendor-details-1024x640.png "DOC2 Lieferantendetails")
 
-For the vendor details we have configured the Fuzzy search, where the supplier identification is matched by the master data imported from your ERP system. If for example the supplier’s name was missing you could also look it up in this table. Everything is set up very easily and user-friendly so this job of making the validation is faster.
+Für die Lieferantendetails haben wir die Fuzzy-Suche konfiguriert, bei der die Lieferantenidentifikation mit den aus Ihrem ERP-System importierten Stammdaten abgeglichen wird. Wenn beispielsweise der Name des Lieferanten fehlte, könnten Sie ihn auch in dieser Tabelle nachschlagen. Alles ist sehr einfach und benutzerfreundlich eingerichtet, damit diese Validierung schneller vonstattengeht.
 
-After checking all the fields available for extraction, you can confirm the changes and export directly. If you have to interrupt editing, e.g. because of a last-minute appointment or a phone call, you can also save the changes you have confirmed up to that point and continue later.
+Nachdem Sie alle verfügbaren Felder für die Extraktion überprüft haben, können Sie die Änderungen bestätigen und direkt exportieren. Wenn Sie die Bearbeitung unterbrechen müssen, z.B. wegen eines Last-Minute-Termins oder eines Telefonanrufs, können Sie auch die Änderungen speichern, die Sie bis zu diesem Zeitpunkt bestätigt haben, und später fortsetzen.
 
-![](/_images/doc2/DOC2_Save_Confirm-and-Export-1024x640.png)
+![DOC2 Änderungen speichern, bestätigen und exportieren](/_images/doc2/DOC2_Save_Confirm-and-Export-1024x640.png "DOC2 Änderungen speichern, bestätigen und exportieren")
 
-When you have saved the changes, the document remains in the Ready for Validation status.
+Wenn Sie die Änderungen gespeichert haben, bleibt das Dokument im Status "Bereit zur Validierung".
 
-![](/_images/doc2/DOC2_Ready-for-Validation-status-1024x640.png)
+![DOC2 Status "Bereit zur Validierung"](/_images/doc2/DOC2_Ready-for-Validation-status-1024x640.png "DOC2 Status 'Bereit zur Validierung'")
 
-Find more details in the following sections:
+Weitere Details finden Sie in den folgenden Abschnitten:

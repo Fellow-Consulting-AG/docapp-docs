@@ -1,29 +1,29 @@
 ---
-title: "Settings"
-description: In this area you will find all the settings to customize DOC² to your company. From Global settings to all needed settings to process your documents.
+title: "Einstellungen"
+description: Hier finden Sie alle Einstellungen, um DOC² an Ihr Unternehmen anzupassen. Von globalen Einstellungen bis hin zu allen benötigten Einstellungen zur Verarbeitung Ihrer Dokumente.
 date: "2022-09-23"
 tags:
   - DOC²
-  - Settings
+  - Einstellungen
   - Global
-  - Document Processing
+  - Dokumentenverarbeitung
 ---
 
-In this section you will find all the settings to customize DOC² to your company.<br> From Global settings to all needed settings to process your documents.
+In diesem Abschnitt finden Sie alle Einstellungen, um DOC² an Ihr Unternehmen anzupassen. Von globalen Einstellungen bis hin zu allen benötigten Einstellungen zur Verarbeitung Ihrer Dokumente.
 
-## GLOBAL SETTINGS
+## GLOBALE EINSTELLUNGEN
 
-- [Company Information](/doc2/company-information/)
-- [Groups, Users and Permissions](/security/privileges/)
-- [Integration](/doc2/settings/integration/)
-- [Document Types](/doc2/settings-document-types/)
-- [Email notification](/doc2/settings/email-notification/)
+- [Firmeninformationen](/doc2/firmeninformationen/)
+- [Gruppen, Benutzer und Berechtigungen](/security/berechtigungen/)
+- [Integration](/doc2/einstellungen/integration/)
+- [Dokumenttypen](/doc2/einstellungen-dokumenttypen/)
+- [E-Mail-Benachrichtigung](/doc2/einstellungen/e-mail-benachrichtigung/)
 
-## DOCUMENT PROCESSING
+## DOKUMENTENVERARBEITUNG
 
 - [Import](/doc2/import/)
-- [OCR Settings](/doc2/document-validation/ocr-view/)
-- [Classification and Extraction](/doc2/document-validation/)
-- [Supplier Validation](/doc2/settings-master-data-validation/)
+- [OCR-Einstellungen](/doc2/dokumentenvalidierung/ocr-anzeige/)
+- [Klassifizierung und Extraktion](/doc2/dokumentenvalidierung/)
+- [Lieferantenvalidierung](/doc2/einstellungen-stammdatenvalidierung/)
 - [Export](/doc2/export/)
-- [Approval](/example/approval/)  :fontawesome-solid-circle-info:{ style="color: #0F17E4" }documentation for DOC² coming soon :fontawesome-solid-circle-info:{ style="color: #0F17E4" }
+- [Genehmigung](/beispiel/genehmigung/) :fontawesome-solid-circle-info:{ style="color: #0F17E4" }Dokumentation für DOC² folgt in Kürze :fontawesome-solid-circle-info:{ style="color: #0F17E4" }

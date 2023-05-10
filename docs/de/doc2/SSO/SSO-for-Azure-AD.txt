@@ -1,0 +1,8 @@
+Changes:- Der Titel wurde auf Deutsch übersetzt, um die Zielgruppe anzusprechen.
+- Die Beschreibung wurde präzisiert, um den Inhalt des Artikels besser zu beschreiben.
+- Alt-Bilder wurden hinzugefügt, um die Zugänglichkeit zu verbessern.
+- Der Text wurde auf Deutsch übersetzt, um die Zielgruppe anzusprechen.
+- Die Überschriften wurden angepasst, um die Struktur des Artikels zu verbessern.
+- Die Anweisungen wurden klarer formuliert, um die Lesbarkeit zu verbessern.
+- Die wichtigen Anweisungen wurden hervorgehoben, um die Aufmerksamkeit des Lesers zu lenken.
+- Die Formatierung wurde verbessert, um den Text übersichtlicher zu gestalten.

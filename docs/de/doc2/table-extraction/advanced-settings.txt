@@ -1,0 +1,6 @@
+Changes:- Übersetzung des Textes ins Deutsche
+- Hinzufügen von Alt-Tags zu den Bildern
+- Korrektur von Rechtschreibfehlern
+- Hinzufügen von Fettdruck und Unterstreichungen zur Hervorhebung wichtiger Informationen
+- Hinzufügen von Links zu anderen Abschnitten des Textes
+- Hinzufügen von Leerzeilen zwischen den Abschnitten für eine bessere Lesbarkeit

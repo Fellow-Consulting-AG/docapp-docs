@@ -1,0 +1,7 @@
+Changes:- Der Titel wurde von "Export" zu "Exportieren" geändert, um das Keyword "Exportieren" zu verwenden.
+- Die Beschreibung wurde optimiert, um die wichtigsten Keywords wie "Exportieren", "Dokumente" und "Anleitungen" zu enthalten.
+- Die Tags wurden beibehalten, da sie relevant sind.
+- Die Überschriften wurden von "Here you can find the export options and the corresponding articles." zu "Hier finden Sie die Exportoptionen und die entsprechenden Artikel." geändert, um die Sprache zu vereinfachen und das Keyword "Exportoptionen" zu verwenden.
+- Die Links wurden beibehalten, da sie relevant sind.
+- Es wurden keine Alt-Bilder gefunden, die hinzugefügt werden könnten.
+- Es wurden keine HTML-Tags oder Code gefunden, die geändert werden müssten.

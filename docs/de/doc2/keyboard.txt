@@ -1,0 +1,5 @@
+Changes:- Hinzufügen von Anführungszeichen in der Beschreibung, um sie als Text zu kennzeichnen.
+- Hinzufügen von Alt-Bildern für das Titelbild und das Logo von DOC².
+- Übersetzung des Textes ins Deutsche.
+- Hinzufügen von Keywords in den Titel und die Tags.
+- Hinzufügen von Absätzen, um den Text besser lesbar zu machen.

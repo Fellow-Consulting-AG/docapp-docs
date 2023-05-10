@@ -1,40 +1,39 @@
 ---
-title: "Training for Table Extraction"
-description: Here you will find an overview of all the important points about the training for table extraction. From how to define tables and columns to advanced settings.
+title: "Training für Tabellenauswertung"
+description: Hier finden Sie eine Übersicht über alle wichtigen Punkte zum Training für die Tabellenauswertung. Von der Definition von Tabellen und Spalten bis zu erweiterten Einstellungen.
 date: "2022-02-22"
 tags:
   - DOC²
   - Training
-  - Table
+  - Tabelle
 ---
 
-- [How to define tables and columns](/doc2/table-extraction/define-table-and-columns/)
-- [Advanced settings](/doc2/table-extraction/advanced-settings/)
-- [Mapping of columns](/doc2/table-extraction/mapping-of-columns/)
-- [Group function](/doc2/table-extraction/group-function/)
-- [Manual row selection](/doc2/table-extraction/manual-row-selection/)
-- [Add new table column](/doc2/table-extraction/add-new-table-column/)
-- [Save and delete rules](/doc2/table-extraction/save-rules-and-delete-rules/)
+- [Definition von Tabellen und Spalten](/doc2/tabellenauswertung/definition-von-tabellen-und-spalten/)
+- [Erweiterte Einstellungen](/doc2/tabellenauswertung/erweiterte-einstellungen/)
+- [Zuordnung von Spalten](/doc2/tabellenauswertung/zuordnung-von-spalten/)
+- [Gruppenfunktion](/doc2/tabellenauswertung/gruppenfunktion/)
+- [Manuelle Zeilenauswahl](/doc2/tabellenauswertung/manuelle-zeilenauswahl/)
+- [Hinzufügen einer neuen Tabellenspalte](/doc2/tabellenauswertung/hinzufügen-einer-neuen-tabellenspalte/)
+- [Regeln speichern und löschen](/doc2/tabellenauswertung/regeln-speichern-und-löschen/)
 
 _______________________________
 
-## Training vs Correction Mode
+## Training vs. Korrekturmodus
 
-##### Training Mode:
+##### Training-Modus:
 
-- Mapped columns are read only. You are not be able to change the text manually.
-- Delete row button is not visible
+- Zugeordnete Spalten sind schreibgeschützt. Sie können den Text nicht manuell ändern.
+- Die Schaltfläche "Zeile löschen" ist nicht sichtbar.
 
-![](/_images/te/Training Mode.png){ loading=lazy }
+![](/_images/te/Training Mode.png){ loading=lazy, alt: "Training-Modus" }
 
-##### Correction Mode:
+##### Korrekturmodus:
 
-- Delete row and add new row option is available
-- You are able to manually change the texts of the columns
+- Die Schaltfläche "Zeile löschen" und "Neue Zeile hinzufügen" ist verfügbar.
+- Sie können den Text der Spalten manuell ändern.
 
-![](/_images/te/Correction Mode.png){ loading=lazy }
+![](/_images/te/Correction Mode.png){ loading=lazy, alt: "Korrekturmodus" }
 
-After deleting the first row and adding the bottom row:
+Nach dem Löschen der ersten Zeile und dem Hinzufügen der unteren Zeile:
 
-![](/_images/te/Correction Mode_edited table.png){ loading=lazy }
-
+![](/_images/te/Correction Mode_edited table.png){ loading=lazy, alt: "Korrekturmodus bearbeitete Tabelle" }

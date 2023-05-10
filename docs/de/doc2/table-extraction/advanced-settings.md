@@ -1,87 +1,87 @@
 ---
-title: "Advanced settings for table extraction"
-description: In DOC² there are various advanced settings to extract a table. On this page you will find a few examples of different table characteristics.
+title: "Erweiterte Einstellungen für Tabellenextraktion"
+description: In DOC² gibt es verschiedene erweiterte Einstellungen zur Extraktion von Tabellen. Auf dieser Seite finden Sie einige Beispiele für unterschiedliche Tabellenmerkmale.
 date: "2022-03-01"
 tags:
-  - Table
+  - Tabelle
   - DOC²
-  - Settings
+  - Einstellungen
 ---
 
-In the table extraction view, you will find the menu item `Settings` in the upper action bar (make sure that the training mode is activated). If you click on the gear icon, a window will open in which you will find the `Advanced Settings`.
+Im Tabellenextraktions-View finden Sie in der oberen Aktionsleiste den Menüpunkt `Einstellungen` (stellen Sie sicher, dass der Trainingsmodus aktiviert ist). Wenn Sie auf das Zahnradsymbol klicken, öffnet sich ein Fenster, in dem Sie die `Erweiterten Einstellungen` finden.
 
-![](/_images/doc2/advanced-settings_1.png){ loading=lazy }
-
-
-
-![](/_images/doc2/advanced-settings_2.png){ loading=lazy }
-
-## Below functionalities are available in general settings:
-
-#### Header row count
-
-Here you can define the number of lines of a table header. For example, the table header line can be two lines:
-
-![](/_images/doc2/advanced-settings_3.png){ loading=lazy }
-
-Accordingly, the value in "Header row count" is set to two:
-
-![](/_images/doc2/advanced-settings_4.png){ loading=lazy }
-
-Why is this needed? It might be that DOC² does not recognize the second line in the table header as header line. In this case, it incorrectly inserts it into the table as extracted value. This can be easily prevented with this function.
-
-<ins>Example before</ins>:
-
-![](/_images/doc2/advanced-settings_5.png){ loading=lazy }
-
-<ins>Example after</ins>:
-
-![](/_images/doc2/advanced-settings_6.png){ loading=lazy }
-
-
-#### Move Extra Rows to
-
-In this example, the item description in the table spans several rows, but you only need the first one. To extract only this and include it in the Description column, select `Move Extra Rows to` `Trash`.
-
-![](/_images/doc2/advanced-settings_11.png){ loading=lazy }
-![](/_images/doc2/advanced-settings_12.png){ loading=lazy }
-
- After naming the columns and mapping them to position, you get the following result:
-
-![](/_images/doc2/advanced-settings_13.png){ loading=lazy }
+![](/_images/doc2/advanced-settings_1.png){ loading=lazy, alt: "DOC² Einstellungen" }
 
 
 
-## Below functionalities are available in the advanced settings:
+![](/_images/doc2/advanced-settings_2.png){ loading=lazy, alt: "DOC² Erweiterte Einstellungen" }
 
-![](/_images/doc2/advanced-settings_15.png){ loading=lazy }
+## Folgende Funktionen sind in den allgemeinen Einstellungen verfügbar:
 
+#### Anzahl der Kopfzeilen
 
-#### Minimum grouped rows
+Hier können Sie die Anzahl der Zeilen einer Tabellenkopfzeile definieren. Zum Beispiel kann die Tabellenkopfzeile aus zwei Zeilen bestehen:
 
-Enter the minimum number of rows in your grouped column here.
+![](/_images/doc2/advanced-settings_3.png){ loading=lazy, alt: "DOC² Kopfzeilen" }
 
-![](/_images/doc2/advanced-settings_16.png){ loading=lazy }
+Entsprechend ist der Wert in "Anzahl der Kopfzeilen" auf zwei gesetzt:
 
-In this table you see six rows of which only three are relevant for you. In the first two columns there are two criteria that have to be extracted separately. These will be your mapped columns all the other ones have to be trained as custom columns. <br> And this is how it works step by step:
+![](/_images/doc2/advanced-settings_4.png){ loading=lazy, alt: "DOC² Anzahl der Kopfzeilen" }
 
-Select the two [header rows](/doc2/table-extraction/advanced-settings/#header-row-count) as well as two minimum grouped rows as these should be grouped to one row.
+Warum ist das nötig? Es kann sein, dass DOC² die zweite Zeile in der Tabellenkopfzeile nicht als Kopfzeile erkennt. In diesem Fall fügt es sie fälschlicherweise als extrahierten Wert in die Tabelle ein. Dies kann mit dieser Funktion einfach verhindert werden.
 
-![](/_images/doc2/advanced-settings_17.png){ loading=lazy }
-![](/_images/doc2/advanced-settings_18.png){ loading=lazy }
+<ins>Beispiel vorher</ins>:
 
-Also select the `Move extra rows to` `Trash` option to be able to train all the other columns as custom columns.
+![](/_images/doc2/advanced-settings_5.png){ loading=lazy, alt: "DOC² Beispiel vorher" }
 
-![](/_images/doc2/advanced-settings_19.png){ loading=lazy }
+<ins>Beispiel nachher</ins>:
 
-Name first column Postition and group on that one.
-
-![](/_images/doc2/advanced-settings_20.png){ loading=lazy }
-
-After naming all the columns and training the values, this is your result:
+![](/_images/doc2/advanced-settings_6.png){ loading=lazy, alt: "DOC² Beispiel nachher" }
 
 
-![](/_images/doc2/advanced-settings_21.png){ loading=lazy }
+#### Zusätzliche Zeilen verschieben nach
+
+In diesem Beispiel erstreckt sich die Artikelbeschreibung in der Tabelle über mehrere Zeilen, aber Sie benötigen nur die erste Zeile. Um nur diese zu extrahieren und in die Spalte "Beschreibung" aufzunehmen, wählen Sie `Zusätzliche Zeilen verschieben nach` `Papierkorb`.
+
+![](/_images/doc2/advanced-settings_11.png){ loading=lazy, alt: "DOC² Zusätzliche Zeilen verschieben nach" }
+![](/_images/doc2/advanced-settings_12.png){ loading=lazy, alt: "DOC² Papierkorb" }
+
+Nachdem Sie die Spalten benannt und ihnen Positionen zugewiesen haben, erhalten Sie das folgende Ergebnis:
+
+![](/_images/doc2/advanced-settings_13.png){ loading=lazy, alt: "DOC² Ergebnis" }
+
+
+
+## Folgende Funktionen sind in den erweiterten Einstellungen verfügbar:
+
+![](/_images/doc2/advanced-settings_15.png){ loading=lazy, alt: "DOC² Erweiterte Einstellungen" }
+
+
+#### Mindestanzahl gruppierte Zeilen
+
+Geben Sie hier die Mindestanzahl von Zeilen in Ihrer gruppierten Spalte ein.
+
+![](/_images/doc2/advanced-settings_16.png){ loading=lazy, alt: "DOC² Mindestanzahl gruppierte Zeilen" }
+
+In dieser Tabelle sehen Sie sechs Zeilen, von denen nur drei für Sie relevant sind. In den ersten beiden Spalten gibt es zwei Kriterien, die separat extrahiert werden müssen. Diese werden Ihre zugeordneten Spalten sein, alle anderen müssen als benutzerdefinierte Spalten trainiert werden. <br> Und so funktioniert es Schritt für Schritt:
+
+Wählen Sie die beiden [Kopfzeilen](/doc2/table-extraction/advanced-settings/#header-row-count) sowie zwei minimale gruppierte Zeilen aus, da diese zu einer Zeile gruppiert werden sollten.
+
+![](/_images/doc2/advanced-settings_17.png){ loading=lazy, alt: "DOC² Kopfzeilen" }
+![](/_images/doc2/advanced-settings_18.png){ loading=lazy, alt: "DOC² Mindestanzahl gruppierte Zeilen" }
+
+Wählen Sie auch die Option `Zusätzliche Zeilen verschieben nach` `Papierkorb`, um alle anderen Spalten als benutzerdefinierte Spalten trainieren zu können.
+
+![](/_images/doc2/advanced-settings_19.png){ loading=lazy, alt: "DOC² Papierkorb" }
+
+Nennen Sie die erste Spalte Position und gruppieren Sie diese.
+
+![](/_images/doc2/advanced-settings_20.png){ loading=lazy, alt: "DOC² Position" }
+
+Nachdem Sie alle Spalten benannt und die Werte trainiert haben, erhalten Sie folgendes Ergebnis:
+
+
+![](/_images/doc2/advanced-settings_21.png){ loading=lazy, alt: "DOC² Ergebnis" }
 
 
 
@@ -97,24 +97,19 @@ If you want only unique values for your grouped column, check the box here.
 
 -->
 
-#### Reverse grouping
+#### Umgekehrte Gruppierung
 
-If you want to combine all the rows above the grouped attribute, check the box here.
+Wenn Sie alle Zeilen über dem gruppierten Attribut kombinieren möchten, aktivieren Sie hier das Kontrollkästchen.
 
-In this example, the table starts with a row that is above all other information but also needs to be extracted along with the information below it. It could be that DOC² extracts this row as an additional row and the grouping of the information, e.g. by position, does not work properly.
+In diesem Beispiel beginnt die Tabelle mit einer Zeile, die über allen anderen Informationen liegt, aber auch zusammen mit den Informationen darunter extrahiert werden muss. Es könnte sein, dass DOC² diese Zeile als zusätzliche Zeile extrahiert und die Gruppierung der Informationen, z.B. nach Position, nicht ordnungsgemäß funktioniert.
 
-![](/_images/doc2/advanced-settings_7.png){ loading=lazy }
-![](/_images/doc2/advanced-settings_9.png){ loading=lazy }
+![](/_images/doc2/advanced-settings_7.png){ loading=lazy, alt: "DOC² Beispiel" }
+![](/_images/doc2/advanced-settings_9.png){ loading=lazy, alt: "DOC² Umgekehrte Gruppierung" }
 
-After grouping on net amount, checking the box, selecting the `Move extra rows to` `Trash` option
+Nachdem Sie nach Nettobetrag gruppiert, das Kontrollkästchen aktiviert und die Option `Zusätzliche Zeilen verschieben nach` `Papierkorb` ausgewählt haben
 
-![](/_images/doc2/advanced-settings_9.1.png){ loading=lazy }
+![](/_images/doc2/advanced-settings_9.1.png){ loading=lazy, alt: "DOC² Papierkorb" }
 
-and naming all columns this is your result:
+und alle Spalten benannt haben, erhalten Sie folgendes Ergebnis:
 
-![](/_images/doc2/advanced-settings_10.png){ loading=lazy }
-<!--
-
-#### Split Text
-
-If you want to split the text exactly at the column separator, check the box here. -->
+![](/_images/doc2/advanced-settings_10.png){ loading=lazy, alt: "DOC² Ergebnis" }

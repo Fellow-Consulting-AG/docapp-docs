@@ -1,32 +1,31 @@
 ---
-title: "Save and delete rules"
-description: This is an important documentation that shows you how to save and delete rules. Make sure to read it before deleting any rules.
+title: "Regeln speichern und löschen"
+description: Hier erfahren Sie, wie Sie Regeln speichern und löschen können. Lesen Sie diese wichtige Dokumentation, bevor Sie Regeln löschen.
 date: "2022-02-24"
 tags:
   - DOC²
-  - Table Extraction
-  - Rules
-  - Save
-  - Delete
+  - Tabellenextraktion
+  - Regeln
+  - Speichern
+  - Löschen
 ---
 
-# Save and delete rules
+# Regeln speichern und löschen
 
+[Registrieren Sie sich für eine 30-tägige kostenlose Testversion](https://app.polydocs.io){ .md-button .md-button--primary }
 
-[Sign up for a 30 days free trail](https://app.polydocs.io){ .md-button .md-button--primary }
+Sobald ein Dokument in DOC² trainiert wurde und alle Regeln für die Extraktion der Tabellen für dieses Dokument gespeichert wurden, müssen sie gespeichert werden, damit für zukünftige Importe kein manuelles Training erforderlich ist. Stattdessen werden die Dokumente und ihre Tabellen automatisch von DOC² extrahiert und die Daten werden in der vom Training definierten Struktur gebracht.
 
-As soon as a document has been trained in DOC² and all rules for the extraction of the tables have been stored for this document, they have to be saved so that no manual training is necessary for future imports. Instead, the documents and their tables are extracted fully automatically by DOC² and the data is brought into the structure defined by the training.
+Sobald die Dokumenten-/Tabellenextraktion trainiert wurde und die Daten in einem zufriedenstellenden Format vorliegen, können die Regeln für die Tabellenextraktion mit der Schaltfläche "REGELN SPEICHERN" gespeichert werden.
 
-As soon as the document/table extraction has been trained and the data is available in a satisfactory format, the rules for the table extraction can be saved using the "SAVE RULES" button.
+![](/_images/doc2/image-33-1024x763.png "Screenshot der Schaltfläche 'Regeln speichern'")
 
-![](/_images/doc2/image-33-1024x763.png)
+Sobald dieses Dokument in Zukunft in DOC² importiert wird, werden die Regeln automatisch während der Extraktion angewendet und bringen die Daten immer in das trainierte Format.
 
-As soon as this document is imported into DOC² in the future, the rules are automatically applied during extraction and always bring the data into the trained format.
+Der Regelindikator zeigt an, wie viele Regeln für dieses Dokument definiert und gespeichert wurden.
 
-The rule indicator shows how many rules have been defined and saved for this document.
+![](/_images/doc2/image-34.png "Screenshot des Regelindikators")
 
-![](/_images/doc2/image-34.png)
+Regeln für Dokumente können auch mit der Schaltfläche "REGELN LÖSCHEN" gelöscht werden. Dies kann erforderlich sein, wenn Regeln falsch oder qualitativ unbefriedigend gespeichert wurden. Dadurch kann ein Dokument erneut trainiert werden. ACHTUNG: Das Löschen von Regeln wirkt sich auf alle Dokumente mit demselben oder ähnlichem Format aus. Diese Dokumente müssen dann vollständig neu trainiert werden. Das Löschen von Regeln sollte daher mit großer Sorgfalt erfolgen.
 
-Rules for documents can also be deleted using the "DELETE RULES" button. This may be necessary if rules have been saved incorrectly or in a qualitatively unsatisfactory way. This allows a document to be retrained. ATTENTION: Deleting rules will affect all documents with the same or similar format. And these documents must then be completely re-trained. This means that deleting the rules should be done with great care.
-
-![](/_images/doc2/image-35-1024x692.png)
+![](/_images/doc2/image-35-1024x692.png "Screenshot der Schaltfläche 'Regeln löschen'")

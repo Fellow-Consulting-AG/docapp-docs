@@ -1,34 +1,34 @@
 ---
-title: "OCR View"
-description: In the document view you have the possibility to open the OCR view for a document. This allows you to display the document in the pure OCR view without any formatting or similar.
+title: "OCR-Ansicht"
+description: In der Dokumentenansicht haben Sie die Möglichkeit, die OCR-Ansicht für ein Dokument zu öffnen. Dadurch können Sie das Dokument in der reinen OCR-Ansicht ohne Formatierung oder ähnliches anzeigen lassen.
 date: "2022-03-21"
 tags:
   - DOC²
   - OCR
 ---
 
-In document view you have the possibility to open the OCR view for a document. This allows you to display the document in the pure OCR view without any formatting or similar.
+In der Dokumentenansicht haben Sie die Möglichkeit, die OCR-Ansicht für ein Dokument zu öffnen. Dadurch können Sie das Dokument in der reinen OCR-Ansicht ohne Formatierung oder ähnliches anzeigen lassen.
 
-To do this, import a document as usual and open it in document view:
+Um dies zu tun, importieren Sie ein Dokument wie gewohnt und öffnen Sie es in der Dokumentenansicht:
 
-![](/_images/doc2/image-43-1024x374.png)
+![Dokumentenansicht](/_images/doc2/image-43-1024x374.png "Dokumentenansicht")
 
-There you will find the "OCR" button:
+Dort finden Sie die Schaltfläche "OCR":
 
-![](/_images/doc2/image-44-1024x421.png)
+![OCR-Schaltfläche](/_images/doc2/image-44-1024x421.png "OCR-Schaltfläche")
 
-When you click this button a new window will be opened which displays the document and its data in pure OCR view. This can be useful, for example, if data is not extracted correctly and you want to troubleshoot the actual values contained in the document to be extracted:
+Wenn Sie auf diese Schaltfläche klicken, wird ein neues Fenster geöffnet, das das Dokument und seine Daten in der reinen OCR-Ansicht anzeigt. Dies kann nützlich sein, wenn Daten nicht korrekt extrahiert werden und Sie die tatsächlichen Werte im Dokument zur Extraktion überprüfen möchten:
 
-![](/_images/doc2/image-45-1024x748.png)
+![OCR-Ansicht](/_images/doc2/image-45-1024x748.png "OCR-Ansicht")
 
-In addition, the following button can be used to switch to debug view. This allows you to see exactly how DOC² extracts the individual values in the background and whether these are recognized correctly:
+Darüber hinaus kann die folgende Schaltfläche verwendet werden, um zur Debug-Ansicht zu wechseln. Dadurch können Sie genau sehen, wie DOC² die einzelnen Werte im Hintergrund extrahiert und ob diese korrekt erkannt werden:
 
-![](/_images/doc2/image-46.png)
+![Debug-Schaltfläche](/_images/doc2/image-46.png "Debug-Schaltfläche")
 
-![](/_images/doc2/image-47-1024x730.png)
+![Debug-Ansicht](/_images/doc2/image-47-1024x730.png "Debug-Ansicht")
 
-Furthermore, the following button can be used to switch back to document view:
+Außerdem kann die folgende Schaltfläche verwendet werden, um zur Dokumentenansicht zurückzukehren:
 
-![](/_images/doc2/image-48.png)
+![Zurück-Schaltfläche](/_images/doc2/image-48.png "Zurück-Schaltfläche")
 
-![](/_images/doc2/image-49-1024x613.png)
+![Dokumentenansicht](/_images/doc2/image-49-1024x613.png "Dokumentenansicht")

@@ -1,49 +1,49 @@
 ---
-title: "Email notification"
-description: In this section you can configure all types of email notifications for your document types. Easily set employees to be notified when a document has a certain status
+title: "E-Mail-Benachrichtigung"
+description: Konfigurieren Sie in diesem Abschnitt alle Arten von E-Mail-Benachrichtigungen für Ihre Dokumenttypen. Legen Sie einfach fest, welche Mitarbeiter benachrichtigt werden sollen, wenn ein Dokument einen bestimmten Status hat.
 date: "2022-10-20"
 tags:
   - DOC²
-  - Settings
-  - Email notification
+  - Einstellungen
+  - E-Mail-Benachrichtigung
 ---
 
-In this section you can configure all types of email notifications for your document types. Easily set employees to be notified when a document has a certain status.
+In diesem Abschnitt können Sie alle Arten von E-Mail-Benachrichtigungen für Ihre Dokumenttypen konfigurieren. Legen Sie einfach fest, welche Mitarbeiter benachrichtigt werden sollen, wenn ein Dokument einen bestimmten Status hat.
 
-Go to Settings and open the **Email notification** menu.
+Gehen Sie zu den Einstellungen und öffnen Sie das Menü **E-Mail-Benachrichtigung**.
 
-![](/_images/doc2/DOC2_email-notification_1.png)
+![E-Mail-Benachrichtigung-Menü](/_images/doc2/DOC2_email-notification_1.png "E-Mail-Benachrichtigung-Menü")
 
-To add a new notification, click `+ NEW` in the top right corner and the following window will open.
+Um eine neue Benachrichtigung hinzuzufügen, klicken Sie auf `+ NEU` in der oberen rechten Ecke und das folgende Fenster wird geöffnet.
 
-![](/_images/doc2/DOC2_email-notification_2.png)
+![Neue E-Mail-Benachrichtigung](/_images/doc2/DOC2_email-notification_2.png "Neue E-Mail-Benachrichtigung")
 
-In this you can define a custom name for the notification, select the document type and status as well as the time unit and enter the e-mail address of the person who should receive the corresponding notification.
+Hier können Sie einen benutzerdefinierten Namen für die Benachrichtigung festlegen, den Dokumenttyp und den Status auswählen sowie die Zeiteinheit und die E-Mail-Adresse der Person eingeben, die die entsprechende Benachrichtigung erhalten soll.
 
-<ins>The following status can be selected:</ins>
+<ins>Folgende Status können ausgewählt werden:</ins>
 
-* Ready For Validation
-* Pending Approval
-* Pending Second Approval
+* Bereit zur Validierung
+* Genehmigung ausstehend
+* Zweite Genehmigung ausstehend
 
-:fontawesome-solid-circle-info:{ style="color: #0F17E4" }More will follow
+:fontawesome-solid-circle-info:{ style="color: #0F17E4" }Weitere werden folgen.
 
-<ins>Time Units to choose are:</ins>
+<ins>Zur Auswahl stehende Zeiteinheiten sind:</ins>
 
-- Minutes
-- Hours
-- Days
+- Minuten
+- Stunden
+- Tage
 
-The Delay hast to be set to a minimum of 5 minutes as the email server will need that time to respond.
+Die Verzögerung muss auf mindestens 5 Minuten eingestellt werden, da der E-Mail-Server diese Zeit benötigt, um zu antworten.
 
-The email will be sent after selected time duration, if document status remains unchanged.
-
-&nbsp;
-
-<ins>This is what the corresponding email notifications look like:</ins>
-
-![Ready For Validation](/_images/doc2/DOC2_email_readyforvalidation.png)
+Die E-Mail wird nach der ausgewählten Zeitdauer gesendet, wenn der Dokumentstatus unverändert bleibt.
 
 &nbsp;
 
-![Pending Approval](/_images/doc2/DOC2_email_forapproval.png)
+<ins>So sehen die entsprechenden E-Mail-Benachrichtigungen aus:</ins>
+
+![Bereit zur Validierung](/_images/doc2/DOC2_email_readyforvalidation.png "Bereit zur Validierung")
+
+&nbsp;
+
+![Genehmigung ausstehend](/_images/doc2/DOC2_email_forapproval.png "Genehmigung ausstehend")

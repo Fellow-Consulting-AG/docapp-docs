@@ -1,51 +1,49 @@
 ---
-title: "PO Matching - Delivery Note"
-description: If quantity of the ordered item(s) does not match the quantity on the invoice you need to start the match with received Delivery Note by uploading it in DOC².
+title: "PO Matching - Lieferschein"
+description: Wenn die Menge der bestellten Artikel nicht mit der Menge auf der Rechnung übereinstimmt, müssen Sie mit dem erhaltenen Lieferschein übereinstimmen, indem Sie ihn in DOC² hochladen.
 date: "2022-01-24"
 tags:
   - DOC²
   - PO Matching
-  - Delivery Note
+  - Lieferschein
 ---
 
+Wenn die Menge der bestellten Artikel nicht mit der Menge auf der Rechnung übereinstimmt, müssen Sie mit dem erhaltenen Lieferschein übereinstimmen.
 
-If quantity of the ordered item(s) does not match the quantity on the invoice you need to start the match with received Delivery Note.
+## Laden Sie den Lieferschein in DOC² hoch
 
-## Upload the Delivery Note in DOC²
+[Registrieren Sie sich für eine 30-tägige kostenlose Testversion](https://app.polydocs.io){ .md-button .md-button--primary }
 
-[Sign up for a 30 days free trail](https://app.polydocs.io){ .md-button .md-button--primary }
+![Lieferschein in DOC² hochladen](/assets/images/doc2/DOC2_POM_DN_1.png "Lieferschein in DOC² hochladen")
 
+Hier finden Sie auch das rote Symbol, weil die Menge auf dem Lieferschein nicht mit der Menge der Bestellung übereinstimmt.
 
-![](/_images/doc2/DOC2_POM_DN_1.png)
+![Menge auf dem Lieferschein stimmt nicht überein](/assets/images/doc2/DOC2_POM_DN_2.png "Menge auf dem Lieferschein stimmt nicht überein")
 
-Here you will also find the red symbol, because the quantity on the delivery note does not match the quantity of the purchase order.
+Greifen Sie auf die Übereinstimmungsübersicht zu, indem Sie auf das Übereinstimmungssymbol auf dem Dashboard klicken.
 
-![](/_images/doc2/DOC2_POM_DN_2.png)
+![Übereinstimmungsübersicht](/assets/images/doc2/DOC2_POM_DN_3.png "Übereinstimmungsübersicht")
 
-Access the matching overview by clicking on the Matching Symbol on the dashboard.
+Oder indem Sie **PO MATCHING** in der unteren rechten Ecke auswählen, wenn Sie das Dokument geöffnet haben.
 
-![](/_images/doc2/DOC2_POM_DN_3.png)
+![PO Matching auswählen](/assets/images/doc2/DOC2_POM_DN_4.png "PO Matching auswählen")
 
-Or by choosing **PO MATCHING** in the lower right corner when you have opened the document.
+Die Übereinstimmungen können jetzt korrigiert werden:
 
-![](/_images/doc2/DOC2_POM_DN_4.png)
+Das "x" würde die Übereinstimmung auf dem Lieferschein löschen.
 
-The matches can now be corrected:
+Eine neue Übereinstimmung aus der Bestellung kann hinzugefügt werden, indem Sie die entsprechenden Datensätze per Drag & Drop ziehen und ablegen.
 
-The “x” would delete the match on the delivery note.
+![Übereinstimmungen korrigieren](/assets/images/doc2/DOC2_POM_DN_5.png "Übereinstimmungen korrigieren")
 
-A new match from the purchase order can be added to the delivery note by dragging and dropping the appropriate data row(s).
+Sie müssen die nicht übereinstimmenden Eigenschaften bestätigen.
 
-![](/_images/doc2/DOC2_POM_DN_5.png)
+![Nicht übereinstimmende Eigenschaften bestätigen](/assets/images/doc2/DOC2_POM_DN_6.png "Nicht übereinstimmende Eigenschaften bestätigen")
 
-You need to confirm the mismatched properties.
+![Übereinstimmung bestätigen](/assets/images/doc2/DOC2_POM_DN_7.png "Übereinstimmung bestätigen")
 
-![](/_images/doc2/DOC2_POM_DN_6.png)
+Speichern Sie, um alle Änderungen anzuwenden.
 
-![](/_images/doc2/DOC2_POM_DN_7.png)
+![Änderungen speichern](/assets/images/doc2/DOC2_POM_DN_8.png "Änderungen speichern")
 
-Save to apply all changes.
-
-![](/_images/doc2/DOC2_POM_DN_8.png)
-
-Once everything is correct the document can be validated and exported.
+Sobald alles korrekt ist, kann das Dokument validiert und exportiert werden.

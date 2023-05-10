@@ -1,53 +1,50 @@
 ---
-title: "Getting Started"
-description: The intelligent solution for Digitizing Documents. Every business process starts, contains or ends with a document. The Advantages of DOC² at a glance.
+title: "Einstieg"
+description: Die intelligente Lösung zur Digitalisierung von Dokumenten. Jeder Geschäftsprozess beginnt, enthält oder endet mit einem Dokument. Die Vorteile von DOC² auf einen Blick.
 date: "2021-10-14"
 tags:
   - DOC²
   - Start
 ---
 
+# Einstieg
 
-# Getting Started
+## Willkommen bei
 
-## Welcome to
+![Logo](/_images/doc2/doc2-1024x415.png){ loading=lazy, alt="DOC² Logo" } 
 
+Die intelligente Lösung zur Digitalisierung von Dokumenten
 
-![Logo](/_images/doc2/doc2-1024x415.png){ loading=lazy }
+Jeder Geschäftsprozess beginnt, enthält oder endet mit einem Dokument. Unabhängig davon, ob es sich um Papierform oder bereits um eine Datei handelt. Dies wird als unstrukturierte Daten bezeichnet. Obwohl die Informationen auf oder in dem Dokument vorhanden sind, können sie nicht automatisch in die Arbeitsprozesse integriert werden, da sie von allen Softwareprogrammen einfach nicht erkannt werden.
 
-The intelligent solution for Digitizing Documents
+DOC² ist die neueste Software- und Lösung für die Dokumentenerfassung, die von der FellowPro AG entwickelt wurde. Es handelt sich um eine vollständig cloudbasierte Lösung, die künstliche Intelligenz und maschinelles Lernen verwendet, um Ihre Dokumente präzise zu identifizieren, zu klassifizieren, zu analysieren und zu lesen. Egal ob Papier oder Datei. DOC² lernt unabhängig, das Erfahrungsniveau steigt mit jedem Dokument. DOC² verwendet dafür Schwarmintelligenz.
 
-Every business process starts, contains or ends with a document. Regardless of whether in paper form or already as a file. This is called unstructured data. Although the information is on or in the document, it cannot be automatically integrated into the work processes, as it is simply not recognized by all software.
+### **Die Vorteile von DOC² auf einen Blick:**
 
-DOC² is the latest software and solution for document capture that was developed by Polydocs GmbH. It is a completely cloud-based solution that uses Artificial Intelligence and Machine Learning to precisely identify, classify, analyze and read your documents. No matter if paper or file. DOC² learns independently, the level of experience increases with each document. DOC² uses swarm intelligence for this.
+* Erkennt die benötigten Daten - auch handschriftliche Informationen und Informationen in Tabellen zuverlässig und ist selbstlernend, auch durch Korrekturen des Benutzers
+* Nutzt Schwarmintelligenz, um kontinuierlich von den Erfahrungen anderer Kunden zu profitieren
+* Verbessert die Genauigkeit und Qualität der erkannten Daten
+* Ermöglicht einen automatisierten Prozess ohne laufende Korrekturen und Eingriffe
+* Einfache intuitive Benutzeroberfläche
+* Keine IT-Ressourcen / Spezialisten erforderlich
+* Stellt einen robusten und konsistenten Arbeitsprozess sicher
+* Es werden keine sensiblen Daten gespeichert oder geteilt
+* Spart Zeit im digitalen Posteingang
+* Reduziert Fehler durch manuelle Verarbeitung
 
+[Starten Sie jetzt eine kostenlose 30-Tage-Testversion](https://polydocs.io/free-trail/){ .md-button .md-button--primary }
 
-### **The Advantages of DOC² at a glance:**
+#### **Wie verwenden Sie DOC²:**
 
-*   Recognizes the required data - even handwritten information and information in tables reliably and is self-learning, even through corrections by the user
-*   With swarm intelligence, you benefit continuously from the experiences of other customers
-*   Improves the accuracy and quality of the recognized data
-*   Enables an automated process without ongoing corrections and interventions
-*   Simple intuitive interface
-*   No IT resources / specialists required
-*   Ensures a robust and consistent work process
-*   No sensitive data is stored or shared
-*   Saves time in the digital inbox
-*   Reduces errors caused by manual processing
+* Scannen und Erkennen aller Arten von Dokumenten (Rechnungen, Verträge, Formulare, medizinische Rezepte usw.)
+* Zuverlässige Extraktion der Daten im Dokument und Integration und Weiterverarbeitung im ERP-, RPA- oder CRM-System)
+* Validierung der extrahierten Daten und Überprüfung gegen andere Systeme aus internen und öffentlichen Quellen
+* Integration in Ihre Systemlandschaft (z. B. ERP-System, Dokumentenmanagement, Workflow-System usw.)
 
-[Start now a free 30 days trail](https://polydocs.io/free-trail/){ .md-button .md-button--primary }
+#### Warum DOC² genau das Richtige für Sie ist
 
-#### **How do you use DOC²:**
+Viele Unternehmen haben erkannt, dass die Verarbeitung eingehender Rechnungen beispielsweise sehr zeitaufwändig sein kann. Sie versuchen, die Produktivität zu steigern und den Purchase-to-Pay-Prozess durch die Einführung von Produkten zur "Digitalisierung" von Rechnungen zu optimieren.
 
-*   Scanning and Recognition of all types of documents (Invoices, Contracts, Forms, Medical Prescriptions etc.)
-*   Reliable extraction of the data in the document and integration and further processing in the ERP, RPA or CRM system)
-*   Validation of the extracted data and verification against other systems from internal and public sources
-*   Integration into your system landscape (e.g. ERP System, Document Management, Workflow System etc)
+Darüber hinaus nutzt DOC² Schwarmintelligenz. Was bedeutet das? Sie profitieren von den Erfahrungen anderer Kunden und deren "Lernkurve", ohne sensible Daten zu teilen. Mit der cloudbasierten Regel-Engine stellen wir eine kontinuierliche Verbesserung der Anwendung sicher. Sie benötigen keine Entwickler oder Datenwissenschaftler, da das System aus der Eingabe des Benutzers lernt und der Prozess ohne Unterbrechungen abläuft.
 
-#### Why DOC² is just right for you
-
-Many companies have recognized that processing incoming invoices, for example, can be very time-consuming. They are trying to increase productivity and optimize the purchase-to-pay process by introducing products for the “digitization” of invoices.
-
-In addition, DOC² uses swarm intelligence. What does that mean? You benefit from the experiences of other customers and their "learning curve" without sharing sensitive data. With the cloud-based rule engine, we ensure continuous improvement of the application. You don't need any developers or data scientists, because the system learns from the input of the user and the process runs without interruptions.
-
-With the help of deep learning algorithms, not only simple header data of a document can be recorded, but also complicated structures such as tables. Of course, not only invoices are processed, but all types of documents. Regardless of whether it is waybills, membership applications, medical prescriptions and many more.
+Mit Hilfe von Deep-Learning-Algorithmen können nicht nur einfache Kopfdaten eines Dokuments erfasst werden, sondern auch komplizierte Strukturen wie Tabellen. Natürlich werden nicht nur Rechnungen verarbeitet, sondern alle Arten von Dokumenten. Unabhängig davon, ob es sich um Frachtbriefe, Mitgliedsanträge, medizinische Rezepte und vieles mehr handelt.

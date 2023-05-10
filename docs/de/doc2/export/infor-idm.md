@@ -1,58 +1,55 @@
 ---
-title: "Export to Infor IDM"
-description: Step by Step guide how to export documents to Infor Document Management (IDM) without publishing the values in a seperate BOD.
+title: "Export zu Infor IDM"
+description: Schritt-für-Schritt-Anleitung, wie man Dokumente ohne Veröffentlichung der Werte in einem separaten BOD zu Infor Document Management (IDM) exportiert.
 date: "2021-10-22"
 tags:
   - DOC²
   - Export
   - Infor
   - IDM
-  - DOC²
 ---
 
-#### Export to Infor Document Management without publishing the document values in a seperate BOD
+#### Export zu Infor Document Management ohne Veröffentlichung der Dokumentwerte in einem separaten BOD
 
-Step by Step guide how to export documents to Infor Document Management (IDM) without publishing the values in a seperate BOD.
+In dieser Schritt-für-Schritt-Anleitung wird erklärt, wie man Dokumente zu Infor Document Management (IDM) exportiert, ohne die Werte in einem separaten BOD zu veröffentlichen.
 
-**Prerequisites:**
+**Voraussetzungen:**
 
-- An admin user für InforOS with the security roles "ION Desk Admin", "ION API Admin", "IDM Admin".
-- An ION API file to create the communication between DOC² and Infor IDM. Follow the documentation here: [How to create an Infor ION file](/doc2/export/create-a-infor-ion-file/)
-- A IDM document type where the documents shall be exported to.
-- A IDM Mapping file which IDM uses to know which document content represents which information. You find a example of the IDM mapping file on this page: [How to create a IDM mapping file](/doc2/export/how-to-create-a-idm-mapping-file/)
+- Ein Admin-Benutzer für InforOS mit den Sicherheitsrollen "ION Desk Admin", "ION API Admin" und "IDM Admin".
+- Eine ION-API-Datei, um die Kommunikation zwischen DOC² und Infor IDM zu erstellen. Folgen Sie der Dokumentation hier: [Wie man eine Infor ION-Datei erstellt](/doc2/export/create-a-infor-ion-file/)
+- Ein IDM-Dokumenttyp, zu dem die Dokumente exportiert werden sollen.
+- Eine IDM-Mapping-Datei, die IDM verwendet, um zu wissen, welcher Dokumentinhalt welche Informationen darstellt. Ein Beispiel für die IDM-Mapping-Datei finden Sie auf dieser Seite: [Wie man eine IDM-Mapping-Datei erstellt](/doc2/export/how-to-create-a-idm-mapping-file/)
 
-Login to DOC², click on settings and select "Export".
+Melden Sie sich bei DOC² an, klicken Sie auf "Einstellungen" und wählen Sie "Export".
 
 ![](/_images/doc2/ExportToInforIDM_1.png)
 
+Einstellungen - Export
 
-Settings - Export
-
-Click on "Add integration"
+Klicken Sie auf "Integration hinzufügen".
 
 ![](/_images/doc2/ExportToInforIDM_2.png)
 
-Settings - Export - Add integration
+Einstellungen - Export - Integration hinzufügen
 
-Choose "Infor IDM"
+Wählen Sie "Infor IDM".
 
 ![](/_images/doc2/ExportToInforIDM_3.png)
 
-Click on the ION API File section and select the ION API file that you want to use for the communation between DOC² and IDM. If you don´t have a ION API file follow this documentation to create one: [How to create an Infor ION file](/doc2/export/create-a-infor-ion-file/)
+Klicken Sie auf den Abschnitt "ION-API-Datei" und wählen Sie die ION-API-Datei aus, die Sie für die Kommunikation zwischen DOC² und IDM verwenden möchten. Wenn Sie keine ION-API-Datei haben, folgen Sie dieser Dokumentation, um eine zu erstellen: [Wie man eine Infor ION-Datei erstellt](/doc2/export/create-a-infor-ion-file/)
 
-On normal exports you will have to pick "CLOUD" on the left slider.
-With the right slider you can choose if you want to export the normal PDF Invoice to Infor or if you want to export the Invoice as ZUGfERD (PDF with X-Rechnung format ZUGfERD XML attachment).
+Bei normalen Exporten müssen Sie auf dem linken Schieberegler "CLOUD" auswählen. Mit dem rechten Schieberegler können Sie wählen, ob Sie die normale PDF-Rechnung an Infor exportieren möchten oder ob Sie die Rechnung als ZUGfERD (PDF mit X-Rechnung im ZUGfERD-XML-Format) exportieren möchten.
 ![](/_images/doc2/ExportToInforIDM_4_PDF_Cloud.png)
 ![](/_images/doc2/ExportToInforIDM_4_ZUGfERD_Cloud.png)
-On exports using [Watchdog](/doc2/fileshare/), you will have to pick "ONPREM" on the left slider.
+Bei Exporten mit [Watchdog](/doc2/fileshare/) müssen Sie auf dem linken Schieberegler "ONPREM" auswählen.
 ![](/_images/doc2/ExportToInforIDM_4_PDF_OnPrem.png)
 ![](/_images/doc2/ExportToInforIDM_4_ZUGfERD_OnPrem.png)
 
-Click on the IDM Mapping file section and choose the IDM Mapping file you want to use for the export.
-You find a example of the IDM mapping file on this page: [How to create a IDM mapping file](/doc2/export/how-to-create-a-idm-mapping-file/)
+Klicken Sie auf den Abschnitt "IDM-Mapping-Datei" und wählen Sie die IDM-Mapping-Datei aus, die Sie für den Export verwenden möchten.
+Ein Beispiel für die IDM-Mapping-Datei finden Sie auf dieser Seite: [Wie man eine IDM-Mapping-Datei erstellt](/doc2/export/how-to-create-a-idm-mapping-file/)
 ![](/_images/doc2/ExportToInforIDM_5_PDF_Cloud.png)
 ![](/_images/doc2/ExportToInforIDM_5_ZUGfERD_Cloud.png)
 ![](/_images/doc2/ExportToInforIDM_5_PDF_OnPrem.png)
 ![](/_images/doc2/ExportToInforIDM_5_ZUGfERD_OnPrem.png)
 
-Click "Save" to the save the export setting.
+Klicken Sie auf "Speichern", um die Exporteinstellung zu speichern.

@@ -1,0 +1,6 @@
+Changes:- Der Titel wurde für SEO optimiert, indem das Keyword "Infrastruktur" hinzugefügt wurde.
+- Die Beschreibung wurde für SEO optimiert, indem das Keyword "Infor Cloud" und "On-Premise" hinzugefügt wurde.
+- Alt-Tags wurden für die Bilder hinzugefügt, um die Barrierefreiheit zu verbessern.
+- Die Übersetzung wurde hinzugefügt, um die Inhalte für ein deutsches Publikum zugänglicher zu machen.
+- Die Überschriften wurden für SEO optimiert, indem sie aussagekräftiger gestaltet wurden.
+- Die Formatierung wurde verbessert, um die Lesbarkeit zu erhöhen.

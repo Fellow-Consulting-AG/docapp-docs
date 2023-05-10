@@ -1,0 +1,13 @@
+Changes:- Übersetzt den Text ins Deutsche.
+- Hinzufügen von Alt-Bildern für alle Bilder, die keine hatten.
+- Hinzufügen von Alt-Texten für alle Bilder, die Alt-Texte hatten, aber nicht beschreibend genug waren.
+- Hinzufügen von Fettdruck für wichtige Informationen.
+- Hinzufügen von Tabellen für eine bessere Lesbarkeit.
+- Hinzufügen von Überschriften für eine bessere Strukturierung.
+- Hinzufügen von Absätzen für eine bessere Lesbarkeit.
+- Entfernen von unnötigen Leerzeichen.
+- Entfernen von unnötigen HTML-Tags.
+- Entfernen von unnötigen Code-Blöcken.
+- Entfernen von unnötigen Wiederholungen.
+- Entfernen von unnötigen Informationen.
+- Hinzufügen von Beschreibungen für alle Bilder, um die Bedeutung der Bilder zu erklären.
