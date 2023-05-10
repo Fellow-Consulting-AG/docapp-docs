@@ -35,13 +35,13 @@ theme:
       accent: indigo
       toggle:
         icon: material/brightness-7
-        name: Switch to dark mode
+        name: In den dunkeln Modus wechseln
     - scheme: slate
       primary: custom
       accent: indigo
       toggle:
         icon: material/brightness-4
-        name: Switch to light mode
+        name: In den hellen Modus wechseln
 
 extra_css:
   - _extra/css/extra.css
