@@ -145,7 +145,7 @@ plugins:
       tags_file: tags.md
   - minify:
       minify_html: true
-
+  - optimize
 
 
 nav:
