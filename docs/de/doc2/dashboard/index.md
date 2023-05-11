@@ -48,6 +48,6 @@ Zudem können Sie entweder alle oder nur die Ihnen zugewiesenen Dokumente sehen 
 
 In der rechten Spalte sehen Sie die Schaltfläche "Aktionen". Wenn Sie darauf klicken, werden alle verfügbaren Optionen geöffnet: Herunterladen, Dokument-Flow ansehen, Zuweisen, Neu starten, Validieren und Löschen.
 
-![DOC² Aktionsschaltflächen](docs/de/_images/doc2/dashboard/dashboard-aktionen_dokument.gif)
+![DOC² Aktionsschaltflächen](/_images/doc2/dashboard/dashboard-aktionen_dokument.gif)
 
 Details zur Benutzeroberfläche zum Überprüfen, Bearbeiten und Validieren extrahierter Felder von hochgeladenen Dokumenten finden Sie [hier](/doc2/document-validation/).
