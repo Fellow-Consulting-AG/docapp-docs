@@ -21,5 +21,5 @@ Gespeicherte Passwörter werden so verschlüsselt, dass sie auch bei Zugriff auf
 
 
 ### Server-Kommunikation
-Die gesamte Kommunikation erfolgt über https, jede nicht-https-Anfrage wird auf https umgeleitet.
+Die gesamte Kommunikation erfolgt über https. Jede nicht-https-Anfrage wird auf https umgeleitet.
 
