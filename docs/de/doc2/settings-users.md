@@ -21,35 +21,35 @@ In den Einstellungen gehen Sie zu `Benutzer`:
 
 Direkter Link: [https://app.polydocs.io/settings/user](https://app.polydocs.io/settings/user)
 
-## Wie man einen Benutzer hinzufügt
+## So fügen Sie einen Benutzer hinzu
 
 Sobald der Administrator registriert ist, können Sie Ihre Mitarbeiter über folgende Schritte hinzufügen.
 
 Klicken Sie im Benutzermenü auf `BENUTZER HINZUFÜGEN`:
 
-![Benutzer hinzufügen](/_images/doc2/DOC2_settings_add-user.png "Benutzer hinzufügen")
+![Benutzer hinzufügen](/_images/doc2/einstellungen/benutzer-hinzufuegen.png)
 
 Geben Sie die Daten des zu erstellenden Benutzers ein:
 
-![Benutzerdaten](/_images/doc2/Users_4.png "Benutzerdaten")
+![Benutzerdaten](/_images/doc2/einstellungen/daten-neuer-benutzer.png)
 
-- Wenn es sich nicht um einen Administrationsbenutzer handelt, aktivieren Sie das Kontrollkästchen "ADMIN" nicht.
+- Wenn es sich nicht um einen Administrationsbenutzer handelt, aktivieren Sie das Kontrollkästchen `Admin` nicht.
 - Das Passwort muss zunächst erstellt und an den Benutzer gesendet werden.
 
-Sobald der Benutzer erstellt wurde, kann er über die Benutzerübersicht bearbeitet werden (Aktivieren/Deaktivieren von "ADMIN", Bearbeiten, Löschen):
+Sobald der Benutzer angelegt ist, kann er anschließend über die Benutzerübersicht bearbeitet werden (Häkchen bei "ADMIN" setzen/entfernen, bearbeiten, löschen):
 
-![Benutzerübersicht](/_images/doc2/Users_5.1.png "Benutzerübersicht")
-![Benutzer bearbeiten](/_images/doc2/Users_5.2.png "Benutzer bearbeiten")
+![Benutzerübersicht](/_images/doc2/einstellungen/benutzer-einstellungen-1.png)
+![Benutzer bearbeiten](/_images/doc2/einstellungen/benutzer-einstellungen-2.png)
 
 ## Wie man das Passwort zurücksetzt
 
 Gehen Sie zur DOC²-Anmeldeseite ([https://app.polydocs.io/](https://app.polydocs.io/)), geben Sie Ihre E-Mail-Adresse ein und klicken Sie auf <ins>Passwort vergessen?</ins>
 
-![Passwort vergessen](/_images/doc2/Users_6.png "Passwort vergessen")
+![Passwort vergessen](/_images/doc2/einstellungen/passwort-vergessen.png)
 
 Sie erhalten sofort eine E-Mail mit einem Link zum Zurücksetzen des Passworts. Der Link führt Sie zu folgender Seite, auf der Sie ein neues Passwort eingeben können:
 
-![Passwort zurücksetzen](/_images/doc2/Users_7.png "Passwort zurücksetzen")
+![Passwort zurücksetzen](/_images/doc2/einstellungen/passwort-zuruecksetzen.png)
 
 Sobald das neue Passwort eingegeben und bestätigt wurde, kann es ab sofort für die Anmeldung verwendet werden.
 
