@@ -20,8 +20,9 @@ Nach dem Einloggen mit Ihren Zugangsdaten werden Sie zur DASHBOARD-Homepage von 
 
 Hier sehen Sie die Gesamtzahl der importierten Dokumente. Außerdem können Sie den Status von Dokumenten anzeigen, die beispielsweise "In Bearbeitung", "Ausstehend", "Zur Genehmigung ausstehend", "Exportiert" oder auf "Fehler" gelaufen sind. Der Hauptvorteil dieser Reporting-Leiste besteht darin, dass Sie durch Klicken auf eine der verfügbaren Boxen die spezifischen und gefilterten Dokumente finden können, die Sie suchen.
 
+## **Erweiterte Einstellungen**
 
-Über `Erweiterte Einstellungen`, haben Sie die Möglichkeit die Dokumente nach dem heutigen Tag, Woche, Monat und Jahr zu filtern.
+Über "Erweiterte Einstellungen", haben Sie die Möglichkeit die Dokumente nach dem heutigen Tag, Woche, Monat und Jahr zu filtern.
 
 ![](/_images/doc2/dashboard/dashboard-erweiterte einstellungen.png)
 
@@ -45,6 +46,7 @@ Zudem können Sie entweder alle oder nur die Ihnen zugewiesenen Dokumente sehen 
 ![](/_images/doc2/dashboard/dashboard-zugewiesen-an.png)
 
 
+## **Aktionen**
 
 In der rechten Spalte sehen Sie die Schaltfläche "Aktionen". Wenn Sie darauf klicken, werden alle verfügbaren Optionen geöffnet: Herunterladen, Dokument-Flow ansehen, Zuweisen, Neu starten, Validieren und Löschen.
 
