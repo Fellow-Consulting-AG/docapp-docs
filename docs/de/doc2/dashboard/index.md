@@ -29,23 +29,25 @@ Wählen Sie das Tabellensymbol in den erweiterten Einstellungen, können sie hie
 
 ![](/_images/doc2/dashboard/dashboard-erweiterte einstellungen-tabellenspalten.png)
 
-Indem Sie die Spaltennamen anhand der Kästchen markieren, können Sie diese mit den Pfeilen in der Mitte auf die jeweilig gewünschte Seite (sichtbar oder ausgeblendet) schieben.
+Indem Sie die Spaltennamen anhand der Kästchen markieren, können Sie diese mit den Pfeilen in der Mitte auf die gewünschte Seite (sichtbar oder ausgeblendet) schieben.
 
 ![](/_images/doc2/dashboard/dashboard-spalten-einstellungen.png)
 
-Zusätzlich habe Sie die Möglichkeit sich einzelne Felder aus den verwendeten Dokumententypen anzeigen zu lassen, indem Sie 
+Zusätzlich haben Sie die Möglichkeit, sich einzelne Felder aus den verwendeten Dokumententypen anzeigen zu lassen. Klicken Sie hierfür auf `FELD AUS DOKUMENTENTYP HINZUFÜGEN`, wählen Sie den gewünschten Dokumententyp z.B. Rechnung und das gewünschte Feld z.B. Rechnungsnummer aus und bestätigen Sie die Auswahl mit einem Klick auf `ZU SICHTBAREN SPALTEN HINZUFÜGEN`.
+
+![](/_images/doc2/dashboard/dashboard-spalten-einstellungen-feld-aus-dokumententyp.png)
+
+![](/_images/doc2/dashboard/dashboard-rechnungsnummer.png)
 
 
-to check:
+Zudem können Sie entweder alle oder nur die Ihnen zugewiesenen Dokumente sehen indem Sie den Filter an folgendem Punkt in den erweiterten Einstellungen setzen:
 
-Wie Sie sich vorstellen können, ist der zweite Teil des Dashboards die Liste/Übersicht aller hochgeladenen Dokumente. Sie können entweder alle oder nur die Ihnen zugewiesenen Dokumente sehen. Und natürlich können Sie es auch mit dem Dokumentennamen finden.
-
-![](/_images/doc2/DOC2_Dashboard_3.png)
+![](/_images/doc2/dashboard/dashboard-zugewiesen-an.png)
 
 
 
-In der rechten Spalte sehen Sie die Schaltfläche "Aktionen". Wenn Sie darauf klicken, werden alle verfügbaren Optionen geöffnet: Zuweisen, Neustart, Validieren und Löschen.
+In der rechten Spalte sehen Sie die Schaltfläche "Aktionen". Wenn Sie darauf klicken, werden alle verfügbaren Optionen geöffnet: Herunterladen, Dokument-Flow ansehen, Zuweisen, Neu starten, Validieren und Löschen.
 
-![DOC² Aktionsschaltflächen](/_images/doc2/DOC²_Dashboard_Document_Actions.gif){ loading=lazy, alt: "DOC2 Aktionsschaltflächen" }
+![DOC² Aktionsschaltflächen](docs/de/_images/doc2/dashboard/dashboard-aktionen_dokument.gif)
 
 Details zur Benutzeroberfläche zum Überprüfen, Bearbeiten und Validieren extrahierter Felder von hochgeladenen Dokumenten finden Sie [hier](/doc2/document-validation/).
