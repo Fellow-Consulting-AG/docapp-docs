@@ -1,23 +1,25 @@
 ---
-title: Data security with Doc²
-description: A lising of the data security messures of Doc²
+title: Datensicherheit mit DOC²
+description: Eine Auflistung der Datensicherheitsmaßnahmen von DOC²
 tags:
   - DOC²
-  - Data security
+  - Datensicherheit
+  - Datenschutz
+  - HTTPS
 ---
 
-# Data security
+# Datensicherheit
 
 
-### Uploaded files
-All of the uploaded files are stored in an object storage hosted by our Cloud Provider. Access is restricted and only possible if you pass the correct key and secret key.
+### Hochgeladene Dateien
+Alle hochgeladenen Dateien werden in einem Objektspeicher gespeichert, der von unserem Cloud-Anbieter gehostet wird. Der Zugriff ist eingeschränkt und nur möglich, wenn Sie den richtigen Key und Secret Key übergeben.
 
-### Database 
-We run daily database backups that are then saved for seven days each.  
-The communication between the database and the servers is run only via https.  
-Stored passwords are encrypted in a way that, even with access to the database, cannot be read.
+### Datenbank
+Wir führen täglich Datenbank-Backups durch, die dann jeweils sieben Tage lang gespeichert werden.
+Die Kommunikation zwischen der Datenbank und den Servern erfolgt ausschließlich über https.
+Gespeicherte Passwörter werden so verschlüsselt, dass sie auch bei Zugriff auf die Datenbank nicht gelesen werden können.
 
 
-### Server Communication
-All communication is done via https, every non https request is redirected to https.
+### Server-Kommunikation
+Die gesamte Kommunikation erfolgt über https, jede nicht-https-Anfrage wird auf https umgeleitet.
 
