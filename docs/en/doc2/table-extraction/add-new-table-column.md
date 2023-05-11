@@ -16,25 +16,25 @@ If you need to manually map columns to rows (fields) on an extracted document, y
 
 To get started, import your document into DOC² and open it. Then, navigate to the table extraction view by clicking on the "LINE ITEMS" button.
 
-![Table Extraction View in DOC²](/_images/doc2/image-26.png){ loading=lazy, alt: "Table Extraction View in DOC²" }
+![Table Extraction View in DOC²](/_images/doc2/Table-Extraction/4-Add new column/Image_15_table_train_button.png){ loading=lazy, alt: "Table Extraction View in DOC²" }
 
 ## Step 2: Activate Training Mode
 
 To add a new column to your table, you'll need to activate training mode. Click on the "TRAINING MODE" button to do so.
 
-![Activate Training Mode in DOC²](/_images/doc2/image-27-1024x367.png){ loading=lazy, alt: "Activate Training Mode in DOC²" }
+![Activate Training Mode in DOC²](/_images/doc2/Table-Extraction/4-Add new column/Image_16_new_table_column_button.png){ loading=lazy, alt: "Activate Training Mode in DOC²" }
 
 ## Step 3: Create a New Column
 
 Once you're in training mode, you can create a new column by clicking on the "ADD COLUMN" button. In the window that appears, you can specify a name for the column, set whether it's optional or mandatory, and choose the column type (STRING, AMOUNT, or DATE).
 
-![Create a New Column in DOC²](/_images/doc2/image-28-1024x692.png){ loading:lazy, alt: "Create a New Column in DOC²" }
+![Create a New Column in DOC²](/_images/doc2/Table-Extraction/4-Add new column/Image_17_new_table_column_page.png){ loading:lazy, alt: "Create a New Column in DOC²" }
 
 ## Step 4: Use the New Column for Manual Mappings
 
 After you've created your new column, you can use it for manual mappings by following our guide on [Manual Row Selection](/doc2/table/manual-row-selection/).
 
-![Use the New Column for Manual Mappings in DOC²](/_images/doc2/image-29-1024x232.png){ loading:lazy, alt: "Use the New Column for Manual Mappings in DOC²" }
+![Use the New Column for Manual Mappings in DOC²](/_images/doc2/Table-Extraction/4-Add new column/Image_18_proceed.png){ loading:lazy, alt: "Use the New Column for Manual Mappings in DOC²" }
 
 And that's it! You now know how to add a new column to a table in DOC². Sign up for a 30-day free trial to try it out for yourself.
 

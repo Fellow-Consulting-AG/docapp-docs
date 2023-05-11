@@ -29,17 +29,17 @@ When using our table extraction tool, you can choose between training mode and c
 
 In training mode, mapped columns are read-only, and you cannot manually change the text. Additionally, the delete row button is not visible.
 
-![Table Extraction Training Mode](/_images/te/training-mode.png){ loading=lazy, alt: "Table Extraction Training Mode" }
+![Table Extraction Training Mode](/_images/doc2/Table-Extraction/2-Training table extraction/Image_3_training_mode.png){ loading=lazy, alt: "Table Extraction Training Mode" }
 
 ### Correction Mode
 
 In correction mode, you can delete and add rows, and you can manually change the text of mapped columns.
 
-![Table Extraction Correction Mode](/_images/te/correction-mode.png){ loading=lazy, alt: "Table Extraction Correction Mode" }
+![Table Extraction Correction Mode](/_images/doc2/Table-Extraction/2-Training table extraction/Image_4_correction_mode.png){ loading=lazy, alt: "Table Extraction Correction Mode" }
 
 Here's an example of a table in correction mode, with the first row deleted and a new row added:
 
-![Table Extraction Correction Mode Edited Table](/_images/te/correction-mode-edited-table.png){ loading=lazy, alt: "Table Extraction Correction Mode Edited Table" }
+![Table Extraction Correction Mode Edited Table](/_images/doc2/Table-Extraction/2-Training table extraction/Image_5_result.png){ loading=lazy, alt: "Table Extraction Correction Mode Edited Table" }
 
 ## Start Your Table Extraction Training Today
 

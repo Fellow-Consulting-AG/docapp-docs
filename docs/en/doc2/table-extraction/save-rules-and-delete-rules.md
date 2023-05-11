@@ -21,7 +21,7 @@ Once you've trained a document in DOC² and defined all the rules for table extr
 
 To save your rules, simply click the "SAVE RULES" button. You'll see a rule indicator that shows how many rules have been defined and saved for that document.
 
-![Save Rules Button](/_images/doc2/image-33-1024x763.png "Save Rules Button")
+![Save Rules Button](/_images/doc2/Table-Extraction/9-Save and delete rules/Image_47_save_rules.png "Save Rules Button")
 
 ## Delete Rules
 
@@ -29,7 +29,7 @@ If you need to delete rules for a document, you can do so using the "DELETE RULE
 
 However, it's important to note that deleting rules will affect all documents with the same or similar format. This means that you'll need to retrain those documents from scratch. So, be sure to use this feature with caution.
 
-![Delete Rules Button](/_images/doc2/image-35-1024x692.png "Delete Rules Button")
+![Delete Rules Button](/_images/doc2/Table-Extraction/9-Save and delete rules/Image_49_delete_rules.png "Delete Rules Button")
 
 ## Sign Up for a Free Trial
 

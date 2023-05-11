@@ -20,11 +20,11 @@ All documents from order confirmations to invoices can vary enormously in comple
 
 As an example, you can see the German invoice below, where the information in column "Bezeichnung" extends over several lines (positions).
 
-![](/_images/doc2/image-30-1024x636.png){ loading=lazy }
+![Grouping Example](/_images/doc2/Table-Extraction/6-Group Function/Image_20_grouping_example.png){ loading=lazy }
 
 At this point, another advantage of DOC² comes into play. It extracts the data in the first step 1 to 1. The result looks like this:
 
-![](/_images/doc2/image-31-1024x633.png){ loading=lazy }
+![DOC2 Grouping Example](/_images/doc2/Table-Extraction/6-Group Function/Image_21_grouping_example_doc2.png){ loading=lazy }
 
 BUT: Now there is the possibility to group data based on a specific column. That means in this case it can be grouped by the column "Position" as shown in the following video. This in turn groups the rows of the "Description" column into one row. So that at the end you get a structured overall picture of the export and the data can now be processed further.
 
@@ -32,4 +32,4 @@ If the grouping was created by mistake, it can be removed at any time, as also s
 
 The result of grouping looks like this:
 
-![](/_images/doc2/image-32-1024x567.png){ loading=lazy }
+![Grouping Result](/_images/doc2/Table-Extraction/6-Group Function/Image_22_grouping_result.png){ loading=lazy }
