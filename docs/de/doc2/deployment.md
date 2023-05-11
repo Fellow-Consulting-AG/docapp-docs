@@ -23,4 +23,4 @@ Der folgende Bildschirm wird angezeigt, wenn Sie die URL aufrufen:
 Geben Sie die Zugangsdaten ein, die Sie von uns erhalten haben. Dies sind Ihre Admin-Daten.
 Wenn Sie den folgenden Bildschirm sehen, sind Sie fast bereit loszulegen. Alle weiteren Details und notwendigen Schritte finden Sie [hier](https://de.docs.fellowpro.com/doc2/document-validation/).
 
-![DOC2 Dashboard](/_images/doc2/DOC2_Deployment_Dashboard.png){ loading=lazy, alt: "DOC2-Dashboard" }
+![DOC2 Dashboard](/_images/doc2/deployment/doc2-dashboard-start.png)
