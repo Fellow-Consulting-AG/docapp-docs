@@ -1,7 +1,7 @@
 ---
 title: "Benutzer"
 description: Erfahren Sie, wie Sie einen Benutzer hinzufügen und das Passwort zurücksetzen. Benutzer können in den Benutzereinstellungen verwaltet werden. Hier finden Sie alle Optionen.
-date: "2021-10-29"
+date: "2023-05-11"
 tags:
   - DOC²
   - Einstellungen
@@ -13,11 +13,11 @@ Um Ihre Benutzer zu verwalten, befolgen Sie diese Schritte:
 
 Navigieren Sie vom Dashboard aus zu `EINSTELLUNGEN`:
 
-![Dashboard-Einstellungen](/_images/doc2/DOC2_Dashboard_Settings.png "Dashboard-Einstellungen")
+![Dashboard-Einstellungen](/_images/doc2/einstellungen/dashboard-einstellungen.png)
 
 In den Einstellungen gehen Sie zu `Benutzer`:
 
-![Benutzereinstellungen](/_images/doc2/DOC2_settings_users.png "Benutzereinstellungen")
+![Benutzereinstellungen](/_images/doc2/einstellungen/einstellungen-benutzer.png)
 
 Direkter Link: [https://app.polydocs.io/settings/user](https://app.polydocs.io/settings/user)
 
