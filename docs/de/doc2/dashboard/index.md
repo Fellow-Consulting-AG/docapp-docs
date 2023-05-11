@@ -18,15 +18,15 @@ Nach dem Einloggen mit Ihren Zugangsdaten werden Sie zur DASHBOARD-Homepage von 
 
 ![](/_images/doc2/dashboard/dashboard-analytik.png)
 
-Hier sehen Sie die Gesamtzahl der importierten Dokumente. Außerdem können Sie den Status von Dokumenten anzeigen, die beispielsweise "In Bearbeitung", "Ausstehend", "Zur Genehmigung ausstehend", "Exportiert" oder auf "Fehler" gelaufen sind. Der Hauptvorteil dieser Reporting-Leiste besteht darin, dass Sie durch Klicken auf eine der verfügbaren Boxen die spezifischen und gefilterten Dokumente finden können, die Sie suchen.
+Über die Schaltfläche "Analytik" sehen Sie die Gesamtzahl der importierten Dokumente, sowie die einzelnen Status der Dokumente wie beispielsweise "In Bearbeitung", "Ausstehend", "Zur Genehmigung ausstehend", "Exportiert" oder "Fehler". Der Hauptvorteil dieser Reporting-Leiste besteht darin, dass Sie durch Klicken auf eine der verfügbaren Boxen die spezifischen und gefilterten Dokumente finden können, die Sie suchen.
 
 ## **Erweiterte Einstellungen**
 
-Über "Erweiterte Einstellungen", haben Sie die Möglichkeit die Dokumente nach dem heutigen Tag, Woche, Monat und Jahr zu filtern.
+Hier haben Sie die Möglichkeit Ihre Dokumente nach dem heutigen Tag, Woche, Monat und Jahr zu filtern.
 
 ![](/_images/doc2/dashboard/dashboard-erweiterte einstellungen.png)
 
-Wählen Sie das Tabellensymbol in den erweiterten Einstellungen, können sie hier die Spalten auf Ihrem Dasboard individuell für Ihre Organisation anpassen.
+Über das Tabellensymbol können sie die Spalten auf Ihrem Dasboard individuell für Ihre Organisation anpassen.
 
 ![](/_images/doc2/dashboard/dashboard-erweiterte einstellungen-tabellenspalten.png)
 
@@ -41,7 +41,7 @@ Zusätzlich haben Sie die Möglichkeit, sich einzelne Felder aus den verwendeten
 ![](/_images/doc2/dashboard/dashboard-rechnungsnummer.png)
 
 
-Zudem können Sie entweder alle oder nur die Ihnen zugewiesenen Dokumente sehen indem Sie den Filter an folgendem Punkt in den erweiterten Einstellungen setzen:
+Zudem können Sie entweder alle oder nur die Ihnen zugewiesenen Dokumente sehen, indem Sie den Filter an folgendem Punkt in den erweiterten Einstellungen setzen:
 
 ![](/_images/doc2/dashboard/dashboard-zugewiesen-an.png)
 
