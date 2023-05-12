@@ -43,5 +43,5 @@ Sobald die Datei verarbeitet wurde, erhält sie den Status "Bereit für Validier
 
 ![Status "Bereit zur Validierung" in DOC²](/_images/doc2/manueller import/status-bereit fuer validierung.png)
 
-Details zum Validierungsprozess finden Sie hier: [Dokumentvalidierung](/doc2/document-validation/)
+Details zum Validierungsprozess finden Sie hier: [Dokumentenvalidierung](/doc2/document-validation/)
 
