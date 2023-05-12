@@ -32,7 +32,7 @@ tags:
 
 ``` mermaid
 sequenceDiagram
-  Upload->>Status: DocId vom Upload abrufen?
+  Hochladen->>Status: DocId vom Upload abrufen?
   loop Status
       Status->>Status: Bis FinalStatus nicht Klassifizieren ist
   end
