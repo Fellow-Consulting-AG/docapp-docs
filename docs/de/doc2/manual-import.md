@@ -27,6 +27,8 @@ Dokumente können über den Dateibrowser oder per Drag-and-Drop in DOC² hochgel
 
 - Alternativ können Sie Ihre Dateien per Drag-and-Drop auf das DOC²-Importfenster ziehen.
 
+![Import per Drag-and-Drop auf Upload-Fenster in DOC²](/_images/doc2/manueller import/import-drag-and-drop-auf fenster.png)
+
 - Sie können auch Dateien überall auf dem DOC²-Dashboard ablegen, um sie hochzuladen.
 
 ![Import per Drag-and-Drop in DOC²](/_images/doc2/manueller import/import-drag-and-drop.png)
