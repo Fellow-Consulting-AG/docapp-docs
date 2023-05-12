@@ -60,7 +60,7 @@ Nachdem Sie alle zur Extraktion verfügbaren Felder überprüft haben, können S
 
 ![DOC2 Änderungen speichern, bestätigen und exportieren](/_images/doc2/dokumentenvalidierung/dokument-speichern-bestaetigen-exportieren.png)
 
-Wenn Sie die Änderungen gespeichert haben, bleibt das Dokument im Status "Bereit zur Validierung".
+Wenn Sie die Änderungen gespeichert haben, bleibt das Dokument im Status "Bereit für Validierung".
 
 ![DOC2 Status "Bereit zur Validierung"](/_images/doc2/dokumentenvalidierung/dasboard-bereit-zur-validierung.png)
 
