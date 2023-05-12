@@ -1,9 +1,9 @@
-site_name: FELLOWPRO Documentation
+site_name: FELLOWPRO Dokumentation
 docs_dir: '../../docs/de'                           # Where to find the English markdown files
 site_dir: '../../generated/de'                      # Where to put the English HTML files
 site_url: https://de.docs.fellowpro.com
 site_author: Daniel Jordan
-site_description: On these pages you will learn a lot about our different software helping you with digitization, digitalization and the digital transformation in your company.
+site_description: Auf diesen Seiten erfahren Sie viel über unsere verschiedenen Softwarelösungen, die Sie bei der Digitalisierung und der digitalen Transformation in Ihrem Unternehmen unterstützen.
 theme:
   name: material
   logo: _images/LOGO.svg
