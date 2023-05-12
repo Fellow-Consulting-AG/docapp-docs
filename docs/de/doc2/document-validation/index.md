@@ -38,11 +38,11 @@ Sie können nun überprüfen, ob die Nummer korrekt extrahiert wurde. Alle Werte
 
 Alle Werte, die korrekt extrahiert und mit dem Häkchen bestätigt wurden, haben eine grüne Leiste am Anfang des Feldes.
 
-![DOC2 Dokument korrekt extrahierte Werte](docs/de/_images/doc2/dokumentenvalidierung/dokument-korrekt-gruene leiste.png)
+![DOC2 Dokument korrekt extrahierte Werte](/_images/doc2/dokumentenvalidierung/dokument-korrekt-gruene leiste.png)
 
 Ein großartiges Beispiel ist das nächste Segment des Feldes IBAN, wo die IBAN nicht einmal extrahiert wird, da das Vertrauensniveau gleich Null ist. Um den Wert zu trainieren und zu extrahieren, klicken Sie einfach in das Feld und markieren Sie die IBAN auf der Rechnung. 
 
-![DOC2 Wert nicht extrahiert](docs/de/_images/doc2/dokumentenvalidierung/IBAN nicht extrahiert.png)
+![DOC2 Wert nicht extrahiert](/_images/doc2/dokumentenvalidierung/IBAN nicht extrahiert.png)
 
 Der ausgewählte Wert wird in das IBAN-Feld extrahiert und auf der Rechnung angezeigt. Bitte bestätigen Sie den Wert mit dem Häkchen, um ihn abzuschließen.
 
