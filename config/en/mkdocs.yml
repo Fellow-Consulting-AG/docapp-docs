@@ -140,6 +140,8 @@ plugins:
   - minify:
       minify_html: true
   - optimize
+  - blog
+
 
 nav:
   - Changelog: Release/Release_notes.md
@@ -270,4 +272,6 @@ nav:
     - Detect inside pages: ocr/detect-inside-pages.md
     - Merge/Split PDF: ocr/merge-split-pdf.md
     - API: ocr/ocr-api.md
+  - Blog:
+    - blog/index.md
   
