@@ -24,7 +24,7 @@ To access the full Polydocs API menu, click [here](https://doc2api.cloudintegrat
 
 To get started with API Integration in DOC², you will need your API Key. You can find your API Key in the Integration menu item in the settings. Simply copy and paste your API Key into your application to start integrating with DOC².
 
-![API Key in DOC² Settings](/images/doc2/doc2-Settings-Integration-API-Key.png "API Key in DOC² Settings")
+![API Key in DOC² Settings](/_images/doc2/Settings/Integration/API/Image_1_api_key.png "API Key in DOC² Settings")
 
 ## API Calls Examples
 

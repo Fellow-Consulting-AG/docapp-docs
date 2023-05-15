@@ -25,7 +25,7 @@ To make API calls, authentication is the first step. Follow the steps below to a
 2. Click on **Authorize** in the upper right corner.
 3. Enter your [API Key](/doc2/settings/integration/api-integration/) and confirm by clicking `Authorize`.
 
-![Authorize API Key](/_images/doc2/admin_guides_doc2-api-authorize.png){ loading=lazy }
+![Authorize API Key](/_images/doc2/Settings/Integration/API calls examples/1-admin_guides_doc2-api-authorize.png){ loading=lazy }
 
 ## Upload Document
 
@@ -38,8 +38,8 @@ To upload a document, follow the steps below:
 
 Your document will be uploaded to your dashboard with the rules you set in [DOC²](https://app.polydocs.io/settings/classify-extract).
 
-![Classification Rules](/_images/doc2/DOC2_classification-rules_Pattern.png){ loading=lazy }
-![Uploaded Document on Dashboard](/_images/doc2/DOC2_Uploaded-doc-on-dashboard.png){ loading=lazy }
+![Classification Rules](/_images/doc2/Settings/Integration/API calls examples/5-classification_rules.png){ loading=lazy }
+![Uploaded Document on Dashboard](/_images/doc2/Settings/Integration/API calls examples/6-dashboard_mango.png){ loading=lazy }
 
 ## Document Status Check
 
@@ -49,11 +49,11 @@ To check the status of a document, follow the steps below:
 2. Open the tab and click on `Try it out` in the upper right corner.
 3. Enter the document ID in the `doc-id` field. You can find the document ID when you open the document on the dashboard. This is the last part of the URL when the document is open.
 
-![Document ID](/_images/doc2/DOC2_API_GET_Document-Status_doc_id.png){ loading=lazy }
+![Document ID](/_images/doc2/Settings/Integration/API calls examples/8-DOC2_API_GET_Document-Status_doc_id.png){ loading=lazy }
 
 You will receive the following response:
 
-![Document Status Response](/_images/doc2/DOC2_API_GET_Document-Status_Response.png){ loading=lazy }
+![Document Status Response](/_images/doc2/Settings/Integration/API calls examples/9-DOC2_API_GET_Document-Status_Response.png){ loading=lazy }
 
 If the status is "Ready For Validation," it means that the user can check the document.
 

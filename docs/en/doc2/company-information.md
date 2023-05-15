@@ -22,7 +22,7 @@ To fill in your company information, follow these steps:
 2. Enter your company-specific information, such as your company name, address, and contact details.
 3. Click on `SAVE` when you're done.
 
-![Fill in Your Company Information in DOC²](/_images/doc2/Company_3.png "Fill in Your Company Information in DOC²")
+![Fill in Your Company Information in DOC²](/_images/doc2/Settings/Company Information/Image_3_example_info.png "Fill in Your Company Information in DOC²")
 
 Please note that a valid address is required for the export to work.
 
@@ -30,7 +30,7 @@ Please note that a valid address is required for the export to work.
 
 In the Company Information section, you can also find information about your subscription plan, including the start and end dates. You can also view your processed pages for a selected period using the calendar.
 
-![View Your Subscription Plan and Usage in DOC²](/_images/doc2/Company_2.png "View Your Subscription Plan and Usage in DOC²")
+![View Your Subscription Plan and Usage in DOC²](/_images/doc2/Settings/Company Information/Image_2_info_page.png "View Your Subscription Plan and Usage in DOC²")
 
 Make sure to keep your subscription plan up-to-date to ensure uninterrupted access to DOC²'s features and services.
 
