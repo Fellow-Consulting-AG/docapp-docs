@@ -13,9 +13,10 @@ Um dies zu tun, importieren Sie ein Dokument wie gewohnt und öffnen Sie es in d
 
 ![Dokumentenansicht](/_images/doc2/ocr ansicht/dokumentenansicht oeffnen.png)
 
-Dort finden Sie die Schaltfläche "OCR":
+Dort finden Sie die Schaltfläche `OCR`:
 
 ![OCR-Schaltfläche](/_images/doc2/ocr ansicht/button-ocr-ansicht.png)
+
 
 Wenn Sie auf diese Schaltfläche klicken, wird ein neues Fenster geöffnet, das das Dokument und seine Daten in der reinen OCR-Ansicht anzeigt. Dies kann nützlich sein, wenn Daten nicht korrekt extrahiert werden und Sie die tatsächlichen Werte im Dokument zur Extraktion überprüfen möchten:
 
@@ -23,9 +24,11 @@ Wenn Sie auf diese Schaltfläche klicken, wird ein neues Fenster geöffnet, das 
 
 Darüber hinaus kann die folgende Schaltfläche verwendet werden, um zur Debug-Ansicht zu wechseln. Dadurch können Sie genau sehen, wie DOC² die einzelnen Werte im Hintergrund extrahiert und ob diese korrekt erkannt werden:
 
+
 ![Debug-Schaltfläche](/_images/doc2/ocr ansicht/button-debug-ansicht.png)
 
 ![Debug-Ansicht](/_images/doc2/ocr ansicht/dokument-debug-ansicht.png)
+
 
 Außerdem kann die folgende Schaltfläche verwendet werden, um zur Dokumentenansicht zurückzukehren:
 
