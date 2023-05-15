@@ -23,7 +23,7 @@ tags:
 - `ZUGFeRD-Export`: Ein ZUGFeRD-Dokument wird exportiert
 - `Workflow`: Der Workflow wird derzeit mit diesem Dokument ausgeführt
 - `Genehmigung ausstehend`: Das Dokument muss genehmigt werden
-- `PZweite Genehmigung ausstehend`: Das Dokument muss ein zweites Mal genehmigt werden
+- `Zweite Genehmigung ausstehend`: Das Dokument muss ein zweites Mal genehmigt werden
 - `Auto Accounting`: Automatic Accounting läuft
 - `Export`: Das Dokument wird exportiert
 - `Fehler`: Das Dokument ist auf Fehler gelaufen
