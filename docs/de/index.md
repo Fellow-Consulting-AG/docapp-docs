@@ -1,61 +1,58 @@
-# THE PLATFORM OF DIGITALIZATION
-## For Business Process Automation - Including Documents
+# DIE PLATTFORM DER DIGITALISIERUNG
+## Für die Automatisierung von Geschäftsprozessen - einschließlich Dokumente
 
-## Digitization
-Digitization refers to creating a digital representation of physical objects or attributes. For instance, we scan a paper document and save it as a digital document (e.g., PDF). In other words, digitization is about converting
-something non-digital into a digital representation or artifact.
-
-
-
-[Sign up for a 30 days free trial](https://app.polydocs.io){ .md-button .md-button--primary }
-
-## Digitalization
-
-Digitalization refers to enabling or improving processes by leveraging digital technologies and digitized
-data. Therefore, digitalization presumes digitization.
-Digitalization improves an existing business process or processes but doesn’t change or transform them. It takes a process from a human-driven event or series of events to softwaredriven.
-
-## Digital Transformation
-
-Digital transformation is about the entire transformation of the company. Digital transformation includes other changes brought about by digitalization. New business areas or
-business models can open along the way.
-
-Every business process starts, contains or ends with a document. Regardless of whether in paper form or already as a file. This is called unstructured data. Although the information is on or in the document, it cannot be automatically integrated into the work processes, as it is simply not recognized by all software.
-
-## What is DOC²?
-
-DOC² is the latest software and solution for document capture that was developed by PolyDocs GmbH. It is a completely cloud-based solution that uses Artificial Intelligence and Machine Learning to precisely identify, classify, analyze and read your documents. No matter if on paper or a file. DOC² learns independently, the level of experience increases with each document. DOC² accomplishes this through swarm intelligence.
-
-<ins>The Advantages of DOC² at a glance:</ins>
-
-  -  Recognizes the required data – even handwritten information and information in tables reliably and is self-learning, even through corrections by the user
-  -  With swarm intelligence, you benefit continuously from the experiences of other customers
-  -  Improves the accuracy and quality of the recognized data
-  -  Enables an automated process without ongoing corrections and interventions
-  -  Simple and intuitive interface
-  -  No IT resources / specialists required
-  -  Ensures a robust and consistent work process
-  -  No sensitive data is stored or shared
-  -  Saves time in the digital inbox
-  -  Reduces errors caused by manual processing
-
-## How do you use DOC²:
-
-  -  Scanning and Recognition of all types of documents (invoices, contracts, forms, medical prescriptions etc.)
-  -  Reliable extraction of the data in the document and integration and further processing in the ERP, RPA or CRM system)
-  -  Validation of the extracted data and verification against other systems from internal and public sources
-  -  Integration into your system landscape (e.g. ERP System, Document Management, Workflow System etc)
-
-## Why DOC² is just right for you
-
-  -   Many companies have recognized that processing incoming invoices, for example, can be very time-consuming. They are trying to increase productivity and optimize
-      the purchase-to-pay process by introducing products for the “digitization” of invoices.
-
-  -  In addition, DOC² uses swarm intelligence. What does that mean? You benefit from the experiences of other customers and their “learning curve” without sharing sensitive
-     data. With the cloud-based rule engine, we ensure continuous improvement of the application. You don’t need any developers or data scientists, because the system learns from the input of the user and the process runs without interruptions.
-
-  -  With the help of deep learning algorithms, not only simple header data of a document can be recorded, but also complicated structures such as tables. Of course, not
-     only invoices are processed, but all types of documents. Regardless of whether it is waybills, membership applications, medical prescriptions and many more.
+## Digitalisierung
+Unter Digitalisierung versteht man die Erstellung einer digitalen Darstellung physischer Objekte oder Attribute. Wir scannen beispielsweise ein Papierdokument und speichern es als digitales Dokument (z. B. PDF). Mit anderen Worten: Bei der Digitalisierung geht es um Konvertierung
+etwas Nicht-Digitales in eine digitale Darstellung oder ein digitales Artefakt umwandeln.
 
 
-[:octicons-heart-fill-24:{ .heart } Sign up for a 30 days free trail ](https://app.polydocs.io){ .md-button .md-button--primary }
+
+[Registrieren Sie sich für eine kostenlose 30-Tage-Testversion](https://app.polydocs.io){ .md-button .md-button--primary }
+
+## Digitalisierung
+
+Digitalisierung bedeutet die Ermöglichung oder Verbesserung von Prozessen durch den Einsatz digitaler Technologien und digitalisierter
+Daten. Daher setzt die Digitalisierung die Digitalisierung voraus.
+Die Digitalisierung verbessert einen oder mehrere bestehende Geschäftsprozesse, verändert oder transformiert sie aber nicht. Sie macht einen Prozess von einem menschengesteuerten Ereignis oder einer Reihe von Ereignissen zu einem softwaregesteuerten Prozess.
+
+## Digitale Transformation
+
+Bei der digitalen Transformation geht es um die gesamte Umgestaltung des Unternehmens. Die digitale Transformation umfasst weitere Veränderungen, die die Digitalisierung mit sich bringt. Neue Geschäftsfelder oder Geschäftsmodelle können sich auf dem Weg dorthin öffnen.
+
+Jeder Geschäftsprozess beginnt, enthält oder endet mit einem Dokument. Egal ob in Papierform oder bereits als Datei. Dies nennt man unstrukturierte Daten. Obwohl sich die Informationen auf oder in dem Dokument befinden, können sie nicht automatisch in die Arbeitsprozesse integriert werden, da sie einfach nicht von jeder Software erkannt werden.
+
+## Was ist DOC²?
+
+DOC² ist die neueste Software und Lösung zur Dokumentenerfassung, die von der PolyDocs GmbH entwickelt wurde. Es handelt sich um eine komplett cloudbasierte Lösung, die mit Hilfe von Künstlicher Intelligenz und Machine Learning Ihre Dokumente präzise identifiziert, klassifiziert, analysiert und liest. Egal, ob auf Papier oder in einer Datei. DOC² lernt selbstständig, der Erfahrungsgrad steigt mit jedem Dokument. DOC² erreicht dies durch Schwarmintelligenz.
+
+<ins>Die Vorteile von DOC² auf einen Blick:</ins>
+
+  -  Erkennt die benötigten Daten - auch handschriftliche und tabellarische Informationen - zuverlässig und ist selbstlernend, auch bei Korrekturen durch den Benutzer
+  -  Mit Schwarmintelligenz profitieren Sie kontinuierlich von den Erfahrungen anderer Kunden
+  -  Verbessert die Genauigkeit und Qualität der erkannten Daten
+  -  Ermöglicht einen automatisierten Prozess ohne laufende Korrekturen und Eingriffe
+  -  Einfache und intuitive Benutzeroberfläche
+  -  Keine IT-Ressourcen/Spezialisten erforderlich
+  -  Gewährleistet einen robusten und konsistenten Arbeitsprozess
+  -  Es werden keine sensiblen Daten gespeichert oder weitergegeben
+  -  Spart Zeit im digitalen Posteingang
+  -  Reduziert Fehler, die durch manuelle Verarbeitung verursacht werden
+
+## Wie nutzen Sie DOC²?:
+
+  -  Scannen und Erkennen von Dokumenten aller Art (Rechnungen, Verträge, Formulare, ärztliche Verordnungen usw.)
+  -  Zuverlässige Extraktion der Daten im Dokument und Integration und Weiterverarbeitung im ERP-, RPA- oder CRM-System)
+  -  Validierung der extrahierten Daten und Verifizierung mit anderen Systemen aus internen und öffentlichen Quellen
+  -  Integration in Ihre Systemlandschaft (z. B. ERP-System, Dokumentenmanagement, Workflow-System etc.)
+
+## Warum DOC² genau das Richtige für Sie ist
+
+  -   Viele Unternehmen haben erkannt, dass z. B. die Bearbeitung von Eingangsrechnungen sehr zeitaufwändig sein kann. Sie versuchen, die Produktivität zu erhöhen und den
+      den Purchase-to-Pay-Prozess zu optimieren, indem sie Produkte zur "Digitalisierung" von Rechnungen einführen.
+
+  -  Darüber hinaus nutzt DOC² Schwarmintelligenz. Was bedeutet das? Sie profitieren von den Erfahrungen anderer Kunden und deren „Lernkurve“, ohne sensible Daten zu teilen. Mit der cloudbasierten Rule Engine sorgen wir für eine kontinuierliche Verbesserung der Anwendung. Sie benötigen keine Entwickler oder Datenwissenschaftler, da das System aus den Eingaben des Benutzers lernt und der Prozess ohne Unterbrechungen abläuft.
+
+  -  Mit Hilfe von Deep-Learning-Algorithmen können nicht nur einfache Kopfdaten eines Dokuments, sondern auch komplizierte Strukturen wie Tabellen erfasst werden. Es werden natürlich nicht nur Rechnungen, sondern alle Arten von Dokumenten verarbeitet. Egal ob Frachtbriefe, Mitgliedsanträge, ärztliche Verordnungen und vieles mehr.
+
+
+[:octicons-heart-fill-24:{ .heart } Registrieren Sie sich für eine kostenlose 30-Tage-Testversion](https://app.polydocs.io){ .md-button .md-button--primary }
