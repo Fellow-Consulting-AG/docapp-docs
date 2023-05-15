@@ -165,7 +165,7 @@ nav:
       - Validierung von Stammdaten: doc2/document-validation/master-data-validation.md
       - OCR-Ansicht: doc2/document-validation/ocr-view.md
       - KI-Indikator: doc2/document-validation/ai-indicator.md
-      - Ausdrücke: doc2/document-validation/exception-filters.md
+      # - Ausdrücke: doc2/document-validation/exception-filters.md
     - Tabellen auslesen:
       - doc2/table-extraction/index.md
       - Schulung zur Tabellenauswertung: doc2/table-extraction/training-of-table-extraction.md
