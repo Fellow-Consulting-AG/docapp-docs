@@ -16,7 +16,7 @@ If you need to manually map columns to rows (fields) on an extracted document, y
 
 To get started, import your document into DOC² and open it. Then, navigate to the table extraction view by clicking on the "LINE ITEMS" button.
 
-![Table Extraction View in DOC²](_images/doc2/Table-Extraction/4-Add new column/Image_15_table_train_button.png){ loading=lazy, alt: "Table Extraction View in DOC²" }
+![Table Extraction View in DOC²](/en/_images/doc2/Table-Extraction/4-Add new column/Image_15_table_train_button.png){ loading=lazy, alt: "Table Extraction View in DOC²" }
 
 ## Step 2: Activate Training Mode
 
