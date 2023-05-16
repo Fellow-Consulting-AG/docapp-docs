@@ -17,7 +17,7 @@
     start: 2023-05-22
     end: 2023-05-29
 
-  - title: Development Phase
+- title: Development Phase
   activities:
   - title: Set up the development environment and infrastructure
     start: 2023-05-22
@@ -29,7 +29,7 @@
     start: 2023-06-19
     end: 2022-07-01
 
-  - title: Testing and Quality Assurance Phase
+- title: Testing and Quality Assurance Phase
   activities:
   - title: Perform functional testing to verify feature behavior
     start: 2023-07-01
@@ -38,7 +38,7 @@
     start: 2023-07-01
     end: 2023-07-10
 
-  - title: Deployment and Release Phase
+- title: Deployment and Release Phase
   activities:
   - title: Roll out the software to the production environment
     start: 2023-07-10
@@ -101,6 +101,7 @@
 
 
 ::gantt::
+
 - title: Design and Prototyping Phase
   activities:
   - title: Create wireframes and mockups of UI
@@ -113,7 +114,7 @@
   - title: Finalize the user interface design
     start: 2023-05-15
     end: 2023-05-22
-    
+
 - title: Development Phase
   activities:
   - title: Set up the development environment and infrastructure
@@ -137,7 +138,7 @@
 
 - title: Deployment and Release Phase
   activities:
-  - title: Roll out the software to the production environment
+  - title: Roll out LIVE
     start: 2023-06-26
     end: 2023-07-03
 
@@ -149,6 +150,7 @@
 
 
 ::gantt::
+
 - title: Design and Prototyping Phase
   activities:
   - title: Create wireframes and mockups of UI
@@ -161,6 +163,7 @@
   - title: Finalize the user interface design
     start: 2023-05-22
     end: 2023-05-29
+
 - title: Development Phase
   activities:
   - title: Set up the development environment and infrastructure
@@ -172,6 +175,7 @@
   - title: Conduct unit testing and write automated test cases
     start: 2023-07-01
     end: 2022-07-14
+
 - title: Testing and Quality Assurance Phase
   activities:
   - title: Perform functional testing to verify feature behavior
@@ -180,9 +184,11 @@
   - title: Conduct integration testing to ensure system components work together
     start: 2023-07-24
     end: 2023-07-31
+
 - title: Deployment and Release Phase
   activities:
-  - title: Roll out the software to the production environment
+  - title: Roll out LIVE
     start: 2023-08-01
     end: 2023-08-07
+
 ::/gantt::
