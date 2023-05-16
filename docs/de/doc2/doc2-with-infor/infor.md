@@ -17,7 +17,7 @@ tags:
 Dies ist der einfachste Anwendungsfall. 95 % aller Ephesoft (IDM Capture)-Kunden nutzen diesen Anwendungsfall.
 
 ``` mermaid
-graph LR
+graph TD
   A[Start] --> B{Rechnung?};
   Infor[Infor] --> |Validierung von Stammdaten| C;
   B -->|Ja| C[Kopfdatenfelder extrahieren];
@@ -31,7 +31,7 @@ graph LR
 Mit DOC² können Sie mehr tun
 
 ``` mermaid
-graph LR
+graph TD
   A[Start] --> B{Rechnung?};
   B -->|Ja| C[Extraktion];
   C -->|Optional| T[Tabellenauszug];
@@ -46,7 +46,7 @@ graph LR
 ### Rechnung und Lieferschein
 
 ``` mermaid
-graph LR
+graph TD
   A[Start] --> B{Klassifizierung?};
   B -->|Rechnung| Extraktion[Extraktion];
   B -->|Lieferschein| Extraktion;
@@ -65,7 +65,7 @@ graph LR
 ### Rechnung und Bestellungen inkl. PO Abgleich und ZUGFeRD und Bestellung-X
 
 ``` mermaid
-graph LR
+graph TD
   A[Start] --> B{Klassifizierung?};
   B -->|Rechnung| Extraktion[Extraktion];
   B -->|Lieferschein| Extraktion;
