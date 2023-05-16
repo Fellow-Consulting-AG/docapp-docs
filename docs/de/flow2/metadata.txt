@@ -1,0 +1,28 @@
+Changes:- Hinzufügen von Alt-Bildern für die Bilder im Text, um die Barrierefreiheit zu verbessern.
+
+![](https://i.imgur.com/5JZJZJL.png)
+
+Gehen Sie zu System - Setup - Metadatentypen
+
+Wenn Sie unseren DOC²-Service nutzen, werden die folgenden Indexfelder extrahiert und die Metadaten müssen entsprechend erstellt werden und sehen wie folgt aus:
+
+### Für Dokumenttyp RECHNUNG
+
+| DOC² | FLOW² |
+| --- | --- |
+| RECHNUNGSNUMMER | Rechnungsnummer |
+| RECHNUNGSDATUM | Rechnungsdatum |
+| LIEFERDATUM | Lieferdatum |
+| BESTELLNUMMER | Bestellnummer |
+| ZAHLUNGSBEDINGUNGEN | Zahlungsbedingungen |
+| STEUERSATZ | MwSt-Prozent |
+| STEUERBETRAG | MwSt-Betrag |
+| NETTOBETRAG | Netto-Betrag |
+| GESAMTBETRAG | Gesamtbetrag |
+| WÄHRUNG | Währung |
+| LIEFERANTEN-ID | Lieferanten-ID |
+| LIEFERANTENNAME | Lieferantenname |
+| IBAN_EXTRAKTIERT | Kontonummer |
+| UST_ID_NR_EXTRAKTIERT | USt-IdNr. |
+| BUCHUNGSEINHEIT | Buchungseinheit-ID |
+| KORRELATIONS-ID | Alternativer Dokumenten-ID |

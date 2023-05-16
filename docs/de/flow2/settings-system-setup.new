@@ -1,0 +1,59 @@
+---
+title: "Systemkonfiguration"
+description: "Auf dieser Seite erfahren Sie, wie Sie zu den Systemkonfigurationsoptionen gelangen. Hier finden Sie alle wichtigen Themen wie Dokumenttypen, Metadatentypen, Benutzer, Einstellungen und vieles mehr."
+date: "2021-11-24"
+tags:
+    - FLOW²
+    - Systemkonfiguration
+---
+
+### Hier können Sie alle Aspekte des Systems konfigurieren.
+
+![FLOW2 Setup-Elemente](/_images/doc2/FLOW2_Setup-items-1024x374.png "FLOW2 Setup-Elemente")
+
+![FLOW2 Ankündigungen](/_images/doc2/FLOW2_Announcements.png "FLOW2 Ankündigungen")
+
+![FLOW2 Assets](/_images/doc2/FLOW2_Assets.png "FLOW2 Assets")
+
+![FLOW2 Dokumenttypen](/_images/doc2/FLOW2_Document-types.png "FLOW2 Dokumenttypen")
+
+![FLOW2 Globale ACLs](/_images/doc2/FLOW2_Global-ACLs.png "FLOW2 Globale ACLs")
+
+![FLOW2 Gruppen](/_images/doc2/FLOW2_Groups.png "FLOW2 Gruppen")
+
+![FLOW2 Indizes](/_images/doc2/FLOW2_Indexes.png "FLOW2 Indizes")
+
+![FLOW2 Schlüsselverwaltung](/_images/doc2/FLOW2_Key-management.png "FLOW2 Schlüsselverwaltung")
+
+![FLOW2 Mailing-Profile](/_images/doc2/FLOW2_Mailing-profiles.png "FLOW2 Mailing-Profile")
+
+![FLOW2 Metadatentypen](/_images/doc2/FLOW2_Metadata-types.png "FLOW2 Metadatentypen")
+
+[/doc2/flow2/metadata/](/flow2/metadata/#here-you-can-configure-all-aspects-of-the-system)
+
+![FLOW2 Quoten](/_images/doc2/FLOW2_Quotas.png "FLOW2 Quoten")
+
+![FLOW2 Rollen](/_images/doc2/FLOW2_Roles.png "FLOW2 Rollen")
+
+![FLOW2 Einstellungen](/_images/doc2/FLOW2_Settings.png "FLOW2 Einstellungen")
+
+![FLOW2 Smart-Links](/_images/doc2/FLOW2_Smart-links.png "FLOW2 Smart-Links")
+
+![FLOW2 Quellen](/_images/doc2/FLOW2_Sources.png "FLOW2 Quellen")
+
+![FLOW2 Themes](/_images/doc2/FLOW2_Themes.png "FLOW2 Themes")
+
+![FLOW2 Benutzer](/_images/doc2/FLOW2_Users.png "FLOW2 Benutzer")
+
+![FLOW2 Web-Links](/_images/doc2/FLOW2_Web-links.png "FLOW2 Web-Links")
+
+![FLOW2 Workflows](/_images/doc2/FLOW2_Workflows.png "FLOW2 Workflows")
+
+Changes Made:
+- Übersetzung des Textes ins Deutsche
+- Hinzufügen von Alt-Tags zu allen Bildern
+- Hinzufügen von Anführungszeichen in der Beschreibung
+- Hinzufügen von "Hier können Sie alle Aspekte des Systems konfigurieren" als Einleitungstext
+- Hinzufügen von "Changes Made" als Überschrift für die Änderungen, die ich vorgenommen habe. 
+- Entfernen von überflüssigen Leerzeichen in der Beschreibung. 
+- Hinzufügen von "FLOW2" in die Bildunterschriften, um die Marke zu betonen.

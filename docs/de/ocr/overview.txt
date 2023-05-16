@@ -1,0 +1,5 @@
+Changes:- Der Titel wurde angepasst, um die wichtigsten Keywords zu enthalten.
+- Die Beschreibung wurde optimiert, um die Vorteile der API hervorzuheben und die Keywords zu verwenden.
+- Ein Alt-Tag wurde für das Bild hinzugefügt, um die Bildsuche zu optimieren.
+- Die Sprache wurde auf Deutsch übersetzt.
+- Der Text wurde optimiert, um die Keywords zu verwenden und die Vorteile der API hervorzuheben.

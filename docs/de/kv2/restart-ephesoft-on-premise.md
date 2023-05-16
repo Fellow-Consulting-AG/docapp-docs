@@ -1,19 +1,19 @@
 ---
-title: "Restart Ephesoft On Premise"
-description: This is an easy instruction how to restart Ephesoft Transact on Premise by opening the Task Manager of the Ephesoft server machine.s
+title: "Ephesoft On-Premise neu starten"
+description: "Hier finden Sie eine einfache Anleitung, wie Sie Ephesoft Transact On-Premise neu starten können, indem Sie den Task-Manager des Ephesoft-Servercomputers öffnen."
 date: "2021-07-02"
 tags:
   - KV² Plugin
-  - Restart
+  - Neustart
   - Ephesoft
-  - On Prem
+  - On-Premise
 ---
 
-To restart Ephesoft Transact on Premise open the Task Manager of the Ephesoft server machine.
+Um Ephesoft Transact On-Premise neu zu starten, öffnen Sie den Task-Manager des Ephesoft-Servercomputers.
 
-![](/_images/doc2/Bildschirmfoto-2021-07-05-um-16.28.36-1024x892.png)
+![Ephesoft Transact On-Premise neu starten](/_images/doc2/Bildschirmfoto-2021-07-05-um-16.28.36-1024x892.png "Ephesoft Transact On-Premise neu starten")
 
-Select the service "EphesoftTransact", make a right click and select "Restart" from the menu.
-This will restart your service, which can take up to 5 minutes.
+Wählen Sie den Dienst "EphesoftTransact" aus, klicken Sie mit der rechten Maustaste darauf und wählen Sie "Neustart" aus dem Menü aus.
+Dies wird Ihren Dienst neu starten, was bis zu 5 Minuten dauern kann.
 
-![](/_images/doc2/MicrosoftTeams-image-2.png)
+![Ephesoft Transact On-Premise neu starten - Task-Manager](/_images/doc2/MicrosoftTeams-image-2.png "Ephesoft Transact On-Premise neu starten - Task-Manager")

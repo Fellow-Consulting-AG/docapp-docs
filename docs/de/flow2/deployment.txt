@@ -1,0 +1,7 @@
+Changes:- Der Titel wurde angepasst, um ihn aussagekräftiger und suchmaschinenfreundlicher zu gestalten.
+- Die Beschreibung wurde optimiert, um den Nutzen von FLOW² hervorzuheben und Interesse zu wecken.
+- Der Text wurde ins Deutsche übersetzt, um die Zielgruppe anzusprechen.
+- Alt-Tags wurden für die Bilder hinzugefügt, um die Barrierefreiheit zu verbessern und die Bilder für Suchmaschinen zugänglicher zu machen.
+- Die Überschriften wurden angepasst, um sie aussagekräftiger zu gestalten und die Lesbarkeit zu verbessern.
+- Der Text wurde leicht umformuliert, um ihn verständlicher und prägnanter zu gestalten.
+- Die Formatierung wurde optimiert, um den Text übersichtlicher zu gestalten.

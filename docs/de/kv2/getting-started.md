@@ -1,42 +1,41 @@
 ---
-title: KV² - Getting Started
-description: Welcome to KV² Plugin for Ephesoft Transact! One time installed, the solution can be used and trained from day one, with no need to configure the batch class.
+title: KV² - Erste Schritte
+description: Willkommen beim KV²-Plugin für Ephesoft Transact! Nach der einmaligen Installation kann die Lösung ab dem ersten Tag verwendet und trainiert werden, ohne dass die Batch-Klasse konfiguriert werden muss.
 tags:
   - KV²
   - Plugin
   - Ephesoft
-  - Digitizing documents
+  - Digitalisierung von Dokumenten
 ---
-# Getting Started
 
-Welcome to KV² Plugin for Ephesoft Transact!
+# Erste Schritte
 
-The KV² Plugin solution is a cloud-based repository which grants the customer access to a pool of extraction rules for the header and footer fields of a document, in particular invoices. The system is able to learn new extraction rules every time a document is uploaded, validated and exported in Ephesoft Transact.
+Willkommen beim KV²-Plugin für Ephesoft Transact!
 
-One time installed, the solution can be used and trained from day one, with no need to configure the batch class for extraction rules.
+Die KV²-Plugin-Lösung ist ein cloudbasiertes Repository, das dem Kunden Zugriff auf eine Sammlung von Extraktionsregeln für die Kopf- und Fußzeilenfelder eines Dokuments, insbesondere von Rechnungen, gewährt. Das System kann jedes Mal, wenn ein Dokument in Ephesoft Transact hochgeladen, validiert und exportiert wird, neue Extraktionsregeln lernen.
 
-
+Nach der einmaligen Installation kann die Lösung ab dem ersten Tag verwendet und trainiert werden, ohne dass die Batch-Klasse für Extraktionsregeln konfiguriert werden muss.
 
 <div class="video-container">
 <iframe width="840" height="472.5" src="https://www.youtube-nocookie.com/embed/9wkfH6A3NYk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-The main source of input, in order to fill the KV2 repository with extraction rules, is the usage of the plugin by the users, incl. the updates conducted by Polydocs GmbH. This means that every time a business trains the IDM Capture -Ephesoft software with a new extraction rule, this rule will be made available for all users of the KV² Plugin.
+Die Hauptquelle für die Eingabe, um das KV2-Repository mit Extraktionsregeln zu füllen, ist die Verwendung des Plugins durch die Benutzer, einschließlich der Updates, die von Polydocs GmbH durchgeführt werden. Das bedeutet, dass jedes Mal, wenn ein Unternehmen die IDM Capture-Ephesoft-Software mit einer neuen Extraktionsregel trainiert, diese Regel für alle Benutzer des KV²-Plugins verfügbar gemacht wird.
 
-![KV Repository](/_images/kv2/FellowKV_Repository-4.png)
+![KV-Repository](/_images/kv2/FellowKV_Repository-4.png "KV-Repository")
 
-## Which Data do we check and extract?
+## Welche Daten prüfen und extrahieren wir?
 
-The default version of KV² Plugin identifies and extracts following 10 header and footer fields:
-(NOTE: adding / removing fields can be done via enhancement request)
+Die Standardversion des KV²-Plugins identifiziert und extrahiert folgende 10 Kopf- und Fußzeilenfelder:
+(HINWEIS: Das Hinzufügen/Entfernen von Feldern kann über eine Erweiterungsanfrage erfolgen)
 
-- Invoice number
-- Invoice date
-- Delivery date
-- Order number
-- Terms of payment
-- Net amount
-- Value added tax
-- Gross amount
+- Rechnungsnummer
+- Rechnungsdatum
+- Lieferdatum
+- Bestellnummer
+- Zahlungsbedingungen
+- Nettobetrag
+- Umsatzsteuer
+- Bruttobetrag
 - IBAN
-- VAT number
+- Umsatzsteuer-Identifikationsnummer

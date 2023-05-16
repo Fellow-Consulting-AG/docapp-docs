@@ -1,39 +1,38 @@
 ---
-title: "Enable Feedback Function"
+title: "Feedback-Funktion aktivieren"
 date: "2021-07-05"
-description: This is how to enable the Feedback Function within the Ephesoft Plugins. Feedback is created and sent during the validation process of a document.
+description: Erfahren Sie, wie Sie die Feedback-Funktion innerhalb der Ephesoft-Plugins aktivieren können. Feedback wird während des Validierungsprozesses eines Dokuments erstellt und gesendet.
 tags:
-  - Ephesoft Plugins
-  - Help
+  - Ephesoft-Plugins
+  - Hilfe
   - Feedback
 ---
 
-This documentation should explain how to enable the Feedback Function within the Ephesoft Plugins.
+Dieses Dokument erklärt, wie Sie die Feedback-Funktion innerhalb der Ephesoft-Plugins aktivieren können.
 
-The Feedback Function allows the clients to send Feedback to each single Test, directly while performing the Test. Feedback is created and sent during the validation process. For each “Validation” where user enters Feedback we have a ticket created automatically in our Ticket system [Zammad](https://support.cloudintegration.eu/#ticket/view/all_open). The Ticket contains information about the result (Feedback Type), Reporter Email Address and Feedback (Textfield) which are set by tester during validation, as well as a copy of the tested document, which is automatically linked to the ticket.
+Die Feedback-Funktion ermöglicht es Kunden, Feedback zu jedem einzelnen Test direkt während des Tests zu senden. Feedback wird während des Validierungsprozesses erstellt und gesendet. Für jede "Validierung", bei der der Benutzer Feedback eingibt, wird automatisch ein Ticket in unserem Ticket-System [Zammad](https://support.cloudintegration.eu/#ticket/view/all_open) erstellt. Das Ticket enthält Informationen über das Ergebnis (Feedback-Typ), die E-Mail-Adresse des Reporters und das Feedback (Textfeld), die vom Tester während der Validierung festgelegt wurden, sowie eine Kopie des getesteten Dokuments, das automatisch mit dem Ticket verknüpft wird.
 
-
-Feedback Function set up and configured within the Batch Class and visible to the clients on the Validation UI of Ephesoft in Tab "5 Feedback".
+Die Feedback-Funktion wird in der Batch-Klasse eingerichtet und konfiguriert und ist für die Kunden auf der Validierungs-Benutzeroberfläche von Ephesoft im Tab "5 Feedback" sichtbar.
 
 ![](/_images/doc2/Bildschirmfoto-2021-07-05-um-13.43.36-1024x475.png)
 
-## Steps to Enable Feedback:
+## Schritte zur Aktivierung des Feedbacks:
 
-Download the Feedback FieldTypes from below or go to any Batch Class where Feedback is already enabled to get them from there.
-**If you download from here you can skip Step 1 explained below**.
+Laden Sie die Feedback-Feldtypen von unten herunter oder gehen Sie zu einer Batch-Klasse, in der Feedback bereits aktiviert ist, um sie von dort zu erhalten.
+**Wenn Sie sie hier herunterladen, können Sie den in Schritt 1 erklärten Schritt überspringen**.
 
-[INVOICE\_DE\_FieldTypes](https://docs.cloudintegration.eu/wp-content/uploads/2021/07/INVOICE_DE_FieldTypes.zip)[Download](https://docs.cloudintegration.eu/wp-content/uploads/2021/07/INVOICE_DE_FieldTypes.zip)
+[INVOICE\_DE\_FieldTypes](https://docs.cloudintegration.eu/wp-content/uploads/2021/07/INVOICE_DE_FieldTypes.zip)[Herunterladen](https://docs.cloudintegration.eu/wp-content/uploads/2021/07/INVOICE_DE_FieldTypes.zip)
 
-**Step 1: Get Feedback Fields zip folder**
-Go to Batch Class where Feedback is setup, open "Index Fields" and navigate to last page in order to see the Feedback fields (which are the last four: FEEDBACK\_TYPE, FILE\_ID, FEEDBACK\_EMAIL, FEEDBACK\_DESCRIPTION).
+**Schritt 1: Feedback-Felder-Zip-Ordner erhalten**
+Gehen Sie zur Batch-Klasse, in der Feedback eingerichtet ist, öffnen Sie "Indexfelder" und navigieren Sie zur letzten Seite, um die Feedback-Felder zu sehen (die letzten vier: FEEDBACK\_TYPE, FILE\_ID, FEEDBACK\_EMAIL, FEEDBACK\_DESCRIPTION).
 
-Select the four last fields and click Export, to download it to your machine.
+Wählen Sie die letzten vier Felder aus und klicken Sie auf Exportieren, um sie auf Ihren Computer herunterzuladen.
 
 ![](/_images/doc2/Bildschirmfoto-2021-07-05-um-14.45.42-1024x476.png)
 
-**Step 2: Import to (other) Document Types**
-Once you have the Feedback Fields zip folder stored your machine you can import it to any document type in your Batch Class where you like to have it available. Simply Drag & Drop the zip file to "Index Fields" folder of the single document types.
+**Schritt 2: Importieren in (andere) Dokumenttypen**
+Sobald Sie den Feedback-Felder-Zip-Ordner auf Ihrem Computer gespeichert haben, können Sie ihn in jeden Dokumenttyp in Ihrer Batch-Klasse importieren, in dem Sie ihn verfügbar haben möchten. Ziehen Sie einfach die Zip-Datei in den Ordner "Indexfelder" der einzelnen Dokumenttypen.
 
 ![](/_images/doc2/Bildschirmfoto-2021-07-05-um-15.02.15-1024x479.png)
 
-_NOTE: This step must be done/repeated for each Document Type!_
+_Hinweis: Dieser Schritt muss für jeden Dokumenttyp durchgeführt/wiederholt werden!_

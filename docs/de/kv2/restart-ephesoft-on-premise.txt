@@ -1,0 +1,7 @@
+Changes:- Hinzufügen von Alt-Texten zu den Bildern für eine bessere Barrierefreiheit und SEO.
+- Hinzufügen von Anführungszeichen um die Beschreibung im title-Tag.
+- Hinzufügen von Bindestrichen in den Tag-Namen für eine bessere Lesbarkeit und SEO.
+- Hinzufügen von "Ephesoft Transact On-Premise neu starten" als Alt-Text für das erste Bild, um den Inhalt des Bildes zu beschreiben.
+- Hinzufügen von "Ephesoft Transact On-Premise neu starten - Task-Manager" als Alt-Text für das zweite Bild, um den Inhalt des Bildes zu beschreiben.
+- Hinzufügen von "Ephesoft Transact On-Premise neu starten" als Titel-Text für das erste Bild, um den Inhalt des Bildes zu beschreiben.
+- Hinzufügen von "Ephesoft Transact On-Premise neu starten - Task-Manager" als Titel-Text für das zweite Bild, um den Inhalt des Bildes zu beschreiben.

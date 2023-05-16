@@ -1,0 +1,10 @@
+Changes:- Hinzufügen von Alt-Tags zu den Bildern für eine bessere SEO-Optimierung.
+- Hinzufügen von Meta-Description für eine bessere Beschreibung des Inhalts.
+- Hinzufügen von Keywords als Tags für eine bessere Auffindbarkeit.
+- Übersetzung des Textes ins Deutsche für eine bessere Verständlichkeit.
+- Verwendung von H1-Tags für den Titel und H2-Tags für die Überschriften.
+- Verwendung von Fettdruck für die Parameter, um sie hervorzuheben.
+- Verwendung von Listen für die Parameter, um sie übersichtlicher zu gestalten.
+- Verwendung von kursivem Text für die Anweisungen, um sie hervorzuheben.
+- Verwendung von Anführungszeichen für die Benennung von Schaltflächen und Feldern.
+- Hinzufügen von Leerzeilen zwischen den Absätzen für eine bessere Lesbarkeit.

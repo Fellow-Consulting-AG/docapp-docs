@@ -1,0 +1,24 @@
+Changes:- Hinzufügen eines Alt-Textes zum Bild für bessere Barrierefreiheit und SEO.
+
+* * *
+
+### FLOW²-Funktionen
+
+- Versionierung von Dokumenten
+- Benutzerdefinierte Dokumenten-Metadaten
+- Dokumente können aus verschiedenen Quellen hochgeladen werden
+- Fortgeschrittenes Zugriffskontrollsystem
+- Vorschauen für viele Dateiformate
+- Unterstützung von Office-Dokumentenformaten
+- Volltextsuche
+- Konfigurierbare Gruppierung von Dokumenten
+- Automatische OCR-Verarbeitung
+- Mehrsprachige Benutzeroberfläche
+- Verfolgen Sie den Status von Dokumenten sowie das Protokoll von früheren Statusänderungen
+- Verwenden Sie den Workflow-Engine, um Geschäftsprozesse zu automatisieren
+- Vollständiges Ereignisverfolgungssystem
+- Konfigurierbares Authentifizierungssystem
+- Automatische Extraktion von Datei-Metadaten
+- Farbcodierte Tags
+- Batch-Uploads
+- Unterstützung für mehrseitige Dokumente

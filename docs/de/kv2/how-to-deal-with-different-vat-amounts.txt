@@ -1,0 +1,5 @@
+Changes:- Hinzufügen von Alt-Bildern für eine bessere Barrierefreiheit und SEO-Optimierung.
+- Hinzufügen von Keywords in den Titel und die Beschreibung für eine bessere Auffindbarkeit in Suchmaschinen.
+- Hinzufügen von Überschriften für eine bessere Lesbarkeit und Strukturierung des Textes.
+- Hinzufügen von Links zu externen Ressourcen, um den Lesern weitere Informationen zur Verfügung zu stellen.
+- Übersetzung des Textes ins Deutsche für eine bessere Verständlichkeit für deutschsprachige Leser.

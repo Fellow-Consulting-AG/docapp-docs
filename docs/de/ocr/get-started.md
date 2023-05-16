@@ -1,24 +1,15 @@
 ---
-title: "Getting Started"
-description: Optical Character Recognition (OCR) describes the conversion of handwritten, typed or printed documents into machine-encoded text.
+title: "Einstieg"
+description: "Optische Zeichenerkennung (OCR) beschreibt die Umwandlung von handschriftlichen, getippten oder gedruckten Dokumenten in maschinenlesbaren Text. Erfahren Sie hier mehr über die Funktionalitäten unserer OCR Engine API."
 date: "2021-07-06"
 tags:
   - OCR
-  - extract
-  - metadata
+  - Extraktion
+  - Metadaten
 ---
 
-Welcome to the OCR Engine API!
+Willkommen bei der OCR Engine API!
 
-The purpose of our OCR Engine is the transformation of regular pdf documents into OCR'd PDF documents.
+Unser Ziel ist es, reguläre PDF-Dokumente in OCR-PDF-Dokumente umzuwandeln. Die optische Zeichenerkennung (OCR) beschreibt die Umwandlung von handschriftlichen, getippten oder gedruckten Dokumenten in **maschinenlesbaren Text**. Dadurch wird es möglich, jede Art von unstrukturiertem Inhalt durchsuchbar und lesbar zu machen.
 
-
-Optical Character Recognition (OCR) describes the conversion of handwritten, typed or printed documents into **machine-encoded text**. That allows you to make any type of unstructured content searchable and readable.
-
-In this case we use the technology to enable Ephesoft Transact and our PlugIns to extract Metadata in a more efficient and intelligent way.
-
-![](/_images/doc2/image-20-1024x193.png)
-
-Our API will be available for you and in the following documentation, we will elaborate its functionalities, the installation process and everything you need to know about it.
-
-Thank you for choosing our Services!
+Wir nutzen diese Technologie, um Ephesoft Transact und unsere PlugIns zu ermöglichen, Metadaten auf eine effizientere und intelligente Weise zu extrahieren.

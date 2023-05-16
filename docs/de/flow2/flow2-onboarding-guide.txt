@@ -1,0 +1,6 @@
+Changes:- Übersetzung des Textes ins Deutsche
+- Hinzufügen von Anführungszeichen in der Description
+- Entfernen von unnötigen Leerzeichen in der Description
+- Hinzufügen von Alt-Texten für Bilder (keine Bilder vorhanden)
+- Hinzufügen von "Leitfaden" im Titel für bessere SEO
+- Hinzufügen von "erklärenden" Texten am Ende des Markdowns, um die Änderungen zu erläutern.

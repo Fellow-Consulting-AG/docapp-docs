@@ -1,42 +1,40 @@
 ---
-title: "TE² Plugin"
-description: The TE² Plugin is a cloud-based repository solution for Ephesoft Transact software which is focused on extracting autonomously and automatically the line items in a table. Through the cloud-based Table Extraction Repository, you access a pool of rules from all users of the plugin.
+title: "TE² Plugin für Ephesoft Transact"
+description: Das TE² Plugin ist eine cloudbasierte Repository-Lösung für die Ephesoft Transact-Software, die sich auf die autonome und automatische Extraktion von Zeilen in einer Tabelle konzentriert. Über das cloudbasierte Table Extraction Repository greifen Sie auf einen Pool von Regeln aller Benutzer des Plugins zu.
 date: "2021-07-05"
 tags:
   - TE²
   - Plugin
   - Ephesoft
-  - Table Extraction
+  - Tabellenextraktion
   - Repository
 ---
 
-Welcome to TE² Plugin for Ephesoft Transact!
-
-
+Willkommen beim TE² Plugin für Ephesoft Transact!
 
 <div class="video-container">
 <iframe width="840" height="472.5" src="https://www.youtube-nocookie.com/embed/Nmr-R3jb0Fw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-The TE² Plugin is a cloud-based repository solution for Ephesoft Transact software which is focused on extracting autonomously and automatically the line items in a table.
+Das TE² Plugin ist eine cloudbasierte Repository-Lösung für die Ephesoft Transact-Software, die sich auf die autonome und automatische Extraktion von Zeilen in einer Tabelle konzentriert.
 
-Through the cloud-based Polydocs GmbH Table Extraction Repository, you access a pool of rules from all users of the plugin.
+Über das cloudbasierte Table Extraction Repository von Polydocs GmbH greifen Sie auf einen Pool von Regeln aller Benutzer des Plugins zu.
 
-![KV Repository](/_images/kv2/FellowKV_Repository-4.png)
+![KV Repository](/_images/kv2/FellowKV_Repository-4.png "KV-Repository")
 
-This solution works is by analyzing two factors. The first one, is the detection of the location of the table in the document (1). Second is to map the results/data with the standard schema in order to be properly extracted to the ERP system (2).
+Diese Lösung funktioniert durch die Analyse von zwei Faktoren. Der erste Faktor ist die Erkennung des Standorts der Tabelle im Dokument (1). Der zweite Faktor ist die Zuordnung der Ergebnisse/Daten mit dem Standard-Schema, um sie ordnungsgemäß in das ERP-System zu extrahieren (2).
 
-It is important that the column caption is recognized and can be assigned to the correct values. The “accuracy” becomes higher, the more synonyms are assigned to a column caption.
+Es ist wichtig, dass die Spaltenbeschriftung erkannt und den richtigen Werten zugeordnet werden kann. Die "Genauigkeit" wird höher, je mehr Synonyme einer Spaltenbeschriftung zugeordnet sind.
 
-(1) The recognition function detects where the table starts and ends. The mapping of the data can be conducted across all tables.
+(1) Die Erkennungsfunktion erkennt, wo die Tabelle beginnt und endet. Die Zuordnung der Daten kann über alle Tabellen hinweg durchgeführt werden.
 
-![Table](/_images/te/Tabel.png)
+![Tabelle](/_images/te/Tabel.png "Tabelle")
 
-(2) The standard schema for mapping columns is configured by PolyDocs GmbH i. Gr. That means that standard columns like position, description, amount, etc. are included in this mapping file:
+(2) Das Standard-Schema für die Zuordnung von Spalten wird von Polydocs GmbH i. Gr. konfiguriert. Das bedeutet, dass Standardspalten wie Position, Beschreibung, Menge, Einzelpreis, Gesamtbetrag usw. in dieser Zuordnungsdatei enthalten sind:
 
 - Position
-- Item number
-- Description
-- Quantity
-- Unit price
-- Total amount
+- Artikelnummer
+- Beschreibung
+- Menge
+- Einzelpreis
+- Gesamtbetrag

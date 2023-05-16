@@ -1,34 +1,34 @@
 ---
-title: "Limitations of KV² Plugin"
-description: The KV² Plugin faces some small limitations for the correct extraction of header and footer fields. In this documentation you will find a list with the main limitations, the reason for it and the proposed "solution".
+title: "Einschränkungen des KV²-Plugins"
+description: "Das KV²-Plugin hat einige kleine Einschränkungen bei der korrekten Extraktion von Header- und Footer-Feldern. In dieser Dokumentation finden Sie eine Liste mit den wichtigsten Einschränkungen, dem Grund dafür und der vorgeschlagenen 'Lösung' für den Benutzer."
 date: "2021-11-05"
 tags:
   - KV²
   - Plugin
   - Ephesoft
-  - Limitations
+  - Einschränkungen
 ---
 
 **Version: 1.0.11**
 
-The KV² Plugin faces some small limitations for the correct extraction of header and footer fields. In this documentation you will find a list with the main limitations, the reason for it and the proposed "solution" for the user.
+Das KV²-Plugin hat einige kleine Einschränkungen bei der korrekten Extraktion von Header- und Footer-Feldern. In dieser Dokumentation finden Sie eine Liste mit den wichtigsten Einschränkungen, dem Grund dafür und der vorgeschlagenen "Lösung" für den Benutzer.
 
-## 1\. Processing of multiple pages
+## 1. Verarbeitung von mehreren Seiten
 
-**Description of the limitation**
+**Beschreibung der Einschränkung**
 
-For this case we are going to use the example with invoices. The KV² Plugin is capable of self-learning and training from different document types, which also means that different supplier invoice templates are trained.
+Für diesen Fall verwenden wir das Beispiel mit Rechnungen. Das KV²-Plugin ist in der Lage, selbst zu lernen und sich von verschiedenen Dokumententypen zu trainieren, was auch bedeutet, dass verschiedene Lieferantenrechnungsvorlagen trainiert werden.
 
-The main issue displayed here is when a "trained" supplier has invoices fluctuating from one to multiple pages. The reason for that is because even if the supplier has been already "trained" by the user, the extraction might fail if the trained extraction rules are presented on another page. See process underneath:
+Das Hauptproblem hierbei ist, wenn ein "trainierter" Lieferant Rechnungen mit einer oder mehreren Seiten hat. Der Grund dafür ist, dass die Extraktion fehlschlagen kann, auch wenn der Lieferant bereits vom Benutzer "trainiert" wurde, wenn die trainierten Extraktionsregeln auf einer anderen Seite präsentiert werden. Siehe Prozess unten:
 
-![](/_images/doc2/Screenshot-2021-11-05-at-12.25.17-1024x730.png)
+![Screenshot-2021-11-05-at-12.25.17](/assets/images/Screenshot-2021-11-05-at-12.25.17.png)
 
-a) The user has trained the supplier "Banana" with an invoice with just one page. That means that the extraction rules are going to be determined on that first page. Specially fields like other custom fields that might appear not on the first page are going to present a problem for other multiple pages examples.
+a) Der Benutzer hat den Lieferanten "Banana" mit einer Rechnung mit nur einer Seite trainiert. Das bedeutet, dass die Extraktionsregeln auf der ersten Seite bestimmt werden. Insbesondere Felder wie andere benutzerdefinierte Felder, die möglicherweise nicht auf der ersten Seite erscheinen, werden bei anderen mehrseitigen Beispielen ein Problem darstellen.
 
-![](/_images/doc2/Screenshot-2021-11-05-at-12.30.41-1024x661.png)
+![Screenshot-2021-11-05-at-12.30.41](/assets/images/Screenshot-2021-11-05-at-12.30.41.png)
 
-b) The second scenario is when the same supplier "Banana" has send an invoice with more than just one page. Previously the extraction rules for the fields have been determined for page one. But, more specifically for additional custom fields, these are presented on a completely other page.
+b) Das zweite Szenario ist, wenn derselbe Lieferant "Banana" eine Rechnung mit mehr als einer Seite gesendet hat. Zuvor wurden die Extraktionsregeln für die Felder für Seite eins bestimmt. Aber insbesondere für zusätzliche benutzerdefinierte Felder werden diese auf einer völlig anderen Seite präsentiert.
 
-**Proposed solution for the user**
+**Vorgeschlagene Lösung für den Benutzer**
 
-When presented with such a case the user has to take into account this limitation. This means the user will need to "re-learn" independently the second scenario (and future scenarios) again If further issues appear the user can always advise us with the available feedback function on the 5th tab (validation screen).
+Wenn ein solcher Fall auftritt, muss der Benutzer diese Einschränkung berücksichtigen. Das bedeutet, dass der Benutzer das zweite Szenario (und zukünftige Szenarien) unabhängig "neu lernen" muss. Wenn weitere Probleme auftreten, kann der Benutzer uns über die verfügbare Feedback-Funktion auf dem 5. Tab (Validierungsbildschirm) informieren.

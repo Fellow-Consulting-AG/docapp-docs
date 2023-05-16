@@ -1,88 +1,88 @@
 ---
-title: "OCR Server Process"
-description: This is a documentation how to process the OCR Server. First Process step is designed for the upload of your pdf document.
+title: "OCR Server Prozess"
+description: "Erfahren Sie, wie Sie den OCR Server nutzen können, um Ihre PDF-Dokumente zu verarbeiten. Der erste Schritt besteht darin, Ihr Dokument hochzuladen."
 date: "2021-07-05"
 tags:
   - OCR
   - Server
 ---
 
-![](/_images/ocr/image-9-1024x50.png)
+<img src="/_images/ocr/image-9-1024x50.png" alt="OCR Server Prozess" />
 
-This Process step is designed for the upload of your pdf document. When you open it up, you are asked to post and then to "try it out" in the top right corner.
+Dieser Prozessschritt ist für das Hochladen Ihres PDF-Dokuments vorgesehen. Wenn Sie ihn öffnen, werden Sie aufgefordert, es zu posten und dann in der oberen rechten Ecke auf "Ausprobieren" zu klicken.
 
-![](/_images/ocr/image-10-1024x143.png)
+<img src="/_images/ocr/image-10-1024x143.png" alt="OCR Server Prozess" />
 
-After doing so, you are able to choose different parameters for the OCR transformation. These parameters define the quality of our server as they indicate various functionalities of it.
+Nachdem Sie dies getan haben, können Sie verschiedene Parameter für die OCR-Transformation auswählen. Diese Parameter definieren die Qualität unseres Servers, da sie verschiedene Funktionalitäten angeben.
 
-## Parameters
+## Parameter
 
-![](/_images/ocr/image-11.png)
+<img src="/_images/ocr/image-11.png" alt="OCR Server Prozess" />
 
-The parameters show the name, the description and a field for either true/false, a number to be typed in, or a three digit langauage code to be chosen.
+Die Parameter zeigen den Namen, die Beschreibung und ein Feld für entweder true/false, eine einzugebende Zahl oder einen dreistelligen Sprachcode, der ausgewählt werden muss.
 
-We will now explain the various parameters:
+Wir werden nun die verschiedenen Parameter erklären:
 
-**JPG quality** refers to the JPEG Compression Setting, which is by default set to 1.
+**JPG-Qualität** bezieht sich auf die JPEG-Komprimierungseinstellung, die standardmäßig auf 1 eingestellt ist.
 
-**Optimize** refers to the general Compression Setting, which is by default set to 1.
+**Optimieren** bezieht sich auf die allgemeine Komprimierungseinstellung, die standardmäßig auf 1 eingestellt ist.
 
-**PDFa** allows you to choose between a pdf or a pdf format for the transformed document you will receive.
+**PDFa** ermöglicht es Ihnen, zwischen einem PDF- oder einem PDF-Format für das transformierte Dokument zu wählen, das Sie erhalten werden.
 
-**Language** allows you to type in a three digit language code for the language your document is written in. This is important for our server to understand your document.
+**Sprache** ermöglicht es Ihnen, einen dreistelligen Sprachcode für die Sprache einzugeben, in der Ihr Dokument geschrieben ist. Dies ist wichtig, damit unser Server Ihr Dokument verstehen kann.
 
-**Deskew** (true/false): Decide whether you want your document deskewed or not.
+**Deskew** (true/false): Entscheiden Sie, ob Sie Ihr Dokument entzerren möchten oder nicht.
 
-**Clean** (true/false): Decide whether you want your document cleaned before transformation or not.
+**Clean** (true/false): Entscheiden Sie, ob Sie Ihr Dokument vor der Transformation bereinigen möchten oder nicht.
 
-**Final** (true/false): Decide whether you want your document cleaned after transformation or not.
+**Final** (true/false): Entscheiden Sie, ob Sie Ihr Dokument nach der Transformation bereinigen möchten oder nicht.
 
-**Background** (true/false): Decide whether you want background removed or not.
+**Hintergrund** (true/false): Entscheiden Sie, ob Sie den Hintergrund entfernen möchten oder nicht.
 
-**Rotate** (true/false): Decide whether you want pages to be rotated.
+**Drehen** (true/false): Entscheiden Sie, ob Sie möchten, dass Seiten gedreht werden.
 
-**Force** (true/false): Decide whether you want OCR to be forced, even if it will not be perfect.
+**Force** (true/false): Entscheiden Sie, ob OCR erzwungen werden soll, auch wenn es nicht perfekt sein wird.
 
-**Blank\_pages** (true/false): Decide whether you want blank pages to be removed out of your document.
+**Leere_Seiten** (true/false): Entscheiden Sie, ob leere Seiten aus Ihrem Dokument entfernt werden sollen.
 
-**Skip\_Text** pages (true/false): Decide whether you want unnecessary text to be skipped.
+**Skip\_Text** pages (true/false): Entscheiden Sie, ob unnötiger Text übersprungen werden soll.
 
-## How do you want to receive your document?
+## Wie möchten Sie Ihr Dokument erhalten?
 
-![](/_images/ocr/image-13-1024x94.png)
+<img src="/_images/ocr/image-13-1024x94.png" alt="OCR Server Prozess" />
 
-Email
+E-Mail
 
-If you want your transformed document sent to you by E-Mail, you can type in your Email Adress in here. If not you will receive a download link, which we will elaborate in a moment.
+Wenn Sie möchten, dass Ihr transformiertes Dokument per E-Mail an Sie gesendet wird, können Sie hier Ihre E-Mail-Adresse eingeben. Andernfalls erhalten Sie einen Download-Link, den wir gleich erläutern werden.
 
-## Upload your document
+## Laden Sie Ihr Dokument hoch
 
-![](/_images/ocr/image-14-1024x77.png)
+<img src="/_images/ocr/image-14-1024x77.png" alt="OCR Server Prozess" />
 
-choose your file
+Wählen Sie Ihre Datei aus
 
-You are now asked to upload the document, that needs to be transformed. Please upload a **PDF file**.
+Sie werden nun aufgefordert, das Dokument hochzuladen, das transformiert werden soll. Bitte laden Sie eine **PDF-Datei** hoch.
 
-## Execute
+## Ausführen
 
-After that, please hit EXECUTE. The following screen will be visible for you.
+Danach klicken Sie bitte auf AUSFÜHREN. Der folgende Bildschirm wird für Sie sichtbar sein.
 
-![](/_images/ocr/image-15-1024x431.png)
+<img src="/_images/ocr/image-15-1024x431.png" alt="OCR Server Prozess" />
 
-You are now supposed to copy the download\_id, if you have not chosen to get the document sent to you via E-Mail.
+Sie sollen nun die Download-ID kopieren, wenn Sie sich nicht dafür entschieden haben, das Dokument per E-Mail an Sie senden zu lassen.
 
-Just copy this **download\_id** as well as the **filename** and paste it under the next row of the whole Server called "Download with Link". After that, please press execute.
+Kopieren Sie einfach diese **Download-ID** sowie den **Dateinamen** und fügen Sie sie unter der nächsten Zeile des gesamten Servers namens "Download mit Link" ein. Danach klicken Sie bitte auf AUSFÜHREN.
 
-![](/_images/ocr/image-17-1024x397.png)
+<img src="/_images/ocr/image-17-1024x397.png" alt="OCR Server Prozess" />
 
-## Download file
+## Datei herunterladen
 
-![](/_images/ocr/image-18-1024x475.png)
+<img src="/_images/ocr/image-18-1024x475.png" alt="OCR Server Prozess" />
 
-You are now able to download the file or even copy the Request URL and type it into a new tab.
+Sie können nun die Datei herunterladen oder sogar die Anforderungs-URL kopieren und in einem neuen Tab eingeben.
 
-## Done!
+## Fertig!
 
-![](/_images/ocr/image-19-1024x122.png)
+<img src="/_images/ocr/image-19-1024x122.png" alt="OCR Server Prozess" />
 
-**_Your document is now OCR'd!_**
+**_Ihr Dokument ist jetzt OCR'd!_**

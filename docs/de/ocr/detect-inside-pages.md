@@ -1,54 +1,52 @@
 ---
-title: "Detect inside pages"
-description: In this part of the API, we are able to detect and extract special parts of your document. The section is split up in three different parts.
+title: "Erkennung von Inhaltsseiten"
+description: In diesem Teil der API können wir spezielle Teile Ihres Dokuments erkennen und extrahieren. Der Abschnitt ist in drei verschiedene Teile unterteilt.
 date: "2021-07-06"
 tags:
   - OCR
   - API
 ---
 
-In this part of the API, we are able to detect and extract special parts of your document. The section is split up in three different parts:
+In diesem Teil der API können wir spezielle Teile Ihres Dokuments erkennen und extrahieren. Der Abschnitt ist in drei verschiedene Teile unterteilt:
 
-![](/_images/doc2/image-21-1024x194.png)
+![Erkennung von Inhaltsseiten](/_images/doc2/image-21-1024x194.png "Erkennung von Inhaltsseiten")
 
-## Detect blank pages
+## Erkennung von leeren Seiten
 
 TBD
 
-## Detect language
+## Erkennung von Sprache
 
-![](/_images/doc2/image-22-1024x252.png)
+![Erkennung von Sprache](/_images/doc2/image-22-1024x252.png "Erkennung von Sprache")
 
-This functionality allows you to put in a text of your choice and our API will recognize the language it is written in.
+Diese Funktion ermöglicht es Ihnen, einen Text Ihrer Wahl einzugeben und unsere API erkennt automatisch die Sprache, in der er geschrieben ist.
 
-### _Done!_
+### _Fertig!_
 
-## Detect tables
+## Erkennung von Tabellen
 
-We are now diving into a table extraction part of the API, which will automatically extract metadata out of your document.
+Wir tauchen nun in einen Teil der API ein, der sich mit der Extraktion von Tabellen befasst und automatisch Metadaten aus Ihrem Dokument extrahiert.
 
-To start off, in this section the API once again allows you to have your results shown in a response body or sent to you via E-Mail. If you choose to have it sent to you via E-Mail, just type n your adress at the start of the section.
+Um zu beginnen, ermöglicht Ihnen die API auch in diesem Abschnitt, Ihre Ergebnisse in einer Antwort oder per E-Mail zu erhalten. Wenn Sie sich dafür entscheiden, sie per E-Mail zu erhalten, geben Sie einfach Ihre Adresse am Anfang des Abschnitts ein.
 
-Now you are asked to load up your document before choosing parameters again.
+Nun werden Sie aufgefordert, Ihr Dokument hochzuladen, bevor Sie erneut Parameter auswählen.
 
-### Functionalities and Parameters
+### Funktionalitäten und Parameter
 
-**Report** (true/false) allows you to choose whether or not to receive an accuracy report.
+**Bericht** (true/false) ermöglicht es Ihnen, zu wählen, ob Sie einen Genauigkeitsbericht erhalten möchten oder nicht.
 
-![](/_images/doc2/image-23.png)
+![Beispiel für einen Genauigkeitsbericht](/_images/doc2/image-23.png "Beispiel für einen Genauigkeitsbericht")
 
-Example for an accuracy report
+**Gitter und Kontur** (true/false): Dieser Parameter entscheidet, ob Sie das Dokument zusätzlich zu Ihren extrahierten Daten als Base64-Datei erhalten. Dies kann hilfreich sein, ist aber für die allgemeine Verwendung nicht unbedingt erforderlich.
 
-**Grid and contour** (true/false): This parameters decides on whether or not you will receive the document in a base64 file on top of your extracted data. This might be helpful, for the general usage it is not necessary though.
+**Modus** (Stream/Lattice) entscheidet darüber, wie die Tabelle extrahiert wird. Wir empfehlen, dies auf Auto zu lassen, da beide Methoden dieselben Metadaten extrahieren sollten.
 
-**Mode** (stream/lattice) decides on the way the table is extracted. We recommend to leave this on auto, since both ways should extract the same metadata.
+**Format** (Excel, Json, HTML) ermöglicht es Ihnen, das Format auszuwählen, in dem Ihre Metadaten extrahiert werden sollen.
 
-**Format** (Excel, Json, HTML) lets you choose the format you want your metadata extracted in.
+### Ausführen
 
-### Execute
+Nach dem Klicken auf "Ausführen" erhalten Sie Ihre extrahierten Daten im Code-Format wie unten gezeigt oder Sie lassen sich die Metadaten per E-Mail zusenden:
 
-After hitting execute, you will receive your extracted data in code format like shown underneath, or you will have the metadata sent to you via E-Mail:
+![Extrahierte Daten im Code-Format](/_images/doc2/image-24-1024x369.png "Extrahierte Daten im Code-Format")
 
-![](/_images/doc2/image-24-1024x369.png)
-
-### _Done!_
+### _Fertig!_

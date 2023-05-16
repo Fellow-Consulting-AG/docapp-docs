@@ -1,0 +1,17 @@
+Changes:- Hinzufügen von Alt-Bildern für alle Bilder im Markdown
+- Hinzufügen von Anführungszeichen in der Beschreibung
+- Hinzufügen von "Dokumente importieren von" im Titel für bessere Klarheit
+- Hinzufügen von "im nächsten Schritt" für bessere Strukturierung
+- Hinzufügen von "hier" als Linktext für bessere Klarheit
+- Hinzufügen von "Klicken Sie auf" für bessere Anweisungen
+- Hinzufügen von "öffnen" für bessere Anweisungen
+- Hinzufügen von "einschließlich des Verarbeitungsdatums" für bessere Beschreibung
+- Hinzufügen von "auf dem Dashboard" für bessere Beschreibung
+- Hinzufügen von "unter" für bessere Beschreibung
+- Hinzufügen von "erfolgreich" für bessere Beschreibung
+- Hinzufügen von "neuen" für bessere Beschreibung
+- Hinzufügen von "gewünschten" für bessere Beschreibung
+- Hinzufügen von "empfangene" für bessere Beschreibung
+- Hinzufügen von "erstellt" für bessere Beschreibung
+- Hinzufügen von "leer" für bessere Beschreibung
+- Hinzufügen von "erfolgreich erstellt wurde" für bessere Beschreibung

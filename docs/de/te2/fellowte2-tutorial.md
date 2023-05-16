@@ -1,6 +1,6 @@
 ---
-title: "TE² Tutorial"
-description: This is a step by step guide how to use our TE² Plugin after you have installed and configured it. You will find all steps in Ephesoft that have do be proceeded to get to the table view.
+title: "TE² Tutorial: Schritt-für-Schritt-Anleitung für das Table Extraction Plugin"
+description: "Erfahren Sie, wie Sie das TE² Plugin verwenden, nachdem Sie es installiert und konfiguriert haben. In diesem Tutorial finden Sie alle Schritte in Ephesoft, die durchgeführt werden müssen, um zur Tabellenansicht zu gelangen."
 date: "2021-07-05"
 tags:
   - TE²
@@ -9,74 +9,71 @@ tags:
   - Table Extraction
 ---
 
-### Prerequisites
+### Voraussetzungen
 
-To work with this tutorial you have to complete [Installation & Configuration](/te2/install/) Section for this Plugin.
+Um dieses Tutorial zu verwenden, müssen Sie den Abschnitt [Installation & Konfiguration](/te2/install/) für dieses Plugin abgeschlossen haben.
 
 * * *
 
-### How To Use KV² Plugin
+### Wie man das KV² Plugin verwendet
 
-##### **Step 0: Log-in**
+##### **Schritt 0: Einloggen**
 
-- log into the Ephesoft Transact Software with username and password
+- Melden Sie sich mit Benutzername und Passwort in der Ephesoft Transact Software an.
 
-![](/_images/doc2/login1Unbenannt.png)
+![Einloggen in Ephesoft Transact Software](/_images/doc2/login1Unbenannt.png)
 
-![](/_images/doc2/login2Unbenannt.png)
+![Ephesoft Transact Software Dashboard](/_images/doc2/login2Unbenannt.png)
 
-- After login you see the menu on the left side with two modules: Administrator & Operator with their defined functions:
+- Nach dem Einloggen sehen Sie das Menü auf der linken Seite mit zwei Modulen: Administrator & Operator mit ihren definierten Funktionen:
 
 <table><tbody><tr><td><strong>Administrator</strong></td><td><strong>Operator</strong></td></tr><tr><td>Batch Class Management</td><td>Batch List</td></tr><tr><td>Batch Instance Management</td><td>Review Validate</td></tr><tr><td>Folder Management</td><td>Web Scanner</td></tr><tr><td>System Configuration</td><td>Upload New Document</td></tr><tr><td>Report</td><td></td></tr></tbody></table>
 
-#### **Step 1: Interface application of the FellowTE2 Plugin**
+#### **Schritt 1: Anwendungsoberfläche des FellowTE2 Plugins**
 
-- Upload your documents through the Operator Module in “Upload Batch”:
+- Laden Sie Ihre Dokumente über das Operator-Modul in "Upload Batch" hoch:
 
+![Dokumente hochladen in Ephesoft Transact Software](/_images/doc2/step1_1.png)
 
-![](/_images/doc2/step1_1.png)
+- Starten Sie den Batch mit der entsprechenden Batch-Klasse.
 
-- Start the batch with the according batch class.
+![Batch starten in Ephesoft Transact Software](/_images/doc2/startbatch.png)
 
-![](/_images/doc2/startbatch.png)
+- Warten Sie im Administrator-Modul in "Batch Instance Management", bis der Batch verarbeitet und zur Validierung bereit ist.
 
-- Wait in the Administrator Module in “Batch Instance Management” for the batch to be processed and ready for validation.
+![Batch-Verarbeitung in Ephesoft Transact Software](/_images/doc2/Process3Unbenannt.png)
 
-![](/_images/doc2/Process3Unbenannt.png)
+- Wählen Sie Ihren Batch in der Liste aus und klicken Sie auf "Öffnen", um den Batch zu öffnen und die Header- und Footer-Felder zu validieren:
 
-- Select your Batch and in the list and click to open the batch in order to validate the header and footer fields:
+![Batch-Validierung in Ephesoft Transact Software](/_images/doc2/4-open-batchUnbenannt.png)
 
-![](/_images/doc2/4-open-batchUnbenannt.png)
+- Sie werden nun zum Ephesoft-Validierungsfenster weitergeleitet. Neben den Optionen "Validieren", "Nächster Batch", "Zusammenführen", "Aufteilen" und "Mehr" finden Sie hier den Button, um zur "Table"-Ansicht zu gelangen.
 
-- Now you will be redirected to the Ephesoft Validation Window.
-    Besides the options Validate, Next Batch, Merge, Split and More you can find here the button to access the "Table" view.
+![Ephesoft Validierungsfenster](/_images/doc2/image-39-1024x541.png)
 
+![Ephesoft Table Extraction Plugin](/_images/doc2/image-40-1024x541.png)
 
-![](/_images/doc2/image-39-1024x541.png)
+Es gibt ein Standard-Schema, das standardmäßig verwendet wird und die meisten Rechnungs- / Tabellenlayouts verarbeiten kann. Für bestimmte Rechnungs- / Tabellenlayouts gibt es spezielle (benutzerdefinierte) Layouts, und es können sicherlich weitere vorhanden sein, wenn es spezielle Anforderungen innerhalb Ihrer Organisation gibt.
 
-![](/_images/doc2/image-40-1024x541.png)
+Das Standard-Schema kann die in der folgenden Tabelle aufgeführten Werte erkennen. Wenn ein Feld, das in der Tabelle als erforderlich markiert ist, fehlt, kann diese Zeile nicht als gültige Zeile erkannt werden.
 
-There is a default schema in place which is used by default and can handle most of the Invoice/ Table layouts. For some certain Invoice / Table layouts there are special (custom) layouts in place and certainly there could be more if there are any special needs within your Organisation.
+<table><tbody><tr><td><strong>Name</strong></td><td><strong>Typ</strong></td><td><strong>Erforderlich</strong></td></tr><tr><td>POSITION</td><td>string</td><td>false</td></tr><tr><td>BESCHREIBUNG</td><td>string</td><td>true</td></tr><tr><td>ARTIKELNUMMER</td><td>string</td><td>false</td></tr><tr><td>MENGE</td><td>number</td><td>true</td></tr><tr><td>EINZELPREIS</td><td>currency</td><td>true</td></tr><tr><td>GESAMTBETRAG</td><td>currency</td><td>true</td></tr><tr><td>BESTELLNUMMER</td><td>string</td><td>false</td></tr></tbody></table>
 
-The default schema can recognize values listed in table below. If any field which is marked as required in the table below is missing, this row cannot be recognized as a valid row.
+![Ephesoft Table Extraction Plugin Schema](/_images/doc2/image-43-1024x732.png)
 
-<table><tbody><tr><td><strong>Name</strong></td><td><strong>Type</strong></td><td><strong>Required</strong></td></tr><tr><td>POSITION</td><td>string</td><td>false</td></tr><tr><td>DESCRIPTION</td><td>string</td><td>true</td></tr><tr><td>ITEM_NUMBER</td><td>string</td><td>false</td></tr><tr><td>QUANTITY</td><td>number</td><td>true</td></tr><tr><td>UNIT_PRICE</td><td>currency</td><td>true</td></tr><tr><td>TOTAL_AMOUNT</td><td>currency</td><td>true</td></tr><tr><td>PURCHASE_ORDER</td><td>string</td><td>false</td></tr></tbody></table>
+Die Backend-Intelligenz des TE²-Plugins führt eine Analyse und Optimierung der Daten- / Tabellenansicht durch, die dann vom Benutzer validiert oder korrigiert werden kann, falls erforderlich. Auch wenn die meisten Tabellen erkannt und ausgeführt werden können, gibt es einige Einschränkungen in der Technologie, d.h. dass bestimmte Arten von Tabellen nicht erkannt werden können.
 
-![](/_images/doc2/image-43-1024x732.png)
+Die folgenden Merkmale sind einige Gründe, warum Tabellen nicht extrahiert werden können:
 
-TE² plugin backend intelligence is executing and optimizing the data/ table view which can then be validated or corrected by user if needed. Even if most tables are recognized and can be executed there are some limitations in the technology, meaning that certain kinds of tables cannot be recognized.
+1. Mehrzeilige Tabellen.
+2. Gemischte Trennung von Spalten (Gitter und kein Gitter).
+3. Überlappende Tabellengitter.
+4. Zu großer Abstand zwischen den Spaltenüberschriften und den eigentlichen Zeilen.
 
-The following characteristics are some reasons on why tables can not be extracted:
+In jedem Fall werden Tabellen von PolyDocs GmbH i. Gr. analysiert, um die Möglichkeit und Durchführbarkeit der Tabellenextraktion zu bestimmen.
 
-1. Multi-line tables.
-2. Mixed separation of columns (grid and no grid mix).
-3. Table grid overlapping.
-4. Too much distance between the column headers and the actual lines.
+Beispiele:
 
-In any case, tables will be analysed by PolyDocs GmbH i. Gr. in order to determine possibility and viability of the table extraction.
+![Ephesoft Table Extraction Plugin Beispiel 1](/_images/doc2/image-41-1024x727.png)
 
-Examples:
-
-![](/_images/doc2/image-41-1024x727.png)
-
-![](/_images/doc2/image-42-1024x648.png)
+![Ephesoft Table Extraction Plugin Beispiel 2](/_images/doc2/image-42-1024x648.png)

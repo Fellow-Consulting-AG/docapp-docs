@@ -55,7 +55,7 @@ def find_md_files(directory):
                 f.close()
 
                 print("Waiting for 10 seconds...")
-                time.sleep(10)  # Wait for 60 seconds (1 minute)
+                time.sleep(1)  # Wait for 60 seconds (1 minute)
 
                 MODEL = "gpt-3.5-turbo"
                 try:
@@ -117,6 +117,6 @@ def find_md_files(directory):
                         print (f"No change for {file}")
 
 #file = "/Users/daniel/dev/docapp-docs/docs/en/doc2/keyboard.md"
-directory_path = "/Users/daniel/dev/docapp-docs/docs/de/doc2/"
+directory_path = "/Users/daniel/dev/docapp-docs/docs/de/te2/"
 find_md_files(directory_path)
 

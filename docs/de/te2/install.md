@@ -1,136 +1,130 @@
 ---
-title: "TE² Installation & Config"
-description: In this documentation you will learn how to install and configure the TE² plugin. This is done directly in Ephesoft Transact.
+title: "TE² Installation & Konfiguration"
+description: In dieser Dokumentation erfahren Sie, wie Sie das TE²-Plugin installieren und konfigurieren. Dies erfolgt direkt in Ephesoft Transact.
 date: "2021-07-05"
 tags:
   - TE²
-  - Table Extraction
+  - Tabellenextraktion
   - Plugin
   - Ephesoft
   - Installation
-  - Configuration
+  - Konfiguration
 ---
 
-# How to install & configure TE² Plugin
+# TE²-Plugin Installation & Konfiguration
 
-TE² Plugin is installed directly in Ephesoft Transact. The installation process is same for instances set up in Cloud or On Premise.
+Das TE²-Plugin wird direkt in Ephesoft Transact installiert. Der Installationsprozess ist für Cloud- oder On-Premise-Instanzen gleich.
 
-Prerequisites
-Download the TE² Plugin from here
-You must have Administration rights in Ephesoft Transact.
-You must have set up working Batch Class or install Polydocs GmbH default Batch Class for Plugin usage if no Batch Class is set up in your Ephesoft System, yet. (Contact us to get the Polydocs GmbH default Batch Class)
+Voraussetzungen
+Laden Sie das TE²-Plugin von hier herunter.
+Sie müssen Administratorrechte in Ephesoft Transact haben.
+Sie müssen eine funktionierende Batch-Klasse eingerichtet haben oder die Standard-Batch-Klasse von Polydocs GmbH für die Plugin-Verwendung installieren, wenn noch keine Batch-Klasse in Ihrem Ephesoft-System eingerichtet ist. (Kontaktieren Sie uns, um die Standard-Batch-Klasse von Polydocs GmbH zu erhalten.)
 
 ## Installation
 
-### Step 1:
+### Schritt 1:
 
-Open your Ephesoft Transact system
+Öffnen Sie Ihr Ephesoft Transact-System.
 
-![TE² - Table Extraction for Ephesoft Transact - 1 ](/_images/te/Ephesoft1.png)
+![TE² - Table Extraction für Ephesoft Transact - 1 ](/_images/te/Ephesoft1.png)
 
-### Step 2:
+### Schritt 2:
 
-As an Admin please click into the Administrator section and select eg. “Batch Class Management”. Open the menu bar on the left and click “System Configuration”.
+Als Administrator klicken Sie bitte auf den Administratorbereich und wählen z.B. "Batch-Klassen-Verwaltung". Öffnen Sie die Menüleiste auf der linken Seite und klicken Sie auf "Systemkonfiguration".
 
-![TE² - Table Extraction for Ephesoft Transact - 2 ](/_images/te/Ephesoft2.png)
+![TE² - Table Extraction für Ephesoft Transact - 2 ](/_images/te/Ephesoft2.png)
 
-### Step 3:
+### Schritt 3:
 
-Open Workflow Management
-Drag & Drop or upload the plugin zip files into the “Import Plugin” area to auto-install the plugin.
+Öffnen Sie das Workflow-Management. Ziehen Sie die Plugin-Zip-Dateien in den Bereich "Plugin importieren", um das Plugin automatisch zu installieren.
 
-Make sure that file name is exactly “fellowtable2extractionplugin.zip” and that the files are not renamed (eg by downloading multiple times) as Ephesoft cannot recognize files with another name.
+Stellen Sie sicher, dass der Dateiname genau "fellowtable2extractionplugin.zip" lautet und dass die Dateien nicht umbenannt werden (z.B. durch mehrfaches Herunterladen), da Ephesoft Dateien mit einem anderen Namen nicht erkennen kann.
 
-![TE² - Table Extraction for Ephesoft Transact - 3 ](/_images/te/Ephesoft3.png)
+![TE² - Table Extraction für Ephesoft Transact - 3 ](/_images/te/Ephesoft3.png)
 
-Make sure that the installation was successful by checking the list under Workflow Management if the new plugin is listed (sample below).
+Stellen Sie sicher, dass die Installation erfolgreich war, indem Sie die Liste unter Workflow-Management überprüfen, ob das neue Plugin aufgeführt ist (siehe Beispiel unten).
 
-![TE² - Table Extraction for Ephesoft Transact - 4 ](/_images/te/Ephesoft4.png)
+![TE² - Table Extraction für Ephesoft Transact - 4 ](/_images/te/Ephesoft4.png)
 
 
-The Installation part of the plugin is now done and it can be associated to a Batch Class and configured
+Der Installationsprozess des Plugins ist nun abgeschlossen und es kann einer Batch-Klasse zugeordnet und konfiguriert werden.
 
-## Association to Batch Class & Configuration
+## Zuordnung zur Batch-Klasse & Konfiguration
 
-### Step 1:
+### Schritt 1:
 
-Open the menu bar on the left and click “Batch Class Management” and open the Batch Class in which the plugin should run
+Öffnen Sie die Menüleiste auf der linken Seite und klicken Sie auf "Batch-Klassen-Verwaltung" und öffnen Sie die Batch-Klasse, in der das Plugin ausgeführt werden soll.
 
-![TE² - Table Extraction for Ephesoft Transact - 5 ](/_images/te/Ephesoft5.png)
+![TE² - Table Extraction für Ephesoft Transact - 5 ](/_images/te/Ephesoft5.png)
 
-### Step 2:
+### Schritt 2:
 
-Associate TE² Plugin with a Batch Class (FELLOW_TABLE2_EXTRACT)
-Click Modules and then Extraction on left side of Batch Class Configuration Screen. It will show all the Extraction modules configured for this Batch Class.
-Find FELLOW_TABLE2_EXTRACT in “Associated Plugins” column and move it to “Selected Plugins” by click the right arrow button as shown in picture below.
+Ordnen Sie das TE²-Plugin einer Batch-Klasse zu (FELLOW_TABLE2_EXTRACT). Klicken Sie auf Module und dann auf Extraction auf der linken Seite des Batch-Klassen-Konfigurationsbildschirms. Es werden alle Extraktionsmodule angezeigt, die für diese Batch-Klasse konfiguriert sind. Finden Sie FELLOW_TABLE2_EXTRACT in der Spalte "Zugeordnete Plugins" und verschieben Sie es durch Klicken auf den Pfeil nach rechts in die Spalte "Ausgewählte Plugins", wie im Bild unten gezeigt.
 
-In the “Selected Plugins” column keep the plugin FELLOW_TABLE2_EXTRACT on the bottom of the list, then click “Apply” and then click “Deploy” to activate your changes.
+Halten Sie das Plugin FELLOW_TABLE2_EXTRACT in der Spalte "Ausgewählte Plugins" unten in der Liste und klicken Sie dann auf "Anwenden" und anschließend auf "Bereitstellen", um Ihre Änderungen zu aktivieren.
 
-![TE² - Table Extraction for Ephesoft Transact - 6 ](/_images/te/Ephesoft6.png)
+![TE² - Table Extraction für Ephesoft Transact - 6 ](/_images/te/Ephesoft6.png)
 
-### Step 3:
+### Schritt 3:
 
-Configure TE² Plugin (FELLOW_TABLE2_EXTRACT)
-Expand the “Extraction” folder in the left menu and select the newly added FELLOW_TABLE2_EXTRACT module.
+Konfigurieren Sie das TE²-Plugin (FELLOW_TABLE2_EXTRACT). Erweitern Sie den Ordner "Extraktion" im linken Menü und wählen Sie das neu hinzugefügte Modul FELLOW_TABLE2_EXTRACT aus.
 
-![TE² - Table Extraction for Ephesoft Transact - 7 ](/_images/te/Ephesoft7.png)
+![TE² - Table Extraction für Ephesoft Transact - 7 ](/_images/te/Ephesoft7.png)
 
-Now set up Config details as described below and then click “Apply” and “Deploy”
+Richten Sie nun die Konfigurationsdetails wie unten beschrieben ein und klicken Sie dann auf "Anwenden" und "Bereitstellen".
 
-| Field                                          | Value                                      | Description                          |
+| Feld                                          | Wert                                       | Beschreibung                          |
 | ---------------------------------------------- | ------------------------------------------ | ------------------------------------ |
-| Table Extraction Enabled (Version:1.0.3):*     | True                                       | here you can see the version number of the installed plugin and set value “True” for plugin activation  |
-| Key Values DLF Names (Separated by &#124; symbol):* |	VAT_NO_EXTRACTED&#124;IBAN_EXTRACTED&#124;VENDOR_ID |	List of the Key Values, separated by pipe character (“&#124;”) |
-|  Fellow Webservice URL:*                       | https://cloudintegration.eu/api/fellowkv/extract_table/extract_table | link to the Fellow cloud repository  |
-| Fellow Webservice API Key:*                    | — provided by Fellow Consulting per subscription — | 	personal API key to connect to Fellow Cloud repository |
+| Tabellenextraktion aktiviert (Version:1.0.3):*     | True                                       | Hier sehen Sie die Versionsnummer des installierten Plugins und setzen den Wert "True" für die Plugin-Aktivierung.  |
+| Schlüsselwerte DLF-Namen (durch &#124; Symbol getrennt):* |	VAT_NO_EXTRACTED&#124;IBAN_EXTRACTED&#124;VENDOR_ID |	Liste der Schlüsselwerte, durch Pipe-Zeichen ("&#124;") getrennt |
+|  Fellow Webservice-URL:*                       | https://cloudintegration.eu/api/fellowkv/extract_table/extract_table | Link zum Fellow-Cloud-Repository  |
+| Fellow Webservice-API-Schlüssel:*                    | — von Fellow Consulting pro Abonnement bereitgestellt — | Persönlicher API-Schlüssel zur Verbindung mit dem Fellow-Cloud-Repository |
 
 
-before you can start using the plugin.
+Bevor Sie das Plugin verwenden können.
 
-Step 4: Create Table in your Batch Class Document Type
-NOTE: this step is only needed if you do not use Fellow Default Batch Class
+Schritt 4: Erstellen Sie eine Tabelle in Ihrem Batch-Klassen-Dokumenttyp
+HINWEIS: Dieser Schritt ist nur erforderlich, wenn Sie die Standard-Batch-Klasse von Fellow nicht verwenden.
 
-It is needed to create an invoice Table in the configuration in order that Ephesoft can show tables.
+Es ist erforderlich, eine Rechnungstabelle in der Konfiguration zu erstellen, damit Ephesoft Tabellen anzeigen kann.
 
-Open the menu and go Batch Class Management again
+Öffnen Sie das Menü und gehen Sie erneut zur Batch-Klassen-Verwaltung.
 
-![TE² - Table Extraction for Ephesoft Transact - 8 ](/_images/te/Ephesoft8.png)
+![TE² - Table Extraction für Ephesoft Transact - 8 ](/_images/te/Ephesoft8.png)
 
-Open your dedicated Batch Class
+Öffnen Sie Ihre dedizierte Batch-Klasse.
 
-![TE² - Table Extraction for Ephesoft Transact - 9 ](/_images/te/Ephesoft9.png)
+![TE² - Table Extraction für Ephesoft Transact - 9 ](/_images/te/Ephesoft9.png)
 
-Select a certain Document Type (eg. INVOICE_DE), open Folder “Index Fields”, select “Tables” and click “Add”
+Wählen Sie einen bestimmten Dokumenttyp (z.B. INVOICE_DE), öffnen Sie den Ordner "Indexfelder", wählen Sie "Tabellen" und klicken Sie auf "Hinzufügen".
 
-![TE² - Table Extraction for Ephesoft Transact - 10 ](/_images/te/Ephesoft10.png)
+![TE² - Table Extraction für Ephesoft Transact - 10 ](/_images/te/Ephesoft10.png)
 
-Add new Table with Name “InvoiceTable” and click Apply and then Deploy (see two screenshots below)
+Fügen Sie eine neue Tabelle mit dem Namen "InvoiceTable" hinzu und klicken Sie auf "Anwenden" und dann auf "Bereitstellen" (siehe zwei Screenshots unten).
 
-![TE² - Table Extraction for Ephesoft Transact - 11 ](/_images/te/Ephesoft11.png)
+![TE² - Table Extraction für Ephesoft Transact - 11 ](/_images/te/Ephesoft11.png)
 
-![TE² - Table Extraction for Ephesoft Transact - 12 ](/_images/te/Ephesoft12.png)
+![TE² - Table Extraction für Ephesoft Transact - 12 ](/_images/te/Ephesoft12.png)
 
-Open newly created folder “InvoiceTable” and add a Columns with Name “DESCRIPTION”
+Öffnen Sie den neu erstellten Ordner "InvoiceTable" und fügen Sie eine Spalte mit dem Namen "DESCRIPTION" hinzu.
 
-![TE² - Table Extraction for Ephesoft Transact - 13 ](/_images/te/Ephesoft13.png)
+![TE² - Table Extraction für Ephesoft Transact - 13 ](/_images/te/Ephesoft13.png)
 
-![TE² - Table Extraction for Ephesoft Transact - 14 ](/_images/te/Ephesoft14.png)
+![TE² - Table Extraction für Ephesoft Transact - 14 ](/_images/te/Ephesoft14.png)
 
-Click Apply and Deploy
+Klicken Sie auf "Anwenden" und "Bereitstellen".
 
-Note that the step “Create Table in your Batch Class Document Type” Must be done for each Document Type.
-Once you have it done in one Document Type you can export from there and import to other Document Types:
+Beachten Sie, dass der Schritt "Erstellen Sie eine Tabelle in Ihrem Batch-Klassen-Dokumenttyp" für jeden Dokumenttyp durchgeführt werden muss.
+Sobald Sie es für einen Dokumenttyp erledigt haben, können Sie es exportieren und in andere Dokumenttypen importieren:
 
 Export
 
-![TE² - Table Extraction for Ephesoft Transact - 15 ](/_images/te/Ephesoft15.png)
+![TE² - Table Extraction für Ephesoft Transact - 15 ](/_images/te/Ephesoft15.png)
 
-Import to other Document type and click Apply and Deploy
+Importieren Sie es in einen anderen Dokumenttyp und klicken Sie auf "Anwenden" und "Bereitstellen".
 
-![TE² - Table Extraction for Ephesoft Transact - 16 ](/_images/te/Ephesoft16.png)
+Die Zuordnungs- und Konfigurationsphase des Plugins ist nun abgeschlossen. Beachten Sie, dass Sie den Transact-Server neu starten müssen.
 
-The association and configuration part of the plugin is now done. Note that you have to re-start Transact server
+## FINAL Schritt 5:
 
-## FINAL Step 5:
-
-Re-start Transact Server see Article ho to restart Transact
+Starten Sie den Transact-Server neu. Lesen Sie den Artikel, wie Sie Transact neu starten können.

@@ -1,0 +1,9 @@
+Changes:- Übersetzung des Textes ins Deutsche
+- Hinzufügen von Alt-Bildern, wo nötig
+- Hinzufügen von Anführungszeichen in der Beschreibung
+- Hinzufügen von Keywords in der Beschreibung und den Tags
+- Hinzufügen von Hervorhebungen und Aufzählungen, um den Text lesbarer zu machen
+- Hinzufügen von Absätzen, um den Text besser zu strukturieren
+- Hinzufügen von Überschriften, um den Text besser zu gliedern
+- Hinzufügen von Abschnitten, um den Text besser zu organisieren
+- Hinzufügen von Keywords in den Überschriften und Abschnitten, um die SEO zu verbessern

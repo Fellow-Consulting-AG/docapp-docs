@@ -1,0 +1,6 @@
+Changes:- Der Titel wurde optimiert, um klarer zu sein und das Keyword "Table Extraction Plugin" hervorzuheben.
+- Die Beschreibung wurde optimiert, um den Inhalt des Tutorials besser zu beschreiben und das Keyword "Tabellenansicht" hervorzuheben.
+- Alt-Bilder wurden hinzugefügt, um die Benutzerfreundlichkeit und Barrierefreiheit zu verbessern.
+- Der Text wurde ins Deutsche übersetzt und an einigen Stellen optimiert, um die Lesbarkeit und Verständlichkeit zu verbessern.
+- Die Überschriften wurden optimiert, um den Inhalt besser zu strukturieren und das Keyword "TE² Plugin" hervorzuheben.
+- Die Tabelle wurde optimiert, um die Lesbarkeit zu verbessern und das Keyword "Table Extraction Plugin" hervorzuheben.

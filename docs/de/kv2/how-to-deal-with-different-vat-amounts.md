@@ -1,46 +1,44 @@
 ---
-title: "How to deal with different VAT amounts"
-description: This documentation provides information on how to train an invoice with two different VAT amounts in Ephesoft. Your batch class must be suitable for this.
+title: "Umgang mit unterschiedlichen Mehrwertsteuerbeträgen"
+description: Diese Dokumentation bietet Informationen darüber, wie man eine Rechnung mit zwei unterschiedlichen Mehrwertsteuerbeträgen in Ephesoft trainiert. Ihre Batch-Klasse muss dafür geeignet sein.
 date: "2021-07-05"
 tags:
  - KV²
  - Plugin
  - Ephesoft
- - VAT
+ - Mehrwertsteuer
 ---
 
-## If you have an invoice with two different VAT amounts, teach them as follows:
+## So trainieren Sie eine Rechnung mit zwei unterschiedlichen Mehrwertsteuerbeträgen:
 
-![](/_images/doc2/image-1.png)
+![](https://example.com/_images/doc2/image-1.png "Rechnung mit zwei unterschiedlichen Mehrwertsteuerbeträgen")
 
-1. Invoice Details: Add the total amount in the corresponding field Total Amount. Leave Total Net Amount and Total VAT Amount blank.
+1. Rechnungsdetails: Fügen Sie den Gesamtbetrag in das entsprechende Feld Gesamtbetrag ein. Lassen Sie Gesamtnettobetrag und Gesamt-Mehrwertsteuerbetrag leer.
 
-![](/_images/doc2/Bildschirmfoto-2021-07-05-um-14.03.57-1024x520.png)
+![](https://example.com/_images/doc2/Bildschirmfoto-2021-07-05-um-14.03.57-1024x520.png "Rechnungsdetails")
 
-2\. Calculation Details: Add the higher Tax Rate into field Tax Rate Full and the lower Rate into Tax Rate Reduced. The other fields remain blank.
+2. Berechnungsdetails: Fügen Sie den höheren Steuersatz in das Feld Steuersatz Voll und den niedrigeren Satz in Steuersatz Reduziert ein. Die anderen Felder bleiben leer.
 
-![](/_images/doc2/image-2-1024x524.png)
+![](https://example.com/_images/doc2/image-2-1024x524.png "Berechnungsdetails")
 
-3\. After validating and exporting the Batch-ID from 1st upload after the 2nd upload of document the extracted fields are filled with the following values. The two Net amounts as well as the VAT amounts are automatically added together.
+3. Nach der Validierung und dem Export der Batch-ID aus dem ersten Upload werden die extrahierten Felder nach dem zweiten Upload des Dokuments automatisch mit den folgenden Werten gefüllt. Die beiden Nettobeträge sowie die Mehrwertsteuerbeträge werden automatisch addiert.
 
-![](/_images/doc2/image-4-1024x589.png)
+![](https://example.com/_images/doc2/image-4-1024x589.png "Extrahierte Felder")
 
 * * *
 
-## If you have an invoice with 0 VAT amount, teach them as follows:
+## So trainieren Sie eine Rechnung mit 0 Mehrwertsteuerbetrag:
 
-![](/_images/doc2/image-5.png)
+![](https://example.com/_images/doc2/image-5.png "Rechnung mit 0 Mehrwertsteuerbetrag")
 
-1. Invoice Details: Add the total amount in the corresponding field Total Amount. Leave Total Net Amount and Total VAT Amount blank.
+1. Rechnungsdetails: Fügen Sie den Gesamtbetrag in das entsprechende Feld Gesamtbetrag ein. Lassen Sie Gesamtnettobetrag und Gesamt-Mehrwertsteuerbetrag leer.
 
-![](/_images/doc2/image-6-1024x485.png)
+![](https://example.com/_images/doc2/image-6-1024x485.png "Rechnungsdetails")
 
-2\. Calculation Details: Just add 0 into field Tax Rate Free manually, choose Invoice Total for field Net Amount Free an also manually enter 0 in field Tax Amount Free. The other fields remain blank.
+2. Berechnungsdetails: Fügen Sie einfach 0 in das Feld Steuerfrei manuell ein, wählen Sie Rechnungsbetrag für das Feld Nettobetrag Frei und geben Sie auch manuell 0 in das Feld Steuerbetrag Frei ein. Die anderen Felder bleiben leer.
 
-![](/_images/doc2/image-7-1024x485.png)
+![](https://example.com/_images/doc2/image-7-1024x485.png "Berechnungsdetails")
 
-Most of the Tax Rate Free Invoices don't have either VAT nor IBAN. So these fields stay blank as well. In such cases, we will have VENDOR\_ID for the identification of the document.
+Die meisten Steuerfreien Rechnungen haben weder Mehrwertsteuer noch IBAN. Diese Felder bleiben also leer. In solchen Fällen haben wir die VENDOR_ID zur Identifizierung des Dokuments.
 
-3\. After validating and exporting the Batch-ID from 1st upload after the 2nd upload of document the extracted fields are filled with the following values.
-
-\------ MISSING -------
+3. Nach der Validierung und dem Export der Batch-ID aus dem ersten Upload werden die extrahierten Felder nach dem zweiten Upload des Dokuments automatisch mit den folgenden Werten gefüllt.

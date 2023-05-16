@@ -1,144 +1,141 @@
 ---
-title: "Training KV2 for Table Extraction"
-description: The function explained in this documentation is used for extracting the table from all types of documents (Invoices, Contracts, Forms, Medical Prescriptions etc.)
+title: "KV2-Training zur Tabellenextraktion"
+description: In dieser Dokumentation wird die Funktion zur Extraktion von Tabellen aus verschiedenen Dokumenttypen (Rechnungen, Verträgen, Formularen, medizinischen Rezepten usw.) erklärt.
 date: "2021-12-16"
 tags:
   - KV²
   - Plugin
   - Ephesoft
   - Training
-  - Table Extraction
+  - Tabellenextraktion
 ---
 
-The function explained in this documentation is used for extracting the table from all types of documents (Invoices, Contracts, Forms, Medical Prescriptions etc.). The extraction of data from tables can be achieved by following the steps described below:
+In dieser Dokumentation wird die Funktion zur Extraktion von Tabellen aus verschiedenen Dokumenttypen (Rechnungen, Verträgen, Formularen, medizinischen Rezepten usw.) erklärt. Die Extraktion von Daten aus Tabellen kann durch folgende Schritte erreicht werden:
 
-1\. Login to your account with your Email and Password.
+1\. Melden Sie sich mit Ihrer E-Mail-Adresse und Ihrem Passwort in Ihrem Konto an.
 
-2\. Import the desired document on your dashboard.
+2\. Importieren Sie das gewünschte Dokument auf Ihr Dashboard.
 
-3\. Click on the document to Open it in the edit screen.
+3\. Klicken Sie auf das Dokument, um es im Bearbeitungsbildschirm zu öffnen.
 
-4\. Scroll down to **Line Items** (located at the very bottom right of the available fields).
+4\. Scrollen Sie nach unten zu **Zeilenartikel** (befindet sich ganz unten rechts der verfügbaren Felder).
 
-5\. Click on the table icon inside the textbox
+5\. Klicken Sie auf das Tabellensymbol innerhalb des Textfeldes.
 
-![](/_images/doc2/Line-Items-1-1024x194.png)
+![Line Items](/_images/doc2/Line-Items-1-1024x194.png "Line Items")
 
-**TIP**: If no table extraction is to be performed in the selected document, this can be set with the symbol next to "Line Items".
+**TIPP**: Wenn keine Tabellenextraktion im ausgewählten Dokument durchgeführt werden soll, kann dies mit dem Symbol neben "Zeilenartikel" festgelegt werden.
 
-![](/_images/doc2/Line-Items-2.png)
+![Line Items 2](/_images/doc2/Line-Items-2.png "Line Items 2")
 
-6\. The following screen will be displayed.
+6\. Der folgende Bildschirm wird angezeigt.
 
-![](/_images/doc2/TE_Adjust-table-1024x548.png)
+![Adjust Table](/_images/doc2/TE_Adjust-table-1024x548.png "Adjust Table")
 
-The following options and functions are now available (displayed on the left half of the screen):
+Die folgenden Optionen und Funktionen sind jetzt verfügbar (auf der linken Bildschirmhälfte dargestellt):
 
-- **Zoom in:** as the name suggests it allows the user to zoom in on the document
+- **Zoomen:** ermöglicht es dem Benutzer, in das Dokument hineinzuzoomen.
 
-![](/_images/doc2/zoom-in.png)
+![Zoom In](/_images/doc2/zoom-in.png "Zoom In")
 
-- **Zoom out:** as the name suggests it allows the user to zoom out on the document
+- **Zoomen raus:** ermöglicht es dem Benutzer, aus dem Dokument herauszuzoomen.
 
-![](/_images/doc2/zoom-out.png)
+![Zoom Out](/_images/doc2/zoom-out.png "Zoom Out")
 
-- **Autodetect Table:** This function is for automatically detecting the table in the document – should the plugin be unable to detect the table it has to be selected manually.
+- **Tabelle automatisch erkennen:** Diese Funktion dient zur automatischen Erkennung der Tabelle im Dokument - falls das Plugin die Tabelle nicht erkennen kann, muss sie manuell ausgewählt werden.
 
-![](/_images/doc2/autodetect-table.png)
+![Autodetect Table](/_images/doc2/autodetect-table.png "Autodetect Table")
 
-- **Select Table:** This function allows the user to manually select the desired table via drag-selection.
+- **Tabelle auswählen:** Diese Funktion ermöglicht es dem Benutzer, die gewünschte Tabelle manuell per Drag & Drop auszuwählen.
 
-![](/_images/doc2/edit-table.png)
+![Select Table](/_images/doc2/edit-table.png "Select Table")
 
-The Table can also be adjusted here (for example the height and width).
+Die Tabelle kann hier auch angepasst werden (z.B. Höhe und Breite).
 
-![](/_images/doc2/TE_adjust-table-and-save-1024x549.png)
+![Adjust and Save](/_images/doc2/TE_adjust-table-and-save-1024x549.png "Adjust and Save")
 
-adjust and save
+- **Spalten hinzufügen:** Diese Funktion ermöglicht es dem Benutzer, manuell Richtlinien hinzuzufügen, um dem System zu helfen, die richtigen Spalten (blaue Linien) zu bestimmen, wie auf dem folgenden Screenshot dargestellt.
 
-- **Add Columns:** this function allows the user to manually add guidelines to help the system determine the correct columns (blue lines) as displayed on the following screenshot
+![Add Columns](/_images/doc2/add-line.png "Add Columns")
 
-![](/_images/doc2/add-line.png)
+![Table Select 2](/_images/doc2/Table-select-2.png "Table Select 2")
 
-![](/_images/doc2/Table-select-2.png)
+Sobald diese Richtlinien hinzugefügt sind, stehen zusätzliche Funktionen zur Verfügung.
 
-Once these guidelines are added additional functions are available.
+![Extend Line](/_images/doc2/exend-line.png "Extend Line")
 
-![](/_images/doc2/exend-line.png)
+Die erste Funktion ermöglicht es dem Benutzer, alle Linien zu löschen, während die zweite Funktion diese Richtlinien auf alle Seiten des Dokuments ausdehnt.
 
-The first one allows the user to delete all lines while the second one extends these guidelines to all pages of the document.
+Wenn nur eine Linie ausgewählt ist, wird eine Löschschaltfläche hinzugefügt, mit der der Benutzer die ausgewählte Linie löschen kann.
 
-Is only one line selected, a delete button will be added, and it allows the user to delete the selected line.
+![Delete 1 Line](/_images/doc2/delete-1-line.png "Delete 1 Line")
 
-![](/_images/doc2/delete-1-line.png)
+- **Änderungen speichern:** ermöglicht es dem Benutzer, alle vorgenommenen Änderungen zu speichern.
 
-- **Save Changes:** allows the user to save any changes made.
+![Save Changes](/_images/doc2/save.png "Save Changes")
 
-![](/_images/doc2/save.png)
+**TIPP**: Wenn die Markierung der Tabelle falsch ist und gelöscht werden soll, wählen Sie die Markierung der betreffenden Tabelle aus - ein rotes Symbol wird angezeigt, das die Entfernung der Markierung ermöglicht.
 
-**TIP****:** Is the table marking wrong and should be deleted, select the marking of said table – a red symbol will appear allowing the removal of the marking.
+![Delete Table Marking](/_images/doc2/Bildschirmfoto-2021-12-16-um-14.53.08-1024x307.png "Delete Table Marking")
 
-![](/_images/doc2/Bildschirmfoto-2021-12-16-um-14.53.08-1024x307.png)
+7) Sobald die Änderungen gespeichert sind, extrahiert das Plugin automatisch die gefundenen Daten und zeigt sie in einer Tabelle auf der rechten Seite an.
 
+![Table 1](/_images/doc2/Table-1-1.png "Table 1")
 
-7) Once the changes are saved the plugin will automatically extract the found data and display it on a table to the right.
+Die verfügbaren Funktionen auf dieser Seite des Bildschirms sind wie folgt:
 
-![](/_images/doc2/Table-1-1.png)
+- **Änderungen rückgängig machen:** ermöglicht es dem Benutzer, alle Änderungen rückgängig zu machen.
 
-The available functions on this side of the screen are as follows:
+![Undo Changes](/_images/doc2/undo.png "Undo Changes")
 
-- **Revert Changes:** Allows the user to undo any changes.
+- **Erweiterte Einstellungen:** Diese Funktion ermöglicht zusätzliche Einstellungen, um die Daten weiter korrekt zu extrahieren.
 
-![](/_images/doc2/undo.png)
+![Advanced Settings 1](/_images/doc2/advanced-settings-1.png "Advanced Settings 1")
 
-- **Advanced Settings:** This function allows for additional settings to extract the data further correctly.
+Sobald ausgewählt, wird der folgende Bildschirm angezeigt:
 
-![](/_images/doc2/advanced-settings-1.png)
+![Table 2](/_images/doc2/Table-2-1.png "Table 2")
 
-Once selected the following screen will pop up:
+"Headerzeilenanzahl" definiert, wie viele Zeilen zum Header gehören. Wenn der Header beispielsweise zwei Zeilen hat, muss die entsprechende Anzahl (2 in diesem Fall) ausgewählt werden.
 
-![](/_images/doc2/Table-2-1.png)
+"Extra-Zeile in desc verschieben"
 
-“Header row count” defines how many rows are part of the header for example if the header has two rows the corresponding number (2 in this case) must be selected.
+- **Neue Zeile hinzufügen:** Fügt eine zusätzliche Zeile am unteren Rand der Tabelle hinzu.
 
-“Move Extra Row to desc”
+![Add New Line](/_images/doc2/add-new-line.png "Add New Line")
 
-- **Add new line:** Adds an additional line at the bottom of the table.
+- **Alle extrahierten Daten löschen:** Löscht alle extrahierten Daten aus der Tabelle.
 
-![](/_images/doc2/add-new-line.png)
+![Delete Extracted Data](/_images/doc2/delete-extr.-data.png "Delete Extracted Data")
 
-- **Delete all extracted data:** Deletes all extracted data from the table.
+- **Tabellenextraktion für diesen Lieferanten blockieren:** Dies muss ausgewählt werden, wenn keine Tabelle von diesem Lieferanten extrahiert werden soll.
 
-![](/_images/doc2/delete-extr.-data.png)
+![Block Table Extraction](/_images/doc2/blox-table-ex.png "Block Table Extraction")
 
-- **Block table extraction for this supplier:** This must be selected if no table should be extracted from this supplier.
+Jeder Spaltenname muss korrekt zugeordnet werden, z.B. "POS.NO." entspricht "Position".
 
-![](/_images/doc2/blox-table-ex.png)
+**Dies muss für alle Spaltennamen erfolgen - sonst wird ein Fehler produziert!**
 
-Every column name must be assigned correctly for example “POS.NO.” corresponds to “Position”.
+![Position](/_images/doc2/position-1024x590.png "Position")
 
-**This must be done for all column names – otherwise it will produce an error!**
+Wählen Sie als nächstes die drei Punkte neben der Position aus, auf die sich der Inhalt bezieht, z.B. die Positionsnummer.
 
-![](/_images/doc2/position-1024x590.png)
+![Position 2](/_images/doc2/position-2.png "Position 2")
 
-Next select the three dots next to the position to which the content is oriented for example the position number.
+Neben der Möglichkeit, die Zeile (die natürlich auch in allen anderen Spalten zu finden ist) zu löschen (über das Papierkorbsymbol), ist hier die Option "Zeilen gruppieren" wichtig.
 
-![](/_images/doc2/position-2.png)
+![Group Data](/_images/doc2/group-data-1024x495.png "Group Data")
 
-Beside the possibility to delete (via the trashcan symbol) the row (which of course can be found in all other columns as well) the option "Group Rows" is important here.
+Diese Option gruppiert alle Daten, die zur Position gehören.
 
-![](/_images/doc2/group-data-1024x495.png)
+Wenn das System leere oder unerwünschte Daten erkennt, löschen Sie sie über das lila "X" auf der linken Seite der Tabelle.
 
-This option groups all the date corresponding to the position.
+![Delete Row](/_images/doc2/delete-row.png "Delete Row")
 
-Should the system recognize empty or undesirable data delete them via the purple “X” on the left side of the table.
+Sobald die Tabelle wie gewünscht eingerichtet ist, können die Einstellungen durch Klicken auf "Speichern" gespeichert werden. Es wird den Benutzer dann sofort zum Dashboard zurückbringen.
 
-![](/_images/doc2/delete-row.png)
+![Save Settings](/_images/doc2/Bildschirmfoto-2021-12-16-um-14.41.25-1024x92.png "Save Settings")
 
-Once the table has been set up as desired, the settings can be saved by clicking on "Save". It will then immediately transport the user back to the dashboard.
+Alternativ kann das Dokument sofort exportiert werden, indem auf "Bestätigen & Exportieren" geklickt wird.
 
-![](/_images/doc2/Bildschirmfoto-2021-12-16-um-14.41.25-1024x92.png)
-
-Alternatively, the document can be exported immediately by clicking on "Confirm & Export".
-
-![](/_images/doc2/Bildschirmfoto-2021-12-16-um-14.41.30-1024x83.png)
+![Confirm and Export](/_images/doc2/Bildschirmfoto-2021-12-16-um-14.41.30-1024x83.png "Confirm and Export")

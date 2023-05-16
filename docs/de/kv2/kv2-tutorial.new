@@ -1,0 +1,106 @@
+---
+title: "KV² Tutorial: Schritt-für-Schritt-Anleitung für das Plugin"
+description: "In diesem Tutorial erfahren Sie, wie Sie das KV²-Plugin verwenden, nachdem Sie es installiert und konfiguriert haben. Sie finden alle Schritte in Ephesoft, um die korrekten Werte zu trainieren."
+date: "2021-07-02"
+tags:
+  - KV²
+  - Tutorial
+  - Plugin
+  - Ephesoft
+---
+
+## Voraussetzungen
+
+Um dieses Tutorial zu verwenden, müssen Sie den Abschnitt [Installation & Konfiguration](/kv2/installation/) für dieses Plugin abgeschlossen haben.
+
+* * *
+
+## Wie man das KV²-Plugin verwendet
+
+### Schritt 0: Anmeldung
+
+- Melden Sie sich mit Benutzername und Passwort bei der Ephesoft Transact Software an.
+
+![Anmeldeseite](/_images/doc2/login1Unbenannt.png)
+
+![Ephesoft-Startseite](/_images/doc2/login2Unbenannt.png)
+
+- Nach der Anmeldung sehen Sie das Menü mit zwei Modulen: Administrator & Operator mit ihren definierten Funktionen:
+
+| Administrator | Operator |
+| --- | --- |
+| Batch Class Management | Batch List |
+| Batch Instance Management | Review Validate |
+| Folder Management | Web Scanner |
+| System Configuration |  |
+| Report |  |
+
+### Schritt 1: Anwendung der KV²-Plugin-Schnittstelle
+
+- Laden Sie Ihre Dokumente über das Operator-Modul in "Upload Batch" hoch:
+
+![Upload Batch](/_images/doc2/step1_1.png)
+
+- Starten Sie den Batch mit der entsprechenden Batch-Klasse.
+
+![Batch starten](/_images/doc2/startbatch.png)
+
+- Warten Sie im Administrator-Modul in "Batch Instance Management", bis der Batch verarbeitet und zur Validierung bereit ist.
+
+![Batch Instance Management](/_images/doc2/Process3Unbenannt.png)
+
+- Wählen Sie Ihren Batch in der Liste aus und klicken Sie auf "Öffnen", um den Batch zu öffnen und die Header- und Footer-Felder zu validieren.
+
+![Batch öffnen](/_images/doc2/4-open-batchUnbenannt.png)
+
+- Sie werden nun zu einem neuen Fenster zur Validierung weitergeleitet. Das Dokument wird auf der rechten Seite angezeigt, der Validierungsbildschirm links davon. Hier können Sie alle extrahierten Felder überprüfen und Werte hinzufügen/korrigieren.
+
+![Validierungsbildschirm](/_images/doc2/validationScreen.png)
+
+- Gehen Sie alle Felder durch, indem Sie die "Tab"-Taste oder die Maus verwenden und den Wert überprüfen. Wenn Sie einen fehlenden oder falschen Wert bemerken, haben Sie 3 Optionen, um den korrekten Wert festzulegen:
+    - Klicken Sie in das entsprechende Feld im Validierungsbildschirm, bewegen Sie dann die Maus über das Dokument auf der rechten Seite und wählen Sie den entsprechenden Wert durch Doppelklick darauf aus. Der ausgewählte Wert wird auf dem Dokument gelb markiert und erscheint im Validierungsfeld auf der linken Seite (bevorzugt - auf diese Weise trainieren Sie, an welcher Stelle auf einer bestimmten Rechnung Sie die entsprechenden Werte finden).
+    - Klicken Sie in das entsprechende Feld im Validierungsbildschirm, bewegen Sie dann die Maus über das Dokument auf der rechten Seite und wählen Sie den entsprechenden Wert durch Klicken mit der rechten Maustaste aus, halten Sie die Maustaste gedrückt, während Sie den vollständigen Wert auswählen (er wird gelb markiert), und bestätigen Sie durch erneutes Klicken auf die rechte Taste. Der ausgewählte Wert wird auf dem Dokument gelb markiert und erscheint im Validierungsfeld auf der linken Seite (bevorzugt - auf diese Weise trainieren Sie, an welcher Stelle auf einer bestimmten Rechnung Sie die entsprechenden Werte finden).
+    - Geben Sie den Wert manuell in die Validierungszelle ein.
+    - Wenn ein Wert falsch oder unvollständig erkannt wird, klicken Sie bitte in die entsprechende Zelle, löschen Sie den Wert und wählen Sie den korrekten Wert im Dokument wie oben erklärt aus.
+
+Für Felder, die Sie im ersten Durchlauf korrigiert haben, sollten Sie den korrekten Wert gelb markiert auf dem Dokument für die nächste Rechnung sehen, die Sie für diesen Lieferanten ausführen.
+
+- Fügen Sie nun alle Felder mit den genauen Daten hinzu und validieren Sie die Rechnung, damit sie exportiert werden kann.
+
+![Validierungsschritte](/_images/doc2/validate1Unbenannt.png)
+
+![Validierungsschritte](/_images/doc2/validate2Unbenannt.png)
+
+![Validierungsschritte](/_images/doc2/validate3Unbenannt.png)
+
+Mit diesem Prozess validieren Sie nicht nur Ihr Dokument, sondern trainieren auch das Plugin. Mit einer einmaligen menschlichen Unterstützung bei der Validierung und dem Export der Dokumente werden neue Extraktionsregeln erstellt. Für den nächsten Lauf für diese Art von Dokument ist keine Anpassung oder Konfiguration der Batch-Klasse erforderlich und das Plugin erkennt Werte, die im ersten Lauf fehlten.
+
+## Verwendung der Feedback- und Support-Funktion von Fellows
+
+Das KV²-Plugin wird mit einer integrierten Feedback-Funktion geliefert, über die Sie uns Support zu jeder Dokumentenvalidierung senden können. Die Feedback-Funktion befindet sich im Tab #5 der Ephesoft-Validierungs-Benutzeroberfläche (normalerweise der letzte Tab).
+
+![Feedback-Tab](/_images/doc2/Bildschirmfoto-2021-07-12-um-17.01.16-2-1024x477.png)
+
+Wenn Sie uns Feedback senden möchten, müssen Sie zu diesem Tab wechseln und die drei Felder auf diesem Tab ausfüllen:
+
+- **Feedback-Typ** -> Hier können Sie aus der folgenden Liste auswählen.
+    _Beachten Sie, dass Support-Tickets nur erstellt werden, wenn der Feedback-Typ von "Perfect" abweicht._
+    - \--NONE--
+    - Perfect
+    - Good
+    - Bad
+    - Nothing is working
+- **Reporter-E-Mail-Adresse** -> Dies ist Ihre E-Mail-Adresse, die wir für unsere Antwort verwenden.
+- **Feedback** -> Dies ist ein Textfeld, in dem Sie uns Ihr detailliertes Feedback senden können, z. B. welcher Wert ein Problem aufwies oder nicht korrekt erkannt wurde.
+
+Wenn die Felder ausgefüllt sind, wird das Feedback während des Validierungsprozesses erstellt und direkt an unser Support-Tool gesendet, damit wir an dem Fall arbeiten können.
+
+![Feedback-Formular](/_images/doc2/Bildschirmfoto-2021-07-12-um-17.01.16-1024x477.png)
+
+Changes Made:
+- Der Titel wurde optimiert, um das Keyword "Schritt-für-Schritt-Anleitung" hinzuzufügen.
+- Die Beschreibung wurde optimiert, um das Keyword "Plugin" hinzuzufügen und den Inhalt zu präzisieren.
+- Die Überschriften wurden optimiert, um sie aussagekräftiger zu machen.
+- Alt-Bilder wurden hinzugefügt, wo sie fehlten.
+- Der Text wurde ins Deutsche übersetzt und an die deutsche Grammatik angepasst.
+- Die Änderungen wurden am Ende des Textes unter Verwendung von "Changes Made" erläutert.

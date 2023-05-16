@@ -1,0 +1,6 @@
+Changes:- Hinzufügen von Alt-Texten zu den Bildern, um die Barrierefreiheit zu verbessern und die Bildersuche zu optimieren.
+- Hinzufügen von Keywords in den Titel und die Beschreibung, um die Relevanz der Seite für Suchmaschinen zu erhöhen.
+- Hervorhebung der Wichtigkeit der Aufgabe und der Rolle des Systemadministrators, um das Verständnis und die Bedeutung der Anweisungen zu betonen.
+- Verwendung von klaren und prägnanten Anweisungen, um die Lesbarkeit und Verständlichkeit zu verbessern.
+- Verwendung von nummerierten Schritten, um die Anweisungen leichter verfolgen zu können.
+- Verwendung von Hervorhebungen, um wichtige Informationen hervorzuheben und die Lesbarkeit zu verbessern.

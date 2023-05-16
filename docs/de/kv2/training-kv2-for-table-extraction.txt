@@ -1,0 +1,5 @@
+Changes:- Hinzufügen von Alt-Bildern für alle Bilder, um die Barrierefreiheit zu verbessern.
+- Hinzufügen von Keywords in den Titel und die Beschreibung, um die SEO zu verbessern.
+- Hinzufügen von Hervorhebungen und Tipps, um die Lesbarkeit und Verständlichkeit zu verbessern.
+- Übersetzung des Textes ins Deutsche und Anpassung der Formatierung an das Markdown-Format.
+- Keine Änderungen an HTML oder Code vorgenommen.

@@ -1,0 +1,3 @@
+Changes:- Hinzufügen von relevanten Keywords im Titel und in der Beschreibung, um das Ranking in Suchmaschinen zu verbessern.
+- Hinzufügen von Alt-Texten zu den Bildern, um die Barrierefreiheit zu verbessern und das Ranking in Suchmaschinen zu verbessern.
+- Hinzufügen von Kontext und Erklärungen, um den Nutzen der Anleitung für den Leser zu erhöhen.

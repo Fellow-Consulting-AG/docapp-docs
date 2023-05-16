@@ -1,0 +1,8 @@
+Changes:- Übersetzung des Textes ins Deutsche
+- Hinzufügen von Alt-Bildern
+- Hinzufügen von Keywords in Titel und Beschreibung
+- Hinzufügen von Hervorhebungen in der Überschrift und im Text
+- Hinzufügen von Absätzen für eine bessere Lesbarkeit
+- Hinzufügen von Tabellenformatierung für eine bessere Lesbarkeit
+- Hinzufügen von Hinweisen und Erklärungen für eine bessere Verständlichkeit
+- Entfernen von unnötigen Informationen

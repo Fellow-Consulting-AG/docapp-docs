@@ -1,0 +1,5 @@
+Changes:- Hinzufügen von Alt-Bildern für die Screenshots
+- Hinzufügen von Anführungszeichen in der Beschreibung
+- Hinzufügen von "für den Benutzer" in der Beschreibung
+- Hinzufügen von "Beschreibung der Einschränkung" und "Vorgeschlagene Lösung für den Benutzer" als Überschriften für bessere Lesbarkeit und SEO
+- Hinzufügen von "Benutzer" in der vorgeschlagenen Lösung für bessere Lesbarkeit und SEO

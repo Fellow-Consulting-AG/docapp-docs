@@ -1,0 +1,6 @@
+Changes:- Die Überschrift wurde angepasst, um relevanter für SEO zu sein.
+- Die Beschreibungen der Felder wurden präzisiert und klarer formuliert.
+- Links wurden hinzugefügt, um auf weitere Informationen zu verweisen.
+- Alt-Tags wurden für die Tabellen hinzugefügt, um die Barrierefreiheit zu verbessern.
+- Der Text wurde ins Deutsche übersetzt und im Markdown-Format belassen.
+- Keine Änderungen an HTML oder Code vorgenommen.

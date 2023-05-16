@@ -1,23 +1,23 @@
 ---
 title: "FLOW² Onboarding Guide"
-description: This guide will help you learn the basics of FLOW² get you up and running with an IPS that will max out your productivity.
+description: "Dieser Leitfaden hilft Ihnen, die Grundlagen von FLOW² zu erlernen und Sie mit einem IPS zu starten, der Ihre Produktivität maximiert."
 date: "2021-11-23"
 tags: 
     - FLOW²
     - Onboarding Guide
 ---
 
-This guide will help you learn the basics of FLOW² get you up and running with an IPS that will max out your productivity.
+Dieser Leitfaden hilft Ihnen, die Grundlagen von FLOW² zu erlernen und Sie mit einem IPS zu starten, der Ihre Produktivität maximiert.
 
-## **Performing Initial Setup**
+## **Erste Einrichtung durchführen**
 
-First, let's cover how to access and configure your system.
+Zunächst werden wir besprechen, wie Sie auf Ihr System zugreifen und es konfigurieren können.
 
-FLOW² does not work in Tenant. All customer use the same cluster. Our Kubernetes Cluster is hosted in Frankfurt / Germany.
+FLOW² funktioniert nicht in einem Tenant. Alle Kunden nutzen denselben Cluster. Unser Kubernetes-Cluster wird in Frankfurt/Deutschland gehostet.
 
-To access the system:
+So greifen Sie auf das System zu:
 
-1. Contact your Polydocs GmbH or reach out to [support@polydocs.io](mailto:support@polydocs.io) to create a Organisation.
-2. Log in with the credentials provided in your onboarding email.
+1. Wenden Sie sich an Ihre Polydocs GmbH oder kontaktieren Sie [support@polydocs.io](mailto:support@polydocs.io), um eine Organisation zu erstellen.
+2. Melden Sie sich mit den Anmeldeinformationen an, die Ihnen in Ihrer Onboarding-E-Mail zur Verfügung gestellt wurden.
 
-**Tip:** Can't find the onboarding email? Go to your login screen and click the **Forgot your password?** link.
+**Tipp:** Können Sie die Onboarding-E-Mail nicht finden? Gehen Sie zu Ihrem Anmeldebildschirm und klicken Sie auf den Link **Passwort vergessen?**.

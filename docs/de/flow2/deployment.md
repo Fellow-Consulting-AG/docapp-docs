@@ -1,30 +1,30 @@
 ---
-title: "Deployment"
-description: This is a documentation how to deploy FLOW², the intelligent solution for digitizing documents. All you need is internet connection and your login credentials.
+title: "FLOW² Deployment: So geht's"
+description: "Erfahren Sie, wie Sie FLOW², die intelligente Lösung zur Digitalisierung von Dokumenten, bereitstellen können. Alles, was Sie benötigen, ist eine Internetverbindung und Ihre Login-Daten. Lesen Sie jetzt unsere Anleitung."
 date: "2021-11-24"
 tags:
   - FLOW²
   - Deployment
 ---
 
-### How to deploy FLOW²
+### FLOW² bereitstellen: Eine Anleitung
 
-All you need is the URL and the Login Details received from us.
+In diesem Artikel erfahren Sie, wie Sie FLOW², die intelligente Lösung zur Digitalisierung von Dokumenten, bereitstellen können. Alles, was Sie benötigen, sind die URL und die Login-Daten, die Sie von uns erhalten haben.
 
-The Login Details have admin rights.
+Die Login-Daten verfügen über Admin-Rechte.
 
-### **Prerequisites**
+### **Voraussetzungen**
 
-Running computer connected to internet
+Ein Computer mit Internetverbindung
 
 * * *
 
-The following screen will be shown when you go to your URL:
+Wenn Sie die URL aufrufen, erscheint folgender Bildschirm:
 
-![](/_images/doc2/FLOW2_LogIn-1024x640.png)
+![FLOW² Login-Bildschirm](/_images/doc2/FLOW2_LogIn-1024x640.png "FLOW² Login-Bildschirm")
 
-Enter the Login Details provided by us and click on Login button or press Enter to login.
+Geben Sie die Login-Daten ein, die wir Ihnen zur Verfügung gestellt haben, und klicken Sie auf die Schaltfläche "Login" oder drücken Sie die Eingabetaste, um sich anzumelden.
 
-After getting logged in successfully, you will see the following screen. It means all is set, you are ready to go.
+Nach erfolgreicher Anmeldung sehen Sie den folgenden Bildschirm. Das bedeutet, dass alles bereit ist und Sie loslegen können.
 
-![](/_images/doc2/FLOW2_Home-1024x586.png)
+![FLOW² Home-Bildschirm](/_images/doc2/FLOW2_Home-1024x586.png "FLOW² Home-Bildschirm")

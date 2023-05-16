@@ -1,24 +1,21 @@
 ---
-title: "Overview"
+title: "OCR Server API - Überblick"
 date: "2021-07-05"
-description: This documentation will give you an overview over the OCR server API we are offering connected to the cloudintegration.eu platform.
+description: "Diese Dokumentation gibt Ihnen einen Überblick über die OCR-Server-API, die wir in Verbindung mit der Plattform cloudintegration.eu anbieten. Erfahren Sie, wie Sie mit unserer API reguläre Dokumente in OCR-Dokumente umwandeln können."
 tags:
   - OCR Server
   - API
-  - transform regular documents into OCR'd ones
+  - Dokumentenkonvertierung
 ---
 
-This part will give you an overview over the OCR server API we are offering connected to the cloudintegration.eu platform.
+In diesem Teil erhalten Sie einen Überblick über die OCR-Server-API, die wir in Verbindung mit der Plattform cloudintegration.eu anbieten.
 
+![OCR Server API](/images/ocr-server-api.png "OCR Server API")
 
-![](/_images/doc2/image-30-1024x214.png)
+Die OCR-Server-API besteht aus fünf verschiedenen Teilen. Dem allgemeinen **OCR-Server-Prozess**, der mit der **Download-Funktion mit Link** verbunden ist, einer **Seitenerkennungsfunktion** sowie einer **Zusammenführungs- und Aufteilungsfunktion für PDFs**.
 
-![](/_images/doc2/image-31-1024x166.png)
+In dieser Dokumentation werden wir alle diese Funktionen im Detail erläutern. Der Hauptzweck dieser API besteht darin, reguläre Dokumente in OCR-Dokumente umzuwandeln.
 
-The OCR Server consists of 5 different parts. The general **OCR Server Process** connected to the **Download Function with Link**, a **Detect pages function,** as well as a **merge and split PDF function.**
+OCR steht für optische Zeichenerkennung und wandelt eine reguläre PDF-Datei in eine maschinell codierte Textdatei um, damit Metadaten extrahiert werden können. Diese API übernimmt den Transformationsprozess.
 
-In this documentation we will go over all of these functionalities and explain them in detail. The main reason for this API is to transform regular documents into OCR'd ones.
-
-OCR stands for optical character recognition and transforms a regular pdf file into a machine encoded text file, so that meta data can be extracted. This API takes on the transformation-part of the process.
-
-In the API we furthermore offer detect and merge functions, which we will explain later on.
+Darüber hinaus bieten wir in der API auch Erkennungs- und Zusammenführungsfunktionen an, die wir später erläutern werden.

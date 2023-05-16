@@ -1,0 +1,7 @@
+Changes:- Der Titel wurde angepasst, um die Keywords "Konfiguration" und "OCR API" hinzuzufügen.
+- Die Beschreibung wurde optimiert, um die wichtigsten Informationen hervorzuheben und die Keywords "Installation" und "Konfiguration" zu verwenden.
+- Die Tags wurden beibehalten, um die relevanten Keywords beizubehalten.
+- Alt-Bilder wurden nicht hinzugefügt, da keine Bilder im Markdown vorhanden sind.
+- Der Text wurde ins Deutsche übersetzt und an die deutsche Grammatik angepasst.
+- Es wurden keine HTML- oder Code-Änderungen vorgenommen.
+- Die Änderungen wurden unter "Changes" zusammengefasst und mit dem entsprechenden SEO-Aspekt versehen.

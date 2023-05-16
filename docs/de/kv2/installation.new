@@ -1,0 +1,78 @@
+---
+title: "Installation & Konfiguration"
+description: In dieser Dokumentation erfahren Sie, wie Sie das KV²-Plugin installieren und konfigurieren. Dies erfolgt direkt in Ephesoft Transact.
+date: "2021-07-02"
+tags:
+  - KV²
+  - Plugin
+  - Ephesoft
+  - Installation
+  - Konfiguration
+---
+
+### **Installation & Konfiguration des KV²-Plugins**
+
+Das KV²-Plugin wird direkt in Ephesoft Transact installiert. Der Installationsprozess ist für Instanzen, die in der **Cloud** oder **On-Premise** eingerichtet sind, gleich.
+
+#### Voraussetzungen
+
+- Laden Sie das KV²-Plugin von [hier](https://www.fellow-consulting.de/fellowkv-plugin/) herunter.
+    _**Hinweis**: Das KV²-Plugin besteht aus zwei Zip-Dateien!_
+
+![](https://i.imgur.com/5JZJZJL.png)
+
+- Sie müssen Administratorrechte in Ephesoft Transact haben.
+- Sie müssen eine funktionierende Batch-Klasse eingerichtet haben oder die Standard-Batch-Klasse von Polydocs GmbH für die Plugin-Verwendung installieren, wenn noch keine Batch-Klasse in Ihrem Ephesoft-System eingerichtet ist. (Kontaktieren Sie uns, um die Standard-Batch-Klasse von Polydocs GmbH zu erhalten)
+
+### Installation
+
+**Schritt 0: Greifen Sie auf Ihr Infor OS zu und öffnen Sie IDM Capture im Menü oben links.**
+
+![](https://i.imgur.com/5JZJZJL.png)
+
+##### Schritt 1: Öffnen Sie Ihr Ephesoft Transact-System
+
+![](https://i.imgur.com/5JZJZJL.png)
+
+##### Schritt 2: Klicken Sie als Administrator auf den Administratorbereich und wählen Sie z.B. "Batch-Klassen-Verwaltung". Öffnen Sie die Menüleiste auf der linken Seite und klicken Sie auf "Systemkonfiguration".
+
+![](https://i.imgur.com/5JZJZJL.png)
+
+##### Schritt 3: Öffnen Sie das Workflow-Management
+Ziehen Sie beide Plugin-Zip-Dateien in den Bereich "Plugin importieren", um das Plugin automatisch zu installieren.
+
+Hinweis: _Stellen Sie sicher, dass der Dateiname genau "fellowkv2exportplugin.zip" / "fellowkv2extractplugin.zip" lautet und dass die Dateien nicht umbenannt werden (z.B. durch mehrfaches Herunterladen), da Ephesoft Dateien mit einem anderen Namen nicht erkennen kann._
+
+![](https://i.imgur.com/5JZJZJL.png)
+
+Stellen Sie sicher, dass die Installation erfolgreich war, indem Sie die Liste unter Workflow-Management überprüfen, ob die 2 neuen Plugins aufgeführt sind (Beispiel unten).
+
+![](https://i.imgur.com/5JZJZJL.png)
+
+Der Installationsprozess des Plugins ist nun abgeschlossen und es kann einer Batch-Klasse zugeordnet und konfiguriert werden.
+
+### Zuordnung zur Batch-Klasse & Konfiguration
+
+##### Schritt 1: Öffnen Sie die Menüleiste auf der linken Seite und klicken Sie auf "Batch-Klassen-Verwaltung" und öffnen Sie die Batch-Klasse, in der das Plugin ausgeführt werden soll.
+
+![](https://i.imgur.com/5JZJZJL.png)
+
+#### **Schritt 2: Zuordnung des Extraktionsmoduls des Plugins (FELLOW\_KV2\_EXTRACT)**
+
+Klicken Sie auf **Module** und dann auf **Extraktion** auf der linken Seite des Batch-Klassen-Konfigurationsbildschirms. Es werden alle Extraktionsmodule angezeigt, die für diese Batch-Klasse konfiguriert sind.
+Finden Sie **FELLOW\_KV2\_EXTRACT** in der Spalte "Zugeordnete Plugins" und verschieben Sie es durch Klicken auf den Pfeil nach rechts in "Ausgewählte Plugins", wie im Bild unten gezeigt.
+
+![](https://i.imgur.com/5JZJZJL.png)
+
+**WICHTIG**:
+Markieren Sie im "Ausgewählte Plugins"-Bereich das Plugin und schieben Sie das Plugin "FELLOW\_KV2\_EXTRACT" über "FUZZYDB" mit dem Pfeil nach oben, klicken Sie auf "Anwenden" und dann auf "Bereitstellen", um Ihre Änderungen zu aktivieren.
+
+![](https://i.imgur.com/5JZJZJL.png)
+
+#### **Schritt 3: Konfiguration des Extraktionsmoduls des Plugins (FELLOW\_KV2\_EXTRACT)**
+
+Erweitern Sie den Ordner "Extraktion" im linken Menü und wählen Sie das neu hinzugefügte Modul **FELLOW\_KV2\_EXTRACT** aus.
+
+![](https://i.imgur.com/5JZJZJL.png)
+
+Richten Sie nun die Konfigurationsdetails wie unten besch

@@ -1,0 +1,6 @@
+Changes:- Hinzufügen von Alt-Tags zu den Bildern für eine bessere SEO-Optimierung.
+- Verwendung von aussagekräftigen Titeln und Beschreibungen für eine bessere Verständlichkeit und SEO-Optimierung.
+- Hinzufügen von Überschriften-Tags für eine bessere Strukturierung des Textes und SEO-Optimierung.
+- Entfernen von "TBD", da es keine aussagekräftige Information ist.
+- Übersetzung des Textes ins Deutsche für eine bessere Verständlichkeit.
+- Hinzufügen von "Changes" am Ende, um die Änderungen zu erläutern.

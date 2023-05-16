@@ -1,22 +1,22 @@
 ---
-title: "Installation & Config"
+title: "Installation & Konfiguration"
 date: "2021-07-06"
-description: In this documentation you will find how to install & configure OCR API - OCR API is installed directly in Ephesoft Transact in Cloud or On Premise.
+description: Hier finden Sie eine Anleitung zur Installation und Konfiguration der OCR API. Die OCR API wird direkt in Ephesoft Transact in der Cloud oder On-Premise installiert.
 tags:
   - OCR²
   - Installation
-  - Configuration
+  - Konfiguration
   - OCR API
   - Ephesoft Transact
 ---
 
 (TBD)
 
-### **How to install & configure OCR API**
+### **Installation und Konfiguration der OCR API**
 
-OCR API is installed directly in Ephesoft Transact. The installation process is same for instances set up in **Cloud** or **On Premise**.
+Die OCR API wird direkt in Ephesoft Transact installiert. Der Installationsprozess ist sowohl für Instanzen in der **Cloud** als auch für **On-Premise**-Installationen gleich.
 
-#### Prerequisites
+#### Voraussetzungen
 
-- You must have Administration rights in Ephesoft Transact.
-- You must have set up working Batch Class or install Polydocs GmbH default Batch Class for Plugin usage if no Batch Class is set up in your Ephesoft System, yet. (Contact us to get the Polydocs GmbH default Batch Class)
+- Sie müssen Administratorrechte in Ephesoft Transact haben.
+- Sie müssen eine funktionierende Batch-Klasse eingerichtet haben oder die Standard-Batch-Klasse von Polydocs GmbH für die Plugin-Nutzung installieren, falls noch keine Batch-Klasse in Ihrem Ephesoft-System eingerichtet ist. (Kontaktieren Sie uns, um die Standard-Batch-Klasse von Polydocs GmbH zu erhalten)

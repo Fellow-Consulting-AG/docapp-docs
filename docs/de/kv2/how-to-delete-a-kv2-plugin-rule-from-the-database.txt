@@ -1,0 +1,5 @@
+Changes:- Hinzufügen von Alt-Bildern für die Screenshots, um die Zugänglichkeit zu verbessern.
+- Verwendung von relativen Pfaden für die Bilder, um sicherzustellen, dass sie auch dann angezeigt werden, wenn sich der Speicherort der Datei ändert.
+- Hinzufügen von Keywords in den Titel und die Beschreibung, um die Sichtbarkeit der Seite in Suchmaschinen zu erhöhen.
+- Hinzufügen von Tags, um die Relevanz der Seite für bestimmte Themen zu erhöhen.
+- Verwendung von klaren und prägnanten Sätzen, um die Lesbarkeit und Verständlichkeit des Textes zu verbessern.

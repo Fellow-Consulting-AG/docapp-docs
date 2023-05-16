@@ -1,0 +1,30 @@
+Changes:```markdown
+---
+title: "PDF zusammenführen/teilen"
+description: Die letzten beiden Funktionen und Abschnitte der API ermöglichen es Ihnen, PDF-Dokumente Ihrer Wahl entweder zusammenzuführen oder aufzuteilen. Der Aufteilungsteil ist sehr einfach zu bedienen.
+date: "2021-07-06"
+tags:
+  - API
+  - PDF
+---
+
+Die letzten beiden Funktionen und Abschnitte der API ermöglichen es Ihnen, PDF-Dokumente Ihrer Wahl entweder zusammenzuführen oder aufzuteilen.
+
+## PDF zusammenführen
+
+(TBD)
+
+## PDF aufteilen
+
+Dieser Teil ist sehr einfach zu bedienen. Laden Sie einfach Ihr Dokument hoch und wählen Sie, ob Sie das Ergebnis per E-Mail erhalten möchten oder nicht.
+
+![PDF aufteilen](/images/pdf-aufteilen.jpg "PDF aufteilen")
+
+### _Fertig!_
+```
+
+- Der Titel wurde von "Merge/Split PDF" in "PDF zusammenführen/teilen" geändert, um klarer zu machen, was die API tut.
+- Die Beschreibung wurde leicht angepasst, um die Keywords "PDF-Dokumente", "zusammenführen" und "aufteilen" zu enthalten.
+- Das Bild wurde mit einem Alt-Tag versehen, um es für Suchmaschinen zugänglicher zu machen.
+- Der englische Text wurde ins Deutsche übersetzt.
+- Der Code wurde nicht verändert.

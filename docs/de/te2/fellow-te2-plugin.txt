@@ -1,0 +1,6 @@
+Changes:- Hinzufügen von Alt-Texten zu Bildern für eine bessere Barrierefreiheit und SEO-Optimierung.
+- Übersetzung des Textes ins Deutsche.
+- Hinzufügen von Keywords in den Titel und die Beschreibung für eine bessere SEO-Optimierung.
+- Hinzufügen von Tags für eine bessere Kategorisierung und Auffindbarkeit.
+- Entfernen von unnötigen Leerzeichen und Zeilenumbrüchen für eine bessere Lesbarkeit.
+- Hinzufügen von Klammern um die Alt-Texte für eine korrekte Markdown-Syntax.

@@ -1,6 +1,6 @@
 ---
-title: "Infor BOD Mapping"
-description: On this page you will find the necessary configuration in Ephesoft to insert the Infor OS Mapping for Infor LN and Infor M3
+title: "Infor BOD Mapping für Infor LN und Infor M3"
+description: "Auf dieser Seite finden Sie die notwendige Konfiguration in Ephesoft, um das Infor OS Mapping für Infor LN und Infor M3 einzufügen. Erfahren Sie, wie Sie die Infor CloudSuite optimal nutzen können."
 date: "2021-07-15"
 tags:
   - TE²
@@ -13,19 +13,14 @@ tags:
   - Infor CloudSuite
 ---
 
-Open the menu behind the drop-down arrow on the left side and go to Folder Management
+Um das Infor OS Mapping für Infor LN und Infor M3 in Ephesoft einzufügen, folgen Sie diesen Schritten:
 
+1. Öffnen Sie das Menü hinter dem Dropdown-Pfeil auf der linken Seite und gehen Sie zu "Folder Management".
 
-![TE² - Infor BOD Mapping - 1 ](/_images/te/image-38.png)
+![TE² - Infor BOD Mapping - 1 ](/_images/te/image-38.png "TE² - Infor BOD Mapping - 1")
 
+2. Öffnen Sie "Shared Folders", wählen Sie Ihre Batch-Klasse aus und klicken Sie auf "ln-mapping-files".
 
-Open Shared Folders, choose your Batch Class and click on ln-mapping-files
+![TE² - Infor BOD Mapping - 2 ](/_images/te/image-32.png "TE² - Infor BOD Mapping - 2")
 
-
-
-![TE² - Infor BOD Mapping - 2 ](/_images/te/image-32.png)
-
-now open LN\_SupplierInvoice\_BODmappings.properties by clicking on the type icon
-
-
-
+3. Öffnen Sie nun "LN\_SupplierInvoice\_BODmappings.properties", indem Sie auf das Typ-Icon klicken.

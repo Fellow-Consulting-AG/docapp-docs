@@ -1,6 +1,6 @@
 ---
-title: "User Dashboard"
-description: The dashboard homepage of FLOW² is the main page and overview to find recently accessed and recently created documents as well as your applied favorites.
+title: "Benutzer-Dashboard"
+description: Das Dashboard-Homepage von FLOW² ist die Hauptseite und Übersicht, um kürzlich aufgerufene und kürzlich erstellte Dokumente sowie Ihre angewendeten Favoriten zu finden.
 date: "2021-04-17"
 tags:
   - FLOW²
@@ -8,18 +8,18 @@ tags:
   - Dashboard
 ---
 
-After logging in with your user you are redirected to the DASHBOARD homepage of FLOW².
+Nach dem Einloggen als Benutzer werden Sie zur DASHBOARD-Homepage von FLOW² weitergeleitet.
 
-This is the main page and overview where you can find your documents recently accessed, recently created and your applied favorites. You can also find an overview of all important items in the left sidebar.
+Dies ist die Hauptseite und Übersicht, auf der Sie Ihre kürzlich aufgerufenen und kürzlich erstellten Dokumente sowie Ihre angewendeten Favoriten finden können. Sie finden auch eine Übersicht über alle wichtigen Elemente in der linken Seitenleiste.
 
-![](/_images/doc2/FLOW2_Dashboard-User-1-1024x585.png){ loading=lazy }
+![FLOW² Benutzer-Dashboard](/images/flow2-dashboard.png){ loading=lazy, alt="FLOW² Benutzer-Dashboard" }
 
-The left sidebar with buttons and selectors is for accessing:
+Die linke Seitenleiste mit Schaltflächen und Selektoren dient zum Zugriff auf:
 
-[Start now a free 30 days trail](https://polydocs.io/free-trail/){ .md-button .md-button--primary }
+[Jetzt 30 Tage kostenlos testen](https://polydocs.io/free-trail/){ .md-button .md-button--primary }
 
-- Documents
-- File cabinets and indexes that serve structural classification (such as the folders in a computer's file manager).
-- Tags, which are oriented to the workflow status.
+- Dokumente
+- Akten- und Indexkästen, die der strukturellen Klassifizierung dienen (wie die Ordner im Dateimanager eines Computers).
+- Tags, die auf den Workflow-Status ausgerichtet sind.
 
-In the system selection at the top right you will find the area for configuration.
+Im Systemauswahlmenü oben rechts finden Sie den Bereich für die Konfiguration.
