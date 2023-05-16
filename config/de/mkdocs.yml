@@ -240,11 +240,11 @@ nav:
 
 
   - FLOW²:
-    - Introduction: flow2/index.md
+    - Einführung: flow2/index.md
     - Getting Started: flow2/introduction.md
     - Onboarding Guide: flow2/flow2-onboarding-guide.md
-    - Deployment: flow2/deployment.md
-    - User Dashboard: flow2/home.md
+    - Einführung: flow2/deployment.md
+    - Benutzer Dashboard: flow2/home.md
     - System Setup: flow2/settings-system-setup.md
     - Metadata: flow2/metadata.md
     - Import from Doc²: flow2/import-from-doc2.md
@@ -260,19 +260,19 @@ nav:
     - Restart Ephesoft:
       - Cloud: kv2/restart-ephesoft-on-cloud.md
       - OnPremise: kv2/restart-ephesoft-on-premise.md
-    - Limitations: kv2/limitations-for-fellow-kv2-plugin.md
+    - Einschränkungen: kv2/limitations-for-fellow-kv2-plugin.md
     - Feedback Function: kv2/enable-feedback-function.md
   - TE²:
-    - Getting Started: te2/fellow-te2-plugin.md
-    - Installation: te2/install.md
+    - Erste Schritte: te2/fellow-te2-plugin.md
+    - Einrichtung: te2/install.md
     - Tutorial: te2/fellowte2-tutorial.md
     - Ephesoft External Application: te2/ephesoft-external-application.md
     - Infor LN BOD Mapping: te2/ln_bodmapping.md
     - Feedback Function: te2/enable-feedback-function.md
   - OCR²:
     - Overview: ocr/overview.md
-    - Installation & Config: ocr/installation-config.md
-    - Getting Started: ocr/get-started.md
+    - Einrichtung & Config: ocr/installation-config.md
+    - Erste Schritte: ocr/get-started.md
     - OCR Server Process: ocr/ocrserverprocess.md
     - Detect inside pages: ocr/detect-inside-pages.md
     - Merge/Split PDF: ocr/merge-split-pdf.md
