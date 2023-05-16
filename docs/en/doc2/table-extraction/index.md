@@ -23,7 +23,7 @@ Follow these simple steps to extract tables from your PDF-Files:
 4. Scroll down to the "Line Items" section on the extracted fields page.
 5. Click on the table icon inside the textbox.
 
-![Table Extraction with DOC²](/path/to/image.png "Table Extraction with DOC²")
+![Table Extraction with DOC²](/_images/doc2/Table-Extraction/1-Table Extraction/Image_1_line_items.png "Table Extraction with DOC²")
 
 You will be taken to the table extraction view. DOC² can automatically detect and extract simple tables, but for more complex tables, you can train the table extraction functionality manually.
 
