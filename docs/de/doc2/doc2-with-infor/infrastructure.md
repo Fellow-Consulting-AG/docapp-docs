@@ -19,7 +19,7 @@ Zusätzlich verwenden wir nur SSL-gesicherte Verbindungen, um mit der Datenbank 
 ### Spaces
 Die hochgeladenen Dokumente werden in einem Space gespeichert. Der Datenverkehr ist über SSL gesichert und mehrere Schlüssel sind erforderlich, um auf die gespeicherten Dateien zuzugreifen.
 
-### Verkehrssicherheit
+### Sicherer Datentransfer
 Wir erlauben nur https-gesicherte Verbindungen, um mit unseren Servern zu kommunizieren. Dies stellt sicher, dass die übertragenen Daten verschlüsselt und sicher sind.
 
 ## Infor Cloud
