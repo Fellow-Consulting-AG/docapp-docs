@@ -41,9 +41,12 @@ theme:
     - search.share
     - search.suggest
     - toc.follow
+
 extra_css:
   - _extra/css/extra.css
-# https://squidfunk.github.io/mkdocs-material/customization/?h=#additional-javascript
+  - https://www.neoteroi.dev/mkdocs-plugins/css/neoteroi.css
+  - https://www.neoteroi.dev/mkdocs-plugins/css/mkdocsoad.css
+
 extra_javascript:
   - _extra/javascript/extra.js
 extra:
@@ -62,7 +65,7 @@ extra:
       find what they're searching for. With your consent, you're helping us to
       make our documentation better.
   generator: false
-  copyright: Copyright &copy; 2022 Polydocs GmbH
+  copyright: Copyright &copy; 2023 FellowPRO AG
   social:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/645725/
@@ -126,6 +129,10 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
   - tables
+  - neoteroi.spantable
+  - neoteroi.timeline
+  - neoteroi.cards
+  - neoteroi.projects
   
 plugins:
   - search:
@@ -140,6 +147,11 @@ plugins:
   - minify:
       minify_html: true
   - optimize
+  - blog
+  - neoteroi.contribs
+  - neoteroi.mkdocsoad:
+      use_pymdownx: true
+
 
 nav:
   - Changelog: Release/Release_notes.md
@@ -270,4 +282,8 @@ nav:
     - Detect inside pages: ocr/detect-inside-pages.md
     - Merge/Split PDF: ocr/merge-split-pdf.md
     - API: ocr/ocr-api.md
+  - Roadmap: roadmap.md
+  - Api: api.md
+  - Blog:
+    - blog/index.md
   
