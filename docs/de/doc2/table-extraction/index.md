@@ -1,16 +1,16 @@
 ---
 title: "Tabellenextraktion"
-description: Mit DOC² können Tabellen aus PDF-Dateien extrahiert werden. Dies erfolgt über die Funktion "Line Items". Sie wird verwendet, um Tabellen aus allen Arten von Dokumenten (Rechnungen, Verträgen, Formularen, medizinischen Rezepten usw.) zu extrahieren.
+description: Mit DOC² können Tabellen aus PDF-Dateien extrahiert werden. Dies erfolgt über die Funktion "Artikel". Sie wird verwendet, um Tabellen aus allen Arten von Dokumenten (Rechnungen, Verträgen, Formularen, medizinischen Rezepten usw.) zu extrahieren.
 date: "2021-11-11"
 tags:
   - DOC²
   - Tabelle
-  - Line Items
+  - Artikel
 ---
 
 # Tabellenextraktion
 
-Mit DOC² können Tabellen aus PDF-Dateien extrahiert werden. Dies erfolgt über die Funktion "Line Items". Sie wird verwendet, um Tabellen aus allen Arten von Dokumenten (Rechnungen, Verträgen, Formularen, medizinischen Rezepten usw.) zu extrahieren.
+Mit DOC² können Tabellen aus PDF-Dateien extrahiert werden. Dies erfolgt über die Funktion "Artikel". Sie wird verwendet, um Tabellen aus allen Arten von Dokumenten (Rechnungen, Verträgen, Formularen, medizinischen Rezepten usw.) zu extrahieren.
 
 Die Extraktion von Daten in Tabellen kann durch folgende Schritte erreicht werden:
 
@@ -24,7 +24,7 @@ Die Extraktion von Daten in Tabellen kann durch folgende Schritte erreicht werde
 
 5\. Klicken Sie auf das Tabellensymbol innerhalb des Textfeldes.
 
-![Line Items](/_images/doc2/Line-Items.png "Line Items")
+![Artikel](/_images/doc2/Line-Items.png "Artikel")
 
 Sie gelangen zur Ansicht der Tabellenextraktion.
 
