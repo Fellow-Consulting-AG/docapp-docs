@@ -1,4 +1,3 @@
-
 ---
 title: "Master Data Validation for Efficient Document Processing | DOC²"
 description: "DOC² offers master data validation to match supplier data extracted from documents with your ERP system, streamlining document processing. Learn more here."
