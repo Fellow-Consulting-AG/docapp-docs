@@ -1,4 +1,3 @@
-
 ---
 title: "AI Indicators: How to Measure the Quality of Extraction with DOC²"
 description: Learn how to use the AI indicators in DOC² to measure the quality of extraction for your documents. Improve your document processing with this powerful tool.
