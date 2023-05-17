@@ -10,11 +10,15 @@ tags:
   - Anwendungsfälle
 ---
 
-## Verschiedene Anwendungsfälle
+## Effizientes Dokumentenmanagement mit DOC² und Infor
 
-### Nur Rechnung
+DOC² ist eine leistungsstarke Dokumentenmanagementlösung, mit der Sie Ihre Arbeitsabläufe in der Dokumentenverarbeitung optimieren können. Durch die nahtlose Integration mit Infor LN und Infor M3 kann DOC² Ihnen helfen, Ihre Dokumente effizient und genau zu verwalten. Hier sind einige der Anwendungsfälle, bei denen DOC² Ihnen helfen kann:
 
-Dies ist der einfachste Anwendungsfall. 95 % aller Ephesoft (IDM Capture)-Kunden nutzen diesen Anwendungsfall.
+
+### Einfache Rechnungsverarbeitung
+
+Dies ist der häufigste Anwendungsfall für DOC². Mit seinen fortschrittlichen OCR-Funktionen kann DOC² relevante Informationen aus Rechnungen extrahieren und zur weiteren Verarbeitung an Infor senden.
+Und so funktioniert es:
 
 ``` mermaid
 graph TD
