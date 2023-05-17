@@ -74,7 +74,7 @@ c) Laden Sie das Zertifikat herunter.
 
 a) Wenn Sie alles ausgefüllt haben, denken Sie daran, es mit dem Diskettensymbol über dem Application Type zu speichern. Sie gelangen automatisch zurück auf die Übersicht der Dienstanbieter.
 
-b) Wählen Sie dann den eben angelegten Dienstanbieter DOC² aus und klicken Sie auf den `Stift` zum Bearbeiten.
+b) Wählen Sie dann den eben angelegten Dienstanbieter DOC² aus und klicken Sie auf den Stift zum Bearbeiten.
 
 c) Klicken Sie auf `ANZEIGEN`unter **Identitätsanbieterdaten** 
 
@@ -90,9 +90,9 @@ Die Datei sieht so aus: ServiceProviderSAMLMetadata_xxxxxxx_02_02_2022
 
 Gehen Sie zu Identitätsanbieter-Einstellungen, geben Sie Ihre Tenant ID ein (z.B. FELLOWPRO_DEV) und darunter sehen Sie neben `Datei hochladen` die Schaltfläche **IMPORTIEREN**, über die Sie die zuvor exportierte SAML METADATA-Datei hochladen müssen.
 
-a) Klicken Sie auf IMPORTIEREN und wählen Sie dann die METADATA-Datei aus, die Sie bereits aus den SSO SERVICE PROVIDER SETTINGS heruntergeladen haben.
+a) Klicken Sie auf `IMPORTIEREN` und wählen Sie dann die METADATA-Datei aus, die Sie bereits aus den SSO Dienstanbieter-Einstellungen bei Infor heruntergeladen haben.
 
-b) Klicken Sie auf KONFIGURIEREN
+b) Klicken Sie auf `KONFIGURIEREN`
 
 !["Identitätsanbieter-Einstellungen"](/_images/doc2/SSO in infor cloud/doc2-identitätsanbieter-einstellungen.png)
 
@@ -104,15 +104,15 @@ Dieser Teil ist erfolgreich abgeschlossen, wenn Sie das folgende Popup sehen.
 
 a) Gehen Sie zu den Admin-Einstellungen und
 
-![](/_images/doc2/infor_Admin-Settings_Manage-Applications-1024x528.png){ loading=lazy alt="Infor Cloud Admin-Einstellungen" }
+!["Infor Cloud Admin-Einstellungen"](/_images/doc2/SSO in infor cloud/infor-dienstanbieter-zu-admin-einstellungen.png)
 
-b) Klicken Sie oben rechts auf ANWENDUNG HINZUFÜGEN
+b) Klicken Sie oben rechts auf `ANWENDUNG HINZUFÜGEN`
 
-![](/_images/doc2/infor_Add-Application.png){ loading=lazy alt="Infor Cloud Anwendung hinzufügen" }
+!["Infor Cloud Anwendung hinzufügen"](/_images/doc2/SSO in infor cloud/infor-anwendung-hinzufügen.png)
 
-c) Füllen Sie alle Felder wie auf dem folgenden Bild aus, aber mit Ihrer eigenen SSO-URL. Vergessen Sie nicht, ein Symbol auszuwählen und auf SPEICHERN zu klicken.
+c) Füllen Sie alle Felder wie auf dem folgenden Bild aus, aber mit Ihrer eigenen SSO-URL. Vergessen Sie nicht, ein Symbol auszuwählen und auf `SPEICHERN` zu klicken.
 
-![](/_images/doc2/infor_Add-New-Application.png){ loading=lazy alt="Infor Cloud Neue Anwendung hinzufügen" }
+!["Infor Cloud Neue Anwendung hinzufügen"](/_images/doc2/SSO in infor cloud/infor-neue-anwendung-hinzufügen.png)
 
 **Und jetzt der letzte Schritt:**
 
@@ -120,4 +120,4 @@ c) Füllen Sie alle Felder wie auf dem folgenden Bild aus, aber mit Ihrer eigene
 - Gehen Sie zurück zum Burger-Menü in Infor und wählen Sie das von Ihnen erstellte Symbol.
 - Und Sie sind bereits auf dem Dashboard von DOC².
 
-![](/_images/doc2/Sign-in-over-SSO-1024x640.png){ loading=lazy alt="DOC² Dashboard" }
+!["DOC² Dashboard"](/_images/doc2/SSO in infor cloud/doc2-sso-signin-dashboard.png)
