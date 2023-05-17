@@ -170,7 +170,7 @@ nav:
       - Master Data Validation: doc2/document-validation/master-data-validation.md
       - OCR View: doc2/document-validation/ocr-view.md
       - AI Indicator: doc2/document-validation/ai-indicator.md
-      - Expressions: doc2/document-validation/exception-filters.md
+    # - Expressions: doc2/document-validation/exception-filters.md
     - Table Extraction:
       - doc2/table-extraction/index.md
       - Training table extraction: doc2/table-extraction/training-of-table-extraction.md
