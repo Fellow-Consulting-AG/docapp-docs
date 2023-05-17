@@ -11,19 +11,6 @@ theme:
   font:
     text: Montserrat
   language: en
-  palette:
-    - scheme: default
-      primary: custom
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - scheme: slate
-      primary: custom
-      accent: indigo
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
   features:
     - announce.dismiss
     - content.action.edit
@@ -42,11 +29,23 @@ theme:
     - search.suggest
     - toc.follow
 
+  palette:
+    - scheme: default
+      primary: custom
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: custom
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
 extra_css:
   - _extra/css/extra.css
-  - https://www.neoteroi.dev/mkdocs-plugins/css/neoteroi.css
-  - https://www.neoteroi.dev/mkdocs-plugins/css/mkdocsoad.css
-
+# https://squidfunk.github.io/mkdocs-material/customization/?h=#additional-javascript
 extra_javascript:
   - _extra/javascript/extra.js
 extra:
@@ -64,6 +63,8 @@ extra:
       as to measure the effectiveness of our documentation and whether users
       find what they're searching for. With your consent, you're helping us to
       make our documentation better.
+  annotate:
+    json: [.s2]
   generator: false
   copyright: Copyright &copy; 2023 FellowPRO AG
   social:
@@ -129,10 +130,6 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
   - tables
-  - neoteroi.spantable
-  - neoteroi.timeline
-  - neoteroi.cards
-  - neoteroi.projects
   
 plugins:
   - search:
@@ -146,11 +143,7 @@ plugins:
       tags_file: tags.md
   - minify:
       minify_html: true
-  - optimize
-  - blog
-  - neoteroi.contribs
-  - neoteroi.mkdocsoad:
-      use_pymdownx: true
+
 
 
 nav:
