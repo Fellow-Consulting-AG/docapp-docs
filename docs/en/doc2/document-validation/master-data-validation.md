@@ -23,13 +23,13 @@ One way to match supplier data is by using the VAT number extracted from the doc
 
 If needed, you can manually intervene at any time and call up the supplier provided. This is done via the following button:
 
-![Call up supplier data](/path/to/image.png "Call up supplier data")
+![Call up supplier data](/_images/doc2/Document Validation/2-Master Data Validation/fuzzy-search.png "Call up supplier data")
 
 ### Finding by Supplier Name
 
 Another way to find the correct supplier is by searching for their name in the supplier master data. Simply click the button in the supplier name field and search for the supplier in the master data.
 
-![Search for supplier in master data](/path/to/image.png "Search for supplier in master data")
+![Search for supplier in master data](/_images/doc2/Document Validation/2-Master Data Validation/search-vendor-name.png "Search for supplier in master data")
 
 ## Simplify Your Document Processing with DOC²
 
