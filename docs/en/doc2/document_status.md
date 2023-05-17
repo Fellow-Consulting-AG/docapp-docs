@@ -1,4 +1,3 @@
-
 ---
 title: All DOC² Document Status List | DOC² Software
 description: Check out the complete list of document statuses in DOC² software. From WatchDog start to Error, know what each status means and how it affects your document processing.
