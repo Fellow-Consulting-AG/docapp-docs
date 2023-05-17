@@ -20,7 +20,7 @@ To get started, you'll need a computer with internet access. Once you have that,
 2. Once you're logged in, you'll be redirected to the DASHBOARD homepage of DOC². This is where you can manage all your imported documents.
 3. If you see the following screen, you're ready to go! All further details and necessary steps can be found [here](https://docs.polydocs.io/doc2/document-validation/).
 
-![DOC2 Login](/_images/doc2/DOC2_Deployment_Dashboard.png){ loading=lazy, alt: "DOC2 Dashboard" }
+![DOC2 Login](/_images/doc2/Deployment/DOC2_Deployment_Dashboard.png){ loading=lazy, alt: "DOC2 Dashboard" }
 
 ## Get Started Today!
 
