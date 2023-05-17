@@ -11,93 +11,94 @@ tags:
 
 # SSO in Infor Cloud konfigurieren
 
-## Schritt-für-Schritt-Anleitung
+## Schritt für Schritt Anleitung
 
 ### **Voraussetzungen**
 
-<table><tbody><tr><td><strong>Erforderliche Informationen</strong></td><td><strong>Beschreibung</strong></td></tr><tr><td>Login-Daten für die Cloud</td><td>Zugangsdaten sind erforderlich, um auf die Infor Cloud-Umgebung zuzugreifen.<br>Der Benutzer sollte die Rollen "Infor-Systemadministrator" und "UserAdmin" haben.</td></tr><tr><td>Admin-Details konfigurieren (DOC²)</td><td>Sie sollten eine E-Mail von FellowPro AG mit den Anmeldedaten für die Seite „DOC² SSO-Einstellungen“ erhalten haben.<br><br>Sie benötigen einen Benutzernamen und ein Passwort.<br></td></tr><tr><td>Zertifikat</td><td>Sie können das Zertifikat in DOC² in den Einstellungen unter Integration - SSO Dienstanbieter-Einstellungen herunterladen.</td></tr></tbody></table>
+<table><tbody><tr><td><strong>Erforderliche Informationen</strong></td><td><strong>Beschreibung</strong></td></tr><tr><td>Anmeldedaten für die Cloud</td><td>Zugangsdaten sind erforderlich, um auf die Infor Cloud-Umgebung zuzugreifen.<br>Der Benutzer sollte die Rollen "Infor-Systemadministrator" und "UserAdmin" haben.</td></tr><tr><td>Admin-Details konfigurieren (DOC²)</td><td>Sie sollten eine E-Mail von FellowPro AG mit den Anmeldedaten für die Seite „DOC² SSO-Einstellungen“ erhalten haben.<br><br>Sie benötigen einen Benutzernamen und ein Passwort.<br></td></tr><tr><td>Zertifikat</td><td>Sie können das Zertifikat in DOC² in den Einstellungen unter Integration - SSO Dienstanbieter-Einstellungen herunterladen.</td></tr></tbody></table>
 
 **1\. Zugriff auf die Cloud erhalten und Zugriff überprüfen**
 
-Die URL beginnt mit [https://mingle-portal.eu1.inforcloudsuite.com/<TENANT\_NAME](https://mingle-portal.eu1.inforcloudsuite.com/)\> gefolgt von Ihrer persönlichen Erweiterung.
+Die URL beginnt mit [https://mingle-portal.eu1.inforcloudsuite.com](https://mingle-portal.eu1.inforcloudsuite.com/<TENANT\_NAME)\> gefolgt von Ihrer persönlichen Erweiterung.
 
-![](/_images/doc2/infor-signin-1024x520.png){ loading=lazy alt="Infor Cloud Login-Seite" }
+!["Infor Cloud Login-Seite"](/_images/doc2/SSO in infor cloud/infor-signin.png)
 
 a) Wählen Sie die Option "Cloud Identities" und geben Sie Ihre Anmeldedaten ein.
 
-![](/_images/doc2/LogIn-infor-1024x640.png){ loading=lazy alt="Infor Cloud Login" }
+!["Infor Cloud Login"](/_images/doc2/SSO in infor cloud/Infor-cloudidentities-login.png)
 
 b) Nach dem Login haben Sie Zugriff zur Infor Cloud. Sie werden auf diese Seite weitergeleitet, aber im Burger-Menü finden Sie den Zugang zu allen Anwendungen.
 
-![](/_images/doc2/Welcome-to-infor-Ming.le_-1024x585.png){ loading=lazy alt="Infor Cloud Dashboard" }
+!["Infor Cloud Dashboard"](/_images/doc2/SSO in infor cloud/Welcome-to-infor-Ming.le.png)
 
-![](/_images/doc2/infor_Burger-Menu-1024x586.png){ loading=lazy alt="Infor Cloud Burger-Menü" }
+!["Infor Cloud Burger-Menü"](/_images/doc2/SSO in infor cloud/infor_Burger-Menu.png)
 
 **2\. Öffnen Sie die Benutzerverwaltung, um einen neuen Dienstanbieter hinzuzufügen**
 
 Auf der rechten Seite der Menüleiste finden Sie das Benutzermenü, über das Sie auf die Benutzerverwaltung zugreifen können.
 
-![](/_images/doc2/infor_User-Management-1024x548.png){ loading=lazy alt="Infor Cloud Benutzerverwaltung" }
+!["Infor Cloud Benutzerverwaltung"](/_images/doc2/SSO in infor cloud/infor-cloud-benutzerverwaltung.png)
 
-a) Wählen Sie dann im linken Menü die Option **Sicherheitsverwaltung** und **Dienstanbieter**.
+a) Wählen Sie dann im linken Menü die Option **Sicherheitseinstellungen** und **Dienstanbieter**.
 
-![](/_images/doc2/infor_Service-Provider-1024x523.png){ loading=lazy alt="Infor Cloud Sicherheitsverwaltung" }
+!["Infor Cloud Sicherheitseinstellungen"](/_images/doc2/SSO in infor cloud/infor-dienstanbieter.png)
 
 b. Sie sehen nun dieses Fenster mit den Dienstanbietern.
 
-![](/_images/doc2/infor_Service-Provider_2-1-1024x479.png){ loading=lazy alt="Infor Cloud Dienstanbieter" }
+!["Infor Cloud Dienstanbieter"](/_images/doc2/SSO in infor cloud/infor-dienstanbieter-1.png)
 
 c. Klicken Sie nun auf das "+"-Symbol und fügen Sie unseren DOC² als Dienstanbieter hinzu. (Siehe Schritt 4)
 
-![](/_images/doc2/infor6.png){ loading=lazy alt="Infor Cloud Dienstanbieter hinzufügen" }
+!["Infor Cloud Dienstanbieter hinzufügen"](/_images/doc2/SSO in infor cloud/infor-dienstanbieter-2.png)
 
-**3\. Greifen Sie auf die SSO SERVICE PROVIDER SETTINGS in DOC² zu**
+**3\. Greifen Sie in DOC² auf die SSO DIENSTANBIETER-EINSTELLUNGEN zu**
 
-a) Melden Sie sich auf der URL [https://app.polydocs.io/](https://app.polydocs.io/) mit den Login-Daten an, die Sie von uns erhalten haben.
+a) Melden Sie sich über die URL [https://app.polydocs.io/](https://app.polydocs.io/) mit den Anmeldedaten an, die Sie von uns erhalten haben.
 
-b) Gehen Sie zu EINSTELLUNGEN (in der oberen Leiste) und wählen Sie SSO-Einstellungen unten auf der Liste.
+b) Gehen Sie zu EINSTELLUNGEN (in der oberen Leiste) und wählen Sie Integration.
+Dort finden Sie alle Informationen, die Sie für die folgenden Schritte benötigen.
 
-Hier finden Sie alle Informationen, die Sie für die folgenden Schritte benötigen.
+!["DOC² Einstellungen Integration"](/_images/doc2/SSO in infor cloud/doc2-einstellungen-integration.png)
 
 c) Laden Sie das Zertifikat herunter.
 
-![](/_images/doc2/DOC2_SSO-Service-Provider-Settings-1024x640.png){ loading=lazy alt="DOC² SSO Service Provider Einstellungen" }
+!["DOC² SSO Dienstanbieter-Einstellungen"](/_images/doc2/SSO in infor cloud/doc2-sso-dienstanbieter-einstellungen.png)
 
-**4\. Füllen Sie den Dienstanbieter mit Hilfe der SSO Service Provider Settings in DOC² aus**
+**4\. Füllen Sie den Dienstanbieter mit Hilfe der SSO Dienstanbieter-Einstellungen in DOC² aus**
 
-![](/_images/doc2/infor_Service-Provider_3-1024x891.png)
+![](/_images/doc2/SSO in infor cloud/infor-dienstanbieter-3.png)
 
-<table><tbody><tr><td><strong>Feld</strong></td><td><strong>Wert</strong></td></tr><tr><td><strong>Anwendungstyp</strong></td><td>DEFAULT_SAML</td></tr><tr><td><strong>Anzeigename</strong></td><td>DOC²</td></tr><tr><td><strong>Entity ID</strong></td><td>Siehe Entity ID unter SSO SERVICE SETTINGS</td></tr><tr><td><strong>SSO-Endpunkt</strong></td><td>Kopieren Sie die SSO-URL aus SSO SERVICE SETTINGS und fügen Sie sie in das Feld <strong>SSO-Endpunkt</strong> ein.</td></tr><tr><td><strong>SLO-Endpunkt</strong></td><td>Kopieren Sie die SLO-URL aus SSO SERVICE SETTINGS und fügen Sie sie in das Feld <strong>SLO-Endpunkt</strong> ein.</td></tr><tr><td><strong>Signaturzertifikat</strong></td><td>Laden Sie die entsprechende .cer-Datei hoch, die Sie in Schritt 3c) aus SSO SERVICE SETTINGS heruntergeladen haben.</td></tr><tr><td><strong>Name ID-Format und Mapping</strong></td><td>E-Mail-Adresse</td></tr></tbody></table>
+<table><tbody><tr><td><strong>Feld</strong></td><td><strong>Wert</strong></td></tr><tr><td><strong>Anwendungstyp</strong></td><td>DEFAULT_SAML</td></tr><tr><td><strong>Anzeigename</strong></td><td>DOC²</td></tr><tr><td><strong>Entitäts-ID</strong></td><td>Siehe Entitäts-ID unter SSO Dienstanbieter-Einstellungen</td></tr><tr><td><strong>SSO-Endpunkt</strong></td><td>Kopieren Sie die SSO-URL aus SSO Dienstanbieter-Einstellungen und fügen Sie sie in das Feld <strong>SSO-Endpunkt</strong> ein.</td></tr><tr><td><strong>SLO-Endpunkt</strong></td><td>Kopieren Sie die SLO-URL aus SSO Dienstanbieter-Einstellungen und fügen Sie sie in das Feld <strong>SLO-Endpunkt</strong> ein.</td></tr><tr><td><strong>Signaturzertifikat</strong></td><td>Laden Sie die entsprechende .cer-Datei hoch, die Sie in Schritt 3c) aus SSO Dienstanbieter-Einstellungen heruntergeladen haben.</td></tr><tr><td><strong>Name ID-Format und Mapping</strong></td><td>E-Mail-Adresse</td></tr></tbody></table>
 
-![](/_images/doc2/infor_Service-Provider_completed-956x1024.png)
+![](/_images/doc2/SSO in infor cloud/infor-dienstanbieter-mit zertifikat.png)
 
-a) Wenn Sie alles ausgefüllt haben, denken Sie daran, es mit dem Diskettensymbol über dem Anwendungstyp zu speichern.
+a) Wenn Sie alles ausgefüllt haben, denken Sie daran, es mit dem Diskettensymbol über dem Application Type zu speichern. Sie gelangen automatisch zurück auf die Übersicht der Dienstanbieter.
 
-b) Geben Sie dann den Dienstanbieter DOC² erneut ein.
+b) Wählen Sie dann den eben angelegten Dienstanbieter DOC² aus und klicken Sie auf den `Stift` zum Bearbeiten.
 
-c) Klicken Sie auf "Identity Provider Information anzeigen" darunter.
+c) Klicken Sie auf `ANZEIGEN`unter **Identitätsanbieterdaten** 
 
-![](/_images/doc2/infor_Identity-Provider-Information-copy-1024x559.png){ loading=lazy alt="Infor Cloud Identity Provider Information" }
+!["Identitätsanbieterdaten anzeigen"](/_images/doc2/SSO in infor cloud/infor-dienstanbieter-identitätsanbieterdaten-anzeigen.png)
 
-![](/_images/doc2/infor_Identity-Provider-Information-806x1024.png){ loading=lazy alt="Infor Cloud Identity Provider Information" }
+!["Identitätsanbieterdaten"](/_images/doc2/SSO in infor cloud/identitätsanbieterdaten_saml-metadaten-export.png)
 
-d) Exportieren Sie das **SAML METADATA.**
+d) Exportieren Sie die **SAML METADATEN**.
 
-Die Datei sieht so aus: ServiceProviderSAMLMetadata\_10\_20\_2021.xml
+Die Datei sieht so aus: ServiceProviderSAMLMetadata_xxxxxxx_02_02_2022
 
-**5\. Importieren Sie die SAML METADATA in den SSO-Einstellungen.**
+**5\. Importieren Sie die SAML METADATEN in den Identitätsanbieter-Einstellungen.**
 
-Gehen Sie zu IDENTITY SERVICE PROVIDER SETTINGS, geben Sie Ihre Mandanten-ID ein (z.B. FELLOWCONSULTING\_DEV) und darunter sehen Sie die Schaltfläche "Datei hochladen" und den IMPORT-Button, über den Sie die zuvor exportierte SAML METADATA-Datei hochladen müssen.
+Gehen Sie zu Identitätsanbieter-Einstellungen, geben Sie Ihre Tenant ID ein (z.B. FELLOWPRO_DEV) und darunter sehen Sie neben `Datei hochladen` die Schaltfläche **IMPORTIEREN**, über die Sie die zuvor exportierte SAML METADATA-Datei hochladen müssen.
 
-a) Klicken Sie auf IMPORT und wählen Sie dann die METADATA-Datei aus, die Sie bereits aus den SSO SERVICE PROVIDER SETTINGS heruntergeladen haben.
+a) Klicken Sie auf IMPORTIEREN und wählen Sie dann die METADATA-Datei aus, die Sie bereits aus den SSO SERVICE PROVIDER SETTINGS heruntergeladen haben.
 
-b) Klicken Sie auf CONFIGURE
+b) Klicken Sie auf KONFIGURIEREN
 
-![](/_images/doc2/DOC2_identity-service-provider-settings_completed-1024x316.png){ loading=lazy alt="DOC² Identity Service Provider Einstellungen" }
+!["Identitätsanbieter-Einstellungen"](/_images/doc2/SSO in infor cloud/doc2-identitätsanbieter-einstellungen.png)
 
 Dieser Teil ist erfolgreich abgeschlossen, wenn Sie das folgende Popup sehen.
 
-![](/_images/doc2/DOC2_File-successfully-saved.png){ loading=lazy alt="DOC² Datei erfolgreich gespeichert" }
+!["Identitätsanbieter-Einstellungen Datei erfolgreich gespeichert"](/_images/doc2/SSO in infor cloud/doc2-identitätsanbieter-einstellungen_erfolgreich gespeichert.png)
 
 **6\. Fügen Sie eine neue Anwendung in Infor Ming.le hinzu**
 
