@@ -45,7 +45,9 @@ theme:
 
 extra_css:
   - _extra/css/extra.css
-# https://squidfunk.github.io/mkdocs-material/customization/?h=#additional-javascript
+  - https://www.neoteroi.dev/mkdocs-plugins/css/neoteroi.css
+  - https://www.neoteroi.dev/mkdocs-plugins/css/mkdocsoad.css
+
 extra_javascript:
   - _extra/javascript/extra.js
 extra:
@@ -130,6 +132,10 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
   - tables
+  - neoteroi.spantable
+  - neoteroi.timeline
+  - neoteroi.cards
+  - neoteroi.projects
   
 plugins:
   - search:
@@ -143,6 +149,7 @@ plugins:
       tags_file: tags.md
   - minify:
       minify_html: true
+  - neoteroi.contribs
 
 
 
