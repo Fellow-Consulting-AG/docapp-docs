@@ -15,7 +15,7 @@ tags:
 
 ### **Voraussetzungen**
 
-<table><tbody><tr><td><strong>Erforderliche Informationen</strong></td><td><strong>Beschreibung</strong></td></tr><tr><td>Login-Daten für die Cloud</td><td>Zugangsdaten sind erforderlich, um auf die Infor Cloud-Umgebung zuzugreifen.<br>Der Benutzer sollte die Rollen "Infor-Systemadministrator" und "UserAdmin" haben.</td></tr><tr><td>Config Admin Details (DOC²)</td><td>Sie sollten eine E-Mail von FellowPro AG mit den Login-Daten für die DOC² SSO-Einstellungsseite erhalten haben.<br><br>Sie benötigen Login und Passwort.<br></td></tr><tr><td>Zertifikat</td><td>Sie können das Zertifikat in DOC² unter SSO Service Provider Settings herunterladen.</td></tr></tbody></table>
+<table><tbody><tr><td><strong>Erforderliche Informationen</strong></td><td><strong>Beschreibung</strong></td></tr><tr><td>Login-Daten für die Cloud</td><td>Zugangsdaten sind erforderlich, um auf die Infor Cloud-Umgebung zuzugreifen.<br>Der Benutzer sollte die Rollen "Infor-Systemadministrator" und "UserAdmin" haben.</td></tr><tr><td>Admin-Details konfigurieren (DOC²)</td><td>Sie sollten eine E-Mail von FellowPro AG mit den Anmeldedaten für die Seite „DOC² SSO-Einstellungen“ erhalten haben.<br><br>Sie benötigen einen Benutzernamen und ein Passwort.<br></td></tr><tr><td>Zertifikat</td><td>Sie können das Zertifikat in DOC² in den Einstellungen unter Integration - SSO Dienstanbieter-Einstellungen herunterladen.</td></tr></tbody></table>
 
 **1\. Zugriff auf die Cloud erhalten und Zugriff überprüfen**
 
@@ -23,11 +23,11 @@ Die URL beginnt mit [https://mingle-portal.eu1.inforcloudsuite.com/<TENANT\_NAME
 
 ![](/_images/doc2/infor-signin-1024x520.png){ loading=lazy alt="Infor Cloud Login-Seite" }
 
-a) Wählen Sie die Option Cloud-Identitäten und verwenden Sie Ihre Login-Daten.
+a) Wählen Sie die Option "Cloud Identities" und geben Sie Ihre Anmeldedaten ein.
 
 ![](/_images/doc2/LogIn-infor-1024x640.png){ loading=lazy alt="Infor Cloud Login" }
 
-b) Nach dem Login haben Sie Zugriff auf die Infor Cloud. In diesem Fall betreten wir diese Seite, aber im Burger-Menü finden Sie Zugang zu allen Anwendungen.
+b) Nach dem Login haben Sie Zugriff zur Infor Cloud. Sie werden auf diese Seite weitergeleitet, aber im Burger-Menü finden Sie den Zugang zu allen Anwendungen.
 
 ![](/_images/doc2/Welcome-to-infor-Ming.le_-1024x585.png){ loading=lazy alt="Infor Cloud Dashboard" }
 
