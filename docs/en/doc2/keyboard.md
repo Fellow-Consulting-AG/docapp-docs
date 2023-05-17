@@ -35,4 +35,3 @@ By leveraging the keyboard support in DOC², you can improve your productivity a
   <iframe src='https://www.youtube.com/embed/VIDEO_ID' frameborder='0' allowfullscreen></iframe>
 </div>
 
-<img src='keyboard-shortcuts.jpg' alt='Keyboard shortcuts in DOC²'>
