@@ -118,6 +118,6 @@ c) Füllen Sie alle Felder wie auf dem folgenden Bild aus, aber mit Ihrer eigene
 
 - Melden Sie sich von DOC² ab.
 - Gehen Sie zurück zum Burger-Menü in Infor und wählen Sie das von Ihnen erstellte Symbol.
-- Bei korrekter Konfiguration sollten sich dann auf dem Dashboard von DOC² befinden.
+- Bei korrekter Konfiguration sollten Sie sich dann auf dem Dashboard von DOC² befinden.
 
 !["DOC² Dashboard"](/_images/doc2/SSO in infor cloud/doc2-sso-signin-dashboard.png)
