@@ -1,4 +1,3 @@
-
 ---
 title: "DOC² Dashboard: Manage Your Imported Documents with Ease"
 description: "Learn how to use the DOC² Dashboard to manage your imported documents with ease. Filter documents by status, view an overview of all uploaded documents, and validate extracted fields. Start using DOC² today!"

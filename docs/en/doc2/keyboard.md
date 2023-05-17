@@ -1,4 +1,3 @@
-
 ---
 title: "Maximizing Productivity with Keyboard Shortcuts in DOC²"
 description: "Learn how to maximize your productivity in DOC² with keyboard shortcuts. This guide covers the Enter key and Arrow keys, which can be used for navigation and interaction without the need for a mouse."

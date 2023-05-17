@@ -1,4 +1,3 @@
-
 ---
 title: "Manual Import Guide for DOC²"
 description: "Learn how to import documents manually in DOC² with this step-by-step guide. From uploading documents to the processing status and validation, everything is covered."
