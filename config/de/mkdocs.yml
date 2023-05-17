@@ -185,7 +185,7 @@ nav:
       - Integration mit Infor IDM und ERP:
         - doc2/doc2-with-infor/IDM-business-context-model.md
       - Infor SSO: doc2/doc2-with-infor/configuring-sso-in-cloud.md
-    - DOC² with Workflow²: doc2/workflow.md
+    # - DOC² with Workflow²: doc2/workflow.md
     - Einstellungen:
       - doc2/settings/index.md
       - Firmeninformationen: doc2/company-information.md
