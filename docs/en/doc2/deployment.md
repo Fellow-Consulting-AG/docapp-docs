@@ -1,4 +1,3 @@
-
 ---
 title: "Deploying DOC²: A Step-by-Step Guide"
 description: "Learn how to deploy DOC² with ease. Follow our step-by-step guide and manage your imported documents efficiently. Get started today!"

@@ -1,4 +1,3 @@
-
 ---
 title: "DOC² OnBoarding Guide for Productivity | FellowPro AG"
 description: "Learn the basics of DOC² and get up and running with an IPS that will maximize your productivity. Follow our step-by-step guide for initial setup and understanding document review."
