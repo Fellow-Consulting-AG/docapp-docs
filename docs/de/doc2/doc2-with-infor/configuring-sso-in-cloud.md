@@ -68,7 +68,7 @@ c) Laden Sie das Zertifikat herunter.
 
 ![](/_images/doc2/SSO in infor cloud/infor-dienstanbieter-3.png)
 
-<table><tbody><tr><td><strong>Feld</strong></td><td><strong>Wert</strong></td></tr><tr><td><strong>Anwendungstyp</strong></td><td>DEFAULT_SAML</td></tr><tr><td><strong>Anzeigename</strong></td><td>DOC²</td></tr><tr><td><strong>Entitäts-ID</strong></td><td>Siehe Entitäts-ID unter SSO Dienstanbieter-Einstellungen</td></tr><tr><td><strong>SSO-Endpunkt</strong></td><td>Kopieren Sie die SSO-URL aus SSO Dienstanbieter-Einstellungen und fügen Sie sie in das Feld <strong>SSO-Endpunkt</strong> ein.</td></tr><tr><td><strong>SLO-Endpunkt</strong></td><td>Kopieren Sie die SLO-URL aus SSO Dienstanbieter-Einstellungen und fügen Sie sie in das Feld <strong>SLO-Endpunkt</strong> ein.</td></tr><tr><td><strong>Signaturzertifikat</strong></td><td>Laden Sie die entsprechende .cer-Datei hoch, die Sie in Schritt 3c) aus SSO Dienstanbieter-Einstellungen heruntergeladen haben.</td></tr><tr><td><strong>Name ID-Format und Mapping</strong></td><td>E-Mail-Adresse</td></tr></tbody></table>
+<table><tbody><tr><td><strong>Feld</strong></td><td><strong>Wert</strong></td></tr><tr><td><strong>Anwendungstyp</strong></td><td>DEFAULT_SAML</td></tr><tr><td><strong>Anzeigename</strong></td><td>DOC²</td></tr><tr><td><strong>Entitäts-ID</strong></td><td>Siehe Entitäts-ID unter SSO Dienstanbieter-Einstellungen</td></tr><tr><td><strong>SSO-Endpunkt</strong></td><td>Kopieren Sie die SSO-URL aus SSO Dienstanbieter-Einstellungen und fügen Sie sie in das Feld <strong>SSO-Endpunkt</strong> ein.</td></tr><tr><td><strong>SLO-Endpunkt</strong></td><td>Kopieren Sie die SLO-URL aus SSO Dienstanbieter-Einstellungen und fügen Sie sie in das Feld <strong>SLO-Endpunkt</strong> ein.</td></tr><tr><td><strong>Signaturzertifikat</strong></td><td>Laden Sie die entsprechende .cer-Datei hoch, die Sie in Schritt 3c) aus SSO Dienstanbieter-Einstellungen heruntergeladen haben.</td></tr><tr><td><strong>Name ID-Format und Mapping</strong></td><td>emailaddress</td></tr></tbody></table>
 
 ![](/_images/doc2/SSO in infor cloud/infor-dienstanbieter-mit zertifikat.png)
 
@@ -114,10 +114,10 @@ c) Füllen Sie alle Felder wie auf dem folgenden Bild aus, aber mit Ihrer eigene
 
 !["Infor Cloud Neue Anwendung hinzufügen"](/_images/doc2/SSO in infor cloud/infor-neue-anwendung-hinzufügen.png)
 
-**Und jetzt der letzte Schritt:**
+**Und nun der letzte Schritt:**
 
 - Melden Sie sich von DOC² ab.
 - Gehen Sie zurück zum Burger-Menü in Infor und wählen Sie das von Ihnen erstellte Symbol.
-- Und Sie sind bereits auf dem Dashboard von DOC².
+- Bei korrekter Konfiguration sollten sich dann auf dem Dashboard von DOC² befinden.
 
 !["DOC² Dashboard"](/_images/doc2/SSO in infor cloud/doc2-sso-signin-dashboard.png)
