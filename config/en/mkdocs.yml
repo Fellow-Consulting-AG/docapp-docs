@@ -282,8 +282,9 @@ nav:
     - Detect inside pages: ocr/detect-inside-pages.md
     - Merge/Split PDF: ocr/merge-split-pdf.md
     - API: ocr/ocr-api.md
-  - Roadmap: roadmap.md
-  - Api: api.md
-  - Blog:
-    - blog/index.md
+  - Roadmap: 
+    - Roadmap: roadmap.md
+    - Api: api.md
+    - Dev Blog:
+      - blog/index.md
   

@@ -1,16 +1,14 @@
-
 ---
-title: "DOC²: The Intelligent Solution for Digitizing Documents"
+title: "DOC² -  The Intelligent Solution for Digitizing Documents"
 description: "DOC² is the latest cloud-based software for document capture that uses AI and machine learning to precisely identify, classify, analyze, and read your documents. Start your free 30-day trial now!"
 date: "2021-10-19"
 tags:
-  - DOC²
   - document capture
   - AI
   - machine learning
 ---
 
-# DOC²: The Intelligent Solution for Digitizing Documents
+
 
 ![DOC² Logo](/_images/doc2/doc2-1024x415.png){ loading=lazy, alt="DOC² Logo" }
 
