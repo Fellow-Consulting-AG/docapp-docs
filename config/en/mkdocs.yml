@@ -150,7 +150,7 @@ plugins:
   - minify:
       minify_html: true
   - neoteroi.contribs
-
+  - blog
 
 
 nav:
