@@ -1,4 +1,3 @@
-
 ---
 title: "Export Documents to ZUGFeRD Format - Company Information | DOC²"
 date: "2022-10-19"

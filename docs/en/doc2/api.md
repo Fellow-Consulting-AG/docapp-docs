@@ -1,4 +1,3 @@
-
 ---
 title: "Transfer Documents to DOC² with Webhook API"
 description: "Learn how to transfer documents directly to DOC² with a simple POST request using the Webhook API. All parameters are already filled in, making it easy to get started."

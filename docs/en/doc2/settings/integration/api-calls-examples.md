@@ -1,4 +1,3 @@
-
 ---
 title: API Calls for Document Upload and Status Check | Polydocs
 description: Learn how to make API calls for document upload and status check using api.polydocs.io. Follow the step-by-step guide to authenticate and upload documents with metadata.

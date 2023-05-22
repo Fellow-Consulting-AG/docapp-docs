@@ -1,4 +1,3 @@
-
 ---
 title: "How to Manage Users in DOC²: Adding and Resetting Passwords"
 description: Learn how to manage users in DOC², including adding new users and resetting passwords. Follow these simple steps to get started. 

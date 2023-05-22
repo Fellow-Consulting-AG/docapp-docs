@@ -1,4 +1,3 @@
-
 ---
 title: API Integration - Connect Your Applications with DOC²
 description: Learn how to connect your applications with DOC² using API Integration. Find your API Key in the Integration menu item in the settings. Get started today!

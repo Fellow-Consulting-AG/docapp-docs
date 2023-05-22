@@ -1,4 +1,3 @@
-
 ---
 title: "Integrate with DOC²: API Key and SSO Service Provider Settings"
 description: "Learn how to integrate with DOC² using API Key and SSO Service Provider Settings. Find examples of API calls and step-by-step instructions for SSO setup."

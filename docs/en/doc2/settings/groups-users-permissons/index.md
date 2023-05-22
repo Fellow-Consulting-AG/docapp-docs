@@ -1,4 +1,3 @@
-
 ---
 title: Manage User Roles and Permissions with DOC²
 description: Learn how to manage users and their roles, create sub-organizations, and configure groups and permissions for different document types with DOC².

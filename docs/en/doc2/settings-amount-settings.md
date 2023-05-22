@@ -1,4 +1,3 @@
-
 ---
 title: "Amount Settings for Invoices with Rounding Errors | DOC²"
 description: Learn how to handle rounding errors in invoices with DOC²'s amount settings. This feature is especially useful for those processing invoices in countries where rounding is a matter. 

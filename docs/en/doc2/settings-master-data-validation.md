@@ -1,4 +1,3 @@
-
 ---
 title: "Master Data Validation for Accurate Document Extraction | DOC²"
 description: "Upload your master data to DOC² for automatic mapping of supplier data from your ERP system during document extraction. Learn more about master data validation here."

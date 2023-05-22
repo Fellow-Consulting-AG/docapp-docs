@@ -1,4 +1,3 @@
-
 ---
 title: "Export Documents from DOC² - Learn How to Export to Infor and FLOW²"
 date: "2021-10-25"

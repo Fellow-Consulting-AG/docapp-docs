@@ -1,4 +1,3 @@
-
 ---
 title: "DOC² Import: E-Mail, Manual, API, and Fileshare"
 description: "Learn about the different import options available in DOC², including E-Mail, manual import, API integration, and file sharing. Streamline your document management process today."
