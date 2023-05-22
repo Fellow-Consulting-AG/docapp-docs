@@ -15,9 +15,9 @@ tags:
 
 1\. Log in on URL [https://app.polydocs.io/](https://app.polydocs.io/) with the login details you received from us.
 
-2\. Go to SETTINGS (on top bar) and choose SSO Settings down at the bottom of the list.
+2\. Go to SETTINGS, GLOBAL SETTINGS and choose INTEGRATION.
 
-Here you will find all the information you need for the following steps
+Here you will find all the information you need for the following steps:
 
 ![DOC2 - SSO](/_images/doc2/DOC2_SSO-Service-Provider-Settings_EN-1024x508.png)
 
