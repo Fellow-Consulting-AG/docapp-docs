@@ -23,7 +23,7 @@ To add a new user to your DOC² account, follow these steps:
 5. If the user is an administrator, check the "Admin" box.
 6. Click **Save** to create the new user.
 
-![Adding a User in DOC²](/path/to/image.png "Adding a User in DOC²")
+![Adding a User in DOC²](/_images/doc2/Settings/Users/Image_1_add_user.png "Adding a User in DOC²")
 
 ## Resetting a Password
 
@@ -34,7 +34,7 @@ If a user forgets their password, you can easily reset it by following these ste
 3. The user will receive an email with a link to reset their password.
 4. Click on the link in the email and follow the instructions to reset the password.
 
-![Resetting a Password in DOC²](/path/to/image.png "Resetting a Password in DOC²")
+![Resetting a Password in DOC²](/_images/doc2/Settings/Users/Image_2_reset_password.png "Resetting a Password in DOC²")
 
 By following these simple steps, you can easily manage your users in DOC². Sign up for a 30-day free trial today to see how DOC² can help streamline your document management process.
 
