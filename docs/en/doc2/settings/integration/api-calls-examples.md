@@ -10,9 +10,7 @@ tags:
   - api.polydocs.io
 ---
 
-<div class='video-container'>
-
-#### API Calls for Document Upload and Status Check
+### API Calls for Document Upload and Status Check
 
 API integration provides functions and services that connect applications and processes. In this guide, we will show you how to make API calls through api.polydocs.io for document upload and status check.
 
