@@ -1,4 +1,3 @@
-
 ---
 title: "DOC² with Infor: Overview of Infrastructure, Use Cases, and Export Options"
 description: "Learn about the Infor infrastructure and how it integrates with DOC². Explore use cases and export options for seamless document management. Get started today!"
