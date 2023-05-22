@@ -1,4 +1,3 @@
-
 ---
 title: "Table Extraction with DOC² - Extract Tables from PDF-Files"
 description: "Learn how to extract tables from PDF-Files with DOC²'s Line Items functionality. Extract tables from all types of documents (Invoices, Contracts, Forms, Medical Prescriptions etc.) easily and efficiently."
