@@ -1,4 +1,3 @@
-
 ---
 title: "Table Extraction Training: Learn How to Define Tables and Columns"
 description: "Get an overview of all the important points about table extraction training, including defining tables and columns, advanced settings, mapping of columns, group function, manual row selection, adding new table columns, and saving and deleting rules."
