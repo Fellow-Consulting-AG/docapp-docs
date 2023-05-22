@@ -1,4 +1,3 @@
-
 ---
 title: "DOC² - Infor Use Cases for Efficient Document Management"
 description: "Explore different use cases of how DOC² can help you manage your documents efficiently with Infor. From simple invoice processing to complex PO matching and ZUGFeRD conversion, we've got you covered."
