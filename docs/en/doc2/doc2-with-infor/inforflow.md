@@ -1,4 +1,3 @@
-
 ---
 title: "DOC² - Infor API Integration for PO Matching"
 description: "Learn how DOC² integrates with Infor LN/M3 for PO matching and document processing. Explore our use cases and API flow for seamless integration."
