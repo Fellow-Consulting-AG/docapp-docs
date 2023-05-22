@@ -24,7 +24,7 @@ To get started, you'll need a computer with internet access. Once you have that,
 
 ## Get Started Today!
 
-With DOC², managing your imported documents has never been easier. Follow our step-by-step guide and get started today !
+With DOC², managing your imported documents has never been easier. Follow our step-by-step guide and get started today!
 
 <div class='video-container'>
   <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
