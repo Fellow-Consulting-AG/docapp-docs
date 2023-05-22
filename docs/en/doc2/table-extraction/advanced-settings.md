@@ -12,8 +12,6 @@ In the table extraction view, you will find the menu item `Settings` in the uppe
 
 ![Advanced Settings](/_images/doc2/Table-Extraction/8-Advanced settings/Image_27_settings_icon.png){ loading=lazy }
 
-
-
 ![Advanced Settings](/_images/doc2/Table-Extraction/8-Advanced settings/Image_28_advanced_settings_dropdown.png){ loading=lazy }
 
 ## Below functionalities are available in general settings:
