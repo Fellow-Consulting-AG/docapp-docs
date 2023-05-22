@@ -1,4 +1,3 @@
-
 ---
 title: "How to Add a New Column to a Table in DOC²"
 description: "Learn how to manually create columns for extracted documents in DOC² and map them to rows (fields) on the extracted document. Follow our step-by-step guide now!"

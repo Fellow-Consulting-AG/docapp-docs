@@ -1,4 +1,3 @@
-
 ---
 title: "Mapping Columns for Table Extraction in DOC²"
 description: "Learn how to map extracted columns with the columns given by DOC² for accurate table extraction. Watch our tutorial video for step-by-step instructions."

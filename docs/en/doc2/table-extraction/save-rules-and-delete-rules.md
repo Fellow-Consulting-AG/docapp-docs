@@ -1,4 +1,3 @@
-
 ---
 title: "Save and Delete Rules for Table Extraction in DOC²"
 description: "Learn how to save and delete rules for table extraction in DOC². This important documentation will guide you through the process to ensure you don't lose any valuable data."
