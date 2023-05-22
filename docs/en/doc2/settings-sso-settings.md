@@ -15,7 +15,7 @@ tags:
 
 1\. Log in on URL [https://app.polydocs.io/](https://app.polydocs.io/) with the login details you received from us.
 
-2\. Go to SETTINGS, GLOBAL SETTINGS and choose INTEGRATION.
+2\. Go to SETTINGS -> GLOBAL SETTINGS -> INTEGRATION.
 
 Here you will find all the information you need for the following steps:
 
