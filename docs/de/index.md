@@ -1,9 +1,8 @@
 # DIE PLATTFORM DER DIGITALISIERUNG
 ## Für die Automatisierung von Geschäftsprozessen - einschließlich Dokumente
 
-## Digitalisierung
-Unter Digitalisierung versteht man die Erstellung einer digitalen Darstellung physischer Objekte oder Attribute. Wir scannen beispielsweise ein Papierdokument und speichern es als digitales Dokument (z. B. PDF). Mit anderen Worten: Bei der Digitalisierung geht es um Konvertierung
-etwas Nicht-Digitales in eine digitale Darstellung oder ein digitales Artefakt.
+## Digitization
+Unter Digitization versteht man die Erstellung einer digitalen Darstellung physischer Objekte oder Attribute. Wir scannen beispielsweise ein Papierdokument und speichern es als digitales Dokument (z. B. PDF). Mit anderen Worten: Bei der Digitization geht es um Konvertierung von Nicht-Digitales in eine digitale Darstellung oder ein digitales Artefakt.
 
 
 
@@ -12,7 +11,7 @@ etwas Nicht-Digitales in eine digitale Darstellung oder ein digitales Artefakt.
 ## Digitalisierung
 
 Digitalisierung bedeutet die Ermöglichung oder Verbesserung von Prozessen durch den Einsatz digitaler Technologien und digitalisierter
-Daten. Daher setzt die Digitalisierung die Digitalisierung voraus.
+Daten. Daher setzt die Digitalisierung Digitization voraus.
 Die Digitalisierung verbessert einen oder mehrere bestehende Geschäftsprozesse, verändert oder transformiert sie aber nicht. Sie macht einen Prozess von einem menschengesteuerten Ereignis oder einer Reihe von Ereignissen zu einem softwaregesteuerten Prozess.
 
 ## Digitale Transformation
@@ -38,17 +37,16 @@ DOC² ist die neueste Software und Lösung zur Dokumentenerfassung, die von der 
   -  Spart Zeit im digitalen Posteingang
   -  Reduziert Fehler, die durch manuelle Verarbeitung verursacht werden
 
-## Wie nutzen Sie DOC²?:
+## Wie nutzen Sie DOC²?
 
   -  Scannen und Erkennen von Dokumenten aller Art (Rechnungen, Verträge, Formulare, ärztliche Verordnungen usw.)
-  -  Zuverlässige Extraktion der Daten im Dokument und Integration und Weiterverarbeitung im ERP-, RPA- oder CRM-System)
+  -  Zuverlässige Extraktion der Daten im Dokument und Integration und Weiterverarbeitung im ERP-, RPA- oder CRM-System
   -  Validierung der extrahierten Daten und Verifizierung mit anderen Systemen aus internen und öffentlichen Quellen
   -  Integration in Ihre Systemlandschaft (z. B. ERP-System, Dokumentenmanagement, Workflow-System etc.)
 
 ## Warum DOC² genau das Richtige für Sie ist
 
-  -   Viele Unternehmen haben erkannt, dass z. B. die Bearbeitung von Eingangsrechnungen sehr zeitaufwändig sein kann. Sie versuchen, die Produktivität zu erhöhen und den
-      den Purchase-to-Pay-Prozess zu optimieren, indem sie Produkte zur "Digitalisierung" von Rechnungen einführen.
+  -   Viele Unternehmen haben erkannt, dass z. B. die Bearbeitung von Eingangsrechnungen sehr zeitaufwändig sein kann. Sie versuchen, die Produktivität zu erhöhen und den Purchase-to-Pay-Prozess zu optimieren, indem sie Produkte zur "Digitalisierung" von Rechnungen einführen.
 
   -  Darüber hinaus nutzt DOC² Schwarmintelligenz. Was bedeutet das? Sie profitieren von den Erfahrungen anderer Kunden und deren „Lernkurve“, ohne sensible Daten zu teilen. Mit der cloudbasierten Rule Engine sorgen wir für eine kontinuierliche Verbesserung der Anwendung. Sie benötigen keine Entwickler oder Datenwissenschaftler, da das System aus den Eingaben des Benutzers lernt und der Prozess ohne Unterbrechungen abläuft.
 
