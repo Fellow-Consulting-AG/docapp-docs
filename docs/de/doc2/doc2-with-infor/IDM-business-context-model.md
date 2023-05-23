@@ -1,5 +1,6 @@
 ---
-title: IDM Business Context Model - Anleitung zur Erstellung von Dokumenttypen in IDM und deren Verbindung mit der entsprechenden Arbeitsumgebung in LN
+title: IDM Business Context Model - 
+Anleitung zur Erstellung von Dokumenttypen in IDM und deren Verbindung mit der entsprechenden Arbeitsumgebung in LN
 description: In dieser Dokumentation finden Sie Informationen zur Erstellung neuer Dokumenttypen in IDM und deren Verbindung mit der entsprechenden Arbeitsumgebung in LN.
 date: 2023-05-16
 tags:
@@ -33,25 +34,26 @@ Nach der Anmeldung können Sie über den App-Switcher im Infor Ming.le-Portal au
 
 ### Control Center
 
-To access the Control Center, click the options menu next to the **+ Add Document** button on the **Document Management** landing page and select **Control Center**.
+Um auf das Control Center zuzugreifen, klicken Sie auf der Landing Page **Dokumentenverwaltung** auf das Optionsmenü neben der Schaltfläche **+ Dokument hinzufügen** und wählen Sie **Control Center**.
 
-![](/_images/doc2/Infor/IDM_Control Center.png)
+!["Zugang Control Center"](/_images/doc2/Infor/Infor-control-center-button.png)
+!["Control Center"](/_images/doc2/Infor/Infor_control-center.png)
 
-If you have the `IDM-AdvancedUser` role or higher, you can perform these actions from the control center:
+Wenn Sie die Rolle `IDM-AdvancedUser` oder höher haben, können Sie diese Aktionen vom Kontrollzentrum aus durchführen:
 
-1. Configure the Exporter/Importer. (See below)
+1. Konfigurieren Sie den Export/Import. (siehe unten)
 
-2. Synchronize the data model. Through this action the systems can self-heal by synchronizing the data model.
+2. Synchronisieren Sie das Datenmodell. Durch diese Aktion können sich die Systeme selbst reparieren, indem sie das Datenmodell synchronisieren.
 
-For all other actions in the control center, see the _Infor Document Management Administration Guide – Cloud Edition_. These actions are only available for users with the `IDM-Administrator` role.
+Alle weiteren Aktionen im Kontrollzentrum finden Sie im _Infor Document Management Administration Guide – Cloud Edition_. Diese Aktionen sind nur für Benutzer mit der Rolle `IDM-Administrator` verfügbar.
 
-### Configuration Exporter / Importer
+### Import/Export Konfiguration
 
-![](/_images/doc2/Infor/IDM_ControlCenter_Document Type_Import.png)
+!["Import/Export"](/_images/doc2/Infor/Infor-control-center-import-export.png)
 
-Configuration Exporter and Importer allows the user to export / import the Configuration parts of Control Center (Document Types Filter, Result List, Business Context Model, and ION Configuration) using XML documents.
+Unter Verwaltung Import/Export kann der Benutzer die Konfigurationsteile des Control Centers (Dokumenttypenfilter, Ergebnisliste, Geschäftskontextmodell und ION-Konfiguration) mithilfe von XML-Dokumenten exportieren/importieren. 
 
-The xml files for all common document types can be downloaded here.
+Die XML-Dateien für alle gängigen Dokumenttypen können Sie hier herunterladen.
 
 - Order Confirmation: <a href="assets/images/doc2/Infor/IDMconfiguration_OrderConfirmation.xml" download>IDMconfiguration_OrderConfirmation</a>
 - Delivery Note: <a href="assets/images/doc2/Infor/IDMconfiguration_DeliveryNote.xml" download>IDMconfiguration_DeliveryNote</a>
