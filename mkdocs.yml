@@ -153,6 +153,11 @@ nav:
       - Document Types: doc2/settings-document-types.md
       - Email Notification: doc2/settings/email-notification.md
       - Modules: doc2/modules.md
+        #-doc2/settings/Module/index.md
+        #-Layout Builder: doc2/settings/Module/layout-builder.md
+        #-Approval: doc2/settings/Module/approval.md
+        #-Doc Script: doc2/settings/Module/doc-script.md
+        #-Doc Scan: doc2/settings/Module/doc-scan.md
       - All Import Options:
         - doc2/import/index.md
         - Email: doc2/e-mail.md
