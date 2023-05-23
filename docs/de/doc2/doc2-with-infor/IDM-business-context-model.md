@@ -1,6 +1,5 @@
 ---
-title: IDM Business Context Model - 
-Anleitung zur Erstellung von Dokumenttypen in IDM und deren Verbindung mit der entsprechenden Arbeitsumgebung in LN
+title: IDM Geschäftskontextmodell 
 description: In dieser Dokumentation finden Sie Informationen zur Erstellung neuer Dokumenttypen in IDM und deren Verbindung mit der entsprechenden Arbeitsumgebung in LN.
 date: 2023-05-16
 tags:
@@ -31,6 +30,7 @@ Durch den Zugriff auf das System über diese URL stellen Sie sicher, dass die er
 
 Nach der Anmeldung können Sie über den App-Switcher im Infor Ming.le-Portal auf die Client-Anwendung zugreifen.
 
+!["Document Management"](/_images/doc2/Infor/Infor-app-switcher.png)
 
 ### Control Center
 
@@ -49,31 +49,31 @@ Alle weiteren Aktionen im Kontrollzentrum finden Sie im _Infor Document Manageme
 
 ### Import/Export Konfiguration
 
-!["Import/Export"](/_images/doc2/Infor/Infor-control-center-import-export.png)
+!["Control Center Menü"](/_images/doc2/Infor/Infor-control-center-menue.png)
 
-Unter Verwaltung Import/Export kann der Benutzer die Konfigurationsteile des Control Centers (Dokumenttypenfilter, Ergebnisliste, Geschäftskontextmodell und ION-Konfiguration) mithilfe von XML-Dokumenten exportieren/importieren. 
+Über das Menü kann der Benutzer die Konfigurationsteile des Control Centers (Dokumenttypfilter, Ergebnisliste, Geschäftskontextmodell und ION-Konfiguration) mithilfe von XML-Dokumenten exportieren/importieren. 
 
 Die XML-Dateien für alle gängigen Dokumenttypen können Sie hier herunterladen.
 
-- Order Confirmation: <a href="assets/images/doc2/Infor/IDMconfiguration_OrderConfirmation.xml" download>IDMconfiguration_OrderConfirmation</a>
-- Delivery Note: <a href="assets/images/doc2/Infor/IDMconfiguration_DeliveryNote.xml" download>IDMconfiguration_DeliveryNote</a>
-- Invoice: <a href="assets/images/doc2/Infor/IDMconfiguration_Invoice.xml" download>IDMconfiguration_Invoice</a>
+- Auftragsbestätigung: <a href="/_images/doc2/Infor/IDMconfiguration_OrderConfirmation.xml" download>IDMconfiguration_OrderConfirmation</a>
+- Lieferschein: <a href="/_images/doc2/Infor/IDMconfiguration_DeliveryNote.xml" download>IDMconfiguration_DeliveryNote</a>
+- Rechnung: <a href="docs/de/_images/doc2/Infor/IDMconfiguration_Invoice.xml" download>IDMconfiguration_Invoice</a>
 
-If you are using Infor LN as ERP also upload these xml files:
+Wenn Sie Infor LN als ERP verwenden, laden Sie auch diese xml-Dateien hoch:
 
-- Order Confirmation: <a href="assets/images/doc2/Infor/IDMconfiguration_BusinessContext_OrderConfirmation.xml" download>IDMconfiguration_BusinessContext_OrderConfirmation</a>
-- Delivery Note: <a href="assets/images/doc2/Infor/IDMconfiguration_BusinessContext_DeliveryNote.xml" download>IDMconfiguration_BusinessContext_DeliveryNote</a>
-- Delivery Note2:<a href="assets/images/doc2/Infor/IDMconfiguration_BusinessContext_DeliveryNote2.xml" download>IDMconfiguration_BusinessContext_DeliveryNote2</a>
-- Invoice: <a href="assets/images/doc2/Infor/IDMconfiguration_BusinessContext_Invoice.xml" download>IDMconfiguration_BusinessContext_Invoice</a>
+- Auftragsbestätigung: <a href="/_images/doc2/Infor/IDMconfiguration_BusinessContext_OrderConfirmation.xml" download>IDMconfiguration_BusinessContext_OrderConfirmation</a>
+- Lieferschein: <a href="/_images/doc2/Infor/IDMconfiguration_BusinessContext_DeliveryNote.xml" download>IDMconfiguration_BusinessContext_DeliveryNote</a>
+- DLieferschein2:<a href="/_images/doc2/Infor/IDMconfiguration_BusinessContext_DeliveryNote2.xml" download>IDMconfiguration_BusinessContext_DeliveryNote2</a>
+- Rechnung: <a href="/_images/doc2/Infor/IDMconfiguration_BusinessContext_Invoice.xml" download>IDMconfiguration_BusinessContext_Invoice</a>
 
 
-You can import the files as follows:
+Sie können die Dateien wie folgt importieren:
 
-### Using the Import tab
+### Verwendung der Registerkarte `Importieren`
 
-1. Navigate to **Control Center** > **Administration** > **Import / Export** and click the **Import** tab.
-2. Click **Select XML file** and browse for the XML file. A file validation applies. Only XML files that were created by the exporter are accepted. If validation fails, **Import XML** file remains disabled.
-3. When the configuration file is uploaded, an import preview is displayed and includes any or all of these parts:
+1. Navigieren Sie zu **Control Center** > **Verwaltung** > **Import / Export** und wählen Sie die Registerkarte **Importieren**.
+2. Klicken Sie auf den **Ordner** und suchen Sie nach der zuvor herunterleladenen XML-Datei. Eine Dateivalidierung wird durchgeführt. Es werden nur XML-Dateien akzeptiert, die vom Exporteur erstellt wurden. Wenn die Validierung fehlschlägt, bleibt die Datei **XML Importieren** deaktiviert.
+3. Beim Hochladen der Konfigurationsdatei wird eine Importvorschau angezeigt, die einige oder alle dieser Teile enthält:
     <table>
     <tr>
         <td style="max-width: 100%; white-space: nowrap">Document Types and Value Sets</td>
