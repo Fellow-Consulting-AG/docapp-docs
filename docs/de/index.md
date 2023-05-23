@@ -3,7 +3,7 @@
 
 ## Digitalisierung
 Unter Digitalisierung versteht man die Erstellung einer digitalen Darstellung physischer Objekte oder Attribute. Wir scannen beispielsweise ein Papierdokument und speichern es als digitales Dokument (z. B. PDF). Mit anderen Worten: Bei der Digitalisierung geht es um Konvertierung
-etwas Nicht-Digitales in eine digitale Darstellung oder ein digitales Artefakt umwandeln.
+etwas Nicht-Digitales in eine digitale Darstellung oder ein digitales Artefakt.
 
 
 
