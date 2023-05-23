@@ -22,7 +22,7 @@ Jeder Geschäftsprozess beginnt, enthält oder endet mit einem Dokument. Egal ob
 
 ## Was ist DOC²?
 
-DOC² ist die neueste Software und Lösung zur Dokumentenerfassung, die von der PolyDocs GmbH entwickelt wurde. Es handelt sich um eine komplett cloudbasierte Lösung, die mit Hilfe von Künstlicher Intelligenz und Machine Learning Ihre Dokumente präzise identifiziert, klassifiziert, analysiert und liest. Egal, ob auf Papier oder in einer Datei. DOC² lernt selbstständig, der Erfahrungsgrad steigt mit jedem Dokument. DOC² erreicht dies durch Schwarmintelligenz.
+DOC² ist die neueste Software und Lösung zur Dokumentenerfassung, die von der FellowPro AG entwickelt wurde. Es handelt sich um eine komplett cloudbasierte Lösung, die mit Hilfe von Künstlicher Intelligenz und Machine Learning Ihre Dokumente präzise identifiziert, klassifiziert, analysiert und liest. Egal, ob auf Papier oder in einer Datei. DOC² lernt selbstständig, der Erfahrungsgrad steigt mit jedem Dokument. DOC² erreicht dies durch Schwarmintelligenz.
 
 <ins>Die Vorteile von DOC² auf einen Blick:</ins>
 

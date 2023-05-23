@@ -13,9 +13,9 @@ tags:
 
 ![Logo](/_images/doc2/doc2-1024x415.png){ loading=lazy, alt="DOC² Logo" } 
 
-Die intelligente Lösung zur Digitalisierung von Dokumenten
+Die intelligente Lösung zur Digitalisierung von Dokumenten.
 
-Jeder Geschäftsprozess beginnt, enthält oder endet mit einem Dokument. Unabhängig davon, ob es sich um Papierform oder bereits um eine Datei handelt. Dies wird als unstrukturierte Daten bezeichnet. Obwohl die Informationen auf oder in dem Dokument vorhanden sind, können sie nicht automatisch in die Arbeitsprozesse integriert werden, da sie von allen Softwareprogrammen einfach nicht erkannt werden.
+Jeder Geschäftsprozess beginnt, enthält oder endet mit einem Dokument. Unabhängig davon, ob es sich um Papierform oder bereits um eine Datei handelt. Dies wird als unstrukturierte Daten bezeichnet. Obwohl die Informationen auf oder in dem Dokument vorhanden sind, können sie nicht automatisch in die Arbeitsprozesse integriert werden, da sie einfach nicht von allen Softwareprogrammen erkannt werden.
 
 DOC² ist die neueste Software- und Lösung für die Dokumentenerfassung, die von der FellowPro AG entwickelt wurde. Es handelt sich um eine vollständig cloudbasierte Lösung, die künstliche Intelligenz und maschinelles Lernen verwendet, um Ihre Dokumente präzise zu identifizieren, zu klassifizieren, zu analysieren und zu lesen. Egal ob Papier oder Datei. DOC² lernt unabhängig, das Erfahrungsniveau steigt mit jedem Dokument. DOC² verwendet dafür Schwarmintelligenz.
 
@@ -37,7 +37,7 @@ DOC² ist die neueste Software- und Lösung für die Dokumentenerfassung, die vo
 #### **Wie verwenden Sie DOC²:**
 
 * Scannen und Erkennen aller Arten von Dokumenten (Rechnungen, Verträge, Formulare, medizinische Rezepte usw.)
-* Zuverlässige Extraktion der Daten im Dokument und Integration und Weiterverarbeitung im ERP-, RPA- oder CRM-System)
+* Zuverlässige Extraktion der Daten im Dokument und Integration und Weiterverarbeitung im ERP-, RPA- oder CRM-System
 * Validierung der extrahierten Daten und Überprüfung gegen andere Systeme aus internen und öffentlichen Quellen
 * Integration in Ihre Systemlandschaft (z. B. ERP-System, Dokumentenmanagement, Workflow-System usw.)
 
