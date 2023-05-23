@@ -34,7 +34,7 @@ Nach der Anmeldung können Sie über den App-Switcher im Infor Ming.le-Portal au
 
 ### Control Center
 
-Um auf das Control Center zuzugreifen, klicken Sie auf der Landing Page **Dokumentenverwaltung** auf das Optionsmenü neben der Schaltfläche **+ Dokument hinzufügen** und wählen Sie **Control Center**.
+Um auf das Control Center zuzugreifen, klicken Sie auf der Landing Page **Document Management** auf das Optionsmenü neben der Schaltfläche **+ Dokument hinzufügen** und wählen Sie **Control Center**.
 
 !["Zugang Control Center"](/_images/doc2/Infor/Infor-control-center-button.png)
 !["Control Center"](/_images/doc2/Infor/Infor_control-center.png)
@@ -57,7 +57,7 @@ Die XML-Dateien für alle gängigen Dokumenttypen können Sie hier herunterladen
 
 - Auftragsbestätigung: <a href="/_images/doc2/Infor/IDMconfiguration_OrderConfirmation.xml" download>IDMconfiguration_OrderConfirmation</a>
 - Lieferschein: <a href="/_images/doc2/Infor/IDMconfiguration_DeliveryNote.xml" download>IDMconfiguration_DeliveryNote</a>
-- Rechnung: <a href="docs/de/_images/doc2/Infor/IDMconfiguration_Invoice.xml" download>IDMconfiguration_Invoice</a>
+- Rechnung: <a href="/_images/doc2/Infor/IDMconfiguration_Invoice.xml" download>IDMconfiguration_Invoice</a>
 
 Wenn Sie Infor LN als ERP verwenden, laden Sie auch diese xml-Dateien hoch:
 
