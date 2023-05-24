@@ -57,7 +57,7 @@ Klicken Sie auf `SPEICHERN`, um die Exporteinstellung zu speichern.
 
 #### Schritte in Infor ION
 
-Öffnen Sie "Infor ION API", wählen Sie "Autorisierte Apps" und klicken Sie auf die DOC²-Anwendung.
+Öffnen Sie **Infor ION API**, wählen Sie "Autorisierte Apps" und klicken Sie auf die DOC²-Anwendung.
 
 ![](/_images/doc2/Infor/infor-ion-api-autorisierte app-doc2export.png)
 
@@ -65,7 +65,7 @@ Kopieren und speichern Sie die "Client-ID", diese ID wird später benötigt.
 
 ![](/_images/doc2/Infor/infor-ion-api-autorisierte app-client-id.png)
 
-Öffnen Sie "ION Desk" über das Burger-Menü, wählen Sie "ION Connect" und klicken Sie auf "Verbindungspunkte".
+Öffnen Sie **ION Desk** über das Burger-Menü, wählen Sie "ION Connect" und klicken Sie auf "Verbindungspunkte".
 
 Klicken Sie auf "+Hinzufügen" und wählen Sie "IMS über ION API".
 
@@ -75,31 +75,31 @@ Geben Sie einen aussagekräftigen Namen und eine aussagekräftige Beschreibung e
 
 Deaktivieren Sie das Kontrollkästchen "Anwendung verfügt über IMS-Endpunkt" und geben Sie die "Client-ID" ein, die aus ION API kopiert wurde.
 
-![](docs/de/_images/doc2/Infor/infor-ion-desk-anwendungsverbindungspunkt.png)
+![](/_images/doc2/Infor/infor-ion-desk-anwendungsverbindungspunkt.png)
 
 Wechseln Sie zur Registerkarte `Dokumente`.
 
-Klicken Sie auf das "+"-Symbol und geben Sie im Filterfeld "Sync.CaptureDocument" ein. Die Liste sollte nun das richtige BOD anzeigen. Aktivieren Sie das Kontrollkästchen vor "Sync.CaptureDocument" und klicken Sie auf "OK".
+Klicken Sie auf das "+"-Symbol und geben Sie im Filterfeld "Sync.CaptureDocument" ein. Die Liste sollte nun den richtigen BOD anzeigen. Aktivieren Sie das Kontrollkästchen vor "Sync.CaptureDocument" und klicken Sie auf "OK".
 
 ![](/_images/doc2/Infor/infor-ion-desk-anwendungsverbindungspunkt-dokumente.png)
 
-Klicken Sie auf das Disketten-Symbol, um die Einstellungen zu speichern.
+Klicken Sie oben links auf das Disketten-Symbol, um die Einstellungen zu speichern.
 
 
-Wechseln Sie zu "Datenflüsse" und klicken Sie auf "+Hinzufügen" und wählen Sie "Dokument-Flow".
+Wechseln Sie zu "Datenflüsse" und klicken Sie auf "+Hinzufügen" und wählen "Dokument-Flow".
 
 ![](/_images/doc2/Infor/infor-ion-desk-datenflüsse.png)
 
 Geben Sie einen aussagekräftigen Namen und eine aussagekräftige Beschreibung ein.
 
-Ziehen Sie eine "Anwendung" in den Fluss und nennen Sie sie "Doc2".
+Ziehen Sie eine "Anwendung" in den Fluss und nennen Sie sie "DOC²".
 
 ![](/_images/doc2/Infor/infor-ion-desk-datenflüsse-anwendung.png)
 
-Klicken Sie auf das "+"-Symbol und wählen Sie die "Doc2"-Anwendung, in diesem Fall "Doc2Export", und klicken Sie auf "OK".
+Klicken Sie auf das "+"-Symbol und wählen Sie die "DOC²"-Anwendung, in diesem Fall "Doc2Export", und klicken Sie auf "OK".
 
 ![](/_images/doc2/Infor/infor-ion-desk-datenflüsse-anwendung auswählen.png)
 
 Klicken Sie auf das Disketten-Symbol, um den neuen Dokumentenfluss zu speichern.
 
-![](/_images/doc2/image-46.png)
+![](/_images/doc2/Infor/infor-ion-desk-dokument-flow-speichern.png)
