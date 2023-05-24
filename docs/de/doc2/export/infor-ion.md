@@ -25,23 +25,21 @@ In dieser Schritt-für-Schritt-Anleitung wird erklärt, wie man Dokumente von DO
 
 #### Schritte in DOC²
 
-Melden Sie sich bei DOC² an, klicken Sie auf "Einstellungen" und wählen Sie "Export".
+Melden Sie sich bei DOC² an, klicken Sie auf **EINSTELLUNGEN** und wählen Sie **Export**.
 
-![Export Settings Screenshot](/_images/doc2/image-1-1024x695.png)
+![Einstellungen Export](/_images/doc2/export/doc2-einstellungen-export.png)
 
-Einstellungen - Export
 
-Klicken Sie auf "Integration hinzufügen".
+Klicken Sie in den Export-Einstellungen auf `+HINZUFÜGEN`.
 
-![Add Integration Screenshot](/_images/doc2/image-7-1024x751.png)
+![Export Einstellung hinzufügen](/_images/doc2/export/doc2-export einstellung hinzufügen.png)
 
-Einstellungen - Export - Integration hinzufügen
 
-Wählen Sie "Infor ION".
+Wählen Sie "Infor IDM + ION BOD".
 
-![](/_images/doc2/image-31-1024x342.png)
+![](/_images/doc2/export/doc2-export-infor idm + ion bod.png)
 
-Klicken Sie auf den Abschnitt "ION-API-Datei" und wählen Sie die ION-API-Datei aus, die Sie für die Kommunikation zwischen DOC² und IDM verwenden möchten. Wenn Sie keine ION-API-Datei haben, folgen Sie dieser Dokumentation, um eine zu erstellen: [Wie man eine Infor ION-Datei erstellt](/doc2/export/create-a-infor-ion-file/)
+Klicken Sie auf den Abschnitt "ION-Zuordnungsdatei" und wählen Sie die ION-API-Datei aus, die Sie für die Kommunikation zwischen DOC² und IDM verwenden möchten. Wenn Sie keine ION-API-Datei haben, folgen Sie dieser Dokumentation, um eine zu erstellen: [Wie man eine Infor ION-Datei erstellt](/doc2/export/create-a-infor-ion-file/)
 
 ![](/_images/doc2/image-32-1024x347.png)
 
