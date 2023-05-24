@@ -20,7 +20,7 @@ In dieser Schritt-für-Schritt-Anleitung wird erklärt, wie man Dokumente von DO
 **Voraussetzungen:**
 
 - Ein Admin-Benutzer für InforOS mit den Sicherheitsrollen "ION Desk Admin", "ION API Admin" und "IDM Admin".
-- Eine ION-API-Datei, um die Kommunikation zwischen DOC² und Infor IDM zu erstellen. Folgen Sie der Dokumentation hier: [Wie man eine Infor ION-Datei erstellt](/doc2/export/create-a-infor-ion-file/)
+- Eine ION-API-Datei, um die Kommunikation zwischen DOC² und Infor IDM zu erstellen. Folgen Sie der Dokumentation hier: [Wie man eine Infor ION API-Datei erstellt](/doc2/export/create-a-infor-ion-api-file/)
 - Ein IDM-Dokumenttyp, in den die Dokumente exportiert werden sollen.
 
 #### Schritte in DOC²
@@ -39,7 +39,7 @@ Wählen Sie "Infor IDM + ION BOD".
 
 ![](/_images/doc2/export/doc2-export-infor idm + ion bod.png)
 
-Klicken Sie auf den Abschnitt "ION-Zuordnungsdatei" und wählen Sie die ION-API-Datei aus, die Sie für die Kommunikation zwischen DOC² und IDM verwenden möchten. Wenn Sie keine ION-API-Datei haben, folgen Sie dieser Dokumentation, um eine zu erstellen: [Wie man eine Infor ION API-Datei erstellt]((/doc2/export/create-a-infor-ion-api-file/))
+Klicken Sie auf den Abschnitt "ION-Zuordnungsdatei" und wählen Sie die ION-API-Datei aus, die Sie für die Kommunikation zwischen DOC² und IDM verwenden möchten. Wenn Sie keine ION-API-Datei haben, folgen Sie dieser Dokumentation, um eine zu erstellen: [Wie man eine Infor ION API-Datei erstellt](/doc2/export/create-a-infor-ion-api-file/)
 
 ![](/_images/doc2/image-32-1024x347.png)
 
