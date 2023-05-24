@@ -72,8 +72,9 @@ Sie können die Dateien wie folgt importieren:
 ### Verwendung der Registerkarte `Importieren`
 
 1. Navigieren Sie zu **Control Center** > **Verwaltung** > **Import / Export** und wählen Sie die Registerkarte **Importieren**.
-2. Klicken Sie auf den **Ordner** und suchen Sie nach der zuvor herunterleladenen XML-Datei. Eine Dateivalidierung wird durchgeführt. Es werden nur XML-Dateien akzeptiert, die vom Exporteur erstellt wurden. Wenn die Validierung fehlschlägt, bleibt die Datei **XML Importieren** deaktiviert.
-3. Beim Hochladen der Konfigurationsdatei wird eine Importvorschau angezeigt, die einige oder alle dieser Teile enthält:
+2. Klicken Sie auf den **Ordner** und suchen Sie nach der zuvor heruntergeladenen XML-Datei und wählen Sie `Importieren`. Eine Dateivalidierung wird durchgeführt. Es werden nur XML-Dateien akzeptiert, die vom Exporteur erstellt wurden. Wenn die Validierung fehlschlägt, bleibt die Datei **XML Importieren** deaktiviert.
+3. Ist der Import der Konfiguration erfolgreich, wird Ihnen dies oben rechts angezeigt.
+<!-- 3. Beim Hochladen der Konfigurationsdatei wird eine Importvorschau angezeigt, die einige oder alle dieser Teile enthält:
     <table>
     <tr>
         <td style="max-width: 100%; white-space: nowrap">Document Types and Value Sets</td>
@@ -106,65 +107,65 @@ Sie können die Dateien wie folgt importieren:
    + A green OK sign with no message required.
 5. Click **Import XML file** to run the importer. When the import is finished, a report window is displayed with an information table that summarizes the status of the import. If any error occurs during the import, the error message informs the user what went wrong.
 
-When the import is successful, **Import XML file** is disabled.
+When the import is successful, **Import XML file** is disabled. -->
 
-This is how the general Information and attributes look like in IDM under the corresponding document type:
+So sehen die allgemeinen Informationen und Attribute in IDM unter dem entsprechenden Dokumenttyp aus:
 
-**Order Confirmation**
+**Auftragsbestätigung**
 
-![](/_images/doc2/Infor/IDM_DocumentType_OrderConfirmation.png)
-![](/_images/doc2/Infor/IDM_Attributes_OrderConfirmation.png)
+![](/_images/doc2/Infor/IDM_dokumenttyp_auftragsbestätigung_dokumenttyp.png)
+![](/_images/doc2/Infor/IDM_dokumenttyp_auftragsbestätigung_attribute.png)
 
-**Delivery Note**
+**Lieferschein**
 
-![](/_images/doc2/Infor/IDM_DocumentType_DeliveryNote.png)
-![](/_images/doc2/Infor/IDM_Attributes_DeliveryNote.png)
+![](/_images/doc2/Infor/IDM_dokumenttyp_lieferschein_dokumenttyp.png)
+![](/_images/doc2/Infor/IDM_dokumenttyp_lieferschein_attribute.png)
 
-**Invoice**
+**Rechnung**
 
-![](/_images/doc2/Infor/IDM_DocumentType_Invoice.png)
-![](/_images/doc2/Infor/IDM_Attributes_Invoice.png)
+![](/_images/doc2/Infor/IDM_dokumenttyp_rechnung_dokumenttyp.png)
+![](/_images/doc2/Infor/IDM_dokumenttyp_rechnung_attribute.png)
 
-When you open the **Business Context Model** menu item
-![](/_images/doc2/Infor/IDM_BusinessContextModel.png)
-you will find the information here as follows:
+Wenn Sie den Menüpunkt **Geschäftskontextmodell** öffnen
+![](/_images/doc2/Infor/IDM_geschäftskontextmodell.png)
+finden Sie hier die Informationen wie folgt:
 
-**Order Confirmation**
+**Auftragsbestätigung**
 
-![](/_images/doc2/Infor/BusinessContextModel_XQuery_OrderConfirmation.png)
+![](/_images/doc2/Infor/IDM_geschäftskontextmodell_auftragsbestätigung.png)
 ```oc
 /ORDER_CONFIRMATION[@MDS_EntityType = "{entityType}" AND @MDS_id1 = "{id1}"]
 ```
 
-**Delivery Note**
+**Lieferschein**
 
-![](/_images/doc2/Infor/BusinessContextModel_XQuery_DeliveryNote.png)
+![](/_images/doc2/Infor/IDM_geschäftskontextmodell_lieferschein.png)
 ```dn
 /DELIVERY_NOTE[@MDS_EntityType = "{entityType}" AND @MDS_id1 = "{id1}"]
 ```
 
-![](/_images/doc2/Infor/BusinessContextModel_XQuery_DeliveryNote2.png)
+![](/_images/doc2/Infor/IDM_geschäftskontextmodell_lieferschein2.png)
 ```dn2
 /DELIVERY_NOTE[@Delivery_Note_Id="{id3}"]
 ```
 
-**Invoice**
+**Rechnung**
 
-![](/_images/doc2/Infor/BusinessContextModel_XQuery_Invoice.png)
+![](/_images/doc2/Infor/IDM_geschäftskontextmodell_rechnung.png)
 ```inv
 /LN_SupplierInvoice[@MDS_EntityType = "{entityType}" AND @MDS_id1 = "{id1}"]
 ```
 
 All these steps connect all documents from IDM to the corresponding workbench in LN, where they are also displayed. And this is how it looks in LN:
 
-**Order Confirmation**
+**Auftragsbestätigung**
 
 ![](/_images/doc2/Infor/LN_Order_Order Confirmation.png)
 
-**Delivery Note**
+**Lieferschein**
 
 ![](/_images/doc2/Infor/LN_Workbench Order volume_Delivery Note.png)
 
-**Invoice**
+**Rechnung**
 
 ![](/_images/doc2/Infor/LN_Workbench Accounts Payable Processing_Invoice.png)
