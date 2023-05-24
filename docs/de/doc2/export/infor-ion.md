@@ -43,63 +43,62 @@ Klicken Sie auf den Abschnitt "ION-Zuordnungsdatei" und wählen Sie die ION-API-
 
 ![](/_images/doc2/image-32-1024x347.png)
 
-Klicken Sie auf den Abschnitt "IDM-Mapping-Datei" und wählen Sie die IDM-Mapping-Datei aus, die Sie für den Export verwenden möchten.
-Ein Beispiel für die IDM-Mapping-Datei finden Sie auf dieser Seite: [Wie man eine IDM-Mapping-Datei erstellt](/doc2/export/how-to-create-a-idm-mapping-file/)
+Klicken Sie auf den Abschnitt "IDM-Zuordnungsdatei" und wählen Sie die IDM-Mapping-Datei aus, die Sie für den Export verwenden möchten.
+Ein Beispiel für die IDM-Zuordnungsdatei finden Sie auf dieser Seite: [Wie man eine IDM-Mapping-Datei erstellt](/doc2/export/how-to-create-a-idm-mapping-file/)
 
 ![](/_images/doc2/image-33-1024x344.png)
 
-Klicken Sie auf den Abschnitt "BOD-Mapping-Datei" und wählen Sie die BOD-Mapping-Datei aus, die Sie für den Export verwenden möchten.
-Ein Beispiel für die BOD-Mapping-Datei finden Sie auf dieser Seite: [Wie man eine BOD-Mapping-Datei erstellt](/doc2/export/how-to-create-a-bod-mapping-file/)
+Klicken Sie auf den Abschnitt "BOD-Zuordnungsdatei" und wählen Sie die BOD-Mapping-Datei aus, die Sie für den Export verwenden möchten.
+Ein Beispiel für die BOD-Zuordnungsdatei finden Sie auf dieser Seite: [Wie man eine BOD-Mapping-Datei erstellt](/doc2/export/how-to-create-a-bod-mapping-file/)
 
 ![](/_images/doc2/image-34-1024x343.png)
 
-Klicken Sie auf "Speichern", um die Exporteinstellung zu speichern.
+Klicken Sie auf `SPEICHERN`, um die Exporteinstellung zu speichern.
 
 #### Schritte in Infor ION
 
 Öffnen Sie "Infor ION API", wählen Sie "Autorisierte Apps" und klicken Sie auf die DOC²-Anwendung.
 
-![](/_images/doc2/image-35.png)
+![](/_images/doc2/Infor/infor-ion-api-autorisierte app-doc2export.png)
 
 Kopieren und speichern Sie die "Client-ID", diese ID wird später benötigt.
 
-![](/_images/doc2/image-36.png)
+![](/_images/doc2/Infor/infor-ion-api-autorisierte app-client-id.png)
 
-Öffnen Sie "ION Desk", öffnen Sie das Burger-Menü, wählen Sie "Verbinden" und klicken Sie auf "Verbindungspunkte".
+Öffnen Sie "ION Desk" über das Burger-Menü, wählen Sie "ION Connect" und klicken Sie auf "Verbindungspunkte".
 
-Klicken Sie auf "+Hinzufügen" und wählen Sie "IMS via ION API".
+Klicken Sie auf "+Hinzufügen" und wählen Sie "IMS über ION API".
 
-![](/_images/doc2/image-37.png)
+![](/_images/doc2/Infor/infor-ion-desk-verbindungspunkte.png)
 
 Geben Sie einen aussagekräftigen Namen und eine aussagekräftige Beschreibung ein.
 
-Deaktivieren Sie das Kontrollkästchen "Anwendung hat IMS EndPoint" und geben Sie die "Client-ID" ein, die aus ION API kopiert wurde.
+Deaktivieren Sie das Kontrollkästchen "Anwendung verfügt über IMS-Endpunkt" und geben Sie die "Client-ID" ein, die aus ION API kopiert wurde.
 
-![](/_images/doc2/image-39-1024x438.png)
+![](docs/de/_images/doc2/Infor/infor-ion-desk-anwendungsverbindungspunkt.png)
 
-Wechseln Sie zur Registerkarte "Dokumente".
+Wechseln Sie zur Registerkarte `Dokumente`.
 
 Klicken Sie auf das "+"-Symbol und geben Sie im Filterfeld "Sync.CaptureDocument" ein. Die Liste sollte nun das richtige BOD anzeigen. Aktivieren Sie das Kontrollkästchen vor "Sync.CaptureDocument" und klicken Sie auf "OK".
 
-![](/_images/doc2/image-40-1024x944.png)
+![](/_images/doc2/Infor/infor-ion-desk-anwendungsverbindungspunkt-dokumente.png)
 
 Klicken Sie auf das Disketten-Symbol, um die Einstellungen zu speichern.
 
-![](/_images/doc2/image-41.png)
 
-Wechseln Sie zu "Datenflüsse" und klicken Sie auf "+Hinzufügen" und wählen Sie "Dokumentenfluss".
+Wechseln Sie zu "Datenflüsse" und klicken Sie auf "+Hinzufügen" und wählen Sie "Dokument-Flow".
 
-![](/_images/doc2/image-43.png)
+![](/_images/doc2/Infor/infor-ion-desk-datenflüsse.png)
 
 Geben Sie einen aussagekräftigen Namen und eine aussagekräftige Beschreibung ein.
 
 Ziehen Sie eine "Anwendung" in den Fluss und nennen Sie sie "Doc2".
 
-![](/_images/doc2/image-44.png)
+![](/_images/doc2/Infor/infor-ion-desk-datenflüsse-anwendung.png)
 
 Klicken Sie auf das "+"-Symbol und wählen Sie die "Doc2"-Anwendung, in diesem Fall "Doc2Export", und klicken Sie auf "OK".
 
-![](/_images/doc2/image-45.png)
+![](/_images/doc2/Infor/infor-ion-desk-datenflüsse-anwendung auswählen.png)
 
 Klicken Sie auf das Disketten-Symbol, um den neuen Dokumentenfluss zu speichern.
 
