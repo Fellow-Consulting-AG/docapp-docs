@@ -63,7 +63,7 @@ Wenn Sie Infor LN als ERP verwenden, laden Sie auch diese xml-Dateien hoch:
 
 - Auftragsbestätigung: <a href="/_images/doc2/Infor/IDMconfiguration_BusinessContext_OrderConfirmation.xml" download>IDMconfiguration_BusinessContext_OrderConfirmation</a>
 - Lieferschein: <a href="/_images/doc2/Infor/IDMconfiguration_BusinessContext_DeliveryNote.xml" download>IDMconfiguration_BusinessContext_DeliveryNote</a>
-- DLieferschein2:<a href="/_images/doc2/Infor/IDMconfiguration_BusinessContext_DeliveryNote2.xml" download>IDMconfiguration_BusinessContext_DeliveryNote2</a>
+- Lieferschein2: <a href="/_images/doc2/Infor/IDMconfiguration_BusinessContext_DeliveryNote2.xml" download>IDMconfiguration_BusinessContext_DeliveryNote2</a>
 - Rechnung: <a href="/_images/doc2/Infor/IDMconfiguration_BusinessContext_Invoice.xml" download>IDMconfiguration_BusinessContext_Invoice</a>
 
 
@@ -71,7 +71,7 @@ Sie können die Dateien wie folgt importieren:
 
 ### Verwendung der Registerkarte `Importieren`
 
-1. Navigieren Sie zu **Control Center** > **Verwaltung** > **Import / Export** und wählen Sie die Registerkarte **Importieren**.
+1. Navigieren Sie zu **Control Center** > **Verwaltung** > **Import / Export** und wählen Sie dort die Registerkarte **Importieren**.
 2. Klicken Sie auf den **Ordner** und suchen Sie nach der zuvor heruntergeladenen XML-Datei und wählen Sie `Importieren`. Eine Dateivalidierung wird durchgeführt. Es werden nur XML-Dateien akzeptiert, die vom Exporteur erstellt wurden. Wenn die Validierung fehlschlägt, bleibt die Datei **XML Importieren** deaktiviert.
 3. Ist der Import der Konfiguration erfolgreich, wird Ihnen dies oben rechts angezeigt.
 <!-- 3. Beim Hochladen der Konfigurationsdatei wird eine Importvorschau angezeigt, die einige oder alle dieser Teile enthält:
@@ -156,7 +156,7 @@ finden Sie hier die Informationen wie folgt:
 /LN_SupplierInvoice[@MDS_EntityType = "{entityType}" AND @MDS_id1 = "{id1}"]
 ```
 
-All these steps connect all documents from IDM to the corresponding workbench in LN, where they are also displayed. And this is how it looks in LN:
+All diese Schritte verbinden alle Dokumente von IDM mit der entsprechenden Workbench in LN, wo sie auch angezeigt werden. Und so sieht es in LN aus:
 
 **Auftragsbestätigung**
 
