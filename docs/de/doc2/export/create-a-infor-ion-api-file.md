@@ -17,25 +17,27 @@ tags:
 
 **Voraussetzungen:**
 
-- Ein Administrator-Benutzer für InforOS mit den Sicherheitsrollen `ION Desk Admin`, `ION API Admin` und `IDM Admin`.
-- Ein InforOS-Benutzer, der als Servicekonto verwendet werden kann und die Berechtigung hat, Dokumente in IDM zu erstellen, mit den Sicherheitsrollen `IDM-AdvancedUser`, `Infor-SuiteUser` und `MingleEnterprise`.
+- Ein Administrator-Benutzer für Infor OS mit den Sicherheitsrollen `ION Desk Admin`, `ION API Admin` und `IDM Admin`.
+- Ein Infor OS-Benutzer, der als Servicekonto verwendet werden kann und über die Berechtigung zum Erstellen von Dokumenten in IDM mit den Sicherheitsrollen `IDM-AdvancedUser`, `Infor-SuiteUser` und `MingleEnterprise` verfügt.
 
 
-**1\.** Öffnen Sie InforOS mit einem Administrator-Benutzer und wechseln Sie zum **Infor ION API**-Bildschirm.<br>
+**1\.** Öffnen Sie Infor OS mit einem Administrator-Benutzer und wechseln Sie zum **Infor ION API**-Bildschirm.<br>
     Klicken Sie auf **Autorisierte Apps** und dann auf das `+`-Symbol.
 
-![](/_images/doc2/infor-ion-api-1.png "Infor ION API-Datei erstellen - Schritt 1")
+!["Infor ION API-Datei erstellen - Schritt 1"](/_images/doc2/Infor/Infor-ion-api-autorisierte apps-hinzufügen.png)
 
-**2\.** Geben Sie einen aussagekräftigen Namen und eine Beschreibung wie 'Doc2Export' ein. Wählen Sie `Backend Service` und klicken Sie auf das Diskettensymbol, um zu speichern.
+**2\.** Geben Sie einen aussagekräftigen Namen und eine Beschreibung wie 'Doc2Export' ein. Wählen Sie `Back-End Dienst` und klicken Sie auf das Diskettensymbol, um zu speichern.
 
-![](/_images/doc2/infor-ion-api-2.png "Infor ION API-Datei erstellen - Schritt 2")
+!["Infor ION API-Datei erstellen - Schritt 2"](/_images/doc2/Infor/Infor-ion-api-neue-autorisierte-app-erstellen.png)
 
-**3\.** Sobald die Einträge gespeichert sind, klicken Sie auf die Schaltfläche **Anmeldeinformationen herunterladen**.
+**3\.** Sobald die Einträge gespeichert sind, klicken Sie auf die Schaltfläche **Anmeldedaten herunterladen**.
 
-![](/_images/doc2/infor-ion-api-3.png "Infor ION API-Datei erstellen - Schritt 3")
+!["Infor ION API-Datei erstellen - Schritt 3"](/_images/doc2/Infor/Infor-ion-api-autorisierte-app-anmeldedaten-herunterladen.png)
 
-**4\.** Schalten Sie `Create Service Account` ein und geben Sie den Namen des Service-Benutzers in das Feld ein.
+**4\.** Schalten Sie `Dienstkonto erstellen` ein und geben Sie den Namen des Service-Benutzers in das Feld ein.
 
-![](/_images/doc2/infor-ion-api-4.png "Infor ION API-Datei erstellen - Schritt 4")
+!["Infor ION API-Datei erstellen - Schritt 4"](/_images/doc2/Infor/Infor-ion-api-anmeldedaten-herunterladen.png)
 
-**5\.** Klicken Sie auf `DOWNLOAD`, um die ION API-Datei herunterzuladen.
+**5\.** Klicken Sie auf `HERUNTERLADEN`, um die ION API-Datei herunterzuladen.
+
+!["Infor ION API-Datei"](/_images/doc2/Infor/Infor-ion-api-datei.png)
