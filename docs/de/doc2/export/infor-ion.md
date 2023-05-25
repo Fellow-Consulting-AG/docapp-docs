@@ -53,12 +53,12 @@ Ein Beispiel für die BOD-Zuordnungsdatei finden Sie auf dieser Seite: [Wie man 
 
 ![](/_images/doc2/export/doc2-infor-ion-bod-zuordnungsdatei.png)
 
-Klicken Sie auf `SPEICHERN`, um die Exporteinstellung zu speichern.
+Klicken Sie auf `SPEICHERN`, um die Exporteinstellungen zu speichern.
 
 Fügen Sie die Export-Einstellungen für jeden zur Verarbeitung gewünschten Dokumententyp beispielsweise wie folgt hinzu:
 ![](/_images/doc2/export/doc2-export-einstellungen für alle dokumententypen.png)
 
-Nutzen Sie Infor On-Premise müssen Sie lediglich die Schaltfläche von `CLOUD` auf `ONPREM` umstellen.
+Nutzen Sie eine On-Premise ERP Software müssen Sie lediglich auf dem linken Schieberegler statt `CLOUD` `ONPREM` auswählen.
 
 ![](/_images/doc2/export/doc2-infor-schaltfläche-onprem.png)
 
