@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://docs.polydocs.io"
+  to = "https://docs.fellowpro.com"
+  status = 301
+  force = true
