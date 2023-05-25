@@ -10,22 +10,22 @@ tags:
   - Dokumentenprüfung verstehen
 ---
 
-# OnBoarding
+# DOC² OnBoarding - Leitfaden für Produktivität
 
-Dieser Leitfaden hilft Ihnen, die Grundlagen von DOC² zu erlernen, damit Sie mit einem IPS arbeiten können, das Ihre Produktivität maximiert.
+Willkommen beim DOC² OnBoarding Guide! Dieser Leitfaden hilft Ihnen, die Grundlagen von DOC² zu erlernen, damit Sie mit einem IPS arbeiten können, das Ihre Produktivität maximiert.
 
 ## **Durchführung der Ersteinrichtung**
 
 Zunächst wollen wir Ihnen erklären, wie Sie auf Ihr System zugreifen und es konfigurieren.
 
-DOC² funktioniert nicht in Tenant. Alle Kunden nutzen denselben Cluster. Unser Kubernetes-Cluster wird in Frankfurt/Deutschland gehostet.
+Bitte beachten Sie, dass DOC² nicht in Tenant funktioniert. Alle Kunden nutzen denselben Cluster, welcher in Frankfurt/Deutschland gehostet wird.
 
 [https://app.polydocs.io/](https://app.polydocs.io/)
 
-Hier sind die beiden Möglichkeiten, auf das System zuzugreifen:
+Hier sind zwei Möglichkeiten, um auf das System zuzugreifen:
 
-1. Kontaktieren Sie Ihren FellowPro AG Vertreter oder wenden Sie sich an [support@polydocs.io](mailto: support@polydocs.io), um Ihr Unternehmen zu registrieren.
-2. Sobald Sie sich entschieden haben, dass DOC² Ihre tägliche Arbeit erleichtern soll, bereits Kontakt mit uns aufgenommen haben und die Onboarding-E-Mail erhalten haben, sind Sie der erste Benutzer und damit der Administrator Ihrer Organisation.
+1. Kontaktieren Sie Ihren FellowPro AG Ansprechpartner oder schreiben Sie an [support@polydocs.io](mailto: support@polydocs.io), um Ihr Unternehmen zu registrieren.
+2. Sie haben sich entschieden, dass DOC² Ihre tägliche Arbeit erleichtern soll und haben auch bereits Kontakt zu uns aufgenommen? Dann erhalten Sie als nächstes eine Onboarding-E-Mail und sind somit der erste Benutzer und damit der Administrator Ihrer Organisation.
 
 #### Hier ist Ihre Schritt-für-Schritt-Anleitung zur Einrichtung:
 
@@ -46,7 +46,7 @@ Sie können Benutzer unter **Einstellungen** > **Gruppen, Benutzer und Berechtig
 
 Nachdem die Ersteinrichtung abgeschlossen ist, werden Sie die meiste Zeit in DOC² damit verbringen, Beispielrechnungen zu überprüfen.
 
-**Dokumente an DOC² senden**
+**Sie können Dokumente auf folgende Weise an DOC² senden:**
 
 1. Manuelles Hochladen
 2. E-Mail
@@ -62,3 +62,5 @@ Gehen Sie wie folgt vor:
 1. Klicken Sie im **Dashboard** auf das **Dokument**. Sie werden zum Überprüfungsbildschirm weitergeleitet.
 2. **Überprüfen** Sie die extrahierten Ergebnisse. Felder, die manuell bearbeitet werden müssen, erkennen Sie an der roten Markierung am Anfang des jeweiligen Feldes.
 3. Nach erfolgreicher Überprüfung und Korrektur klicken Sie auf **Bestätigen & Exportieren**.
+
+Verbessern Sie Ihre Produktivität mit DOC² noch heute! Kontaktieren Sie die FellowPro AG für weitere Informationen.
