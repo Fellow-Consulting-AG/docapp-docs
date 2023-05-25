@@ -1,6 +1,6 @@
 ---
-title: "Export zu Infor IDM"
-description: Schritt-für-Schritt-Anleitung, wie man Dokumente ohne Veröffentlichung der Werte in einem separaten BOD zu Infor Document Management (IDM) exportiert.
+title: "Export nach Infor IDM"
+description: Schritt-für-Schritt-Anleitung, wie man Dokumente ohne Veröffentlichung der Werte in einem separaten BOD nach Infor Document Management (IDM) exportiert.
 date: "2021-10-22"
 tags:
   - DOC²
@@ -9,13 +9,13 @@ tags:
   - IDM
 ---
 
-#### Export zu Infor Document Management ohne Veröffentlichung der Dokumentwerte in einem separaten BOD
+#### Export mach Infor Document Management ohne Veröffentlichung der Dokumentwerte in einem separaten BOD
 
-In dieser Schritt-für-Schritt-Anleitung wird erklärt, wie man Dokumente zu Infor Document Management (IDM) exportiert, ohne die Werte in einem separaten BOD zu veröffentlichen.
+In dieser Schritt-für-Schritt-Anleitung wird erklärt, wie man Dokumente nach Infor Document Management (IDM) exportiert, ohne die Werte in einem separaten BOD zu veröffentlichen.
 
 **Voraussetzungen:**
 
-- Ein Admin-Benutzer für InforOS mit den Sicherheitsrollen "ION Desk Admin", "ION API Admin" und "IDM Admin".
+- Ein Admin-Benutzer für Infor OS mit den Sicherheitsrollen "ION Desk Admin", "ION API Admin" und "IDM Admin".
 - Eine ION-API-Datei, um die Kommunikation zwischen DOC² und Infor IDM zu erstellen. Folgen Sie der Dokumentation hier: [Wie man eine Infor ION-Datei erstellt](/doc2/export/create-a-infor-ion-file/)
 - Ein IDM-Dokumenttyp, zu dem die Dokumente exportiert werden sollen.
 - Eine IDM-Mapping-Datei, die IDM verwendet, um zu wissen, welcher Dokumentinhalt welche Informationen darstellt. Ein Beispiel für die IDM-Mapping-Datei finden Sie auf dieser Seite: [Wie man eine IDM-Mapping-Datei erstellt](/doc2/export/how-to-create-a-idm-mapping-file/)
