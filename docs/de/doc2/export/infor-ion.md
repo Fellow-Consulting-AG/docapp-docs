@@ -58,7 +58,7 @@ Klicken Sie auf `SPEICHERN`, um die Exporteinstellung zu speichern.
 Fügen Sie die Export-Einstellungen für jeden zur Verarbeitung gewünschten Dokumententyp beispielsweise wie folgt hinzu:
 ![](/_images/doc2/export/doc2-export-einstellungen für alle dokumententypen.png)
 
-Nutzen Sie Infor On-Premise müssen Sie lediglich die Schaltfläche von `CLOUD`auf `ONPREM`umstellen.
+Nutzen Sie Infor On-Premise müssen Sie lediglich die Schaltfläche von `CLOUD` auf `ONPREM` umstellen.
 
 ![](/_images/doc2/export/doc2-infor-schaltfläche-onprem.png)
 
