@@ -41,17 +41,17 @@ Wählen Sie "Infor IDM + ION BOD".
 
 Klicken Sie auf den Abschnitt "ION-Zuordnungsdatei" und wählen Sie die ION-API-Datei aus, die Sie für die Kommunikation zwischen DOC² und IDM verwenden möchten. Wenn Sie keine ION-API-Datei haben, folgen Sie dieser Dokumentation, um eine zu erstellen: [Wie man eine Infor ION API-Datei erstellt](/doc2/export/create-a-infor-ion-api-file/)
 
-![](/_images/doc2/image-32-1024x347.png)
+![](/_images/doc2/export/doc2-infor-ion-ion-zuordnungsdatei.png)
 
 Klicken Sie auf den Abschnitt "IDM-Zuordnungsdatei" und wählen Sie die IDM-Mapping-Datei aus, die Sie für den Export verwenden möchten.
 Ein Beispiel für die IDM-Zuordnungsdatei finden Sie auf dieser Seite: [Wie man eine IDM-Mapping-Datei erstellt](/doc2/export/how-to-create-a-idm-mapping-file/)
 
-![](/_images/doc2/image-33-1024x344.png)
+![](/_images/doc2/export/doc2-infor-ion-idm-zuordnungsdatei.png)
 
 Klicken Sie auf den Abschnitt "BOD-Zuordnungsdatei" und wählen Sie die BOD-Mapping-Datei aus, die Sie für den Export verwenden möchten.
 Ein Beispiel für die BOD-Zuordnungsdatei finden Sie auf dieser Seite: [Wie man eine BOD-Mapping-Datei erstellt](/doc2/export/how-to-create-a-bod-mapping-file/)
 
-![](/_images/doc2/image-34-1024x343.png)
+![](/_images/doc2/export/doc2-infor-ion-bod-zuordnungsdatei.png)
 
 Klicken Sie auf `SPEICHERN`, um die Exporteinstellung zu speichern.
 
