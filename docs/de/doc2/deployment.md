@@ -19,7 +19,7 @@ Um loszulegen, benötigen Sie einen Computer mit Internetzugang. Sobald Sie dies
 
 1. Rufen Sie die URL [App](https://app.polydocs.io/) auf und geben Sie Ihre Admin-Anmeldedaten ein.
 2. Sobald Sie eingeloggt sind, werden Sie auf die DASHBOARD-Startseite von DOC² weitergeleitet. Hier können Sie alle Ihre importierten Dokumente verwalten.
-3. Wenn Sie den folgenden Bildschirm sehen, sind Sie fast bereit loszulegen. Alle weiteren Details und notwendigen Schritte finden Sie [hier](https://de.docs.fellowpro.com//doc2/manual-import/).
+3. Wenn Sie den folgenden Bildschirm sehen, können Sie loslegen! Alle weiteren Details und notwendigen Schritte finden Sie [hier](https://de.docs.fellowpro.com//doc2/manual-import/).
 
 ![DOC2 Dashboard](/_images/doc2/deployment/doc2-dashboard-start.png)
 
