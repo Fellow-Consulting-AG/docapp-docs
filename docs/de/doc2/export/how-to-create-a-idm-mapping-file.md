@@ -18,9 +18,9 @@ Sie können hier eine Beispiel-Mapping-Datei herunterladen:
 
 Um die Beispiel-Datei zu verwenden, benennen Sie die Datei von "IDM\_Mapping.txt" in "IDM\_Mapping.properties" um.
 
-**Hier finden Sie eine Erklärung zur Struktur der Datei.**
+**Hier finden Sie eine Erklärung zum Aufbau der Datei.**
 
-Im ersten Block wird der Dokumenttyp zugeordnet. Auf der linken Seite sehen Sie den Dokumenttypnamen von DOC² und auf der rechten Seite den Dokumenttypnamen von IDM.
+Im ersten Block wird der Dokumententyp zugeordnet. Auf der linken Seite sehen Sie den Dokumenttypnamen von DOC² und auf der rechten Seite den Dokumenttypnamen von IDM.
 
 ```
 #Definieren Sie den Namen des Dokuments
@@ -29,7 +29,7 @@ Im ersten Block wird der Dokumenttyp zugeordnet. Auf der linken Seite sehen Sie 
 INVOICE=LN_SupplierInvoice
 ```
 
-Im zweiten Block können Sie statische Werte definieren, die in der Mapping-Datei verwendet werden.
+Im zweiten Block können Sie statische Werte definieren, die in der Mapping-Datei verwendet werden sollen.
 
 Im Beispiel gibt es ein statisches Feld für FileNameSeperator und ACLString.
 
@@ -83,12 +83,12 @@ ACL_Fields=SV_ACLString
 
 Im letzten Block können Sie den "Searchable\_PDF\_Name" definieren. Das wird der Name des Dokuments in IDM sein.
 
-Es kann ein einzelner Feldname oder eine Konkatenation verschiedener Felder sein. Zum Beispiel:
+Es kann ein einzelner Feldname oder eine Verkettung verschiedener Felder sein. Zum Beispiel:
 
 Searchable\_PDF\_Name=IF\_INVOICE\_NUMBER+SV\_FileNameSeparator+IF\_SUPPLIER\_NAME
 
 ```
 #Definieren Sie die Ressourcenzuordnung
-#Beispiel: Searchable_PDF_Name= Konkatenation anderer definierter Felder
+#Beispiel: Searchable_PDF_Name= Verkettung anderer definierter Felder
 Searchable_PDF_Name=IF_INVOICE_NUMBER
 ```
