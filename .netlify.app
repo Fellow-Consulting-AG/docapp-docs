@@ -1,1 +1,1 @@
-/site/*  https://https://docs.fellowpro.com/:splat  200
+/site/*  https://docs.fellowpro.com/:splat  200
