@@ -12,6 +12,6 @@ In diesem Abschnitt finden Sie eine umfassende Übersicht über die Infor-Infras
 - [Infor-Infrastruktur](/doc2/doc2-with-infor/infrastructure/)
 - [Anwendungsfälle](/doc2/doc2-with-infor/infor/)
 - [Diagramm](/doc2/doc2-with-infor/inforflow/)
-- [IDM Business Context Model](/doc2/doc2-with-infor/IDM-business-context-model/)
+- [IDM Geschäftskontextmodell](/doc2/doc2-with-infor/IDM-business-context-model/)
 - [Export](/doc2/export/export-to-infor/)
 - [SSO](/doc2/doc2-with-infor/configuring-sso-in-cloud/)
