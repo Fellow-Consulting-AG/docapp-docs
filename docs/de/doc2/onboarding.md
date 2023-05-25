@@ -12,7 +12,7 @@ tags:
 
 # DOC² OnBoarding - Leitfaden für Produktivität
 
-Willkommen beim DOC² OnBoarding Guide! Dieser Leitfaden hilft Ihnen, die Grundlagen von DOC² zu erlernen, damit Sie mit einem IPS arbeiten können, das Ihre Produktivität maximiert.
+Willkommen beim DOC² OnBoarding Guide!<br> Dieser Leitfaden hilft Ihnen, die Grundlagen von DOC² zu erlernen, damit Sie mit einem IPS arbeiten können, das Ihre Produktivität maximiert.
 
 ## **Durchführung der Ersteinrichtung**
 
