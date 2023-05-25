@@ -23,8 +23,8 @@ Der zweite Pfad ist dann relevant, wenn wir in DOC² eine Validierung von Stammd
 
 [Infor Export](/doc2/export/export-to-infor/)
 
-[IDM Business Context Model](/doc2/doc2-with-infor/IDM-business-context-model/)
+[IDM Geschäftskontextmodell](/doc2/doc2-with-infor/IDM-business-context-model/)
 
 [Infor SSO mit DOC²](/doc2/doc2-with-infor/configuring-sso-in-cloud/)
 
-[Infor Infrastructure & Security](/doc2/doc2-with-infor/infrastructure/)
+[Infor Anwendungsinfrastruktur & Sicherheit](/doc2/doc2-with-infor/infrastructure/)
