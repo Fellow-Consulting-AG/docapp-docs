@@ -210,16 +210,16 @@ nav:
         - Webhook: doc2/api.md
       - All Export Options:
         - doc2/export/index.md
-        - Export to Infor:
+        - Export nach Infor:
           - doc2/export/export-to-infor/index.md
-          - Export to Infor ION and IDM: doc2/export/infor-ion.md
-          - How to create a BOD mapping file: doc2/export/how-to-create-a-bod-mapping-file.md
-          - How to create a IDM mapping file: doc2/export/how-to-create-a-idm-mapping-file.md
-          - Export to Infor IDM: doc2/export/infor-idm.md
-          - Infor ION API File: doc2/export/create-a-infor-ion-api-file.md
-          - Export to Infor ION and IDM: doc2/export/infor-ion.md
+          - Export nach Infor ION and IDM: doc2/export/infor-ion.md
+          - So erstellen Sie eine BOD-Mapping-Datei: doc2/export/how-to-create-a-bod-mapping-file.md
+          - So erstellen Sie eine IDM-Mapping-Datei: doc2/export/how-to-create-a-idm-mapping-file.md
+          - Export nach Infor IDM: doc2/export/infor-idm.md
+          - Infor ION API-Datei erstellen: doc2/export/create-a-infor-ion-api-file.md
+          - Export nach Infor ION and IDM: doc2/export/infor-ion.md
         - Webhook: doc2/export/webhook.md
-        - Export to Flow²: doc2/export/export-to-flow2.md
+        - Export zu Flow²: doc2/export/export-to-flow2.md
 
 
       - Amount: doc2/settings-amount-settings.md
