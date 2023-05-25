@@ -124,10 +124,9 @@ plugins:
   - literate-nav
   - tags:
       tags_file: tags.md
-  - plugins:
-    - redirects:
-        redirect_maps:
-            'index.md': 'https://docs.fellowpro.com'
+  - redirects:
+      redirect_maps:
+        'index.md': 'https://docs.fellowpro.com'
 nav:
   - Changelog: Release/Release_notes.md
   - DOC²:
