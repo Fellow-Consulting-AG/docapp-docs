@@ -9,13 +9,15 @@ tags:
   - PO Matching
   - Approval
   - Layout Builder
-  - Models & Labels
   - Doc Script
   - Doc scan
-  - IDM ACL Updater
 
   ## INDEX
 
   # Here you can find the specific module settings and the corresponding articles.
 
-  
+    - Layout Builder: doc2/settings/Module/layout-builder.md
+    - Approval: doc2/settings/Module/approval.md
+    - Doc Script: doc2/settings/Module/doc-script.md
+    - Doc Scan: doc2/settings/Module/doc-scan.md
+
