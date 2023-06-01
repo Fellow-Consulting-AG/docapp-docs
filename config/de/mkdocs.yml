@@ -73,7 +73,7 @@ extra:
       link: https://www.linkedin.com/company/645725/
   analytics:
     provider: google
-    property: UA-208531131-1
+    property: G-RYHFD5FLTH
     feedback:
       title: Was this page helpful?
       ratings:
