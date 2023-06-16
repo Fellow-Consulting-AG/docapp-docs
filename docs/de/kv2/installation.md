@@ -19,7 +19,7 @@ KV² Plugin is installed directly in Ephesoft Transact. The installation process
 - Download the KV² Plugin from [here](https://www.fellow-consulting.de/fellowkv-plugin/)
     _**Note**: KV² Plugin consist of two zip files!_
 
-![](/_images/doc2/zipfiles.png)
+![](/_images/docbits/zipfiles.png)
 
 - You must have Administration rights in Ephesoft Transact.
 - You must have set up working Batch Class or install Polydocs GmbH default Batch Class for Plugin usage if no Batch Class is set up in your Ephesoft System, yet. (Contact us to get the Polydocs GmbH default Batch Class)
@@ -28,15 +28,15 @@ KV² Plugin is installed directly in Ephesoft Transact. The installation process
 
 **Step 0: Access your Infor OS and open IDM Capture in the menu on the top left.**
 
-![](/_images/doc2/Screenshot-2021-07-13-at-12.12.26.png)
+![](/_images/docbits/Screenshot-2021-07-13-at-12.12.26.png)
 
 ##### Step 1: Open your Ephesoft Transact system
 
-![](/_images/doc2/Bildschirmfoto-2021-07-02-um-12.46.59-1024x545.png)
+![](/_images/docbits/Bildschirmfoto-2021-07-02-um-12.46.59-1024x545.png)
 
 ##### Step 2: As an Admin please click into the Administrator section and select eg. "Batch Class Management". Open the menu bar on the left and click "System Configuration".
 
-![](/_images/doc2/Bildschirmfoto-2021-07-02-um-12.48.56-1024x523.png)
+![](/_images/docbits/Bildschirmfoto-2021-07-02-um-12.48.56-1024x523.png)
 
 ##### Step 3: Open Workflow Management
 Drag & Drop or upload both plugin zip files into the "Import Plugin" area to auto-install the plugin.
@@ -44,11 +44,11 @@ Drag & Drop or upload both plugin zip files into the "Import Plugin" area to aut
 
 Note: _Make sure that file name is exactly "fellowkv2exportplugin.zip" / "fellowkv2extractplugin.zip" and that the files are not renamed (eg by downloading multiple times) as Ephesoft cannot recognize files with another name._
 
-![](/_images/doc2/Bildschirmfoto-2021-07-02-um-12.54.13-1024x541.png)
+![](/_images/docbits/Bildschirmfoto-2021-07-02-um-12.54.13-1024x541.png)
 
 Make sure that the installation was successful by checking the list under Workflow Management if the 2 new plugins are listed (sample below).
 
-![](/_images/doc2/MicrosoftTeams-image-3-1-1024x355.png)
+![](/_images/docbits/MicrosoftTeams-image-3-1-1024x355.png)
 
 The Installation part of the plugin is now done and it can be associated to a Batch Class and configured.
 
@@ -56,25 +56,25 @@ The Installation part of the plugin is now done and it can be associated to a Ba
 
 ##### Step 1: Open the menu bar on the left and click "Batch Class Management" and open the Batch Class in which the plugin should run
 
-![](/_images/doc2/open-BC.png)
+![](/_images/docbits/open-BC.png)
 
 #### **Step 2: associate Extraction Module of the Plugin (FELLOW\_KV2\_EXTRACT)**
 
 Click **Modules** and then **Extraction** on left side of Batch Class Configuration Screen. It will show all the Extraction modules configured for this Batch Class.
 Find **FELLOW\_KV2\_EXTRACT** in "Associated Plugins" column and move it to "Selected Plugins" by click the right arrow button as shown in picture below.
 
-![](/_images/doc2/Bildschirmfoto-2021-07-02-um-13.39.13-1024x545.png)
+![](/_images/docbits/Bildschirmfoto-2021-07-02-um-13.39.13-1024x545.png)
 
 **IMPORTANT**:
 In the "Selected Plugins" column highlight the plugin and slide the plugin "FELLOW\_KV2\_EXTRACT" to be above "FUZZYDB" with the arrow pointing upwards, click "Apply" and then click "Deploy" to activate your changes.
 
-![](/_images/doc2/Bildschirmfoto-2021-07-02-um-13.40.11-1024x539.png)
+![](/_images/docbits/Bildschirmfoto-2021-07-02-um-13.40.11-1024x539.png)
 
 #### **Step 3: Configure Extraction Module of the Plugin (FELLOW\_KV2\_EXTRACT)**
 
 Expand the "Extraction" folder in the left menu and select the newly added **FELLOW\_KV2\_EXTRACT** module.
 
-![](/_images/doc2/Bildschirmfoto-2021-07-02-um-13.51.15-1-1024x541.png)
+![](/_images/docbits/Bildschirmfoto-2021-07-02-um-13.51.15-1-1024x541.png)
 
 Now set up Config details as described below and then click "Apply" and "Deploy"
 
@@ -85,18 +85,18 @@ Now set up Config details as described below and then click "Apply" and "Deploy"
 Click **Modules** and then **Export** on left side of Batch Class Configuration Screen. It will show all the Export modules configured for this Batch Class.
 Find **FELLOW\_KV2\_EXPORT** in "Associated Plugins" column and move it to "Selected Plugins" by click the right arrow button as shown in picture below.
 
-![](/_images/doc2/Bildschirmfoto-2021-07-02-um-14.16.07-1024x547.png)
+![](/_images/docbits/Bildschirmfoto-2021-07-02-um-14.16.07-1024x547.png)
 
 **IMPORTANT**:
 In the "Selected Plugins" column highlight the plugin "FELLOW\_KV2\_EXPORT" and slide it to the top with the arrow pointing upwards, click "Apply" and then click "Deploy" to activate your changes.
 
-![](/_images/doc2/Bildschirmfoto-2021-07-02-um-14.20.57-1024x544.png)
+![](/_images/docbits/Bildschirmfoto-2021-07-02-um-14.20.57-1024x544.png)
 
 ##### Step 5: Configure **Export Module** of the Plugin (**FELLOW\_KV2\_EXPORT**)
 
 Expand the "Export" folder in the left menu and select the newly added **FELLOW\_KV2\_EXPORT** module.
 
-![](/_images/doc2/Bildschirmfoto-2021-07-02-um-15.08.39-1024x543.png)
+![](/_images/docbits/Bildschirmfoto-2021-07-02-um-15.08.39-1024x543.png)
 
 Now set up Config details as described below and then click "Apply" and "Deploy"
 
@@ -108,17 +108,17 @@ The association and configuration part of the plugin is now done. Note that you 
 
 In order to deactivate the extraction rules in every field you have to go through every document type. So, when you open the batch class you will see the following list:
 
-![](/_images/doc2/image-26-1024x411.png)
+![](/_images/docbits/image-26-1024x411.png)
 
 Now, start from the top and go through every document type following exactly the same steps.
 
 As an example, let's start with document type INVOICE\_DE. So, open the folder and you will see al index fields available.
 
-![](/_images/doc2/image-27-1024x424.png)
+![](/_images/docbits/image-27-1024x424.png)
 
 Now, we can start with for instance the delivery date and you will need to deactivate the fields by checking off the box in the last column and clicking on "Apply" and "Deploy". It should look like this:
 
-![](/_images/doc2/image-28-1024x494.png)
+![](/_images/docbits/image-28-1024x494.png)
 
 Please deactivate the rules for all index fields but CREDIT\_NOTE, CURRENCY, IBAN\_EXTRACTED, INVOICE and VAT\_NO\_EXTRACTED.
 
@@ -130,8 +130,8 @@ Please use this zip file for the import:
 
 Now go through every document type and use the box underneath for "Import Index Field(s)" to select or drag and drop the zip file:
 
-![](/_images/doc2/image-29-1024x639.png)
+![](/_images/docbits/image-29-1024x639.png)
 
 ##### FINAL Step 8: Re-start Transact Server
 
-see [Article](/doc2/fellowkv2-plugin/how-to-restart-ephesoft-server/) ho to restart Transact
+see [Article](/docbits/fellowkv2-plugin/how-to-restart-ephesoft-server/) ho to restart Transact

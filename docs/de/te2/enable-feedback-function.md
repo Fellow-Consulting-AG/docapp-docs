@@ -14,7 +14,7 @@ Die Feedback-Funktion ermöglicht es Kunden, Feedback zu jedem einzelnen Test di
 
 Die Feedback-Funktion wird in der Batch-Klasse eingerichtet und konfiguriert und ist für die Kunden auf der Validierungs-Benutzeroberfläche von Ephesoft im Tab "5 Feedback" sichtbar.
 
-![](/_images/doc2/Bildschirmfoto-2021-07-05-um-13.43.36-1024x475.png)
+![](/_images/docbits/Bildschirmfoto-2021-07-05-um-13.43.36-1024x475.png)
 
 ## Schritte zur Aktivierung des Feedbacks:
 
@@ -28,11 +28,11 @@ Gehen Sie zur Batch-Klasse, in der Feedback eingerichtet ist, öffnen Sie "Index
 
 Wählen Sie die letzten vier Felder aus und klicken Sie auf Exportieren, um sie auf Ihren Computer herunterzuladen.
 
-![](/_images/doc2/Bildschirmfoto-2021-07-05-um-14.45.42-1024x476.png)
+![](/_images/docbits/Bildschirmfoto-2021-07-05-um-14.45.42-1024x476.png)
 
 **Schritt 2: Importieren in (andere) Dokumenttypen**
 Sobald Sie den Feedback-Felder-Zip-Ordner auf Ihrem Computer gespeichert haben, können Sie ihn in jeden Dokumenttyp in Ihrer Batch-Klasse importieren, in dem Sie ihn verfügbar haben möchten. Ziehen Sie einfach die Zip-Datei in den Ordner "Indexfelder" der einzelnen Dokumenttypen.
 
-![](/_images/doc2/Bildschirmfoto-2021-07-05-um-15.02.15-1024x479.png)
+![](/_images/docbits/Bildschirmfoto-2021-07-05-um-15.02.15-1024x479.png)
 
 _HINWEIS: Dieser Schritt muss für jeden Dokumenttyp durchgeführt/wiederholt werden!_

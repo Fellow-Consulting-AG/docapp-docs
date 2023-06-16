@@ -1,0 +1,73 @@
+---
+title: "Watchdog for Windows"
+description: In this documentation you will find how to configure Watchdog for Windows for easy Fileshare Import of your local documents to Docbits (Doc²).
+date: "2022-01-28"
+tags:
+  - Docbits (Doc²)
+  - Fileshare Import
+  - Watchdog
+  - Windows
+---
+---
+
+# Watchdog for Windows
+
+### Download the files here:
+<a href="/docbits/fileshare/Watchdog.exe" download>Watchdog Download</a><br>
+<a href="/docbits/fileshare/poppler.zip" download>Poppler Download</a>
+
+## Folder configuration
+
+First configure the following folders:
+
+* Read folder → documents that should be uploaded to Docbits (Doc²) have to be in this folder
+* Error folder → documents that ran into an error during the export are saved here
+* Processed folder → successfully processed documents are stored here
+
+To configure these folders, you must select the **Settings folder** and press `Browse` for each folder
+
+![](/_images/docbits/Import_Watchdog_Windows_FolderConfiguration.png)
+
+
+## General configuration
+
+Next, configure general parameters:
+
+#### Select an environment to which your documents should be exported.
+  :fontawesome-solid-circle-info:{ style="color: #0F17E4" } The following options are available:
+
+  **Docbits (Doc²)** → the documents will only be exported to Docbits (Doc²)
+
+  ![](/_images/docbits/Import_Watchdog_Windows_General_Settings_2.png)
+
+  **INFOR OS** → here the watchdog checks if there are export orders for Infor OS On-Premise issued by Docbits (Doc²) and then the document is exported to IDM.
+
+  There are two more specific parameters:
+
+  When exporting to Infor OS three document types are available
+
+![](/_images/docbits/Import_Watchdog_Windows_General_Settings_1.png)
+
+#### API Key
+→ this key can be found under Integration settings of your Docbits (Doc²) account
+
+#### Barcode splitting
+If you want to process documents in which several documents with barcodes are combined in one PDF, these are separated by the barcode using the following setting when uploading to Docbits (Doc²).
+
+![](/_images/docbits/Import_Watchdog_Windows_Barcode_Splitting.png)
+
+:fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
+Make sure the Document Splitting in the Classification and Extraction Settings is disabled.
+
+![](/_images/docbits/DOC2_Classification_and_Extraction_Document_Splitting.png)
+
+
+## Install poppler
+For the barcode Splitting to work you need to download the poppler.zip - unzip it and add the bin lib to the PATH system Variable.
+
+1. Search for System variable or Systemumgebungsvariablen
+2. click on System Variables ![](/_images/docbits/watchdog/systemeigenschaften.png)
+3. Open the system Variables, select Path and click on edit ![](/_images/docbits/watchdog/windows-env.png)
+4. Add the path to the unziped poppler folder + \Libary\bin to the Path ![](/_images/docbits/watchdog/add-to-path.png)
+
+Done!

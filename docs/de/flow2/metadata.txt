@@ -4,11 +4,11 @@ Changes:- Hinzufügen von Alt-Bildern für die Bilder im Text, um die Barrierefr
 
 Gehen Sie zu System - Setup - Metadatentypen
 
-Wenn Sie unseren DOC²-Service nutzen, werden die folgenden Indexfelder extrahiert und die Metadaten müssen entsprechend erstellt werden und sehen wie folgt aus:
+Wenn Sie unseren Docbits (Doc²)-Service nutzen, werden die folgenden Indexfelder extrahiert und die Metadaten müssen entsprechend erstellt werden und sehen wie folgt aus:
 
 ### Für Dokumenttyp RECHNUNG
 
-| DOC² | FLOW² |
+| Docbits (Doc²) | FLOW² |
 | --- | --- |
 | RECHNUNGSNUMMER | Rechnungsnummer |
 | RECHNUNGSDATUM | Rechnungsdatum |

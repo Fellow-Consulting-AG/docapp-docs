@@ -17,7 +17,7 @@ tags:
 
 ## 1.18
 
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE**: [E-Mail-Benachrichtigungen für Dokumententyp und Status](/doc2/settings/email-notification/)
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE**: [E-Mail-Benachrichtigungen für Dokumententyp und Status](/docbits/settings/email-notification/)
 - :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG**: Implementierung von Dokumentuntertypen
 - :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG**: PO Matching - Mengenabgleich mit Lieferschein
 - :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG**: PO Matching - Ausblenden leerer Spalten
@@ -29,29 +29,29 @@ tags:
 
 ## 1.17
 
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE**: [Training vs. Korrekturmodus](/doc2/table-extraction/training-of-table-extraction/#training-vs-correction-mode)
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE**: [Training vs. Korrekturmodus](/docbits/table-extraction/training-of-table-extraction/#training-vs-correction-mode)
 - :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG**: Umgang mit gedrehten Dokumenten
 - :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG**: PO-Sortierung - Die Reihenfolge in der Bestelltabelle muss genau mit der in Infor LN übereinstimmen
 - :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG**: Benutzeroberfläche
-- :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG** TE: Hinzufügen einer Schaltfläche zum Senden einer zusätzlichen Beschreibung in den Papierkorb<br> - Beispiel finden Sie [hier](/doc2/table-extraction/advanced-settings/#move-extra-rows-to)
+- :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG** TE: Hinzufügen einer Schaltfläche zum Senden einer zusätzlichen Beschreibung in den Papierkorb<br> - Beispiel finden Sie [hier](/docbits/table-extraction/advanced-settings/#move-extra-rows-to)
 - :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **BUGFIX**: Datumsproblem auf dem Dashboard
 
 ## 1.16
 
 - :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE**: [Insight²](/insight2/)
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE**: DOC² - Status Pending Approval auf dem Dashboard
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE**: DOC² - Symbol für gesperrte Dokumente/Instanzen auf dem Dashboard
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE**: DOC² - Möglichkeit der Auswahl mehrerer Dokumente auf dem Dashboard zum gleichzeitigen Neustart und/oder Löschen
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE**: DOC² - Dokumentensperre:
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE**: Docbits (Doc²) - Status Pending Approval auf dem Dashboard
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE**: Docbits (Doc²) - Symbol für gesperrte Dokumente/Instanzen auf dem Dashboard
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE**: Docbits (Doc²) - Möglichkeit der Auswahl mehrerer Dokumente auf dem Dashboard zum gleichzeitigen Neustart und/oder Löschen
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE**: Docbits (Doc²) - Dokumentensperre:
      - Option zum Entsperren für Admin-Benutzer, wenn das Dokument bereits von jemand anderem angezeigt wird
      - Option „Neu starten“, wenn das Dokument geändert wird, bevor der Benutzer es speichern kann
      - Für externe Anwendungen wird diese Funktion deaktiviert
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE**: DOC² - Anmeldung Mobil Responsive
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE**: Docbits (Doc²) - Anmeldung Mobil Responsive
 - :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE**: Anzeige der Dauer des kostenlosen Testzugangs
-- :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG**: DOC² - Funktionalität Dokumentdetails: Regeln speichern & Speichern und schließen
-- :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG**: DOC² – Möglichkeit hinzugefügt, einen nicht standardmäßigen Dokumenttyp zu löschen
-- :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG**: DOC² – E-Mail-Import IMAP/SSL
-- :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG**: DOC² – Fehlermeldung, wenn ein anderer Dateityp als PDF hochgeladen wird
+- :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG**: Docbits (Doc²) - Funktionalität Dokumentdetails: Regeln speichern & Speichern und schließen
+- :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG**: Docbits (Doc²) – Möglichkeit hinzugefügt, einen nicht standardmäßigen Dokumenttyp zu löschen
+- :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG**: Docbits (Doc²) – E-Mail-Import IMAP/SSL
+- :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG**: Docbits (Doc²) – Fehlermeldung, wenn ein anderer Dateityp als PDF hochgeladen wird
 
 ## 1.15
 
@@ -66,7 +66,7 @@ tags:
 - :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG**: SSL-Zertifikat einbetten
 - :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG**: TE²: Schönheitsreparaturen an Benutzeroberfläche
 - :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG**: Länge des Passworts
-- :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG**: Implementierung von HILFE-Links zur Dokumentation in DOC²
+- :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG**: Implementierung von HILFE-Links zur Dokumentation in Docbits (Doc²)
 - :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG**: im Anlernen bestimmter Felder
 - :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG**: Möglichkeit mit Enter E-Mail und Passwort beim Einloggen zu bestätigen
 - :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG**: Die Schaltfläche zum Aktivieren/Deaktivieren von N8N wurde von Einstellungen Module in APPS geändert
@@ -105,7 +105,7 @@ tags:
 - :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE**: Email notification when uploaded/imported documents are Ready For Validation can be enabled/disabled in Settings/Email Notification
 - :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE**: Page division of one pdf by barcode
 - :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE**: General Settings for documents
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE**: Implementation of Workflow Nodes for DOC² (assign employee, extract invoice, status trigger)
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE**: Implementation of Workflow Nodes for Docbits (Doc²) (assign employee, extract invoice, status trigger)
 
 
 ## 1.14
@@ -116,7 +116,7 @@ tags:
 - :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG** Remove delete rules button from the field validation screen
 - :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG** Correct translation for NOCOLUMNSFOUND for es-es and fr
 - :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG** Only 10 pages of a PDF are displayed
-- :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG** Allow more than 10 pages in PDF in Doc²
+- :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG** Allow more than 10 pages in PDF in Docbits (Doc²)
 - :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG** PO image component and its functionality
 - :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG** languages drop down is not appearing
 - :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG** Total is trainded wrong
@@ -144,8 +144,8 @@ tags:
 - :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **BUGFIX** Number are not extracted all
 - :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **BUGFIX** Auftragsbestätigung gets to Rechnung
 - :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **BUGFIX** After addition of two new fields, the existing tests are breaking
-- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **BUGFIX** DOC² TableExtraction, can't delete a columns
-- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **BUGFIX** Supplier: IDG, DOC² doesn't work but TE² does?!
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **BUGFIX** Docbits (Doc²) TableExtraction, can't delete a columns
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **BUGFIX** Supplier: IDG, Docbits (Doc²) doesn't work but TE² does?!
 - :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **BUGFIX** Amount Formatting Issues
 - :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **BUGFIX** Button Visibility issue on Some invoice
 - :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **BUGFIX** Checkbox extraction not working correctly
@@ -175,7 +175,7 @@ tags:
 - :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE** PO table sort
 - :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE** Document restart alert if it takes more than 5 minutes
 - :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE** Keystrokes Hints Tooltip
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE** Doc² Export Flow²
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE** Docbits (Doc²) Export Flow²
 - :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE** PO - Help
 - :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE** " Full " row should show if all other fields are empty
 - :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE** Setting - Master Data Validation
@@ -197,8 +197,8 @@ tags:
 - :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **BUGFIX** Button delete rule is not working
 - :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **BUGFIX** AI Indicator update counter
 - :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE** New OCR 13.3.0
-- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **BUGFIX** DOC² TE V3: Save rules doesn't work
-- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **BUGFIX** DOC² TE V3: What is being extracted? Weird & Wrong data
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **BUGFIX** Docbits (Doc²) TE V3: Save rules doesn't work
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **BUGFIX** Docbits (Doc²) TE V3: What is being extracted? Weird & Wrong data
 - :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE** Button make PO auto matching
 - :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **BUGFIX** Exporting a document, if you re-open the file, the layout is standard
 - :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **BUGFIX** Fields that are marked red prevent exporting
@@ -302,7 +302,7 @@ tags:
 - :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE** resize handlers visible not resizing the selected area
 - :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **BUGFIX** Deleted Table Column can be mapped
 - :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **BUGFIX** TE column change doesn't save the changes
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE** Doc² - Flow² Export Setting is not open
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE** Docbits (Doc²) - Flow² Export Setting is not open
 - :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG** Table train zoom in/out pdf
 - :fontawesome-solid-award:{ style="color: #eee20e" } **VERBESSERUNG** Table Train field draw click instead click hold
 - :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **BUGFIX** Dashboard - DocType is not Translated
@@ -317,10 +317,10 @@ tags:
 - :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **BUGFIX** Upload File Drag & Drop works select is not working
 - :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE** Total Discount Training
 - :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **BUGFIX** Draw Columns and change the size - the columns are lost
-- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **BUGFIX** Doc² Change Table Size is not working
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **BUGFIX** Docbits (Doc²) Change Table Size is not working
 - :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **BUGFIX** multiple selected area draw
 - :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **BUGFIX** Line item mapping resets when switch to field validation screen
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE** Doc² - > Export to Flow²
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE** Docbits (Doc²) - > Export to Flow²
 - :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE** dynamic validation screen layout
 - :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEUES FEATURE** Hide Doctype option
 - :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **BUGFIX** Title of the page is wrong in Settings > PO Module

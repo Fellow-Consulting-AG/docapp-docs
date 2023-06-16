@@ -1,0 +1,4 @@
+
+2. Wählen Sie eine Datei zum Hochladen aus ![](/_images/docbits/metadata/file-upload.png)
+3. Klicken Sie auf `Ausführen`
+4. Warten Sie auf die Antwort. Wenn das Metadatenfeld kein gültiges JSON ist, wird eine Fehlermeldung angezeigt. ![Ungültige JSON-Antwort](/_images/docbits/metadata/invalid-json-response.png) Wenn "success": true ist, wird Ihr Dokument mit den von Ihnen in [Docbits (Doc²)](https://app.polydocs.io/settings/classify-extract) festgelegten Regeln auf Ihr Dashboard hochgeladen.

@@ -1,0 +1,291 @@
+site_name: FELLOWPRO Documentation
+docs_dir: '../../docs/en'                           # Where to find the English markdown files
+site_dir: '../../generated/en'                      # Where to put the English HTML files
+site_url: https://en.docs.fellowpro.com
+site_author: Daniel Jordan
+site_description: On these pages you will learn a lot about our different software helping you with digitization, digitalization and the digital transformation in your company.
+theme:
+  name: material
+  logo: _images/LOGO.svg
+  favicon: _images/LOGO.svg
+  font:
+    text: Montserrat
+  language: en
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+    - navigation.footer
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+
+  palette:
+    - scheme: default
+      primary: custom
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: custom
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+extra_css:
+  - _extra/css/extra.css
+  - https://www.neoteroi.dev/mkdocs-plugins/css/neoteroi.css
+  - https://www.neoteroi.dev/mkdocs-plugins/css/mkdocsoad.css
+
+extra_javascript:
+  - _extra/javascript/extra.js
+extra:
+  alternate:
+    - name: English
+      link: https://en.docs.fellowpro.com
+      lang: en
+    - name: Deutsch
+      link: https://de.docs.fellowpro.com
+      lang: de
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+  annotate:
+    json: [.s2]
+  generator: false
+  copyright: Copyright &copy; 2023 FellowPRO AG
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/645725/
+  analytics:
+    provider: google
+    property: G-37LG4Z0JJD
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="https://docs.google.com/forms/d/e/1FAIpQLScEh_N3lX4JFfvE1fdtImtSv2eVjcEGjlPzsH5usNfN4uNOIg/viewform?usp=pp_url&entry.1764397339=[Feedback]+{title}+-+{url}" target=_blank>feedback form</a>.
+
+markdown_extensions:
+  
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - tables
+  - neoteroi.spantable
+  - neoteroi.timeline
+  - neoteroi.cards
+  - neoteroi.projects
+  
+plugins:
+  - search:
+      lang: de
+  - literate-nav
+  - git-revision-date-localized:
+      type: date
+      fallback_to_build_date: true
+  - git-authors
+  - tags:
+      tags_file: tags.md
+  - minify:
+      minify_html: true
+  - neoteroi.contribs
+  - blog
+
+
+
+nav:
+  - Changelog: Release/Release_notes.md
+  - Docbits (Docbits (Doc²)):
+    - Getting Started: docbits/index.md
+    - Data security: security/datensicherung.md
+    - OnBoarding: docbits/onboarding.md
+    - Deployment: docbits/deployment.md
+    - Dashboard:
+      - docbits/dashboard/index.md
+      - Manual Import: docbits/manual-import.md
+      - Keyboard: docbits/keyboard.md
+      - Document Status: docbits/document_status.md
+    - Document Validation:
+      - docbits/document-validation/index.md
+      - Master Data Validation: docbits/document-validation/master-data-validation.md
+      - OCR View: docbits/document-validation/ocr-view.md
+      - AI Indicator: docbits/document-validation/ai-indicator.md
+    # - Expressions: docbits/document-validation/exception-filters.md
+    - Table Extraction:
+      - docbits/table-extraction/index.md
+      - Training table extraction: docbits/table-extraction/training-of-table-extraction.md
+      - Define tables and columns: docbits/table-extraction/define-table-and-columns.md
+      - Add new Column: docbits/table-extraction/add-new-table-column.md
+      - Mapping of Columns: docbits/table-extraction/mapping-of-columns.md
+      - Group function: docbits/table-extraction/group-function.md
+      - Manual row selection: docbits/table-extraction/manual-row-selection.md
+      - Advanced settings: docbits/table-extraction/advanced-settings.md
+      - Save and delete rules: docbits/table-extraction/save-rules-and-delete-rules.md
+
+    - Docbits (Docbits (Doc²)) with Infor:
+      - docbits/doc2-with-infor/index.md
+      - Infor Infrastructure: docbits/doc2-with-infor/infrastructure.md
+      - Use Cases: docbits/doc2-with-infor/infor.md
+      - Diagram: docbits/doc2-with-infor/inforflow.md
+      - Integration with Infor IDM and ERP:
+        - docbits/doc2-with-infor/IDM-business-context-model.md
+      - Infor SSO: docbits/doc2-with-infor/configuring-sso-in-cloud.md
+    # - Docbits (Docbits (Doc²)) with Workflow²: docbits/workflow.md
+    - Settings:
+      - docbits/settings/index.md
+      - Company Information: docbits/company-information.md
+      - Groups, Users and Permissions:
+        - docbits/settings/groups-users-permissons/index.md
+        - Users: docbits/settings-users.md
+      - Integration:
+        - docbits/settings/integration/index.md
+        - API: docbits/settings/integration/api-integration.md
+        - API calls examples: docbits/settings/integration/api-calls-examples.md
+        - SSO Settings: docbits/settings-sso-settings.md
+      - Document Types: docbits/settings-document-types.md
+      - Email Notification: docbits/settings/email-notification.md
+      - Modules: docbits/modules.md
+      - All Import Options:
+        - docbits/import/index.md
+        - Email: docbits/e-mail.md
+        - Fileshare Import:
+          - docbits/fileshare/index.md
+          - Windows: docbits/fileshare/watchdog-windows.md
+          # - macOS: docbits/fileshare/watchdog-macOS.md
+        - Webhook: docbits/api.md
+      - All Export Options:
+        - docbits/export/index.md
+        - Export to Infor:
+          - docbits/export/export-to-infor/index.md
+          - Export to Infor ION and IDM: docbits/export/infor-ion.md
+          - How to create a BOD mapping file: docbits/export/how-to-create-a-bod-mapping-file.md
+          - How to create a IDM mapping file: docbits/export/how-to-create-a-idm-mapping-file.md
+          - Export to Infor IDM: docbits/export/infor-idm.md
+          - Infor ION API File: docbits/export/create-a-infor-ion-api-file.md
+          - Export to Infor ION and IDM: docbits/export/infor-ion.md
+        - Webhook: docbits/export/webhook.md
+        - Export to Flow²: docbits/export/export-to-flow2.md
+
+
+      - Amount: docbits/settings-amount-settings.md
+      - Supplier Validation: docbits/settings-master-data-validation.md
+    - PO Matching:
+      - docbits/pomatching/po-matching/index.md
+      - Invoice: docbits/pomatching/po-matching-invoices.md
+      - Delivery Note: docbits/pomatching/po-matching-delivery-notes.md
+      - Order Confirmation: docbits/pomatching/po-matching-order-confirmation.md
+
+    - ZUGFeRD: docbits/zugpferd.md
+
+    - Groups & Privileges: security/privileges.md
+    - Admin-Guides: docbits/admin-guides/postman-projects.md
+    - SSO:
+      - docbits/SSO/index.md
+      - SSO for Azure AD with Docbits (Docbits (Doc²)): docbits/SSO/SSO-for-Azure-AD.md
+
+
+  - FLOW²:
+    - Introduction: flow2/index.md
+    - Getting Started: flow2/introduction.md
+    - Onboarding Guide: flow2/flow2-onboarding-guide.md
+    - Deployment: flow2/deployment.md
+    - User Dashboard: flow2/home.md
+    - System Setup: flow2/settings-system-setup.md
+    - Metadata: flow2/metadata.md
+    - Import from Docbits (Docbits (Doc²)): flow2/import-from-doc2.md
+  - KV²:
+    - Getting Started: kv2/getting-started.md
+    - Installation: kv2/installation.md
+    - Tutorial: kv2/kv2-tutorial.md
+    - How To:
+      - Training KV² for Table Extraction: kv2/training-kv2-for-table-extraction.md
+      - Different VAT amounts: kv2/how-to-deal-with-different-vat-amounts.md
+      - All Extracted Fields: kv2/all-extracted-fields.md
+      - Rules: kv2/how-to-delete-a-kv2-plugin-rule-from-the-database.md
+    - Restart Ephesoft:
+      - Cloud: kv2/restart-ephesoft-on-cloud.md
+      - OnPremise: kv2/restart-ephesoft-on-premise.md
+    - Limitations: kv2/limitations-for-fellow-kv2-plugin.md
+    - Feedback Function: kv2/enable-feedback-function.md
+  - TE²:
+    - Getting Started: te2/fellow-te2-plugin.md
+    - Installation: te2/install.md
+    - Tutorial: te2/fellowte2-tutorial.md
+    - Ephesoft External Application: te2/ephesoft-external-application.md
+    - Infor LN BOD Mapping: te2/ln_bodmapping.md
+    - Feedback Function: te2/enable-feedback-function.md
+  - OCR²:
+    - Overview: ocr/overview.md
+    - Installation & Config: ocr/installation-config.md
+    - Getting Started: ocr/get-started.md
+    - OCR Server Process: ocr/ocrserverprocess.md
+    - Detect inside pages: ocr/detect-inside-pages.md
+    - Merge/Split PDF: ocr/merge-split-pdf.md
+    - API: ocr/ocr-api.md
+  - Roadmap: 
+    - Roadmap: roadmap.md
+    - Api: api.md
+    - Dev Blog:
+      - blog/index.md
+  

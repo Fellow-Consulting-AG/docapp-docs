@@ -3,7 +3,7 @@ Changes:<seo_changes>
 - Hinzufügen von Alt-Texten für das Bild, um die Barrierefreiheit zu verbessern und die Sichtbarkeit in Bildersuchen zu erhöhen.
 - Hinzufügen von Keywords in den Tags, um die Relevanz für Suchmaschinen zu erhöhen.
 
-![OCR-Beispiel](/_images/doc2/image-20-1024x193.png "OCR-Beispiel")
+![OCR-Beispiel](/_images/docbits/image-20-1024x193.png "OCR-Beispiel")
 
 Unsere API steht Ihnen zur Verfügung und in der folgenden Dokumentation werden wir ihre Funktionalitäten, den Installationsprozess und alles, was Sie darüber wissen müssen, erläutern.
 

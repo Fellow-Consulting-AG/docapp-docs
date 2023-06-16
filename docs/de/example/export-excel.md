@@ -1,22 +1,22 @@
 ---
-title: DOC² export to Excel
-description: In this example we trigger the result from Doc² and write the result to excel and upload it to Dropbox.
+title: Docbits (Doc²) export to Excel
+description: In this example we trigger the result from Docbits (Doc²) and write the result to excel and upload it to Dropbox.
 date: 2022-06-23
 tags:
   - Workflow²
   - Dropbox
   - Excel
-  - DOC²
+  - Docbits (Doc²)
 
 ---
 
-#  DOC² export to Excel and Upload to Dropbox
+#  Docbits (Doc²) export to Excel and Upload to Dropbox
 
 
-![DOC² export to Excel](/_images/excel-dropbox.png)
+![Docbits (Doc²) export to Excel](/_images/excel-dropbox.png)
 
 
-In this example we trigger the result from DOC² and write the result to excel and upload it to Dropbox.
+In this example we trigger the result from Docbits (Doc²) and write the result to excel and upload it to Dropbox.
 
 
 

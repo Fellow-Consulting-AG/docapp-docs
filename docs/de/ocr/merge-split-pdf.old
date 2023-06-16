@@ -17,6 +17,6 @@ The last to functionalities and sections of the API allow you to either merge or
 
 This part is very easy to use. Just upload your document and choose whether you would like the result sent to you by E-Mail or not.
 
-![](/_images/doc2/image-25-1024x489.png)
+![](/_images/docbits/image-25-1024x489.png)
 
 ### _Done!_

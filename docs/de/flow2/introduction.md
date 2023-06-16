@@ -8,7 +8,7 @@ tags:
     - Dokumentenmanagement-System (DMS)
 ---
 
-![](https://example.com/_images/doc2/flow2-1024x286.png "FLOW²")
+![](https://example.com/_images/docbits/flow2-1024x286.png "FLOW²")
 
 FLOW² ist ein Dokumentenmanagement-System (DMS).
 

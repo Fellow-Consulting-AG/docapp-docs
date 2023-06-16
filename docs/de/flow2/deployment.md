@@ -21,10 +21,10 @@ Ein Computer mit Internetverbindung
 
 Wenn Sie die URL aufrufen, erscheint folgender Bildschirm:
 
-![FLOW² Login-Bildschirm](/_images/doc2/FLOW2_LogIn-1024x640.png "FLOW² Login-Bildschirm")
+![FLOW² Login-Bildschirm](/_images/docbits/FLOW2_LogIn-1024x640.png "FLOW² Login-Bildschirm")
 
 Geben Sie die Login-Daten ein, die wir Ihnen zur Verfügung gestellt haben, und klicken Sie auf die Schaltfläche "Login" oder drücken Sie die Eingabetaste, um sich anzumelden.
 
 Nach erfolgreicher Anmeldung sehen Sie den folgenden Bildschirm. Das bedeutet, dass alles bereit ist und Sie loslegen können.
 
-![FLOW² Home-Bildschirm](/_images/doc2/FLOW2_Home-1024x586.png "FLOW² Home-Bildschirm")
+![FLOW² Home-Bildschirm](/_images/docbits/FLOW2_Home-1024x586.png "FLOW² Home-Bildschirm")

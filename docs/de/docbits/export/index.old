@@ -1,0 +1,18 @@
+---
+title: "Export"
+date: "2021-10-22"
+description: On this page you will find links to documentations explaining how to export documents from Docbits (Doc²) to other environments as Infor and FLOW² and via Webhook.
+tags:
+  - Docbits (Doc²)
+  - Export
+  - Infor
+  - Webhook
+  - FLOW²
+  
+---
+
+#### Here you can find the export options and the corresponding articles.
+
+- [Webhook](/docbits/export/webhook/)
+- [infor](/docbits/export/export-to-infor/)
+- [FLOW²](/docbits/export/export-to-flow2/)

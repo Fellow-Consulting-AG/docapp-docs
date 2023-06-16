@@ -12,10 +12,10 @@ tags:
 
 Wenn Sie eine falsche Regel implementiert und gespeichert haben, müssen Sie sich keine Sorgen machen! Es ist einfach, sie mit nur einer Befehlszeile durch Ephesoft aus der Datenbank zu löschen!
 
-![Screenshot des Feldes, in dem der Befehl eingegeben wird](/assets/images/doc2/Bildschirmfoto-2021-06-01-um-15.45.11.png "Screenshot des Feldes, in dem der Befehl eingegeben wird")
+![Screenshot des Feldes, in dem der Befehl eingegeben wird](/assets/images/docbits/Bildschirmfoto-2021-06-01-um-15.45.11.png "Screenshot des Feldes, in dem der Befehl eingegeben wird")
 
 Geben Sie einfach **_/c_** in das Feld ein, das Sie nicht mehr benötigen.
 
-![Screenshot des Feldes mit dem eingegebenen Befehl](/assets/images/doc2/Bildschirmfoto-2021-06-01-um-15.50.48.png "Screenshot des Feldes mit dem eingegebenen Befehl")
+![Screenshot des Feldes mit dem eingegebenen Befehl](/assets/images/docbits/Bildschirmfoto-2021-06-01-um-15.50.48.png "Screenshot des Feldes mit dem eingegebenen Befehl")
 
-![Screenshot der Bestätigung des Löschvorgangs](/assets/images/doc2/Bildschirmfoto-2021-06-01-um-15.51.40.png "Screenshot der Bestätigung des Löschvorgangs")
+![Screenshot der Bestätigung des Löschvorgangs](/assets/images/docbits/Bildschirmfoto-2021-06-01-um-15.51.40.png "Screenshot der Bestätigung des Löschvorgangs")

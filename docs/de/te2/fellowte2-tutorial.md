@@ -21,9 +21,9 @@ Um dieses Tutorial zu verwenden, müssen Sie den Abschnitt [Installation & Konfi
 
 - Melden Sie sich mit Benutzername und Passwort in der Ephesoft Transact Software an.
 
-![Einloggen in Ephesoft Transact Software](/_images/doc2/login1Unbenannt.png)
+![Einloggen in Ephesoft Transact Software](/_images/docbits/login1Unbenannt.png)
 
-![Ephesoft Transact Software Dashboard](/_images/doc2/login2Unbenannt.png)
+![Ephesoft Transact Software Dashboard](/_images/docbits/login2Unbenannt.png)
 
 - Nach dem Einloggen sehen Sie das Menü auf der linken Seite mit zwei Modulen: Administrator & Operator mit ihren definierten Funktionen:
 
@@ -33,25 +33,25 @@ Um dieses Tutorial zu verwenden, müssen Sie den Abschnitt [Installation & Konfi
 
 - Laden Sie Ihre Dokumente über das Operator-Modul in "Upload Batch" hoch:
 
-![Dokumente hochladen in Ephesoft Transact Software](/_images/doc2/step1_1.png)
+![Dokumente hochladen in Ephesoft Transact Software](/_images/docbits/step1_1.png)
 
 - Starten Sie den Batch mit der entsprechenden Batch-Klasse.
 
-![Batch starten in Ephesoft Transact Software](/_images/doc2/startbatch.png)
+![Batch starten in Ephesoft Transact Software](/_images/docbits/startbatch.png)
 
 - Warten Sie im Administrator-Modul in "Batch Instance Management", bis der Batch verarbeitet und zur Validierung bereit ist.
 
-![Batch-Verarbeitung in Ephesoft Transact Software](/_images/doc2/Process3Unbenannt.png)
+![Batch-Verarbeitung in Ephesoft Transact Software](/_images/docbits/Process3Unbenannt.png)
 
 - Wählen Sie Ihren Batch in der Liste aus und klicken Sie auf "Öffnen", um den Batch zu öffnen und die Header- und Footer-Felder zu validieren:
 
-![Batch-Validierung in Ephesoft Transact Software](/_images/doc2/4-open-batchUnbenannt.png)
+![Batch-Validierung in Ephesoft Transact Software](/_images/docbits/4-open-batchUnbenannt.png)
 
 - Sie werden nun zum Ephesoft-Validierungsfenster weitergeleitet. Neben den Optionen "Validieren", "Nächster Batch", "Zusammenführen", "Aufteilen" und "Mehr" finden Sie hier den Button, um zur "Table"-Ansicht zu gelangen.
 
-![Ephesoft Validierungsfenster](/_images/doc2/image-39-1024x541.png)
+![Ephesoft Validierungsfenster](/_images/docbits/image-39-1024x541.png)
 
-![Ephesoft Table Extraction Plugin](/_images/doc2/image-40-1024x541.png)
+![Ephesoft Table Extraction Plugin](/_images/docbits/image-40-1024x541.png)
 
 Es gibt ein Standard-Schema, das standardmäßig verwendet wird und die meisten Rechnungs- / Tabellenlayouts verarbeiten kann. Für bestimmte Rechnungs- / Tabellenlayouts gibt es spezielle (benutzerdefinierte) Layouts, und es können sicherlich weitere vorhanden sein, wenn es spezielle Anforderungen innerhalb Ihrer Organisation gibt.
 
@@ -59,7 +59,7 @@ Das Standard-Schema kann die in der folgenden Tabelle aufgeführten Werte erkenn
 
 <table><tbody><tr><td><strong>Name</strong></td><td><strong>Typ</strong></td><td><strong>Erforderlich</strong></td></tr><tr><td>POSITION</td><td>string</td><td>false</td></tr><tr><td>BESCHREIBUNG</td><td>string</td><td>true</td></tr><tr><td>ARTIKELNUMMER</td><td>string</td><td>false</td></tr><tr><td>MENGE</td><td>number</td><td>true</td></tr><tr><td>EINZELPREIS</td><td>currency</td><td>true</td></tr><tr><td>GESAMTBETRAG</td><td>currency</td><td>true</td></tr><tr><td>BESTELLNUMMER</td><td>string</td><td>false</td></tr></tbody></table>
 
-![Ephesoft Table Extraction Plugin Schema](/_images/doc2/image-43-1024x732.png)
+![Ephesoft Table Extraction Plugin Schema](/_images/docbits/image-43-1024x732.png)
 
 Die Backend-Intelligenz des TE²-Plugins führt eine Analyse und Optimierung der Daten- / Tabellenansicht durch, die dann vom Benutzer validiert oder korrigiert werden kann, falls erforderlich. Auch wenn die meisten Tabellen erkannt und ausgeführt werden können, gibt es einige Einschränkungen in der Technologie, d.h. dass bestimmte Arten von Tabellen nicht erkannt werden können.
 
@@ -74,6 +74,6 @@ In jedem Fall werden Tabellen von PolyDocs GmbH i. Gr. analysiert, um die Mögli
 
 Beispiele:
 
-![Ephesoft Table Extraction Plugin Beispiel 1](/_images/doc2/image-41-1024x727.png)
+![Ephesoft Table Extraction Plugin Beispiel 1](/_images/docbits/image-41-1024x727.png)
 
-![Ephesoft Table Extraction Plugin Beispiel 2](/_images/doc2/image-42-1024x648.png)
+![Ephesoft Table Extraction Plugin Beispiel 2](/_images/docbits/image-42-1024x648.png)

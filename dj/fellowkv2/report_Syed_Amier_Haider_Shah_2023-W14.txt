@@ -303,7 +303,7 @@ Code changes:
 +            img_data = decodebytes(ai_image["content"].encode())
 +            storage_manager.save_file_data(img_data, f"{page}.png", image_dest_path)
 +            img_data = {
-+                "path": f"doc2/images/{doc_id}/{page}.png",
++                "path": f"docbits/images/{doc_id}/{page}.png",
 +                "filename": f"{page}.png",
 +                "pageNumber": ai_image["pageNumber"],
 +                "height": ai_image["height"],

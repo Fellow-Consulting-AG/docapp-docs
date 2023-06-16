@@ -1,0 +1,5 @@
+Changes:<added alt text to the image>
+
+**2. Klicken Sie auf "Integration hinzufügen".**
+
+![Integration hinzufügen](/_images/docbits/DOC2_Add-integration-1024x537.png "Integration hinzufügen")

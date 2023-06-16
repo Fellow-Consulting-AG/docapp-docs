@@ -1,19 +1,19 @@
 ---
-title: Email Import with GMail to DOC²
-description: This workflow searches for new e-mails in the configured sub-mailboxes of an e-mail address and uploads it to our DOC² system.
+title: Email Import with GMail to Docbits (Doc²)
+description: This workflow searches for new e-mails in the configured sub-mailboxes of an e-mail address and uploads it to our Docbits (Doc²) system.
 date: 2022-09-14
 tags:
   - Workflow²
   - Email
   - Gmail
   - Import
-  - DOC²
+  - Docbits (Doc²)
 
 ---
 
-#  Gmail Import to DOC²
+#  Gmail Import to Docbits (Doc²)
 
-This workflow searches for new e-mails in the configured sub-mailboxes of an e-mail address. When a new email is found, it receives the attachment and uploads it to DOC².
+This workflow searches for new e-mails in the configured sub-mailboxes of an e-mail address. When a new email is found, it receives the attachment and uploads it to Docbits (Doc²).
 
 
 ![](/_images/example/email import/WF_email-import.png)
@@ -23,7 +23,7 @@ This workflow starts with a cronjob which can be configured as you want. To chec
 
 ![](/_images/example/email import/WF_email-import_Mailbox1.png)
 
-Before extracting the attachment to DOC² you have to add a custom Function. Just paste the following JavaScript code into it:
+Before extracting the attachment to Docbits (Doc²) you have to add a custom Function. Just paste the following JavaScript code into it:
 
 ``` Javascript
 for (item of items) {
@@ -37,7 +37,7 @@ return items;
 
 ```
 
-To extract the documents to DOC² you have to select the **Doc2App Upload Documents** node. To connect the node to your account you have to apply the API key. The documentation you can find on this page.
+To extract the documents to Docbits (Doc²) you have to select the **Doc2App Upload Documents** node. To connect the node to your account you have to apply the API key. The documentation you can find on this page.
 
 ![](/_images/example/email import/WF_Upload document.png)
 

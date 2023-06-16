@@ -1,0 +1,53 @@
+---
+title: "Watchdog für macOS"
+description: In dieser Dokumentation erfahren Sie, wie Sie Watchdog für macOS konfigurieren, um Ihre lokalen Dokumente einfach in Docbits (Doc²) zu importieren.
+date: "2021-11-22"
+tags:
+  - Docbits (Doc²)
+  - Fileshare-Import
+  - Watchdog
+  - macOS
+---
+
+# Watchdog für macOS
+
+### Laden Sie die Datei hier herunter:
+
+## Ordnerkonfiguration
+
+Konfigurieren Sie zunächst die folgenden Ordner:
+
+* Lesen-Ordner → Hier werden Dokumente exportiert, die in Docbits (Doc²) hochgeladen werden sollen.
+* Fehler-Ordner → Hier werden Dokumente gespeichert, die während des Exports einen Fehler aufweisen.
+* Verarbeitete-Ordner → Hier werden erfolgreich verarbeitete Dokumente gespeichert.
+
+Um diese Ordner zu konfigurieren, müssen Sie den **Einstellungsordner** auswählen und für jeden Ordner auf `Durchsuchen` klicken.
+
+![Watchdog für macOS Ordnerkonfiguration](/_images/docbits/Import_Watchdog_Windows_FolderConfiguration.png "Watchdog für macOS Ordnerkonfiguration")
+
+## Allgemeine Konfiguration
+
+Konfigurieren Sie als nächstes die allgemeinen Parameter:
+
+  * Umgebung → Hier können Sie auswählen, wohin die Dokumente exportiert werden sollen. Es stehen folgende Optionen zur Verfügung:
+    - Docbits (Doc²) → Hier exportiert der Watchdog die Dokumente ausschließlich in Docbits (Doc²).
+    - INFOR OS → Hier prüft der Watchdog, ob Exportaufträge für Infor OS On-Premise von Docbits (Doc²) erteilt wurden, und exportiert das Dokument dann in IDM.
+  * API-Schlüssel → Diesen Schlüssel finden Sie unter Integrationseinstellungen Ihres Docbits (Doc²)-Kontos.
+
+Es gibt noch zwei weitere spezifische Parameter:
+
+  * Beim Exportieren in Infor OS:
+    - Dokumenttypen → Hier haben Sie die Wahl zwischen drei verschiedenen Dokumenttypen.
+
+![Watchdog für macOS Allgemeine Konfiguration](/_images/docbits/Import_Watchdog_Windows_GeneralConfiguration.png "Watchdog für macOS Allgemeine Konfiguration")
+
+Changes Made:
+- Übersetzung des Textes ins Deutsche
+- Hinzufügen von Alt-Tags zu den Bildern
+- Hinzufügen von Keywords in den Titel und die Beschreibung
+- Hinzufügen von Keywords in den Tags
+- Hervorheben der wichtigen Informationen durch Fettdruck
+- Entfernen von unnötigen Leerzeichen
+- Verwendung von Listen, um die Informationen besser strukturiert darzustellen
+- Verwendung von Links, um den Download-Link hervorzuheben
+- Verwendung von Anführungszeichen, um den Text besser lesbar zu machen

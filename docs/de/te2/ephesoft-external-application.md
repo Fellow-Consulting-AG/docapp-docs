@@ -1,6 +1,6 @@
 ---
 title: "Ephesoft - Externe Anwendung"
-description: In dieser Dokumentation erfahren Sie, wie Sie DOC² als externe Anwendung für Ephesoft verwenden können, um Tabellen Schritt für Schritt einfach zu trainieren.
+description: In dieser Dokumentation erfahren Sie, wie Sie Docbits (Doc²) als externe Anwendung für Ephesoft verwenden können, um Tabellen Schritt für Schritt einfach zu trainieren.
 date: "2022-02-11"
 tags:
   - TE²
@@ -8,19 +8,19 @@ tags:
   - Ephesoft
   - Schulung
   - Tabellenextraktion
-  - DOC²
+  - Docbits (Doc²)
   - Externe Anwendung
 ---
 
-Willkommen bei der Dokumentation zur Verwendung von DOC² als externe Anwendung für Ephesoft. Hier erfahren Sie, wie Sie Tabellen Schritt für Schritt einfach trainieren können.
+Willkommen bei der Dokumentation zur Verwendung von Docbits (Doc²) als externe Anwendung für Ephesoft. Hier erfahren Sie, wie Sie Tabellen Schritt für Schritt einfach trainieren können.
 
-So verwenden Sie DOC² als externe Anwendung für Ephesoft:
+So verwenden Sie Docbits (Doc²) als externe Anwendung für Ephesoft:
 
 1. Laden Sie Ihr Dokument in Ephesoft hoch.
 2. Sobald das Dokument zur Validierung bereit ist, öffnen Sie die Batch-ID.
-3. Wählen Sie als nächstes **Mehr** aus den oberen grünen Feldern, dann **Externe Anwendung** und schließlich **DOC²**.
-4. Ein Popup-Fenster öffnet sich mit DOC² und Ihrem Dokument aus der Batch-ID.
-5. Wenn Sie diesen Punkt erreicht haben, können Sie mit der detaillierten Beschreibung (mit Videos) [hier](/doc2/doc2app/table-train/) fortfahren (ab Punkt 6).
+3. Wählen Sie als nächstes **Mehr** aus den oberen grünen Feldern, dann **Externe Anwendung** und schließlich **Docbits (Doc²)**.
+4. Ein Popup-Fenster öffnet sich mit Docbits (Doc²) und Ihrem Dokument aus der Batch-ID.
+5. Wenn Sie diesen Punkt erreicht haben, können Sie mit der detaillierten Beschreibung (mit Videos) [hier](/docbits/doc2app/table-train/) fortfahren (ab Punkt 6).
 
 Alternativ können Sie die folgenden Anweisungen verwenden, um den Prozess zu beschleunigen:
 

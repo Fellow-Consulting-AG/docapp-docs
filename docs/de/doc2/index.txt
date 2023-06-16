@@ -1,7 +1,0 @@
-Changes:- Hinzufügen von Alt-Texten für das Logo-Bild
-- Übersetzung des Textes ins Deutsche
-- Hervorhebung der Vorteile von DOC² durch Fettdruck
-- Hinzufügen eines Call-to-Action-Buttons für die kostenlose Testversion
-- Hinzufügen von Absätzen für eine bessere Lesbarkeit
-- Hinzufügen von Abschnitten, um die Verwendung von DOC² zu erklären
-- Hinzufügen von Abschnitten, um zu erklären, warum DOC² die richtige Wahl ist

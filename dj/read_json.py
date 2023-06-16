@@ -189,7 +189,7 @@ def find_md_files(directory):
                         f.close()
 
 
-#file = "/Users/daniel/dev/docapp-docs/docs/en/doc2/keyboard.md"
+#file = "/Users/daniel/dev/docapp-docs/docs/en/docbits/keyboard.md"
 directory_path = "/Users/daniel/dev/docapp-docs/dj/Fellow2KV2"
 find_md_files(directory_path)
 

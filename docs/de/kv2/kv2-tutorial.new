@@ -21,9 +21,9 @@ Um dieses Tutorial zu verwenden, müssen Sie den Abschnitt [Installation & Konfi
 
 - Melden Sie sich mit Benutzername und Passwort bei der Ephesoft Transact Software an.
 
-![Anmeldeseite](/_images/doc2/login1Unbenannt.png)
+![Anmeldeseite](/_images/docbits/login1Unbenannt.png)
 
-![Ephesoft-Startseite](/_images/doc2/login2Unbenannt.png)
+![Ephesoft-Startseite](/_images/docbits/login2Unbenannt.png)
 
 - Nach der Anmeldung sehen Sie das Menü mit zwei Modulen: Administrator & Operator mit ihren definierten Funktionen:
 
@@ -39,23 +39,23 @@ Um dieses Tutorial zu verwenden, müssen Sie den Abschnitt [Installation & Konfi
 
 - Laden Sie Ihre Dokumente über das Operator-Modul in "Upload Batch" hoch:
 
-![Upload Batch](/_images/doc2/step1_1.png)
+![Upload Batch](/_images/docbits/step1_1.png)
 
 - Starten Sie den Batch mit der entsprechenden Batch-Klasse.
 
-![Batch starten](/_images/doc2/startbatch.png)
+![Batch starten](/_images/docbits/startbatch.png)
 
 - Warten Sie im Administrator-Modul in "Batch Instance Management", bis der Batch verarbeitet und zur Validierung bereit ist.
 
-![Batch Instance Management](/_images/doc2/Process3Unbenannt.png)
+![Batch Instance Management](/_images/docbits/Process3Unbenannt.png)
 
 - Wählen Sie Ihren Batch in der Liste aus und klicken Sie auf "Öffnen", um den Batch zu öffnen und die Header- und Footer-Felder zu validieren.
 
-![Batch öffnen](/_images/doc2/4-open-batchUnbenannt.png)
+![Batch öffnen](/_images/docbits/4-open-batchUnbenannt.png)
 
 - Sie werden nun zu einem neuen Fenster zur Validierung weitergeleitet. Das Dokument wird auf der rechten Seite angezeigt, der Validierungsbildschirm links davon. Hier können Sie alle extrahierten Felder überprüfen und Werte hinzufügen/korrigieren.
 
-![Validierungsbildschirm](/_images/doc2/validationScreen.png)
+![Validierungsbildschirm](/_images/docbits/validationScreen.png)
 
 - Gehen Sie alle Felder durch, indem Sie die "Tab"-Taste oder die Maus verwenden und den Wert überprüfen. Wenn Sie einen fehlenden oder falschen Wert bemerken, haben Sie 3 Optionen, um den korrekten Wert festzulegen:
     - Klicken Sie in das entsprechende Feld im Validierungsbildschirm, bewegen Sie dann die Maus über das Dokument auf der rechten Seite und wählen Sie den entsprechenden Wert durch Doppelklick darauf aus. Der ausgewählte Wert wird auf dem Dokument gelb markiert und erscheint im Validierungsfeld auf der linken Seite (bevorzugt - auf diese Weise trainieren Sie, an welcher Stelle auf einer bestimmten Rechnung Sie die entsprechenden Werte finden).
@@ -67,11 +67,11 @@ Für Felder, die Sie im ersten Durchlauf korrigiert haben, sollten Sie den korre
 
 - Fügen Sie nun alle Felder mit den genauen Daten hinzu und validieren Sie die Rechnung, damit sie exportiert werden kann.
 
-![Validierungsschritte](/_images/doc2/validate1Unbenannt.png)
+![Validierungsschritte](/_images/docbits/validate1Unbenannt.png)
 
-![Validierungsschritte](/_images/doc2/validate2Unbenannt.png)
+![Validierungsschritte](/_images/docbits/validate2Unbenannt.png)
 
-![Validierungsschritte](/_images/doc2/validate3Unbenannt.png)
+![Validierungsschritte](/_images/docbits/validate3Unbenannt.png)
 
 Mit diesem Prozess validieren Sie nicht nur Ihr Dokument, sondern trainieren auch das Plugin. Mit einer einmaligen menschlichen Unterstützung bei der Validierung und dem Export der Dokumente werden neue Extraktionsregeln erstellt. Für den nächsten Lauf für diese Art von Dokument ist keine Anpassung oder Konfiguration der Batch-Klasse erforderlich und das Plugin erkennt Werte, die im ersten Lauf fehlten.
 
@@ -79,7 +79,7 @@ Mit diesem Prozess validieren Sie nicht nur Ihr Dokument, sondern trainieren auc
 
 Das KV²-Plugin wird mit einer integrierten Feedback-Funktion geliefert, über die Sie uns Support zu jeder Dokumentenvalidierung senden können. Die Feedback-Funktion befindet sich im Tab #5 der Ephesoft-Validierungs-Benutzeroberfläche (normalerweise der letzte Tab).
 
-![Feedback-Tab](/_images/doc2/Bildschirmfoto-2021-07-12-um-17.01.16-2-1024x477.png)
+![Feedback-Tab](/_images/docbits/Bildschirmfoto-2021-07-12-um-17.01.16-2-1024x477.png)
 
 Wenn Sie uns Feedback senden möchten, müssen Sie zu diesem Tab wechseln und die drei Felder auf diesem Tab ausfüllen:
 
@@ -95,7 +95,7 @@ Wenn Sie uns Feedback senden möchten, müssen Sie zu diesem Tab wechseln und di
 
 Wenn die Felder ausgefüllt sind, wird das Feedback während des Validierungsprozesses erstellt und direkt an unser Support-Tool gesendet, damit wir an dem Fall arbeiten können.
 
-![Feedback-Formular](/_images/doc2/Bildschirmfoto-2021-07-12-um-17.01.16-1024x477.png)
+![Feedback-Formular](/_images/docbits/Bildschirmfoto-2021-07-12-um-17.01.16-1024x477.png)
 
 Changes Made:
 - Der Titel wurde optimiert, um das Keyword "Schritt-für-Schritt-Anleitung" hinzuzufügen.

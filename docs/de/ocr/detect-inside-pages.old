@@ -9,7 +9,7 @@ tags:
 
 In this part of the API, we are able to detect and extract special parts of your document. The section is split up in three different parts:
 
-![](/_images/doc2/image-21-1024x194.png)
+![](/_images/docbits/image-21-1024x194.png)
 
 ## Detect blank pages
 
@@ -17,7 +17,7 @@ TBD
 
 ## Detect language
 
-![](/_images/doc2/image-22-1024x252.png)
+![](/_images/docbits/image-22-1024x252.png)
 
 This functionality allows you to put in a text of your choice and our API will recognize the language it is written in.
 
@@ -35,7 +35,7 @@ Now you are asked to load up your document before choosing parameters again.
 
 **Report** (true/false) allows you to choose whether or not to receive an accuracy report.
 
-![](/_images/doc2/image-23.png)
+![](/_images/docbits/image-23.png)
 
 Example for an accuracy report
 
@@ -49,6 +49,6 @@ Example for an accuracy report
 
 After hitting execute, you will receive your extracted data in code format like shown underneath, or you will have the metadata sent to you via E-Mail:
 
-![](/_images/doc2/image-24-1024x369.png)
+![](/_images/docbits/image-24-1024x369.png)
 
 ### _Done!_

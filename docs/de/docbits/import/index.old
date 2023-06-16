@@ -1,0 +1,19 @@
+---
+title: "Import"
+description: This is an overview about all the possible import functionalities in Docbits (Doc²). Often used are E-Mail import and manual import.
+date: "2021-10-22"
+tags:
+  - Import
+  - Docbits (Doc²)
+  - E-Mail
+  - manual Import
+  - API
+---
+
+#### Here you can find the import options and the corresponding links
+
+- [E-Mail](/docbits/e-mail/)
+- [Manual Import](/docbits/manual-import/)
+- [API](/docbits/settings/integration/api-integration/)
+- [Fileshare](/docbits/fileshare/)
+

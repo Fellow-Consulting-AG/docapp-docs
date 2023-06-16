@@ -16,10 +16,10 @@ Als Systemadministrator ist es wichtig, den Transact-Prozess von Ephesoft auf Cl
 2. Klicken Sie auf "Neustart Transact".
 3. Bitte beachten Sie, dass der Neustart bis zu 5 Minuten dauern kann.
 
-![Ephesoft Cloud Configadmin-Seite](/_images/doc2/Bildschirmfoto-2021-07-06-um-12.16.48-1024x531.png "Ephesoft Cloud Configadmin-Seite")
+![Ephesoft Cloud Configadmin-Seite](/_images/docbits/Bildschirmfoto-2021-07-06-um-12.16.48-1024x531.png "Ephesoft Cloud Configadmin-Seite")
 
-![Neustart Transact](/_images/doc2/image-2-1024x640-1.png "Neustart Transact")
+![Neustart Transact](/_images/docbits/image-2-1024x640-1.png "Neustart Transact")
 
 4. Nach dem Neustart können Sie sich abmelden.
 
-![Abmelden](/_images/doc2/image-3-1024x640-1.png "Abmelden")
+![Abmelden](/_images/docbits/image-3-1024x640-1.png "Abmelden")

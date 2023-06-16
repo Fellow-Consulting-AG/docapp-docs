@@ -1,0 +1,19 @@
+---
+title: "Docbits (Doc²) with Infor"
+description: In this section you will find the Infor infrastructure, starting from use cases over integrations to all export options.
+tags:
+  - Docbits (Doc²)
+  - Infor
+  - Overview
+--- 
+
+In this section you will find the Infor infrastructure, starting from use cases over integrations to all export options and the corresponding links
+
+- [Infor Infrastructure](/docbits/doc2-with-infor/infrastructure/)
+- [Use Cases](/docbits/doc2-with-infor/infor/)
+- [Diagram](/docbits/doc2-with-infor/inforflow/)
+- [IDM Business Context Model](/docbits/doc2-with-infor/IDM-business-context-model/)
+- [Export](/docbits/export/export-to-infor/)
+- [SSO](/docbits/doc2-with-infor/configuring-sso-in-cloud/)
+
+

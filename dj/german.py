@@ -116,7 +116,7 @@ def find_md_files(directory):
                     else:
                         print (f"No change for {file}")
 
-#file = "/Users/daniel/dev/docapp-docs/docs/en/doc2/keyboard.md"
+#file = "/Users/daniel/dev/docapp-docs/docs/en/docbits/keyboard.md"
 directory_path = "/Users/daniel/dev/docapp-docs/docs/de/te2/"
 find_md_files(directory_path)
 

@@ -150,93 +150,93 @@ plugins:
 
 nav:
   - Changelog: Release/Release_notes.md
-  - DOC²:
-    - Einstieg: doc2/index.md
+  - Docbits (Doc²):
+    - Einstieg: docbits/index.md
     - Datensicherheit: security/datensicherung.md
-    - OnBoarding: doc2/onboarding.md
-    - Bereitstellung: doc2/deployment.md
+    - OnBoarding: docbits/onboarding.md
+    - Bereitstellung: docbits/deployment.md
     - Dashboard:
-      - doc2/dashboard/index.md
-      - Manueller Import: doc2/manual-import.md
-      - Tastenkombinationen: doc2/keyboard.md
-      - Dokumentenstatus: doc2/document_status.md
+      - docbits/dashboard/index.md
+      - Manueller Import: docbits/manual-import.md
+      - Tastenkombinationen: docbits/keyboard.md
+      - Dokumentenstatus: docbits/document_status.md
     - Dokumentenvalidierung:
-      - doc2/document-validation/index.md
-      - Validierung von Stammdaten: doc2/document-validation/master-data-validation.md
-      - OCR-Ansicht: doc2/document-validation/ocr-view.md
-      - KI-Indikator: doc2/document-validation/ai-indicator.md
-      # - Ausdrücke: doc2/document-validation/exception-filters.md
+      - docbits/document-validation/index.md
+      - Validierung von Stammdaten: docbits/document-validation/master-data-validation.md
+      - OCR-Ansicht: docbits/document-validation/ocr-view.md
+      - KI-Indikator: docbits/document-validation/ai-indicator.md
+      # - Ausdrücke: docbits/document-validation/exception-filters.md
     - Tabellen auslesen:
-      - doc2/table-extraction/index.md
-      - Schulung zur Tabellenauswertung: doc2/table-extraction/training-of-table-extraction.md
-      - Definition von Tabellen und Spalten: doc2/table-extraction/define-table-and-columns.md
-      - Hinzufügen neuer Spalten: doc2/table-extraction/add-new-table-column.md
-      - Zuordnung von Spalten: doc2/table-extraction/mapping-of-columns.md
-      - Gruppenfunktion: doc2/table-extraction/group-function.md
-      - Manuelle Zeilenauswahl: doc2/table-extraction/manual-row-selection.md
-      - Erweiterte Einstellungen: doc2/table-extraction/advanced-settings.md
-      - Speichern und Löschen von Regeln: doc2/table-extraction/save-rules-and-delete-rules.md
+      - docbits/table-extraction/index.md
+      - Schulung zur Tabellenauswertung: docbits/table-extraction/training-of-table-extraction.md
+      - Definition von Tabellen und Spalten: docbits/table-extraction/define-table-and-columns.md
+      - Hinzufügen neuer Spalten: docbits/table-extraction/add-new-table-column.md
+      - Zuordnung von Spalten: docbits/table-extraction/mapping-of-columns.md
+      - Gruppenfunktion: docbits/table-extraction/group-function.md
+      - Manuelle Zeilenauswahl: docbits/table-extraction/manual-row-selection.md
+      - Erweiterte Einstellungen: docbits/table-extraction/advanced-settings.md
+      - Speichern und Löschen von Regeln: docbits/table-extraction/save-rules-and-delete-rules.md
 
-    - DOC² mit Infor:
-      - doc2/doc2-with-infor/index.md
-      - Infor-Infrastruktur: doc2/doc2-with-infor/infrastructure.md
-      - Anwendungsfälle: doc2/doc2-with-infor/infor.md
-      - Diagramm: doc2/doc2-with-infor/inforflow.md
+    - Docbits (Doc²) mit Infor:
+      - docbits/doc2-with-infor/index.md
+      - Infor-Infrastruktur: docbits/doc2-with-infor/infrastructure.md
+      - Anwendungsfälle: docbits/doc2-with-infor/infor.md
+      - Diagramm: docbits/doc2-with-infor/inforflow.md
       - Integration mit Infor IDM und ERP:
-        - doc2/doc2-with-infor/IDM-business-context-model.md
-      - Infor SSO: doc2/doc2-with-infor/configuring-sso-in-cloud.md
-    # - DOC² with Workflow²: doc2/workflow.md
+        - docbits/doc2-with-infor/IDM-business-context-model.md
+      - Infor SSO: docbits/doc2-with-infor/configuring-sso-in-cloud.md
+    # - Docbits (Doc²) with Workflow²: docbits/workflow.md
     - Einstellungen:
-      - doc2/settings/index.md
-      - Firmeninformationen: doc2/company-information.md
+      - docbits/settings/index.md
+      - Firmeninformationen: docbits/company-information.md
       - Gruppen, Benutzer und Berechtigungen:
-        - doc2/settings/groups-users-permissons/index.md
-        - Benutzer: doc2/settings-users.md
+        - docbits/settings/groups-users-permissons/index.md
+        - Benutzer: docbits/settings-users.md
       - Integration:
-        - doc2/settings/integration/index.md
-        - API: doc2/settings/integration/api-integration.md
-        - Beispiele für API-Aufrufe: doc2/settings/integration/api-calls-examples.md
-        - SSO-Einstellungen: doc2/settings-sso-settings.md
-      - Dokumenttypen: doc2/settings-document-types.md
-      - E-Mail-Benachrichtigungen: doc2/settings/email-notification.md
-      - Module: doc2/modules.md
+        - docbits/settings/integration/index.md
+        - API: docbits/settings/integration/api-integration.md
+        - Beispiele für API-Aufrufe: docbits/settings/integration/api-calls-examples.md
+        - SSO-Einstellungen: docbits/settings-sso-settings.md
+      - Dokumenttypen: docbits/settings-document-types.md
+      - E-Mail-Benachrichtigungen: docbits/settings/email-notification.md
+      - Module: docbits/modules.md
       - Alle Importoptionen:
-        - doc2/import/index.md
-        - Email: doc2/e-mail.md
+        - docbits/import/index.md
+        - Email: docbits/e-mail.md
         - Fileshare Import:
-          - doc2/fileshare/index.md
-          - Windows: doc2/fileshare/watchdog-windows.md
-          # - macOS: doc2/fileshare/watchdog-macOS.md
-        - Webhook: doc2/api.md
+          - docbits/fileshare/index.md
+          - Windows: docbits/fileshare/watchdog-windows.md
+          # - macOS: docbits/fileshare/watchdog-macOS.md
+        - Webhook: docbits/api.md
       - All Export Options:
-        - doc2/export/index.md
+        - docbits/export/index.md
         - Export nach Infor:
-          - doc2/export/export-to-infor/index.md
-          - Export nach Infor ION and IDM: doc2/export/infor-ion.md
-          - So erstellen Sie eine BOD-Mapping-Datei: doc2/export/how-to-create-a-bod-mapping-file.md
-          - So erstellen Sie eine IDM-Mapping-Datei: doc2/export/how-to-create-a-idm-mapping-file.md
-          - Export nach Infor IDM: doc2/export/infor-idm.md
-          - Infor ION API-Datei erstellen: doc2/export/create-a-infor-ion-api-file.md
-          - Export nach Infor ION and IDM: doc2/export/infor-ion.md
-        - Webhook: doc2/export/webhook.md
-        - Export zu Flow²: doc2/export/export-to-flow2.md
+          - docbits/export/export-to-infor/index.md
+          - Export nach Infor ION and IDM: docbits/export/infor-ion.md
+          - So erstellen Sie eine BOD-Mapping-Datei: docbits/export/how-to-create-a-bod-mapping-file.md
+          - So erstellen Sie eine IDM-Mapping-Datei: docbits/export/how-to-create-a-idm-mapping-file.md
+          - Export nach Infor IDM: docbits/export/infor-idm.md
+          - Infor ION API-Datei erstellen: docbits/export/create-a-infor-ion-api-file.md
+          - Export nach Infor ION and IDM: docbits/export/infor-ion.md
+        - Webhook: docbits/export/webhook.md
+        - Export zu Flow²: docbits/export/export-to-flow2.md
 
 
-      - Amount: doc2/settings-amount-settings.md
-      - Supplier Validation: doc2/settings-master-data-validation.md
+      - Amount: docbits/settings-amount-settings.md
+      - Supplier Validation: docbits/settings-master-data-validation.md
     - PO Matching:
-      - doc2/pomatching/po-matching/index.md
-      - Invoice: doc2/pomatching/po-matching-invoices.md
-      - Delivery Note: doc2/pomatching/po-matching-delivery-notes.md
-      - Order Confirmation: doc2/pomatching/po-matching-order-confirmation.md
+      - docbits/pomatching/po-matching/index.md
+      - Invoice: docbits/pomatching/po-matching-invoices.md
+      - Delivery Note: docbits/pomatching/po-matching-delivery-notes.md
+      - Order Confirmation: docbits/pomatching/po-matching-order-confirmation.md
 
-    - ZUGFeRD: doc2/zugpferd.md
+    - ZUGFeRD: docbits/zugpferd.md
 
     - Groups & Privileges: security/privileges.md
-    - Admin-Guides: doc2/admin-guides/postman-projects.md
+    - Admin-Guides: docbits/admin-guides/postman-projects.md
     - SSO:
-      - doc2/SSO/index.md
-      - SSO for Azure AD with DOC²: doc2/SSO/SSO-for-Azure-AD.md
+      - docbits/SSO/index.md
+      - SSO for Azure AD with Docbits (Doc²): docbits/SSO/SSO-for-Azure-AD.md
 
 
   - FLOW²:
@@ -247,7 +247,7 @@ nav:
     - Benutzer Dashboard: flow2/home.md
     - System Setup: flow2/settings-system-setup.md
     - Metadata: flow2/metadata.md
-    - Import from Doc²: flow2/import-from-doc2.md
+    - Import from Docbits (Doc²): flow2/import-from-doc2.md
   - KV²:
     - Getting Started: kv2/getting-started.md
     - Installation: kv2/installation.md

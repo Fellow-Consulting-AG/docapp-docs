@@ -8,7 +8,7 @@ tags:
     - document management system (DMS)
 ---
 
-![](/_images/doc2/flow2-1024x286.png)
+![](/_images/docbits/flow2-1024x286.png)
 
 is a document management system (DMS).
 

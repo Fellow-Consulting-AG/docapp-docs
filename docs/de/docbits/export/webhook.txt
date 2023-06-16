@@ -1,0 +1,13 @@
+Changes:<seo_changes> Hinzufügen eines Alt-Textes für das Bild, um die Bildbeschreibung für Suchmaschinen zugänglich zu machen.
+
+2. Klicken Sie auf "Integration hinzufügen".
+
+   ![Docbits (Doc²) Export Integration hinzufügen](/_images/docbits/image-7-1024x751.png "Docbits (Doc²) Export Integration hinzufügen")
+
+3. Wählen Sie "Webhook".
+
+   ![Docbits (Doc²) Export Integration Webhook](/_images/docbits/image-10-1024x344.png "Docbits (Doc²) Export Integration Webhook")
+
+4. Geben Sie die Webhook-URL ein und klicken Sie auf "Speichern".
+
+   ![Docbits (Doc²) Export Integration Webhook Einstellungen](/_images/docbits/image-11-1024x350.png "Docbits (Doc²) Export Integration Webhook Einstellungen")
