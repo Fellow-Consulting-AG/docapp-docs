@@ -2,7 +2,7 @@
 title: Workflow² Examples
 description: If you enjoyed creating your first workflow and have successfully completed the first challenge, here are some more examples to try.
 tags:
-  - DOC²
+  - Docbits (DOC²)
   - Workflow
   - Examples
 ---
@@ -11,10 +11,10 @@ If you enjoyed creating your first workflow and have successfully completed the 
 
  * [Rename Keys](/example/rename/) 
  * [Weather](/example/weather/)
- * [Gmail Import to DOC²](/example/gmail-import/)
- * [Outlook Import to DOC²](/example/outlook-import/)
- * [Approval with DOC²](/example/approval/)
- * [DOC² to Excel](/example/export-excel/)
+ * [Gmail Import to Docbits (DOC²)](/example/gmail-import/)
+ * [Outlook Import to Docbits (DOC²)](/example/outlook-import/)
+ * [Approval with Docbits (DOC²)](/example/approval/)
+ * [Docbits (DOC²) to Excel](/example/export-excel/)
  * [New Order Workflow](/example/workflow_mautic1/)
  * [New Customer Workflow](/example/workflow_mautic2/)
- * [DOC² to Google Drive](/example/export-to-gdrive/)
+ * [Docbits (DOC²) to Google Drive](/example/export-to-gdrive/)

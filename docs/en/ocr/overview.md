@@ -11,9 +11,9 @@ tags:
 This part will give you an overview over the OCR server API we are offering connected to the cloudintegration.eu platform.
 
 
-![](/_images/doc2/image-30-1024x214.png)
+![](/_images/docbits/image-30-1024x214.png)
 
-![](/_images/doc2/image-31-1024x166.png)
+![](/_images/docbits/image-31-1024x166.png)
 
 The OCR Server consists of 5 different parts. The general **OCR Server Process** connected to the **Download Function with Link**, a **Detect pages function,** as well as a **merge and split PDF function.**
 

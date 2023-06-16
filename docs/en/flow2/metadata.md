@@ -27,15 +27,15 @@ This master data is used to complete and validate the meta data to be stored for
 - If the master data is not completely filled or is not unique, the Admin will complete the metadata obtained from it.
 - Payment terms: The PC from the master data with the best discount is used to calculate the due date from the invoice date. This can be overridden by the admin.
 
-![](/_images/doc2/FLOW2_System_Setup_Metadata-types-1024x572.png)
+![](/_images/docbits/FLOW2_System_Setup_Metadata-types-1024x572.png)
 
 Go to System - Setup - Metadata types
 
-If you use our DOC² service the following index fields are going to be extracted and the meta data must be created accordingly and would looks like this:
+If you use our Docbits (DOC²) service the following index fields are going to be extracted and the meta data must be created accordingly and would looks like this:
 
 ### For Document Type INVOICE
 
-| DOC² | FLOW² |
+| Docbits (DOC²) | FLOW² |
 | --- | --- |
 | INVOICE\_NUMBER | InvoiceNumber |
 | INVOICE\_DATE | InvoiceDate |
@@ -54,14 +54,14 @@ If you use our DOC² service the following index fields are going to be extracte
 | ACCOUNTING\_ENTITY | AccountingEntityID |
 | CORRELATION\_ID | AlternateDocumentID |
 
-![](/_images/doc2/FLOW2_Metadata-types_create-new-1024x583.png)
+![](/_images/docbits/FLOW2_Metadata-types_create-new-1024x583.png)
 
-![](/_images/doc2/FLOW2_Create-Matadata-type-1024x592.png)
+![](/_images/docbits/FLOW2_Create-Matadata-type-1024x592.png)
 
-![](/_images/doc2/FLOW2_Create-next-Metadata-type-1024x570.png)
+![](/_images/docbits/FLOW2_Create-next-Metadata-type-1024x570.png)
 
-![](/_images/doc2/FLOW2_Create-Metadata-type-and-save-1024x480.png)
+![](/_images/docbits/FLOW2_Create-Metadata-type-and-save-1024x480.png)
 
-![](/_images/doc2/FLOW2_Metadata-type-created-successfully-1024x586.png)
+![](/_images/docbits/FLOW2_Metadata-type-created-successfully-1024x586.png)
 
 Continue like this until all metadata types are created.

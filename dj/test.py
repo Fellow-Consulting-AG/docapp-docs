@@ -61,5 +61,5 @@ def find_md_files(directory):
 
 
 
-directory_path = "/Users/daniel/dev/docapp-docs/docs/en/doc2/"
+directory_path = "/Users/daniel/dev/docapp-docs/docs/en/docbits/"
 find_md_files(directory_path)

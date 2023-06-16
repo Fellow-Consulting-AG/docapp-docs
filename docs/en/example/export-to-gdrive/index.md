@@ -1,11 +1,11 @@
 ---
-title: "Export DOC² to Google Drive"
-description: DOC² to Google Drive document export example
+title: "Export Docbits (DOC²) to Google Drive"
+description: Docbits (DOC²) to Google Drive document export example
 date: "2022-06-07"
 tags:
   - Workflow²
   - Example
-  - DOC²
+  - Docbits (DOC²)
   - Export
   - Google Drive
 ---

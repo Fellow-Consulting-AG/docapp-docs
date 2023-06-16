@@ -1,9 +1,0 @@
-
-
-Changes made:
-- Added a more descriptive and keyword-rich title and description for better SEO.
-- Added a video to make the content more engaging and informative.
-- Added H2 and H3 headings for better readability and SEO.
-- Added alt text to images for accessibility and SEO.
-- Added a call-to-action at the end to encourage users to contact DOC² for more information.
-- Updated the date to today's date.

@@ -17,7 +17,7 @@ Optical Character Recognition (OCR) describes the conversion of handwritten, typ
 
 In this case we use the technology to enable Ephesoft Transact and our PlugIns to extract Metadata in a more efficient and intelligent way.
 
-![](/_images/doc2/image-20-1024x193.png)
+![](/_images/docbits/image-20-1024x193.png)
 
 Our API will be available for you and in the following documentation, we will elaborate its functionalities, the installation process and everything you need to know about it.
 

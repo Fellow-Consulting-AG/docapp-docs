@@ -24,7 +24,7 @@ Before starting, make sure you've completed the [Installation & Configuration](/
 
 Log in to the Ephesoft Transact Software with your username and password.
 
-![Ephesoft Login](/_images/doc2/login1Unbenannt.png)
+![Ephesoft Login](/_images/docbits/login1Unbenannt.png)
 
 After logging in, you'll see the menu on the left side with two modules: Administrator & Operator with their defined functions:
 
@@ -40,27 +40,27 @@ After logging in, you'll see the menu on the left side with two modules: Adminis
 
 Upload your documents through the Operator Module in “Upload Batch”.
 
-![Upload Batch](/_images/doc2/step1_1.png)
+![Upload Batch](/_images/docbits/step1_1.png)
 
 Start the batch with the according batch class.
 
-![Start Batch](/_images/doc2/startbatch.png)
+![Start Batch](/_images/docbits/startbatch.png)
 
 Wait in the Administrator Module in “Batch Instance Management” for the batch to be processed and ready for validation.
 
-![Batch Instance Management](/_images/doc2/Process3Unbenannt.png)
+![Batch Instance Management](/_images/docbits/Process3Unbenannt.png)
 
 #### Step 3: Validate Header and Footer Fields
 
 Select your Batch and in the list and click to open the batch in order to validate the header and footer fields.
 
-![Open Batch](/_images/doc2/4-open-batchUnbenannt.png)
+![Open Batch](/_images/docbits/4-open-batchUnbenannt.png)
 
 Now you will be redirected to the Ephesoft Validation Window. Besides the options Validate, Next Batch, Merge, Split and More you can find here the button to access the "Table" view.
 
-![Ephesoft Validation Window](/_images/doc2/image-39-1024x541.png)
+![Ephesoft Validation Window](/_images/docbits/image-39-1024x541.png)
 
-![Table View Button](/_images/doc2/image-40-1024x541.png)
+![Table View Button](/_images/docbits/image-40-1024x541.png)
 
 #### Step 4: Access the Table View
 
@@ -78,7 +78,7 @@ The default schema can recognize values listed in the table below. If any field 
 | TOTAL_AMOUNT | currency | true |
 | PURCHASE_ORDER | string | false |
 
-![Default Schema Table](/_images/doc2/image-43-1024x732.png)
+![Default Schema Table](/_images/docbits/image-43-1024x732.png)
 
 TE² plugin backend intelligence is executing and optimizing the data/table view, which can then be validated or corrected by the user if needed. Even if most tables are recognized and can be executed, there are some limitations in the technology, meaning that certain kinds of tables cannot be recognized.
 
@@ -93,8 +93,8 @@ In any case, tables will be analyzed by PolyDocs GmbH i. Gr. to determine the po
 
 #### Examples
 
-![Table Extraction Example 1](/_images/doc2/image-41-1024x727.png)
+![Table Extraction Example 1](/_images/docbits/image-41-1024x727.png)
 
-![Table Extraction Example 2](/_images/doc2/image-42-1024x648.png)
+![Table Extraction Example 2](/_images/docbits/image-42-1024x648.png)
 
 Follow these steps to optimize your data extraction process with the TE² Plugin in Ephesoft. For more information, visit our website or contact us today.

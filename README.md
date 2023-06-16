@@ -1,4 +1,4 @@
-# Doc² Docs
+# Docbits (DOC²) Docs
 
 This repository hosts the documentation for [polydocs](https://polydocs.io/), an extendable workflow automation tool which enables you to connect anything to everything via its open, The documentation is live at [docs.polydocs.io](https://docs.polydocs.io/).
 

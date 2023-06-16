@@ -21,9 +21,9 @@ To work with this tutorial you have to complete [Installation & Configuration](/
 
 - log into the Ephesoft Transact Software with username and password
 
-![](/_images/doc2/login1Unbenannt.png)
+![](/_images/docbits/login1Unbenannt.png)
 
-![](/_images/doc2/login2Unbenannt.png)
+![](/_images/docbits/login2Unbenannt.png)
 
 - After login you see the menu with two modules: Administrator & Operator with their defined functions:
 
@@ -34,24 +34,24 @@ To work with this tutorial you have to complete [Installation & Configuration](/
 - Upload your documents through the Operator Module in “Upload Batch”:
 
 
-![](/_images/doc2/step1_1.png)
+![](/_images/docbits/step1_1.png)
 
 - Start the batch with the according batch class.
 
-![](/_images/doc2/startbatch.png)
+![](/_images/docbits/startbatch.png)
 
 - Wait in the Administrator Module in “Batch Instance Management” for the batch to be processed and ready for validation.
 
-![](/_images/doc2/Process3Unbenannt.png)
+![](/_images/docbits/Process3Unbenannt.png)
 
 - Select your Batch and in the list and click to open the batch in order to validate the header and footer fields:
 
-![](/_images/doc2/4-open-batchUnbenannt.png)
+![](/_images/docbits/4-open-batchUnbenannt.png)
 
 - Now you will be redirected to a new window for validation. The document is displayed on the right side, the validation screen left to it. Here you can can check all the extracted fields and add/correct the values as well.
 
 
-![](/_images/doc2/validationScreen.png)
+![](/_images/docbits/validationScreen.png)
 
 - Go through all fields clicking "Tab" button or by mouse and check the value. In case you notice a missing or wrong value you have 3 Options to set the correct value:
     - click into the particular field in the validation screen, then move your mouse over the document on the right and select the respective value by double click on it. The selected value will be marked yellow on the document and will appear in the validation field on the left (preferred - as this way you train on which position on a certain invoice you find the respective values)
@@ -63,11 +63,11 @@ For fields you have corrected in the first run, you should see the value set cor
 
 - Now just add all the fields with the accurate data and validate the invoice in order for it to be exported.
 
-![](/_images/doc2/validate1Unbenannt.png)
+![](/_images/docbits/validate1Unbenannt.png)
 
-![](/_images/doc2/validate2Unbenannt.png)
+![](/_images/docbits/validate2Unbenannt.png)
 
-![](/_images/doc2/validate3Unbenannt.png)
+![](/_images/docbits/validate3Unbenannt.png)
 
 With this process you are not only validating your document but also training the plugin. With a one-time human assistance validating and exporting the documents, new extraction rules are created. For the next run for that type of document no adaptation or configuration of the batch class is needed and the plugin will recognize values which have been missing in the first run.
 
@@ -76,7 +76,7 @@ With this process you are not only validating your document but also training t
 KV² Plugin comes with an integrated Feedback Function where you can send us Support to each Document Validation.
 The Feedback Function can be found in tab #5 of the Ephesoft Validation UI (it is usually the last tab).
 
-![](/_images/doc2/Bildschirmfoto-2021-07-12-um-17.01.16-2-1024x477.png)
+![](/_images/docbits/Bildschirmfoto-2021-07-12-um-17.01.16-2-1024x477.png)
 
 If you want to send us some feedback you just need to move to this tab and fill out the three fields on this tab:
 
@@ -92,4 +92,4 @@ If you want to send us some feedback you just need to move to this tab and fill 
 
 If fields are filled the feedback is created during the validation process and sent directly to our Support Tool and we can work on the case.
 
-![](/_images/doc2/Bildschirmfoto-2021-07-12-um-17.01.16-1024x477.png)
+![](/_images/docbits/Bildschirmfoto-2021-07-12-um-17.01.16-1024x477.png)

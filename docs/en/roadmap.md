@@ -1,9 +1,9 @@
 ---
-title: "DOC² Roadmap"
-description: "Our roadmap outlines the upcoming milestones and goals for DOC² in the second and third quarters of 2023."
+title: "Docbits (DOC²) Roadmap"
+description: "Our roadmap outlines the upcoming milestones and goals for Docbits (DOC²) in the second and third quarters of 2023."
 date: "2023-05-15"
 tags:
-  - DOC²
+  - Docbits (DOC²)
   - Roadmap
 
 ---

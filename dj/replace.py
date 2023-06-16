@@ -47,7 +47,7 @@ def find_md_files(directory):
 
                 
 
-file = "/Users/daniel/dev/docapp-docs/docs/en/doc2/keyboard.md"
-directory_path = "/Users/daniel/dev/docapp-docs/docs/en/doc2/"
+file = "/Users/daniel/dev/docapp-docs/docs/en/docbits/keyboard.md"
+directory_path = "/Users/daniel/dev/docapp-docs/docs/en/docbits/"
 find_md_files(directory_path)
 
