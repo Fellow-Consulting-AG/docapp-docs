@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2b4326ff-518a-4e20-a86d-c2826c904e9d/deploy-status)](https://app.netlify.com/sites/musical-vacherin-b23f4f/deploys)
+
 # Docbits (DOC²) Docs
 
 This repository hosts the documentation for [polydocs](https://polydocs.io/), an extendable workflow automation tool which enables you to connect anything to everything via its open, The documentation is live at [docs.polydocs.io](https://docs.polydocs.io/).
