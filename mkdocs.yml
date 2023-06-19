@@ -153,10 +153,10 @@ nav:
       - Document Types: docbits/settings-document-types.md
       - Email Notification: docbits/settings/email-notification.md
       - Modules: docbits/settings/Module/index.md
-        -Layout Builder: docbits/settings/Module/layout-builder.md
-        -Approval: docbits/settings/Module/approval.md
-        -Doc Script: docbits/settings/Module/doc-script.md
-        -Doc Scan: docbits/settings/Module/doc-scan.md
+        - Layout Builder: docbits/settings/Module/layout-builder.md
+        - Approval: docbits/settings/Module/approval.md
+        - Doc Script: docbits/settings/Module/doc-script.md
+        - Doc Scan: docbits/settings/Module/doc-scan.md
       - All Import Options:
         - docbits/import/index.md
         - Email: docbits/e-mail.md
