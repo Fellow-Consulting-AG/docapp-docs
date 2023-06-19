@@ -152,7 +152,8 @@ nav:
         - SSO Settings: docbits/settings-sso-settings.md
       - Document Types: docbits/settings-document-types.md
       - Email Notification: docbits/settings/email-notification.md
-      - Modules: docbits/settings/Module/index.md
+      - Modules: 
+        - docbits/settings/Module/index.md
         - Layout Builder: docbits/settings/Module/layout-builder.md
         - Approval: docbits/settings/Module/approval.md
         - Doc Script: docbits/settings/Module/doc-script.md
