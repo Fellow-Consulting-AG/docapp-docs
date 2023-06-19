@@ -1,5 +1,5 @@
 title: "Approval Before Export"
-description: You will find different modules in Docbits (DOC²) settings.These modules are important if you like to deal with PO Matching and use the table extraction functionality.
+description: This module feature allows you to assign users and/or groups with the ability to approve a document before it can be exported.
 date: "2023-05-23"
 tags:
   - Docbits (DOC²)
