@@ -1,48 +1,59 @@
-title: "Approval Before Export"
-description: This module feature allows you to assign users and/or groups with the ability to approve a document before it can be exported.
+title: "How to Use the Approval Before Export Feature in Docbits (DOC²)"
+description: Learn how to assign users and groups with the capability to approve documents before exporting in the Docbits software. Streamline your document management and improve efficiency.
 date: "2023-05-23"
 tags:
   - Docbits (DOC²)
-  - Settings
-  - Module
-  - Approval
+  - Document Management Settings
+  - Module Management
+  - Approval Process
 
-  ## APPROVAL BEFORE EXPORT
+# Implementing the Approval Before Export Feature in Docbits (DOC²)
 
-  This feature can be accessed via Settings > Document Processing > Module.
+Access this essential feature by following this path: Settings > Document Processing > Module.
 
-![Settings](/_images/docbits/Settings/Module/Approval/Image_1.png)
 
-To enable this feature for a document type, navigate to Settings > Groups, Users and Permissions > Groups and Permissions. 
+![Settings Interface in Docbits](/_images/docbits/Settings/Module/Approval/Image_1.png)
 
-To use this feature, enable the slider below that you can find on this page.
+For activating this feature for a document type, navigate to Settings > Groups, Users and Permissions > Groups and Permissions.
 
-![Enable Slider](/_images/docbits/Settings/Module/Approval/Image_2.png)
+Activate the feature using the slider on the page.
 
-From there you can use the table to create, edit and delete new groups and their permissions.
+![Activation Slider](/_images/docbits/Settings/Module/Approval/Image_2.png)
 
-![Greate Groups and Permissions](docs/en/_images/docbits/Settings/Module/Approval/Image_3.png)
 
-To edit the permissions select “View Permissions” and you will be taken to this screen, where you can check the boxes you wish to give permission too.
+In this interface, utilize the table to manage groups and their permissions effectively.
 
-![View permissions](/_images/docbits/Settings/Module/Approval/Image_4.png)
 
-Here you can see that you enable the Approval features to your liking.
+![Creating Groups and Permissions](docs/en/_images/docbits/Settings/Module/Approval/Image_3.png)
 
-## EXPORTING
+To modify the permissions, select "View Permissions" and you will be directed to this screen. Here, select the permissions you wish to assign.
 
-When you are ready to export a document and have selected an export option from the dropdown at the bottom of the document, as shown below
 
-![Confirm and Export](/_images/docbits/Settings/Module/Approval/Image_5.png)
+![View permissions Interface](/_images/docbits/Settings/Module/Approval/Image_4.png)
 
-with the feature enabled, the documents status will go into “Pending Approval”.
+Now you can customize the Approval features according to your requirements.
+
+# Understanding the Document Exporting Process in Docbits
+
+When you are ready to export a document, select an export option from the dropdown at the document's bottom.
+
+
+![Confirm and Export Option](/_images/docbits/Settings/Module/Approval/Image_5.png)
+
+
+If the feature is enabled, the document's status will change to “Pending Approval”.
+
 
 ![Pending Approval](/_images/docbits/Settings/Module/Approval/Image_6.png)
 
-The document is now waiting to be approved.
 
-You can set the approver by using the assign button on the Dashboard and you can also set the e-mail notification for that person(s), accessible via Settings > Email Notification.
+The document is now in queue for approval.
+
+Assign the approver using the "assign" button on the Dashboard. You can also manage e-mail notifications for the approver(s) through Settings > Email Notification.
+
 
 ![Email Notification 1](/_images/docbits/Settings/Module/Approval/Image_7.png)
 
 ![Email Notification 2](/_images/docbits/Settings/Module/Approval/Image_8.png)
+
+Use the Approval Before Export feature to streamline your document management process in Docbits, making your workflows more efficient.
