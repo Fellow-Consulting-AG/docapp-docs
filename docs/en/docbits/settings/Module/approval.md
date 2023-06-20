@@ -3,26 +3,15 @@ description: Learn how to assign users and groups with the capability to approve
 date: "2023-05-23"
 tags:
   - Docbits (DOC²)
-  - Document Management Settings
-  - Module Management
-  - Approval Process
+  - Settings
+  - Module
+  - Approval
 
-# Implementing the Approval Before Export Feature in Docbits (DOC²)
+  ## APPROVAL BEFORE EXPORT
 
-Access this essential feature by following this path: Settings > Document Processing > Module.
+  This feature can be accessed via Settings > Document Processing > Module.
 
-
-![Settings Interface in Docbits](/_images/docbits/Settings/Module/Approval/Image_1.png)
-
-For activating this feature for a document type, navigate to Settings > Groups, Users and Permissions > Groups and Permissions.
-
-Activate the feature using the slider on the page.
-
-![Activation Slider](/_images/docbits/Settings/Module/Approval/Image_2.png)
-
-
-In this interface, utilize the table to manage groups and their permissions effectively.
-
+![Settings](/_images/docbits/Settings/Module/Approval/Image_1.png)
 
 ![Creating Groups and Permissions](docs/en/_images/docbits/Settings/Module/Approval/Image_3.png)
 
