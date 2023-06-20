@@ -9,7 +9,7 @@ tags:
 
   ## APPROVAL BEFORE EXPORT
 
-  This feature can be accessed via Settings > Document Processing > Module.
+This feature can be accessed via Settings > Document Processing > Module.
 
 ![Settings](/_images/docbits/Settings/Module/Approval/Image_1.png)
 
