@@ -41,4 +41,4 @@ If you see this message on the screen, you must first configure some settings in
 
 ![Browser](/_images/docbits/Settings/Module/Doc Scan/Image_5_fritzbox.png)
 
-When you see this screen you are ready to click on Doc2.
+When you see this screen you are ready to click on Doc².
