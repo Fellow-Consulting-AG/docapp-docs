@@ -7,11 +7,11 @@ tags:
   - Module
   - Doc Scan
 
-## DOC SCAN
+## Doc Scan
 
 Already using DOC² and want to upload documents to your dashboard right after scanning? This is how it works:
 
-### Download Scanner Software
+## Download Scanner Software
 
 Click Scan Document on DOC² Dashboard
 
