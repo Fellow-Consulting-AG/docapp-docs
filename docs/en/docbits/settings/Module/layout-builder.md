@@ -9,9 +9,7 @@ tags:
   - Layout Builder
 ---
 
-## Layout Builder
-
-### Accessing the Layout Manager
+## Accessing the Layout Manager
 
 First of all, ensure that the Layout Manager feature is activated. This can be done by navigating to Settings > Document Processing > Module > Document Type and ensure that the Layout Builder slider is set too active as shown below.
 
@@ -25,11 +23,11 @@ or if you have sub-document types within a created document type you can select 
 
 ![Edit Sub Document Types](/_images/docbits/Settings/Module/Layout Builder/Image 3 - Doc Sub Types.png)
 
-### Basics of the Layout Manager 
+## Basics of the Layout Manager 
 
  After following the previous steps you will reach a page like the one shown below.
 
-#### Uploading a document
+### Uploading a document
 
 In order to upload a document to the layout builder, simply navigate to the right on the screen 
 
@@ -39,7 +37,7 @@ Click on the “Upload Documents” button or drag and drop your desired documen
 
 ![Upload Document](/_images/docbits/Settings/Module/Layout Builder/Image 5 - Uploading a Doc 2.png)
 
-#### Groups
+### Groups
 
 Groups can be created by selecting the following icon.
 
@@ -49,7 +47,7 @@ Groups allow you to create different sections on a layout, this makes it easier 
 
 ![Groups](/_images/docbits/Settings/Module/Layout Builder/Image 7 -  Groups 2.png)
 
-#### Form Elements
+### Form Elements
 
 ![Form Elements](/_images/docbits/Settings/Module/Layout Builder/Image 8 - Form Elements.png)
 
@@ -73,15 +71,15 @@ Button - This creates a clickable button on the validation screen within the lay
 
  
 
-#### Creating document specific fields
+### Creating document specific fields
 
 The user is able to create their own custom groups and fields for a document type, this can be done when originally creating a document type but also by selecting “Fields” when on the Document Types page in Settings.
 
 ![Fields](/_images/docbits/Settings/Module/Layout Builder/Image 10 - Blank Spaces 1.png)
 
-#### Creating blank spaces
+### Creating blank spaces
 
-##### The 100 percent rule
+#### The 100 percent rule
 
 ![Blank Spaces](/_images/docbits/Settings/Module/Layout Builder/Image 11 - Blank Spaces 2.png)
 
@@ -99,7 +97,7 @@ The problem now exists that they are both the same size of 33 (this is the defau
 
 This same rule applies to all fields in the Layout Manager.
 
-##### Creating Blank Spaces
+#### Creating Blank Spaces
 
 Now that this rule has been explained, creating blank spaces will make more sense. As previously mentioned, in order to create a blank space you have to use a “Label” from the Form Elements.
 
@@ -118,7 +116,7 @@ The result from doing this will then be
 There is now a gap between the two fields. This gap can be extended or shortened according to the 100 percent rule discussed earlier, and with these functions you can create any desired layout.
 
 
-#### Field Grouping
+### Field Grouping
 
 This feature allows you to group multiple fields together so that only one field from each group can be selected at a time on the validation screen.
 
@@ -127,7 +125,7 @@ This feature allows you to group multiple fields together so that only one field
 For example, if you had multiple checkboxes all belonging to a group name “1” then only one checkbox from group “1” can be ticked on the validation screen.
 
  
-#### KI Model Types
+### KI Model Types
 
 ![KI Models](/_images/docbits/Settings/Module/Layout Builder/Image 19 - KI Models 1.png)
 
