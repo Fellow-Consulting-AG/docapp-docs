@@ -14,12 +14,12 @@ tags:
   - Doc scan
 ---
 
-  ## INDEX
+# INDEX
 
-  # Here you can find the specific module settings and the corresponding articles.
+## Here you can find the specific module settings and the corresponding articles.
 
-    - Layout Builder: docbits/settings/Module/layout-builder.md
-    - Approval: docbits/settings/Module/approval.md
-    - Doc Script: docbits/settings/Module/doc-script.md
-    - Doc Scan: docbits/settings/Module/doc-scan.md
+- Layout Builder: docbits/settings/Module/layout-builder.md
+- Approval: docbits/settings/Module/approval.md
+- Doc Script: docbits/settings/Module/doc-script.md
+- Doc Scan: docbits/settings/Module/doc-scan.md
 
