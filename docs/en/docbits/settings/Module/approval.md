@@ -1,3 +1,4 @@
+---
 title: "How to Use the Approval Before Export Feature in Docbits (DOC²)"
 description: Learn how to assign users and groups with the capability to approve documents before exporting in the Docbits software. Streamline your document management and improve efficiency.
 date: "2023-05-23"
@@ -6,6 +7,7 @@ tags:
   - Settings
   - Module
   - Approval
+  ---
 
 ## APPROVAL BEFORE EXPORT
 
