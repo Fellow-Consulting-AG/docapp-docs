@@ -7,7 +7,7 @@ tags:
   - Module
   - Layout Builder
 
-## LAYOUT BUILDER
+## Layout Builder
 
 ### Accessing the Layout Manager
 
