@@ -9,8 +9,6 @@ tags:
   - Doc Script
 ---
 
-## Doc Script
-
 If you want to use scripts that, for example, convert currency characters or written-out currency names into ISO codes, please activate this first in the settings under Module > Document Type > Doc Script.
 
 <Script_Settings_Module_Doc Script.png>
