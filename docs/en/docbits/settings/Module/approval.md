@@ -7,9 +7,9 @@ tags:
   - Settings
   - Module
   - Approval
-  ---
+---
 
-## APPROVAL BEFORE EXPORT
+## Approval Before Export
 
 This feature can be accessed via Settings > Document Processing > Module.
 
