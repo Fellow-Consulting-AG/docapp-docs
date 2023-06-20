@@ -1,4 +1,3 @@
-
 ---
 title: "OCR View - Improve Document Data Extraction with Docbits (DOC²)"
 description: Learn how to improve document data extraction with Docbits (DOC²)'s OCR view. Open a document in pure OCR view without any formatting or similar to troubleshoot data extraction issues. Switch to debug view to see how Docbits (DOC²) extracts individual values in the background. Try Docbits (DOC²) today!
