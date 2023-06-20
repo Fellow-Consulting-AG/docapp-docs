@@ -7,13 +7,13 @@ tags:
   - Module
   - Approval
 
-  ## APPROVAL BEFORE EXPORT
+## APPROVAL BEFORE EXPORT
 
 This feature can be accessed via Settings > Document Processing > Module.
 
 ![Settings](/_images/docbits/Settings/Module/Approval/Image_1.png)
 
-![Creating Groups and Permissions](docs/en/_images/docbits/Settings/Module/Approval/Image_3.png)
+![Creating Groups and Permissions](/_images/docbits/Settings/Module/Approval/Image_3.png)
 
 To modify the permissions, select "View Permissions" and you will be directed to this screen. Here, select the permissions you wish to assign.
 
