@@ -67,7 +67,7 @@ Table of Checkboxes - This lets the user create a table of checkboxes consisting
 
 ![Table of Checkboxes](/_images/docbits/Settings/Module/Layout Builder/Image 9 - Table of Checkboxes.png)
 
-Button - This creates a clickable button on the validation screen within the layout that can be set to one of 3 functions, including: Export, Export mit Sonderwunsch or Reject.
+Button - This creates a clickable button on the validation screen within the layout that can be set to one of three functions, including: Export, Export mit Sonderwunsch or Reject.
 
  
 
