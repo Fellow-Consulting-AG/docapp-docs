@@ -44,6 +44,22 @@ The validation screen allows you to check, edit, and validate all the imported d
 
 ![Docbits (DOC²) Dashboard - Document Actions](/_images/docbits/Dashboard/Dashboard Index - Images/image_5_dashboard_action.gif){ loading="lazy", alt="Docbits (DOC²) Dashboard - Document Actions" }
 
+## Change Dashboard Columns
+
+From the Dashboard, click on the Advanced Settings icon as shown below
+
+![Advanced Settings](/_images/docbits/Dashboard/Dashboard Index - Images/image_6_change_column_1.png)
+
+The following menu will then be displayed
+
+![Advanced Settings Menu](/_images/docbits/Dashboard/Dashboard Index - Images/image_7_change_column_2.png)
+
+Select the button labelled “Set dashboard columns for organization” and the a list of all the column names will be shown.
+
+![List of Columns](/_images/docbits/Dashboard/Dashboard Index - Images/image_10_change_column_3png.png)
+
+From this menu you can simply drag and drop the column names into the order you prefer as well as add and remove columns by selecting the desired column and selecting the arrow pointing right (to remove the column) or the arrow pointing left (to add the column).
+
 ## Conclusion
 
 The Docbits (DOC²) Dashboard is a powerful tool that allows you to manage your imported documents with ease. By filtering documents by status, viewing an overview of all uploaded documents, and validating extracted fields, you can streamline your document management process. Start using Docbits (DOC²) today!
