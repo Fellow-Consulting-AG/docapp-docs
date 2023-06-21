@@ -31,6 +31,8 @@ Detailliertere Informationen erhalten Sie über die Schaltfläche `Analytik` unt
 
 ![](/_images/docbits/dashboard/dashboard-erweiterte einstellungen.png)
 
+## **Dashboard-Spalten ändern**
+
 Über das Tabellensymbol können sie die Spalten auf Ihrem Dasboard individuell für Ihre Organisation anpassen.
 
 ![](/_images/docbits/dashboard/dashboard-erweiterte einstellungen-tabellenspalten.png)
