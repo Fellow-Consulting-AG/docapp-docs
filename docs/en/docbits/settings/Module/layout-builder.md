@@ -9,7 +9,7 @@ tags:
   - Layout Builder
 ---
 
-## Accessing the Layout Manager
+## Accessing the Layout Builder
 
 First of all, ensure that the Layout Manager feature is activated. This can be done by navigating to Settings > Document Processing > Module > Document Type and ensure that the Layout Builder slider is set too active as shown below.
 
