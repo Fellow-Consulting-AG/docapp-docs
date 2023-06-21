@@ -1,28 +1,33 @@
 ---
-title: "Docbits (Doc²) Dashboard: Verwalten Sie Ihre importierten Dokumente"
-description: "Nach dem Einloggen werden Sie zur DASHBOARD-Homepage von Docbits (Doc²) weitergeleitet. Hier können Sie Ihre importierten Dokumente verwalten und bearbeiten. Erfahren Sie hier, wie Sie das Dashboard nutzen können."
+title: "Docbits (DOC²) Dashboard: Importierte Dokumente mühelos verwalten"
+description: "Nach dem Einloggen werden Sie zur DASHBOARD-Homepage von Docbits (DOC²) weitergeleitet. Hier können Sie Ihre importierten Dokumente verwalten und bearbeiten. Erfahren Sie hier, wie Sie das Dashboard nutzen können."
 date: "2021-10-29"
 tags:
-  - Docbits (Doc²)
+  - Docbits (DOC²)
   - Dashboard
   - Homepage
   - Überblick
 ---
 
-Nach dem Einloggen mit Ihren Zugangsdaten werden Sie zur DASHBOARD-Homepage von Docbits (Doc²) weitergeleitet. Hier können Sie Ihre importierten Dokumente verwalten und bearbeiten.
+Nach dem Einloggen mit Ihren Zugangsdaten werden Sie zur DASHBOARD-Homepage von Docbits (DOC²) weitergeleitet. Hier können Sie Ihre importierten Dokumente verwalten und bearbeiten.
 
 ![DOC2 Dashboard](/_images/docbits/dashboard/dashboard.png)
 
 
-## **Dokumente nach Status anzeigen**
+## **Dokumente nach Status filtern**
+
+Die oberste Leiste verschafft Ihnen Schnellzugriff auf alle Optionen um nach bestimmten Dokumenten zu suchen oder Ihr Dashboard nach Ihren Bedürfnissen anzupassen. Nach Dokumente in einem bestimmten Status, kann am schnellsten über das entsprechende Dropdown Menü unter Status auf der rechten Seite gefiltert werden.
+
+![](/_images/docbits/dashboard/dashboard-status.png)
+
+
+Detailliertere Informationen erhalten Sie über die Schaltfläche "Analytik" sehen Sie die Gesamtzahl der importierten Dokumente, sowie die einzelnen Status der Dokumente wie beispielsweise "In Bearbeitung", "Ausstehend", "Genehmigung ausstehend", "Exportiert" oder "Fehler". Der Hauptvorteil dieser Reporting-Leiste besteht darin, dass Sie durch Klicken auf eine der verfügbaren Boxen die spezifischen und gefilterten Dokumente finden können, die Sie suchen.
 
 ![](/_images/docbits/dashboard/dashboard-analytik.png)
 
-Über die Schaltfläche "Analytik" sehen Sie die Gesamtzahl der importierten Dokumente, sowie die einzelnen Status der Dokumente wie beispielsweise "In Bearbeitung", "Ausstehend", "Zur Genehmigung ausstehend", "Exportiert" oder "Fehler". Der Hauptvorteil dieser Reporting-Leiste besteht darin, dass Sie durch Klicken auf eine der verfügbaren Boxen die spezifischen und gefilterten Dokumente finden können, die Sie suchen.
-
 ## **Erweiterte Einstellungen**
 
-Hier haben Sie die Möglichkeit Ihre Dokumente nach dem heutigen Tag, Woche, Monat und Jahr zu filtern.
+Über diese Schaltfläche haben Sie die Möglichkeit Ihre Dokumente nach dem heutigen Tag, Woche, Monat und Jahr zu filtern.
 
 ![](/_images/docbits/dashboard/dashboard-erweiterte einstellungen.png)
 
