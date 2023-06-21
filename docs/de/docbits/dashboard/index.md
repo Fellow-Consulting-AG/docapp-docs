@@ -9,6 +9,9 @@ tags:
   - Überblick
 ---
 
+
+## **Einführung**
+
 Nach dem Einloggen mit Ihren Zugangsdaten werden Sie zur DASHBOARD-Homepage von Docbits (DOC²) weitergeleitet. Hier können Sie Ihre importierten Dokumente verwalten und bearbeiten.
 
 ![DOC2 Dashboard](/_images/docbits/dashboard/dashboard.png)
