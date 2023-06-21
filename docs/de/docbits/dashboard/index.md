@@ -16,12 +16,12 @@ Nach dem Einloggen mit Ihren Zugangsdaten werden Sie zur DASHBOARD-Homepage von 
 
 ## **Dokumente nach Status filtern**
 
-Die oberste Leiste verschafft Ihnen Schnellzugriff auf alle Optionen um nach bestimmten Dokumenten zu suchen oder Ihr Dashboard nach Ihren Bedürfnissen anzupassen. Nach Dokumente in einem bestimmten Status, kann am schnellsten über das entsprechende Dropdown Menü unter Status auf der rechten Seite gefiltert werden.
+Die oberste Leiste verschafft Ihnen Schnellzugriff auf alle Optionen um nach bestimmten Dokumenten zu suchen oder Ihr Dashboard nach Ihren Bedürfnissen anzupassen. Nach Dokumenten in einem bestimmten Status, kann am schnellsten über das entsprechende Dropdown Menü unter Status auf der rechten Seite gefiltert werden.
 
 ![](/_images/docbits/dashboard/dashboard-status.png)
 
 
-Detailliertere Informationen erhalten Sie über die Schaltfläche "Analytik" sehen Sie die Gesamtzahl der importierten Dokumente, sowie die einzelnen Status der Dokumente wie beispielsweise "In Bearbeitung", "Ausstehend", "Genehmigung ausstehend", "Exportiert" oder "Fehler". Der Hauptvorteil dieser Reporting-Leiste besteht darin, dass Sie durch Klicken auf eine der verfügbaren Boxen die spezifischen und gefilterten Dokumente finden können, die Sie suchen.
+Detailliertere Informationen erhalten Sie über die Schaltfläche `Analytik` unter der Sie die Gesamtzahl der importierten Dokumente, sowie die einzelnen Status der Dokumente wie beispielsweise "In Bearbeitung", "Ausstehend", "Genehmigung ausstehend", "Exportiert" oder "Fehler" sehen. Der Hauptvorteil dieser Reporting-Leiste besteht darin, dass Sie durch Klicken auf eine der verfügbaren Boxen die spezifischen und gefilterten Dokumente finden können, die Sie suchen.
 
 ![](/_images/docbits/dashboard/dashboard-analytik.png)
 
@@ -55,6 +55,11 @@ Zudem können Sie entweder alle oder nur die Ihnen zugewiesenen Dokumente sehen,
 
 In der rechten Spalte sehen Sie die Schaltfläche "Aktionen". Wenn Sie darauf klicken, werden alle verfügbaren Optionen geöffnet: Herunterladen, Dokument-Flow ansehen, Zuweisen, Neu starten, Validieren und Löschen.
 
-![Docbits (Doc²) Aktionsschaltflächen](/_images/docbits/dashboard/dashboard-aktionen_dokument.gif)
+![Docbits (DOCs²) Aktionsschaltflächen](/_images/docbits/dashboard/dashboard-aktionen_dokument.gif)
+
+## **Fazit**
+
+Das Docbits (DOC²) Dashboard ist ein leistungsstarkes Tool, mit dem Sie Ihre importierten Dokumente mühelos verwalten können. Durch das Filtern von Dokumenten nach Status, die Anzeige eines Überblicks über alle hochgeladenen Dokumente und die Validierung extrahierter Felder können Sie Ihren Dokumentenverwaltungsprozess optimieren. Starten Sie noch heute mit Docbits (DOC²)!
 
 Details zur Benutzeroberfläche zum Überprüfen, Bearbeiten und Validieren extrahierter Felder von hochgeladenen Dokumenten finden Sie [hier](/docbits/document-validation/).
+
