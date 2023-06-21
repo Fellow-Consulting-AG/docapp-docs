@@ -58,7 +58,7 @@ Select the button labelled “Set dashboard columns for organization” and the 
 
 ![List of Columns](/_images/docbits/Dashboard/Dashboard Index - Images/image_10_change_column_3png.png)
 
-From this menu you can select the column names and use the arrows to add and remove the columns you desire as illustrated below
+From this menu, you can select the column names and use the arrows to add and remove the columns you desire.
 
 ![Select Columns](/_images/docbits/Dashboard/Dashboard Index - Images/image_11_change_column_4.png)
 
