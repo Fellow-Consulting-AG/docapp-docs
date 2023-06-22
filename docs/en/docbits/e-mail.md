@@ -51,6 +51,7 @@ This code can be found by clicking back to DOC² and the code will be displayed 
 ![DOC2 Code](/_images/docbits/Import/Email Import/image_9_code.png)
 4. Save the data and test the login to ensure everything is working correctly.
 
+![Save and Test](/_images/docbits/Import/Email Import/image_10_save_and_test.png)
 5. Click the `IMPORT` button to fetch the documents from your mailbox and import them into Docbits (DOC²).
 
 It's that simple! With just a few clicks, you can streamline your document management process and save time.
