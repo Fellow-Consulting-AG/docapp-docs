@@ -3,8 +3,8 @@ title: "Import Documents from Email Inbox with Docbits (DOC²)"
 date: "2021-10-25"
 description: Learn how to import documents from your email inbox automatically with Docbits (DOC²). Follow these simple steps to streamline your document management process.
 tags:
-  - email import
-  - document management
+  - Email Import
+  - Document Management
   - Docbits (DOC²)
 ---
 
