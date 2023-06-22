@@ -44,7 +44,7 @@ Here you can select which `Protocol` you would like
 
 ![OAuth Office365](/_images/docbits/Import/Email Import/image_7_OAuth_Office365.png)
 
-You will be taken to this Microsoft page and you will need to enter a code
+You will be taken to this Microsoft page and you will need to enter a code.
 
 ![Microsoft Page](/_images/docbits/Import/Email Import/image_8_microsoft_page.png)
 
