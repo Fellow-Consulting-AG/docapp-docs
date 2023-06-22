@@ -26,27 +26,33 @@ If you're tired of manually importing documents from your email inbox, Docbits (
 
 3. After pressing `NEW`, the following menu will be shown to you
 
-![New Email Import](/_images/docbits/Import/Email Import/image_2_email_import_new.png)
+![Email Import Menu](/_images/docbits/Import/Email Import/image_3_email_import_menu.png)
 
-Here you can select which `Protocol` you would like:
+Here you can select which `Protocol` you would like
+
+![Protocol](/_images/docbits/Import/Email Import/image_4_protocol.png)
 
 - IMAP: here you just need to enter the required information for your email provider, encryption, server name, port, username, email address, password as well as the email folder.
 
-![New Email Import](/_images/docbits/Import/Email Import/image_2_email_import_new.png)
+![IMAP](/_images/docbits/Import/Email Import/image_5_IMAP.png)
 
 - POP3: here you just need to enter the required information for your email provider, encryption, server name, port, username, email address and password
 
-![New Email Import](/_images/docbits/Import/Email Import/image_2_email_import_new.png)
+![POP3](/_images/docbits/Import/Email Import/image_6_POP3.png)
 
 - OAuth Office365: here you just need to enter your desired sub organization and press `Authenticate`
 
-![New Email Import](/_images/docbits/Import/Email Import/image_2_email_import_new.png)
+![OAuth Office365](/_images/docbits/Import/Email Import/image_7_OAuth_Office365.png)
 
 You will be taken to this Microsoft page and you will need to enter a code
 
-![New Email Import](/_images/docbits/Import/Email Import/image_2_email_import_new.png)
+![Microsoft Page](/_images/docbits/Import/Email Import/image_8_microsoft_page.png)
 
-This code can be found by clicking back to DOC² and the code will be displayed there like this, simply copy the code and enter it into the microsoft page. Thereafter you will need to enter your own Microsoft credentials.
+This code can be found by clicking back to DOC² and the code will be displayed there like this, simply copy the code and enter it into the microsoft page.
+
+![DOC2 Code](/_images/docbits/Import/Email Import/image_9_code.png)
+
+Thereafter you will need to enter your own Microsoft credentials.
 
 4. Save the data and test the login to ensure everything is working correctly.
 5. Click the `IMPORT` button to fetch the documents from your mailbox and import them into Docbits (DOC²).
