@@ -26,7 +26,7 @@ If you're tired of manually importing documents from your email inbox, Docbits (
 
 ![Email Import Menu](/_images/docbits/Import/Email Import/image_3_email_import_menu.png)
 
-Here you can select which `Protocol` you would like
+Here you can select which `Protocol` you would like:
 
 ![Protocol](/_images/docbits/Import/Email Import/image_4_protocol.png)
 
@@ -53,6 +53,7 @@ This code can be found by clicking back to DOC² and the code will be displayed 
 Thereafter you will need to enter your own Microsoft credentials.
 
 4. Save the data and test the login to ensure everything is working correctly.
+
 5. Click the `IMPORT` button to fetch the documents from your mailbox and import them into Docbits (DOC²).
 
 It's that simple! With just a few clicks, you can streamline your document management process and save time.
