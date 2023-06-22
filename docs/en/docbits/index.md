@@ -44,6 +44,26 @@ In addition, Docbits (DOC²) uses swarm intelligence. What does that mean? You b
 
 With the help of deep learning algorithms, not only simple header data of a document can be recorded, but also complicated structures such as tables. Of course, not only invoices are processed, but all types of documents. Regardless of whether it is waybills, membership applications, medical prescriptions, and many more.
 
+## Supported Languages
+
+| Language Code | Language            | 3.02 | 3.04 | 4.00 | 4.0.0 | 4.0.0 | 4.0.0 |
+|---------------|---------------------|------|------|------|-------|-------|-------|
+| afr           | Afrikaans           | x    | x    | x    | x     | x     | x     |
+| amh           | Amharic             |      | x    | x    | x     | x     | x     |
+| ara           | Arabic              | x    | x    | x    | x     | x     | x     |
+| asm           | Assamese            |      | x    | x    | x     | x     | x     |
+| aze           | Azerbaijani         |      | x    | x    | x     | x     | x     |
+| aze_cyrl      | Azerbaijani-Cyrilic | x    | x    | x    | x     | x     | x     |
+| bel           | Belarusian          | x    | x    | x    | x     | x     | x     |
+| ben           | Bengali             | x    | x    | x    | x     | x     | x     |
+| bod           | Tibetan             |      | x    | x    | x     | x     | x     |
+| bos           | Bosnian             |      | x    | x    | x     | x     | x     |
+| bre           | Breton              |      |      | x    | x     | x     | x     |
+| bul           | Bulgarian           | x    | x    | x    | x     | x     | x     |
+| cat           | Catalan; Valencian  | x    | x    | x    | x     | x     | x     |
+| ceb           | Cebuano             |      | x    | x    | x     | x     | x     |
+
+
 ## Start Your Free 30-Day Trial Now!
 
 Start your free 30-day trial of Docbits (DOC²) today and experience the benefits of intelligent document capture for yourself.
