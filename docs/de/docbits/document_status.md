@@ -34,9 +34,9 @@ tags:
 sequenceDiagram
   Hochladen->>Status: DocId vom Upload abrufen?
   loop Status
-      Status->>Status: Bis FinalStatus nicht Klassifizieren ist
+      Status->>Status: Bis Endstatus nicht Klassifizieren ist
   end
-  Status->>Klassifizieren: FinalStatus is Klassifizieren
+  Status->>Klassifizieren: Endstatus is Klassifizieren
 	Klassifizieren->>Löschen: Dokument mit DocId löschen
 
 ```
