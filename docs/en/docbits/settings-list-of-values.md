@@ -7,8 +7,6 @@ tags:
   - Settings
 ---
 
-## List of Values
-
 This feature allows you to create and store different lists or sets of related information that can be used to create a drop-down box on the validation screen.
 
 In order to create a list, navigate to the DOC2 Dashboard → Settings as shown below.
