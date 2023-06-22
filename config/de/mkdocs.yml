@@ -164,6 +164,7 @@ nav:
       - docbits/document-validation/index.md
       - Validierung von Stammdaten: docbits/document-validation/master-data-validation.md
       - OCR-Ansicht: docbits/document-validation/ocr-view.md
+      - E-Text: docbits/document-validation/e-text.md
       - KI-Indikator: docbits/document-validation/ai-indicator.md
       # - Ausdrücke: docbits/document-validation/exception-filters.md
     - Tabellen auslesen:

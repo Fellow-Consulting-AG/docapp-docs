@@ -8,11 +8,11 @@ tags:
   - Docbits (DOC²)
 ---
 
-Um den Unterschied zwischen E-Text- und Nicht-E-Text-Dokumenten zu erkennen und zu verstehen, hier eine kurze Erklärung:
+Um den Unterschied zwischen E-Text und Nicht E-Text Dokumenten zu erkennen und zu verstehen, hier eine kurze Erklärung:
 
 ## **E-Text Dokumente**
 
-Alle E-Text-Dokumente sind bereits OCR-verarbeitet. Sie können diese Dokumente erkennen, wenn Sie die PDF-Datei öffnen, den gesamten Text markieren und diesen in ein Word-Dokument kopieren können.
+Alle E-Text Dokumente sind bereits OCR-verarbeitet. Sie können diese Dokumente erkennen, wenn Sie die PDF-Datei öffnen, den gesamten Text markieren und diesen in ein Word-Dokument kopieren können.
 
 ![E-Text](/_images/docbits/dokumentenvalidierung/E-Text Dokument.png)
 
@@ -22,13 +22,13 @@ Dokumente, die keinen E-Text enthalten, sind nicht bearbeitbar und lassen sich l
 
 ![E-Text](/_images/docbits/dokumentenvalidierung/Dokument ohne E-Text.png)
 
-In den OCR-Einstellungen finden Sie die Option "E-Text verwenden falls verfügbar"
+In den OCR-Einstellungen finden Sie die Option **E-Text verwenden falls verfügbar**, die durch setzen oder entfernen den Hakens im Kontrollkösten aktiviert oder deaktiviert werden kann.
 
 ![E-Text](/_images/docbits/dokumentenvalidierung/OCR Einstellungen_E-Text.png)
 
 
 :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
-Diese Option sollte nur aktiviert werden, wenn Sie wissen, dass Sie nur E-Text-Dokumente erhalten und sollte nur für Dokumente verwendet werden, bei denen die OCR-Erkennung von Docbits (DOC²) nicht ausreicht. Andernfalls sollte diese Option an den Stellen, an denen die Dokumente nicht bereits OCR-bearbeitet sind, nicht aktiviert werden.
+Diese Option sollte nur aktiviert werden, wenn Sie wissen, dass Sie nur E-Text Dokumente erhalten und sollte nur für Dokumente verwendet werden, bei denen die OCR-Erkennung von Docbits (DOC²) nicht ausreicht. Andernfalls sollte diese Option an den Stellen, an denen die Dokumente nicht bereits OCR-bearbeitet sind, nicht aktiviert werden.
 
 ``` mermaid
 sequenceDiagram
@@ -47,4 +47,4 @@ sequenceDiagram
 
 ```
 
-Um zu sehen welche Schritte wir durchgeführt haben und wie das Dokument verarbeitet wurde, öffnen Sie die Aktion `Dokument-flow ansehen`.
+Um zu sehen welche Schritte wir durchgeführt haben und wie das Dokument verarbeitet wurde, öffnen Sie die folgende [Aktion](/_images/docbits/dokumentenvalidierung/Aktionen_dokument-flow_ansehen.png).
