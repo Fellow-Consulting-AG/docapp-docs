@@ -3,9 +3,9 @@ title: "Docbits (DOC²) -  The Intelligent Solution for Digitizing Documents"
 description: "Docbits (DOC²) is the latest cloud-based software for document capture that uses AI and machine learning to precisely identify, classify, analyze, and read your documents. Start your free 30-day trial now!"
 date: "2021-10-19"
 tags:
-  - document capture
+  - Document Capture
   - AI
-  - machine learning
+  - Machine Learning
 ---
 
 
