@@ -46,14 +46,11 @@ You will be taken to this Microsoft page and you will need to enter a code.
 
 ![Microsoft Page](/_images/docbits/Import/Email Import/image_8_microsoft_page.png)
 
-This code can be found by clicking back to DOC² and the code will be displayed there like this, simply copy the code and enter it into the microsoft page.
+This code can be found by clicking back to DOC² and the code will be displayed there like this, simply copy the code and enter it into the microsoft page.Thereafter you will need to enter your own Microsoft credentials.
 
 ![DOC2 Code](/_images/docbits/Import/Email Import/image_9_code.png)
 
-Thereafter you will need to enter your own Microsoft credentials.
-
 4. Save the data and test the login to ensure everything is working correctly.
-
 5. Click the `IMPORT` button to fetch the documents from your mailbox and import them into Docbits (DOC²).
 
 It's that simple! With just a few clicks, you can streamline your document management process and save time.
