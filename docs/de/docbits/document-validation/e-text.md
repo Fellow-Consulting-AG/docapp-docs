@@ -28,8 +28,7 @@ In den OCR-Einstellungen finden Sie die Option **E-Text verwenden falls verfügb
 
 
 :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
-Diese Option sollte nur aktiviert werden, wenn Sie wissen, dass Sie nur E-Text Dokumente erhalten und sollte nur für Dokumente verwendet werden, bei denen die OCR-Erkennung von Docbits (DOC²) nicht ausreicht. Andernfalls sollte diese Option an den Stellen, an denen die Dokumente nicht bereits OCR-bearbeitet sind, nicht aktiviert werden.
-
+Mit dieser Option werden Dokumente die E-Text beinhalten nicht noch einmal vom OCR verarbeitet.
 
 
 ``` mermaid
