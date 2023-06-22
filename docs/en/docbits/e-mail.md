@@ -17,10 +17,16 @@ tags:
 If you're tired of manually importing documents from your email inbox, Docbits (DOC²) has got you covered. With our email import feature, you can automate the process and save time. Here's how:
 
 1. Go to the settings menu and select "Import".
-2. Click on the "OFF" button to open the email import settings.
+
+![Settings](/_images/docbits/Import/Email Import/image_1_settings_import.png)
+
+2. Scroll to the bottom of teh page and select the `NEW` button to create a new email import.
+
+![New Email Import](/_images/docbits/Import/Email Import/image_2_email_import_new.png)
+
 3. Enter the required information for your email provider, including the protocol, encryption, server name, port, username, email address, and password.
 4. Save the data and test the login to ensure everything is working correctly.
-5. Click the "IMPORT" button to fetch the documents from your mailbox and import them into Docbits (DOC²).
+5. Click the `IMPORT` button to fetch the documents from your mailbox and import them into Docbits (DOC²).
 
 It's that simple! With just a few clicks, you can streamline your document management process and save time.
 
