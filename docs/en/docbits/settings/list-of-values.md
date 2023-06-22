@@ -4,8 +4,7 @@ description: "This feature allows you to create and store different lists or set
 date: '2023-06-22'
 tags:
   - Docbits (DOC²)
-  - Document Processing
-  - List of Values
+  - Settings
 ---
 
 ## List of Values
