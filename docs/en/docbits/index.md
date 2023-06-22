@@ -62,7 +62,34 @@ With the help of deep learning algorithms, not only simple header data of a docu
 | bul           | Bulgarian           | x    | x    | x    | x     | x     | x     |
 | cat           | Catalan; Valencian  | x    | x    | x    | x     | x     | x     |
 | ceb           | Cebuano             |      | x    | x    | x     | x     | x     |
-
+| ces           | Czech                       | x    | x    | x    | x     | x     | x     |
+| chi_sim       | Chinese - Simplified        | x    | x    | x    | x     | x     | x     |
+| chi_tra       | Chinese - Traditional       | x    | x    | x    | x     | x     | x     |
+| chr           | Cherokee                    | x    | x    | x    | x     | x     | x     |
+| cos           | Corsican                    |      |      |      | x     | x     | x     |
+| cym           | Welsh                       |      | x    | x    | x     | x     | x     |
+| dan           | Danish                      | x    | x    | x    | x     | x     | x     |
+| dan_frak      | Danish - Fraktur (contrib)  | x    | x    |      |       |       |       |
+| deu           | German                      | x    | x    | x    | x     | x     | x     |
+| deu_frak      | German - Fraktur (contrib)  | x    | x    |      |       |       |       |
+| dzo           | Dzongkha                    |      | x    | x    | x     | x     | x     |
+| ell           | Greek, Modern (1453-)       | x    | x    | x    | x     | x     | x     |
+| eng           | English                     | x    | x    | x    | x     | x     | x     |
+| enm           | English, Middle (1100-1500) | x    | x    | x    | x     | x     | x     |
+| epo           | Esperanto                        | x    | x    | x    | x     | x     | x     |
+| equ           | Math/equation detection module   | x    | x    | x    | x     | x     | x     |
+| est           | Estonian                         | x    | x    | x    | x     | x     | x     |
+| eus           | Basque                           | x    | x    | x    | x     | x     | x     |
+| fao           | Faroese                          |      |      |      | x     | x     | x     |
+| fas           | Persian                          |      | x    | x    | x     | x     | x     |
+| fil           | Filipino (old - Tagalog)         | x    | x    | x    | x     | x     | x     |
+| fin           | Finnish                          | x    | x    |      |       |       |       |
+| fra           | French                           | x    | x    | x    | x     | x     | x     |
+| frk           | German - Fraktur                 | x    | x    |      |       |       |       |
+| frm           | French, Middle (ca. 1400 - 1600) |      | x    | x    | x     | x     | x     |
+| fry           | Western Frisian                  | x    | x    | x    | x     | x     | x     |
+| gla           | Scottish Gaelic                  | x    | x    | x    | x     | x     | x     |
+| gle           | Irish                            | x    | x    | x    | x     | x     | x     |
 
 ## Start Your Free 30-Day Trial Now!
 
