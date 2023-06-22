@@ -30,21 +30,19 @@ In den OCR-Einstellungen finden Sie die Option **E-Text verwenden falls verfügb
 :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
 Diese Option sollte nur aktiviert werden, wenn Sie wissen, dass Sie nur E-Text Dokumente erhalten und sollte nur für Dokumente verwendet werden, bei denen die OCR-Erkennung von Docbits (DOC²) nicht ausreicht. Andernfalls sollte diese Option an den Stellen, an denen die Dokumente nicht bereits OCR-bearbeitet sind, nicht aktiviert werden.
 
+
+
 ``` mermaid
-sequenceDiagram
-  flowchart TD
-    A(Dokument) --> B{E-Text}
-    B -->|Ja| C[[E-Text lesen]]
-    C --> D{beschädigt}
-    D --> E[[Kombination von OCR und E-Text]]
-    E --> F[[nur Teile des OCR verarbeiten]]
-    F --> G (Ende)
-    B -->|Nein| C[gesamten OCR verarbeiten]
-    C -->|Nein| D{beschädigt}
-    C --> G (Ende)
-
-
-
+graph LR
+  Dokument --> Condition1{E-Text}
+  Condition1 -->|Ja| ReadEText[E-Text lesen]
+  Condition1 -->|Nein| OCREveryhting[gesamten OCR verarbeiten]
+  ReadEText --> Condition2{beschädigt}
+  Condition2 --> |Ja| Combine[Kombination von OCR und E-Text]
+  Condition2 --> |Nein| Ende
+  Combine --> OCR[nur Teile des OCR verarbeiten]
+  OCR --> Ende
+  OCREveryhting --> Ende
 ```
 
 Um zu sehen welche Schritte wir durchgeführt haben und wie das Dokument verarbeitet wurde, öffnen Sie die folgende [Aktion](/_images/docbits/dokumentenvalidierung/Aktionen_dokument-flow_ansehen.png).
