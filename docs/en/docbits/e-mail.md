@@ -10,7 +10,7 @@ tags:
 
 <div class='video-container'>
   <iframe src='https://www.youtube.com/embed/VIDEO_ID_HERE' frameborder='0' allowfullscreen></iframe>
-</div>
+</div> 
 
 ## How to Import Documents from Email Inbox with Docbits (DOC²)
 
