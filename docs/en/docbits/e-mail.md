@@ -38,7 +38,7 @@ Here you can select which `Protocol` you would like:
 
 ![POP3](/_images/docbits/Import/Email Import/image_6_POP3.png)
 
-- OAuth Office365: here you just need to enter your desired sub organization and press `Authenticate`
+- OAuth Office365: here you just need to enter your desired sub-organization and press `Authenticate`
 
 ![OAuth Office365](/_images/docbits/Import/Email Import/image_7_OAuth_Office365.png)
 
@@ -46,10 +46,9 @@ You will be taken to this Microsoft page and you will need to enter a code.
 
 ![Microsoft Page](/_images/docbits/Import/Email Import/image_8_microsoft_page.png)
 
-This code can be found by clicking back to DOC² and the code will be displayed there like this, simply copy the code and enter it into the microsoft page.Thereafter you will need to enter your own Microsoft credentials.
+This code can be found by clicking back to DOC² and the code will be displayed there like this, simply copy the code and enter it into the microsoft page. Thereafter you will need to enter your own Microsoft credentials.
 
 ![DOC2 Code](/_images/docbits/Import/Email Import/image_9_code.png)
-
 4. Save the data and test the login to ensure everything is working correctly.
 5. Click the `IMPORT` button to fetch the documents from your mailbox and import them into Docbits (DOC²).
 
