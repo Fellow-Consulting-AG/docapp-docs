@@ -19,11 +19,9 @@ If you're tired of manually importing documents from your email inbox, Docbits (
 1. Go to the settings menu and select "Import".
 
 ![Settings](/_images/docbits/Import/Email Import/image_1_settings_import.png)
-
 2. Scroll to the bottom of teh page and select the `NEW` button to create a new email import.
 
 ![New Email Import](/_images/docbits/Import/Email Import/image_2_email_import_new.png)
-
 3. After pressing `NEW`, the following menu will be shown to you
 
 ![Email Import Menu](/_images/docbits/Import/Email Import/image_3_email_import_menu.png)
