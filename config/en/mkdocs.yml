@@ -7,7 +7,7 @@ site_description: On these pages you will learn a lot about our different softwa
 theme:
   name: material
   logo: _images/LOGO.svg
-  favicon: _images/LOGO.svg
+  favicon: _images/fav.svg
   font:
     text: Montserrat
   language: en
