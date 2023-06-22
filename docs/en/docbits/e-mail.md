@@ -55,7 +55,7 @@ This code can be found by clicking back to DOC² and the code will be displayed 
 
 It's that simple! With just a few clicks, you can streamline your document management process and save time.
 
-<div class='video-container'>
+ <div class='video-container'>
   <iframe src='https://www.youtube.com/embed/VIDEO_ID_HERE' frameborder='0' allowfullscreen></iframe>
 </div>
 
