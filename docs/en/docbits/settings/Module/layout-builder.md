@@ -131,7 +131,7 @@ For example, if you had multiple checkboxes all belonging to a group name â€œ1â€
 
 This dropdown gives you the choice of training a specific field according to a KI model. Possible options can be seen below.
 
-![KI Models](docs/en/_images/docbits/Settings/Module/Layout Builder/Image 20 - KI Models 2.png)
+![KI Models](/_images/docbits/Settings/Module/Layout Builder/Image 20 - KI Models 2.png)
 
 KI model training can lead to more accurate extraction results on the validation screen.
 
