@@ -201,7 +201,13 @@ nav:
       - Dokumenttypen: docbits/settings/document-types.md
       - List of Values: docbits/settings/list-of-values.md
       - E-Mail-Benachrichtigungen: docbits/settings/email-notification.md
-      - Module: docbits/modules.md
+      - Module: 
+       - docbits/settings/modules/index.md
+       - Layout-Ersteller: docs/de/docbits/settings/modules/layout-builder.md
+       - Genehmigung:
+       - Doc Script:
+       - Doc Scan:
+       - IDM ACL Updater:
       - Alle Importoptionen:
         - docbits/import/index.md
         - Email: docbits/e-mail.md
