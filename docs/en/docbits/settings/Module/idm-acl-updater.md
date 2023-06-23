@@ -13,20 +13,20 @@ tags:
 
 This a new feature which, every 6 hours, uses the ION-API file to connect to your Infor-IDM and check through the newest/latest documents of the IDM-document-type(s) you selected, and if they have your specified ACL-Setting right now (for example public), they change it to the ACL-Setting that you want it to (example Private). This is illustrated below.
 
-![Download Scanner Message](/_images/docbits/Settings/Module/Doc Scan/Image_2_doc_scan_installer.png)
+![Diagram](/_images/docbits/Settings/Module/IDM:ACL Updater/image_1_diagram.png)
 
 ## How to enable the IDM ACL Updater
 
 To enable this feature, from the Dashboard, go to Settings.
 
-![Download Scanner Message](/_images/docbits/Settings/Module/Doc Scan/Image_2_doc_scan_installer.png)
+![Settings](/_images/docbits/Settings/Module/IDM:ACL Updater/image_2_settings.png)
 
 Navigate to Document processing → Module
 
-![Download Scanner Message](/_images/docbits/Settings/Module/Doc Scan/Image_2_doc_scan_installer.png)
+![Module](/_images/docbits/Settings/Module/IDM:ACL Updater/image_3_module.png)
 
 Once in the Module menu, you will find the slider to enable the IDM ACL Updater at the bottom of the page.
 
-![Download Scanner Message](/_images/docbits/Settings/Module/Doc Scan/Image_2_doc_scan_installer.png)
+![Slider](/_images/docbits/Settings/Module/IDM:ACL Updater/image_4_enable_slider.png)
 
 Simply click the slider so that it moves to the right to enable the feature.
