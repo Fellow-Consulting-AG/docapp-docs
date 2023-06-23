@@ -9,7 +9,7 @@ tags:
 
 This feature allows you to create and store different lists or sets of related information that can be used to create a drop-down box on the validation screen.
 
-In order to create a list, navigate to the DOC2 Dashboard → Settings as shown below.
+In order to create a list, navigate to the Docbits (DOC²) Dashboard → Settings as shown below.
 
 ![](/_images/docbits/List of Values - Images/image_1_lov.png)
 
