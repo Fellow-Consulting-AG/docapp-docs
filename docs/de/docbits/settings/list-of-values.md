@@ -8,7 +8,7 @@ tags:
   - List of Values
 ---
 
-Mit dieser Funktion können Sie verschiedene Listen oder Sätze verwandter Informationen erstellen und speichern, die zur Erstellung einer Dropdown-Box auf dem Validierungsbildschirm verwendet werden können.
+Mit dieser Funktion können Sie verschiedene Arten von Informationen in Form einer Liste erstellen und speichern, die zur Erstellung einer Dropdown-Box auf dem Validierungsbildschirm verwendet werden kann.
 
 Um eine Liste zu erstellen, navigieren Sie über das Docbits (DOC²) Dashboard zu den Einstellungen, wie unten gezeigt.
 
