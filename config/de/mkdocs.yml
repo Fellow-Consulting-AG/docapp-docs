@@ -146,8 +146,6 @@ plugins:
   - minify:
       minify_html: true
 
-
-
 nav:
   - Changelog: Release/Release_notes.md
   - Docbits (Doc²):
@@ -183,10 +181,8 @@ nav:
       - Infor-Infrastruktur: docbits/doc2-with-infor/infrastructure.md
       - Anwendungsfälle: docbits/doc2-with-infor/infor.md
       - Diagramm: docbits/doc2-with-infor/inforflow.md
-      - Integration mit Infor IDM und ERP:
-        - docbits/doc2-with-infor/IDM-business-context-model.md
+      - Integration mit Infor IDM und ERP: docbits/doc2-with-infor/IDM-business-context-model.md
       - Infor SSO: docbits/doc2-with-infor/configuring-sso-in-cloud.md
-    # - Docbits (Doc²) with Workflow²: docbits/workflow.md
     - Einstellungen:
       - docbits/settings/index.md
       - Firmeninformationen: docbits/company-information.md
@@ -203,12 +199,12 @@ nav:
       - E-Mail-Benachrichtigungen: docbits/settings/email-notification.md
       - Module: 
         - docbits/settings/modules/index.md
-        - Layout-Ersteller: docs/de/docbits/settings/modules/layout-builder.md
-        - Genehmigung:
-        - Doc Script:
-        - Doc Scan:
-        - IDM ACL Updater:
-      - Alle Importoptionen:
+        - Layout-Ersteller: docbits/settings/modules/layout-builder.md 
+        - Genehmigung: docbits/settings/modules/approval.md
+        - Doc Script: docbits/settings/modules/doc script.md
+        - Doc Scan: docbits/settings/modules/doc scan.md
+        - IDM ACL Updater: docbits/settings/modules/idm acl updater.md
+      - Alle Importoptionen: 
         - docbits/import/index.md
         - Email: docbits/e-mail.md
         - Fileshare Import:
