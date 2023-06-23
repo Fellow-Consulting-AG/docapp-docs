@@ -1,4 +1,4 @@
 
 
 
-[Deutsche Übersetzung bald verfügbar](en.docs.fellowpro.com/docbits/settings/module/approval/)
+[Deutsche Übersetzung bald verfügbar](https://en.docs.fellowpro.com/docbits/settings/module/approval/)
