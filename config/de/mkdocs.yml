@@ -198,7 +198,8 @@ nav:
         - API: docbits/settings/integration/api-integration.md
         - Beispiele für API-Aufrufe: docbits/settings/integration/api-calls-examples.md
         - SSO-Einstellungen: docbits/settings-sso-settings.md
-      - Dokumenttypen: docbits/settings-document-types.md
+      - Dokumenttypen: docbits/settings/document-types.md
+      - List of Values: docbits/settings/list-of-values.md
       - E-Mail-Benachrichtigungen: docbits/settings/email-notification.md
       - Module: docbits/modules.md
       - Alle Importoptionen:
