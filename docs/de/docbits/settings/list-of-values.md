@@ -10,7 +10,7 @@ tags:
 
 Mit dieser Funktion können Sie verschiedene Listen oder Sätze verwandter Informationen erstellen und speichern, die zur Erstellung einer Dropdown-Box auf dem Validierungsbildschirm verwendet werden können.
 
-Um eine Liste zu erstellen, navigieren Sie zum Docbits (DOC²) Dashboard → Einstellungen, wie unten gezeigt.
+Um eine Liste zu erstellen, navigieren Sie über das Docbits (DOC²) Dashboard zu den Einstellungen, wie unten gezeigt.
 
 ![Dashboard](/_images/docbits/einstellungen/list of values/dashboard_einstellungen.png)
 
