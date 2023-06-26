@@ -19,8 +19,8 @@ tags:
 
 ## Here you can find the specific module settings and the corresponding articles.
 
-- Layout Builder: docbits/settings/Module/layout-builder.md
-- Approval: docbits/settings/Module/approval.md
-- Doc Script: docbits/settings/Module/doc-script.md
-- Doc Scan: docbits/settings/Module/doc-scan.md
-- IDM ACL Updater: docbits/settings/Module/idm-acl-updater.md
+- Layout Builder: [Layout Builder](docbits/settings/Module/layout-builder.md)
+- Approval: [Approval](docbits/settings/Module/approval.md)
+- Doc Script: [Doc Script](docbits/settings/Module/doc-script.md)
+- Doc Scan: [Doc Scan](docbits/settings/Module/doc-scan.md)
+- IDM ACL Updater: [IDM ACL Updater](docbits/settings/Module/idm-acl-updater.md)
