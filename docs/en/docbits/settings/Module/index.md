@@ -20,7 +20,7 @@ tags:
 ## Here you can find the specific module settings and the corresponding articles.
 
 - [Layout Builder](layout-builder/)
-- [Approval](docbits/settings/Module/approval/)
-- [Doc Script](docbits/settings/Module/doc-script/)
-- [Doc Scan](docbits/settings/Module/doc-scan/)
-- [IDM ACL Updater](docbits/settings/Module/idm-acl-updater/)
+- [Approval](approval/)
+- [Doc Script](doc-script/)
+- [Doc Scan](doc-scan/)
+- [IDM ACL Updater](idm-acl-updater/)
