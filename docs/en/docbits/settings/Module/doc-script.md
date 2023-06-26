@@ -32,9 +32,9 @@ The result should look like this:
      currency_value = get_field_value(fields_dict, "currency", None)
 
      if currency_value:
-     currency_value = currency_value.upper()
-     currency_value = currency_map.get(currency_value, currency_value)
-     set_field_value(fields_dict, "currency", currency_value)
+         currency_value = currency_value.upper()
+         currency_value = currency_map.get(currency_value, currency_value)
+         set_field_value(fields_dict, "currency", currency_value)
  
 
 In the next step, upload a document with one of the following criteria: "€", "EURO", "$" or "£".
