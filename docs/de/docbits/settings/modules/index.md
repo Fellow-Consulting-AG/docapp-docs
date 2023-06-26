@@ -20,6 +20,6 @@ Hier finden Sie die spezifischen Moduleinstellungen und die entsprechenden Artik
 - [Genehmigung](/docbits/settings/modules/approval/)
 - [Bestellung](/docbits/pomatching/po-matching/)
 - [Layout-Ersteller](/docbits/settings/modules/layout-builder/)
-- [Doc Script](/docbits/settings/module/doc-script/)
-- [Doc Scan](/docbits/settings/module/doc-scan/)
+- [Doc Script](/docbits/settings/modules/doc-script/)
+- [Doc Scan](/docbits/settings/modules/doc-scan/)
 - [IDM ACL Updater](/docbits/settings/modules/idm-acl-updater/)
