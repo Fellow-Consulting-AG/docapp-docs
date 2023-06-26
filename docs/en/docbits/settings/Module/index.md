@@ -12,6 +12,7 @@ tags:
   - Layout Builder
   - Doc Script
   - Doc scan
+  - IDM ACL Updater
 ---
 
 # INDEX
@@ -22,4 +23,4 @@ tags:
 - Approval: docbits/settings/Module/approval.md
 - Doc Script: docbits/settings/Module/doc-script.md
 - Doc Scan: docbits/settings/Module/doc-scan.md
-
+- IDM ACL Updater: docbits/settings/Module/idm-acl-updater.md
