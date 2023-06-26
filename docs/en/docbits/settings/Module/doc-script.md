@@ -27,7 +27,7 @@ The result should look like this:
     "EURO": "EUR",
     "$": "USD",
     "£": "GBP"
-}
+    }
 
       currency_value = get_field_value(fields_dict, "currency", None)
 
