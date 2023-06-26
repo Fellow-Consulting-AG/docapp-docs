@@ -8,9 +8,9 @@ tags:
   - IDM ACL Updater
 ---
 
-## Was macht diese?
+## Was macht dieser?
 
-Dies ist eine neue Funktion, die alle 6 Stunden die ION-API-Datei verwendet, um sich mit Ihrem Infor-IDM zu verbinden und die neuesten/aktuellsten Dokumente des/der von Ihnen ausgewählten IDM-Dokumententyps/Dokumententypen zu überprüfen. Wenn diese die von Ihnen angegebene ACL-Einstellung korrekt haben (z. B. öffentlich), wird sie dann in die von Ihnen gewünschte ACL-Einstellung geändert (z. B. privat). Die verschiedenen Verbindungen zwischen Docbits (DOC²) und Infor sind unten als Referenz dargestellt.
+Dies ist eine neue Funktion, die alle 6 Stunden die ION-API-Datei verwendet, um sich mit Ihrem Infor-IDM zu verbinden und die neuesten/aktuellsten Dokumente der von Ihnen ausgewählten IDM-Dokumententypen zu überprüfen. Wenn diese die von Ihnen angegebene ACL-Einstellung korrekt beinhalten (z. B. öffentlich), wird sie in die von Ihnen gewünschte ACL-Einstellung geändert (z. B. privat). Die verschiedenen Verbindungen zwischen Docbits (DOC²) und Infor sind unten als Referenz dargestellt.
 
 ![Diagramm](/_images/docbits/einstellungen/module/IDM ACL Updater/Diagram_InforOS.png)
 
