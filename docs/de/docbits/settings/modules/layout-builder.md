@@ -13,15 +13,15 @@ tags:
 
 Stellen Sie zunächst sicher, dass die Funktion Layout-Ersteller aktiviert ist. Navigieren Sie dazu zu Einstellungen → Dokumentverarbeitung → Module → Dokumenttyp und vergewissern Sie sich, dass der Schieberegler für den Layout-Ersteller wie unten gezeigt auf aktiv gesetzt ist.
 
-![](/_images/docbits/einstellungen/module/einstellungen_dokumententyp_layout-ersteller.png)
+![](/_images/docbits/einstellungen/module/layout_einstellungen_dokumententyp_layout-ersteller.png)
 
 Danach können Sie über Einstellungen → Dokumenttypen auf den Layout-Ersteller zugreifen. Sobald Sie auf dieser Seite sind, können Sie aus den verschiedenen Dokumenttypen, die Sie erstellt haben, auswählen und entweder `Edit Layout` wählen, wie unten gezeigt
 
-![](/_images/docbits/einstellungen/module/rechnung_edit layout.png)
+![](/_images/docbits/einstellungen/module/layout_dokumentuntertypen_edit layout.png)
 
 oder wenn Sie Unterdokumenttypen innerhalb eines erstellten Dokumenttyps haben, können Sie `Dokumentuntertypen` wählen und `Edit Layout` für das Layout des Unterdokumenttyps wählen, das Sie bearbeiten möchten, wie unten gezeigt.
 
-![](/_images/docbits/einstellungen/module/dokumentuntertypen_edit layout.png)
+![](/_images/docbits/einstellungen/module/layout_dokumentuntertypen_edit layout.png)
 
 ## Grundlagen des Layout-Erstellers
 
@@ -74,4 +74,4 @@ Dies sind eine Reihe von Standardfeldern, die per Drag & Drop in den Layout-Erst
 
 Der Benutzer kann seine eigenen benutzerdefinierten Gruppen und Felder für einen Dokumententyp erstellen. Dies kann bei der ursprünglichen Erstellung eines Dokumententyps geschehen, aber auch durch Auswahl von "Felder" auf der Seite "Dokumententypen" in den Einstellungen.
 
-![](/_images/docbits/einstellungen/module/dokumententyp_felder.png)
+![](/_images/docbits/einstellungen/module/layout_dokumententyp_felder.png)
