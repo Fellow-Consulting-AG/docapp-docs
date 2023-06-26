@@ -22,20 +22,20 @@ The result should look like this:
 <Script_added.png>
 
 
-currency_map = {
+    currency_map = {
     "€": "EUR",
     "EURO": "EUR",
     "$": "USD",
     "£": "GBP"
 }
 
-currency_value = get_field_value(fields_dict, "currency", None)
+      currency_value = get_field_value(fields_dict, "currency", None)
 
-if currency_value:
-    currency_value = currency_value.upper()
-    if currency_value in currency_map:
-        currency_value = currency_map[currency_value]
-    set_field_value(fields_dict, "currency", currency_value)
+     if currency_value:
+         currency_value = currency_value.upper()
+         if currency_value in currency_map:
+             currency_value = currency_map[currency_value]
+            set_field_value(fields_dict, "currency", currency_value)
  
 
 In the next step, upload a document with one of the following criteria: "€", "EURO", "$" or "£".
