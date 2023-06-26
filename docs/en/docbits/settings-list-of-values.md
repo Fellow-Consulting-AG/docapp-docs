@@ -5,7 +5,10 @@ date: '2023-06-22'
 tags:
   - Docbits (DOC²)
   - Settings
+  - List of Values
 ---
+
+## How to access this feature
 
 This feature allows you to create and store different lists or sets of related information that can be used to create a drop-down box on the validation screen.
 
@@ -21,7 +24,7 @@ On this screen you have access to existing lists as well as the ability to creat
 
 ![](/_images/docbits/List of Values - Images/image_3_lov.png)
 
-How to enable this feature for a field in a layout?
+## How to enable this feature for a field in a layout?
 
 Docbits (DOC²) Dashboard → Settings 
 
