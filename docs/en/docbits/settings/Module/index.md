@@ -19,7 +19,7 @@ tags:
 
 ## Here you can find the specific module settings and the corresponding articles.
 
-- [Layout Builder](docbits/settings/Module/layout-builder.md/)
+- [Layout Builder](layout-builder/)
 - [Approval](docbits/settings/Module/approval/)
 - [Doc Script](docbits/settings/Module/doc-script/)
 - [Doc Scan](docbits/settings/Module/doc-scan/)
