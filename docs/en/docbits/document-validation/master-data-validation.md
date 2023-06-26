@@ -30,6 +30,11 @@ Another way to find the correct supplier is by searching for their name in the s
 
 ![Search for supplier in master data](/_images/docbits/Document Validation/2 - Master Data Validation/image_2_search_supplier_name.png)
 
+### Tax Country
+
+Based on the ISO Code alpha-2 field, the Tax Country field gets filled with the first section of this element, for example DE for Germany.
+The Tax Code field is filled with the second section of this element.
+
 ## Simplify Your Document Processing with Docbits (DOC²)
 
 Docbits (DOC²)'s master data validation feature is just one of the many ways we help streamline document processing for businesses. Contact us today to learn more about how we can help your organization save time and resources.
