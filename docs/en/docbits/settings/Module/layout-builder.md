@@ -7,6 +7,7 @@ tags:
   - Settings
   - Module
   - Layout Builder
+  - Layout Manager
 ---
 
 ## Accessing the Layout Builder
