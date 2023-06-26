@@ -42,7 +42,7 @@ All values that have been correctly extracted and confirmed with the check mark 
 
 A great example is on the next segment of field IBAN, where the IBAN is not even extracted, as confidence level is equal to 0. To train and extract the value, just enter the field and mark the IBAN on the invoice. You get this message if you are sure of your selection, so click yes.
 
-![Field Training Confirmation](docs/en/_images/docbits/Document Validation/1-Index/DOC2_confirm_field_6.png)
+![Field Training Confirmation](/_images/docbits/Document Validation/1-Index/DOC2_confirm_field_6.png)
 
 The selected value will be extracted to the IBAN field and displayed on the invoice. Please confirm the value with the checkmark to finalize it.
 
