@@ -15,14 +15,14 @@ tags:
 
 Docbits (DOC²) offers powerful AI indicators that allow you to measure the quality of extraction for your documents. Here's how to use them:
 
-- Open a document from the dashboard.
-- In document view, you'll see two indicators for the quality of extraction:
+1. Open a document from the dashboard.
+2. In document view, you'll see two indicators for the quality of extraction:
      - Extraction quality in percent per field and current document
      - Overall extraction quality including previous extractions of documents of the same type.
 
-  ![Extraction quality in percent per field and current document](/_images/docbits/Document Validation/4-AI Indicator/Image_3_Field_Accuracy.png "Extraction quality in percent per field and current document"){ loading="lazy" width="600" height="400" alt="AI indicator for extraction quality in percent per field and current document"}
-- For each field, there is a value available on the right side that indicates the quality of extraction for the current document. A percentage value will be displayed.
-- Furthermore, there is a graph that shows the quality of all previous extractions for a document type. This refers in each case to the extraction value with the lowest quality.
+  ![Extraction quality in percent per field and current document](/_images/docbits/Document Validation/4-AI Indicator/Image_3_Field_Accuracy.png)
+3. For each field, there is a value available on the right side that indicates the quality of extraction for the current document. A percentage value will be displayed.
+4. Furthermore, there is a graph that shows the quality of all previous extractions for a document type. This refers in each case to the extraction value with the lowest quality.
 
 ![Overall extraction quality including previous extractions of documents of the same type](/_images/docbits/Document Validation/4-AI Indicator/Image_4_AI_Indicator_Icon.png "Overall extraction quality including previous extractions of documents of the same type"){ loading="lazy" width="600" height="400" alt="AI indicator for overall extraction quality including previous extractions of documents of the same type"}
 
