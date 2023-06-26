@@ -201,9 +201,9 @@ nav:
         - docbits/settings/modules/index.md
         - Layout-Ersteller: docbits/settings/modules/layout-builder.md 
         - Genehmigung: docbits/settings/modules/approval.md
-        - Doc Script: docbits/settings/modules/doc script.md
-        - Doc Scan: docbits/settings/modules/doc scan.md
-        - IDM ACL Updater: docbits/settings/modules/idm acl updater.md
+        - Doc Script: docbits/settings/modules/doc-script.md
+        - Doc Scan: docbits/settings/modules/doc-scan.md
+        - IDM ACL Updater: docbits/settings/modules/idm-acl-updater.md
       - Alle Importoptionen: 
         - docbits/import/index.md
         - Email: docbits/e-mail.md
