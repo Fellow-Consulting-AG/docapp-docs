@@ -97,8 +97,8 @@ Solange der Schieberiegler auf ON steht werden neue Dokumente aus angegebenem E-
 
 
 
-### Bringen Sie Ihr Dokumentenmanagement mit Workflow² auf das nächste Level
+<!-- ### Bringen Sie Ihr Dokumentenmanagement mit Workflow² auf das nächste Level
 
-Wenn Sie Ihr Dokumentenmanagement auf die nächste Stufe heben möchten, sollten Sie den Einsatz unserer Workflow²-App in Betracht ziehen. Mit Workflow² können Sie Ihre Dokumenten-Workflows automatisieren und noch mehr Zeit sparen. Sehen Sie sich unseren [Gmail-Import-Workflow](https://de.docs.fellowpro.com/example/gmail-import/)an, um zu erfahren, wie Sie Ihre Dokumente automatisch aus Ihrem E-Mail-Posteingang in Docbits (DOC²) importieren können.
+Wenn Sie Ihr Dokumentenmanagement auf die nächste Stufe heben möchten, sollten Sie den Einsatz unserer Workflow²-App in Betracht ziehen. Mit Workflow² können Sie Ihre Dokumenten-Workflows automatisieren und noch mehr Zeit sparen. Sehen Sie sich unseren [Gmail-Import-Workflow](https://de.docs.fellowpro.com/example/gmail-import/) an, um zu erfahren, wie Sie Ihre Dokumente automatisch aus Ihrem E-Mail-Posteingang in Docbits (DOC²) importieren können.
 
-Beginnen Sie noch heute mit Docbits (DOC²) und Workflow², Ihren Dokumentenmanagementprozess zu optimieren!
+Beginnen Sie noch heute mit Docbits (DOC²) und Workflow², Ihren Dokumentenmanagementprozess zu optimieren! -->
