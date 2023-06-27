@@ -15,7 +15,7 @@ This a feature which, every 6 hours, uses the ION-API file to connect to your In
 
 ![Dataflow](/_images/docbits/Settings/Module/IDM:ACL Updater/image_1_data_flow.png)
 
-The API is called "DOC2-Error" and is situated at the end  in the above dataflow.
+The API is called "DOC2-Error" and is situated at the end  in the above dataflow. The endpoint mapped to the API (DOC2_Import) is the endpoint which carries out the functions discussed earlier.
 
 <!-- ![API Configuration](/_images/docbits/Settings/Module/IDM:ACL Updater/image_2_api_config_1.png)
 ![API Configuration](/_images/docbits/Settings/Module/IDM:ACL Updater/image_3_api_config_2.png) -->
