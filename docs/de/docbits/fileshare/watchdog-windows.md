@@ -1,9 +1,9 @@
 ---
 title: "Watchdog für Windows"
-description: In dieser Dokumentation erfahren Sie, wie Sie Watchdog für Windows konfigurieren, um Ihre lokalen Dokumente einfach in Docbits (Doc²) zu importieren.
+description: In dieser Dokumentation erfahren Sie, wie Sie Watchdog für Windows konfigurieren, um Ihre lokalen Dokumente einfach in Docbits (DOC²) zu importieren.
 date: "2022-01-28"
 tags:
-  - Docbits (Doc²)
+  - Docbits (DOC²)
   - Fileshare-Import
   - Watchdog
   - Windows
@@ -19,7 +19,7 @@ tags:
 
 Konfigurieren Sie zunächst die folgenden Ordner:
 
-* Lesen-Ordner → Dokumente, die in Docbits (Doc²) hochgeladen werden sollen, müssen sich in diesem Ordner befinden
+* Lesen-Ordner → Dokumente, die in Docbits (DOC²) hochgeladen werden sollen, müssen sich in diesem Ordner befinden
 * Fehler-Ordner → Dokumente, die während des Exports einen Fehler aufweisen, werden hier gespeichert
 * Verarbeitet-Ordner → erfolgreich verarbeitete Dokumente werden hier gespeichert
 
