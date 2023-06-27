@@ -13,7 +13,9 @@ tags:
 
 This a feature which, every 6 hours, uses the ION-API file to connect to your Infor-IDM and check through the newest/latest documents of the IDM-document-type(s) the Docbits (DOC²) team has configured at your request, and if the document type has an incorrect ACL-Setting (for example public), it will then be changed to the ACL-Setting you want (for example private). The images below illustrate the configuration of the API performing this feature:
 
-![Diagram](/_images/docbits/Settings/Module/IDM:ACL Updater/image_1_diagram.png)
+![Dataflow](/_images/docbits/Settings/Module/IDM:ACL Updater/image_1_data_flow.png)
+![API Configuration](/_images/docbits/Settings/Module/IDM:ACL Updater/image_2_api_config_1.png)
+![API Configuration](/_images/docbits/Settings/Module/IDM:ACL Updater/image_3_api_config_2.png)
 
 ## How to enable the IDM ACL Updater
 
