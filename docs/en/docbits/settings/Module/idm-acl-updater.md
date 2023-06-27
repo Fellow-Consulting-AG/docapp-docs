@@ -21,14 +21,14 @@ This a feature which, every 6 hours, uses the ION-API file to connect to your In
 
 To enable this feature, from the Dashboard, go to Settings.
 
-![Settings](/_images/docbits/Settings/Module/IDM:ACL Updater/image_2_settings.png)
+![Settings](/_images/docbits/Settings/Module/IDM:ACL Updater/image_4_settings.png)
 
 Navigate to Document processing → Module
 
-![Module](/_images/docbits/Settings/Module/IDM:ACL Updater/image_3_module.png)
+![Module](/_images/docbits/Settings/Module/IDM:ACL Updater/image_5_module.png)
 
 Once in the Module menu, you will find the slider to enable the IDM ACL Updater at the bottom of the page.
 
-![Slider](/_images/docbits/Settings/Module/IDM:ACL Updater/image_4_enable_slider.png)
+![Slider](/_images/docbits/Settings/Module/IDM:ACL Updater/image_6_enable_slider.png)
 
 Simply click the slider so that it moves to the right to enable the feature.
