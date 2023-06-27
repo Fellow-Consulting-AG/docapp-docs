@@ -93,7 +93,7 @@ Nachdem Sie auf die Schaltfläche `IMPORTIEREN` geklickt haben, werden die Dokum
 
 Solange der Schieberiegler auf ON steht werden neue Dokumente aus angegebenem E-Mail Ordner abgerufen und importiert.
 
-![ON_OFF](/_images/docbits/import/Schieberiegler_on-off.png "ON_OFF")
+![ON_OFF](/_images/docbits/import/docbits_Schieberiegler_ON-OFF.png "ON_OFF")
 
 
 
