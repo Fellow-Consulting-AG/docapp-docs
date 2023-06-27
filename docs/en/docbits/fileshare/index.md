@@ -1,5 +1,5 @@
 ---
-title: "Fileshare Import: A Comprehensive Guide for Multiple Export Options"
+title: "Fileshare Import: A Comprehensive Guide for Multiple Import Options"
 description: "Learn how to configure fileshare import options for common operating systems with Docbits (DOC²). Get a step-by-step guide for multiple export options."
 date: "2021-10-23"
 tags:
