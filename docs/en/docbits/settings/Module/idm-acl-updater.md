@@ -17,8 +17,8 @@ This a feature which, every 6 hours, uses the ION-API file to connect to your In
 
 The API is called "DOC2-Error" and is situated at the end  in the above dataflow.
 
-![API Configuration](/_images/docbits/Settings/Module/IDM:ACL Updater/image_2_api_config_1.png)
-![API Configuration](/_images/docbits/Settings/Module/IDM:ACL Updater/image_3_api_config_2.png)
+<!-- ![API Configuration](/_images/docbits/Settings/Module/IDM:ACL Updater/image_2_api_config_1.png)
+![API Configuration](/_images/docbits/Settings/Module/IDM:ACL Updater/image_3_api_config_2.png) -->
 
 ## How to enable the IDM ACL Updater
 
