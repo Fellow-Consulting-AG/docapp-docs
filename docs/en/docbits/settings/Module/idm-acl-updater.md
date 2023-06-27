@@ -11,7 +11,7 @@ tags:
 
 ## What does it do?
 
-This a feature which, every 6 hours, uses the ION-API file to connect to your Infor-IDM and check through the newest/latest documents of the IDM-document-type(s) the Docbits (DOC²) team has configured at your request, and if the document type has an incorrect ACL-Setting (for example public), it will then be changed to the ACL-Setting you want (for example private). The images below illustrate the configuration of the API performing this feature:
+This a feature which, every 6 hours, uses the ION-API file to connect to your Infor-IDM and check through the newest/latest documents of the IDM-document-type(s) the Docbits (DOC²) team has configured at your request, and if the document type has an incorrect ACL-Setting (for example public), it will then be changed to the ACL-Setting you want (for example private). The image below illustrates the configuration of the API performing this feature:
 
 ![Dataflow](/_images/docbits/Settings/Module/IDM:ACL Updater/image_1_data_flow.png)
 
