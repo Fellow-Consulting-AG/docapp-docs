@@ -31,6 +31,7 @@ Je nachdem, welches Betriebssystem Sie verwenden, klicken Sie zum Herunterladen 
 ![Welcome](/_images/docbits/einstellungen/module/docscan/Install doc2scan.png)
 
 Klicken Sie auf `Continue`, akzeptieren Sie die Software-Lizenzvereinbarung mit `Continue` sowie `Agree` und fahren Sie mit der Installation der Software fort.<br> 
+![Agree](/_images/docbits/einstellungen/module/docscan/Install doc2scan-software-licence-agreement-agree.png)
 :fontawesome-solid-circle-info:{ style="color: #0F17E4" } Für die Installation dieser Software werden 33,6 MB Speicherplatz benötigt.<br> 
 Sie können den Speicherort ändern, bevor Sie im nächsten Schritt auf `Install` klicken.
 
@@ -47,7 +48,7 @@ Alle Informationen finden Sie **[hier](https://docs.polydocs.io/doc2/modules/doc
 
 Wenn Sie diesen Bildschirm sehen, können Sie auf `Doc2` klicken.
 
-![](/_images/docbits/einstellungen/module/doc scan/browser_bereit-fuer-doc2scan.png)
+![](/_images/docbits/einstellungen/module/docscan/browser_bereit-fuer-doc2scan.png)
 
 Sie werden zur Docbits (DOC²)-Anmeldeseite weitergeleitet, wo Sie Ihre Anmeldedaten eingeben können, um auf Ihr Dashboard zuzugreifen.
 
