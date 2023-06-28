@@ -23,7 +23,8 @@ Da die Scannersoftware noch nicht installiert ist, erhalten Sie die folgende Mel
 ![Software nicht gefunden](/_images/docbits/einstellungen/module/docscan/Scanner Software herunterladen.png)
 
 :fontawesome-solid-circle-info:{ style="color: #0F17E4" } <br>
-Je nachdem, welches Betriebssystem Sie verwenden, klicken Sie zum Herunterladen auf die entsprechende Schaltfläche. Die Installationsdatei ist nur auf englisch verfügbar.
+Je nachdem, welches Betriebssystem Sie verwenden, klicken Sie zum Herunterladen auf die entsprechende Schaltfläche. <br> Die Installationsdatei ist nur auf englisch verfügbar.
+:fontawesome-solid-circle-info:{ style="color: #0F17E4" }
 
 
 Öffnen Sie die Installationsdatei und Sie werden folgendes sehen
@@ -32,7 +33,7 @@ Je nachdem, welches Betriebssystem Sie verwenden, klicken Sie zum Herunterladen 
 
 Klicken Sie auf `Continue`, akzeptieren Sie die Software-Lizenzvereinbarung mit `Continue` sowie `Agree` und fahren Sie mit der Installation der Software fort.<br> 
 ![Agree](/_images/docbits/einstellungen/module/docscan/Install doc2scan-software-licence-agreement-agree.png)
-:fontawesome-solid-circle-info:{ style="color: #0F17E4" } Für die Installation dieser Software werden 33,6 MB Speicherplatz benötigt.<br> 
+:fontawesome-solid-circle-info:{ style="color: #0F17E4" } Für die Installation dieser Software werden 33,9 MB Speicherplatz benötigt.<br> 
 ![Speicherplatz](/_images/docbits/einstellungen/module/docscan/Install doc2scan-select destination-space.png)
 
 Sie können den Speicherort ändern, bevor Sie auf `Install` klicken.
@@ -90,8 +91,3 @@ Führen Sie den folgenden Befehl aus, um Doc2Scan Manager zu deinstallieren:
 ```command
 sudo bash /Library/doc2scan/uninstall.sh
 ```
-
-
-
-
-[Deutsche Übersetzung bald verfügbar](https://en.docs.fellowpro.com/docbits/settings/module/doc-scan/)
