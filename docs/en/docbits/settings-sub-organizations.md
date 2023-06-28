@@ -11,4 +11,6 @@ tags:
 
 ## How to Access this feature
 
-In Settings, Global Settings → Groups, Users and Permissions → Sub Organizations as shown below
+In Settings, Global Settings → Groups, Users and Permissions → Sub Organizations as shown below.
+
+![Menu](/_images/docbits/Settings/Sub Organizations/image_1_access.png)
