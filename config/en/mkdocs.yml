@@ -206,7 +206,6 @@ nav:
       - Document Types: docbits/settings-document-types.md
       - List of Values: docbits/settings-list-of-values.md
       - Email Notification: docbits/settings/email-notification.md
-      - Supported Languages: docbits/settings-supported-languages.md
       - Modules: 
         - docbits/settings/Module/index.md
         - Layout Builder: docbits/settings/Module/layout-builder.md
@@ -238,6 +237,7 @@ nav:
 
       - Amount: docbits/settings-amount-settings.md
       - Supplier Validation: docbits/settings-master-data-validation.md
+      - Supported Languages: docbits/settings-supported-languages.md
     - PO Matching:
       - docbits/pomatching/po-matching/index.md
       - Invoice: docbits/pomatching/po-matching-invoices.md
