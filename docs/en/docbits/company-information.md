@@ -9,8 +9,6 @@ tags:
   - Subscription Plan
 ---
 
-If you want to export your documents in [ZUGFeRD](/docbits/zugpferd/) format, you need to fill in your company information in Docbits (DOC²). This will ensure that your exports are successful and compliant with ZUGFeRD standards.
-
 ## Fill in Your Company Information
 
 To fill in your company information, follow these steps:
@@ -32,3 +30,7 @@ In the Company Information section, you can also find information about your sub
 Make sure to keep your subscription plan up-to-date to ensure uninterrupted access to Docbits (DOC²)'s features and services.
 
 Exporting your documents to ZUGFeRD format has never been easier with Docbits (DOC²). Follow these simple steps to get started today!
+
+## Exporting with ZUGFERD
+
+If you want to export your documents in [ZUGFeRD](/docbits/zugpferd/) format, you need to fill in your company information in Docbits (DOC²). This will ensure that your exports are successful and compliant with ZUGFeRD standards.
