@@ -33,18 +33,20 @@ Je nachdem, welches Betriebssystem Sie verwenden, klicken Sie zum Herunterladen 
 Klicken Sie auf `Continue`, akzeptieren Sie die Software-Lizenzvereinbarung mit `Continue` sowie `Agree` und fahren Sie mit der Installation der Software fort.<br> 
 ![Agree](/_images/docbits/einstellungen/module/docscan/Install doc2scan-software-licence-agreement-agree.png)
 :fontawesome-solid-circle-info:{ style="color: #0F17E4" } Für die Installation dieser Software werden 33,6 MB Speicherplatz benötigt.<br> 
-Sie können den Speicherort ändern, bevor Sie im nächsten Schritt auf `Install` klicken.
+![Speicherplatz](/_images/docbits/einstellungen/module/docscan/Install doc2scan-select destination-space.png)
+
+Sie können den Speicherort ändern, bevor Sie auf `Install` klicken.
 
 Sobald der folgende Bildschirm angezeigt wird, sind Sie fast fertig.
 
 ![](/_images/docbits/einstellungen/module/docscan/Install doc2scan-installation-completed-successfully.png)
 
-Open web browser to test if the app works by entering: <https://local.polydocs.io:12500/> <br>
-If you see this message on the screen, you must first configure some settings in your FritzBox network settings if you are using one.
+Öffnen Sie den Webbrowser, um zu testen, ob die App funktioniert, indem Sie folgende Url eingeben: <https://local.polydocs.io:12500/> <br>
+Wenn Sie folgende Meldung auf dem Bildschirm sehen, müssen Sie zunächst einige Einstellungen in den Netzwerkeinstellungen Ihrer FritzBox konfigurieren, sofern Sie eine solche verwenden.
 
 ![](/_images/docbits/einstellungen/module/docscan/browser_FritzBox.png)
 
-Alle Informationen finden Sie **[hier](https://docs.polydocs.io/doc2/modules/doc-scan/#fritzbox-network-settings)**.
+Alle Informationen finden Sie **[hier](/docbits/settings/modules/doc-scan/#fritzbox-netzwerk-einstellungen)**.
 
 Wenn Sie diesen Bildschirm sehen, können Sie auf `Doc2` klicken.
 
