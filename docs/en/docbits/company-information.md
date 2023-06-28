@@ -7,6 +7,7 @@ tags:
   - Settings
   - Company information
   - Subscription Plan
+  - ZUGFeRD
 ---
 
 ## Fill in Your Company Information
