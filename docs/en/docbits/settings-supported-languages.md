@@ -1,13 +1,13 @@
 ---
 title: "Supported Languages"
-description: All the details you need for SSO configuration can be found in SSO Service Provider Settings of Docbits (DOC²). From needed Entity ID, SSO URL to the Certificate.
+description: A list of all the supported languages available in Docbits (DOC²).
 tags:
   - Docbits (DOC²)
   - Settings
   - Supported Languages
 ---
 
-# List of Supported Languages
+## List of Supported Languages
 
 **LangCode**|**Language**
 -----|----- 
