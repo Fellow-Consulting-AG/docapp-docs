@@ -10,9 +10,7 @@ tags:
 # List of Supported Languages
 
 **LangCode**|**Language**
------|-----
- | 
- | 
+-----|----- 
 afr|Afrikaans
 amh|Amharic
 ara|Arabic
