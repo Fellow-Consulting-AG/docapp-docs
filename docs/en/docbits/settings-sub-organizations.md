@@ -22,7 +22,7 @@ You will then be taken to a page that looks similar to this
 This is where you will find your previously created sub-organizations, as well as where you can create new sub-organizations.
 
 
-## How to create a Sub Organization
+## How to create a Sub-Organization
 
 1. Click on the `+ NEW` button
 
