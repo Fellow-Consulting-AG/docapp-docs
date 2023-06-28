@@ -198,7 +198,7 @@ nav:
       - Groups, Users and Permissions:
         - docbits/settings/groups-users-permissons/index.md
         - Users: docbits/settings-users.md
-        - Sub Organizations: docbits/settings-sub-organizations.md
+        - Sub-Organizations: docbits/settings-sub-organizations.md
       - Integration:
         - docbits/settings/integration/index.md
         - API: docbits/settings/integration/api-integration.md
