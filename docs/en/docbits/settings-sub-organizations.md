@@ -1,17 +1,17 @@
 ---
-title: "How to Manage Sub Organizations in Docbits (DOC²)"
-description: Learn how to manage sub organizations in Docbits (DOC²). 
+title: "How to Manage Sub-Organizations in Docbits (DOC²)"
+description: Learn how to manage sub-organizations in Docbits (DOC²). 
 date: "2021-11-01"
 tags:
   - Docbits (DOC²)
   - Settings
   - Groups, Users and Permissions
-  - Sub Organizations
+  - Sub-Organizations
 ---
 
 ## How to Access this feature
 
-In Settings, Global Settings → Groups, Users and Permissions → Sub Organizations as shown below.
+In Settings, Global Settings → Groups, Users and Permissions → Sub-Organizations as shown below.
 
 ![Access](/_images/docbits/Settings/Sub Organizations/image_1_access.png)
 
@@ -19,7 +19,7 @@ You will then be taken to a page that looks similar to this
 
 ![Menu](/_images/docbits/Settings/Sub Organizations/image_2_menu.png)
 
-This is where you will find your previously created sub organizations, as well as where you can create new sub organizations.
+This is where you will find your previously created sub-organizations, as well as where you can create new sub-organizations.
 
 
 ## How to create a Sub Organization
@@ -32,4 +32,4 @@ This is where you will find your previously created sub organizations, as well a
 
 ![New Menu](/_images/docbits/Settings/Sub Organizations/image_4_new_menu.png)
 
-3. Enter the details of the sub organization you want to create, the name and description, then click on the `SAVE` button. You should then find your newly created sub organization at the bottom of the list of existing sub organizations.
+3. Enter the details of the sub-organization you want to create, the name and description, then click on the `SAVE` button. You should then find your newly created sub-organization at the bottom of the list of existing sub-organizations.
