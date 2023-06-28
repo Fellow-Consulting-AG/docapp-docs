@@ -85,7 +85,6 @@ Wenn Sie also eine FritzBox nutzen müssen Sie im Menü der FritzBox zuerst folg
     Tragen Sie im Abschnitt `DNS-Rebind-Schutz` im Eingabefeld **Hostnamen-Ausnahmen** local.polydocs.io ein, für den der DNS-Rebind-Schutz nicht gelten soll.<br> 
     Bestätigen Sie mit `Übernehmen`.
 ---
-
 ## Doc2Scan Service Manager deinstallieren
 Führen Sie den folgenden Befehl aus, um Doc2Scan Manager zu deinstallieren:
 ```command
