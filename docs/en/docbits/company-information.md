@@ -27,10 +27,8 @@ In the Company Information section, you can also find information about your sub
 
 Make sure to keep your subscription plan up-to-date to ensure uninterrupted access to Docbits (DOC²)'s features and services.
 
-Exporting your documents to ZUGFeRD format has never been easier with Docbits (DOC²). Follow these simple steps to get started today!
-
 ## Exporting with ZUGFeRD
 
-If you want to export your documents in [ZUGFeRD](/docbits/zugpferd/) format, you need to fill in your company information in Docbits (DOC²). This will ensure that your exports are successful and compliant with ZUGFeRD standards.
+If you want to export your documents in [ZUGFeRD](/docbits/zugpferd/) format, you need to fill in your company information in Docbits (DOC²). This will ensure that your exports are successful and compliant with ZUGFeRD standards. Please note that a valid address is required for the export to work.
 
-Please note that a valid address is required for the export to work.
+Exporting your documents to ZUGFeRD format has never been easier with Docbits (DOC²). Follow these simple steps to get started today!
