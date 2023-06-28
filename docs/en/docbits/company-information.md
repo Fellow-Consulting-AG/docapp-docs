@@ -1,15 +1,12 @@
 ---
-title: "Export Documents to ZUGFeRD Format - Company Information | Docbits (DOC²)"
+title: Company Information 
 date: "2022-10-19"
-description: "Learn how to export documents to ZUGFeRD format by filling in your company information in Docbits (DOC²). Get all the information you need to store accordingly for a successful export."
+description: "Learn how to create and store company specific information in Docbits (DOC²)"
 tags:
-  - ZUGFeRD
-  - export documents
   - Docbits (DOC²)
-  - subscription plan
+  - Settings
+  - Company information
 ---
-
-# Export Documents to ZUGFeRD Format - Company Information
 
 If you want to export your documents in [ZUGFeRD](/docbits/zugpferd/) format, you need to fill in your company information in Docbits (DOC²). This will ensure that your exports are successful and compliant with ZUGFeRD standards.
 
