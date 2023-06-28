@@ -19,8 +19,6 @@ To fill in your company information, follow these steps:
 
 ![Fill in Your Company Information in Docbits (DOC²)](/_images/docbits/Settings/Company Information/Image_3_example_info.png "Fill in Your Company Information in Docbits (DOC²)")
 
-Please note that a valid address is required for the export to work.
-
 ## Subscription Plan and Usage
 
 In the Company Information section, you can also find information about your subscription plan, including the start and end dates. You can also view your processed pages for a selected period using the calendar.
@@ -34,3 +32,5 @@ Exporting your documents to ZUGFeRD format has never been easier with Docbits (D
 ## Exporting with ZUGFeRD
 
 If you want to export your documents in [ZUGFeRD](/docbits/zugpferd/) format, you need to fill in your company information in Docbits (DOC²). This will ensure that your exports are successful and compliant with ZUGFeRD standards.
+
+Please note that a valid address is required for the export to work.
