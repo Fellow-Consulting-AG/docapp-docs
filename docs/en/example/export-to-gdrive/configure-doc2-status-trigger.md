@@ -2,7 +2,6 @@
 title: Configuring Docbits (DOC²) App Status Trigger node
 description: Here we will check how to add and configure Docbits (DOC²) app status trigger node
 tags:
-  - Workflow²
   - Example
   - Docbits (DOC²)
   - Export
