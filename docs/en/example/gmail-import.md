@@ -3,7 +3,6 @@ title: Email Import with GMail to Docbits (DOC²)
 description: This workflow searches for new e-mails in the configured sub-mailboxes of an e-mail address and uploads it to our Docbits (DOC²) system.
 date: 2022-09-14
 tags:
-  - Workflow²
   - Email
   - Gmail
   - Import
