@@ -3,7 +3,7 @@ title: Gruppen, Benutzer und Berechtigungen
 description: In diesem Bereich können Sie Benutzer und ihre Rollen verwalten, Unterorganisationen erstellen sowie Gruppen konfigurieren, ihre Benutzer und Berechtigungen für verschiedene Dokumententypen festlegen.
 date: "2022-09-23"
 tags:
-  - DocBits (Doc²)
+  - DocBits (DOC²)
   - Einstellungen
   - Gruppen
   - Benutzer

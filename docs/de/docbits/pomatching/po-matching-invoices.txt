@@ -1,4 +1,4 @@
-Changes:- Hinzufügen eines Call-to-Action-Buttons für eine kostenlose Testversion von DocBits (Doc²).
+Changes:- Hinzufügen eines Call-to-Action-Buttons für eine kostenlose Testversion von DocBits (DOC²).
 
 ## Laden Sie die Rechnung in DOC2 hoch
 

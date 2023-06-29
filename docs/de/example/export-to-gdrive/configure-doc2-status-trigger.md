@@ -1,18 +1,18 @@
 ---
-title: Configuring DocBits (Doc²) App Status Trigger node
-description: Here we will check how to add and configure DocBits (Doc²) app status trigger node
+title: Configuring DocBits (DOC²) App Status Trigger node
+description: Here we will check how to add and configure DocBits (DOC²) app status trigger node
 tags:
   - Workflow²
   - Example
-  - DocBits (Doc²)
+  - DocBits (DOC²)
   - Export
   - Google Drive
 
 ---
 
-## Getting DocBits (Doc²) API Key
+## Getting DocBits (DOC²) API Key
 
-Open **DocBits (Doc²)**, click **Settings** from the top right menu bar
+Open **DocBits (DOC²)**, click **Settings** from the top right menu bar
 and then on **API** option
 
 ![Settings](/_images/example/gdrive/image8.png)

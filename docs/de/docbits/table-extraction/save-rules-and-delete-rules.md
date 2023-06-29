@@ -3,7 +3,7 @@ title: "Regeln speichern und löschen"
 description: Hier erfahren Sie, wie Sie Regeln speichern und löschen können. Lesen Sie diese wichtige Dokumentation, bevor Sie Regeln löschen.
 date: "2022-02-24"
 tags:
-  - DocBits (Doc²)
+  - DocBits (DOC²)
   - Tabellenextraktion
   - Regeln
   - Speichern
@@ -14,13 +14,13 @@ tags:
 
 [Registrieren Sie sich für eine 30-tägige kostenlose Testversion](https://app.polydocs.io){ .md-button .md-button--primary }
 
-Sobald ein Dokument in DocBits (Doc²) trainiert wurde und alle Regeln für die Extraktion der Tabellen für dieses Dokument gespeichert wurden, müssen sie gespeichert werden, damit für zukünftige Importe kein manuelles Training erforderlich ist. Stattdessen werden die Dokumente und ihre Tabellen automatisch von DocBits (Doc²) extrahiert und die Daten werden in der vom Training definierten Struktur gebracht.
+Sobald ein Dokument in DocBits (DOC²) trainiert wurde und alle Regeln für die Extraktion der Tabellen für dieses Dokument gespeichert wurden, müssen sie gespeichert werden, damit für zukünftige Importe kein manuelles Training erforderlich ist. Stattdessen werden die Dokumente und ihre Tabellen automatisch von DocBits (DOC²) extrahiert und die Daten werden in der vom Training definierten Struktur gebracht.
 
 Sobald die Dokumenten-/Tabellenextraktion trainiert wurde und die Daten in einem zufriedenstellenden Format vorliegen, können die Regeln für die Tabellenextraktion mit der Schaltfläche "REGELN SPEICHERN" gespeichert werden.
 
 ![](/_images/docbits/image-33-1024x763.png "Screenshot der Schaltfläche 'Regeln speichern'")
 
-Sobald dieses Dokument in Zukunft in DocBits (Doc²) importiert wird, werden die Regeln automatisch während der Extraktion angewendet und bringen die Daten immer in das trainierte Format.
+Sobald dieses Dokument in Zukunft in DocBits (DOC²) importiert wird, werden die Regeln automatisch während der Extraktion angewendet und bringen die Daten immer in das trainierte Format.
 
 Der Regelindikator zeigt an, wie viele Regeln für dieses Dokument definiert und gespeichert wurden.
 

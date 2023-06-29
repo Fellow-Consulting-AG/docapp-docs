@@ -1,31 +1,31 @@
 ---
-title: "DocBits (Doc²) - OnBoarding"
-description: "Dieser Leitfaden hilft Ihnen, die Grundlagen von DocBits (Doc²) zu erlernen und Sie mit einem IPS zu starten, der Ihre Produktivität maximiert."
+title: "DocBits (DOC²) - OnBoarding"
+description: "Dieser Leitfaden hilft Ihnen, die Grundlagen von DocBits (DOC²) zu erlernen und Sie mit einem IPS zu starten, der Ihre Produktivität maximiert."
 date: "2023-05-11"
 tags:
-  - DocBits (Doc²)
+  - DocBits (DOC²)
   - OnBoarding
   - Leitfaden
   - Ersteinrichtung
   - Dokumentenprüfung verstehen
 ---
 
-# DocBits (Doc²) OnBoarding - Leitfaden für Produktivität
+# DocBits (DOC²) OnBoarding - Leitfaden für Produktivität
 
-Willkommen beim DocBits (Doc²) OnBoarding Guide!<br> Dieser Leitfaden hilft Ihnen, die Grundlagen von DocBits (Doc²) zu erlernen, damit Sie mit einem IPS arbeiten können, das Ihre Produktivität maximiert.
+Willkommen beim DocBits (DOC²) OnBoarding Guide!<br> Dieser Leitfaden hilft Ihnen, die Grundlagen von DocBits (DOC²) zu erlernen, damit Sie mit einem IPS arbeiten können, das Ihre Produktivität maximiert.
 
 ## **Durchführung der Ersteinrichtung**
 
 Zunächst wollen wir Ihnen erklären, wie Sie auf Ihr System zugreifen und es konfigurieren.
 
-Bitte beachten Sie, dass DocBits (Doc²) nicht in Tenant funktioniert. Alle Kunden nutzen denselben Cluster, welcher in Frankfurt/Deutschland gehostet wird.
+Bitte beachten Sie, dass DocBits (DOC²) nicht in Tenant funktioniert. Alle Kunden nutzen denselben Cluster, welcher in Frankfurt/Deutschland gehostet wird.
 
 [https://app.polydocs.io/](https://app.polydocs.io/)
 
 Hier sind zwei Möglichkeiten, um auf das System zuzugreifen:
 
 1. Kontaktieren Sie Ihren FellowPro AG Ansprechpartner oder schreiben Sie an [support@polydocs.io](mailto: support@polydocs.io), um Ihr Unternehmen zu registrieren.
-2. Sie haben sich entschieden, dass DocBits (Doc²) Ihre tägliche Arbeit erleichtern soll und haben auch bereits Kontakt zu uns aufgenommen? Dann erhalten Sie als nächstes eine Onboarding-E-Mail und sind somit der erste Benutzer und damit der Administrator Ihrer Organisation.
+2. Sie haben sich entschieden, dass DocBits (DOC²) Ihre tägliche Arbeit erleichtern soll und haben auch bereits Kontakt zu uns aufgenommen? Dann erhalten Sie als nächstes eine Onboarding-E-Mail und sind somit der erste Benutzer und damit der Administrator Ihrer Organisation.
 
 #### Hier ist Ihre Schritt-für-Schritt-Anleitung zur Einrichtung:
 
@@ -44,9 +44,9 @@ Sie können Benutzer unter **Einstellungen** > **Gruppen, Benutzer und Berechtig
 
 ## **Dokumentenprüfung verstehen**
 
-Nachdem die Ersteinrichtung abgeschlossen ist, werden Sie die meiste Zeit in DocBits (Doc²) damit verbringen, Beispielrechnungen zu überprüfen.
+Nachdem die Ersteinrichtung abgeschlossen ist, werden Sie die meiste Zeit in DocBits (DOC²) damit verbringen, Beispielrechnungen zu überprüfen.
 
-**Sie können Dokumente auf folgende Weise an DocBits (Doc²) senden:**
+**Sie können Dokumente auf folgende Weise an DocBits (DOC²) senden:**
 
 1. Manuelles Hochladen
 2. E-Mail
@@ -63,4 +63,4 @@ Gehen Sie wie folgt vor:
 2. **Überprüfen** Sie die extrahierten Ergebnisse. Felder, die manuell bearbeitet werden müssen, erkennen Sie an der roten Markierung am Anfang des jeweiligen Feldes.
 3. Nach erfolgreicher Überprüfung und Korrektur klicken Sie auf **Bestätigen & Exportieren**.
 
-Verbessern Sie Ihre Produktivität mit DocBits (Doc²) noch heute! Kontaktieren Sie die FellowPro AG für weitere Informationen.
+Verbessern Sie Ihre Produktivität mit DocBits (DOC²) noch heute! Kontaktieren Sie die FellowPro AG für weitere Informationen.

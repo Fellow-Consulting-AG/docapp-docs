@@ -1,19 +1,19 @@
 ---
 title: Dokumenttypen, Feld-Einstellungen und Profile
-description: Hier finden Sie alle verfügbaren Dokumenttypen in DocBits (Doc²) wie Rechnung, Gutschrift, Lieferschein, Auftragsbestätigung und viele mehr.
+description: Hier finden Sie alle verfügbaren Dokumenttypen in DocBits (DOC²) wie Rechnung, Gutschrift, Lieferschein, Auftragsbestätigung und viele mehr.
 date: "2021-10-29"
 tags:
-  - DocBits (Doc²)
+  - DocBits (DOC²)
   - Einstellungen
   - Dokumenttypen
   - Feld-Einstellungen
 ---
 
-Im DocBits (Doc²) finden Sie das Menü "Einstellungen" in der oberen Leiste auf der "Startseite".
+Im DocBits (DOC²) finden Sie das Menü "Einstellungen" in der oberen Leiste auf der "Startseite".
 
 ![DOC2 Dashboard Einstellungen](/_images/docbits/DOC2_Dashboard_Settings.png "DOC2 Dashboard Einstellungen")
 
-Wenn Sie als Administrator bei DocBits (Doc²) angemeldet sind, finden Sie unter dem jeweiligen Dokumenttyp alle Felder, die extrahiert werden können.
+Wenn Sie als Administrator bei DocBits (DOC²) angemeldet sind, finden Sie unter dem jeweiligen Dokumenttyp alle Felder, die extrahiert werden können.
 
 Öffnen Sie das Menü "Dokumenttypen".
 
@@ -58,7 +58,7 @@ Für jedes Feld können Sie die folgenden Optionen aktivieren:
 
 - VERSTECKT: Hier können Sie definieren, ob ein Feld ausgeblendet oder in der Extraktionsansicht angezeigt werden soll.
 
-- VALIDIERUNG ERFORDERLICH: Hier können Sie definieren, ob ein Feld immer manuell validiert werden muss, auch wenn es von DocBits (Doc²) zu 100% gelesen wurde.
+- VALIDIERUNG ERFORDERLICH: Hier können Sie definieren, ob ein Feld immer manuell validiert werden muss, auch wenn es von DocBits (DOC²) zu 100% gelesen wurde.
 
 - OCR und MATCH SCORE: Einstellung wie unten beschrieben, pro Feld.
 
@@ -80,7 +80,7 @@ Hier können Sie die Empfindlichkeit der OCR (Optical Character Recognition) Fun
 
 **MATCH SCORE:**
 
-Hier können Sie die Empfindlichkeit der MATCH SCORE Funktion für alle Felder auf einmal einstellen. Dieser Wert bestimmt ab wann ein Feld rot markiert wird, wenn DocBits (Doc²) das Feld nicht mit 100%iger Wahrscheinlichkeit extrahiert hat. In diesem Fall muss das Feld manuell validiert werden.
+Hier können Sie die Empfindlichkeit der MATCH SCORE Funktion für alle Felder auf einmal einstellen. Dieser Wert bestimmt ab wann ein Feld rot markiert wird, wenn DocBits (DOC²) das Feld nicht mit 100%iger Wahrscheinlichkeit extrahiert hat. In diesem Fall muss das Feld manuell validiert werden.
 
 Die Schaltfläche "STANDARDEINSTELLUNGEN WIEDERHERSTELLEN" setzt beide Werte auf "50" zurück.
 

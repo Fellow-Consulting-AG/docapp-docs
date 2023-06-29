@@ -20,11 +20,11 @@ Bei der digitalen Transformation geht es um die gesamte Umgestaltung des Unterne
 
 Jeder Geschäftsprozess beginnt, enthält oder endet mit einem Dokument. Egal ob in Papierform oder bereits als Datei. Dies nennt man unstrukturierte Daten. Obwohl sich die Informationen auf oder in dem Dokument befinden, können sie nicht automatisch in die Arbeitsprozesse integriert werden, da sie einfach nicht von jeder Software erkannt werden.
 
-## Was ist DocBits (Doc²)?
+## Was ist DocBits (DOC²)?
 
-DocBits (Doc²) ist die neueste Software und Lösung zur Dokumentenerfassung, die von der FellowPro AG entwickelt wurde. Es handelt sich um eine komplett cloudbasierte Lösung, die mit Hilfe von Künstlicher Intelligenz und Machine Learning Ihre Dokumente präzise identifiziert, klassifiziert, analysiert und liest. Egal, ob auf Papier oder in einer Datei. DocBits (Doc²) lernt selbstständig, der Erfahrungsgrad steigt mit jedem Dokument. DocBits (Doc²) erreicht dies durch Schwarmintelligenz.
+DocBits (DOC²) ist die neueste Software und Lösung zur Dokumentenerfassung, die von der FellowPro AG entwickelt wurde. Es handelt sich um eine komplett cloudbasierte Lösung, die mit Hilfe von Künstlicher Intelligenz und Machine Learning Ihre Dokumente präzise identifiziert, klassifiziert, analysiert und liest. Egal, ob auf Papier oder in einer Datei. DocBits (DOC²) lernt selbstständig, der Erfahrungsgrad steigt mit jedem Dokument. DocBits (DOC²) erreicht dies durch Schwarmintelligenz.
 
-<ins>Die Vorteile von DocBits (Doc²) auf einen Blick:</ins>
+<ins>Die Vorteile von DocBits (DOC²) auf einen Blick:</ins>
 
   -  Erkennt die benötigten Daten - auch handschriftliche und tabellarische Informationen - zuverlässig und ist selbstlernend, auch bei Korrekturen durch den Benutzer
   -  Mit Schwarmintelligenz profitieren Sie kontinuierlich von den Erfahrungen anderer Kunden
@@ -37,18 +37,18 @@ DocBits (Doc²) ist die neueste Software und Lösung zur Dokumentenerfassung, di
   -  Spart Zeit im digitalen Posteingang
   -  Reduziert Fehler, die durch manuelle Verarbeitung verursacht werden
 
-## Wie nutzen Sie DocBits (Doc²)?
+## Wie nutzen Sie DocBits (DOC²)?
 
   -  Scannen und Erkennen von Dokumenten aller Art (Rechnungen, Verträge, Formulare, ärztliche Verordnungen usw.)
   -  Zuverlässige Extraktion der Daten im Dokument und Integration und Weiterverarbeitung im ERP-, RPA- oder CRM-System
   -  Validierung der extrahierten Daten und Verifizierung mit anderen Systemen aus internen und öffentlichen Quellen
   -  Integration in Ihre Systemlandschaft (z. B. ERP-System, Dokumentenmanagement, Workflow-System etc.)
 
-## Warum DocBits (Doc²) genau das Richtige für Sie ist
+## Warum DocBits (DOC²) genau das Richtige für Sie ist
 
   -   Viele Unternehmen haben erkannt, dass z. B. die Bearbeitung von Eingangsrechnungen sehr zeitaufwändig sein kann. Sie versuchen, die Produktivität zu erhöhen und den Purchase-to-Pay-Prozess zu optimieren, indem sie Produkte zur "Digitalisierung" von Rechnungen einführen.
 
-  -  Darüber hinaus nutzt DocBits (Doc²) Schwarmintelligenz. Was bedeutet das? Sie profitieren von den Erfahrungen anderer Kunden und deren „Lernkurve“, ohne sensible Daten zu teilen. Mit der cloudbasierten Rule Engine sorgen wir für eine kontinuierliche Verbesserung der Anwendung. Sie benötigen keine Entwickler oder Datenwissenschaftler, da das System aus den Eingaben des Benutzers lernt und der Prozess ohne Unterbrechungen abläuft.
+  -  Darüber hinaus nutzt DocBits (DOC²) Schwarmintelligenz. Was bedeutet das? Sie profitieren von den Erfahrungen anderer Kunden und deren „Lernkurve“, ohne sensible Daten zu teilen. Mit der cloudbasierten Rule Engine sorgen wir für eine kontinuierliche Verbesserung der Anwendung. Sie benötigen keine Entwickler oder Datenwissenschaftler, da das System aus den Eingaben des Benutzers lernt und der Prozess ohne Unterbrechungen abläuft.
 
   -  Mit Hilfe von Deep-Learning-Algorithmen können nicht nur einfache Kopfdaten eines Dokuments, sondern auch komplizierte Strukturen wie Tabellen erfasst werden. Es werden natürlich nicht nur Rechnungen, sondern alle Arten von Dokumenten verarbeitet. Egal ob Frachtbriefe, Mitgliedsanträge, ärztliche Verordnungen und vieles mehr.
 

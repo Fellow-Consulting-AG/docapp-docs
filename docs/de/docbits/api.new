@@ -1,13 +1,13 @@
 ---
-title: "WEBHOOK für DocBits (Doc²): Einfaches Hochladen von Dokumenten per POST-Anfrage"
-description: Mit dem unten angehängten Webhook können Sie Dokumente direkt an DocBits (Doc²) übertragen, indem Sie einen einfachen POST-Aufruf tätigen. Erfahren Sie hier, wie Sie den Webhook nutzen können.
+title: "WEBHOOK für DocBits (DOC²): Einfaches Hochladen von Dokumenten per POST-Anfrage"
+description: Mit dem unten angehängten Webhook können Sie Dokumente direkt an DocBits (DOC²) übertragen, indem Sie einen einfachen POST-Aufruf tätigen. Erfahren Sie hier, wie Sie den Webhook nutzen können.
 date: "2021-10-22"
 tags:
-  - DocBits (Doc²)
+  - DocBits (DOC²)
   - API
 ---
 
-Mit dem unten angehängten Webhook können Sie Dokumente direkt an DocBits (Doc²) übertragen, indem Sie einen einfachen POST-Aufruf tätigen. Alle erforderlichen Parameter sind bereits vorausgefüllt, sodass Sie nur noch einen einfachen Aufruf tätigen müssen.
+Mit dem unten angehängten Webhook können Sie Dokumente direkt an DocBits (DOC²) übertragen, indem Sie einen einfachen POST-Aufruf tätigen. Alle erforderlichen Parameter sind bereits vorausgefüllt, sodass Sie nur noch einen einfachen Aufruf tätigen müssen.
 
 Die folgenden Parameter werden verwendet:
 

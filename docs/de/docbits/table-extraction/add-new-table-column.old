@@ -1,15 +1,15 @@
 ---
 title: "Add new table column"
-description: In DocBits (Doc²) it is possible to select any extraction in a table and extract it to a new column
+description: In DocBits (DOC²) it is possible to select any extraction in a table and extract it to a new column
 date: "2022-02-24"
 tags:
   - Table
-  - DocBits (Doc²)
+  - DocBits (DOC²)
 ---
 
 # Add new table column
 
-DocBits (Doc²) offers the possibility to manually create columns for extracted documents. This is necessary when there is a need to manually map columns to rows (fields) on the extracted document. When this is necessary and how it works you will learn here: [Manual row selection](/docbits/table/manual-row-selection/)
+DocBits (DOC²) offers the possibility to manually create columns for extracted documents. This is necessary when there is a need to manually map columns to rows (fields) on the extracted document. When this is necessary and how it works you will learn here: [Manual row selection](/docbits/table/manual-row-selection/)
 
 Import any document and open it. Navigate to the table extraction view like via the "LINE ITEMS" button:
 

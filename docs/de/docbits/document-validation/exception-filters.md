@@ -6,11 +6,11 @@ tags:
   - Allgemein
   - Ausnahme
   - Filter
-  - DocBits (Doc²)
+  - DocBits (DOC²)
 
 ---
 
-Grundsätzlich werden Dokumente in DocBits (Doc²) über KI und Regex klassifiziert/definiert. Es gibt jedoch einige Ausnahmen, für die Sie einen zusätzlichen negativen Filter (Ausnahmefilter) benötigen, um bestimmte Dinge auszuschließen. Ausnahmefilter sind wichtig, um die besten Ergebnisse zu erzielen.
+Grundsätzlich werden Dokumente in DocBits (DOC²) über KI und Regex klassifiziert/definiert. Es gibt jedoch einige Ausnahmen, für die Sie einen zusätzlichen negativen Filter (Ausnahmefilter) benötigen, um bestimmte Dinge auszuschließen. Ausnahmefilter sind wichtig, um die besten Ergebnisse zu erzielen.
 
 Um einen Ausnahmefilter zu definieren, öffnen Sie die Dokumentenansicht für ein beliebiges Dokument:
 

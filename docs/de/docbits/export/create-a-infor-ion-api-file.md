@@ -1,13 +1,13 @@
 ---
 title: Infor ION API-Datei erstellen - Schritt-für-Schritt-Anleitung
-description: Erfahren Sie, wie Sie eine Infor ION API-Datei erstellen, die für den Export von DocBits (Doc²) nach Infor mit den erforderlichen Berechtigungen des InforOS-Benutzers benötigt wird.
+description: Erfahren Sie, wie Sie eine Infor ION API-Datei erstellen, die für den Export von DocBits (DOC²) nach Infor mit den erforderlichen Berechtigungen des InforOS-Benutzers benötigt wird.
 date: 2022-04-24
 hero: Infor ION API-Datei erstellen
-og_title: DocBits (Doc²) - Infor ION API-Datei erstellen
+og_title: DocBits (DOC²) - Infor ION API-Datei erstellen
 tags:
   - Export nach Infor
   - ION
-  - DocBits (Doc²)
+  - DocBits (DOC²)
   - Einstellungen
 ---
 

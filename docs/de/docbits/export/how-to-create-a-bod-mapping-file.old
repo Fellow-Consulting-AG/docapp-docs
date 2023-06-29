@@ -1,9 +1,9 @@
 ---
 title: "How to create a BOD mapping file"
-description: This is a step by step guide how to create a BOD mapping file. You will find all values and fields that would need an adjustment in DocBits (Doc²) and the BOD.
+description: This is a step by step guide how to create a BOD mapping file. You will find all values and fields that would need an adjustment in DocBits (DOC²) and the BOD.
 date: "2021-10-28"
 tags:
-  - DocBits (Doc²)
+  - DocBits (DOC²)
   - Export
   - Infor
   - BOD
@@ -22,7 +22,7 @@ To use the example file, rename the file from “BOD\_Mapping.txt” to “BOD\_
 
 In the first block, all static values will be defined. Fields that would need an adjustment are "LogicalID" and "AccountingEntityID".
 
-The "LogicalID" must be set to the logical ID of the IMS connection point that was defined for the DocBits (Doc²) BOD export.
+The "LogicalID" must be set to the logical ID of the IMS connection point that was defined for the DocBits (DOC²) BOD export.
 
 The "AccountingEnity" must be set to the accounting entity of the target Infor ERP system.
 
@@ -49,7 +49,7 @@ SFP_AccountingEntityID=SyncCaptureDocumentType\\DataArea\\Sync\\AccountingEntity
 SFV_AccountingEntityID=infor.ln.100
 ```
 
-In the second block you can adjust the document type mapping. On the left side you have the document type of DocBits (Doc²) and on the right side the document type of the BOD.
+In the second block you can adjust the document type mapping. On the left side you have the document type of DocBits (DOC²) and on the right side the document type of the BOD.
 
 ```
 #All generated fields.
@@ -69,7 +69,7 @@ Document_Types=Invoice
 Invoice=SupplierInvoice
 ```
 
-In the third block you can adjust the field mapping. On the left side are the fields of DocBits (Doc²) and on the right side the field names of the BOD.
+In the third block you can adjust the field mapping. On the left side are the fields of DocBits (DOC²) and on the right side the field names of the BOD.
 
 ```
 #Index Field Mapping

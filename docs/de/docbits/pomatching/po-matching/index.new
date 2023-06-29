@@ -3,7 +3,7 @@ title: "PO Matching"
 description: Es gibt drei Möglichkeiten, wie Sie Ihre Bestellung abgleichen können. Mit der entsprechenden Rechnung, Lieferschein und/oder Auftragsbestätigung.
 date: "2022-01-24"
 tags:
-  - DocBits (Doc²)
+  - DocBits (DOC²)
   - PO Matching
   - Tastenkombinationen
 ---
@@ -16,11 +16,11 @@ PO Matching ist ein Prozess, bei dem eine Bestellung mit den zugehörigen Dokume
 
 Wenn Sie alle oben genannten Dokumente abgleichen möchten, benötigen Sie auch Kontrollinformationen wie die tatsächliche Anzahl der gelieferten Artikel und deren Qualitätskontrolle. Sobald alle vier Komponenten übereinstimmen, wird die Rechnung in die AP-Datenbank eingegeben.
 
-## Einstellungen in DocBits (Doc²)
+## Einstellungen in DocBits (DOC²)
 
-Entsprechende Einstellungen müssen in DocBits (Doc²) unter Einstellungen - Module - Bestellung vorgenommen werden.
+Entsprechende Einstellungen müssen in DocBits (DOC²) unter Einstellungen - Module - Bestellung vorgenommen werden.
 
-![Einstellungen in DocBits (Doc²)](/_images/docbits/DOC2_POM_1_Modules.png "Einstellungen in DocBits (Doc²)")
+![Einstellungen in DocBits (DOC²)](/_images/docbits/DOC2_POM_1_Modules.png "Einstellungen in DocBits (DOC²)")
 
 ## PO in Dokumenten
 

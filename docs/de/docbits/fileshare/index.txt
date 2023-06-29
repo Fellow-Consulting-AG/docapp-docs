@@ -1,4 +1,4 @@
 Changes:- Der Titel wurde präzisiert und um "Optionen und Konfigurationen" ergänzt, um das Thema der Seite genauer zu beschreiben.
-- Die Beschreibung wurde optimiert, um den Nutzen von DocBits (Doc²) für den Import und Export hervorzuheben und potenzielle Nutzer anzusprechen.
+- Die Beschreibung wurde optimiert, um den Nutzen von DocBits (DOC²) für den Import und Export hervorzuheben und potenzielle Nutzer anzusprechen.
 - Die Tags wurden um "Konfiguration" und "Betriebssysteme" erweitert, um die Relevanz der Seite für diese Themenbereiche zu erhöhen.
 - Ein Alt-Text wurde für das verlinkte Bild hinzugefügt, um die Barrierefreiheit zu verbessern und die Sichtbarkeit der Seite in Suchmaschinen zu erhöhen.

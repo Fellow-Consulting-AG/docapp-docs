@@ -3,7 +3,7 @@ title: IDM Geschäftskontextmodell
 description: In dieser Dokumentation finden Sie Informationen zur Erstellung neuer Dokumenttypen in IDM und deren Verbindung mit der entsprechenden Arbeitsumgebung in LN.
 date: 2023-05-16
 tags:
-  - DocBits (Doc²)
+  - DocBits (DOC²)
   - Infor
   - IDM
   - LN
@@ -17,9 +17,9 @@ IDM ist eine von mehreren Infor-Anwendungen, die die Benutzeroberfläche von Inf
 
 IDM ist ein zentrales Repository, in dem Sie Ihre allgemeinen Geschäftsregeln für die Erstellung, Speicherung und Verwaltung von Dokumenten - wie Rechnungen, Lieferantendokumente und Mitarbeiterdaten - verwalten können. Sie können die physischen Dateien anzeigen, bearbeiten, erstellen und speichern.
 
-Sie können IDM mit DocBits (Doc²) erweitern. Es bietet Funktionen zur optischen Zeichenerkennung (OCR) und intelligenten Zeichenerkennung (ICR). Diese Werkzeuge ermöglichen umfassendere und verbesserte Prozesse zur Dokumentenerfassung.
+Sie können IDM mit DocBits (DOC²) erweitern. Es bietet Funktionen zur optischen Zeichenerkennung (OCR) und intelligenten Zeichenerkennung (ICR). Diese Werkzeuge ermöglichen umfassendere und verbesserte Prozesse zur Dokumentenerfassung.
 Sie können Ihre Dokumente über einen Standard-Webbrowser scannen, verbinden und die Dokumente mit Ihrem Geschäftsprozess verbinden.
-Mit IDM finden Sie die Dokumente, die Sie benötigen, und arbeiten immer mit der neuesten, vollständigsten Version eines Dokuments. Durch den kontextbezogenen Zugriff auf alle wichtigen Geschäftsinformationen automatisiert DocBits (Doc²) Ihre Dokumenten-Workflows durch die automatische Kategorisierung und den Abruf wichtiger Dokument-Metadaten weiter.
+Mit IDM finden Sie die Dokumente, die Sie benötigen, und arbeiten immer mit der neuesten, vollständigsten Version eines Dokuments. Durch den kontextbezogenen Zugriff auf alle wichtigen Geschäftsinformationen automatisiert DocBits (DOC²) Ihre Dokumenten-Workflows durch die automatische Kategorisierung und den Abruf wichtiger Dokument-Metadaten weiter.
 
 
 ## Zugriff auf IDM

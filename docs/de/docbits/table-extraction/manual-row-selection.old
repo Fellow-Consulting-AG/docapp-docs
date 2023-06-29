@@ -1,9 +1,9 @@
 ---
 title: "Manual row selection"
 date: "2022-02-18"
-description: It is possible that on some documents text in rows is not only written under one column. It might happen that it is written through different columns. Here is how rows can be selected manually in DocBits (Doc²).
+description: It is possible that on some documents text in rows is not only written under one column. It might happen that it is written through different columns. Here is how rows can be selected manually in DocBits (DOC²).
 tags:
-  - DocBits (Doc²)
+  - DocBits (DOC²)
   - Row
   - Selection
   - manually
@@ -22,7 +22,7 @@ On the screenshot you can see that the table and columns have already been defin
 
 In that case it is not possible for the system to automatically define to which column the information belongs.
 
-To solve this issue DocBits (Doc²) offers a possibility to manually select and map information on a document to any column.
+To solve this issue DocBits (DOC²) offers a possibility to manually select and map information on a document to any column.
 
 First of all make sure training mode is activated:
 

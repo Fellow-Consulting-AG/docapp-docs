@@ -1,9 +1,9 @@
 ---
 title: "Wie man eine BOD-Mapping-Datei erstellt"
-description: "Eine Schritt-für-Schritt-Anleitung zur Erstellung einer BOD-Mapping-Datei. Hier finden Sie alle Werte und Felder, die in DocBits (Doc²) und BOD angepasst werden müssen."
+description: "Eine Schritt-für-Schritt-Anleitung zur Erstellung einer BOD-Mapping-Datei. Hier finden Sie alle Werte und Felder, die in DocBits (DOC²) und BOD angepasst werden müssen."
 date: "2021-10-28"
 tags:
-  - DocBits (Doc²)
+  - DocBits (DOC²)
   - Export
   - Infor
   - BOD
@@ -22,7 +22,7 @@ Um die Beispiel-Datei zu verwenden, benennen Sie die Datei von "BOD_Mapping.txt"
 
 Im ersten Block werden alle statischen Werte definiert. Felder, die angepasst werden müssen, sind "LogicalID" und "AccountingEntityID".
 
-Die "LogicalID" muss auf die logische ID des IMS-Verbindungspunkts gesetzt werden, der für den DocBits (Doc²) BOD-Export definiert wurde.
+Die "LogicalID" muss auf die logische ID des IMS-Verbindungspunkts gesetzt werden, der für den DocBits (DOC²) BOD-Export definiert wurde.
 
 Die "AccountingEntity" muss auf die Buchhaltungseinheit des Ziel-Infor-ERP-Systems gesetzt werden.
 
@@ -49,7 +49,7 @@ SFP_AccountingEntityID=SyncCaptureDocumentType\\DataArea\\Sync\\AccountingEntity
 SFV_AccountingEntityID=infor.ln.100
 ```
 
-Im zweiten Block können Sie die Dokumenttypzuordnung anpassen. Auf der linken Seite haben Sie den Dokumenttyp von DocBits (Doc²) und auf der rechten Seite den Dokumenttyp von BOD.
+Im zweiten Block können Sie die Dokumenttypzuordnung anpassen. Auf der linken Seite haben Sie den Dokumenttyp von DocBits (DOC²) und auf der rechten Seite den Dokumenttyp von BOD.
 
 ```
 #Alle generierten Felder.
@@ -69,7 +69,7 @@ Document_Types=Invoice
 Invoice=SupplierInvoice
 ```
 
-Im dritten Block können Sie die Feldzuordnung anpassen. Auf der linken Seite stehen die Felder von DocBits (Doc²) und auf der rechten Seite die Feldnamen von BOD.
+Im dritten Block können Sie die Feldzuordnung anpassen. Auf der linken Seite stehen die Felder von DocBits (DOC²) und auf der rechten Seite die Feldnamen von BOD.
 
 ```
 #Index-Feldzuordnung

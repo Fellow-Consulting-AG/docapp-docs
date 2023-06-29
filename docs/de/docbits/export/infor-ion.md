@@ -1,10 +1,10 @@
 ---
 title: "Export zu Infor ION und IDM"
-description: Schritt-für-Schritt-Anleitung, wie man Dokumente von DocBits (Doc²) nach Infor Document Management (IDM) exportiert und dabei die Werte in einem separaten Sync.CaptureDocument BOD veröffentlicht.
+description: Schritt-für-Schritt-Anleitung, wie man Dokumente von DocBits (DOC²) nach Infor Document Management (IDM) exportiert und dabei die Werte in einem separaten Sync.CaptureDocument BOD veröffentlicht.
 icon: material/application-export
 date: "2021-10-22"
 tags:
-  - DocBits (Doc²)
+  - DocBits (DOC²)
   - Export
   - Infor
   - Infor OS
@@ -15,17 +15,17 @@ tags:
 ####
 Export zu Infor Document Management mit Veröffentlichung der Dokumentwerte in einem separaten BOD
 
-In dieser Schritt-für-Schritt-Anleitung wird erklärt, wie man Dokumente von DocBits (Doc²) nach Infor Document Management (IDM) exportiert und dabei die Werte in einem separaten Sync.CaptureDocument BOD veröffentlicht.
+In dieser Schritt-für-Schritt-Anleitung wird erklärt, wie man Dokumente von DocBits (DOC²) nach Infor Document Management (IDM) exportiert und dabei die Werte in einem separaten Sync.CaptureDocument BOD veröffentlicht.
 
 **Voraussetzungen:**
 
 - Ein Admin-Benutzer für InforOS mit den Sicherheitsrollen "ION Desk Admin", "ION API Admin" und "IDM Admin".
-- Eine ION-API-Datei, um die Kommunikation zwischen DocBits (Doc²) und Infor IDM zu erstellen. Folgen Sie der Dokumentation hier: [Wie man eine Infor ION API-Datei erstellt](/docbits/export/create-a-infor-ion-api-file/)
+- Eine ION-API-Datei, um die Kommunikation zwischen DocBits (DOC²) und Infor IDM zu erstellen. Folgen Sie der Dokumentation hier: [Wie man eine Infor ION API-Datei erstellt](/docbits/export/create-a-infor-ion-api-file/)
 - Ein IDM-Dokumenttyp, in den die Dokumente exportiert werden sollen.
 
-#### Schritte in DocBits (Doc²)
+#### Schritte in DocBits (DOC²)
 
-Melden Sie sich bei DocBits (Doc²) an, klicken Sie auf **EINSTELLUNGEN** und wählen Sie **Export**.
+Melden Sie sich bei DocBits (DOC²) an, klicken Sie auf **EINSTELLUNGEN** und wählen Sie **Export**.
 
 ![Einstellungen Export](/_images/docbits/export/doc2-einstellungen-export.png)
 
@@ -39,7 +39,7 @@ Wählen Sie "Infor IDM + ION BOD".
 
 ![](/_images/docbits/export/doc2-export-infor idm + ion bod.png)
 
-Klicken Sie auf den Abschnitt "ION-Zuordnungsdatei" und wählen Sie die ION-API-Datei aus, die Sie für die Kommunikation zwischen DocBits (Doc²) und IDM verwenden möchten. Wenn Sie keine ION-API-Datei haben, folgen Sie dieser Dokumentation, um eine zu erstellen: [Wie man eine Infor ION API-Datei erstellt](/docbits/export/create-a-infor-ion-api-file/)
+Klicken Sie auf den Abschnitt "ION-Zuordnungsdatei" und wählen Sie die ION-API-Datei aus, die Sie für die Kommunikation zwischen DocBits (DOC²) und IDM verwenden möchten. Wenn Sie keine ION-API-Datei haben, folgen Sie dieser Dokumentation, um eine zu erstellen: [Wie man eine Infor ION API-Datei erstellt](/docbits/export/create-a-infor-ion-api-file/)
 
 ![](/_images/docbits/export/doc2-infor-ion-ion-zuordnungsdatei.png)
 
@@ -65,7 +65,7 @@ Nutzen Sie eine On-Premise ERP Software müssen Sie lediglich auf dem linken Sch
 
 #### Schritte in Infor ION
 
-Öffnen Sie **Infor ION API**, wählen Sie "Autorisierte Apps" und klicken Sie auf die DocBits (Doc²)-Anwendung.
+Öffnen Sie **Infor ION API**, wählen Sie "Autorisierte Apps" und klicken Sie auf die DocBits (DOC²)-Anwendung.
 
 ![](/_images/docbits/Infor/infor-ion-api-autorisierte app-doc2export.png)
 
@@ -100,11 +100,11 @@ Wechseln Sie zu "Datenflüsse" und klicken Sie auf "+Hinzufügen" und wählen "D
 
 Geben Sie einen aussagekräftigen Namen und eine aussagekräftige Beschreibung ein.
 
-Ziehen Sie eine "Anwendung" in den Fluss und nennen Sie sie "DocBits (Doc²)".
+Ziehen Sie eine "Anwendung" in den Fluss und nennen Sie sie "DocBits (DOC²)".
 
 ![](/_images/docbits/Infor/infor-ion-desk-datenflüsse-anwendung.png)
 
-Klicken Sie auf das "+"-Symbol und wählen Sie die "DocBits (Doc²)"-Anwendung, in diesem Fall "Doc2Export", und klicken Sie auf "OK".
+Klicken Sie auf das "+"-Symbol und wählen Sie die "DocBits (DOC²)"-Anwendung, in diesem Fall "Doc2Export", und klicken Sie auf "OK".
 
 ![](/_images/docbits/Infor/infor-ion-desk-datenflüsse-anwendung auswählen.png)
 

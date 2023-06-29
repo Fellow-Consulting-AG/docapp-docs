@@ -3,7 +3,7 @@ title: "Benutzer"
 description: Erfahren Sie, wie Sie einen Benutzer hinzufügen und das Passwort zurücksetzen. Benutzer können in den Benutzereinstellungen verwaltet werden. Hier finden Sie alle Optionen.
 date: "2023-05-11"
 tags:
-  - DocBits (Doc²)
+  - DocBits (DOC²)
   - Einstellungen
   - Benutzer
   - Passwort
@@ -43,7 +43,7 @@ Sobald der Benutzer angelegt ist, kann er anschließend über die Benutzerübers
 
 ## Wie man das Passwort zurücksetzt
 
-Gehen Sie zur DocBits (Doc²)-Anmeldeseite ([https://app.polydocs.io/](https://app.polydocs.io/)), geben Sie Ihre E-Mail-Adresse ein und klicken Sie auf <ins>Passwort vergessen?</ins>
+Gehen Sie zur DocBits (DOC²)-Anmeldeseite ([https://app.polydocs.io/](https://app.polydocs.io/)), geben Sie Ihre E-Mail-Adresse ein und klicken Sie auf <ins>Passwort vergessen?</ins>
 
 ![Passwort vergessen](/_images/docbits/einstellungen/passwort-vergessen.png)
 

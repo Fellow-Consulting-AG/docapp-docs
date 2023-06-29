@@ -1,20 +1,20 @@
 ---
 title: Document Types, Field Settings and Profile
-description: Here you will find all document types available in DocBits (Doc²) as invoice, credit note, delivery note, order confirmation and many more
+description: Here you will find all document types available in DocBits (DOC²) as invoice, credit note, delivery note, order confirmation and many more
 date: "2021-10-29"
 tags:
-  - DocBits (Doc²)
+  - DocBits (DOC²)
   - Settings
   - Document Types
   - Field Settings
 ---
 
 
-In DocBits (Doc²) you will find the `SETTINGS` menu in the upper bar on `HOME` screen.
+In DocBits (DOC²) you will find the `SETTINGS` menu in the upper bar on `HOME` screen.
 
 ![](/_images/docbits/DOC2_Dashboard_Settings.png)
 
-If you are logged in to DocBits (Doc²) as an admin, you will find all fields of a document that can be extracted under the respective document type.
+If you are logged in to DocBits (DOC²) as an admin, you will find all fields of a document that can be extracted under the respective document type.
 
 Open the menu **Document Types**.
 
@@ -61,7 +61,7 @@ For each field you can check the boxes if they are
 
 - HIDDEN: Here you can define whether a field should be hidden or displayed in the extraction view.
 
-- FORCE VALIDATION: Here you can define whether a field must always be validated manually, even if it has been read 100% by DocBits (Doc²).
+- FORCE VALIDATION: Here you can define whether a field must always be validated manually, even if it has been read 100% by DocBits (DOC²).
 
 - OCR and MATCH SCORE: Setting as described below, per field.
 
@@ -86,7 +86,7 @@ Here you can set the sensitivity of the OCR (Optical Character Recognition) func
 
 **MATCH SCORE:**
 
-Here you can set the sensitivity of the MATCH SCORE function for all fields at once. This value determines from when a field is marked in red if DocBits (Doc²) has not extracted the field with 100% probability. In this case the field needs to be validated manually.
+Here you can set the sensitivity of the MATCH SCORE function for all fields at once. This value determines from when a field is marked in red if DocBits (DOC²) has not extracted the field with 100% probability. In this case the field needs to be validated manually.
 
 The button `RESTORE DEFAULTS` will set back both values to "50".
 

@@ -1,19 +1,19 @@
 ---
-title: Email Import with GMail to DocBits (Doc²)
-description: This workflow searches for new e-mails in the configured sub-mailboxes of an e-mail address and uploads it to our DocBits (Doc²) system.
+title: Email Import with GMail to DocBits (DOC²)
+description: This workflow searches for new e-mails in the configured sub-mailboxes of an e-mail address and uploads it to our DocBits (DOC²) system.
 date: 2022-09-14
 tags:
   - Workflow²
   - Email
   - Gmail
   - Import
-  - DocBits (Doc²)
+  - DocBits (DOC²)
 
 ---
 
-#  Gmail Import to DocBits (Doc²)
+#  Gmail Import to DocBits (DOC²)
 
-This workflow searches for new e-mails in the configured sub-mailboxes of an e-mail address. When a new email is found, it receives the attachment and uploads it to DocBits (Doc²).
+This workflow searches for new e-mails in the configured sub-mailboxes of an e-mail address. When a new email is found, it receives the attachment and uploads it to DocBits (DOC²).
 
 
 ![](/_images/example/email import/WF_email-import.png)
@@ -23,7 +23,7 @@ This workflow starts with a cronjob which can be configured as you want. To chec
 
 ![](/_images/example/email import/WF_email-import_Mailbox1.png)
 
-Before extracting the attachment to DocBits (Doc²) you have to add a custom Function. Just paste the following JavaScript code into it:
+Before extracting the attachment to DocBits (DOC²) you have to add a custom Function. Just paste the following JavaScript code into it:
 
 ``` Javascript
 for (item of items) {
@@ -37,7 +37,7 @@ return items;
 
 ```
 
-To extract the documents to DocBits (Doc²) you have to select the **Doc2App Upload Documents** node. To connect the node to your account you have to apply the API key. The documentation you can find on this page.
+To extract the documents to DocBits (DOC²) you have to select the **Doc2App Upload Documents** node. To connect the node to your account you have to apply the API key. The documentation you can find on this page.
 
 ![](/_images/example/email import/WF_Upload document.png)
 

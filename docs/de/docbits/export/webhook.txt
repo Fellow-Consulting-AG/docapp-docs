@@ -2,12 +2,12 @@ Changes:<seo_changes> Hinzufügen eines Alt-Textes für das Bild, um die Bildbes
 
 2. Klicken Sie auf "Integration hinzufügen".
 
-   ![DocBits (Doc²) Export Integration hinzufügen](/_images/docbits/image-7-1024x751.png "DocBits (Doc²) Export Integration hinzufügen")
+   ![DocBits (DOC²) Export Integration hinzufügen](/_images/docbits/image-7-1024x751.png "DocBits (DOC²) Export Integration hinzufügen")
 
 3. Wählen Sie "Webhook".
 
-   ![DocBits (Doc²) Export Integration Webhook](/_images/docbits/image-10-1024x344.png "DocBits (Doc²) Export Integration Webhook")
+   ![DocBits (DOC²) Export Integration Webhook](/_images/docbits/image-10-1024x344.png "DocBits (DOC²) Export Integration Webhook")
 
 4. Geben Sie die Webhook-URL ein und klicken Sie auf "Speichern".
 
-   ![DocBits (Doc²) Export Integration Webhook Einstellungen](/_images/docbits/image-11-1024x350.png "DocBits (Doc²) Export Integration Webhook Einstellungen")
+   ![DocBits (DOC²) Export Integration Webhook Einstellungen](/_images/docbits/image-11-1024x350.png "DocBits (DOC²) Export Integration Webhook Einstellungen")

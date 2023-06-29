@@ -1,6 +1,6 @@
 ---
 title: "Ephesoft - External Application"
-description: In this documentation you will find how to use DocBits (Doc²) as External Application for Ephesoft to easily train tables step by step.
+description: In this documentation you will find how to use DocBits (DOC²) as External Application for Ephesoft to easily train tables step by step.
 date: "2022-02-11"
 tags:
   - TE²
@@ -8,7 +8,7 @@ tags:
   - Ephesoft
   - Training
   - Table Extraction
-  - DocBits (Doc²)
+  - DocBits (DOC²)
   - External Application
 ---
 
@@ -18,11 +18,11 @@ as soon as the document is Ready For Validation open the Batch Id
 
 ![](/_images/docbits/Ephesoft_open-Batch-1024x584.png)
 
-in the next step, select **More** from the upper green boxes, then **External Application** and finally **DocBits (Doc²)**
+in the next step, select **More** from the upper green boxes, then **External Application** and finally **DocBits (DOC²)**
 
 ![](/_images/docbits/Ephsoft_External-Application-1024x583.png)
 
-A popup window opens with DocBits (Doc²) and your document from the Batch Id.
+A popup window opens with DocBits (DOC²) and your document from the Batch Id.
 
 ![](/_images/docbits/External-Application-DOC2_EN-1024x640.png)
 

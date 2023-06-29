@@ -1,16 +1,16 @@
 ---
-title: "Dokumente importieren von DocBits (Doc²)"
-description: "Um Dokumente von DocBits (Doc²) zu importieren, müssen Sie zuerst den gewünschten Dokumententyp hinzufügen und einen Workflow dafür erstellen."
+title: "Dokumente importieren von DocBits (DOC²)"
+description: "Um Dokumente von DocBits (DOC²) zu importieren, müssen Sie zuerst den gewünschten Dokumententyp hinzufügen und einen Workflow dafür erstellen."
 date: "2021-11-25"
 tags:
     - FLOW²
-    - DocBits (Doc²)
+    - DocBits (DOC²)
     - Dokumente importieren
 ---
 
-# Wie man Dokumente von DocBits (Doc²) importiert
+# Wie man Dokumente von DocBits (DOC²) importiert
 
-### Um Dokumente von DocBits (Doc²) zu importieren, müssen Sie zuerst den gewünschten Dokumententyp hinzufügen und einen Workflow dafür erstellen.
+### Um Dokumente von DocBits (DOC²) zu importieren, müssen Sie zuerst den gewünschten Dokumententyp hinzufügen und einen Workflow dafür erstellen.
 
 Gehen Sie zu System - Setup - Workflows
 
@@ -34,11 +34,11 @@ und klicken Sie auf Speichern
 
 Sie erhalten eine entsprechende Popup-Nachricht, sobald der neue Dokumententyp erfolgreich erstellt wurde.
 
-Ihr Dashboard bleibt leer, bis die ersten Dokumente aus DocBits (Doc²) exportiert und in FLOW² importiert wurden.
+Ihr Dashboard bleibt leer, bis die ersten Dokumente aus DocBits (DOC²) exportiert und in FLOW² importiert wurden.
 
 <img src="/_images/docbits/FLOW2_Dashboard-empty-1024x586.png" alt="FLOW2 Dashboard Empty">
 
-Alle Schritte zum Importieren von DocBits (Doc²) finden Sie [hier](/docbits/doc2app/settings/export/export-to-flow2/).
+Alle Schritte zum Importieren von DocBits (DOC²) finden Sie [hier](/docbits/doc2app/settings/export/export-to-flow2/).
 
 Nach erfolgreichem Import sehen Sie die Dokumente auf Ihrem Dashboard unter "Kürzlich erstellt".
 

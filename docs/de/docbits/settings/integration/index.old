@@ -1,10 +1,10 @@
 ---
 title: "Integration"
-description: In this section you will find your API Key as well as the SSO Service Provider Settings in DocBits (Doc²).
+description: In this section you will find your API Key as well as the SSO Service Provider Settings in DocBits (DOC²).
 date: "2021-10-29"
 icons: material/api
 tags:
-  - DocBits (Doc²)
+  - DocBits (DOC²)
   - Settings
   - API Key
   - SSO

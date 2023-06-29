@@ -31,11 +31,11 @@ This master data is used to complete and validate the meta data to be stored for
 
 Go to System - Setup - Metadata types
 
-If you use our DocBits (Doc²) service the following index fields are going to be extracted and the meta data must be created accordingly and would looks like this:
+If you use our DocBits (DOC²) service the following index fields are going to be extracted and the meta data must be created accordingly and would looks like this:
 
 ### For Document Type INVOICE
 
-| DocBits (Doc²) | FLOW² |
+| DocBits (DOC²) | FLOW² |
 | --- | --- |
 | INVOICE\_NUMBER | InvoiceNumber |
 | INVOICE\_DATE | InvoiceDate |

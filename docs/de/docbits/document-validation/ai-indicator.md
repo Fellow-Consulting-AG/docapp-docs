@@ -4,7 +4,7 @@ description: "In der Dokumentation finden Sie Optionen zur Anzeige der Extraktio
 date: "2022-03-23"
 tags:
   - KI
-  - DocBits (Doc²)
+  - DocBits (DOC²)
 ---
 
 In der Dokumentenansicht finden Sie Optionen zur Anzeige der Extraktionsqualität mithilfe von grafischen Indikatoren. Die sogenannten KI-Indikatoren.
@@ -34,4 +34,4 @@ Darüber hinaus gibt es ein Diagramm, das die Qualität aller vorherigen Extrakt
 
 **Technische Details:**
 
-Der KI-Indikator zeigt an, wie gut ein Dokument trainiert ist. Dies geschieht über eine interne Punktzahl. Das bedeutet, dass sobald ein Dokument eingelesen wird und die von DocBits (Doc²) extrahierten Felder vom Benutzer bestätigt werden, erhöht sich diese Punktzahl. Je höher die Punktzahl, desto weiter befindet sich die Anzeige des KI-Indikators im grünen Bereich. Werden Felder nach dem Export manuell vom Benutzer geändert, verringert sich dieser Wert wieder und die Anzeige des AI-Indikators fällt wieder in den roten Bereich. Erst wenn das Dokument angelernt wurde und die Extraktion für einige Importe ohne manuelles Eingreifen den korrekten Wert ermittelt hat, erreicht die Punktzahl 100 %.
+Der KI-Indikator zeigt an, wie gut ein Dokument trainiert ist. Dies geschieht über eine interne Punktzahl. Das bedeutet, dass sobald ein Dokument eingelesen wird und die von DocBits (DOC²) extrahierten Felder vom Benutzer bestätigt werden, erhöht sich diese Punktzahl. Je höher die Punktzahl, desto weiter befindet sich die Anzeige des KI-Indikators im grünen Bereich. Werden Felder nach dem Export manuell vom Benutzer geändert, verringert sich dieser Wert wieder und die Anzeige des AI-Indikators fällt wieder in den roten Bereich. Erst wenn das Dokument angelernt wurde und die Extraktion für einige Importe ohne manuelles Eingreifen den korrekten Wert ermittelt hat, erreicht die Punktzahl 100 %.

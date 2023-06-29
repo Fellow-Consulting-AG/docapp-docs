@@ -156,7 +156,7 @@ plugins:
 
 nav:
   - Changelog: Release/Release_notes.md
-  - DocBits (DocBits (Doc²)):
+  - DocBits (DocBits (DOC²)):
     - Getting Started: docbits/index.md
     - Data security: security/datensicherung.md
     - OnBoarding: docbits/onboarding.md
@@ -183,7 +183,7 @@ nav:
       - Advanced settings: docbits/table-extraction/advanced-settings.md
       - Save and delete rules: docbits/table-extraction/save-rules-and-delete-rules.md
 
-    - DocBits (DocBits (Doc²)) with Infor:
+    - DocBits (DocBits (DOC²)) with Infor:
       - docbits/doc2-with-infor/index.md
       - Infor Infrastructure: docbits/doc2-with-infor/infrastructure.md
       - Use Cases: docbits/doc2-with-infor/infor.md
@@ -191,7 +191,7 @@ nav:
       - Integration with Infor IDM and ERP:
         - docbits/doc2-with-infor/IDM-business-context-model.md
       - Infor SSO: docbits/doc2-with-infor/configuring-sso-in-cloud.md
-    # - DocBits (DocBits (Doc²)) with Workflow²: docbits/workflow.md
+    # - DocBits (DocBits (DOC²)) with Workflow²: docbits/workflow.md
     - Settings:
       - docbits/settings/index.md
       - Company Information: docbits/company-information.md
@@ -242,7 +242,7 @@ nav:
     - Admin-Guides: docbits/admin-guides/postman-projects.md
     - SSO:
       - docbits/SSO/index.md
-      - SSO for Azure AD with DocBits (DocBits (Doc²)): docbits/SSO/SSO-for-Azure-AD.md
+      - SSO for Azure AD with DocBits (DocBits (DOC²)): docbits/SSO/SSO-for-Azure-AD.md
 
 
   - FLOW²:
@@ -253,7 +253,7 @@ nav:
     - User Dashboard: flow2/home.md
     - System Setup: flow2/settings-system-setup.md
     - Metadata: flow2/metadata.md
-    - Import from DocBits (DocBits (Doc²)): flow2/import-from-doc2.md
+    - Import from DocBits (DocBits (DOC²)): flow2/import-from-doc2.md
   - KV²:
     - Getting Started: kv2/getting-started.md
     - Installation: kv2/installation.md

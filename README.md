@@ -1,7 +1,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/627053ba-8a81-4692-96cb-e57b24979bce/deploy-status)](https://app.netlify.com/sites/aquamarine-taffy-499fd7/deploys)
 
-# DocBits (Doc²) Docs
+# DocBits (DOC²) Docs
 
 This repository hosts the documentation for [polydocs](https://polydocs.io/), an extendable workflow automation tool which enables you to connect anything to everything via its open, The documentation is live at [docs.polydocs.io](https://docs.polydocs.io/).
 

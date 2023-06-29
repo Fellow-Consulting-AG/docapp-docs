@@ -1,16 +1,16 @@
 ---
-title: Alle DocBits (Doc²)-Dokumentstatus
-description: Hier finden Sie eine Liste aller Status, die ein Dokument in DocBits (Doc²) haben kann.
+title: Alle DocBits (DOC²)-Dokumentstatus
+description: Hier finden Sie eine Liste aller Status, die ein Dokument in DocBits (DOC²) haben kann.
 date: 2022-09-14
 tags:
   - Status
   - Dokument
   - Liste
-  - DocBits (Doc²)
+  - DocBits (DOC²)
 
 ---
 
-##  Alle DocBits (Doc²)-Dokumentstatus
+##  Alle DocBits (DOC²)-Dokumentstatus
 
 - `WatchDog Start`: Watchdog wird gestartet
 - `WatchDog Split`: Das Dokument wird in Watchdog aufgeteilt

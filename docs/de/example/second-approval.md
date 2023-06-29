@@ -1,16 +1,16 @@
 ---
-title: WF² Second Approval with DocBits (Doc²)
+title: WF² Second Approval with DocBits (DOC²)
 description: Extended documents-approval as important for any business. We show you how you can easily create a Worfklow to assign an approval
 date: 2022-09-15
 tags:
   - Workflow²
   - Approval
-  - DocBits (Doc²)
+  - DocBits (DOC²)
 ---
 
-# WF² Second Approval with DocBits (Doc²)
+# WF² Second Approval with DocBits (DOC²)
 
-In some process you need a second approval for incoming documents. Here is how you can configure this in DocBits (Doc²).
+In some process you need a second approval for incoming documents. Here is how you can configure this in DocBits (DOC²).
 
 In our example one user or group member approves an invoice, assigns it to a second user or group for review and approval to ensure the approval is granted correctly.
 

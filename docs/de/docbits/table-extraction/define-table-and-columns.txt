@@ -4,7 +4,7 @@ title: "Tabellen und Spalten definieren"
 description: In dieser Dokumentation finden Sie eine Anleitung, wie Sie Tabellen und Spalten auf einem Dokument über die Tabellenextraktionsansicht definieren können, indem Sie den Schulungsmodus aktivieren.
 date: "2022-02-18"
 tags:
-  - DocBits (Doc²)
+  - DocBits (DOC²)
   - Tabelle
   - Spalten
 ---

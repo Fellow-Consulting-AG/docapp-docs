@@ -1,9 +1,9 @@
 ---
 title: "Exportieren"
 date: "2021-10-22"
-description: Hier finden Sie Anleitungen zum Exportieren von Dokumenten aus DocBits (Doc²) in andere Umgebungen wie Infor und FLOW² sowie über Webhooks.
+description: Hier finden Sie Anleitungen zum Exportieren von Dokumenten aus DocBits (DOC²) in andere Umgebungen wie Infor und FLOW² sowie über Webhooks.
 tags:
-  - DocBits (Doc²)
+  - DocBits (DOC²)
   - Exportieren
   - Infor
   - Webhook

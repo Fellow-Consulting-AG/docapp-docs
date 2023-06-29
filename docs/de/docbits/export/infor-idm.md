@@ -3,7 +3,7 @@ title: "Export nach Infor IDM"
 description: Schritt-für-Schritt-Anleitung, wie man Dokumente ohne Veröffentlichung der Werte in einem separaten BOD nach Infor Document Management (IDM) exportiert.
 date: "2021-10-22"
 tags:
-  - DocBits (Doc²)
+  - DocBits (DOC²)
   - Export
   - Infor
   - IDM
@@ -16,11 +16,11 @@ In dieser Schritt-für-Schritt-Anleitung wird erklärt, wie man Dokumente nach I
 **Voraussetzungen:**
 
 - Ein Admin-Benutzer für InforOS mit den Sicherheitsrollen "ION Desk Admin", "ION API Admin" und "IDM Admin".
-- Eine ION-API-Datei, um die Kommunikation zwischen DocBits (Doc²) und Infor IDM zu erstellen. Folgen Sie der Dokumentation hier: [Wie man eine Infor ION API-Datei erstellt](/docbits/export/create-a-infor-ion-api-file/)
+- Eine ION-API-Datei, um die Kommunikation zwischen DocBits (DOC²) und Infor IDM zu erstellen. Folgen Sie der Dokumentation hier: [Wie man eine Infor ION API-Datei erstellt](/docbits/export/create-a-infor-ion-api-file/)
 - Ein IDM-Dokumenttyp, in den die Dokumente exportiert werden sollen.
 - Eine IDM-Zuordnungsdatei, die IDM verwendet, um zu wissen, welcher Dokumentinhalt welche Informationen darstellt. Ein Beispiel für die IDM-Mapping-Datei finden Sie auf dieser Seite: [Wie man eine IDM-Mapping-Datei erstellt](/docbits/export/how-to-create-a-idm-mapping-file/)
 
-Melden Sie sich bei DocBits (Doc²) an, klicken Sie auf **EINSTELLUNGEN** und wählen Sie **Export**.
+Melden Sie sich bei DocBits (DOC²) an, klicken Sie auf **EINSTELLUNGEN** und wählen Sie **Export**.
 
 ![Einstellungen Export](/_images/docbits/export/doc2-einstellungen-export.png)
 
@@ -34,7 +34,7 @@ Wählen Sie "Infor IDM".
 
 ![](/_images/docbits/export/doc2-export-infor idm.png)
 
-Klicken Sie auf den Abschnitt "ION-Zuordnungsdatei" und wählen Sie die ION-API-Datei aus, die Sie für die Kommunikation zwischen DocBits (Doc²) und IDM verwenden möchten. Wenn Sie keine ION-API-Datei haben, folgen Sie dieser Dokumentation, um eine zu erstellen: [Wie man eine Infor ION API-Datei erstellt](/docbits/export/create-a-infor-ion-api-file/)
+Klicken Sie auf den Abschnitt "ION-Zuordnungsdatei" und wählen Sie die ION-API-Datei aus, die Sie für die Kommunikation zwischen DocBits (DOC²) und IDM verwenden möchten. Wenn Sie keine ION-API-Datei haben, folgen Sie dieser Dokumentation, um eine zu erstellen: [Wie man eine Infor ION API-Datei erstellt](/docbits/export/create-a-infor-ion-api-file/)
 
 Bei normalen Exporten müssen Sie auf dem linken Schieberegler `CLOUD` auswählen. Mit dem rechten Schieberegler können Sie wählen, ob Sie die normale PDF-Rechnung an Infor exportieren möchten oder ob Sie die Rechnung im ZUGFeRD-Format (PDF mit X-Rechnung Format ZUGFeRD XML Anhang) exportieren möchten.
 

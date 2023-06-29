@@ -2,7 +2,7 @@
 title: Infrastruktur für Infor Cloud und On-Premise
 description: Eine visuelle Darstellung der Infrastruktur, die für unsere Anwendungen verwendet wird, wenn Infor Cloud oder On-Premise ausgeführt wird.
 tags:
-  - DocBits (Doc²)
+  - DocBits (DOC²)
   - Infrastruktur
   - Infor
 ---

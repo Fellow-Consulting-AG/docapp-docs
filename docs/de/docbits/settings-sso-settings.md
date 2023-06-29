@@ -2,7 +2,7 @@
 title: "SSO Einstellungen"
 description: Hier finden Sie alle Details, die Sie für die SSO-Konfiguration benötigen. Von der benötigten Entity ID, SSO-URL bis zum Zertifikat.
 tags:
-  - DocBits (Doc²)
+  - DocBits (DOC²)
   - Einstellungen
   - SSO
 ---
@@ -10,7 +10,7 @@ tags:
 
 Wenn Sie Ihre Login-Daten von uns erhalten haben, finden Sie hier alle Details, die Sie für die SSO-Konfiguration benötigen.
 
-**So greifen Sie auf die SSO SERVICE PROVIDER EINSTELLUNGEN in DocBits (Doc²) zu**
+**So greifen Sie auf die SSO SERVICE PROVIDER EINSTELLUNGEN in DocBits (DOC²) zu**
 
 1\. Melden Sie sich mit den von uns erhaltenen Login-Daten auf der URL [https://app.polydocs.io/](https://app.polydocs.io/) an.
 

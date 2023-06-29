@@ -1,9 +1,9 @@
 ---
 title: "PO Matching - Delivery Note"
-description: If quantity of the ordered item(s) does not match the quantity on the invoice you need to start the match with received Delivery Note by uploading it in DocBits (Doc²).
+description: If quantity of the ordered item(s) does not match the quantity on the invoice you need to start the match with received Delivery Note by uploading it in DocBits (DOC²).
 date: "2022-01-24"
 tags:
-  - DocBits (Doc²)
+  - DocBits (DOC²)
   - PO Matching
   - Delivery Note
 ---
@@ -11,7 +11,7 @@ tags:
 
 If quantity of the ordered item(s) does not match the quantity on the invoice you need to start the match with received Delivery Note.
 
-## Upload the Delivery Note in DocBits (Doc²)
+## Upload the Delivery Note in DocBits (DOC²)
 
 [Sign up for a 30 days free trail](https://app.polydocs.io){ .md-button .md-button--primary }
 

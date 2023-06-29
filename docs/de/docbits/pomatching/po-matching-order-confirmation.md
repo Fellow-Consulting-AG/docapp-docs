@@ -2,18 +2,18 @@
 title: "PO Matching - Bestellbestätigung"
 date: "2022-01-28"
 tags:
-  - DocBits (Doc²)
+  - DocBits (DOC²)
   - PO Matching
   - Bestellbestätigung
 ---
 
 Wenn die Menge der bestellten Artikel nicht mit der Menge auf der Rechnung übereinstimmt, müssen Sie mit der Bestellbestätigung beginnen.
 
-## Laden Sie die Bestellbestätigung in DocBits (Doc²) hoch
+## Laden Sie die Bestellbestätigung in DocBits (DOC²) hoch
 
 [Melden Sie sich für eine 30-tägige kostenlose Testversion an](https://app.polydocs.io){ .md-button .md-button--primary }
 
-![Bestellbestätigung in DocBits (Doc²) hochladen](/_images/docbits/DOC2_POM_OC_1.png "Bestellbestätigung in DocBits (Doc²) hochladen")
+![Bestellbestätigung in DocBits (DOC²) hochladen](/_images/docbits/DOC2_POM_OC_1.png "Bestellbestätigung in DocBits (DOC²) hochladen")
 
 Hier finden Sie auch das rote Symbol, da die Menge auf der Bestellbestätigung nicht mit der Menge der Bestellung übereinstimmt.
 

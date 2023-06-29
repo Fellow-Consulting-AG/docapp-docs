@@ -1,9 +1,9 @@
 ---
 title: "Dokumentenvalidierung"
 date: "2023-05-12"
-description: Erfahren Sie, wie Sie DocBits (Doc²) zur Validierung von Dokumenten verwenden können.
+description: Erfahren Sie, wie Sie DocBits (DOC²) zur Validierung von Dokumenten verwenden können.
 tags:
-  - DocBits (Doc²)
+  - DocBits (DOC²)
   - Dokument
   - Validierung
 ---
@@ -34,7 +34,7 @@ Nun erhalten wir die grundlegenden Informationen wie Rechnungsnummer, Datum usw.
 
 ![DOC2 Dokument Rechnungsnummer](/_images/docbits/dokumentenvalidierung/dokument-rechnungsnummer.png)
 
-Sie können nun überprüfen, ob die Nummer korrekt extrahiert wurde. Alle Werte, die korrekt extrahiert wurden, bestätigen Sie mit dem Häkchen. Sie können dies mit jedem einzelnen Feld tun. Ein weiterer wichtiger Punkt ist, dass Sie auf der rechten Seite jedes Feldes einen Prozentsatz des Vertrauensniveaus von DocBits (Doc²) erhalten.
+Sie können nun überprüfen, ob die Nummer korrekt extrahiert wurde. Alle Werte, die korrekt extrahiert wurden, bestätigen Sie mit dem Häkchen. Sie können dies mit jedem einzelnen Feld tun. Ein weiterer wichtiger Punkt ist, dass Sie auf der rechten Seite jedes Feldes einen Prozentsatz des Vertrauensniveaus von DocBits (DOC²) erhalten.
 
 Alle Werte, die korrekt extrahiert und mit dem Häkchen bestätigt wurden, haben eine grüne Leiste am Anfang des Feldes.
 

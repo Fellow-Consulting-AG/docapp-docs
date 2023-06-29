@@ -148,7 +148,7 @@ plugins:
 
 nav:
   - Changelog: Release/Release_notes.md
-  - DocBits (Doc²):
+  - DocBits (DOC²):
     - Einstieg: docbits/index.md
     - Datensicherheit: security/datensicherung.md
     - OnBoarding: docbits/onboarding.md
@@ -176,7 +176,7 @@ nav:
       - Erweiterte Einstellungen: docbits/table-extraction/advanced-settings.md
       - Speichern und Löschen von Regeln: docbits/table-extraction/save-rules-and-delete-rules.md
 
-    - DocBits (Doc²) mit Infor:
+    - DocBits (DOC²) mit Infor:
       - docbits/doc2-with-infor/index.md
       - Infor-Infrastruktur: docbits/doc2-with-infor/infrastructure.md
       - Anwendungsfälle: docbits/doc2-with-infor/infor.md
@@ -240,7 +240,7 @@ nav:
     - Admin-Guides: docbits/admin-guides/postman-projects.md
     - SSO:
       - docbits/SSO/index.md
-      - SSO for Azure AD with DocBits (Doc²): docbits/SSO/SSO-for-Azure-AD.md
+      - SSO for Azure AD with DocBits (DOC²): docbits/SSO/SSO-for-Azure-AD.md
 
 
   - FLOW²:
@@ -251,7 +251,7 @@ nav:
     - Benutzer Dashboard: flow2/home.md
     - System Setup: flow2/settings-system-setup.md
     - Metadata: flow2/metadata.md
-    - Import from DocBits (Doc²): flow2/import-from-doc2.md
+    - Import from DocBits (DOC²): flow2/import-from-doc2.md
   - KV²:
     - Getting Started: kv2/getting-started.md
     - Installation: kv2/installation.md

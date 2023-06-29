@@ -1,9 +1,9 @@
 ---
 title: "Einstieg"
-description: Die intelligente Lösung zur Digitalisierung von Dokumenten. Jeder Geschäftsprozess beginnt, enthält oder endet mit einem Dokument. Die Vorteile von DocBits (Doc²) auf einen Blick.
+description: Die intelligente Lösung zur Digitalisierung von Dokumenten. Jeder Geschäftsprozess beginnt, enthält oder endet mit einem Dokument. Die Vorteile von DocBits (DOC²) auf einen Blick.
 date: "2021-10-14"
 tags:
-  - DocBits (Doc²)
+  - DocBits (DOC²)
   - Start
 ---
 
@@ -11,15 +11,15 @@ tags:
 
 ## Willkommen bei
 
-![Logo](/_images/docbits/doc2-1024x415.png){ loading=lazy, alt="DocBits (Doc²) Logo" } 
+![Logo](/_images/docbits/doc2-1024x415.png){ loading=lazy, alt="DocBits (DOC²) Logo" } 
 
 Die intelligente Lösung zur Digitalisierung von Dokumenten.
 
 Jeder Geschäftsprozess beginnt, enthält oder endet mit einem Dokument. Unabhängig davon, ob es sich um Papierform oder bereits um eine Datei handelt. Dies wird als unstrukturierte Daten bezeichnet. Obwohl die Informationen auf oder in dem Dokument vorhanden sind, können sie nicht automatisch in die Arbeitsprozesse integriert werden, da sie einfach nicht von allen Softwareprogrammen erkannt werden.
 
-DocBits (Doc²) ist die neueste Software- und Lösung für die Dokumentenerfassung, die von der FellowPro AG entwickelt wurde. Es handelt sich um eine vollständig cloudbasierte Lösung, die künstliche Intelligenz und maschinelles Lernen verwendet, um Ihre Dokumente präzise zu identifizieren, zu klassifizieren, zu analysieren und zu lesen. Egal ob Papier oder Datei. DocBits (Doc²) lernt unabhängig, das Erfahrungsniveau steigt mit jedem Dokument. DocBits (Doc²) verwendet dafür Schwarmintelligenz.
+DocBits (DOC²) ist die neueste Software- und Lösung für die Dokumentenerfassung, die von der FellowPro AG entwickelt wurde. Es handelt sich um eine vollständig cloudbasierte Lösung, die künstliche Intelligenz und maschinelles Lernen verwendet, um Ihre Dokumente präzise zu identifizieren, zu klassifizieren, zu analysieren und zu lesen. Egal ob Papier oder Datei. DocBits (DOC²) lernt unabhängig, das Erfahrungsniveau steigt mit jedem Dokument. DocBits (DOC²) verwendet dafür Schwarmintelligenz.
 
-### **Die Vorteile von DocBits (Doc²) auf einen Blick:**
+### **Die Vorteile von DocBits (DOC²) auf einen Blick:**
 
 * Erkennt die benötigten Daten - auch handschriftliche Informationen und Informationen in Tabellen zuverlässig und ist selbstlernend, auch durch Korrekturen des Benutzers
 * Nutzt Schwarmintelligenz, um kontinuierlich von den Erfahrungen anderer Kunden zu profitieren
@@ -34,17 +34,17 @@ DocBits (Doc²) ist die neueste Software- und Lösung für die Dokumentenerfassu
 
 [Starten Sie jetzt eine kostenlose 30-Tage-Testversion](https://polydocs.io/free-trail/){ .md-button .md-button--primary }
 
-#### **Wie verwenden Sie DocBits (Doc²):**
+#### **Wie verwenden Sie DocBits (DOC²):**
 
 * Scannen und Erkennen aller Arten von Dokumenten (Rechnungen, Verträge, Formulare, medizinische Rezepte usw.)
 * Zuverlässige Extraktion der Daten im Dokument und Integration und Weiterverarbeitung im ERP-, RPA- oder CRM-System
 * Validierung der extrahierten Daten und Überprüfung gegen andere Systeme aus internen und öffentlichen Quellen
 * Integration in Ihre Systemlandschaft (z. B. ERP-System, Dokumentenmanagement, Workflow-System usw.)
 
-#### Warum DocBits (Doc²) genau das Richtige für Sie ist
+#### Warum DocBits (DOC²) genau das Richtige für Sie ist
 
 Viele Unternehmen haben erkannt, dass die Verarbeitung eingehender Rechnungen beispielsweise sehr zeitaufwändig sein kann. Sie versuchen, die Produktivität zu steigern und den Purchase-to-Pay-Prozess durch die Einführung von Produkten zur "Digitalisierung" von Rechnungen zu optimieren.
 
-Darüber hinaus nutzt DocBits (Doc²) Schwarmintelligenz. Was bedeutet das? Sie profitieren von den Erfahrungen anderer Kunden und deren "Lernkurve", ohne sensible Daten zu teilen. Mit der cloudbasierten Regel-Engine stellen wir eine kontinuierliche Verbesserung der Anwendung sicher. Sie benötigen keine Entwickler oder Datenwissenschaftler, da das System aus der Eingabe des Benutzers lernt und der Prozess ohne Unterbrechungen abläuft.
+Darüber hinaus nutzt DocBits (DOC²) Schwarmintelligenz. Was bedeutet das? Sie profitieren von den Erfahrungen anderer Kunden und deren "Lernkurve", ohne sensible Daten zu teilen. Mit der cloudbasierten Regel-Engine stellen wir eine kontinuierliche Verbesserung der Anwendung sicher. Sie benötigen keine Entwickler oder Datenwissenschaftler, da das System aus der Eingabe des Benutzers lernt und der Prozess ohne Unterbrechungen abläuft.
 
 Mit Hilfe von Deep-Learning-Algorithmen können nicht nur einfache Kopfdaten eines Dokuments erfasst werden, sondern auch komplizierte Strukturen wie Tabellen. Natürlich werden nicht nur Rechnungen verarbeitet, sondern alle Arten von Dokumenten. Unabhängig davon, ob es sich um Frachtbriefe, Mitgliedsanträge, medizinische Rezepte und vieles mehr handelt.

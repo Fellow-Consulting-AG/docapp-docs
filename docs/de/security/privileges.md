@@ -1,16 +1,16 @@
 ---
-title: Privileges with DocBits (Doc²)
-description: A explanation of the groups & privileges of DocBits (Doc²)
+title: Privileges with DocBits (DOC²)
+description: A explanation of the groups & privileges of DocBits (DOC²)
 tags:
-- DocBits (Doc²)
+- DocBits (DOC²)
 - Groups
 - Privileges
 ---
 # Admins
-The first user of DocBits (Doc²) is the default organization admin.
+The first user of DocBits (DOC²) is the default organization admin.
 
 ## Privileges
-Organisation admins are able to access the settings in DocBits (Doc²).
+Organisation admins are able to access the settings in DocBits (DOC²).
 They are allowed to configure:
 
 - document types
@@ -38,13 +38,13 @@ The groups can be created, changed and deleted by the organization admins. Every
 If no group is configured all privileges are granted to the users within the organization.
 
 ## Groups and Priveleges management
-Groups are managed in DocBits (Doc²) under Settings -> Groups & Roles
+Groups are managed in DocBits (DOC²) under Settings -> Groups & Roles
 
-### DocBits (Doc²) group user mangement
+### DocBits (DOC²) group user mangement
 The Organization admin can add users to the groups.
 ![doc2 group user mangement](/_images/security/group-user.png)
 
-### DocBits (Doc²) group permission mangement
+### DocBits (DOC²) group permission mangement
 The Organization admin can set the group permissions.
 ![doc2 group permission mangement](/_images/security/group-permissions.png)
 

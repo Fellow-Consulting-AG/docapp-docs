@@ -1,15 +1,15 @@
 ---
-title: "DocBits (Doc²) with Workflow²"
-description: See how easy you can use DocBits (Doc²) with Workflow²
+title: "DocBits (DOC²) with Workflow²"
+description: See how easy you can use DocBits (DOC²) with Workflow²
 date: "2022-01-24"
 tags:
-  - DocBits (Doc²)
+  - DocBits (DOC²)
   - Workflow²
 ---
 
-## DocBits (Doc²) with Workflow²
+## DocBits (DOC²) with Workflow²
 
-See how easy you can use DocBits (Doc²) with Workflow²
+See how easy you can use DocBits (DOC²) with Workflow²
 
 <div class="video-container">
 <iframe width="840" height="472.5" src="https://www.youtube-nocookie.com/embed/Zk8_pNfXBhM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

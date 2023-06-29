@@ -4,7 +4,7 @@ description: Here we will see how to create a blank workflow
 tags:
   - Workflow²
   - Example
-  - DocBits (Doc²)Export
+  - DocBits (DOC²)Export
   - Google Drive
 
 ---

@@ -1,10 +1,10 @@
 ---
 title: Activate Workflow
-description: DocBits (Doc²) to Google Drive document export example
+description: DocBits (DOC²) to Google Drive document export example
 tags:
   - Workflow²
   - Example
-  - DocBits (Doc²)Export
+  - DocBits (DOC²)Export
   - Google Drive
 
 ---

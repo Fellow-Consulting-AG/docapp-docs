@@ -1,16 +1,16 @@
 ---
 title: "Dashboard"
-description: After logging in you are redirected to the DASHBOARD homepage of DocBits (Doc²). This is the main page and overview where you can manage the imported documents.
+description: After logging in you are redirected to the DASHBOARD homepage of DocBits (DOC²). This is the main page and overview where you can manage the imported documents.
 date: "2021-10-29"
 description: Explanation of how to use the Dashboard
 tags:
-  - DocBits (Doc²)
+  - DocBits (DOC²)
   - Dashboard
   - Homepage
   - Overview
 ---
 
-After logging in with your credentials you are redirected to the DASHBOARD homepage of DocBits (Doc²).
+After logging in with your credentials you are redirected to the DASHBOARD homepage of DocBits (DOC²).
 
 This is the main page and overview where you can capture, work and manage your imported documents.
 
@@ -46,6 +46,6 @@ From left to right you will see first the name of the document, then how many pa
 
 In the rightmost column you will see the Actions button. If you click on it, all available options will open: Assign, Restart, Validate and Delete.
 
-![DocBits (Doc²) Action Buttons](/_images/docbits/DocBits (Doc²)_Dashboard_Document_Actions.gif){ loading=lazy }
+![DocBits (DOC²) Action Buttons](/_images/docbits/DocBits (DOC²)_Dashboard_Document_Actions.gif){ loading=lazy }
 
 Details on UI to check, edit and validate extracted fields of uploaded documents you will find [here](/docbits/document-validation/).

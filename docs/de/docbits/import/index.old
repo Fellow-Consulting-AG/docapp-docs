@@ -1,10 +1,10 @@
 ---
 title: "Import"
-description: This is an overview about all the possible import functionalities in DocBits (Doc²). Often used are E-Mail import and manual import.
+description: This is an overview about all the possible import functionalities in DocBits (DOC²). Often used are E-Mail import and manual import.
 date: "2021-10-22"
 tags:
   - Import
-  - DocBits (Doc²)
+  - DocBits (DOC²)
   - E-Mail
   - manual Import
   - API

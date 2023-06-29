@@ -1,16 +1,16 @@
 ---
-title: All DocBits (Doc²) document status
-description: Here is a list of every status a document in DocBits (Doc²) could possibly have.
+title: All DocBits (DOC²) document status
+description: Here is a list of every status a document in DocBits (DOC²) could possibly have.
 date: 2022-09-14
 tags:
   - Status
   - Document
   - List
-  - DocBits (Doc²)
+  - DocBits (DOC²)
 
 ---
 
-##  All DocBits (Doc²) document status
+##  All DocBits (DOC²) document status
 
 - `WatchDog Start`: Watchdog is starting.
 - `WatchDog Split`: The document gets split in Watchdog.
