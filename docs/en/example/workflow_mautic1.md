@@ -94,8 +94,3 @@ To send the person a welcome email, we use the contact ID we got back during the
 There we specify Contact and Send Email, set which email should be sent by MAUTIC and specify the contact ID by expression in Contact ID.
 
 ![Next](/_images/workflows/workflows/mauticworkflow_new_order10.png)
-
-
-
-You can download the workflow as javascriptfile <a href="/example/downloadables/newordermautic.js" download>here</a> and add it on your Workflow² instance using drag&drop,
-or by opening the file in an editor and copy&paste the code directly into Workflow².
