@@ -95,16 +95,13 @@ sudo bash /Library/doc2scan/uninstall.sh
 
 Legende:
 
+Modus|Bedeutung
 -----|-----
 Ja|Gerät funktioniert einwandfrei
 Nein|Protokoll wird vom Gerät nicht unterstützt
 ?|Gerät arbeitet mit SANE-AirScan, aber Protokoll wird vom Benutzer nicht gemeldet
 Leer|dem Autor liegen keine Informationen über diese Modus/Geräte-Kombination vor
 
-- Ja - Gerät funktioniert einwandfrei
-- Nein - Protokoll wird vom Gerät nicht unterstützt
-- ? - Gerät arbeitet mit SANE-AirScan, aber Protokoll wird vom Benutzer nicht gemeldet
-- Leer - dem Autor liegen keine Informationen über diese Modus/Geräte-Kombination vor
 
 Definition:
 
