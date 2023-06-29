@@ -1,9 +1,9 @@
 ---
-title: All Docbits (DOC²) Document Status List | Docbits (DOC²) Software
-description: Check out the complete list of document statuses in Docbits (DOC²) software. From WatchDog start to Error, know what each status means and how it affects your document processing.
-date: 2022-09-16
+title: Document Merging
+description: Merging multiple documents to form one large document.
+date: 2023-06-29
 tags:
   - Docbits (DOC²)
-  - Document Status
-  - List
+  - Dashboard
+  - Document Merging
 ---
