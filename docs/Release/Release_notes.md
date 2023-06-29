@@ -15,32 +15,63 @@ tags:
 
 # Release Notes
 
+## 2.48
+
+- :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Classification model consistency
+- :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: The cloud loading sign is inconsistent on the Dashboard
+
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: When the date is wrong - make the field red 
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Add a key combo to refresh the dashboard 
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Clone Sub Doc Type 
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Future Changes: Add Fuzzy fields in field settings for standard fields 
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Filter reset 
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Filter goes away after uploading a document
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Email notification for status "export error"
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Filter reset 
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Add a warning about why email notifications cannot be saved
+
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Buttons for Email Import IMAP/POP3 are gone 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Classification model not working properly 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Upload Error 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Fuzzy field settings are missing from the field settings 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Add Fuzzy fields in field settings  
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Sub Organisation creation is wrong —> Sub-organization named DeliveryNotes can be created for different organizations 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Table: Not able to save the rules for the table 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Model training not working 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Documents uploaded via the API are not showing on the dashboard
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Change the popup message behind the exclamation mark 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Buttons on the Dashboard have the wrong popup message 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Missing German Translation 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Grey line is longer than the field 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Change this label  
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: UI: Master Data Lookup - Change upper case letters to lower case letters 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: The bin button does not work anymore 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: UI: ADD USER Button is gone 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: The language of the document types in the dropdown of the validation screen does not change correctly to the selected language 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Wrong translation in popup "Reassign Fields Group" 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Error displaying Tax Details - Old View 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: The calculator icon is not being displayed attached document 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: German translation popup message fuzzy icon in field settings 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Correct alignment of the AI Indicator 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Column Order can not change 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Dashboard last page deleting all documents doesn't set you on a different page 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: IMAP Email import - not all attachments got fetched 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: E-Mail configuration with OAuth2 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Suborg add user - no users show up 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Esc close popup 
+
 ## 2.29
 
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Document type "Order forms" including sketches, checkboxes and tables - this new document type will be available upon request
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Creation of a workflow for order documents where multiple order options have been selected. All these documents can only view but can not be edited
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Files containing multiple document types are classified as a separate type, can be opened and reclassified
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Extraction of checkboxes
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: If you have a list with the data extracted from the order, of which each order criterion has its own code, the article number can be created from this using appropriate scripts
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Implementation of a `REJECT` button. You will then be redirected to the dashboard and see the corresponding status
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Fields can be selected by click or tab, extracted area will be highlighted on image
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Extraction through model training
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: If document subtypes are created, only these can be selected during reclassification
-- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: wrong classification of certain documents
-- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: extraction of wrong values
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: layout manager -> the documentation for this will be available soon
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: If the layout builder is turned on in the settings, you will see the new layout on the validation screen
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Implementation of group shortcut keys can be defined by admin. After this is done, when the user presses the defined shortcut key on the validation screen, it jumps to the position and the PDF becomes visible at that position.
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Implementation of button that will validate all fields of a section
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Adjustment of the coordinates in the layout
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Tool tip placed on dashboard so that user can see complete length of filename on hover of the text as column widths cannot be adjusted
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: for single digits and empty fields on the document by updating the number model and adding empty fields in training
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Various UI improvements
-- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Translation errors
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Filter on the dashboard to filter documents by type. It is only possible to filter for active document types on the dashboard
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Fields can be validated/confirmed by pressing the Enter key (instead of clicking the tick) and this will take you directly to the next field marked in red that requires validation.
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Implementation of a button that enables the restart with the correct classification via a popup
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: List of values for currency will be set to ISO Currency and checkbox for `enforce list of values` will be checked. Validation rule will show error if values inside field does not match value from list -> the documentation for this will be available soon
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: only numbers can be entered to field `TOTAL AMOUNT`
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Implementation of a date field to correctly validate the date field of a document
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Secure documents can also be processed
@@ -48,35 +79,55 @@ tags:
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Table extraction - rules can only be saved, if columns are properly mapped
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Table extraction - implementation of table selection popup on column select
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Customization for specific formats of an invoice number (combination on numbers, letters and special characters
-- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Error with saving cache. Filters are now saved by user
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Model Training Schedule Counter for document types - `NEXT MODEL TRAINING UPDATE`
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: `HOME`Button and Polydocs Logo have both same functionality back to dashboard
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Fuzzy fields visible in field settings
-- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: If a user has sub-organizations and has not selected any yet, the first organization is displayed by default in the profile view in the upper right corner. Once the user is assigned to the suborganizations, they will be displayed in the user profile
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Implementation of a help center link that redirects to the support tool if a URL cannot be accessed while logged in (<https://app.polydocs.io/not_found>)  
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: The default value for OCR quality has been set to 75 so that not every imported document runs into errors. How to handle documents that do not meet this quality can be defined separately and individually
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Document Type - Field settings: Individual fields can be moved to a newly created or other existing group
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Copy button on sub doc type settings. It will copy all the fields, layout etc of that sub doc type
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: It is possible to delete an incorrectly created field for a sub-doctype
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Upload TIF Support
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: ZUGFeRD export only allowed for invoices
+
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Document type "Order forms" including sketches, checkboxes and tables - this new document type will be available upon request
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Creation of a workflow for order documents where multiple order options have been selected. All these documents can only view but can not be edited
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Files containing multiple document types are classified as a separate type, can be opened and reclassified
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Extraction of checkboxes
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: If you have a list with the data extracted from the order, of which each order criterion has its own code, the article number can be created from this using appropriate scripts
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Implementation of a `REJECT` button. You will then be redirected to the dashboard and see the corresponding status
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: layout manager -> the documentation for this will be available soon
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: If the layout builder is turned on in the settings, you will see the new layout on the validation screen
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Implementation of button that will validate all fields of a section
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Implementation of a button that enables the restart with the correct classification via a popup
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: List of values for currency will be set to ISO Currency and checkbox for `enforce list of values` will be checked. Validation rule will show error if values inside field does not match value from list -> the documentation for this will be available soon
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Model Training Schedule Counter for document types - `NEXT MODEL TRAINING UPDATE`
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: `HOME`Button and Polydocs Logo have both same functionality back to dashboard
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Copy button on sub doc type settings. It will copy all the fields, layout etc of that sub doc type
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Upload TIF Support
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Implementation of a help center link that redirects to the support tool if a URL cannot be accessed while logged in (<https://app.polydocs.io/not_found>)  
+
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: wrong classification of certain documents
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: extraction of wrong values
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Translation errors
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Error with saving cache. Filters are now saved by user
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: If a user has sub-organizations and has not selected any yet, the first organization is displayed by default in the profile view in the upper right corner. Once the user is assigned to the suborganizations, they will be displayed in the user profile
+
 
 ## 2.00
 
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Overwrite Class by user. If the classification is incorrect, the user can now manually select the class. 
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Overwrite Class by user. If the classification is incorrect, the user can now manually select the class.
+
 - :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED** Link to Help Page for Email notifications 
 - :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED** Link to Help Page for Company information 
 
 ## 1.19
 
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Functionality to split a document into different pages and delete specific pages
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: DESKEW - If user activates this option the quality of the document will automatically optimized. The rotation of the scan will be centered and the DPI quality will be automatically changed to the minimum of 300 DPI
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Switch organisation via profile popup
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Notification of version update in the app after deployment 
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Document assigne should be able to perform action on the document even if he/she does not have permissions
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Active organization is displayed in the upper right corner so you know which org or suborg you are currently in
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Various UI improvements
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Adding the document status `Pending Second Approval` in the approval settings and for the email notification
+
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Functionality to split a document into different pages and delete specific pages
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: DESKEW - If user activates this option the quality of the document will automatically optimized. The rotation of the scan will be centered and the DPI quality will be automatically changed to the minimum of 300 DPI
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Switch organisation via profile popup
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Notification of version update in the app after deployment 
+
 - :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Upload is not working for document with 100 pages
 - :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Table extraction and training errors
 - :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Correction SSO Url
@@ -84,7 +135,7 @@ tags:
 
 ## 1.18
 
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: [E-Mail notifications for Document Type and Status](/docbits/settings/email-notification/)
+
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Implementation of Document Sub Types
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: PO Matching - Quantity match delivery note
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: PO Matching - Hiding empty columns
@@ -92,18 +143,28 @@ tags:
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Fields required for validation on the document details screen are always shown marked with red asterisk
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: numerous changes to the UI: alignment of buttons -size and placement, translations, new upload popup, a check box to select the entire column in the document type Permissions view for groups, Keyboard shortcuts
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Dashboard (list) filters based on Groups & Roles
+
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: [E-Mail notifications for Document Type and Status](/docbits/settings/email-notification/)
+
 - :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Delete WF access possible again
 
 ## 1.17
 
-- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: [Training vs Correction Mode](/docbits/table-extraction/training-of-table-extraction/#training-vs-correction-mode)
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Handling of rotated documents
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: PO Sort - The order on purchase order table must be exactly as in Infor LN
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: UI
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT** TE: Adding a button to send additional description to trash<br> - find example [here](/docbits/table-extraction/advanced-settings/#move-extra-rows-to)
+
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: [Training vs Correction Mode](/docbits/table-extraction/training-of-table-extraction/#training-vs-correction-mode)
+
 - :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Date issue on Dashboard
 
 ## 1.16
+
+- :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Docbits (DOC²) - functionality document details: Save Rules & Save and close
+- :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Docbits (DOC²) - Adding possibility to delete a not standard document type
+- :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Docbits (DOC²) - email import IMAP/SSL
+- :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Docbits (DOC²) - Error message when other file type than pdf gets uploaded
 
 - :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: [Insight²](/insight2/)
 - :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Docbits (DOC²) - Status Pending Approval on dashboard
@@ -115,10 +176,6 @@ tags:
      - For External Application, this feature will be disabled
 - :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Docbits (DOC²) - Login Mobil Responsive
 - :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Display how long the free trial access is running
-- :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Docbits (DOC²) - functionality document details: Save Rules & Save and close
-- :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Docbits (DOC²) - Adding possibility to delete a not standard document type
-- :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Docbits (DOC²) - email import IMAP/SSL
-- :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Docbits (DOC²) - Error message when other file type than pdf gets uploaded
 
 ## 1.15
 
