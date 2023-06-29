@@ -90,7 +90,7 @@ Führen Sie den folgenden Befehl aus, um Doc2Scan Manager zu deinstallieren:
 ```command
 sudo bash /Library/doc2scan/uninstall.sh
 ```
-
+---
 ## Scanner Kompatibilität
 
 Legende:
@@ -105,6 +105,7 @@ Definition:
 **eSCL** steht für Airscan ist ein SANE WebScan-Frontend, dass das AirScan-Protokoll von Apple unterstützt. Die Scanner werden automatisch erkannt und über mDNS veröffentlicht.
 
 **WSD** steht für "Web Services on Devices" und ist ein Netzwerkkommunikationsprotokoll, das für die Druckererkennung und -verwaltung über ein lokales Netzwerk verwendet wird. Im WSD-Modus können Drucker automatisch erkannt und zu einem Computersystem hinzugefügt werden, ohne dass eine manuelle Konfiguration oder die Installation zusätzlicher Druckertreiber erforderlich ist. Er ermöglicht eine einfache Einrichtung und Druckfunktionen für kompatible Drucker über ein Netzwerk. Der WSD-Modus wird häufig in Windows-Betriebssystemen verwendet, um Drucker im Netzwerk zu erkennen und anzuschließen.
+
 
 **Gerät**|**eSCL-Modus**|**WSD-Modus**
 -----|-----|-----
