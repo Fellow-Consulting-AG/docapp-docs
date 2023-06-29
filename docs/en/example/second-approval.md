@@ -3,7 +3,6 @@ title: WF² Second Approval with Docbits (DOC²)
 description: Extended documents-approval as important for any business. We show you how you can easily create a Worfklow to assign an approval
 date: 2022-09-15
 tags:
-  - Workflow²
   - Approval
   - Docbits (DOC²)
 ---
