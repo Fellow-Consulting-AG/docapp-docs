@@ -15,6 +15,51 @@ tags:
 
 # Release Notes
 
+## 2.48
+
+- :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Classification model consistency
+- :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: The cloud loading sign is inconsistent on the Dashboard
+
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: When the date is wrong - make the field red 
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Add a key combo to refresh the dashboard 
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Clone Sub Doc Type 
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Future Changes: Add Fuzzy fields in field settings for standard fields 
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Filter reset 
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Filter goes away after uploading a document
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Email notification for status "export error"
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Filter reset 
+- :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Add a warning about why email notifications cannot be saved
+
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Buttons for Email Import IMAP/POP3 are gone 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Classification model not working properly 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Upload Error 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Fuzzy field settings are missing from the field settings 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Add Fuzzy fields in field settings  
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Sub Organisation creation is wrong —> Sub-organization named DeliveryNotes can be created for different organizations 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Table: Not able to save the rules for the table 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Model training not working 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Documents uploaded via the API are not showing on the dashboard
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Change the popup message behind the exclamation mark 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Buttons on the Dashboard have the wrong popup message 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Missing German Translation 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Grey line is longer than the field 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Change this label  
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: UI: Master Data Lookup - Change upper case letters to lower case letters 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: The bin button does not work anymore 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: UI: ADD USER Button is gone 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: The language of the document types in the dropdown of the validation screen does not change correctly to the selected language 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Wrong translation in popup "Reassign Fields Group" 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Error displaying Tax Details - Old View 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: The calculator icon is not being displayed attached document 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: German translation popup message fuzzy icon in field settings 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Correct alignment of the AI Indicator 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Column Order can not change 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Dashboard last page deleting all documents doesn't set you on a different page 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: IMAP Email import - not all attachments got fetched 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: E-Mail configuration with OAuth2 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Suborg add user - no users show up 
+- :fontawesome-solid-bug-slash:{ style="color: #EE0F0F" } **FIXED**: Esc close popup 
+
 ## 2.29
 
 - :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Document type "Order forms" including sketches, checkboxes and tables - this new document type will be available upon request
