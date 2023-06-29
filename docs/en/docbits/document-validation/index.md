@@ -1,9 +1,9 @@
 ---
 title: "Document Validation"
 date: "2021-10-29"
-description: Explanation of how to start using Docbits (DOC²)
+description: Explanation of how to start using DocBits (DOC²)
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - Document
   - Validation
 ---
@@ -34,7 +34,7 @@ Now, we get the basic information like invoice number, date etc. If you click on
 
 ![Invoice Number](/_images/docbits/Document Validation/1-Index/DOC2_invoice-number_4.png)
 
-You can now check if the number was extracted correctly. All values that were correctly extracted you confirm with the checkmark. You can do this with every single field. Another important point is that on the right side of each field you get a percentage of the confidence level of the Docbits (DOC²).
+You can now check if the number was extracted correctly. All values that were correctly extracted you confirm with the checkmark. You can do this with every single field. Another important point is that on the right side of each field you get a percentage of the confidence level of the DocBits (DOC²).
 
 All values that have been correctly extracted and confirmed with the check mark will have a green bar at the beginning of the field.
 

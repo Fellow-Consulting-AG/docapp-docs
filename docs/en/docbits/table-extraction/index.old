@@ -1,16 +1,16 @@
 ---
 title: "Table Extraction"
-description: With Docbits (DOC²) it is possible to extract tables from PDF-Files. That will be done via the Line Items functionality. It is used for extracting the tables from all types of documents (Invoices, Contracts, Forms, Medical Prescriptions etc.)
+description: With DocBits (DOC²) it is possible to extract tables from PDF-Files. That will be done via the Line Items functionality. It is used for extracting the tables from all types of documents (Invoices, Contracts, Forms, Medical Prescriptions etc.)
 date: "2021-11-11"
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - Table
   - Line Items
 ---
 
 # Table Extraction
 
-With Docbits (DOC²) it is possible to extract tables from PDF-Files. That will be done via the "Line Items" functionality. It is used for extracting the tables from all types of documents (Invoices, Contracts, Forms, Medical Prescriptions etc.).
+With DocBits (DOC²) it is possible to extract tables from PDF-Files. That will be done via the "Line Items" functionality. It is used for extracting the tables from all types of documents (Invoices, Contracts, Forms, Medical Prescriptions etc.).
 
 The extraction of data in tables can be achieved by following the steps described below:
 
@@ -36,6 +36,6 @@ In practice, tables on documents are often much more complex and have a wide var
 
 ![](/_images/docbits/image-16.png)
 
-And this is where the advantage of Docbits (DOC²) and its table extraction functionality comes into play. There are several ways to train the table extraction functionality and to achieve the best possible result, even with demanding tables.
+And this is where the advantage of DocBits (DOC²) and its table extraction functionality comes into play. There are several ways to train the table extraction functionality and to achieve the best possible result, even with demanding tables.
 
 In the following sections you will learn how to train a table manually and what functionalities are available for this:

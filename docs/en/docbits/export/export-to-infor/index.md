@@ -1,11 +1,11 @@
 ---
-title: Docbits (DOC²) to Infor OS
-description: Documentation for Export Docbits (DOC²) to Infor OS
+title: DocBits (DOC²) to Infor OS
+description: Documentation for Export DocBits (DOC²) to Infor OS
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - Export
   - Infor
-  - Docbits (DOC²)
+  - DocBits (DOC²)
 ---
 
 # Export to Infor :fontawesome-solid-file-export:

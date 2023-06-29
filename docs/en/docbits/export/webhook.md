@@ -3,7 +3,7 @@ title: "Webhook"
 description: Exporting data via a webhook
 date: "2021-10-22"
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - Export
   - Webhook
 ---
@@ -14,7 +14,7 @@ A webhook is an easy way to exchange data between online applications.
 
 Follow the steps to configure the webhook export.
 
-Login to Docbits (DOC²), click on settings and select "Export".
+Login to DocBits (DOC²), click on settings and select "Export".
 
 ![](/_images/docbits/image-1-1024x695.png)
 

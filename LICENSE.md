@@ -21,7 +21,7 @@ Software: WF²
 
 License: Apache 2.0
 
-Licensor: Docbits (DOC²) GmbH
+Licensor: DocBits (DOC²) GmbH
 
 
 ---------------------------------------------------------------------

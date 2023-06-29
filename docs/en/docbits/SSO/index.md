@@ -26,7 +26,7 @@ Single Sign On (SSO) allows users to access multiple applications with a single 
 ### SSO Configuration Guides
 
 - [Configuring SSO in Infor Cloud](/docbits/doc2-with-infor/configuring-sso-in-cloud/) - Learn how to configure SSO for Infor Cloud.
-- [SSO for Azure AD with Docbits (DOC²)](/docbits/sso/sso-for-azure-ad/) - Learn how to configure SSO for Azure Active Directory (AD) with Docbits (DOC²).
-- [SSO Service Provider Settings in Docbits (DOC²)](/docbits/settings-sso-settings/) - Learn how to configure SSO service provider settings in Docbits (DOC²).
+- [SSO for Azure AD with DocBits (DOC²)](/docbits/sso/sso-for-azure-ad/) - Learn how to configure SSO for Azure Active Directory (AD) with DocBits (DOC²).
+- [SSO Service Provider Settings in DocBits (DOC²)](/docbits/settings-sso-settings/) - Learn how to configure SSO service provider settings in DocBits (DOC²).
 
 Improve your productivity, security, and IT efficiency by configuring Single Sign On (SSO) for Infor Cloud and Azure AD. Find helpful documentation and guides here.

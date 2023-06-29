@@ -1,18 +1,18 @@
 ---
-title: "Docbits (DOC²) - Infor Use Cases for Efficient Document Management"
-description: "Explore different use cases of how Docbits (DOC²) can help you manage your documents efficiently with Infor. From simple invoice processing to complex PO matching and ZUGFeRD conversion, we've got you covered."
+title: "DocBits (DOC²) - Infor Use Cases for Efficient Document Management"
+description: "Explore different use cases of how DocBits (DOC²) can help you manage your documents efficiently with Infor. From simple invoice processing to complex PO matching and ZUGFeRD conversion, we've got you covered."
 date: "2022-10-27"
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - PO Matching
   - Infor LN
   - Infor M3
   - Use Cases
 ---
 
-## Efficient Document Management with Docbits (DOC²) and Infor
+## Efficient Document Management with DocBits (DOC²) and Infor
 
-Docbits (DOC²) is a powerful document management solution that can help you streamline your document processing workflows. With seamless integration with Infor LN and Infor M3, Docbits (DOC²) can help you manage your documents efficiently and accurately. Here are some of the use cases where Docbits (DOC²) can help you:
+DocBits (DOC²) is a powerful document management solution that can help you streamline your document processing workflows. With seamless integration with Infor LN and Infor M3, DocBits (DOC²) can help you manage your documents efficiently and accurately. Here are some of the use cases where DocBits (DOC²) can help you:
 
 ``` mermaid
 graph LR
@@ -27,7 +27,7 @@ graph LR
 ```
 
 
-With Docbits (DOC²) you can do more
+With DocBits (DOC²) you can do more
 
 ``` mermaid
 graph LR
@@ -44,7 +44,7 @@ graph LR
 
 ### Simple Invoice Processing
 
-This is the most common use case for Docbits (DOC²). With its advanced OCR capabilities, Docbits (DOC²) can extract relevant information from invoices and send it to Infor for further processing. Here's how it works:
+This is the most common use case for DocBits (DOC²). With its advanced OCR capabilities, DocBits (DOC²) can extract relevant information from invoices and send it to Infor for further processing. Here's how it works:
 
 ### Invoice and Delivery Note
 

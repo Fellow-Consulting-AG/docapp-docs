@@ -1,16 +1,16 @@
 ---
-title: All Docbits (DOC²) Document Status List | Docbits (DOC²) Software
-description: Check out the complete list of document statuses in Docbits (DOC²) software. From WatchDog start to Error, know what each status means and how it affects your document processing.
+title: All DocBits (DOC²) Document Status List | DocBits (DOC²) Software
+description: Check out the complete list of document statuses in DocBits (DOC²) software. From WatchDog start to Error, know what each status means and how it affects your document processing.
 date: 2022-09-16
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - Document Status
   - List
 ---
 
-## All Docbits (DOC²) Document Status List
+## All DocBits (DOC²) Document Status List
 
-If you're using Docbits (DOC²) software for document processing, it's essential to understand the different document statuses that your files can have. Here's a complete list of all the possible document statuses in Docbits (DOC²):
+If you're using DocBits (DOC²) software for document processing, it's essential to understand the different document statuses that your files can have. Here's a complete list of all the possible document statuses in DocBits (DOC²):
 
 - `WatchDog Start`: The Watchdog module is starting.
 - `WatchDog Split`: The document is being split in Watchdog.

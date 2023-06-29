@@ -1,22 +1,22 @@
 ---
-title: "Docbits (DOC²) OnBoarding Guide for Productivity | FellowPro AG"
-description: "Learn the basics of Docbits (DOC²) and get up and running with an IPS that will maximize your productivity. Follow our step-by-step guide for initial setup and understanding document review."
+title: "DocBits (DOC²) OnBoarding Guide for Productivity | FellowPro AG"
+description: "Learn the basics of DocBits (DOC²) and get up and running with an IPS that will maximize your productivity. Follow our step-by-step guide for initial setup and understanding document review."
 date: "2022-10-27"
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - OnBoarding
   - Guide
   - Initial Setup
   - Understanding Document Review
 ---
 
-# Docbits (DOC²) OnBoarding Guide for Productivity
+# DocBits (DOC²) OnBoarding Guide for Productivity
 
-Welcome to the Docbits (DOC²) OnBoarding Guide! This guide will help you learn the basics of Docbits (DOC²) and get up and running with an IPS that will maximize your productivity.
+Welcome to the DocBits (DOC²) OnBoarding Guide! This guide will help you learn the basics of DocBits (DOC²) and get up and running with an IPS that will maximize your productivity.
 
 ## Performing Initial Setup
 
-To access and configure your system, go to [https://app.polydocs.io/](https://app.polydocs.io/). Please note that Docbits (DOC²) does not work in Tenant, and all customers use the same cluster hosted in Frankfurt, Germany.
+To access and configure your system, go to [https://app.polydocs.io/](https://app.polydocs.io/). Please note that DocBits (DOC²) does not work in Tenant, and all customers use the same cluster hosted in Frankfurt, Germany.
 
 Here are the two ways to access the system:
 
@@ -36,11 +36,11 @@ You can add users from **Settings** > **Users**. For help, refer to [Adding User
 
 ## Understanding Document Review
 
-After the initial setup is complete, most of your time in Docbits (DOC²) will be spent reviewing example invoices.
+After the initial setup is complete, most of your time in DocBits (DOC²) will be spent reviewing example invoices.
 
-### Sending Document to Docbits (DOC²)
+### Sending Document to DocBits (DOC²)
 
-You can send documents to Docbits (DOC²) in the following ways:
+You can send documents to DocBits (DOC²) in the following ways:
 
 1. Manual Upload
 2. Email
@@ -57,4 +57,4 @@ To review extracted results:
 2. Review the extracted results. Refer to reviewing your document for more information.
 3. When you're satisfied, click **Complete Review**.
 
-Improve your productivity with Docbits (DOC²) today! Contact FellowPro AG for more information.
+Improve your productivity with DocBits (DOC²) today! Contact FellowPro AG for more information.

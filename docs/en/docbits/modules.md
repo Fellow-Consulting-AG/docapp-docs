@@ -1,9 +1,9 @@
 ---
 title: "Modules"
-description: You will find different modules in Docbits (DOC²) settings.These modules are important if you like to deal with PO Matching and use the table extraction functionality.
+description: You will find different modules in DocBits (DOC²) settings.These modules are important if you like to deal with PO Matching and use the table extraction functionality.
 date: "2022-02-25"
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - Settings
   - Modules
   - Purchase Order
@@ -11,7 +11,7 @@ tags:
   - Table Extraction
 ---
 
-In Docbits (DOC²) you will find the "SETTINGS" menu in the "DASHBOARD". Open this menu.
+In DocBits (DOC²) you will find the "SETTINGS" menu in the "DASHBOARD". Open this menu.
 
 ![](/_images/docbits/image-44-1024x396.png)
 

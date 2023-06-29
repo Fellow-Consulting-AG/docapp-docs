@@ -1,16 +1,16 @@
 ---
 title: "Group function to extract data from tables"
-description: The group function is one of the most important feature to extract data form tables. Once a table has been extracted via Docbits (DOC²) and the columns have been mapped the obtained data can be grouped to get a structured result set of all extracted data.
+description: The group function is one of the most important feature to extract data form tables. Once a table has been extracted via DocBits (DOC²) and the columns have been mapped the obtained data can be grouped to get a structured result set of all extracted data.
 date: "2022-02-24"
 tags:
   - Tables
   - Table Extraction
-  - Docbits (DOC²)
+  - DocBits (DOC²)
 ---
 
 # Group function to extract data from tables
 
-Once a table has been extracted via Docbits (DOC²) and the columns have been mapped ([Mapping of columns](/docbits/table-extraction/mapping-of-columns/)) the obtained data can be grouped to get a structured result set of all extracted data.
+Once a table has been extracted via DocBits (DOC²) and the columns have been mapped ([Mapping of columns](/docbits/table-extraction/mapping-of-columns/)) the obtained data can be grouped to get a structured result set of all extracted data.
 
 [Sign up for a 30 days free trail](https://app.polydocs.io){ .md-button .md-button--primary }
 
@@ -22,9 +22,9 @@ As an example, you can see the German invoice below, where the information in co
 
 ![Grouping Example](/_images/docbits/Table-Extraction/6-Group Function/Image_20_grouping_example.png){ loading=lazy }
 
-At this point, another advantage of Docbits (DOC²) comes into play. It extracts the data in the first step 1 to 1. The result looks like this:
+At this point, another advantage of DocBits (DOC²) comes into play. It extracts the data in the first step 1 to 1. The result looks like this:
 
-![Docbits (DOC²) Grouping Example](/_images/docbits/Table-Extraction/6-Group Function/Image_21_grouping_example_doc2.png){ loading=lazy }
+![DocBits (DOC²) Grouping Example](/_images/docbits/Table-Extraction/6-Group Function/Image_21_grouping_example_doc2.png){ loading=lazy }
 
 BUT: Now there is the possibility to group data based on a specific column. That means in this case it can be grouped by the column "Position" as shown in the following video. This in turn groups the rows of the "Description" column into one row. So that at the end you get a structured overall picture of the export and the data can now be processed further.
 

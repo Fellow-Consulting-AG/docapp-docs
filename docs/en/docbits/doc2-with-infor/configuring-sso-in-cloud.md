@@ -15,7 +15,7 @@ tags:
 
 ### **Prerequisites**
 
-<table><tbody><tr><td><strong>Required Information</strong></td><td><strong>Description</strong></td></tr><tr><td>Login Details to Cloud</td><td>Credentials are mandatory for accessing the Infor Cloud environment.<br>The user should have the roles "Infor-SystemAdministrator" and "UserAdmin".</td></tr><tr><td>Config Admin Details (Docbits (DOC²))</td><td>You should have received an email from FellowPro AG with the login details for the Docbits (DOC²) SSO Settings page.<br><br>You will need login and password.<br></td></tr><tr><td>Certificate</td><td>You can download the certificate in Docbits (DOC²) under SSO Service Provider Settings</td></tr></tbody></table>
+<table><tbody><tr><td><strong>Required Information</strong></td><td><strong>Description</strong></td></tr><tr><td>Login Details to Cloud</td><td>Credentials are mandatory for accessing the Infor Cloud environment.<br>The user should have the roles "Infor-SystemAdministrator" and "UserAdmin".</td></tr><tr><td>Config Admin Details (DocBits (DOC²))</td><td>You should have received an email from FellowPro AG with the login details for the DocBits (DOC²) SSO Settings page.<br><br>You will need login and password.<br></td></tr><tr><td>Certificate</td><td>You can download the certificate in DocBits (DOC²) under SSO Service Provider Settings</td></tr></tbody></table>
 
 **1\. Get access to the Cloud and check your access**
 
@@ -47,11 +47,11 @@ b. You will see this window with the Service Providers.
 
 ![](/_images/docbits/infor_Service-Provider_2-1-1024x479.png){ loading=lazy }
 
-c. Now click on the “+” sign and add our Docbits (DOC²) as Service Provider. (View step 4)
+c. Now click on the “+” sign and add our DocBits (DOC²) as Service Provider. (View step 4)
 
 ![](/_images/docbits/infor6.png){ loading=lazy }
 
-**3\. Access the SSO SERVICE PROVIDER SETTINGS in Docbits (DOC²)**
+**3\. Access the SSO SERVICE PROVIDER SETTINGS in DocBits (DOC²)**
 
 a) Log in on URL [https://app.polydocs.io/](https://app.polydocs.io/) with the login details you received from us.
 
@@ -63,17 +63,17 @@ c) Download the certificate
 
 ![](/_images/docbits/DOC2_SSO-Service-Provider-Settings-1024x640.png){ loading=lazy }
 
-**4\. Filling the Service Provider with the help of SSO Service Provider Settings in Docbits (DOC²)**
+**4\. Filling the Service Provider with the help of SSO Service Provider Settings in DocBits (DOC²)**
 
 ![](/_images/docbits/infor_Service-Provider_3-1024x891.png)
 
-<table><tbody><tr><td><strong>Field</strong></td><td><strong>Value</strong></td></tr><tr><td><strong>Application Type</strong></td><td>DEFAULT_SAML</td></tr><tr><td><strong>Display Name</strong></td><td>Docbits (DOC²)</td></tr><tr><td><strong>Entity ID</strong></td><td>See Entity ID under SSO SERVICE SETTINGS</td></tr><tr><td><strong>SSO Endpoint</strong></td><td>Copy the SSO URL from SSO SERVICE SETTINGS and paste it in the <strong>SSO Endpoint </strong>field.</td></tr><tr><td><strong>SLO Endpoint</strong></td><td>Copy SLO URL from SSO SERVICE SETTINGS and paste it in the <strong>SLO Endpoint </strong>field.</td></tr><tr><td><strong>Signing Certificate</strong></td><td>Upload the appropriate .cer file you have downloaded in step 3c) from SSO SERVICE SETTINGS</td></tr><tr><td><strong>Name ID Format and Mapping</strong></td><td>emailaddress</td></tr></tbody></table>
+<table><tbody><tr><td><strong>Field</strong></td><td><strong>Value</strong></td></tr><tr><td><strong>Application Type</strong></td><td>DEFAULT_SAML</td></tr><tr><td><strong>Display Name</strong></td><td>DocBits (DOC²)</td></tr><tr><td><strong>Entity ID</strong></td><td>See Entity ID under SSO SERVICE SETTINGS</td></tr><tr><td><strong>SSO Endpoint</strong></td><td>Copy the SSO URL from SSO SERVICE SETTINGS and paste it in the <strong>SSO Endpoint </strong>field.</td></tr><tr><td><strong>SLO Endpoint</strong></td><td>Copy SLO URL from SSO SERVICE SETTINGS and paste it in the <strong>SLO Endpoint </strong>field.</td></tr><tr><td><strong>Signing Certificate</strong></td><td>Upload the appropriate .cer file you have downloaded in step 3c) from SSO SERVICE SETTINGS</td></tr><tr><td><strong>Name ID Format and Mapping</strong></td><td>emailaddress</td></tr></tbody></table>
 
 ![](/_images/docbits/infor_Service-Provider_completed-956x1024.png)
 
 a) When you have filled out everything remember to save it with the disk icon above Application Type
 
-b) Then, enter the service provider Docbits (DOC²) again.
+b) Then, enter the service provider DocBits (DOC²) again.
 
 c) Click on view the Identity Provider Information underneath.
 
@@ -115,8 +115,8 @@ c) fill out all fields like on following picture but with your own SSO Url, don'
 
 **And now the last step:**
 
-- Log out of Docbits (DOC²).
+- Log out of DocBits (DOC²).
 - Go back to the burger menu in infor and select the icon you just created.
-- And you are already on the dashboard of Docbits (DOC²).
+- And you are already on the dashboard of DocBits (DOC²).
 
 ![](/_images/docbits/Sign-in-over-SSO-1024x640.png){ loading=lazy }

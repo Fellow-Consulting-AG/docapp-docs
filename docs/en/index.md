@@ -22,11 +22,11 @@ business models can open along the way.
 
 Every business process starts, contains or ends with a document. Regardless of whether in paper form or already as a file. This is called unstructured data. Although the information is on or in the document, it cannot be automatically integrated into the work processes, as it is simply not recognized by all software.
 
-## What is Docbits (DOC²)?
+## What is DocBits (DOC²)?
 
-Docbits (DOC²) is the latest software and solution for document capture that was developed by PolyDocs GmbH. It is a completely cloud-based solution that uses Artificial Intelligence and Machine Learning to precisely identify, classify, analyze and read your documents. No matter if on paper or a file. Docbits (DOC²) learns independently, the level of experience increases with each document. Docbits (DOC²) accomplishes this through swarm intelligence.
+DocBits (DOC²) is the latest software and solution for document capture that was developed by PolyDocs GmbH. It is a completely cloud-based solution that uses Artificial Intelligence and Machine Learning to precisely identify, classify, analyze and read your documents. No matter if on paper or a file. DocBits (DOC²) learns independently, the level of experience increases with each document. DocBits (DOC²) accomplishes this through swarm intelligence.
 
-<ins>The Advantages of Docbits (DOC²) at a glance:</ins>
+<ins>The Advantages of DocBits (DOC²) at a glance:</ins>
 
   -  Recognizes the required data – even handwritten information and information in tables reliably and is self-learning, even through corrections by the user
   -  With swarm intelligence, you benefit continuously from the experiences of other customers
@@ -39,19 +39,19 @@ Docbits (DOC²) is the latest software and solution for document capture that wa
   -  Saves time in the digital inbox
   -  Reduces errors caused by manual processing
 
-## How do you use Docbits (DOC²):
+## How do you use DocBits (DOC²):
 
   -  Scanning and Recognition of all types of documents (invoices, contracts, forms, medical prescriptions etc.)
   -  Reliable extraction of the data in the document and integration and further processing in the ERP, RPA or CRM system)
   -  Validation of the extracted data and verification against other systems from internal and public sources
   -  Integration into your system landscape (e.g. ERP System, Document Management, Workflow System etc)
 
-## Why Docbits (DOC²) is just right for you
+## Why DocBits (DOC²) is just right for you
 
   -   Many companies have recognized that processing incoming invoices, for example, can be very time-consuming. They are trying to increase productivity and optimize
       the purchase-to-pay process by introducing products for the “digitization” of invoices.
 
-  -  In addition, Docbits (DOC²) uses swarm intelligence. What does that mean? You benefit from the experiences of other customers and their “learning curve” without sharing sensitive
+  -  In addition, DocBits (DOC²) uses swarm intelligence. What does that mean? You benefit from the experiences of other customers and their “learning curve” without sharing sensitive
      data. With the cloud-based rule engine, we ensure continuous improvement of the application. You don’t need any developers or data scientists, because the system learns from the input of the user and the process runs without interruptions.
 
   -  With the help of deep learning algorithms, not only simple header data of a document can be recorded, but also complicated structures such as tables. Of course, not

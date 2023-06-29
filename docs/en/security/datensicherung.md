@@ -1,15 +1,15 @@
 ---
-title: Data Security Measures of Docbits (DOC²)
-description: Learn about the robust data security measures implemented by Docbits (DOC²) to ensure the safety and privacy of your uploaded files and sensitive information.
+title: Data Security Measures of DocBits (DOC²)
+description: Learn about the robust data security measures implemented by DocBits (DOC²) to ensure the safety and privacy of your uploaded files and sensitive information.
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - Data Security
 date: '2021-11-29'
 ---
 
-# Data Security Measures of Docbits (DOC²)
+# Data Security Measures of DocBits (DOC²)
 
-At Docbits (DOC²), we understand the importance of data security and take it very seriously. We have implemented robust measures to ensure the safety and privacy of your uploaded files and sensitive information. Here are some of the measures we have in place:
+At DocBits (DOC²), we understand the importance of data security and take it very seriously. We have implemented robust measures to ensure the safety and privacy of your uploaded files and sensitive information. Here are some of the measures we have in place:
 
 ## Uploaded Files
 
@@ -23,10 +23,10 @@ We run daily database backups that are saved for seven days each. Communication 
 
 All communication is done via HTTPS, and every non-HTTPS request is automatically redirected to HTTPS. This ensures that all data transmitted between our servers and your device is encrypted and secure.
 
-At Docbits (DOC²), we are committed to providing our users with the highest level of data security. You can trust us to keep your sensitive information safe and secure. 
+At DocBits (DOC²), we are committed to providing our users with the highest level of data security. You can trust us to keep your sensitive information safe and secure. 
 
 <div class='video-container'>
   <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
 </div>
 
-![Data Security Measures of Docbits (DOC²)](/path/to/image.jpg "Data Security Measures of Docbits (DOC²)")
+![Data Security Measures of DocBits (DOC²)](/path/to/image.jpg "Data Security Measures of DocBits (DOC²)")

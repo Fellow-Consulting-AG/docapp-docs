@@ -2,14 +2,14 @@
 title: "PO Matching - Order Confirmation"
 date: "2022-01-28"
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - PO Matching
   - Order Confirmation
 ---
 
 If quantity of the ordered item(s) does not match the quantity on the invoice you need to start the match with received Order Confirmation.
 
-## Upload the Order Confirmation in Docbits (DOC²)
+## Upload the Order Confirmation in DocBits (DOC²)
 
 [Sign up for a 30 days free trail](https://app.polydocs.io){ .md-button .md-button--primary }
 

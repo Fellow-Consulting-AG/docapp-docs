@@ -1,19 +1,19 @@
 ---
-title: "AI Indicators: How to Measure the Quality of Extraction with Docbits (DOC²)"
-description: Learn how to use the AI indicators in Docbits (DOC²) to measure the quality of extraction for your documents. Improve your document processing with this powerful tool.
+title: "AI Indicators: How to Measure the Quality of Extraction with DocBits (DOC²)"
+description: Learn how to use the AI indicators in DocBits (DOC²) to measure the quality of extraction for your documents. Improve your document processing with this powerful tool.
 date: "2022-10-19"
 tags:
   - AI
-  - Docbits (DOC²)
+  - DocBits (DOC²)
 ---
 
 <div class='video-container'>
   <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
 </div>
 
-## How to Use the AI Indicators in Docbits (DOC²)
+## How to Use the AI Indicators in DocBits (DOC²)
 
-Docbits (DOC²) offers powerful AI indicators that allow you to measure the quality of extraction for your documents. Here's how to use them:
+DocBits (DOC²) offers powerful AI indicators that allow you to measure the quality of extraction for your documents. Here's how to use them:
 
 1. Open a document from the dashboard.
 2. In document view, you'll see two indicators for the quality of extraction:
@@ -29,8 +29,8 @@ Docbits (DOC²) offers powerful AI indicators that allow you to measure the qual
 
 ## Explanation of the AI Indicator
 
-The AI indicator shows how well a document is trained. This is done via an internal score. As soon as a document is read in and the fields extracted by Docbits (DOC²) are confirmed by the user, this score is increased. The higher the score, the further the display of the AI indicator will be in the green area. If fields are changed manually by the user after the export, this score will decrease again, and the display of the AI indicator will fall back into the red area. Only when the document has been taught and the extraction has determined the correct value for some imports without manual intervention will the score reach 100%.
+The AI indicator shows how well a document is trained. This is done via an internal score. As soon as a document is read in and the fields extracted by DocBits (DOC²) are confirmed by the user, this score is increased. The higher the score, the further the display of the AI indicator will be in the green area. If fields are changed manually by the user after the export, this score will decrease again, and the display of the AI indicator will fall back into the red area. Only when the document has been taught and the extraction has determined the correct value for some imports without manual intervention will the score reach 100%.
 
-## Improve Your Document Processing with Docbits (DOC²)
+## Improve Your Document Processing with DocBits (DOC²)
 
-Docbits (DOC²) is a powerful tool that can help you streamline your document processing and improve your workflow. With its advanced AI indicators, you can measure the quality of extraction for your documents and make adjustments as needed. Try Docbits (DOC²) today and see how it can help you work smarter, not harder. 
+DocBits (DOC²) is a powerful tool that can help you streamline your document processing and improve your workflow. With its advanced AI indicators, you can measure the quality of extraction for your documents and make adjustments as needed. Try DocBits (DOC²) today and see how it can help you work smarter, not harder. 

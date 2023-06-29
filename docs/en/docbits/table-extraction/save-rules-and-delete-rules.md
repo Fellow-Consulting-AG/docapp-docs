@@ -1,22 +1,22 @@
 ---
-title: "Save and Delete Rules for Table Extraction in Docbits (DOC²)"
-description: "Learn how to save and delete rules for table extraction in Docbits (DOC²). This important documentation will guide you through the process to ensure you don't lose any valuable data."
+title: "Save and Delete Rules for Table Extraction in DocBits (DOC²)"
+description: "Learn how to save and delete rules for table extraction in DocBits (DOC²). This important documentation will guide you through the process to ensure you don't lose any valuable data."
 date: "2022-10-27"
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - Table Extraction
   - Rules
   - Save
   - Delete
 ---
 
-# Save and Delete Rules for Table Extraction in Docbits (DOC²)
+# Save and Delete Rules for Table Extraction in DocBits (DOC²)
 
-If you're using Docbits (DOC²) for document/table extraction, it's important to save and delete rules properly to ensure your data is extracted accurately. This guide will walk you through the process.
+If you're using DocBits (DOC²) for document/table extraction, it's important to save and delete rules properly to ensure your data is extracted accurately. This guide will walk you through the process.
 
 ## Save Rules
 
-Once you've trained a document in Docbits (DOC²) and defined all the rules for table extraction, you can save those rules for future imports. This means that the tables in your documents will be extracted automatically, without any manual training required.
+Once you've trained a document in DocBits (DOC²) and defined all the rules for table extraction, you can save those rules for future imports. This means that the tables in your documents will be extracted automatically, without any manual training required.
 
 To save your rules, simply click the "SAVE RULES" button. You'll see a rule indicator that shows how many rules have been defined and saved for that document.
 
@@ -32,7 +32,7 @@ However, it's important to note that deleting rules will affect all documents wi
 
 ## Sign Up for a Free Trial
 
-Ready to try Docbits (DOC²) for yourself? Sign up for a 30-day free trial today and see how easy it is to extract tables from your documents.
+Ready to try DocBits (DOC²) for yourself? Sign up for a 30-day free trial today and see how easy it is to extract tables from your documents.
 
 <div class='video-container'>
   <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>

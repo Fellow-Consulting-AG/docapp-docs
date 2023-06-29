@@ -1,9 +1,9 @@
 ---
-title: "How to Manage Sub-Organizations in Docbits (DOC²)"
-description: Learn how to manage sub-organizations in Docbits (DOC²). 
+title: "How to Manage Sub-Organizations in DocBits (DOC²)"
+description: Learn how to manage sub-organizations in DocBits (DOC²). 
 date: "2021-11-01"
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - Settings
   - Groups, Users and Permissions
   - Sub-Organizations

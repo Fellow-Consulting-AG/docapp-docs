@@ -1,16 +1,16 @@
-site_name: FELLOWPRO Documentation
-docs_dir: '../../docs/en'                           # Where to find the English markdown files
-site_dir: '../../generated/en'                      # Where to put the English HTML files
-site_url: https://en.docs.fellowpro.com
+site_name: FELLOWPRO Dokumentation
+docs_dir: '../../docs/de'                           # Where to find the English markdown files
+site_dir: '../../generated/de'                      # Where to put the English HTML files
+site_url: https://de.docs.fellowpro.com
 site_author: Daniel Jordan
-site_description: On these pages you will learn a lot about our different software helping you with digitization, digitalization and the digital transformation in your company.
+site_description: Auf diesen Seiten erfahren Sie viel über unsere verschiedenen Softwarelösungen, die Sie bei der Digitalisierung und der digitalen Transformation in Ihrem Unternehmen unterstützen.
 theme:
   name: material
   logo: _images/LOGO.svg
-  favicon: _images/fav.svg
+  favicon: _images/LOGO.svg
   font:
     text: Montserrat
-  language: en
+  language: de
   features:
     - announce.dismiss
     - content.action.edit
@@ -35,21 +35,20 @@ theme:
       accent: indigo
       toggle:
         icon: material/brightness-7
-        name: Switch to dark mode
+        name: In den dunkeln Modus wechseln
     - scheme: slate
       primary: custom
       accent: indigo
       toggle:
         icon: material/brightness-4
-        name: Switch to light mode
+        name: In den hellen Modus wechseln
 
 extra_css:
   - _extra/css/extra.css
-  - https://www.neoteroi.dev/mkdocs-plugins/css/neoteroi.css
-  - https://www.neoteroi.dev/mkdocs-plugins/css/mkdocsoad.css
-
+# https://squidfunk.github.io/mkdocs-material/customization/?h=#additional-javascript
 extra_javascript:
   - _extra/javascript/extra.js
+
 extra:
   alternate:
     - name: English
@@ -61,10 +60,10 @@ extra:
   consent:
     title: Cookie consent
     description: >-
-      We use cookies to recognize your repeated visits and preferences, as well
-      as to measure the effectiveness of our documentation and whether users
-      find what they're searching for. With your consent, you're helping us to
-      make our documentation better.
+      Wir verwenden Cookies, um Ihre wiederholten Besuche und Präferenzen zu erkennen, sowie
+      und um die Effektivität unserer Dokumentation zu messen und um festzustellen, ob die
+      finden, wonach sie suchen. Mit Ihrer Zustimmung helfen Sie uns, unsere
+      unsere Dokumentation zu verbessern.
   annotate:
     json: [.s2]
   generator: false
@@ -74,7 +73,7 @@ extra:
       link: https://www.linkedin.com/company/645725/
   analytics:
     provider: google
-    property: G-37LG4Z0JJD
+    property: G-RYHFD5FLTH
     feedback:
       title: Was this page helpful?
       ratings:
@@ -89,6 +88,7 @@ extra:
           note: >-
             Thanks for your feedback! Help us improve this page by
             using our <a href="https://docs.google.com/forms/d/e/1FAIpQLScEh_N3lX4JFfvE1fdtImtSv2eVjcEGjlPzsH5usNfN4uNOIg/viewform?usp=pp_url&entry.1764397339=[Feedback]+{title}+-+{url}" target=_blank>feedback form</a>.
+
 
 markdown_extensions:
   
@@ -132,10 +132,6 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
   - tables
-  - neoteroi.spantable
-  - neoteroi.timeline
-  - neoteroi.cards
-  - neoteroi.projects
   
 plugins:
   - search:
@@ -149,72 +145,66 @@ plugins:
       tags_file: tags.md
   - minify:
       minify_html: true
-  - neoteroi.contribs
-  - blog
-
-
 
 nav:
   - Changelog: Release/Release_notes.md
-  - DocBits (DOC²):
-    - Getting Started: docbits/index.md
-    - Data security: security/datensicherung.md
+  - DocBits (Doc²):
+    - Einstieg: docbits/index.md
+    - Datensicherheit: security/datensicherung.md
     - OnBoarding: docbits/onboarding.md
-    - Deployment: docbits/deployment.md
+    - Bereitstellung: docbits/deployment.md
     - Dashboard:
       - docbits/dashboard/index.md
-      - Manual Import: docbits/manual-import.md
-      - Keyboard: docbits/keyboard.md
-      - Document Status: docbits/document_status.md
-    - Document Validation:
+      - Manueller Import: docbits/manual-import.md
+      - Tastenkombinationen: docbits/keyboard.md
+      - Dokumentenstatus: docbits/document_status.md
+    - Dokumentenvalidierung:
       - docbits/document-validation/index.md
-      - Master Data Validation: docbits/document-validation/master-data-validation.md
-      - OCR View: docbits/document-validation/ocr-view.md
-      - AI Indicator: docbits/document-validation/ai-indicator.md
-    # - Expressions: docbits/document-validation/exception-filters.md
-    - Table Extraction:
+      - Validierung von Stammdaten: docbits/document-validation/master-data-validation.md
+      - OCR-Ansicht: docbits/document-validation/ocr-view.md
+      - E-Text: docbits/document-validation/e-text.md
+      - KI-Indikator: docbits/document-validation/ai-indicator.md
+      # - Ausdrücke: docbits/document-validation/exception-filters.md
+    - Tabellen auslesen:
       - docbits/table-extraction/index.md
-      - Training table extraction: docbits/table-extraction/training-of-table-extraction.md
-      - Define tables and columns: docbits/table-extraction/define-table-and-columns.md
-      - Add new Column: docbits/table-extraction/add-new-table-column.md
-      - Mapping of Columns: docbits/table-extraction/mapping-of-columns.md
-      - Group function: docbits/table-extraction/group-function.md
-      - Manual row selection: docbits/table-extraction/manual-row-selection.md
-      - Advanced settings: docbits/table-extraction/advanced-settings.md
-      - Save and delete rules: docbits/table-extraction/save-rules-and-delete-rules.md
+      - Schulung zur Tabellenauswertung: docbits/table-extraction/training-of-table-extraction.md
+      - Definition von Tabellen und Spalten: docbits/table-extraction/define-table-and-columns.md
+      - Hinzufügen neuer Spalten: docbits/table-extraction/add-new-table-column.md
+      - Zuordnung von Spalten: docbits/table-extraction/mapping-of-columns.md
+      - Gruppenfunktion: docbits/table-extraction/group-function.md
+      - Manuelle Zeilenauswahl: docbits/table-extraction/manual-row-selection.md
+      - Erweiterte Einstellungen: docbits/table-extraction/advanced-settings.md
+      - Speichern und Löschen von Regeln: docbits/table-extraction/save-rules-and-delete-rules.md
 
-    - DocBits (DOC²) with Infor:
+    - DocBits (Doc²) mit Infor:
       - docbits/doc2-with-infor/index.md
-      - Infor Infrastructure: docbits/doc2-with-infor/infrastructure.md
-      - Use Cases: docbits/doc2-with-infor/infor.md
-      - Diagram: docbits/doc2-with-infor/inforflow.md
-      - Integration with Infor IDM and ERP:
-        - docbits/doc2-with-infor/IDM-business-context-model.md
+      - Infor-Infrastruktur: docbits/doc2-with-infor/infrastructure.md
+      - Anwendungsfälle: docbits/doc2-with-infor/infor.md
+      - Diagramm: docbits/doc2-with-infor/inforflow.md
+      - Integration mit Infor IDM und ERP: docbits/doc2-with-infor/IDM-business-context-model.md
       - Infor SSO: docbits/doc2-with-infor/configuring-sso-in-cloud.md
-    # - DocBits (DOC²) with Workflow²: docbits/workflow.md
-    - Settings:
+    - Einstellungen:
       - docbits/settings/index.md
-      - Company Information: docbits/company-information.md
-      - Groups, Users and Permissions:
+      - Firmeninformationen: docbits/company-information.md
+      - Gruppen, Benutzer und Berechtigungen:
         - docbits/settings/groups-users-permissons/index.md
-        - Users: docbits/settings-users.md
-        - Sub-Organizations: docbits/settings-sub-organizations.md
+        - Benutzer: docbits/settings-users.md
       - Integration:
         - docbits/settings/integration/index.md
         - API: docbits/settings/integration/api-integration.md
-        - API calls examples: docbits/settings/integration/api-calls-examples.md
-        - SSO Settings: docbits/settings-sso-settings.md
-      - Document Types: docbits/settings-document-types.md
-      - List of Values: docbits/settings-list-of-values.md
-      - Email Notification: docbits/settings/email-notification.md
-      - Modules: 
-        - docbits/settings/Module/index.md
-        - Layout Builder: docbits/settings/Module/layout-builder.md
-        - Approval: docbits/settings/Module/approval.md
-        - Doc Script: docbits/settings/Module/doc-script.md
-        - Doc Scan: docbits/settings/Module/doc-scan.md
-        - IDM ACL Updater: docbits/settings/Module/idm-acl-updater.md
-      - All Import Options:
+        - Beispiele für API-Aufrufe: docbits/settings/integration/api-calls-examples.md
+        - SSO-Einstellungen: docbits/settings-sso-settings.md
+      - Dokumenttypen: docbits/settings/document-types.md
+      - List of Values: docbits/settings/list-of-values.md
+      - E-Mail-Benachrichtigungen: docbits/settings/email-notification.md
+      - Module: 
+        - docbits/settings/modules/index.md
+        - Layout-Ersteller: docbits/settings/modules/layout-builder.md 
+        - Genehmigung: docbits/settings/modules/approval.md
+        - Doc Script: docbits/settings/modules/doc-script.md
+        - Doc Scan: docbits/settings/modules/doc-scan.md
+        - IDM ACL Updater: docbits/settings/modules/idm-acl-updater.md
+      - Alle Importoptionen: 
         - docbits/import/index.md
         - Email: docbits/e-mail.md
         - Fileshare Import:
@@ -224,21 +214,20 @@ nav:
         - Webhook: docbits/api.md
       - All Export Options:
         - docbits/export/index.md
-        - Export to Infor:
+        - Export nach Infor:
           - docbits/export/export-to-infor/index.md
-          - Export to Infor ION and IDM: docbits/export/infor-ion.md
-          - How to create a BOD mapping file: docbits/export/how-to-create-a-bod-mapping-file.md
-          - How to create a IDM mapping file: docbits/export/how-to-create-a-idm-mapping-file.md
-          - Export to Infor IDM: docbits/export/infor-idm.md
-          - Infor ION API File: docbits/export/create-a-infor-ion-api-file.md
-          - Export to Infor ION and IDM: docbits/export/infor-ion.md
+          - Export nach Infor ION and IDM: docbits/export/infor-ion.md
+          - So erstellen Sie eine BOD-Mapping-Datei: docbits/export/how-to-create-a-bod-mapping-file.md
+          - So erstellen Sie eine IDM-Mapping-Datei: docbits/export/how-to-create-a-idm-mapping-file.md
+          - Export nach Infor IDM: docbits/export/infor-idm.md
+          - Infor ION API-Datei erstellen: docbits/export/create-a-infor-ion-api-file.md
+          - Export nach Infor ION and IDM: docbits/export/infor-ion.md
         - Webhook: docbits/export/webhook.md
-        - Export to Flow²: docbits/export/export-to-flow2.md
+        - Export zu Flow²: docbits/export/export-to-flow2.md
 
 
       - Amount: docbits/settings-amount-settings.md
       - Supplier Validation: docbits/settings-master-data-validation.md
-      - Supported Languages: docbits/settings-supported-languages.md
     - PO Matching:
       - docbits/pomatching/po-matching/index.md
       - Invoice: docbits/pomatching/po-matching-invoices.md
@@ -251,18 +240,18 @@ nav:
     - Admin-Guides: docbits/admin-guides/postman-projects.md
     - SSO:
       - docbits/SSO/index.md
-      - SSO for Azure AD with DocBits (DOC²): docbits/SSO/SSO-for-Azure-AD.md
+      - SSO for Azure AD with DocBits (Doc²): docbits/SSO/SSO-for-Azure-AD.md
 
 
   - FLOW²:
-    - Introduction: flow2/index.md
+    - Einführung: flow2/index.md
     - Getting Started: flow2/introduction.md
     - Onboarding Guide: flow2/flow2-onboarding-guide.md
-    - Deployment: flow2/deployment.md
-    - User Dashboard: flow2/home.md
+    - Einführung: flow2/deployment.md
+    - Benutzer Dashboard: flow2/home.md
     - System Setup: flow2/settings-system-setup.md
     - Metadata: flow2/metadata.md
-    - Import from DocBits (DOC²): flow2/import-from-doc2.md
+    - Import from DocBits (Doc²): flow2/import-from-doc2.md
   - KV²:
     - Getting Started: kv2/getting-started.md
     - Installation: kv2/installation.md
@@ -275,26 +264,21 @@ nav:
     - Restart Ephesoft:
       - Cloud: kv2/restart-ephesoft-on-cloud.md
       - OnPremise: kv2/restart-ephesoft-on-premise.md
-    - Limitations: kv2/limitations-for-fellow-kv2-plugin.md
+    - Einschränkungen: kv2/limitations-for-fellow-kv2-plugin.md
     - Feedback Function: kv2/enable-feedback-function.md
   - TE²:
-    - Getting Started: te2/fellow-te2-plugin.md
-    - Installation: te2/install.md
+    - Erste Schritte: te2/fellow-te2-plugin.md
+    - Einrichtung: te2/install.md
     - Tutorial: te2/fellowte2-tutorial.md
     - Ephesoft External Application: te2/ephesoft-external-application.md
     - Infor LN BOD Mapping: te2/ln_bodmapping.md
     - Feedback Function: te2/enable-feedback-function.md
   - OCR²:
     - Overview: ocr/overview.md
-    - Installation & Config: ocr/installation-config.md
-    - Getting Started: ocr/get-started.md
+    - Einrichtung & Config: ocr/installation-config.md
+    - Erste Schritte: ocr/get-started.md
     - OCR Server Process: ocr/ocrserverprocess.md
     - Detect inside pages: ocr/detect-inside-pages.md
     - Merge/Split PDF: ocr/merge-split-pdf.md
     - API: ocr/ocr-api.md
-  - Roadmap: 
-    - Roadmap: roadmap.md
-    - Api: api.md
-    - Dev Blog:
-      - blog/index.md
   

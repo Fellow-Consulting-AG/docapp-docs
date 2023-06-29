@@ -1,19 +1,19 @@
 ---
-title: Email Import with O365 to Docbits (DOC²)
-description: This workflow searches for new e-mails in the configured sub-mailboxes of an e-mail address and uploads it to our Docbits (DOC²) system.
+title: Email Import with O365 to DocBits (DOC²)
+description: This workflow searches for new e-mails in the configured sub-mailboxes of an e-mail address and uploads it to our DocBits (DOC²) system.
 date: 2022-09-14
 tags:
   - Email
   - Outlook
   - O365
   - Import
-  - Docbits (DOC²)
+  - DocBits (DOC²)
 
 ---
 
-##  Outlook Import to Docbits (DOC²) for certain sub-organizations
+##  Outlook Import to DocBits (DOC²) for certain sub-organizations
 
-With the following workflow you can upload email attachments from specific folders to a specific sub-organization of your Docbits (DOC²) organization. This can be useful if you want to import invoices from your Outlook inbox but only want them to be visible to a specific sub-organization.
+With the following workflow you can upload email attachments from specific folders to a specific sub-organization of your DocBits (DOC²) organization. This can be useful if you want to import invoices from your Outlook inbox but only want them to be visible to a specific sub-organization.
 
 ![](/_images/workflows/workflows/WF-outlook-import.png)
 
@@ -65,12 +65,12 @@ With the following workflow you can upload email attachments from specific folde
 **1.** The `Download Attachments` node downloads the attachments from the emails in a temporary directory as a binary file<br>
    ![](/_images/workflows/workflows/WF-outlook-import-download-attachment.png)<br>
 
-**11.** The `Upload Document` node uploads the saved attachments to Docbits (DOC²). You just have to specify what inbox, in this case 101_Polydocs and to what sub-organization it is supposed to be uploaded.<br>
+**11.** The `Upload Document` node uploads the saved attachments to DocBits (DOC²). You just have to specify what inbox, in this case 101_Polydocs and to what sub-organization it is supposed to be uploaded.<br>
 
 ![](/_images/workflows/workflows/WF-outlook-import-Doc-Upload.png)<br>
 
 :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
-**12.** Add the classification rules in Docbits (DOC²) so that the upload node knows where to upload the documents.
+**12.** Add the classification rules in DocBits (DOC²) so that the upload node knows where to upload the documents.
 
 You can find this in the `Settings` under the menu item **Classification and Extraction** in the subitem `Document Processing`.
 

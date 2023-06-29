@@ -1,28 +1,28 @@
 
 ---
-title: Export Docbits (DOC²) Results to Excel and Upload to Dropbox
-description: Learn how to export results from Docbits (DOC²) to Excel and upload them to Dropbox using n8n. Automate your workflow and save time with this easy-to-follow tutorial.
+title: Export DocBits (DOC²) Results to Excel and Upload to Dropbox
+description: Learn how to export results from DocBits (DOC²) to Excel and upload them to Dropbox using n8n. Automate your workflow and save time with this easy-to-follow tutorial.
 date: 2022-11-29
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - Excel
   - Dropbox
   - n8n
 ---
 
-# Export Docbits (DOC²) Results to Excel and Upload to Dropbox
+# Export DocBits (DOC²) Results to Excel and Upload to Dropbox
 
 <div class='video-container'>
   <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
 </div>
 
-In this tutorial, we'll show you how to export results from Docbits (DOC²) to Excel and upload them to Dropbox using n8n. This automation will save you time and effort, allowing you to focus on more important tasks.
+In this tutorial, we'll show you how to export results from DocBits (DOC²) to Excel and upload them to Dropbox using n8n. This automation will save you time and effort, allowing you to focus on more important tasks.
 
 ## Prerequisites
 
 Before we get started, make sure you have the following:
 
-- A Docbits (DOC²) account
+- A DocBits (DOC²) account
 - An n8n account
 - A Dropbox account
 
@@ -32,7 +32,7 @@ The first step is to set up the trigger. In this example, we'll use the "Status 
 
 ## Step 2 - Export Results to Excel
 
-Next, we'll use the "Spreadsheet File" node to export the results from Docbits (DOC²) to an Excel file. We'll also use the "Function" node to format the data and prepare it for upload to Dropbox.
+Next, we'll use the "Spreadsheet File" node to export the results from DocBits (DOC²) to an Excel file. We'll also use the "Function" node to format the data and prepare it for upload to Dropbox.
 
 ## Step 3 - Upload to Dropbox
 
@@ -40,6 +40,6 @@ Finally, we'll use the "Dropbox" node to upload the Excel file to Dropbox. This 
 
 ## Conclusion
 
-By following this tutorial, you've learned how to export results from Docbits (DOC²) to Excel and upload them to Dropbox using n8n. This automation will save you time and effort, allowing you to focus on more important tasks. If you have any questions or comments, feel free to leave them below.
+By following this tutorial, you've learned how to export results from DocBits (DOC²) to Excel and upload them to Dropbox using n8n. This automation will save you time and effort, allowing you to focus on more important tasks. If you have any questions or comments, feel free to leave them below.
 
-![Export Docbits (DOC²) Results to Excel and Upload to Dropbox](/_images/excel-dropbox.png)
+![Export DocBits (DOC²) Results to Excel and Upload to Dropbox](/_images/excel-dropbox.png)

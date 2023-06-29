@@ -1,10 +1,10 @@
 ---
-title: API Integration - Connect Your Applications with Docbits (DOC²)
-description: Learn how to connect your applications with Docbits (DOC²) using API Integration. Find your API Key in the Integration menu item in the settings. Get started today!
+title: API Integration - Connect Your Applications with DocBits (DOC²)
+description: Learn how to connect your applications with DocBits (DOC²) using API Integration. Find your API Key in the Integration menu item in the settings. Get started today!
 date: "2021-11-01"
 icons: material/api
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - API Integration
   - API Key
 ---
@@ -21,12 +21,12 @@ To access the full Polydocs API menu, click [here](https://doc2api.cloudintegrat
 
 ## How to Get Your API Key
 
-To get started with API Integration in Docbits (DOC²), you will need your API Key. You can find your API Key in the Integration menu item in the settings. Simply copy and paste your API Key into your application to start integrating with Docbits (DOC²).
+To get started with API Integration in DocBits (DOC²), you will need your API Key. You can find your API Key in the Integration menu item in the settings. Simply copy and paste your API Key into your application to start integrating with DocBits (DOC²).
 
-![API Key in Docbits (DOC²) Settings](/_images/docbits/Settings/Integration/API/Image_1_api_key.png "API Key in Docbits (DOC²) Settings")
+![API Key in DocBits (DOC²) Settings](/_images/docbits/Settings/Integration/API/Image_1_api_key.png "API Key in DocBits (DOC²) Settings")
 
 ## API Calls Examples
 
 Looking for examples of API calls? Check out our [API Calls Examples](/docbits/settings/integration/api-calls-examples/) page for various examples to help you get started.
 
-Start integrating your applications with Docbits (DOC²) today using API Integration and streamline your workflow!
+Start integrating your applications with DocBits (DOC²) today using API Integration and streamline your workflow!

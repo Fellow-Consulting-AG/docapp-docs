@@ -1,9 +1,9 @@
 ---
-title: "Docbits (DOC²) - Postman Guides"
-description: This guide will help you learn how to make http requests via Postman to your Docbits (DOC²) Organization.
+title: "DocBits (DOC²) - Postman Guides"
+description: This guide will help you learn how to make http requests via Postman to your DocBits (DOC²) Organization.
 date: "2022-10-20"
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - Postman
   - Guide
   - Setup
@@ -12,10 +12,10 @@ tags:
 ---
 
 
-# Postman for Docbits (DOC²)
+# Postman for DocBits (DOC²)
 
 
-This guide will show you how to make HTTP requests to your Docbits (DOC²) organization via Postman. It is easy to use and very useful for organization administrators.
+This guide will show you how to make HTTP requests to your DocBits (DOC²) organization via Postman. It is easy to use and very useful for organization administrators.
 
 
 ## Setup
@@ -30,13 +30,13 @@ Now follow this step-by-step guide to learn how HTTP requests work in Postman.
 
 ### In Postman
 
-Before you can create your HTTP requests, you need to enter your API key from Docbits (DOC²) to authorize them.
+Before you can create your HTTP requests, you need to enter your API key from DocBits (DOC²) to authorize them.
 
 **1.** Click on the `Authorization` tab und choose `API Key` as authorization type.
 
 ![Picture](/_images/docbits/admin_guides_authorization_API Key.png){ loading=lazy }
 
-**2.**  Fill in the values. Enter "x-api-key" in the `Key` field and your API Key as value (found in Docbits (DOC²) Settings menu **Integration**) Select the Add to `Header`.
+**2.**  Fill in the values. Enter "x-api-key" in the `Key` field and your API Key as value (found in DocBits (DOC²) Settings menu **Integration**) Select the Add to `Header`.
 
 It should look like this:
 
@@ -125,7 +125,7 @@ Finally, click `Send` and you can see all the credentials you set in the respons
 
 ### Upload document
 
-You can also use the POST method to upload a document to Docbits (DOC²).
+You can also use the POST method to upload a document to DocBits (DOC²).
 
 **1.**  Select the POST Method.<br>
 **2.**  Authorize yourself as described [above](/docbits/admin-guides/postman-projects/#authorization).<br>

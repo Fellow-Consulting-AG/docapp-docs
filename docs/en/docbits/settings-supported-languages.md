@@ -1,8 +1,8 @@
 ---
 title: "Supported Languages"
-description: A list of all the supported languages available in Docbits (DOC²).
+description: A list of all the supported languages available in DocBits (DOC²).
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - Settings
   - Supported Languages
 ---

@@ -3,7 +3,7 @@ title: "PO Matching"
 description: There are three ways you can match your Purchase Order. With corresponding invoice, delivery note and/or order confirmation.
 date: "2022-01-24"
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - PO Matching
   - Keyboard shortcuts
 ---
@@ -17,7 +17,7 @@ There are three ways you can match your Purchase Order
 All three components must match within agreed-upon tolerance levels. It is then entered into the AP system.
 3. with all the above documents, but also requires control information such as actual number of items delivered and their quality control. Once all 4 components match, the invoice is entered into the AP database.
 
-#### Corresponding settings must be made in Docbits (DOC²) under Settings - Modules - Purchase Order
+#### Corresponding settings must be made in DocBits (DOC²) under Settings - Modules - Purchase Order
 
 ![](/_images/docbits/DOC2_POM_1_Modules.png)
 

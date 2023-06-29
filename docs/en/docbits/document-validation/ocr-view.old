@@ -3,7 +3,7 @@ title: "OCR View"
 description: In the document view you have the possibility to open the OCR view for a document. This allows you to display the document in the pure OCR view without any formatting or similar.
 date: "2022-03-21"
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - OCR
 ---
 
@@ -21,7 +21,7 @@ When you click this button a new window will be opened which displays the docume
 
 ![](/_images/docbits/image-45-1024x748.png)
 
-In addition, the following button can be used to switch to debug view. This allows you to see exactly how Docbits (DOC²) extracts the individual values in the background and whether these are recognized correctly:
+In addition, the following button can be used to switch to debug view. This allows you to see exactly how DocBits (DOC²) extracts the individual values in the background and whether these are recognized correctly:
 
 ![](/_images/docbits/image-46.png)
 

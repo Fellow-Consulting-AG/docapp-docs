@@ -1,9 +1,9 @@
 ---
-title: "Docbits (DOC²) - Infor Use Cases"
+title: "DocBits (DOC²) - Infor Use Cases"
 description: Here you will find different use cases how processes of your different document types look like and are going to be integrated to Infor. 
 date: "2022-01-24"
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - PO Matching
   - Infor LN
   - Infor M3
@@ -28,7 +28,7 @@ graph LR
   B ---->|No| E[End];
 ```
 
-With Docbits (DOC²) you can do more
+With DocBits (DOC²) you can do more
 
 ``` mermaid
 graph LR

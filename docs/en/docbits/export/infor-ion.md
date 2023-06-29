@@ -1,10 +1,10 @@
 ---
 title: "Export to Infor ION and IDM"
-description: Step by Step guide how to export documents from Docbits (DOC²) to Infor Document Management (IDM) with publishing the values in a seperate Sync.CaptureDocument BOD.
+description: Step by Step guide how to export documents from DocBits (DOC²) to Infor Document Management (IDM) with publishing the values in a seperate Sync.CaptureDocument BOD.
 icon: material/application-export
 date: "2021-10-22"
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - Export
   - Infor
   - Infor OS
@@ -20,12 +20,12 @@ Step by Step guide how to export documents to Infor Document Management (IDM) wi
 **Prerequisites:**
 
 - An admin user für InforOS with the security roles "ION Desk Admin", "ION API Admin", "IDM Admin".
-- An ION API file to create the communication between Docbits (DOC²) and Infor IDM. Follow the documentation here: [How to create an Infor ION file](/docbits/export/create-a-infor-ion-file/)
+- An ION API file to create the communication between DocBits (DOC²) and Infor IDM. Follow the documentation here: [How to create an Infor ION file](/docbits/export/create-a-infor-ion-file/)
 - A IDM document type where the documents shall be exported to.
 
-#### Docbits (DOC²) steps
+#### DocBits (DOC²) steps
 
-Login to Docbits (DOC²), click on settings and select "Export".
+Login to DocBits (DOC²), click on settings and select "Export".
 
 ![This image has an empty alt attribute; its file name is image-1-1024x695.png](/_images/docbits/image-1-1024x695.png)
 
@@ -42,7 +42,7 @@ Choose "Infor ION"
 
 ![](/_images/docbits/image-31-1024x342.png)
 
-Click on the ION API File section and select the ION API file that you want to use for the communication between Docbits (DOC²) and IDM. If you don't have a ION API file follow this documentation to create one: [How to create an Infor ION file](/docbits/export/create-a-infor-ion-file/)
+Click on the ION API File section and select the ION API file that you want to use for the communication between DocBits (DOC²) and IDM. If you don't have a ION API file follow this documentation to create one: [How to create an Infor ION file](/docbits/export/create-a-infor-ion-file/)
 
 ![](/_images/docbits/image-32-1024x347.png)
 
@@ -60,7 +60,7 @@ Click "Save" to the save the export setting.
 
 #### Infor ION steps
 
-Open "Infor ION API", select "Authorized Apps" and click on the Docbits (DOC²) application.
+Open "Infor ION API", select "Authorized Apps" and click on the DocBits (DOC²) application.
 
 ![](/_images/docbits/image-35.png)
 

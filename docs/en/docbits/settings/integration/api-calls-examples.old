@@ -4,7 +4,7 @@ description: API integration provides functions and services that connect applic
 date: "2022-10-26"
 icons: material/api
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - Settings
   - API Calls
   - api.polydocs.io
@@ -44,7 +44,7 @@ source:   **email:{Pattern name}**
 
 **6.** Select the file you want to upload and click `Execute`
 
-Your document will be uploaded to your dashboard with the rules you set in [Docbits (DOC²)](https://app.polydocs.io/settings/classify-extract)
+Your document will be uploaded to your dashboard with the rules you set in [DocBits (DOC²)](https://app.polydocs.io/settings/classify-extract)
 
 ![Picture](/_images/docbits/DOC2_classification-rules_Pattern.png){ loading=lazy }
 ![Picture](/_images/docbits/DOC2_Uploaded-doc-on-dashboard.png){ loading=lazy }
@@ -93,7 +93,7 @@ Here we will upload a document to /document/process but the steps are the same f
       ```
 2. Select a file to upload ![](/_images/docbits/metadata/file-upload.png)
 3. Click `Execute`
-4. Wait for response. If the metadata field is not a valid json an error message will appear. ![Invalid Json response](/_images/docbits/metadata/invalid-json-response.png) If "success": true, then your document will be uploaded to your dashboard with the rules you set in [Docbits (DOC²)](https://app.polydocs.io/settings/classify-extract)
+4. Wait for response. If the metadata field is not a valid json an error message will appear. ![Invalid Json response](/_images/docbits/metadata/invalid-json-response.png) If "success": true, then your document will be uploaded to your dashboard with the rules you set in [DocBits (DOC²)](https://app.polydocs.io/settings/classify-extract)
 
 
 

@@ -3,7 +3,7 @@ title: "List of Values"
 description: "This feature allows you to create and store different lists or sets of related information that can be used to create a drop-down box on the validation screen."
 date: '2023-06-22'
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - Settings
   - List of Values
 ---
@@ -12,7 +12,7 @@ tags:
 
 This feature allows you to create and store different lists or sets of related information that can be used to create a drop-down box on the validation screen.
 
-In order to create a list, navigate to the Docbits (DOC²) Dashboard → Settings as shown below.
+In order to create a list, navigate to the DocBits (DOC²) Dashboard → Settings as shown below.
 
 ![](/_images/docbits/List of Values - Images/image_1_lov.png)
 
@@ -26,7 +26,7 @@ On this screen you have access to existing lists as well as the ability to creat
 
 ## How to enable this feature for a field in a layout?
 
-Docbits (DOC²) Dashboard → Settings 
+DocBits (DOC²) Dashboard → Settings 
 
 ![](/_images/docbits/List of Values - Images/image_4_lov.png)
 

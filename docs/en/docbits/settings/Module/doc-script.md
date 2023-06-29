@@ -3,7 +3,7 @@ title: "Doc-Script"
 description: This module setting allows you to create scripts that can, for example, convert currency characters or written-out currency names into ISO codes.
 date: "2023-05-23"
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - Settings
   - Module
   - Doc Script

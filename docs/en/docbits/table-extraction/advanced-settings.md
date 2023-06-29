@@ -1,10 +1,10 @@
 ---
 title: "Advanced settings for table extraction"
-description: In Docbits (DOC²) there are various advanced settings to extract a table. On this page you will find a few examples of different table characteristics.
+description: In DocBits (DOC²) there are various advanced settings to extract a table. On this page you will find a few examples of different table characteristics.
 date: "2022-03-01"
 tags:
   - Table
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - Settings
 ---
 
@@ -26,7 +26,7 @@ Accordingly, the value in "Header row count" is set to two:
 
 ![Advanced Settings](/_images/docbits/Table-Extraction/8-Advanced settings/Image_30_header_row_settings.png){ loading=lazy }
 
-Why is this needed? It might be that Docbits (DOC²) does not recognize the second line in the table header as header line. In this case, it incorrectly inserts it into the table as extracted value. This can be easily prevented with this function.
+Why is this needed? It might be that DocBits (DOC²) does not recognize the second line in the table header as header line. In this case, it incorrectly inserts it into the table as extracted value. This can be easily prevented with this function.
 
 <ins>Example before</ins>:
 
@@ -99,7 +99,7 @@ If you want only unique values for your grouped column, check the box here.
 
 If you want to combine all the rows above the grouped attribute, check the box here.
 
-In this example, the table starts with a row that is above all other information but also needs to be extracted along with the information below it. It could be that Docbits (DOC²) extracts this row as an additional row and the grouping of the information, e.g. by position, does not work properly.
+In this example, the table starts with a row that is above all other information but also needs to be extracted along with the information below it. It could be that DocBits (DOC²) extracts this row as an additional row and the grouping of the information, e.g. by position, does not work properly.
 
 ![Reverse Grouping](/_images/docbits/Table-Extraction/8-Advanced settings/Image_43_rev_grouping1.png){ loading=lazy }
 ![Reverse Grouping](/_images/docbits/Table-Extraction/8-Advanced settings/Image_44_rev_grouping2.png){ loading=lazy }

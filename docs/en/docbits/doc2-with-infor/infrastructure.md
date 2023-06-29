@@ -2,7 +2,7 @@
 title: Infrastructure for Infor Cloud and on Premise
 description: A visual representation of the Infrastructure that is used for our applications when running Infor Cloud or On-Prem
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - Infrastructure
   - Infor
 ---

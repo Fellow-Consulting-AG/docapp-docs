@@ -3,11 +3,11 @@ title: "Export to Infor IDM"
 description: Step by Step guide how to export documents to Infor Document Management (IDM) without publishing the values in a seperate BOD.
 date: "2021-10-22"
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - Export
   - Infor
   - IDM
-  - Docbits (DOC²)
+  - DocBits (DOC²)
 ---
 
 #### Export to Infor Document Management without publishing the document values in a seperate BOD
@@ -17,11 +17,11 @@ Step by Step guide how to export documents to Infor Document Management (IDM) wi
 **Prerequisites:**
 
 - An admin user für InforOS with the security roles "ION Desk Admin", "ION API Admin", "IDM Admin".
-- An ION API file to create the communication between Docbits (DOC²) and Infor IDM. Follow the documentation here: [How to create an Infor ION file](/docbits/export/create-a-infor-ion-file/)
+- An ION API file to create the communication between DocBits (DOC²) and Infor IDM. Follow the documentation here: [How to create an Infor ION file](/docbits/export/create-a-infor-ion-file/)
 - A IDM document type where the documents shall be exported to.
 - A IDM Mapping file which IDM uses to know which document content represents which information. You find a example of the IDM mapping file on this page: [How to create a IDM mapping file](/docbits/export/how-to-create-a-idm-mapping-file/)
 
-Login to Docbits (DOC²), click on settings and select "Export".
+Login to DocBits (DOC²), click on settings and select "Export".
 
 ![](/_images/docbits/ExportToInforIDM_1.png)
 
@@ -38,7 +38,7 @@ Choose "Infor IDM"
 
 ![](/_images/docbits/ExportToInforIDM_3.png)
 
-Click on the ION API File section and select the ION API file that you want to use for the communation between Docbits (DOC²) and IDM. If you don´t have a ION API file follow this documentation to create one: [How to create an Infor ION file](/docbits/export/create-a-infor-ion-file/)
+Click on the ION API File section and select the ION API file that you want to use for the communation between DocBits (DOC²) and IDM. If you don´t have a ION API file follow this documentation to create one: [How to create an Infor ION file](/docbits/export/create-a-infor-ion-file/)
 
 On normal exports you will have to pick "CLOUD" on the left slider.
 With the right slider you can choose if you want to export the normal PDF Invoice to Infor or if you want to export the Invoice as ZUGfERD (PDF with X-Rechnung format ZUGfERD XML attachment).

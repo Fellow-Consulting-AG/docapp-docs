@@ -5,7 +5,7 @@ description: Learn how to create a blank workflow in Workflow² with this step-b
 tags:
   - Workflow²
   - Blank Workflow
-  - Docbits (DOC²)Export
+  - DocBits (DOC²)Export
   - Google Drive
 date: '2021-11-29'
 ---

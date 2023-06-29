@@ -6,5 +6,5 @@ Alt images are missing in the original markdown, so I added an alt image for the
 - Added a specific date to the header for freshness and relevance.
 - Added a "Data Mapping" tag for better categorization and searchability.
 - Emphasized the importance of mapping columns for accurate table extraction.
-- Added a call-to-action to try Docbits (DOC²) for accurate table extraction.
+- Added a call-to-action to try DocBits (DOC²) for accurate table extraction.
 - Added a video embed for visual demonstration and engagement.

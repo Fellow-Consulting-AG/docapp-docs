@@ -1,9 +1,9 @@
 ---
 title: "Export and Download Documents as ZUGFeRD-PDF and Peppol BIS Billing"
-description: "Learn how to export and download documents as ZUGFeRD-PDF and Peppol BIS Billing with Docbits (DOC²). Sign up for a 30-day free trial today!"
+description: "Learn how to export and download documents as ZUGFeRD-PDF and Peppol BIS Billing with DocBits (DOC²). Sign up for a 30-day free trial today!"
 date: "2022-10-19"
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - Export
   - Download
   - ZUGFeRD
@@ -12,11 +12,11 @@ tags:
 
 # Export and Download Documents as ZUGFeRD-PDF and Peppol BIS Billing
 
-With Docbits (DOC²), you can easily export and download your documents as ZUGFeRD-PDF and Peppol BIS Billing. Follow the steps below to set up the necessary export settings.
+With DocBits (DOC²), you can easily export and download your documents as ZUGFeRD-PDF and Peppol BIS Billing. Follow the steps below to set up the necessary export settings.
 
-## Import ZUGFeRD to Docbits (DOC²)
+## Import ZUGFeRD to DocBits (DOC²)
 
-Learn how to import ZUGFeRD to Docbits (DOC²) by watching this video:
+Learn how to import ZUGFeRD to DocBits (DOC²) by watching this video:
 
 <div class="video-container">
 <iframe width="840" height="472.5" src="https://www.youtube-nocookie.com/embed/e9ekKDj0rMU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -48,4 +48,4 @@ When everything is set up correctly, a new download button will appear in the da
 
 ![Download ZUGFeRD](/_images/docbits/DOC2_Download_ZugferdPDF.png)
 
-Sign up for a 30-day free trial of Docbits (DOC²) today and start exporting and downloading your documents as ZUGFeRD-PDF and Peppol BIS Billing!
+Sign up for a 30-day free trial of DocBits (DOC²) today and start exporting and downloading your documents as ZUGFeRD-PDF and Peppol BIS Billing!

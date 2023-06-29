@@ -1,20 +1,20 @@
 ---
-title: How to Create an Infor ION API File for Exporting from Docbits (DOC²)
-description: Learn how to create an Infor ION API file for exporting from Docbits (DOC²) to Infor with the necessary permissions for InforOS users. Follow our step-by-step guide now.
+title: How to Create an Infor ION API File for Exporting from DocBits (DOC²)
+description: Learn how to create an Infor ION API file for exporting from DocBits (DOC²) to Infor with the necessary permissions for InforOS users. Follow our step-by-step guide now.
 date: 2022-10-27
 hero: /assets/images/infor-ion-api-hero.jpg
-og_title: Docbits (DOC²) - How to Create an Infor ION API File for Exporting
-og_description: Learn how to create an Infor ION API file for exporting from Docbits (DOC²) to Infor with the necessary permissions for InforOS users. Follow our step-by-step guide now.
+og_title: DocBits (DOC²) - How to Create an Infor ION API File for Exporting
+og_description: Learn how to create an Infor ION API file for exporting from DocBits (DOC²) to Infor with the necessary permissions for InforOS users. Follow our step-by-step guide now.
 tags:
   - Exporting to Infor
   - ION API
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - InforOS
 ---
 
-# How to Create an Infor ION API File for Exporting from Docbits (DOC²)
+# How to Create an Infor ION API File for Exporting from DocBits (DOC²)
 
-If you're looking to export from Docbits (DOC²) to Infor, you'll need to create an Infor ION API file with the necessary permissions for InforOS users. Follow our step-by-step guide below to learn how.
+If you're looking to export from DocBits (DOC²) to Infor, you'll need to create an Infor ION API file with the necessary permissions for InforOS users. Follow our step-by-step guide below to learn how.
 
 ## Prerequisites
 
@@ -43,5 +43,5 @@ Before you get started, make sure you have the following:
 
 5. Click `DOWNLOAD` to get the ION API file.
 
-And that's it! You've successfully created an Infor ION API file for exporting from Docbits (DOC²) to Infor with the necessary permissions for InforOS users. If you have any questions or need further assistance, don't hesitate to contact us.
+And that's it! You've successfully created an Infor ION API file for exporting from DocBits (DOC²) to Infor with the necessary permissions for InforOS users. If you have any questions or need further assistance, don't hesitate to contact us.
 

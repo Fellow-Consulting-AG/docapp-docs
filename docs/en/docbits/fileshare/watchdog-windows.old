@@ -1,9 +1,9 @@
 ---
 title: "Watchdog for Windows"
-description: In this documentation you will find how to configure Watchdog for Windows for easy Fileshare Import of your local documents to Docbits (DOC²).
+description: In this documentation you will find how to configure Watchdog for Windows for easy Fileshare Import of your local documents to DocBits (DOC²).
 date: "2022-01-28"
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - Fileshare Import
   - Watchdog
   - Windows
@@ -29,7 +29,7 @@ Watchdog.exe ui
 
 First configure the following folders:
 
-* Read folder → documents that should be uploaded to Docbits (DOC²) have to be in this folder
+* Read folder → documents that should be uploaded to DocBits (DOC²) have to be in this folder
 * Error folder → documents that ran into an error during the export are saved here
 * Processed folder → successfully processed documents are stored here
 
@@ -41,11 +41,11 @@ To configure these folders, you must select the **Settings folder** and press `B
 ### Select an environment to which your documents should be exported.
   :fontawesome-solid-circle-info:{ style="color: #0F17E4" } The following options are available:
 
-  **Docbits (DOC²)** → the documents will only be exported to Docbits (DOC²)
+  **DocBits (DOC²)** → the documents will only be exported to DocBits (DOC²)
 
   ![](/_images/docbits/Import_Watchdog_Windows_General_Settings_2.png)
 
-  **INFOR OS** → here the watchdog checks if there are export orders for Infor OS On-Premise issued by Docbits (DOC²) and then the document is exported to IDM.
+  **INFOR OS** → here the watchdog checks if there are export orders for Infor OS On-Premise issued by DocBits (DOC²) and then the document is exported to IDM.
 
   There are two more specific parameters:
 
@@ -54,10 +54,10 @@ To configure these folders, you must select the **Settings folder** and press `B
 ![](/_images/docbits/Import_Watchdog_Windows_General_Settings_1.png)
 
 #### API Key
-This key can be found under Integration settings of your Docbits (DOC²) account.
+This key can be found under Integration settings of your DocBits (DOC²) account.
 
 #### Barcode splitting
-If you want to process documents in which several documents with barcodes are combined in one PDF, these are separated by the barcode using the following setting when uploading to Docbits (DOC²).
+If you want to process documents in which several documents with barcodes are combined in one PDF, these are separated by the barcode using the following setting when uploading to DocBits (DOC²).
 
 :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" } When enabling barcode splitting, be sure to [install Poppler](#install-poppler), otherwise Watchdog will not be able to process the documents.
 

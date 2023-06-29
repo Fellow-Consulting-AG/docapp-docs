@@ -1,20 +1,20 @@
 ---
-title: "Maximizing Productivity with Keyboard Shortcuts in Docbits (DOC²)"
-description: "Learn how to maximize your productivity in Docbits (DOC²) with keyboard shortcuts. This guide covers the Enter key and Arrow keys, which can be used for navigation and interaction without the need for a mouse."
+title: "Maximizing Productivity with Keyboard Shortcuts in DocBits (DOC²)"
+description: "Learn how to maximize your productivity in DocBits (DOC²) with keyboard shortcuts. This guide covers the Enter key and Arrow keys, which can be used for navigation and interaction without the need for a mouse."
 date: '2021-11-29'
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - keyboard shortcuts
   - productivity
 ---
 
-# Maximizing Productivity with Keyboard Shortcuts in Docbits (DOC²)
+# Maximizing Productivity with Keyboard Shortcuts in DocBits (DOC²)
 
-Keyboard shortcuts can significantly enhance your productivity and user experience in Docbits (DOC²). In this guide, we will cover the functionality of the Enter key and Arrow keys.
+Keyboard shortcuts can significantly enhance your productivity and user experience in DocBits (DOC²). In this guide, we will cover the functionality of the Enter key and Arrow keys.
 
 ## Enter Key
 
-The Enter key is a primary interaction key in Docbits (DOC²). It enables you to perform the following actions:
+The Enter key is a primary interaction key in DocBits (DOC²). It enables you to perform the following actions:
 
 - **Export document**: Press the Enter key to export your document, provided there are no validation errors or required fields left unattended.
 
@@ -26,10 +26,10 @@ The Arrow keys, specifically the Arrow Down key, allow you to navigate through f
 
 ## Tips for Improved Productivity
 
-- Familiarize yourself with the keyboard shortcuts available in Docbits (DOC²) to streamline your workflow.
+- Familiarize yourself with the keyboard shortcuts available in DocBits (DOC²) to streamline your workflow.
 - Regularly review and update your shortcuts knowledge, as new features may introduce additional shortcuts.
 
-By leveraging the keyboard support in Docbits (DOC²), you can improve your productivity and enhance your overall user experience.
+By leveraging the keyboard support in DocBits (DOC²), you can improve your productivity and enhance your overall user experience.
 
 <div class='video-container'>
   <iframe src='https://www.youtube.com/embed/VIDEO_ID' frameborder='0' allowfullscreen></iframe>

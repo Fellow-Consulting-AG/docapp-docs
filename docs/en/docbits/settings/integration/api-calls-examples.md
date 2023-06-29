@@ -4,7 +4,7 @@ description: Learn how to make API calls for document upload and status check us
 date: "2022-10-27"
 icons: material/api
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - Settings
   - API Calls
   - api.polydocs.io
@@ -33,7 +33,7 @@ To upload a document, follow the steps below:
 3. Enter the following value in the `source` field: `email:{Pattern name}`.
 4. Select the file you want to upload and click `Execute`.
 
-Your document will be uploaded to your dashboard with the rules you set in [Docbits (DOC²)](https://app.polydocs.io/settings/classify-extract).
+Your document will be uploaded to your dashboard with the rules you set in [DocBits (DOC²)](https://app.polydocs.io/settings/classify-extract).
 
 ![Classification Rules](/_images/docbits/Settings/Integration/API calls examples/5-classification_rules.png){ loading=lazy }
 ![Uploaded Document on Dashboard](/_images/docbits/Settings/Integration/API calls examples/6-dashboard_mango.png){ loading=lazy }
@@ -63,6 +63,6 @@ To upload a document with metadata, follow the steps below:
 3. Enter the metadata in the `metadata` field. The metadata needs to be in a valid JSON format. An example of a metadata entry would be: `{"custom-key": "the custom value", "custom_doc_id": "8a5cf33b-c923-4879-96ca-94d69965d508"}`.
 4. Select a file to upload.
 5. Click `Execute`.
-6. Wait for the response. If the metadata field is not a valid JSON, an error message will appear. If "success": true, then your document will be uploaded to your dashboard with the rules you set in [Docbits (DOC²)](https://app.polydocs.io/settings/classify-extract).
+6. Wait for the response. If the metadata field is not a valid JSON, an error message will appear. If "success": true, then your document will be uploaded to your dashboard with the rules you set in [DocBits (DOC²)](https://app.polydocs.io/settings/classify-extract).
 
 By following these simple steps, you can easily make API calls for document upload and status check using api.polydocs.io. For more information, visit [Polydocs](https://polydocs.io/).
