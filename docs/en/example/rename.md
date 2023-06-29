@@ -2,7 +2,6 @@
 title: Rename JSON Key
 descpriton: This is a Sample Workflow for demonstrating Rename Keys Node
 tags:
-  - Workflow²
   - Example
   - Rename
 
