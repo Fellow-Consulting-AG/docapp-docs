@@ -1,7 +1,7 @@
 Changes:- Hinzufügen von Alt-Texten für das Logo-Bild
 - Übersetzung des Textes ins Deutsche
-- Hervorhebung der Vorteile von Docbits (Doc²) durch Fettdruck
+- Hervorhebung der Vorteile von DocBits (Doc²) durch Fettdruck
 - Hinzufügen eines Call-to-Action-Buttons für die kostenlose Testversion
 - Hinzufügen von Absätzen für eine bessere Lesbarkeit
-- Hinzufügen von Abschnitten, um die Verwendung von Docbits (Doc²) zu erklären
-- Hinzufügen von Abschnitten, um zu erklären, warum Docbits (Doc²) die richtige Wahl ist
+- Hinzufügen von Abschnitten, um die Verwendung von DocBits (Doc²) zu erklären
+- Hinzufügen von Abschnitten, um zu erklären, warum DocBits (Doc²) die richtige Wahl ist

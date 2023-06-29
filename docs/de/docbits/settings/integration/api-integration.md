@@ -1,10 +1,10 @@
 ---
 title: API-Integration
-description: API-Integration bietet Funktionen und Dienste, die Anwendungen, Prozesse, Menschen und Geräte verbinden. Hier finden Sie Ihren API-Schlüssel in Docbits (Doc²).
+description: API-Integration bietet Funktionen und Dienste, die Anwendungen, Prozesse, Menschen und Geräte verbinden. Hier finden Sie Ihren API-Schlüssel in DocBits (Doc²).
 date: "2021-10-29"
 icons: material/api
 tags:
-  - Docbits (Doc²)
+  - DocBits (Doc²)
   - Einstellungen
   - API
 ---
@@ -18,7 +18,7 @@ Um auf das gesamte Polydocs-API-Menü zuzugreifen, klicken Sie [hier](https://do
 
 Alles, was Sie benötigen, ist Ihr API-Schlüssel. Sie finden Ihren **Schlüssel** im Menü "Integration" in den Einstellungen.
 
-![API-Schlüssel in den Einstellungen von Docbits (Doc²)](/_images/docbits/doc2-Settings-Integration-API Key.png "API-Schlüssel in den Einstellungen von Docbits (Doc²)")
+![API-Schlüssel in den Einstellungen von DocBits (Doc²)](/_images/docbits/doc2-Settings-Integration-API Key.png "API-Schlüssel in den Einstellungen von DocBits (Doc²)")
 
 :fontawesome-solid-circle-info:{ style="color: #0F17E4" }
 Verschiedene Beispiele für **API-Aufrufe** finden Sie [hier](/docbits/settings/integration/api-calls-examples/).

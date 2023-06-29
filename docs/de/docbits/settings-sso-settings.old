@@ -1,8 +1,8 @@
 ---
 title: "SSO Settings"
-description: All the details you need for SSO configuration can be found in SSO Service Provider Settings of Docbits (Doc²). From needed Entity ID, SSO URL to the Certificate.
+description: All the details you need for SSO configuration can be found in SSO Service Provider Settings of DocBits (Doc²). From needed Entity ID, SSO URL to the Certificate.
 tags:
-  - Docbits (Doc²)
+  - DocBits (Doc²)
   - Settings
   - SSO
 ---
@@ -11,7 +11,7 @@ tags:
 
 - Once you have received your Login Details from us, you will find all the details you need for SSO configuration here.
 
-**To access the SSO SERVICE PROVIDER SETTINGS in Docbits (Doc²)**
+**To access the SSO SERVICE PROVIDER SETTINGS in DocBits (Doc²)**
 
 1\. Log in on URL [https://app.polydocs.io/](https://app.polydocs.io/) with the login details you received from us.
 

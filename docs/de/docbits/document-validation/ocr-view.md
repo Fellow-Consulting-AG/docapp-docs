@@ -3,7 +3,7 @@ title: "OCR-Ansicht"
 description: In der Dokumentenansicht haben Sie die Möglichkeit, die OCR-Ansicht für ein Dokument zu öffnen. Dadurch können Sie das Dokument in der reinen OCR-Ansicht ohne Formatierung oder ähnliches anzeigen lassen.
 date: "2022-03-21"
 tags:
-  - Docbits (Doc²)
+  - DocBits (Doc²)
   - OCR
 ---
 
@@ -22,7 +22,7 @@ Wenn Sie auf diese Schaltfläche klicken, wird ein neues Fenster geöffnet, das 
 
 ![OCR-Ansicht](/_images/docbits/ocr ansicht/dokument-ocr-ansicht.png)
 
-Darüber hinaus kann die folgende Schaltfläche verwendet werden, um zur Debug-Ansicht zu wechseln. Dadurch können Sie genau sehen, wie Docbits (Doc²) die einzelnen Werte im Hintergrund extrahiert und ob diese korrekt erkannt werden:
+Darüber hinaus kann die folgende Schaltfläche verwendet werden, um zur Debug-Ansicht zu wechseln. Dadurch können Sie genau sehen, wie DocBits (Doc²) die einzelnen Werte im Hintergrund extrahiert und ob diese korrekt erkannt werden:
 
 
 ![Debug-Schaltfläche](/_images/docbits/ocr ansicht/button-debug-ansicht.png)

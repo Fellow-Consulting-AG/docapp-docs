@@ -3,7 +3,7 @@ title: "How to create a IDM mapping file"
 description: This is a step by step guide how to create a IDM mapping file. Find out what to do in the first, second and third block.
 date: "2021-10-26"
 tags:
-  - Docbits (Doc²)
+  - DocBits (Doc²)
   - Export
   - Infor
   - IDM
@@ -20,7 +20,7 @@ To use the example file, rename the file from "IDM\_Mapping.txt" to "IDM\_Mappin
 
 **Here you can find an explanation how the file is structured.**
 
-In the first block the document type gets mapped. On the left side you see the document type name of Docbits (Doc²) and the right side the document type name of IDM.
+In the first block the document type gets mapped. On the left side you see the document type name of DocBits (Doc²) and the right side the document type name of IDM.
 
 ```
 #Define Name of document
@@ -60,7 +60,7 @@ SF_MDS_AccountingEntity=100
 SF_MDS_BodRefAccEntity=infor.ln.0100
 ```
 
-In the fourth block you can map the Docbits (Doc²) fields to the IDM attributes.
+In the fourth block you can map the DocBits (Doc²) fields to the IDM attributes.
 
 ```
 #Define index fields

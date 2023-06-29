@@ -1,9 +1,9 @@
 ---
 title: "Module"
-description: "In den Docbits (DOC²)-Einstellungen finden Sie verschiedene Module. Diese Module sind wichtig, wenn Sie sich mit PO-Matching befassen und die Tabellenextraktionsfunktion nutzen möchten."
+description: "In den DocBits (DOC²)-Einstellungen finden Sie verschiedene Module. Diese Module sind wichtig, wenn Sie sich mit PO-Matching befassen und die Tabellenextraktionsfunktion nutzen möchten."
 date: "2022-02-25"
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - Einstellungen
   - Module
   - Bestellung

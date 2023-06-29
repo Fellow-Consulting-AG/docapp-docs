@@ -1,13 +1,13 @@
 ---
 title: "WEBHOOK"
-description: With the webhook attached below, you can transfer documents directly to Docbits (Doc²) with a POST request by making a simple call.
+description: With the webhook attached below, you can transfer documents directly to DocBits (Doc²) with a POST request by making a simple call.
 date: "2021-10-22"
 tags:
-  - Docbits (Doc²)
+  - DocBits (Doc²)
   - API
 ---
 
-With the webhook attached below, you can transfer documents directly to Docbits (Doc²) with a POST request. All parameters are already filled in. So all you have to do is make a simple call.
+With the webhook attached below, you can transfer documents directly to DocBits (Doc²) with a POST request. All parameters are already filled in. So all you have to do is make a simple call.
 
 Parameters used:
 

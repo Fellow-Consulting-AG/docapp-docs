@@ -3,7 +3,7 @@ title: "Einstellungen für Beträge"
 description: "Dieser Abschnitt ist hauptsächlich für diejenigen gedacht, die Rechnungen von Ländern verarbeiten, bei denen das Runden eine Rolle spielt, da einige Dokumente Rundungsfehler nach dem Dezimalpunkt in bestimmten Beträgen enthalten, da diese ursprünglich drei Stellen hatten, aber auf der Rechnung nur mit zwei Dezimalstellen angezeigt werden."
 date: "2021-10-29"
 tags:
-  - Docbits (Doc²)
+  - DocBits (Doc²)
   - Einstellungen
   - Einstellungen für Beträge
   - Rundungsfehler

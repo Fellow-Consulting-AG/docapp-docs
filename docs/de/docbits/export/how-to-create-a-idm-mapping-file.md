@@ -3,7 +3,7 @@ title: "Wie man eine IDM-Mapping-Datei erstellt"
 description: "Eine Schritt-für-Schritt-Anleitung zur Erstellung einer IDM-Mapping-Datei. Erfahren Sie, was im ersten, zweiten und dritten Block zu tun ist."
 date: "2021-10-26"
 tags:
-  - Docbits (Doc²)
+  - DocBits (Doc²)
   - Export
   - Infor
   - IDM
@@ -20,7 +20,7 @@ Um die Beispiel-Datei zu verwenden, benennen Sie die Datei von "IDM\_Mapping.txt
 
 **Hier finden Sie eine Erklärung zum Aufbau der Datei.**
 
-Im ersten Block wird der Dokumententyp zugeordnet. Auf der linken Seite sehen Sie den Dokumenttypnamen von Docbits (Doc²) und auf der rechten Seite den Dokumenttypnamen von IDM.
+Im ersten Block wird der Dokumententyp zugeordnet. Auf der linken Seite sehen Sie den Dokumenttypnamen von DocBits (Doc²) und auf der rechten Seite den Dokumenttypnamen von IDM.
 
 ```
 #Definieren Sie den Namen des Dokuments
@@ -60,7 +60,7 @@ SF_MDS_AccountingEntity=100
 SF_MDS_BodRefAccEntity=infor.ln.0100
 ```
 
-Im vierten Block können Sie die Docbits (Doc²)-Felder den IDM-Attributen zuordnen.
+Im vierten Block können Sie die DocBits (Doc²)-Felder den IDM-Attributen zuordnen.
 
 ```
 #Definieren Sie Indexfelder

@@ -1,9 +1,9 @@
 ---
 title: "PO Matching - Rechnungen"
-description: Schritt-für-Schritt-Anleitung zur Erstellung einer Bestellung in LN, zum Hochladen der Rechnung in Docbits (Doc²), zur Bearbeitung von zwei verschiedenen Szenarien und zur Überprüfung des Eingangs der Rechnung in LN.
+description: Schritt-für-Schritt-Anleitung zur Erstellung einer Bestellung in LN, zum Hochladen der Rechnung in DocBits (Doc²), zur Bearbeitung von zwei verschiedenen Szenarien und zur Überprüfung des Eingangs der Rechnung in LN.
 date: "2022-01-24"
 tags:
-  - Docbits (Doc²)
+  - DocBits (Doc²)
   - PO Matching
   - Rechnung
   - LN

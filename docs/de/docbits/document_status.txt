@@ -1,3 +1,3 @@
 
 
-![Docbits (Doc²) Dokumentenstatus](/path/to/image.jpg "Docbits (Doc²) Dokumentenstatus")
+![DocBits (Doc²) Dokumentenstatus](/path/to/image.jpg "DocBits (Doc²) Dokumentenstatus")

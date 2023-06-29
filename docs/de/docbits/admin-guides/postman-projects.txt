@@ -39,7 +39,7 @@ Klicken Sie abschließend auf `Senden` und Sie können alle Anmeldeinformationen
 
 ### Dokument hochladen
 
-Sie können die POST-Methode auch verwenden, um ein Dokument in Docbits (Doc²) hochzuladen.
+Sie können die POST-Methode auch verwenden, um ein Dokument in DocBits (Doc²) hochzuladen.
 
 **1.** Wählen Sie die POST-Methode aus.<br>
 **2.** Autorisieren Sie sich wie oben beschrieben [Autorisierung](/docbits/admin-guides/postman-projects/#autorisation).<br>

@@ -1,16 +1,16 @@
 ---
 title: "Gruppenfunktion zur Extraktion von Daten aus Tabellen"
-description: Die Gruppenfunktion ist eine der wichtigsten Funktionen zur Extraktion von Daten aus Tabellen. Sobald eine Tabelle über Docbits (Doc²) extrahiert und die Spalten zugeordnet wurden, können die erhaltenen Daten gruppiert werden, um einen strukturierten Ergebnissatz aller extrahierten Daten zu erhalten.
+description: Die Gruppenfunktion ist eine der wichtigsten Funktionen zur Extraktion von Daten aus Tabellen. Sobald eine Tabelle über DocBits (Doc²) extrahiert und die Spalten zugeordnet wurden, können die erhaltenen Daten gruppiert werden, um einen strukturierten Ergebnissatz aller extrahierten Daten zu erhalten.
 date: "2022-02-24"
 tags:
   - Tabellen
   - Tabellenextraktion
-  - Docbits (Doc²)
+  - DocBits (Doc²)
 ---
 
 # Gruppenfunktion zur Extraktion von Daten aus Tabellen
 
-Sobald eine Tabelle über Docbits (Doc²) extrahiert und die Spalten zugeordnet wurden ([Zuordnung von Spalten](/docbits/table-extraction/mapping-of-columns/)), können die erhaltenen Daten gruppiert werden, um einen strukturierten Ergebnissatz aller extrahierten Daten zu erhalten.
+Sobald eine Tabelle über DocBits (Doc²) extrahiert und die Spalten zugeordnet wurden ([Zuordnung von Spalten](/docbits/table-extraction/mapping-of-columns/)), können die erhaltenen Daten gruppiert werden, um einen strukturierten Ergebnissatz aller extrahierten Daten zu erhalten.
 
 [Registrieren Sie sich für eine 30-tägige kostenlose Testversion](https://app.polydocs.io){ .md-button .md-button--primary }
 
@@ -22,7 +22,7 @@ Als Beispiel sehen Sie unten die deutsche Rechnung, bei der die Informationen in
 
 ![Deutsche Rechnung](/_images/docbits/image-30-1024x636.png){ loading=lazy }
 
-An dieser Stelle kommt ein weiterer Vorteil von Docbits (Doc²) ins Spiel. Es extrahiert die Daten im ersten Schritt 1:1. Das Ergebnis sieht wie folgt aus:
+An dieser Stelle kommt ein weiterer Vorteil von DocBits (Doc²) ins Spiel. Es extrahiert die Daten im ersten Schritt 1:1. Das Ergebnis sieht wie folgt aus:
 
 ![Extrahierte Daten](/_images/docbits/image-31-1024x633.png){ loading=lazy }
 

@@ -1,20 +1,20 @@
 ---
 title: "Doc Scan"
-description: In den Docbits (DOC²)-Einstellungen finden Sie verschiedene Module, die wichtig sind, wenn Sie mit dem PO-Matching arbeiten, Genehmigungsprozesse nutzen und Ihre Dokumententypen individuell anpassen möchten. 
+description: In den DocBits (DOC²)-Einstellungen finden Sie verschiedene Module, die wichtig sind, wenn Sie mit dem PO-Matching arbeiten, Genehmigungsprozesse nutzen und Ihre Dokumententypen individuell anpassen möchten. 
 date: "2023-06-28"
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - Einstellungen
   - Dokumentenverarbeitung
   - Module
   - Doc Scan
 ---
 
-Sie nutzen bereits Docbits (DOC²) und möchten Dokumente direkt nach dem Scannen in Ihr Dashboard hochladen?<br> So funktioniert es:
+Sie nutzen bereits DocBits (DOC²) und möchten Dokumente direkt nach dem Scannen in Ihr Dashboard hochladen?<br> So funktioniert es:
 
 ## Laden Sie die Scannersoftware herunter
 
-Klicken Sie auf **Dokument scannen** auf dem Docbits (DOC²) Dashboard
+Klicken Sie auf **Dokument scannen** auf dem DocBits (DOC²) Dashboard
 
 ![Dashboard](/_images/docbits/einstellungen/module/docscan/Dashboard-Dokument-scannen.png)
 
@@ -53,7 +53,7 @@ Wenn Sie diesen Bildschirm sehen, können Sie auf `Doc2` klicken.
 
 ![](/_images/docbits/einstellungen/module/docscan/browser_bereit-fuer-doc2scan.png)
 
-Sie werden zur Docbits (DOC²)-Anmeldeseite weitergeleitet, wo Sie Ihre Anmeldedaten eingeben können, um auf Ihr Dashboard zuzugreifen.
+Sie werden zur DocBits (DOC²)-Anmeldeseite weitergeleitet, wo Sie Ihre Anmeldedaten eingeben können, um auf Ihr Dashboard zuzugreifen.
 
 ![Anmelden](/_images/docbits/einstellungen/module/docscan/docbits-doc2-anmeldeseite-browser.png)
 

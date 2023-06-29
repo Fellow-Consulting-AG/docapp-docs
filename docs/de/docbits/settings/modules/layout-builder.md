@@ -1,8 +1,8 @@
 ---
 Titel: "Layout-Ersteller"
-description: In den Docbits (DOC²)-Einstellungen finden Sie verschiedene Module, die wichtig sind, wenn Sie mit dem PO-Matching arbeiten, Genehmigungsprozesse nutzen und Ihre Dokumententypen individuell anpassen möchten. 
+description: In den DocBits (DOC²)-Einstellungen finden Sie verschiedene Module, die wichtig sind, wenn Sie mit dem PO-Matching arbeiten, Genehmigungsprozesse nutzen und Ihre Dokumententypen individuell anpassen möchten. 
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - Einstellungen
   - Module
   - Dokumententyp

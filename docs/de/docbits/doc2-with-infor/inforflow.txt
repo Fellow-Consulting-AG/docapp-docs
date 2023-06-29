@@ -3,6 +3,6 @@ Changes:- Übersetzung des Textes ins Deutsche
 - Verwendung von Keywords in Titel und Beschreibung
 - Verwendung von Keywords in den Tags
 - Hinzufügen von "Hier finden Sie verschiedene Anwendungsfälle" in der Beschreibung, um den Nutzen der Seite hervorzuheben
-- Hinzufügen von "Infor CloudSuite API Flow Docbits (Doc²)" als Alt-Text des Bildes, um den Inhalt des Bildes zu beschreiben
+- Hinzufügen von "Infor CloudSuite API Flow DocBits (Doc²)" als Alt-Text des Bildes, um den Inhalt des Bildes zu beschreiben
 - Entfernen von überflüssigen Informationen in der Beschreibung, um sie prägnanter zu gestalten
 - Hinzufügen von "Validierung von Stammdaten" als Keyword im Text, um die Relevanz des Themas hervorzuheben

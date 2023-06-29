@@ -3,13 +3,13 @@ title: "ZUGFeRD"
 description: Export and Download documents as ZUGFeRD-PDF and Peppol BIS Billing
 date: "2022-03-03"
 tags:
-  - Docbits (Doc²)
+  - DocBits (Doc²)
   - Export
   - Download
   - ZUGFeRD
 ---
 
-# Import ZUGFeRD to Docbits (Doc²)
+# Import ZUGFeRD to DocBits (Doc²)
 
 <div class="video-container">
 <iframe width="840" height="472.5" src="https://www.youtube-nocookie.com/embed/e9ekKDj0rMU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

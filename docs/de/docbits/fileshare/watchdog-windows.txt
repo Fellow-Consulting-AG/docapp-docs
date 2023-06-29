@@ -7,11 +7,11 @@ Konfigurieren Sie als nächstes die allgemeinen Parameter:
 #### Wählen Sie eine Umgebung aus, in die Ihre Dokumente exportiert werden sollen.
   :fontawesome-solid-circle-info:{ style="color: #0F17E4" } Die folgenden Optionen stehen zur Verfügung:
 
-  **Docbits (Doc²)** → Die Dokumente werden nur in Docbits (Doc²) exportiert.
+  **DocBits (Doc²)** → Die Dokumente werden nur in DocBits (Doc²) exportiert.
 
   ![](/_images/docbits/Import_Watchdog_Windows_General_Settings_2.png)
 
-  **INFOR OS** → Hier prüft der Watchdog, ob Exportaufträge für Infor OS On-Premise von Docbits (Doc²) ausgestellt wurden, und das Dokument wird dann in IDM exportiert.
+  **INFOR OS** → Hier prüft der Watchdog, ob Exportaufträge für Infor OS On-Premise von DocBits (Doc²) ausgestellt wurden, und das Dokument wird dann in IDM exportiert.
 
   Es gibt zwei weitere spezifische Parameter:
 
@@ -20,10 +20,10 @@ Konfigurieren Sie als nächstes die allgemeinen Parameter:
 ![](/_images/docbits/Import_Watchdog_Windows_General_Settings_1.png)
 
 #### API-Schlüssel
-→ Dieser Schlüssel befindet sich unter Integrationseinstellungen Ihres Docbits (Doc²)-Kontos.
+→ Dieser Schlüssel befindet sich unter Integrationseinstellungen Ihres DocBits (Doc²)-Kontos.
 
 #### Barcode-Aufteilung
-Wenn Sie Dokumente verarbeiten möchten, in denen mehrere Dokumente mit Barcodes in einer PDF-Datei kombiniert sind, werden diese durch den Barcode mit folgender Einstellung beim Hochladen in Docbits (Doc²) getrennt.
+Wenn Sie Dokumente verarbeiten möchten, in denen mehrere Dokumente mit Barcodes in einer PDF-Datei kombiniert sind, werden diese durch den Barcode mit folgender Einstellung beim Hochladen in DocBits (Doc²) getrennt.
 
 ![](/_images/docbits/Import_Watchdog_Windows_Barcode_Splitting.png)
 

@@ -1,9 +1,9 @@
 ---
 title: "PO Matching - Invoices"
-description: Step by step guide how to create a purchase order in LN, Upload the invoice in Docbits (Doc²), handle two different scenarios and check the receipt of the invoice in LN.
+description: Step by step guide how to create a purchase order in LN, Upload the invoice in DocBits (Doc²), handle two different scenarios and check the receipt of the invoice in LN.
 date: "2022-01-24"
 tags:
-  - Docbits (Doc²)
+  - DocBits (Doc²)
   - PO Matching
   - Invoice
   - LN

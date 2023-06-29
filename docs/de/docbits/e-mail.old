@@ -1,11 +1,11 @@
 ---
 title: "E-Mail"
 date: "2021-10-22"
-description: Docbits (Doc²) Email Import. If you want to import documents from your email inbox automatically, here are the steps you need to take.
+description: DocBits (Doc²) Email Import. If you want to import documents from your email inbox automatically, here are the steps you need to take.
 tags:
   - E-Mail
   - Import
-  - Docbits (Doc²)
+  - DocBits (Doc²)
 ---
 
 ### If you want to import documents from a specific email folder, here are the steps you need to take:
@@ -25,7 +25,7 @@ As you can see there is no email account for the import set up yet
 
 Click on the `OFF` Button to open the Email import settings
 
-The boxes for E-Mail and Password as well as the API Key might get automatically filled with your login information for Docbits (Doc²) depending on your browser settings. Please empty the fields before continuing to enter the needed information for the E-Mail Import.
+The boxes for E-Mail and Password as well as the API Key might get automatically filled with your login information for DocBits (Doc²) depending on your browser settings. Please empty the fields before continuing to enter the needed information for the E-Mail Import.
 
 What you need to do is enter the protocol (IMAP or POP3), the encryption (SSL or TSL), server-name, port, a username e.g. "incoming invoices" as well as email address and password from which the documents should going to be imported from.
 
@@ -49,4 +49,4 @@ After you click the `IMPORT` button, the documents will be fetched from the mail
 ![](/_images/docbits/AllImportOptions_Email_6.png)
 
 
-If you have made the right decision to also use our [Workflow² APP](https://docs.polydocs.io/workflow/), you will find the corresponding workflows [here](https://docs.polydocs.io/example/gmail-import/) to automatically import your documents from your e-mail inbox to Docbits (Doc²).
+If you have made the right decision to also use our [Workflow² APP](https://docs.polydocs.io/workflow/), you will find the corresponding workflows [here](https://docs.polydocs.io/example/gmail-import/) to automatically import your documents from your e-mail inbox to DocBits (Doc²).

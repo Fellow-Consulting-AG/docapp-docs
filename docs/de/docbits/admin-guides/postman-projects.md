@@ -1,9 +1,9 @@
 ---
-title: "Docbits (Doc²) - Postman Anleitungen"
-description: In dieser Anleitung lernen Sie, wie Sie über Postman HTTP-Anfragen an Ihre Docbits (Doc²)-Organisation senden können.
+title: "DocBits (Doc²) - Postman Anleitungen"
+description: In dieser Anleitung lernen Sie, wie Sie über Postman HTTP-Anfragen an Ihre DocBits (Doc²)-Organisation senden können.
 date: "2022-10-20"
 tags:
-  - Docbits (Doc²)
+  - DocBits (Doc²)
   - Postman
   - Anleitung
   - Einrichtung
@@ -11,9 +11,9 @@ tags:
   - Admin
 ---
 
-# Postman für Docbits (Doc²)
+# Postman für DocBits (Doc²)
 
-Diese Anleitung zeigt Ihnen, wie Sie über Postman HTTP-Anfragen an Ihre Docbits (Doc²)-Organisation stellen können. Es ist einfach zu bedienen und sehr nützlich für Organisationadministratoren.
+Diese Anleitung zeigt Ihnen, wie Sie über Postman HTTP-Anfragen an Ihre DocBits (Doc²)-Organisation stellen können. Es ist einfach zu bedienen und sehr nützlich für Organisationadministratoren.
 
 ## Einrichtung
 
@@ -25,13 +25,13 @@ Folgen Sie nun dieser Schritt-für-Schritt-Anleitung, um zu erfahren, wie HTTP-A
 
 ### In Postman
 
-Bevor Sie Ihre HTTP-Anfragen erstellen können, müssen Sie Ihren API-Schlüssel von Docbits (Doc²) eingeben, um sie zu autorisieren.
+Bevor Sie Ihre HTTP-Anfragen erstellen können, müssen Sie Ihren API-Schlüssel von DocBits (Doc²) eingeben, um sie zu autorisieren.
 
 **1.** Klicken Sie auf die Registerkarte `Authorization` und wählen Sie `API Key` als Autorisierungstyp aus.
 
 ![Picture](/_images/docbits/admin_guides_authorization_API Key.png){ loading=lazy }
 
-**2.** Füllen Sie die Werte aus. Geben Sie "x-api-key" in das Feld `Key` ein und Ihren API-Schlüssel als `Value` (zu finden im Docbits (Doc²)-Einstellungsmenü **Integration**). Wählen Sie `Zum Header hinzufügen`.
+**2.** Füllen Sie die Werte aus. Geben Sie "x-api-key" in das Feld `Key` ein und Ihren API-Schlüssel als `Value` (zu finden im DocBits (Doc²)-Einstellungsmenü **Integration**). Wählen Sie `Zum Header hinzufügen`.
 
 Es sollte so aussehen:
 
@@ -118,7 +118,7 @@ Klicken Sie abschließend auf `Send` und Sie können alle von Ihnen festgelegten
 
 ### Dokument hochladen
 
-Sie können die POST-Methode auch verwenden, um ein Dokument in Docbits (Doc²) hochzuladen.
+Sie können die POST-Methode auch verwenden, um ein Dokument in DocBits (Doc²) hochzuladen.
 
 **1.**  Wählen Sie die POST-Methode<br>
 **2.**  Autorisieren Sie sich wie oben beschrieben [Autorisierung](/docbits/admin-guides/postman-projects/#autorisierung).<br>

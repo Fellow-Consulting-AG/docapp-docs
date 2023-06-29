@@ -1,9 +1,9 @@
 ---
 title: "Watchdog für macOS"
-description: In dieser Dokumentation erfahren Sie, wie Sie Watchdog für macOS konfigurieren, um Ihre lokalen Dokumente einfach in Docbits (Doc²) zu importieren.
+description: In dieser Dokumentation erfahren Sie, wie Sie Watchdog für macOS konfigurieren, um Ihre lokalen Dokumente einfach in DocBits (Doc²) zu importieren.
 date: "2021-11-22"
 tags:
-  - Docbits (Doc²)
+  - DocBits (Doc²)
   - Fileshare-Import
   - Watchdog
   - macOS
@@ -17,7 +17,7 @@ tags:
 
 Konfigurieren Sie zunächst die folgenden Ordner:
 
-* Lesen-Ordner → Hier werden Dokumente exportiert, die in Docbits (Doc²) hochgeladen werden sollen.
+* Lesen-Ordner → Hier werden Dokumente exportiert, die in DocBits (Doc²) hochgeladen werden sollen.
 * Fehler-Ordner → Hier werden Dokumente gespeichert, die während des Exports einen Fehler aufweisen.
 * Verarbeitete-Ordner → Hier werden erfolgreich verarbeitete Dokumente gespeichert.
 
@@ -30,9 +30,9 @@ Um diese Ordner zu konfigurieren, müssen Sie den **Einstellungsordner** auswäh
 Konfigurieren Sie als nächstes die allgemeinen Parameter:
 
   * Umgebung → Hier können Sie auswählen, wohin die Dokumente exportiert werden sollen. Es stehen folgende Optionen zur Verfügung:
-    - Docbits (Doc²) → Hier exportiert der Watchdog die Dokumente ausschließlich in Docbits (Doc²).
-    - INFOR OS → Hier prüft der Watchdog, ob Exportaufträge für Infor OS On-Premise von Docbits (Doc²) erteilt wurden, und exportiert das Dokument dann in IDM.
-  * API-Schlüssel → Diesen Schlüssel finden Sie unter Integrationseinstellungen Ihres Docbits (Doc²)-Kontos.
+    - DocBits (Doc²) → Hier exportiert der Watchdog die Dokumente ausschließlich in DocBits (Doc²).
+    - INFOR OS → Hier prüft der Watchdog, ob Exportaufträge für Infor OS On-Premise von DocBits (Doc²) erteilt wurden, und exportiert das Dokument dann in IDM.
+  * API-Schlüssel → Diesen Schlüssel finden Sie unter Integrationseinstellungen Ihres DocBits (Doc²)-Kontos.
 
 Es gibt noch zwei weitere spezifische Parameter:
 

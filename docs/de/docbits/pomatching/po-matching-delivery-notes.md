@@ -1,20 +1,20 @@
 ---
 title: "PO Matching - Lieferschein"
-description: Wenn die Menge der bestellten Artikel nicht mit der Menge auf der Rechnung übereinstimmt, müssen Sie mit dem erhaltenen Lieferschein übereinstimmen, indem Sie ihn in Docbits (Doc²) hochladen.
+description: Wenn die Menge der bestellten Artikel nicht mit der Menge auf der Rechnung übereinstimmt, müssen Sie mit dem erhaltenen Lieferschein übereinstimmen, indem Sie ihn in DocBits (Doc²) hochladen.
 date: "2022-01-24"
 tags:
-  - Docbits (Doc²)
+  - DocBits (Doc²)
   - PO Matching
   - Lieferschein
 ---
 
 Wenn die Menge der bestellten Artikel nicht mit der Menge auf der Rechnung übereinstimmt, müssen Sie mit dem erhaltenen Lieferschein übereinstimmen.
 
-## Laden Sie den Lieferschein in Docbits (Doc²) hoch
+## Laden Sie den Lieferschein in DocBits (Doc²) hoch
 
 [Registrieren Sie sich für eine 30-tägige kostenlose Testversion](https://app.polydocs.io){ .md-button .md-button--primary }
 
-![Lieferschein in Docbits (Doc²) hochladen](/assets/images/docbits/DOC2_POM_DN_1.png "Lieferschein in Docbits (Doc²) hochladen")
+![Lieferschein in DocBits (Doc²) hochladen](/assets/images/docbits/DOC2_POM_DN_1.png "Lieferschein in DocBits (Doc²) hochladen")
 
 Hier finden Sie auch das rote Symbol, weil die Menge auf dem Lieferschein nicht mit der Menge der Bestellung übereinstimmt.
 

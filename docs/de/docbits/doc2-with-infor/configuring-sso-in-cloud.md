@@ -15,7 +15,7 @@ tags:
 
 ### **Voraussetzungen**
 
-<table><tbody><tr><td><strong>Erforderliche Informationen</strong></td><td><strong>Beschreibung</strong></td></tr><tr><td>Anmeldedaten für die Cloud</td><td>Zugangsdaten sind erforderlich, um auf die Infor Cloud-Umgebung zuzugreifen.<br>Der Benutzer sollte die Rollen "Infor-Systemadministrator" und "UserAdmin" haben.</td></tr><tr><td>Admin-Details konfigurieren (Docbits (Doc²))</td><td>Sie sollten eine E-Mail von FellowPro AG mit den Anmeldedaten für die Seite „Docbits (Doc²) SSO-Einstellungen“ erhalten haben.<br><br>Sie benötigen einen Benutzernamen und ein Passwort.<br></td></tr><tr><td>Zertifikat</td><td>Sie können das Zertifikat in Docbits (Doc²) in den Einstellungen unter Integration - SSO Dienstanbieter-Einstellungen herunterladen.</td></tr></tbody></table>
+<table><tbody><tr><td><strong>Erforderliche Informationen</strong></td><td><strong>Beschreibung</strong></td></tr><tr><td>Anmeldedaten für die Cloud</td><td>Zugangsdaten sind erforderlich, um auf die Infor Cloud-Umgebung zuzugreifen.<br>Der Benutzer sollte die Rollen "Infor-Systemadministrator" und "UserAdmin" haben.</td></tr><tr><td>Admin-Details konfigurieren (DocBits (Doc²))</td><td>Sie sollten eine E-Mail von FellowPro AG mit den Anmeldedaten für die Seite „DocBits (Doc²) SSO-Einstellungen“ erhalten haben.<br><br>Sie benötigen einen Benutzernamen und ein Passwort.<br></td></tr><tr><td>Zertifikat</td><td>Sie können das Zertifikat in DocBits (Doc²) in den Einstellungen unter Integration - SSO Dienstanbieter-Einstellungen herunterladen.</td></tr></tbody></table>
 
 **1\. Zugriff auf die Cloud erhalten und Zugriff überprüfen**
 
@@ -47,34 +47,34 @@ b. Sie sehen nun dieses Fenster mit den Dienstanbietern.
 
 !["Infor Cloud Dienstanbieter"](/_images/docbits/SSO in infor cloud/infor-dienstanbieter-1.png)
 
-c. Klicken Sie nun auf das "+"-Symbol und fügen Sie unseren Docbits (Doc²) als Dienstanbieter hinzu. (Siehe Schritt 4)
+c. Klicken Sie nun auf das "+"-Symbol und fügen Sie unseren DocBits (Doc²) als Dienstanbieter hinzu. (Siehe Schritt 4)
 
 !["Infor Cloud Dienstanbieter hinzufügen"](/_images/docbits/SSO in infor cloud/infor-dienstanbieter-2.png)
 
-**3\. Greifen Sie in Docbits (Doc²) auf die SSO DIENSTANBIETER-EINSTELLUNGEN zu**
+**3\. Greifen Sie in DocBits (Doc²) auf die SSO DIENSTANBIETER-EINSTELLUNGEN zu**
 
 a) Melden Sie sich über die URL [https://app.polydocs.io/](https://app.polydocs.io/) mit den Anmeldedaten an, die Sie von uns erhalten haben.
 
 b) Gehen Sie zu EINSTELLUNGEN (in der oberen Leiste) und wählen Sie Integration.
 Dort finden Sie alle Informationen, die Sie für die folgenden Schritte benötigen.
 
-!["Docbits (Doc²) Einstellungen Integration"](/_images/docbits/SSO in infor cloud/doc2-einstellungen-integration.png)
+!["DocBits (Doc²) Einstellungen Integration"](/_images/docbits/SSO in infor cloud/doc2-einstellungen-integration.png)
 
 c) Laden Sie das Zertifikat herunter.
 
-!["Docbits (Doc²) SSO Dienstanbieter-Einstellungen"](/_images/docbits/SSO in infor cloud/doc2-sso-dienstanbieter-einstellungen.png)
+!["DocBits (Doc²) SSO Dienstanbieter-Einstellungen"](/_images/docbits/SSO in infor cloud/doc2-sso-dienstanbieter-einstellungen.png)
 
-**4\. Füllen Sie den Dienstanbieter mit Hilfe der SSO Dienstanbieter-Einstellungen in Docbits (Doc²) aus**
+**4\. Füllen Sie den Dienstanbieter mit Hilfe der SSO Dienstanbieter-Einstellungen in DocBits (Doc²) aus**
 
 ![](/_images/docbits/SSO in infor cloud/infor-dienstanbieter-3.png)
 
-<table><tbody><tr><td><strong>Feld</strong></td><td><strong>Wert</strong></td></tr><tr><td><strong>Anwendungstyp</strong></td><td>DEFAULT_SAML</td></tr><tr><td><strong>Anzeigename</strong></td><td>Docbits (Doc²)</td></tr><tr><td><strong>Entitäts-ID</strong></td><td>Siehe Entitäts-ID unter SSO Dienstanbieter-Einstellungen</td></tr><tr><td><strong>SSO-Endpunkt</strong></td><td>Kopieren Sie die SSO-URL aus SSO Dienstanbieter-Einstellungen und fügen Sie sie in das Feld <strong>SSO-Endpunkt</strong> ein.</td></tr><tr><td><strong>SLO-Endpunkt</strong></td><td>Kopieren Sie die SLO-URL aus SSO Dienstanbieter-Einstellungen und fügen Sie sie in das Feld <strong>SLO-Endpunkt</strong> ein.</td></tr><tr><td><strong>Signaturzertifikat</strong></td><td>Laden Sie die entsprechende .cer-Datei hoch, die Sie in Schritt 3c) aus SSO Dienstanbieter-Einstellungen heruntergeladen haben.</td></tr><tr><td><strong>Name ID-Format und Mapping</strong></td><td>emailaddress</td></tr></tbody></table>
+<table><tbody><tr><td><strong>Feld</strong></td><td><strong>Wert</strong></td></tr><tr><td><strong>Anwendungstyp</strong></td><td>DEFAULT_SAML</td></tr><tr><td><strong>Anzeigename</strong></td><td>DocBits (Doc²)</td></tr><tr><td><strong>Entitäts-ID</strong></td><td>Siehe Entitäts-ID unter SSO Dienstanbieter-Einstellungen</td></tr><tr><td><strong>SSO-Endpunkt</strong></td><td>Kopieren Sie die SSO-URL aus SSO Dienstanbieter-Einstellungen und fügen Sie sie in das Feld <strong>SSO-Endpunkt</strong> ein.</td></tr><tr><td><strong>SLO-Endpunkt</strong></td><td>Kopieren Sie die SLO-URL aus SSO Dienstanbieter-Einstellungen und fügen Sie sie in das Feld <strong>SLO-Endpunkt</strong> ein.</td></tr><tr><td><strong>Signaturzertifikat</strong></td><td>Laden Sie die entsprechende .cer-Datei hoch, die Sie in Schritt 3c) aus SSO Dienstanbieter-Einstellungen heruntergeladen haben.</td></tr><tr><td><strong>Name ID-Format und Mapping</strong></td><td>emailaddress</td></tr></tbody></table>
 
 ![](/_images/docbits/SSO in infor cloud/infor-dienstanbieter-mit zertifikat.png)
 
 a) Wenn Sie alles ausgefüllt haben, denken Sie daran, es mit dem Diskettensymbol über dem Application Type zu speichern. Sie gelangen automatisch zurück auf die Übersicht der Dienstanbieter.
 
-b) Wählen Sie dann den eben angelegten Dienstanbieter Docbits (Doc²) aus und klicken Sie auf den Stift zum Bearbeiten.
+b) Wählen Sie dann den eben angelegten Dienstanbieter DocBits (Doc²) aus und klicken Sie auf den Stift zum Bearbeiten.
 
 c) Klicken Sie auf `ANZEIGEN`unter **Identitätsanbieterdaten** 
 
@@ -116,8 +116,8 @@ c) Füllen Sie alle Felder wie auf dem folgenden Bild aus, aber mit Ihrer eigene
 
 **Und nun der letzte Schritt:**
 
-- Melden Sie sich von Docbits (Doc²) ab.
+- Melden Sie sich von DocBits (Doc²) ab.
 - Gehen Sie zurück zum Burger-Menü in Infor und wählen Sie das von Ihnen erstellte Symbol.
-- Bei korrekter Konfiguration sollten Sie sich dann auf dem Dashboard von Docbits (Doc²) befinden.
+- Bei korrekter Konfiguration sollten Sie sich dann auf dem Dashboard von DocBits (Doc²) befinden.
 
-!["Docbits (Doc²) Dashboard"](/_images/docbits/SSO in infor cloud/doc2-sso-signin-dashboard.png)
+!["DocBits (Doc²) Dashboard"](/_images/docbits/SSO in infor cloud/doc2-sso-signin-dashboard.png)

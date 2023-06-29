@@ -5,7 +5,7 @@ date: "2023-06-22"
 tags:
   - E-Text
   - OCR
-  - Docbits (DOC²)
+  - DocBits (DOC²)
 ---
 
 Um den Unterschied zwischen E-Text und Nicht E-Text Dokumenten zu erkennen und zu verstehen, hier eine kurze Erklärung:

@@ -1,9 +1,9 @@
 ---
 title: "Tastatur"
-description: "In dieser Dokumentation finden Sie Informationen zur Tastaturunterstützung in Docbits (Doc²). Sie können die Enter- und Pfeil-Abwärts-Tasten als Tastenkombinationen verwenden, ohne Ihre Maus zu benutzen."
+description: "In dieser Dokumentation finden Sie Informationen zur Tastaturunterstützung in DocBits (Doc²). Sie können die Enter- und Pfeil-Abwärts-Tasten als Tastenkombinationen verwenden, ohne Ihre Maus zu benutzen."
 date: "2021-11-07"
 tags:
-  - Docbits (Doc²)
+  - DocBits (Doc²)
   - Tastatur
 ---
 

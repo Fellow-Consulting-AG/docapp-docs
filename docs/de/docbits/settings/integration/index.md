@@ -1,10 +1,10 @@
 ---
 title: "Integration"
-description: Hier finden Sie Ihre API-Schlüssel sowie die Einstellungen für den SSO-Service-Provider in Docbits (Doc²).
+description: Hier finden Sie Ihre API-Schlüssel sowie die Einstellungen für den SSO-Service-Provider in DocBits (Doc²).
 date: "2021-10-29"
 icons: material/api
 tags:
-  - Docbits (Doc²)
+  - DocBits (Doc²)
   - Einstellungen
   - API-Schlüssel
   - SSO

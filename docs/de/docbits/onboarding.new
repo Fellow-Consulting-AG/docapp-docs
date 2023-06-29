@@ -1,9 +1,9 @@
 ---
-title: "Docbits (Doc²) - OnBoarding"
-description: "Dieser Leitfaden hilft Ihnen, die Grundlagen von Docbits (Doc²) zu erlernen und Sie mit einem IPS zu starten, der Ihre Produktivität maximiert."
+title: "DocBits (Doc²) - OnBoarding"
+description: "Dieser Leitfaden hilft Ihnen, die Grundlagen von DocBits (Doc²) zu erlernen und Sie mit einem IPS zu starten, der Ihre Produktivität maximiert."
 date: "2022-01-24"
 tags:
-  - Docbits (Doc²)
+  - DocBits (Doc²)
   - OnBoarding
   - Guide
   - Initial Setup
@@ -12,20 +12,20 @@ tags:
 
 # OnBoarding
 
-Dieser Leitfaden hilft Ihnen, die Grundlagen von Docbits (Doc²) zu erlernen und Sie mit einem IPS zu starten, der Ihre Produktivität maximiert.
+Dieser Leitfaden hilft Ihnen, die Grundlagen von DocBits (Doc²) zu erlernen und Sie mit einem IPS zu starten, der Ihre Produktivität maximiert.
 
 ## **Durchführung der Initial Setup**
 
 Zunächst werden wir besprechen, wie Sie auf Ihr System zugreifen und es konfigurieren können.
 
-Docbits (Doc²) funktioniert nicht in Tenant. Alle Kunden nutzen denselben Cluster. Unser Kubernetes-Cluster wird in Frankfurt/Deutschland gehostet.
+DocBits (Doc²) funktioniert nicht in Tenant. Alle Kunden nutzen denselben Cluster. Unser Kubernetes-Cluster wird in Frankfurt/Deutschland gehostet.
 
 [https://app.polydocs.io/](https://app.polydocs.io/)
 
 Hier sind die beiden Möglichkeiten, auf das System zuzugreifen:
 
 1. Kontaktieren Sie Ihren FellowPro AG-Vertreter oder wenden Sie sich an [support@polydocs.io](mailto: support@polydocs.io), um Ihr Unternehmen zu registrieren.
-2. Sobald Sie sich entschieden haben, dass Docbits (Doc²) Ihre tägliche Arbeit erleichtern soll, bereits Kontakt mit uns aufgenommen haben und die Onboarding-E-Mail erhalten haben, sind Sie der erste Benutzer und damit der Administrator Ihrer Organisation.
+2. Sobald Sie sich entschieden haben, dass DocBits (Doc²) Ihre tägliche Arbeit erleichtern soll, bereits Kontakt mit uns aufgenommen haben und die Onboarding-E-Mail erhalten haben, sind Sie der erste Benutzer und damit der Administrator Ihrer Organisation.
 
 Hier ist Ihre Schritt-für-Schritt-Anleitung zur Einrichtung:
 
@@ -39,7 +39,7 @@ Hier ist Ihre Schritt-für-Schritt-Anleitung zur Einrichtung:
 - Hinzufügen von Hervorhebungen, um wichtige Informationen hervorzuheben.
 </seo_changes>
 
-<img src="https://app.polydocs.io/static/media/logo.7c5d7d5c.svg" alt="Docbits (Doc²)-Logo" width="200" height="50">
+<img src="https://app.polydocs.io/static/media/logo.7c5d7d5c.svg" alt="DocBits (Doc²)-Logo" width="200" height="50">
 <img src="https://app.polydocs.io/static/media/login-icon.8c5d7d5c.svg" alt="Login-Symbol" width="20" height="20">
 
 ### Schritt 2: Hinzufügen von Benutzern
@@ -55,9 +55,9 @@ Sie können Benutzer unter **Einstellungen** > **Benutzer** hinzufügen. Für Hi
 
 ## **Verständnis der Dokumentenüberprüfung**
 
-Nach Abschluss der Initial Setup verbringen Sie die meiste Zeit in Docbits (Doc²) damit, Beispielrechnungen zu überprüfen.
+Nach Abschluss der Initial Setup verbringen Sie die meiste Zeit in DocBits (Doc²) damit, Beispielrechnungen zu überprüfen.
 
-**Senden von Dokumenten an Docbits (Doc²)**
+**Senden von Dokumenten an DocBits (Doc²)**
 
 1. Manuelles Hochladen
 2. E-Mail

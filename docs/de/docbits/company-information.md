@@ -5,7 +5,7 @@ date: "2022-10-27"
 description: "In diesem Abschnitt finden Sie alle Informationen, die Sie benötigen, um Dokumente im ZUGFeRD-Format zu exportieren und zu speichern."
 tags:
   - Einstellungen
-  - Docbits (Doc²)
+  - DocBits (Doc²)
   - ZUGFeRD
   - Abonnement
 ---

@@ -3,7 +3,7 @@ title: "E-Mail-Benachrichtigung"
 description: Konfigurieren Sie in diesem Abschnitt alle Arten von E-Mail-Benachrichtigungen für Ihre Dokumenttypen. Legen Sie einfach fest, welche Mitarbeiter benachrichtigt werden sollen, wenn ein Dokument einen bestimmten Status hat.
 date: "2022-10-20"
 tags:
-  - Docbits (Doc²)
+  - DocBits (Doc²)
   - Einstellungen
   - E-Mail-Benachrichtigung
 ---

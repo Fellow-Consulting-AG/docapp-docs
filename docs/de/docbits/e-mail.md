@@ -1,16 +1,16 @@
 ---
-title: "E-Mail Import in Docbits (DOC²)"
+title: "E-Mail Import in DocBits (DOC²)"
 date: "2021-10-25"
-description: Erfahren Sie, wie Sie Dokumente automatisch aus Ihrem E-Mail-Posteingang in Docbits (DOC²) importieren können. Dies kann über verschiedene Protokolle erfolgen.
+description: Erfahren Sie, wie Sie Dokumente automatisch aus Ihrem E-Mail-Posteingang in DocBits (DOC²) importieren können. Dies kann über verschiedene Protokolle erfolgen.
 tags:
   - E-Mail
   - Import
-  - Docbits (DOC²)
+  - DocBits (DOC²)
 ---
 
 ### So importieren Sie Dokumente aus einem bestimmten E-Mail-Ordner:
 
-Wenn Sie es leid sind, Dokumente manuell aus Ihrem E-Mail-Posteingang zu importieren, hat Docbits (DOC²) die Lösung für Sie. Mit unserer E-Mail-Importfunktion können Sie den Prozess automatisieren und Zeit sparen.<br> Und so geht's:
+Wenn Sie es leid sind, Dokumente manuell aus Ihrem E-Mail-Posteingang zu importieren, hat DocBits (DOC²) die Lösung für Sie. Mit unserer E-Mail-Importfunktion können Sie den Prozess automatisieren und Zeit sparen.<br> Und so geht's:
 
 Rufen Sie das Einstellungsmenü auf und wählen Sie "Import".
 
@@ -39,7 +39,7 @@ Hier müssen Sie nur die erforderlichen Informationen für Ihren E-Mail-Anbieter
 ![POP3](/_images/docbits/import/Email-Protokoll-POP3.png "POP3")
 
 
-Der API-Key ist automatisch mit Ihren Anmeldedaten für Docbits (DOC²) hinterlegt und gefüllt. 
+Der API-Key ist automatisch mit Ihren Anmeldedaten für DocBits (DOC²) hinterlegt und gefüllt. 
 
 Nachdem Sie alle erforderlichen Felder Ihres jeweiligen Anbieters eingegeben haben, speichern Sie die Daten.
 
@@ -58,7 +58,7 @@ Sie werden auf diese Microsoft-Seite weitergeleitet und müssen einen Code einge
 
 ![Microsoft Code](/_images/docbits/import/Microsoft-Code-eingeben.png "Microsoft Code")
 
-Diesen Code finden Sie, wenn Sie zurück auf den Tab Docbits (DOC²) gehen.<br> Der Code wird dort wie folgt angezeigt. Kopieren Sie den Code indem Sie auf den markierten Button klicken und fügen Sie diesen auf der Microsoft-Seite ein und bestätigen Sie mit einem Klick auf `Weiter`.
+Diesen Code finden Sie, wenn Sie zurück auf den Tab DocBits (DOC²) gehen.<br> Der Code wird dort wie folgt angezeigt. Kopieren Sie den Code indem Sie auf den markierten Button klicken und fügen Sie diesen auf der Microsoft-Seite ein und bestätigen Sie mit einem Klick auf `Weiter`.
 
 ![DOC2App Code](/_images/docbits/import/Microsoft-Authentifizierungscode-kopieren.png "DOC2App Code")
 ![Microsoft Code](/_images/docbits/import/Microsoft-Code-einfuegen.png "Microsoft Code")
@@ -73,7 +73,7 @@ Bestätigen Sie die Anmeldung im nächsten Schritt erneut mit `Weiter`.
 ![Anmeldung bestaetigen](/_images/docbits/import/Mircosoft-DOC2App-Email-Import-anmelden.png "Anmeldung bestaetigen")
 ![Anmeldung schliessen](/_images/docbits/import/Microsoft-DOC2App-Email-Import-Anmelderbestaetigung.png "Anmeldung schliessen")
 
-Nachdem die Anmeldung erfolgreich durchgeführt wurde und Sie den Microsoft Tab geschlossen haben, bestätigen Sie diese in Docbits (DOC²) mit einem Klick auf `AUTHENTIFIZIERUNG ABSCHLIESSEN`. 
+Nachdem die Anmeldung erfolgreich durchgeführt wurde und Sie den Microsoft Tab geschlossen haben, bestätigen Sie diese in DocBits (DOC²) mit einem Klick auf `AUTHENTIFIZIERUNG ABSCHLIESSEN`. 
 
 ![Abschliessen](/_images/docbits/import/DOC2App-Authentifizierung-abschliessen.png "Abschliessen")
 
@@ -99,6 +99,6 @@ Solange der Schieberiegler auf ON steht werden neue Dokumente aus angegebenem E-
 
 <!-- ### Bringen Sie Ihr Dokumentenmanagement mit Workflow² auf das nächste Level
 
-Wenn Sie Ihr Dokumentenmanagement auf die nächste Stufe heben möchten, sollten Sie den Einsatz unserer Workflow²-App in Betracht ziehen. Mit Workflow² können Sie Ihre Dokumenten-Workflows automatisieren und noch mehr Zeit sparen. Sehen Sie sich unseren [Gmail-Import-Workflow](https://de.docs.fellowpro.com/example/gmail-import/) an, um zu erfahren, wie Sie Ihre Dokumente automatisch aus Ihrem E-Mail-Posteingang in Docbits (DOC²) importieren können.
+Wenn Sie Ihr Dokumentenmanagement auf die nächste Stufe heben möchten, sollten Sie den Einsatz unserer Workflow²-App in Betracht ziehen. Mit Workflow² können Sie Ihre Dokumenten-Workflows automatisieren und noch mehr Zeit sparen. Sehen Sie sich unseren [Gmail-Import-Workflow](https://de.docs.fellowpro.com/example/gmail-import/) an, um zu erfahren, wie Sie Ihre Dokumente automatisch aus Ihrem E-Mail-Posteingang in DocBits (DOC²) importieren können.
 
-Beginnen Sie noch heute mit Docbits (DOC²) und Workflow², Ihren Dokumentenmanagementprozess zu optimieren! -->
+Beginnen Sie noch heute mit DocBits (DOC²) und Workflow², Ihren Dokumentenmanagementprozess zu optimieren! -->

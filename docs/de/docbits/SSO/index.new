@@ -4,7 +4,7 @@ description: Hier finden Sie eine Übersicht zur Konfiguration von SSO in versch
 tags:
   - SSO
   - Konfiguration
-  - Docbits (Doc²)
+  - DocBits (Doc²)
   - Infor OS
   - Azure AD
 ---
@@ -28,9 +28,9 @@ Verwalten Sie Benutzerkonten an einem Ort. Gruppenmitgliedschaften oder Rollen k
 
 * [SSO in Infor Cloud konfigurieren](/docbits/doc2-with-infor/configuring-sso-in-cloud/)
 
-* [SSO für Azure AD mit Docbits (Doc²)](/docbits/sso/sso-for-azure-ad/)
+* [SSO für Azure AD mit DocBits (Doc²)](/docbits/sso/sso-for-azure-ad/)
 
-* [SSO Service Provider Einstellungen in Docbits (Doc²)](/docbits/settings-sso-settings/)
+* [SSO Service Provider Einstellungen in DocBits (Doc²)](/docbits/settings-sso-settings/)
 
 <seo_changes>
 - Hinzufügen eines aussagekräftigen Titels, der das Hauptthema der Seite widerspiegelt.

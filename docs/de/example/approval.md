@@ -1,16 +1,16 @@
 ---
-title: WF² Approval with Docbits (Doc²)
+title: WF² Approval with DocBits (Doc²)
 description: Documents Approval as important for any business. We show you how you can a easy Worfklow to create an approval
 date: 2021-07-05
 tags:
   - Workflow²
   - Approval
-  - Docbits (Doc²)
+  - DocBits (Doc²)
   - Ming.le
   - Infor OS
 ---
 
-# WF² Approval with Docbits (Doc²)
+# WF² Approval with DocBits (Doc²)
 
 
 

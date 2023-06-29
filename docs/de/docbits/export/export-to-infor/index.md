@@ -1,8 +1,8 @@
 ---
-title: Export von Docbits (Doc²) nach Infor OS
-description: Dokumentation für den Export von Docbits (Doc²) nach Infor OS
+title: Export von DocBits (Doc²) nach Infor OS
+description: Dokumentation für den Export von DocBits (Doc²) nach Infor OS
 tags:
-  - Docbits (Doc²)
+  - DocBits (Doc²)
   - Export
   - Infor
 ---

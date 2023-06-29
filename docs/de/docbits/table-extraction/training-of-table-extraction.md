@@ -3,7 +3,7 @@ title: "Training für Tabellenauswertung"
 description: Hier finden Sie eine Übersicht über alle wichtigen Punkte zum Training für die Tabellenauswertung. Von der Definition von Tabellen und Spalten bis zu erweiterten Einstellungen.
 date: "2022-02-22"
 tags:
-  - Docbits (Doc²)
+  - DocBits (Doc²)
   - Training
   - Tabelle
 ---

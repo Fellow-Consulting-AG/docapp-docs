@@ -1,9 +1,9 @@
 ---
-title: "Docbits (DOC²) Dashboard: Importierte Dokumente mühelos verwalten"
-description: "Nach dem Einloggen werden Sie zur DASHBOARD-Homepage von Docbits (DOC²) weitergeleitet. Hier können Sie Ihre importierten Dokumente verwalten und bearbeiten. Erfahren Sie hier, wie Sie das Dashboard nutzen können."
+title: "DocBits (DOC²) Dashboard: Importierte Dokumente mühelos verwalten"
+description: "Nach dem Einloggen werden Sie zur DASHBOARD-Homepage von DocBits (DOC²) weitergeleitet. Hier können Sie Ihre importierten Dokumente verwalten und bearbeiten. Erfahren Sie hier, wie Sie das Dashboard nutzen können."
 date: "2021-10-29"
 tags:
-  - Docbits (DOC²)
+  - DocBits (DOC²)
   - Dashboard
   - Homepage
   - Überblick
@@ -12,7 +12,7 @@ tags:
 
 ## **Einführung**
 
-Nach dem Einloggen mit Ihren Zugangsdaten werden Sie zur DASHBOARD-Homepage von Docbits (DOC²) weitergeleitet. Hier können Sie Ihre importierten Dokumente verwalten und bearbeiten.
+Nach dem Einloggen mit Ihren Zugangsdaten werden Sie zur DASHBOARD-Homepage von DocBits (DOC²) weitergeleitet. Hier können Sie Ihre importierten Dokumente verwalten und bearbeiten.
 
 ![DOC2 Dashboard](/_images/docbits/dashboard/dashboard.png)
 
@@ -60,11 +60,11 @@ Zudem können Sie entweder alle oder nur die Ihnen zugewiesenen Dokumente sehen,
 
 In der rechten Spalte sehen Sie die verfügbaren `Aktionen`. Wenn Sie darauf klicken, werden folgende Optionen geöffnet: Herunterladen, Dokument-Flow ansehen, Zuweisen, Neu starten, Validieren und Löschen.
 
-![Docbits (DOCs²) Aktionsschaltflächen](/_images/docbits/dashboard/dashboard-aktionen_dokument.gif)
+![DocBits (DOCs²) Aktionsschaltflächen](/_images/docbits/dashboard/dashboard-aktionen_dokument.gif)
 
 ## **Fazit**
 
-Das Docbits (DOC²) Dashboard ist ein leistungsstarkes Tool, mit dem Sie Ihre importierten Dokumente mühelos verwalten können. Durch das Filtern von Dokumenten nach Status, die Anzeige eines Überblicks über alle hochgeladenen Dokumente und die Validierung extrahierter Felder können Sie Ihren Dokumentenverwaltungsprozess optimieren. Starten Sie noch heute mit Docbits (DOC²)!
+Das DocBits (DOC²) Dashboard ist ein leistungsstarkes Tool, mit dem Sie Ihre importierten Dokumente mühelos verwalten können. Durch das Filtern von Dokumenten nach Status, die Anzeige eines Überblicks über alle hochgeladenen Dokumente und die Validierung extrahierter Felder können Sie Ihren Dokumentenverwaltungsprozess optimieren. Starten Sie noch heute mit DocBits (DOC²)!
 
 Details zur Benutzeroberfläche zum Überprüfen, Bearbeiten und Validieren extrahierter Felder von hochgeladenen Dokumenten finden Sie [hier](/docbits/document-validation/).
 

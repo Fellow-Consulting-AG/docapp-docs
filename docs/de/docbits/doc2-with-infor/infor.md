@@ -1,23 +1,23 @@
 ---
-title: "Docbits (Doc²) - Infor-Anwendungsfälle"
+title: "DocBits (Doc²) - Infor-Anwendungsfälle"
 description: Hier finden Sie verschiedene Anwendungsfälle, wie Prozesse Ihrer verschiedenen Dokumenttypen aussehen und in Infor integriert werden.
 date: "2023-05-16"
 tags:
-  - Docbits (Doc²)
+  - DocBits (Doc²)
   - PO Abgleich
   - Infor LN
   - Infor M3
   - Anwendungsfälle
 ---
 
-## Effizientes Dokumentenmanagement mit Docbits (Doc²) und Infor
+## Effizientes Dokumentenmanagement mit DocBits (Doc²) und Infor
 
-Docbits (Doc²) ist eine leistungsstarke Dokumentenmanagementlösung, mit der Sie Ihre Arbeitsabläufe in der Dokumentenverarbeitung optimieren können. Durch die nahtlose Integration mit Infor LN und Infor M3 kann Docbits (Doc²) Ihnen helfen, Ihre Dokumente effizient und genau zu verwalten. Hier sind einige der Anwendungsfälle, bei denen Docbits (Doc²) Ihnen helfen kann:
+DocBits (Doc²) ist eine leistungsstarke Dokumentenmanagementlösung, mit der Sie Ihre Arbeitsabläufe in der Dokumentenverarbeitung optimieren können. Durch die nahtlose Integration mit Infor LN und Infor M3 kann DocBits (Doc²) Ihnen helfen, Ihre Dokumente effizient und genau zu verwalten. Hier sind einige der Anwendungsfälle, bei denen DocBits (Doc²) Ihnen helfen kann:
 
 
 ### Einfache Rechnungsverarbeitung
 
-Dies ist der häufigste Anwendungsfall für Docbits (Doc²). Mit seinen fortschrittlichen OCR-Funktionen kann Docbits (Doc²) relevante Informationen aus Rechnungen extrahieren und zur weiteren Verarbeitung an Infor senden.
+Dies ist der häufigste Anwendungsfall für DocBits (Doc²). Mit seinen fortschrittlichen OCR-Funktionen kann DocBits (Doc²) relevante Informationen aus Rechnungen extrahieren und zur weiteren Verarbeitung an Infor senden.
 Und so funktioniert es:
 
 ``` mermaid
@@ -32,7 +32,7 @@ graph TD
   B ---->|Nein| E[Ende];
 ```
 
-Mit Docbits (Doc²) können Sie mehr tun
+Mit DocBits (Doc²) können Sie mehr tun
 
 ``` mermaid
 graph TD

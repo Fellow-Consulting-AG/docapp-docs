@@ -1,8 +1,8 @@
 ---
-title: "Docbits (Doc²) mit Infor: Eine Übersicht"
+title: "DocBits (Doc²) mit Infor: Eine Übersicht"
 description: "In diesem Abschnitt finden Sie eine umfassende Übersicht über die Infor-Infrastruktur, von Anwendungsfällen über Integrationen bis hin zu allen Exportoptionen."
 tags:
-  - Docbits (Doc²)
+  - DocBits (Doc²)
   - Infor
   - Übersicht
 ---

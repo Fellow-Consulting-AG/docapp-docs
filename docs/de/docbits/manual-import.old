@@ -1,14 +1,14 @@
 ---
 title: "Manual Import"
-description: This is a step by step guide how to import documents manually in Docbits (Doc²). From uploading documents over all processed status until they are ready for validation.
+description: This is a step by step guide how to import documents manually in DocBits (Doc²). From uploading documents over all processed status until they are ready for validation.
 date: "2021-10-22"
 tags:
-  - Docbits (Doc²)
+  - DocBits (Doc²)
   - Dashboard
   - Import
 ---
 
-Documents can be imported manually into Docbits (Doc²) as described below.
+Documents can be imported manually into DocBits (Doc²) as described below.
 
 Click on the `Upload` button on the Dashboard:
 
@@ -18,19 +18,19 @@ The following window opens:
 
 ![](/_images/docbits/DOC2_manual-import_2.png)
 
-Documents can be uploaded to Docbits (Doc²) via file browser or drag and drop. Furthermore, it is possible to upload multiple documents (**up to a maximum of 10**) at once.
+Documents can be uploaded to DocBits (Doc²) via file browser or drag and drop. Furthermore, it is possible to upload multiple documents (**up to a maximum of 10**) at once.
 
-- Click on the button `Upload Documents` to upload documents via file browser. Select the files to be uploaded in your file browser and confirm your selection. The files will then be uploaded to Docbits (Doc²).
+- Click on the button `Upload Documents` to upload documents via file browser. Select the files to be uploaded in your file browser and confirm your selection. The files will then be uploaded to DocBits (Doc²).
 
 
-- Alternatively, drag and drop your files onto the Docbits (Doc²) import window as shown in the video below:
+- Alternatively, drag and drop your files onto the DocBits (Doc²) import window as shown in the video below:
 
 
 <div class="video-container">
 <iframe width="840" height="472.5" src="https://www.youtube-nocookie.com/embed/Wwg86UY8JbE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-Dragging and dropping files directly on the Docbits (Doc²) dashboard is also possible for uploading.
+Dragging and dropping files directly on the DocBits (Doc²) dashboard is also possible for uploading.
 
 As soon as the files have been uploaded, they have the initial status "Running". During this time the upload is processed. Editing the file is not possible at this time. Depending on the size and complexity of the file, processing may take a while:
 

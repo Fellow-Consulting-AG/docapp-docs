@@ -1,16 +1,16 @@
 ---
 title: "Tabellenextraktion"
-description: Mit Docbits (Doc²) können Tabellen aus PDF-Dateien extrahiert werden. Dies erfolgt über die Funktion "Artikel". Sie wird verwendet, um Tabellen aus allen Arten von Dokumenten (Rechnungen, Verträgen, Formularen, medizinischen Rezepten usw.) zu extrahieren.
+description: Mit DocBits (Doc²) können Tabellen aus PDF-Dateien extrahiert werden. Dies erfolgt über die Funktion "Artikel". Sie wird verwendet, um Tabellen aus allen Arten von Dokumenten (Rechnungen, Verträgen, Formularen, medizinischen Rezepten usw.) zu extrahieren.
 date: "2021-11-11"
 tags:
-  - Docbits (Doc²)
+  - DocBits (Doc²)
   - Tabelle
   - Artikel
 ---
 
 # Tabellenextraktion
 
-Mit Docbits (Doc²) können Tabellen aus PDF-Dateien extrahiert werden. Dies erfolgt über die Funktion "Artikel". Sie wird verwendet, um Tabellen aus allen Arten von Dokumenten (Rechnungen, Verträgen, Formularen, medizinischen Rezepten usw.) zu extrahieren.
+Mit DocBits (Doc²) können Tabellen aus PDF-Dateien extrahiert werden. Dies erfolgt über die Funktion "Artikel". Sie wird verwendet, um Tabellen aus allen Arten von Dokumenten (Rechnungen, Verträgen, Formularen, medizinischen Rezepten usw.) zu extrahieren.
 
 Die Extraktion von Daten in Tabellen kann durch folgende Schritte erreicht werden:
 
@@ -36,6 +36,6 @@ In der Praxis sind Tabellen auf Dokumenten jedoch oft viel komplexer und weisen 
 
 ![Komplexe Tabelle](/_images/docbits/image-16.png "Komplexe Tabelle")
 
-Und hier kommt der Vorteil von Docbits (Doc²) und seiner Tabellenextraktionsfunktion zum Tragen. Es gibt mehrere Möglichkeiten, die Tabellenextraktionsfunktion zu trainieren und das bestmögliche Ergebnis zu erzielen, auch bei anspruchsvollen Tabellen.
+Und hier kommt der Vorteil von DocBits (Doc²) und seiner Tabellenextraktionsfunktion zum Tragen. Es gibt mehrere Möglichkeiten, die Tabellenextraktionsfunktion zu trainieren und das bestmögliche Ergebnis zu erzielen, auch bei anspruchsvollen Tabellen.
 
 In den folgenden Abschnitten erfahren Sie, wie Sie eine Tabelle manuell trainieren und welche Funktionalitäten dafür zur Verfügung stehen:

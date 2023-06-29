@@ -1,9 +1,9 @@
 ---
 title: "Manuelle Zeilenauswahl"
 date: "2022-02-18"
-description: "Es kann vorkommen, dass in einigen Dokumenten Text in Zeilen nicht nur unter einer Spalte geschrieben wird, sondern durch verschiedene Spalten hindurch. Hier erfahren Sie, wie Sie Zeilen in Docbits (Doc²) manuell auswählen können."
+description: "Es kann vorkommen, dass in einigen Dokumenten Text in Zeilen nicht nur unter einer Spalte geschrieben wird, sondern durch verschiedene Spalten hindurch. Hier erfahren Sie, wie Sie Zeilen in DocBits (Doc²) manuell auswählen können."
 tags:
-  - Docbits (Doc²)
+  - DocBits (Doc²)
   - Zeile
   - Auswahl
   - manuell
@@ -22,7 +22,7 @@ Auf dem Screenshot sehen Sie, dass die Tabelle und Spalten bereits definiert wur
 
 In diesem Fall ist es für das System nicht möglich, automatisch zu definieren, welcher Spalte die Informationen zugeordnet werden sollen.
 
-Um dieses Problem zu lösen, bietet Docbits (Doc²) die Möglichkeit, Informationen auf einem Dokument manuell auszuwählen und einer beliebigen Spalte zuzuordnen.
+Um dieses Problem zu lösen, bietet DocBits (Doc²) die Möglichkeit, Informationen auf einem Dokument manuell auszuwählen und einer beliebigen Spalte zuzuordnen.
 
 Stellen Sie zunächst sicher, dass der Trainingsmodus aktiviert ist:
 

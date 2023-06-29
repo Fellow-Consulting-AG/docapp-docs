@@ -3,7 +3,7 @@ title: "SSO für Azure AD"
 date: "2021-10-14"
 description: In diesem Schritt-für-Schritt-Handbuch erfahren Sie, wie Sie SSO in Infor Cloud konfigurieren. Beginnend mit den Voraussetzungen, dem Zugriff auf die Cloud und der Überprüfung, um einen neuen Dienstanbieter hinzuzufügen.
 tags:
-  - Docbits (Doc²)
+  - DocBits (Doc²)
   - Azure Active Directory
   - SSO
 ---
@@ -53,7 +53,7 @@ Wichtig: Sie sollten bereits Benutzer und Gruppen in Azure AD erstellt haben. We
 ![Benutzer hinzufügen](/_images/docbits/SSO/Azure_6.png "Benutzer hinzufügen")
 
 
-**3.** Wählen Sie die Benutzer und Gruppen aus, die Sie dieser SSO-Konfiguration zuweisen möchten. Diese Benutzer können sich mit SSO bei Docbits (Doc²) authentifizieren.
+**3.** Wählen Sie die Benutzer und Gruppen aus, die Sie dieser SSO-Konfiguration zuweisen möchten. Diese Benutzer können sich mit SSO bei DocBits (Doc²) authentifizieren.
 
 ![Benutzer und Gruppen auswählen](/_images/docbits/SSO/Azure_7.png "Benutzer und Gruppen auswählen")
 
@@ -85,7 +85,7 @@ Als Nächstes müssen Sie die Einrichtung der Einmalanmeldung in Azure abschlie�
 
 ![Metadatendatei hochladen](/_images/docbits/SSO/Azure_12.png "Metadatendatei hochladen")
 
-**4.** Laden Sie die Docbits (Doc²) **metadata.xml** hoch, die Sie im Menü `Integration` unter `SSO Service Provider Settings` Ihres Docbits (Doc²)-Kontos finden.
+**4.** Laden Sie die DocBits (Doc²) **metadata.xml** hoch, die Sie im Menü `Integration` unter `SSO Service Provider Settings` Ihres DocBits (Doc²)-Kontos finden.
 
 ![metadata.xml](/_images/docbits/SSO/Azure_Metadata.png "metadata.xml")
 
@@ -101,6 +101,6 @@ Als Nächstes müssen Sie die Einrichtung der Einmalanmeldung in Azure abschlie�
 
 ![Federation Metadata XML herunterladen](/_images/docbits/SSO/Azure_14.png "Federation Metadata XML herunterladen")
 
-**8.** Laden Sie die FederationMetadata.xml in die **Identity Service Provider Settings** Ihres Docbits (Doc²)-Kontos hoch, die Sie im Menü `Integration` finden.
+**8.** Laden Sie die FederationMetadata.xml in die **Identity Service Provider Settings** Ihres DocBits (Doc²)-Kontos hoch, die Sie im Menü `Integration` finden.
 
 ![FederationMetadata.xml hochladen](/_images/docbits/SSO/Azure_15.png "FederationMetadata.xml hochladen")
