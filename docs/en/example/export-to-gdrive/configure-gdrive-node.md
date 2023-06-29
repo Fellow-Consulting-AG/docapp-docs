@@ -2,7 +2,6 @@
 title: Configuring Google Drive node
 description: Here we will check how to configure google drive node to export document from Docbits (DOC²) to Google Drive
 tags:
-  - Workflow²
   - Example
   - Docbits (DOC²)Export
   - Google Drive
