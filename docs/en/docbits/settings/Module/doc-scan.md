@@ -44,6 +44,48 @@ If you see this message on the screen, you must first configure some settings in
 
 When you see this screen you are ready to click on Doc².
 
+![HomePage](/_images/docbits/Settings/Module/Doc Scan/Image_6_homepage.png)
+
+You will be redirected to the DocBits (DOC²) login page where you can enter your credentials to access your dashboard.
+
+![Login](/_images/docbits/Settings/Module/Doc Scan/image_7_docbits_login.png)
+
+All you have to do now is activate Doc Scan in the settings under Modules.
+
+![Settings](/_images/docbits/Settings/Module/Doc Scan/Image_8_Settings-Modules-Doc Scan.png)
+
+## FritzBox network settings
+
+If you get the following error after installing and calling up the url https://local.polydocs.io:12500/
+, here are the reasons:
+- DNS resolution of private IP addresses not possible.
+- DNS resolution for domain names that refer to private IP addresses in the FRITZ!Box home network is not possible via the FRITZ!Box. This means that server services in the FRITZ!Box home network cannot be accessed via the domain name. 
+
+You may see one of the following error messages:
+"DNS timed out"
+"DNS request timed out"
+
+*Caused*
+
+For security reasons, the FRITZ!Box suppresses DNS responses that refer to IP addresses in your own home network. This is a security feature of the FRITZ!Box to protect against so-called DNS rebinding attacks.
+
+If you use a FritzBox, you must first make the following settings in the FritzBox menu:
+
+1. In the FRITZ!Box user interface, click on `Heimnetz`.
+2. `Heimnetz` Click in the menu `Netzwerk`.
+3. Click on the tab `Netzwerkeinstellungen`.
+
+In the Hostname exceptions `DNS-Rebind-Schutz section`, enter local.polydocs.io for which DNS rebind protection should not apply. Confirm with .
+`Übernehmen`
+
+## Uninstall Doc2Scan Service Manager
+
+Run the following command to uninstall Doc2Scan Manager:
+
+
+     sudo bash /Library/doc2scan/uninstall.sh
+
+
 ## Scanner Compatability
 
 Legend:
@@ -52,6 +94,12 @@ Legend:
 - No - protocol not supported by device
 - ? - device works with sane-airscan, but protocol is not reported by user
 - Space - author has no information on this mode/device combination
+
+Definition:
+
+- eSCL stands for Airscan is a SANE WebScan frontend that supports Apple's AirScan protocol. The scanners are automatically detected and published via mDNS.
+
+- WSD stands for "Web Services on Devices" and is a network communication protocol used for printer discovery and management over a local area network. In WSD mode, printers can be automatically discovered and added to a computer system without requiring manual configuration or installing additional printer drivers. It enables easy setup and printing to compatible printers over a network. WSD mode is commonly used in Windows operating systems to discover and connect printers on the network.
 
 **Device**|**eSCL mode**|**WSD mode**
 -----|-----|-----
