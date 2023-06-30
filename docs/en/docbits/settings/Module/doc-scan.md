@@ -29,6 +29,7 @@ Open the installation file and you will see the following
 ![Installer](/_images/docbits/Settings/Module/Doc Scan/Image_3_installer_2.png)
 
 Click on `Continue`, accept the Software License Agreement with `Agree` and continue to install the software.
+
 :fontawesome-solid-circle-info:{ style="color: #0F17E4" }Installing this software requires 33,6 MB of space.
 You can change the install location before clicking `Install` in the next step.
 
