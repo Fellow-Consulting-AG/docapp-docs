@@ -5,7 +5,6 @@ date: "2023-07-04"
 tags:
   - DocBits (DOC²)
   - Einstellungen
-  - Betragsformatierung
   - Rundungsfehler
 ---
 
