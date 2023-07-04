@@ -23,5 +23,7 @@ Um diese Funktion zu aktivieren, schalten Sie einfach die Auswahl in den Einstel
 
 Wenn Sie keine Rechnungen verarbeiten, bei denen das Runden eine Rolle spielt, lassen Sie die Auswahl aus.
 
+![Betragsformatierung](/_images/docbits/einstellungen/klassifizierung-und-extraktion/Betragsformatierung.png)
+
 
 Stellen Sie sicher, dass Ihre Rechnungen korrekt und fehlerfrei sind - mit der Funktion für Betragsformatierung von DocBits (DOC²). Probieren Sie es noch heute aus!
