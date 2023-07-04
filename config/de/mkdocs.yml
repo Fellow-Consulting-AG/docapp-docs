@@ -226,13 +226,13 @@ nav:
         - Export zu Flow²: docbits/export/export-to-flow2.md
 
 
-      - Amount: docbits/settings-amount-settings.md
+      - Betragsformatierung: docbits/settings-amount-settings.md
       - Supplier Validation: docbits/settings-master-data-validation.md
     - PO Matching:
       - docbits/pomatching/po-matching/index.md
-      - Invoice: docbits/pomatching/po-matching-invoices.md
-      - Delivery Note: docbits/pomatching/po-matching-delivery-notes.md
-      - Order Confirmation: docbits/pomatching/po-matching-order-confirmation.md
+      - Rechnung: docbits/pomatching/po-matching-invoices.md
+      - Lieferschein: docbits/pomatching/po-matching-delivery-notes.md
+      - Auftragsbestätigung: docbits/pomatching/po-matching-order-confirmation.md
 
     - ZUGFeRD: docbits/zugpferd.md
 

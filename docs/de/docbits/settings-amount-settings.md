@@ -1,30 +1,28 @@
 ---
-title: "Einstellungen für Beträge"
+title: "Betragsformatierung"
 description: "Dieser Abschnitt ist hauptsächlich für diejenigen gedacht, die Rechnungen von Ländern verarbeiten, bei denen das Runden eine Rolle spielt, da einige Dokumente Rundungsfehler nach dem Dezimalpunkt in bestimmten Beträgen enthalten, da diese ursprünglich drei Stellen hatten, aber auf der Rechnung nur mit zwei Dezimalstellen angezeigt werden."
-date: "2021-10-29"
+date: "2023-07-04"
 tags:
   - DocBits (DOC²)
   - Einstellungen
-  - Einstellungen für Beträge
+  - Betragsformatierung
   - Rundungsfehler
 ---
 
-#### Dieser Abschnitt ist hauptsächlich für diejenigen gedacht, die Rechnungen von Ländern verarbeiten, bei denen das Runden eine Rolle spielt, da einige Dokumente Rundungsfehler nach dem Dezimalpunkt in bestimmten Beträgen enthalten, da diese ursprünglich drei Stellen hatten, aber auf der Rechnung nur mit zwei Dezimalstellen angezeigt werden.
+## Betragseinstellungen für Rechnungen mit Rundungsfehlern
 
-* * *
+Wenn Sie Rechnungen in Ländern bearbeiten, in denen gerundet werden muss, können bei bestimmten Beträgen Rundungsfehler nach dem Komma auftreten. Das liegt daran, dass einige Dokumente drei Stellen nach dem Komma enthalten, aber auf der Rechnung mit nur zwei Dezimalstellen angezeigt werden.
 
-Hier ist ein Beispiel zur Veranschaulichung:
+Die Betragsformatierungsfunktion von DocBits (DOC²) kann Ihnen helfen, diese Rundungsfehler zu vermeiden. Hier ist ein Beispiel zur Veranschaulichung:
 
-![Beispiel für Rundungsfehler](/images/docbits/Settings_Amount_2.png "Beispiel für Rundungsfehler")
+![Beispiel für Rundungsfehler](/_images/docbits/einstellungen/klassifizierung-und-extraktion/Betragsformatierung-Beispiel-für-Rundungsfehler.png)
 
-* * *
+Um diese Funktion zu aktivieren, schalten Sie einfach die Auswahl in den Einstellungen ein:
 
-![Einstellungen für Beträge](/images/docbits/Settings_Amount_1.png "Einstellungen für Beträge")
+![Betragsformatierung aktivieren](/_images/docbits/einstellungen/klassifizierung-und-extraktion/Betragsformatierung-aktivieren.png)
 
-![Einstellungen für Beträge](/images/docbits/Settings_Amount_3.png "Einstellungen für Beträge")
-
-* * *
 
 Wenn Sie keine Rechnungen verarbeiten, bei denen das Runden eine Rolle spielt, lassen Sie die Auswahl aus.
 
-![Auswahl für Einstellungen für Beträge](/images/docbits/Settings_Amount_4.png "Auswahl für Einstellungen für Beträge")
+
+Stellen Sie sicher, dass Ihre Rechnungen korrekt und fehlerfrei sind - mit der Funktion für Betragsformatierung von DocBits (DOC²). Probieren Sie es noch heute aus!
