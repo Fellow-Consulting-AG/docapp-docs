@@ -226,7 +226,7 @@ nav:
         - Export zu Flow²: docbits/export/export-to-flow2.md
 
 
-      - Betragsformatierung: docbits/settings-amount-settings.md
+      # - Betragsformatierung: docbits/settings-amount-settings.md
       - Supplier Validation: docbits/settings-master-data-validation.md
     - PO Matching:
       - docbits/pomatching/po-matching/index.md
