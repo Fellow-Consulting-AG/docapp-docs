@@ -1,14 +1,13 @@
 ---
 title: "Unternehmensinformationen"
-date: "2023-07-05"
-description: "In diesem Abschnitt finden Sie alle Informationen, die Sie benötigen, um Dokumente im ZUGFeRD-Format zu exportieren und zu speichern."
+description: Hier können Sie Ihre Unternehmensdaten eintragen um Dokumente im ZUGFeRD-Format zu exportieren, sowie Ihren Abonnementplan und die Nutzung für einen definierten Zeitraum einsehen.
 tags:
   - DocBits (DOC²)
   - Einstellungen
   - ZUGFeRD
   - Abonnement-Übersicht
   - Abonnement-Verwendung
-  
+---
   
   ### Geben Sie Ihre Unternehmensinformationen ein
 
@@ -19,16 +18,16 @@ tags:
   3. Klicken Sie auf `SPEICHERN`, wenn Sie fertig sind.
 
 
-![Unternehmensinformationen](/_images/docbits/einstellungen/unternehmensinformationen/Informationen.png)
+![](/_images/docbits/einstellungen/unternehmensinformationen/Informationen.png)
 
 ### Abonnementplan und Nutzung
 
 Unter Ihren Firmeninformationen finden Sie Ihren gebuchten Abonnementplan mit Start- und Enddatum.
 Sie können auch die Anzahl der verarbeiteten Seiten für einen ausgewählten Zeitraum abfragen. 
 
-![Abonnement-Übersicht und -Verwendungnt](/_images/docbits/einstellungen/unternehmensinformationen/Informationen-Abonnement.png)
+![Abonnement-Übersicht und -Verwendung](/_images/docbits/einstellungen/unternehmensinformationen/Informationen-Abonnement.png)
 
-![Abonnement-Verwendungnt](/_images/docbits/einstellungen/unternehmensinformationen/Abonnement-Verwendung.png)
+![Abonnement-Verwendung](/_images/docbits/einstellungen/unternehmensinformationen/Abonnement-Verwendung.png)
 
 Achten Sie darauf, dass Ihr Abonnementplan auf dem neuesten Stand ist, um einen ununterbrochenen Zugriff auf die Funktionen und Dienste von DocBits (DOC²) zu gewährleisten.
 
