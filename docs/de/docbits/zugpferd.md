@@ -1,6 +1,6 @@
 ---
-title: "ZUGFeRD: Export und Download von Dokumenten als ZUGFeRD-PDF und Peppol BIS Billing"
-description: "Exportieren und Herunterladen von Dokumenten als ZUGFeRD-PDF und Peppol BIS Billing mit DocBits (DOC²). Erfahren Sie, wie Sie ZUGFeRD in DocBits (DOC²) importieren und exportieren können."
+title: "ZUGFeRD: Export und Download von Dokumenten als ZUGFeRD-PDF"
+description: "Exportieren und Herunterladen von Dokumenten als ZUGFeRD-PDF mit DocBits (DOC²). Erfahren Sie, wie Sie ZUGFeRD in DocBits (DOC²) importieren und exportieren können."
 date: "2022-03-03"
 tags:
   - DocBits (DOC²)
