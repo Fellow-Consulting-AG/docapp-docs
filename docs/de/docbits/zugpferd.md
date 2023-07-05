@@ -48,7 +48,6 @@ Vergessen Sie nicht Ihre **Unternehmensinformationen** in der [Einstellungsüber
 
 
 Wenn alles korrekt eingerichtet ist, erscheint eine neue Schaltfläche zum Herunterladen im Dashboard, sobald ein Dokument fertiggestellt ist:
-
 ![Download ZUGFeRD](/_images/docbits/zugferd/docbits_download_zugferdPDF.png)
 
 
