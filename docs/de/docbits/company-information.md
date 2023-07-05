@@ -9,7 +9,7 @@ tags:
   - Abonnement-Verwendung
 ---
   
-  ### Geben Sie Ihre Unternehmensinformationen ein
+### Geben Sie Ihre Unternehmensinformationen ein
 
   Um Ihre Unternehmensdaten einzugeben, gehen Sie folgendermaßen vor:
 
