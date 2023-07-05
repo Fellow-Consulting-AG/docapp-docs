@@ -23,41 +23,33 @@ tags:
 
 Weitere Videos finden Sie hier: :fontawesome-brands-youtube:{ style="color: #EE0F0F" } [__YouTube__](https://www.youtube.com/channel/UC19DwHXz5nwU2KBdtNr734g)
 
-## Einrichten der Exporteinstellungen
+## Nehmen Sie die erforderlichen Exporteinstellungen wie folgt vor
 
-Navigieren Sie zu **EINSTELLUNGEN** im Dashboard:
+1. Navigieren Sie zu **EINSTELLUNGEN** oberhalb des Dashboards
 
-![DOC2 Workflow](/_images/docbits/DOC2_Dashboard_Settings.png)
+![docbits Dashboard](/_images/docbits/zugferd/docbits_dashboard_einstellungen.png)
 
-Navigieren Sie zu **Export** im Einstellungsmenü:
+2. Navigieren Sie in den Einstellungen zum Menüpunkt **Export**
 
-![](/_images/docbits/DOC2_Settings_Export.png)
+![docbits Export](/_images/docbits/zugferd/docbits_einstellungen_export.png)
 
-Erstellen Sie eine neue Konfiguration über die Schaltfläche **NEU**:
+3. Erstellen Sie eine neue Konfiguration über die Schaltfläche **NEU**
 
-![DOC2 Export Settings](/_images/docbits/DOC2_ExportSettings_new.png)
+4. Wählen Sie auf dem folgenden Bildschirm **ZUGFeRD**
 
-Wählen Sie in dem folgenden Bildschirm **ZUGFeRD** aus:
+![docbits ZUGFeRD](/_images/docbits/zugferd/docbits_export_waehlen.png)
 
-![DOC2 ZUGFeRD](/_images/docbits/DOC2_ExportSettings_SelectIntegration_Zugferd.png)
+5. Geben Sie die erforderlichen Informationen ein und klicken Sie auf SPEICHERN.
 
-## **ZUGFeRD**
+![docbits ZUGFeRD Infos](/_images/docbits/zugferd/docbits_zugferd_details.png)
 
-Sie werden zu folgendem Bildschirm weitergeleitet. Bitte geben Sie die Informationen gemäß dem folgenden Beispiel ein:
 
-![DOC2 ZUGFeRD Export](/_images/docbits/DOC2_ExportSettings_Zugferd.png)
-und klicken Sie auf `SPEICHERN`.
+Vergessen Sie nicht Ihre **Unternehmensinformationen** in der [Einstellungsübersicht](/docbits/company-information/) einzugeben. 
 
-Die Exportkonfiguration wird in der Übersicht angezeigt. Sie kann über die Aktionsbuttons bearbeitet oder gelöscht sowie aktiviert/deaktiviert werden:
 
-![](/_images/docbits/DOC2_ExportSettings_Zugferd_ON.png)
-
-Außerdem müssen Sie Ihre **Firmeninformationen** eingeben. Sie finden das Menü in der [Übersicht der Einstellungen](/docbits/company-information/).
-
-* * *
-
-Wenn alles korrekt eingerichtet ist, wird nach Abschluss eines Dokuments ein neuer Download-Button im Dashboard angezeigt:
+Wenn alles korrekt eingerichtet ist, erscheint eine neue Schaltfläche zum Herunterladen im Dashboard, sobald ein Dokument fertiggestellt ist:
 
 ![Download ZUGFeRD](/_images/docbits/DOC2_Download_ZugferdPDF.png)
+
 
 [Registrieren Sie sich für eine 30-tägige kostenlose Testversion](https://app.polydocs.io){ .md-button .md-button--primary }
