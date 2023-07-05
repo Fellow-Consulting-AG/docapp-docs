@@ -25,23 +25,23 @@ Weitere Videos finden Sie hier: :fontawesome-brands-youtube:{ style="color: #EE0
 
 ## Nehmen Sie die erforderlichen Exporteinstellungen wie folgt vor
 
-1. Navigieren Sie zu **EINSTELLUNGEN** oberhalb des Dashboards
+* Navigieren Sie zu **EINSTELLUNGEN** oberhalb des Dashboards
 
-![docbits Dashboard](/_images/docbits/zugferd/docbits_dashboard_einstellungen.png)
+  ![docbits Dashboard](/_images/docbits/zugferd/docbits_dashboard_einstellungen.png)
 
-2. Navigieren Sie in den Einstellungen zum Menüpunkt **Export**
+* Wählen Sie in den Einstellungen den Menüpunkt **Export**
 
-![docbits Export](/_images/docbits/zugferd/docbits_einstellungen_export.png)
+  ![docbits Export](/_images/docbits/zugferd/docbits_einstellungen_export.png)
 
-3. Erstellen Sie eine neue Konfiguration über die Schaltfläche **NEU**
+* Erstellen Sie eine neue Konfiguration über die Schaltfläche **NEU**
 
-4. Wählen Sie auf dem folgenden Bildschirm **ZUGFeRD**
+* Wählen Sie auf dem folgenden Bildschirm **ZUGFeRD**
 
-![docbits ZUGFeRD](/_images/docbits/zugferd/docbits_export_waehlen.png)
+  ![docbits ZUGFeRD](/_images/docbits/zugferd/docbits_export_waehlen.png)
 
-5. Geben Sie die erforderlichen Informationen ein und klicken Sie auf SPEICHERN.
+* Geben Sie die erforderlichen Informationen ein und klicken Sie auf **SPEICHERN**.
 
-![docbits ZUGFeRD Infos](/_images/docbits/zugferd/docbits_zugferd_details.png)
+  ![docbits ZUGFeRD Infos](/_images/docbits/zugferd/docbits_zugferd_details.png)
 
 
 Vergessen Sie nicht Ihre **Unternehmensinformationen** in der [Einstellungsübersicht](/docbits/company-information/) einzugeben. 
@@ -49,7 +49,7 @@ Vergessen Sie nicht Ihre **Unternehmensinformationen** in der [Einstellungsüber
 
 Wenn alles korrekt eingerichtet ist, erscheint eine neue Schaltfläche zum Herunterladen im Dashboard, sobald ein Dokument fertiggestellt ist:
 
-![Download ZUGFeRD](/_images/docbits/DOC2_Download_ZugferdPDF.png)
+![Download ZUGFeRD](/_images/docbits/zugferd/docbits_download_zugferdPDF.png)
 
 
 [Registrieren Sie sich für eine 30-tägige kostenlose Testversion](https://app.polydocs.io){ .md-button .md-button--primary }
