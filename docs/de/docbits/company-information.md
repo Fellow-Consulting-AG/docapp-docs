@@ -1,4 +1,3 @@
-
 ---
 title: "Unternehmensinformationen"
 date: "2023-07-05"
@@ -27,9 +26,9 @@ tags:
 Unter Ihren Firmeninformationen finden Sie Ihren gebuchten Abonnementplan mit Start- und Enddatum.
 Sie können auch die Anzahl der verarbeiteten Seiten für einen ausgewählten Zeitraum abfragen. 
 
-![AbonnemeAbonnement-Übersicht und -Verwendungnt](/_images/docbits/einstellungen/unternehmensinformationen/Informationen-Abonnement.png)
+![Abonnement-Übersicht und -Verwendungnt](/_images/docbits/einstellungen/unternehmensinformationen/Informationen-Abonnement.png)
 
-![AbonnemeAbonnement-Verwendungnt](/_images/docbits/einstellungen/unternehmensinformationen/Abonnement-Verwendung.png)
+![Abonnement-Verwendungnt](/_images/docbits/einstellungen/unternehmensinformationen/Abonnement-Verwendung.png)
 
 Achten Sie darauf, dass Ihr Abonnementplan auf dem neuesten Stand ist, um einen ununterbrochenen Zugriff auf die Funktionen und Dienste von DocBits (DOC²) zu gewährleisten.
 
@@ -42,8 +41,3 @@ Wenn Sie Ihre Dokumente im ZUGFeRD-Format exportieren möchten, müssen Sie Ihre
 Bitte beachten Sie, dass auf dem Dokument eine gültige Adresse enthalten sein muss, damit der Export funktioniert.
 
 Das Exportieren Ihrer Dokumente in das ZUGFeRD-Format war mit DocBits (DOC²) noch nie so einfach. Folgen Sie [diesen einfachen Schritten](/docbits/zugpferd/), um noch heute loszulegen!
-
-
-
-
-Füllen Sie diese Informationen aus, um Dokumente im [ZUGFeRD](/docbits/zugpferd/) Format zu exportieren.
