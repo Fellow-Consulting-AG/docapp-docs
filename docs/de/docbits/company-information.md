@@ -5,8 +5,8 @@ tags:
   - DocBits (DOC²)
   - Einstellungen
   - ZUGFeRD
-  - Abonnement-Übersicht
-  - Abonnement-Verwendung
+  - Abonnementplan
+  - Nutzung
 ---
   
 ### Geben Sie Ihre Unternehmensinformationen ein
@@ -17,6 +17,7 @@ tags:
   2. Geben Sie Ihre unternehmensspezifischen Informationen ein, z. B. Ihren Firmennamen, Ihre Adresse und Ihre Kontaktdaten.
   3. Klicken Sie auf `SPEICHERN`, wenn Sie fertig sind.
 
+![](/_images/docbits/einstellungen/unternehmensinformationen/Einstellungen.png)
 
 ![](/_images/docbits/einstellungen/unternehmensinformationen/Informationen.png)
 
@@ -32,7 +33,7 @@ Sie können auch die Anzahl der verarbeiteten Seiten für einen ausgewählten Ze
 Achten Sie darauf, dass Ihr Abonnementplan auf dem neuesten Stand ist, um einen ununterbrochenen Zugriff auf die Funktionen und Dienste von DocBits (DOC²) zu gewährleisten.
 
 
-### Exportieren mit ZUGFeRD
+### Exportieren im ZUGFeRD-Format
 
 Wenn Sie Ihre Dokumente im ZUGFeRD-Format exportieren möchten, müssen Sie Ihre Unternehmensinformationen in DocBits (DOC²) eingeben. Dadurch wird sichergestellt, dass Ihre Exporte erfolgreich und konform mit den ZUGFeRD-Standards sind. 
 
