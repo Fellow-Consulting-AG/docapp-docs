@@ -185,7 +185,7 @@ nav:
       - Infor SSO: docbits/doc2-with-infor/configuring-sso-in-cloud.md
     - Einstellungen:
       - docbits/settings/index.md
-      - Firmeninformationen: docbits/company-information.md
+      - Unternehmensinformationen: docbits/company-information.md
       - Gruppen, Benutzer und Berechtigungen:
         - docbits/settings/groups-users-permissons/index.md
         - Benutzer: docbits/settings-users.md
