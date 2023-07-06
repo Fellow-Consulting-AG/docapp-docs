@@ -236,7 +236,7 @@ nav:
         - Export to Flow²: docbits/export/export-to-flow2.md
 
 
-      - Amount: docbits/settings-amount-settings.md
+      # - Amount: docbits/settings-amount-settings.md
       - Supplier Validation: docbits/settings-master-data-validation.md
       # - Supported Languages: docbits/settings-supported-languages.md
     - PO Matching:
