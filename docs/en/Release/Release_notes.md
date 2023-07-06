@@ -18,7 +18,7 @@ tags:
 ## 2.48
 
 - :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Classification model consistency
-- :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: The cloud loading sign is inconsistent on the Dashboard
+- :fontawesome-solid-award:{ style="color: #eee20e" } **IMPROVEMENT**: Consistency of cloud loading symbol on the Dashboard
 
 - :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: When the date is wrong - make the field red 
 - :fontawesome-solid-thumbs-up:{ style="color: #03900c" }  **NEW FEATURE**: Add a key combo to refresh the dashboard 
