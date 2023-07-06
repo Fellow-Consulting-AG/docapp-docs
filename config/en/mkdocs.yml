@@ -238,7 +238,7 @@ nav:
 
       - Amount: docbits/settings-amount-settings.md
       - Supplier Validation: docbits/settings-master-data-validation.md
-      - Supported Languages: docbits/settings-supported-languages.md
+      # - Supported Languages: docbits/settings-supported-languages.md
     - PO Matching:
       - docbits/pomatching/po-matching/index.md
       - Invoice: docbits/pomatching/po-matching-invoices.md
