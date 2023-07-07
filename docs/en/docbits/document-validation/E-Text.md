@@ -13,17 +13,17 @@ This feature allows you to recognize and understand the difference between e-tex
 
 All e-text documents are already OCR-processed. You can recognize these documents if you can open the PDF file, highlight all the text, and copy it into a Word document.
 
-![Confirmation](/_images/docbits/Document Validation/1-Index/DOC2_click-check_7.png)
+![E-Text](docs/en/_images/docbits/Document Validation/5 - E-Text/image_1_etext_doc.png)
 
 ## Documents without E-Text¶
 
 Documents that do not contain e-text are non-editable and can be easily recognized by the fact that the page is fully highlighted after double-clicking.
 
-![Confirmation](/_images/docbits/Document Validation/1-Index/DOC2_click-check_7.png)
+![Non-E-Text](/_images/docbits/Document Validation/1-Index/DOC2_click-check_7.png)
 
 In the OCR settings you will find the Use e-text if available option , which can be enabled or disabled by ticking or unchecking the control box.
 
-![Confirmation](/_images/docbits/Document Validation/1-Index/DOC2_click-check_7.png)
+![Settings](docs/en/_images/docbits/Document Validation/5 - E-Text/image_3_settings.png)
 
 :fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
 With this option, documents that contain e-text are not processed again by the OCR.
@@ -41,4 +41,4 @@ graph LR
   OCREveryhting --> End
 ```
 
-To see what steps we have taken and how the document has been processed, open the following [Action](image).
+To see what steps we have taken and how the document has been processed, open the following [Action](/_images/docbits/Document Validation/5 - E-Text/image_4_dashboard_action.gif).
