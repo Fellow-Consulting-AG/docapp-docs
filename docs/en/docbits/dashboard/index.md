@@ -78,7 +78,7 @@ Document merging allows you to combine multiple documents for your needs and can
 
 ![Select Icon](/_images/docbits/Dashboard/Dashboard Index - Images/image_14_dm_three_dots.png)
 
-- You will then be shown this menu, select the “Merge” option which can be found at the bottom.
+- A menu will then be displayed, select the “Merge” option which can be found at the bottom.
 
 ![Menu](/_images/docbits/Dashboard/Dashboard Index - Images/image_15_dm_menu.png)
 
