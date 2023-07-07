@@ -70,7 +70,7 @@ From this menu, you can select the column names and use the arrows to add and re
 
 Document merging allows you to combine multiple documents for your needs and can be done by:
 
-- First, you need to select the documents you would like to merge. This can be done by selecting the checkbox of the documents you wish to merge.
+- First, you need to select the documents you would like to merge. This can be done by selecting the checkboxes of the documents you wish to merge.
 
 ![Select Documents](/_images/docbits/Dashboard/Dashboard Index - Images/image_13_dm_select_documents.png)
 
