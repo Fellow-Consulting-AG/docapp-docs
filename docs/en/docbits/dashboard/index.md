@@ -8,6 +8,8 @@ tags:
   - Homepage
   - Overview
   - Document Management
+  - Change Dashboard Coloumns
+  - Document Merging
 ---
 
 <div class='video-container'>
