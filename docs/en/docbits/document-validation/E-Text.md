@@ -15,7 +15,7 @@ All e-text documents are already OCR-processed. You can recognize these document
 
 ![E-Text](/_images/docbits/Document Validation/5 - E-Text/image_1_etext_doc.png)
 
-## Documents without E-Text¶
+## Documents without E-Text
 
 Documents that do not contain e-text are non-editable and can be easily recognized by the fact that the page is fully highlighted after double-clicking.
 
