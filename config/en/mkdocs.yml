@@ -172,6 +172,7 @@ nav:
       - OCR View: docbits/document-validation/ocr-view.md
       - AI Indicator: docbits/document-validation/ai-indicator.md
     # - Expressions: docbits/document-validation/exception-filters.md
+      - E-Text: docbits/document-validation/E-Text.md
     - Table Extraction:
       - docbits/table-extraction/index.md
       - Training table extraction: docbits/table-extraction/training-of-table-extraction.md
