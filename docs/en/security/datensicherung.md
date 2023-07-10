@@ -25,8 +25,8 @@ All communication is done via HTTPS, and every non-HTTPS request is automaticall
 
 At DocBits (DOC²), we are committed to providing our users with the highest level of data security. You can trust us to keep your sensitive information safe and secure. 
 
-<div class='video-container'>
+<!-- <div class='video-container'>
   <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
 </div>
 
-![Data Security Measures of DocBits (DOC²)](/path/to/image.jpg "Data Security Measures of DocBits (DOC²)")
+![Data Security Measures of DocBits (DOC²)](/path/to/image.jpg "Data Security Measures of DocBits (DOC²)") -->
