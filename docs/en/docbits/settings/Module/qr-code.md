@@ -11,7 +11,7 @@ tags:
 ---
 ## How it works
 
-This feature extracts the QR code from a document (for example, a Swiss invoice) and matches the QR code with stored supplier or other information.
+This feature extracts the QR code from a document (for example, a Swiss invoice) and usess the QR code to display the imbedded information from the document.
 
 This way information is automatically extracted from the document.
 
