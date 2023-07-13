@@ -215,6 +215,7 @@ nav:
         - Doc Script: docbits/settings/Module/doc-script.md
         - Doc Scan: docbits/settings/Module/doc-scan.md
         - IDM ACL Updater: docbits/settings/Module/idm-acl-updater.md
+        - QR Code Extraction: docbits/settings/Module/qr-code.md
       - All Import Options:
         - docbits/import/index.md
         - Email: docbits/e-mail.md
