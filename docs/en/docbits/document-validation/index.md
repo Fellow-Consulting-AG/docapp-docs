@@ -82,6 +82,7 @@ If a field is extracted and DocBits is confident that the value extracted is cor
 - Red
 
 If a field is extracted and DocBits is not confident that the value extracted is correct, the field will be highlighted in red.
+
 ![Red](/_images/docbits/Document Validation/1-Index/DocBits_red_indicator.png)
 
 This indicators are included in order to make the validation process of document less time consuming as the fields that will most likely require your attention (fields highlighted in red) as clearly displayed to you.
