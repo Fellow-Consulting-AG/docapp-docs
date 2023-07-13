@@ -13,9 +13,9 @@ tags:
   - Leave with ESC
 ---
 
-<div class='video-container'>
+<!-- <div class='video-container'>
   <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
-</div>
+</div> -->
 
 ## Introduction
 
