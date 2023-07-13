@@ -87,4 +87,4 @@ If a field is extracted and DocBits (DOC²) is not confident that the value extr
 
 ![Red](/_images/docbits/Document Validation/1-Index/DocBits_red_indicator.png)
 
-This indicators are included in order to make the validation process of document less time consuming as the fields that will most likely require your attention (fields highlighted in red) as clearly displayed to you.
+These indicators are included in order to make the validation process of document less time consuming as the fields that will most likely require your attention (fields highlighted in red) as clearly displayed to you.
