@@ -9,20 +9,20 @@ tags:
   - QR Code
   - QR Code Extraction
 ---
-##How it works
+## How it works
 
 This feature extracts the QR code from a document (for example, a Swiss invoice) and matches the QR code with stored supplier or other information.
 
 This way information is automatically extracted from the document.
 
-![Edit Layout](/_images/docbits/Settings/Module/Layout Builder/Image 2 - Edit Layout.png)
+![Example](/_images/docbits/Settings/Module/QR-code/image_1_eg_doc.png)
 
-##How to enable this feature
+## How to enable this feature
 
 From the Dashboard, navigate to Settings → Document Processing → Module.
 
 Once at this menu, you will find the “QR Code extraction” slider near the bottom of the page.
 
-![Edit Layout](/_images/docbits/Settings/Module/Layout Builder/Image 2 - Edit Layout.png)
+![Settings](/_images/docbits/Settings/Module/QR-code/image_2_settings.png)
 
 This feature can be turned on and off from this menu depending on if you would like to use it or not.
