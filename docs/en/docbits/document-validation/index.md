@@ -6,6 +6,7 @@ tags:
   - DocBits (DOC²)
   - Document
   - Validation
+  - Field Indicators
 ---
 
 ### How to Validate a document
@@ -64,4 +65,24 @@ When you have saved the changes, the document remains in the Ready for Validatio
 
 ![Ready for Validation Status](/_images/docbits/Document Validation/1-Index/DOC2_dashboard_11.png)
 
-Find more details in the following sections:
+<!-- Find more details in the following sections: -->
+
+## Field Indicators
+
+When on the validation screen of a document you uploaded, the fields that get extracted will be highlighted in either green or red as below
+
+![Validation screen](/_images/docbits/Document Validation/1-Index/DocBits_g:r_indicators_doc.png)
+
+1. Green 
+
+If a field is extracted and DocBits is confident that the value extracted is correct, the field will be highlighted in green.
+
+![Green](/_images/docbits/Document Validation/1-Index/DocBits_green_indicator.png)
+
+2. Red
+
+If a field is extracted and DocBits is not confident that the value extracted is correct, the field will be highlighted in red.
+
+![Red](/_images/docbits/Document Validation/1-Index/DocBits_red_indicator.png)
+
+This indicators are included in order to make the validation process of document less time consuming as the fields that will most likely require your attention (fields highlighted in red) as clearly displayed to you.
