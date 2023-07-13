@@ -75,13 +75,13 @@ When on the validation screen of a document you uploaded, the fields that get ex
 
 - Green 
 
-If a field is extracted and DocBits is confident that the value extracted is correct, the field will be highlighted in green.
+If a field is extracted and DocBits (DOC²) is confident that the value extracted is correct, the field will be highlighted in green.
 
 ![Green](/_images/docbits/Document Validation/1-Index/DocBits_green_indicator.png)
 
 - Red
 
-If a field is extracted and DocBits is not confident that the value extracted is correct, the field will be highlighted in red.
+If a field is extracted and DocBits (DOC²) is not confident that the value extracted is correct, the field will be highlighted in red.
 
 ![Red](/_images/docbits/Document Validation/1-Index/DocBits_red_indicator.png)
 
