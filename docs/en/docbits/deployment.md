@@ -23,10 +23,10 @@ To get started, you'll need a computer with internet access. Once you have that,
 
 ![DOC2 Login](/_images/docbits/Deployment/DOC2_Deployment_Dashboard.png){ loading=lazy, alt: "DOC2 Dashboard" }
 
-## Get Started Today!
+<!-- ## Get Started Today!
 
 With DocBits (DOC²), managing your imported documents has never been easier. Follow our step-by-step guide and get started today!
 
 <div class='video-container'>
   <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
-</div>
+</div> -->
