@@ -10,6 +10,7 @@ tags:
   - Document Management
   - Change Dashboard Coloumns
   - Document Merging
+  - Leave with ESC
 ---
 
 <div class='video-container'>
@@ -81,6 +82,10 @@ Once you have selected the documents, click on the icon with three dots.
 A menu will then be displayed, select the “Merge” option which can be found at the bottom.
 
 ![Menu](/_images/docbits/Dashboard/Dashboard Index - Images/image_15_dm_menu.png)
+
+## Leave with ESC
+
+While navigating your documents in DocBits (DOC), if you would like to return to the main area of the Dashboard, you can simply press the escape (ESC) button on your keyboard and you will be returned to the main Dashboard menu (on the page which you entered the document you just exited from).
 
 ## Conclusion
 
