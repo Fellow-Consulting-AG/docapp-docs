@@ -7,6 +7,8 @@ tags:
   - Document
   - Validation
   - Field Indicators
+  - Green
+  - Red
 ---
 
 ### How to Validate a document
