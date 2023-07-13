@@ -10,7 +10,7 @@ tags:
 
 
 
-![DocBits (DOC²) Logo](/_images/docbits/doc2-1024x415.png){ loading=lazy, alt="DocBits (DOC²) Logo" }
+![DocBits (DOC²) Logo](/_images/docbits/Index/DocBits_logo.png){ loading=lazy, alt="DocBits (DOC²) Logo" }
 
 Every business process starts, contains, or ends with a document. Regardless of whether it's in paper form or already as a file, this is called unstructured data. Although the information is on or in the document, it cannot be automatically integrated into the work processes, as it is simply not recognized by all software.
 
