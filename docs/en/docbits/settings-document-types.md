@@ -28,7 +28,7 @@ To see which fields can be extracted, for example from an invoice, click on `FIE
 
 ![Fields](/_images/docbits/Settings/Document Types/Image_4_fields.png)
 
-### FIELD SETTINGS
+### Field Settings
 
 Here you will find all the fields that can be extracted:
 
@@ -76,7 +76,7 @@ If all settings are made and should be saved, please confirm this with the `SAVE
 
 
 
-### RECOGNITION SETTINGS
+### Recognition Settings
 
 ![Recognition](/_images/docbits/Settings/Document Types/Image_7_recog_settings.png)
 
@@ -93,7 +93,7 @@ The button `RESTORE DEFAULTS` will set back both values to "50".
 ![OCR](/_images/docbits/Settings/Document Types/Image_8_ocr_matchscore_slider.png)
 
 
-### PROFILE
+### Profile
 
 Here you can define the profile that shall be used. Either Default or ZUGFeRD.<br> In profile ZUGFeRD there are predefined fields that are mandatory for this type of invoice.<br> If you do not explicitly use ZUGFeRD, please select "Default".
 
