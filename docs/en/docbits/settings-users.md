@@ -38,6 +38,6 @@ If a user forgets their password, you can easily reset it by following these ste
 
 By following these simple steps, you can easily manage your users in DocBits (DOC²). Sign up for a 30-day free trial today to see how DocBits (DOC²) can help streamline your document management process.
 
-<div class='video-container'>
+<!-- <div class='video-container'>
   <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
-</div>
+</div> -->
