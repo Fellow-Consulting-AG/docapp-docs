@@ -158,7 +158,7 @@ nav:
   - Changelog: Release/Release_notes.md
   - DocBits (DOC²):
     - Getting Started: docbits/index.md
-    - Data security: security/datensicherung.md
+    - Data security: security/data-security.md
     - OnBoarding: docbits/onboarding.md
     - Deployment: docbits/deployment.md
     - Dashboard:
