@@ -8,9 +8,9 @@ tags:
   - Permissions
 ---
 
-<div class='video-container'>
+<!-- <div class='video-container'>
   <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-</div>
+</div> -->
 
 Are you struggling to manage user roles and permissions for your organization's documents? DocBits (DOC²) has got you covered! With our user-friendly interface, you can easily manage users and their roles, create sub-organizations, and configure groups and permissions for different document types.
 
