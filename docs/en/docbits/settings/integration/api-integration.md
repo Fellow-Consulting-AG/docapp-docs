@@ -23,7 +23,7 @@ To access the full Polydocs API menu, click [here](https://doc2api.cloudintegrat
 
 To get started with API Integration in DocBits (DOC²), you will need your API Key. You can find your API Key in the Integration menu item in the settings. Simply copy and paste your API Key into your application to start integrating with DocBits (DOC²).
 
-![API Key in DocBits (DOC²) Settings](/_images/docbits/Settings/Integration/API/Image_1_api_key.png "API Key in DocBits (DOC²) Settings")
+![API Key in DocBits (DOC²) Settings](/_images/docbits/Settings/Integration/API/image_1_api_key.png "API Key in DocBits (DOC²) Settings")
 
 ## API Calls Examples
 
