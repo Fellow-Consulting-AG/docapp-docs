@@ -23,6 +23,6 @@ Our user management system allows you to:
 
 With DocBits (DOC²), you can ensure that your organization's documents are secure and accessible only to authorized personnel. Say goodbye to the hassle of managing user roles and permissions manually and switch to DocBits (DOC²) today!
 
-<img src="https://example.com/user-management.png" alt="DocBits (DOC²) User Management Interface">
+![Settings](/_images/docbits/Settings/Groups, Users and Permissions/image_1_settings.png)
 
 Ready to take control of your organization's document management? Sign up for DocBits (DOC²) today and start managing your users and permissions with ease!
