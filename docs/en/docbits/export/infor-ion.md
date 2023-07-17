@@ -27,34 +27,30 @@ Step by Step guide how to export documents to Infor Document Management (IDM) wi
 
 Login to DocBits (DOC²), click on settings and select "Export".
 
-![This image has an empty alt attribute; its file name is image-1-1024x695.png](/_images/docbits/image-1-1024x695.png)
+![Settings](/_images/docbits/Export to Infor/Export to Infor ION and IDM/image_1_settings.png)
 
 
 Settings - Export
 
-Click on "Add integration"
+Click on "+ NEW"
 
-![This image has an empty alt attribute; its file name is image-7-1024x751.png](/_images/docbits/image-7-1024x751.png)
+![ADD](/_images/docbits/Export to Infor/Export to Infor ION and IDM/image_2_add.png)
 
 Settings - Export - Add integration
 
-Choose "Infor ION"
+Choose "Infor IDM + ION BOD"
 
-![](/_images/docbits/image-31-1024x342.png)
+![](/_images/docbits/Export to Infor/Export to Infor ION and IDM/image_3_idm_ion.png)
 
-Click on the ION API File section and select the ION API file that you want to use for the communication between DocBits (DOC²) and IDM. If you don't have a ION API file follow this documentation to create one: [How to create an Infor ION file](/docbits/export/create-a-infor-ion-file/)
+- Click on the ION API File section and select the ION API file that you want to use for the communication between DocBits (DOC²) and IDM. If you don't have a ION API file follow this documentation to create one: [How to create an Infor ION file](/docbits/export/create-a-infor-ion-file/)
 
-![](/_images/docbits/image-32-1024x347.png)
-
-Click on the IDM Mapping file section and choose the IDM Mapping file you want to use for the export.
+- Click on the IDM Mapping file section and choose the IDM Mapping file you want to use for the export.
 You find a example of the IDM mapping file on this page: [How to create a IDM mapping file](/docbits/export/how-to-create-a-idm-mapping-file/)
 
-![](/_images/docbits/image-33-1024x344.png)
-
-Click on the BOD Mapping file section and choose the BOD Mapping file you want to use for the export.
+- Click on the BOD Mapping file section and choose the BOD Mapping file you want to use for the export.
 You find a example of the BOD mapping file on this page: [How to create a BOD mapping file](/docbits/export/how-to-create-a-bod-mapping-file/)
 
-![](/_images/docbits/image-34-1024x343.png)
+![](/_images/docbits/Export to Infor/Export to Infor ION and IDM/image_4_mapping_files.png)
 
 Click "Save" to the save the export setting.
 
@@ -103,7 +99,3 @@ Drag and drop an "Application" to the flow and name it "Doc2".
 Click on the "+" icon and select the "Doc2" application, in this case "Doc2Export" and click "OK".
 
 ![](/_images/docbits/image-45.png)
-
-Click on the disk icon to save the new document flow.
-
-![](/_images/docbits/image-46.png)
