@@ -235,7 +235,7 @@ nav:
           - How to create a IDM mapping file: docbits/export/how-to-create-a-idm-mapping-file.md
           # - Export to Infor IDM: docbits/export/infor-idm.md
           - Infor ION API File: docbits/export/create-a-infor-ion-api-file.md
-          - Export to Infor ION and IDM: docbits/export/infor-ion.md
+          # - Export to Infor ION and IDM: docbits/export/infor-ion.md
         - Webhook: docbits/export/webhook.md
         - Export to Flow²: docbits/export/export-to-flow2.md
 
