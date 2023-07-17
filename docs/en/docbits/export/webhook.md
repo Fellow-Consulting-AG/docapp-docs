@@ -28,7 +28,6 @@ Follow these steps to configure your webhook export:
 5. Enter the webhook URL and click on "Save"
 
 ![Information](/_images/docbits/Webhook/image_4_info.png)
-
 6. Press the save button
 
 You are all set to start exporting via Webhook!
