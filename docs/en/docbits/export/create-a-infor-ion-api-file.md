@@ -27,20 +27,16 @@ Before you get started, make sure you have the following:
 
 1. Log in to InforOS with an admin user and navigate to the **Infor ION API** screen. Click on **Authorized Apps** and then on the `+` button.
 
-![Infor ION API Step 1](/assets/images/infor-ion-api-1.png)
-
+![Infor ION API Step 1](/_images/docbits/Export to Infor/How to get ION API file/image_1_ion_api.png)
 2. Enter a meaningful name and description for your app, such as 'Doc2Export'. Choose `Backend Service` and click on the disk icon to save.
 
-![Infor ION API Step 2](/assets/images/infor-ion-api-2.png)
-
+![Infor ION API Step 2](/_images/docbits/Export to Infor/How to get ION API file/image_2_authorized_apps.png)
 3. Once the entries are saved, click the button **Download Credentials**.
 
-![Infor ION API Step 3](/assets/images/infor-ion-api-3.png)
-
+![Infor ION API Step 3](/_images/docbits/Export to Infor/How to get ION API file/image_3_idm_capture.png)
 4. Switch on `Create Service Account` and enter the service user name into the box.
 
-![Infor ION API Step 4](/assets/images/infor-ion-api-4.png)
-
+![Infor ION API Step 4](/_images/docbits/Export to Infor/How to get ION API file/image_4_download_credentials.png)
 5. Click `DOWNLOAD` to get the ION API file.
 
 And that's it! You've successfully created an Infor ION API file for exporting from DocBits (DOC²) to Infor with the necessary permissions for InforOS users. If you have any questions or need further assistance, don't hesitate to contact us.
