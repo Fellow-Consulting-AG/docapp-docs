@@ -53,8 +53,7 @@ Step by Step guide how to export documents to Infor Document Management (IDM) wi
 Copy and store the "Client ID", this ID will be required later.
 
 ![](/_images/docbits/image-36.png)
-
-Open "ION Desk", open the burger menu, select "Connect" and click on "Connection points"
+2. Open "ION Desk", open the burger menu, select "Connect" and click on "Connection points"
 
 Click on "+Add" and choose "IMS via ION API"
 
@@ -66,7 +65,7 @@ Uncheck the box "Application has IMS EndPoint" and enter the "Client ID" copied 
 
 ![](/_images/docbits/image-39-1024x438.png)
 
-2. Change to the "Documents" tab.
+Change to the "Documents" tab.
 
 Click on the "+" icon and enter to the filter field "Sync.CaptureDocument". The list should show the correct BOD now, check the box in front of "Sync.CaptureDocument" and click "OK".
 
@@ -75,7 +74,6 @@ Click on the "+" icon and enter to the filter field "Sync.CaptureDocument". The 
 Click the disk icon to save the settings.
 
 ![](/_images/docbits/image-41.png)
-
 3. Change to "Data Flows" and click on "+Add" and select "Document Flow".
 
 ![](/_images/docbits/image-43.png)
