@@ -26,10 +26,13 @@ Step by Step guide how to export documents to Infor Document Management (IDM) wi
 #### DocBits (DOC²) steps
 
 1. Login to DocBits (DOC²), click on settings and select "Export".
+
 ![Settings](/_images/docbits/Export to Infor/Export to Infor ION and IDM/image_1_settings.png)
 2. Click on "+ NEW"
+
 ![ADD](/_images/docbits/Export to Infor/Export to Infor ION and IDM/image_2_add.png)
 3. Choose "Infor IDM + ION BOD"
+
 ![](/_images/docbits/Export to Infor/Export to Infor ION and IDM/image_3_idm_ion.png)
 
 - Click on the ION API File section and select the ION API file that you want to use for the communication between DocBits (DOC²) and IDM. If you don't have a ION API file follow this documentation to create one: [How to create an Infor ION file](/docbits/export/create-a-infor-ion-file/)
