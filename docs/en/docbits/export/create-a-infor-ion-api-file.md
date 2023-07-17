@@ -33,6 +33,7 @@ Before you get started, make sure you have the following:
 
 ![Infor ION API Step 3](/_images/docbits/Export to Infor/How to get ION API file/image_3_idm_capture.png)
 3. Once the entries are saved, click the button **Download Credentials**.
+
 4. Switch on `Create Service Account` and enter the service user name into the box.
 
 ![Infor ION API Step 4](/_images/docbits/Export to Infor/How to get ION API file/image_4_download_credentials.png)
