@@ -11,7 +11,7 @@ tags:
 ---
 ## Define the name of document type
 
-#Example: <Doc2DocumentType>=<IDMDocumentType>
+**<Doc2DocumentType>=<IDMDocumentType>**
 **Invoice=LN_SupplierInvoice/Invoice=M3_SupplierInvoice**
 
 Check the document type code as it is in DocBits (DOC²), like in BOD Mapping File it should match the name of the document type in the URL of the field settings.
@@ -31,6 +31,7 @@ Check the name of the document type as it should be in INFOR, this can be done b
 
 ![DocName](/_images/docbits/Export to Infor/Create IDM Mapping File/image_4_doc_name.png)
 5. Make sure this is how the name is shown in the IDM Mapping File.
+
 6. Check the LN/M3 company, check Entity ID (SF_MDS_EntityType) this value should be the same as it was in the BOD Mapping File, IndexFieldFromEphesoft=IDMAttributeID.
 
 
