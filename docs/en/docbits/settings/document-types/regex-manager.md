@@ -20,7 +20,7 @@ Document origin: This lets DocBits (DOC2) know the country of origin of a docume
 
 To find this feature in DocBits (DOC2), from your Dashboard, navigate to Settings → Global Settings → Document Types. Within each of the created document types, there is a “Regex” option.
 
-![RegexManager](/_images/docbits/Settings/Document Types/Image_9_profiles.png)
+![RegexManager](/_images/docbits/Settings/Document Types/image_10_regex_manager.png)
 
 ## Adding and Removing Regex
 
