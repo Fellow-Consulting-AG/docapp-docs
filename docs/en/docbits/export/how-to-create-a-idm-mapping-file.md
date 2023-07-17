@@ -11,7 +11,6 @@ tags:
 ---
 ## Define the name of document type
 
-**<Doc2DocumentType>=<IDMDocumentType>**
 `Invoice=LN_SupplierInvoice OR Invoice=M3_SupplierInvoice (Depends on whether you are using M3 or LN)`
 
 Check the document type code as it is in DocBits (DOC²), like in BOD Mapping File it should match the name of the document type in the URL of the field settings.
