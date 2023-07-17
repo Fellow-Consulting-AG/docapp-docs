@@ -30,10 +30,11 @@ Check the name of the document type as it should be in InforOS, this can be done
 4. As shown below, you will then see the doc type name as it is in InforOS
 
 ![DocName](/_images/docbits/Export to Infor/Create IDM Mapping File/image_4_doc_name.png)
-6. Other things to check include:
-  - The LN/M3 company
-  - The Entity ID (SF_MDS_EntityType), this value should be the same as it was in the BOD Mapping File.
-  - IndexFieldFromEphesoft=IDMAttributeID.
+5. Other things to check include:
+
+- The LN/M3 company
+- The Entity ID (SF_MDS_EntityType), this value should be the same as it was in the BOD Mapping File.
+- IndexFieldFromEphesoft=IDMAttributeID.
 
 
 
