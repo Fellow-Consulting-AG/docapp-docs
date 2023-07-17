@@ -237,7 +237,7 @@ nav:
           - Infor ION API File: docbits/export/create-a-infor-ion-api-file.md
           # - Export to Infor ION and IDM: docbits/export/infor-ion.md
         - Webhook: docbits/export/webhook.md
-        - Export to Flow²: docbits/export/export-to-flow2.md
+        # - Export to Flow²: docbits/export/export-to-flow2.md
 
 
       # - Amount: docbits/settings-amount-settings.md
