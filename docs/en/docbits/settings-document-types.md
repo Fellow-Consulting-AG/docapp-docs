@@ -101,4 +101,3 @@ Here you can define the profile that shall be used. Either Default or ZUGFeRD.<b
 
 
 
-
