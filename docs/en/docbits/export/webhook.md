@@ -12,28 +12,23 @@ tags:
 
 A webhook is an easy way to exchange data between online applications.
 
-Follow the steps to configure the webhook export.
+## Step by Step Setup
 
-Login to DocBits (DOC²), click on settings and select "Export".
+Follow these steps to configure your webhook export:
+
+1. Login to DocBits (DOC²), click on Settings and select "Export".
 
 ![Settings](/_images/docbits/Webhook/image_1_settings.png)
-
-Settings - Export
-
-Click on "Add integration"
+2. Settings -> Export, click on "+ NEW"
 
 ![Add](/_images/docbits/Webhook/image_2_add.png)
-
-Settings - Export - Add integration
-
-Choose "Webhook"
+3. Select Webhook
 
 ![Webhook](/_images/docbits/Webhook/image_3_webhook.png)
-
-Settings - Export - Add integration - Webhook
-
-Enter the webhook URL and click on "Save"
+5. Enter the webhook URL and click on "Save"
 
 ![Information](/_images/docbits/Webhook/image_4_info.png)
 
-Settings - Export - Add integration - Webhook - Webhook settings
+6. Press the save button
+
+You are all set to start exporting via Webhook!
