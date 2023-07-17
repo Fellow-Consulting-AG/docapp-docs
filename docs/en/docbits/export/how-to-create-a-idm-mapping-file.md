@@ -12,13 +12,13 @@ tags:
 ## Define the name of document type
 
 **<Doc2DocumentType>=<IDMDocumentType>**
-**Invoice=LN_SupplierInvoice OR Invoice=M3_SupplierInvoice (Depends on whether you are using M3 or LN)**
+`Invoice=LN_SupplierInvoice OR Invoice=M3_SupplierInvoice (Depends on whether you are using M3 or LN)`
 
 Check the document type code as it is in DocBits (DOC²), like in BOD Mapping File it should match the name of the document type in the URL of the field settings.
 
 ![Editor](/_images/docbits/Export to Infor/Create IDM Mapping File/image_1_vscode.png)
 
-Check the name of the document type as it should be in INFOR, this can be done by:
+Check the name of the document type as it should be in InforOS, this can be done by:
 
 1. Navigating to the Document Manager application within InforOS
 2. Search and select the name of the current document type you are trying to export, for example Supplier Invoice.
@@ -32,7 +32,10 @@ Check the name of the document type as it should be in INFOR, this can be done b
 ![DocName](/_images/docbits/Export to Infor/Create IDM Mapping File/image_4_doc_name.png)
 5. Make sure this is how the name is shown in the IDM Mapping File.
 
-Lastly: check the LN/M3 company, check Entity ID (SF_MDS_EntityType) this value should be the same as it was in the BOD Mapping File, IndexFieldFromEphesoft=IDMAttributeID.
+6. Other things to check include:
+- The LN/M3 company
+- The Entity ID (SF_MDS_EntityType), this value should be the same as it was in the BOD Mapping File.
+- IndexFieldFromEphesoft=IDMAttributeID.
 
 
 
