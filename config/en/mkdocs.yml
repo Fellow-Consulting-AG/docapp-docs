@@ -205,7 +205,9 @@ nav:
         - API: docbits/settings/integration/api-integration.md
         - API calls examples: docbits/settings/integration/api-calls-examples.md
         - SSO Settings: docbits/settings-sso-settings.md
-      - Document Types: docbits/settings-document-types.md
+      - Document Types: docbits/settings/document-types
+        - docbits/settings/document-types/index.md
+        - Regex Manager: docbits/settings/document-types/regex-manager.md
       - List of Values: docbits/settings-list-of-values.md
       - Email Notification: docbits/settings/email-notification.md
       - Modules: 
