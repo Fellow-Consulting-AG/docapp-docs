@@ -23,7 +23,7 @@ Check the name of the document type as it should be in InforOS, this can be done
 2. Search and select the name of the current document type you are trying to export, for example Supplier Invoice.
 
 ![DocumentManager](/_images/docbits/Export to Infor/Create IDM Mapping File/image_2_document_manager.png)
-3. Click the above icon and then click Administration → Document Type and then find the doc type you need in the list
+3. Click the above icon and then click Administration → Document Type and then find the document type you need in the list
 
 ![DocType](/_images/docbits/Export to Infor/Create IDM Mapping File/image_3_doc_type.png)
 4. As shown below, you will then see the doc type name as it is in InforOS
