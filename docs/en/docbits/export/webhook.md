@@ -16,24 +16,24 @@ Follow the steps to configure the webhook export.
 
 Login to DocBits (DOC²), click on settings and select "Export".
 
-![](/_images/docbits/image-1-1024x695.png)
+![Settings](/_images/docbits/Webhook/image_1_settings.png)
 
 Settings - Export
 
 Click on "Add integration"
 
-![](/_images/docbits/image-7-1024x751.png)
+![Add](/_images/docbits/Webhook/image_2_add.png)
 
 Settings - Export - Add integration
 
 Choose "Webhook"
 
-![](/_images/docbits/image-10-1024x344.png)
+![Webhook](/_images/docbits/Webhook/image_3_webhook.png)
 
 Settings - Export - Add integration - Webhook
 
 Enter the webhook URL and click on "Save"
 
-![](/_images/docbits/image-11-1024x350.png)
+![Information](/_images/docbits/Webhook/image_4_info.png)
 
 Settings - Export - Add integration - Webhook - Webhook settings
