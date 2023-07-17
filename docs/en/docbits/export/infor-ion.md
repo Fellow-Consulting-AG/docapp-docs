@@ -31,11 +31,17 @@ Step by Step guide how to export documents to Infor Document Management (IDM) wi
 ![ADD](/_images/docbits/Export to Infor/Export to Infor ION and IDM/image_2_add.png)
 3. Choose "Infor IDM + ION BOD"
 ![](/_images/docbits/Export to Infor/Export to Infor ION and IDM/image_3_idm_ion.png)
+
 - Click on the ION API File section and select the ION API file that you want to use for the communication between DocBits (DOC²) and IDM. If you don't have a ION API file follow this documentation to create one: [How to create an Infor ION file](/docbits/export/create-a-infor-ion-file/)
+
 - Click on the IDM Mapping file section and choose the IDM Mapping file you want to use for the export.
+
 You find a example of the IDM mapping file on this page: [How to create a IDM mapping file](/docbits/export/how-to-create-a-idm-mapping-file/)
+
 - Click on the BOD Mapping file section and choose the BOD Mapping file you want to use for the export.
+
 You find a example of the BOD mapping file on this page: [How to create a BOD mapping file](/docbits/export/how-to-create-a-bod-mapping-file/)
+
 ![](/_images/docbits/Export to Infor/Export to Infor ION and IDM/image_4_mapping_files.png)
 4. Click "Save" to the save the export setting.
 
