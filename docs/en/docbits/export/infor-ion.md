@@ -25,20 +25,17 @@ Step by Step guide how to export documents to Infor Document Management (IDM) wi
 
 #### DocBits (DOC²) steps
 
-Login to DocBits (DOC²), click on settings and select "Export".
+1. Login to DocBits (DOC²), click on settings and select "Export".
 
 ![Settings](/_images/docbits/Export to Infor/Export to Infor ION and IDM/image_1_settings.png)
 
-
 Settings - Export
 
-Click on "+ NEW"
+2. Click on "+ NEW"
 
 ![ADD](/_images/docbits/Export to Infor/Export to Infor ION and IDM/image_2_add.png)
 
-Settings - Export - Add integration
-
-Choose "Infor IDM + ION BOD"
+3. Choose "Infor IDM + ION BOD"
 
 ![](/_images/docbits/Export to Infor/Export to Infor ION and IDM/image_3_idm_ion.png)
 
@@ -52,11 +49,11 @@ You find a example of the BOD mapping file on this page: [How to create a BOD ma
 
 ![](/_images/docbits/Export to Infor/Export to Infor ION and IDM/image_4_mapping_files.png)
 
-Click "Save" to the save the export setting.
+4. Click "Save" to the save the export setting.
 
 #### Infor ION steps
 
-Open "Infor ION API", select "Authorized Apps" and click on the DocBits (DOC²) application.
+1. Open "Infor ION API", select "Authorized Apps" and click on the DocBits (DOC²) application.
 
 ![](/_images/docbits/image-35.png)
 
@@ -76,7 +73,7 @@ Uncheck the box "Application has IMS EndPoint" and enter the "Client ID" copied 
 
 ![](/_images/docbits/image-39-1024x438.png)
 
-Change to the "Documents" tab.
+2. Change to the "Documents" tab.
 
 Click on the "+" icon and enter to the filter field "Sync.CaptureDocument". The list should show the correct BOD now, check the box in front of "Sync.CaptureDocument" and click "OK".
 
@@ -86,7 +83,7 @@ Click the disk icon to save the settings.
 
 ![](/_images/docbits/image-41.png)
 
-Change to "Data Flows" and click on "+Add" and select "Document Flow".
+3. Change to "Data Flows" and click on "+Add" and select "Document Flow".
 
 ![](/_images/docbits/image-43.png)
 
