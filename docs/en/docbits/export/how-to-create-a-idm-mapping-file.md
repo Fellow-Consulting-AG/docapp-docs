@@ -1,6 +1,6 @@
 ---
 title: "How to create an IDM mapping file"
-description: This is a step by step guide how to create an IDM mapping file. You will find all values and fields that would need an adjustment in DocBits (DOC²) and the BOD.
+description: This is a step by step guide how to create an IDM mapping file. You will find all values and fields that would need an adjustment in DocBits (DOC²), InforOS and the Mapping File.
 date: "2021-10-28"
 tags:
   - DocBits (DOC²)
@@ -12,12 +12,26 @@ tags:
 ## Define the name of document type
 
 #Example: <Doc2DocumentType>=<IDMDocumentType>
-**Invoice=LN_SupplierInvoice**
+**Invoice=LN_SupplierInvoice/Invoice=M3_SupplierInvoice**
 
-Check the document type code as it is in DocBits (DOC2), like in BOD Mapping File it should match the name of the document type in the URL of the field settings.
+Check the document type code as it is in DocBits (DOC²), like in BOD Mapping File it should match the name of the document type in the URL of the field settings.
+
+![Editor](/_images/docbits/Export to Infor/Create IDM Mapping File/image_1_vscode.png)
 
 Check the name of the document type as it should be in INFOR, this can be done by:
-- Navigating to the Document Manager application within InforOS
-- Search and select the name of the current document type you are trying to export, for example Supplier Invoice.
 
-INVOICE=LN_SupplierInvoice
+1. Navigating to the Document Manager application within InforOS
+2. Search and select the name of the current document type you are trying to export, for example Supplier Invoice.
+
+![DocumentManager](/_images/docbits/Export to Infor/Create IDM Mapping File/image_2_document_manager.png)
+3. Click the above icon and then click Administration → Document Type and then find the doc type you need in the list
+
+![DocType](/_images/docbits/Export to Infor/Create IDM Mapping File/image_3_doc_type.png)
+4. As shown below, you will then see the doc type name as it is in InforOS
+
+![DocName](/_images/docbits/Export to Infor/Create IDM Mapping File/image_4_doc_name.png)
+5. Make sure this is how the name is shown in the IDM Mapping File.
+6. Check the LN/M3 company, check Entity ID (SF_MDS_EntityType) this value should be the same as it was in the BOD Mapping File, IndexFieldFromEphesoft=IDMAttributeID.
+
+
+
