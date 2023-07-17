@@ -12,7 +12,7 @@ tags:
 
 A webhook is an easy way to exchange data between online applications.
 
-## Step by Step Setup
+## Step by step setup
 
 Follow these steps to configure your webhook export:
 
