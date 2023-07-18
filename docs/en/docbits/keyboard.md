@@ -31,7 +31,7 @@ The Arrow keys, specifically the Arrow Down key, allow you to navigate through f
 
 By leveraging the keyboard support in DocBits (DOC²), you can improve your productivity and enhance your overall user experience.
 
-<div class='video-container'>
+<!-- <div class='video-container'>
   <iframe src='https://www.youtube.com/embed/VIDEO_ID' frameborder='0' allowfullscreen></iframe>
-</div>
+</div> -->
 
