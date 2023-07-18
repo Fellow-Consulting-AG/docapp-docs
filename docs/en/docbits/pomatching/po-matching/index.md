@@ -19,7 +19,7 @@ All three components must match within agreed-upon tolerance levels. It is then 
 
 #### Corresponding settings must be made in DocBits (DOC²) under Settings - Modules - Purchase Order
 
-![](/_images/docbits/DOC2_POM_1_Modules.png)
+![Settings](/_images/docbits/PO Matching/Index/image_1_settings.png)
 
 
 On documents, the Purchase Order is listed either in the headers or, for some, in the table rows.
@@ -40,15 +40,15 @@ During validation, the supplier's PO must be extracted correctly.
 
 1\. Click on the PO Matching required Button of your Document on dashboard
 
-![](/_images/docbits/DOC2_POM_2.png)
+![Dashboard](/_images/docbits/PO Matching/Index/image_2_dashboard.png)
 
 2\. You will find the Keyboard Shortcuts by clicking on the keyboard icon
 
-![](/_images/docbits/DOC2_POM_3_Keyboard.png)
+![Keyboard](/_images/docbits/PO Matching/Index/image_3_keyboard.png)
 
 ### These are all the keyboard shortcuts you can use on the PO Matching screen:
 
-![](/_images/docbits/DOC2_POM_4_Keyboardshortcuts_1.png)
-![](/_images/docbits/DOC2_POM_4_Keyboardshortcuts_2.png)
+![List](/_images/docbits/PO Matching/Index/image_4_list.gif)
+
 
 
