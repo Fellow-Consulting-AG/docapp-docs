@@ -28,5 +28,4 @@ If you're using DocBits (DOC²) software for document processing, it's essential
 - `Export`: The document is being exported.
 - `Error`: An error occurred in the document.
 
-## Upload and Classify
 
