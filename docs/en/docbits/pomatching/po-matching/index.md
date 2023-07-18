@@ -17,7 +17,9 @@ There are three ways you can match your Purchase Order
 All three components must match within agreed-upon tolerance levels. It is then entered into the AP system.
 3. with all the above documents, but also requires control information such as actual number of items delivered and their quality control. Once all 4 components match, the invoice is entered into the AP database.
 
-#### Corresponding settings must be made in DocBits (DOC²) under Settings - Modules - Purchase Order
+## Settings 
+
+Corresponding settings must be made in DocBits (DOC²) under Settings - Modules - Purchase Order
 
 ![Settings](/_images/docbits/PO Matching/Index/image_1_settings.png)
 
