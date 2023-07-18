@@ -136,3 +136,6 @@ Path_fileSize=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\FileSize
 Path_lastModificationPerson=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\LastModificationPerson\\Name
 Path_lastModifiedDateTime=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\LastModificationDateTime
 ```
+## Mapping Files
+
+Mapping files provided by us can be found [here](https://github.com/Fellow-Consulting-AG/docbits)
