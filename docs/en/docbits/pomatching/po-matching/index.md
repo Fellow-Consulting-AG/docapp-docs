@@ -28,13 +28,13 @@ During validation, the supplier's PO must be extracted correctly.
 
 * * *
 
-Create the table from Purchase Order with one klick. See how easy that is:
+<!-- Create the table from Purchase Order with one klick. See how easy that is:
 
 <div class="video-container">
 <iframe width="840" height="472.5" src="https://www.youtube-nocookie.com/embed/9FsRoGZDfZE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-* * *
+* * * -->
 
 ## Keyboard accessibility for PO
 
