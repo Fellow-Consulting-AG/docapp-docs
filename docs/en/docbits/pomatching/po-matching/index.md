@@ -36,7 +36,7 @@ During validation, the supplier's PO must be extracted correctly.
 
 * * * -->
 
-## Keyboard accessibility for PO
+## Keyboard accessibility for PO Matching
 
 1\. Click on the PO Matching required Button of your Document on dashboard
 
@@ -46,7 +46,7 @@ During validation, the supplier's PO must be extracted correctly.
 
 ![Keyboard](/_images/docbits/PO Matching/Index/image_3_keyboard.png)
 
-### These are all the keyboard shortcuts you can use on the PO Matching screen:
+### Keyboard shortcuts you can use for PO Matching 
 
 ![List](/_images/docbits/PO Matching/Index/image_4_list.gif)
 
