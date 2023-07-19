@@ -50,7 +50,7 @@ During validation, the supplier's PO must be extracted correctly.
 
 ### Keyboard shortcuts you can use for PO Matching 
 
-![List](/_images/docbits/PO Matching/Index/image_4_list.gif)
+![List](/_images/docbits/PO Matching/Index/image_4(1)_list.gif)
 
 
 
