@@ -2,3 +2,5 @@ venv
 site
 generated
 dj/.env
+../docs/de/.DS_Store
+.DS_Store
