@@ -62,6 +62,10 @@ In der rechten Spalte sehen Sie die verfügbaren `Aktionen`. Wenn Sie darauf kli
 
 ![DocBits (DOCs²) Aktionsschaltflächen](/_images/docbits/dashboard/dashboard-aktionen_dokument.gif)
 
+## **Verlassen mit ESC**
+
+Wenn Sie während der Navigation durch Ihre Dokumente in DocBits (DOC²) zum Hauptbereich des Dashboards zurückkehren möchten, können Sie einfach die Escape-Taste (ESC) auf Ihrer Tastatur drücken und gelangen so zum Hauptmenü des Dashboards (auf der Seite, auf der Sie das gerade verlassene Dokument eingegeben haben).
+
 ## **Fazit**
 
 Das DocBits (DOC²) Dashboard ist ein leistungsstarkes Tool, mit dem Sie Ihre importierten Dokumente mühelos verwalten können. Durch das Filtern von Dokumenten nach Status, die Anzeige eines Überblicks über alle hochgeladenen Dokumente und die Validierung extrahierter Felder können Sie Ihren Dokumentenverwaltungsprozess optimieren. Starten Sie noch heute mit DocBits (DOC²)!
