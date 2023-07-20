@@ -10,7 +10,7 @@ tags:
   - Mapping
 ---
 
-#### Step by step guide how to create a BOD mapping file.
+#### Mapping File
 
 Mapping files provided by us can be found [here](https://github.com/Fellow-Consulting-AG/docbits)
 
