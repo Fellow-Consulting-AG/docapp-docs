@@ -20,19 +20,19 @@ If no group is configured all privileges are granted to the users within the org
 
 Groups are managed in DOC² under Settings > Global Settings > Groups, Users and Permissions > Groups and Permissions
 
-xxx
+![Settings](/_images/docbits/Settings/Groups and Permissions/image_1_settings.png)
 
 ## DocBits (DOC²) group user management
 
 The Organization admin can add users to the groups.
 
-xxx
+![ManageUsers](/_images/docbits/Settings/Groups and Permissions/image_2_manage_users.png)
 
 ## DocBits (DOC²) group permission management
 
 The organization admin can set the group permissions.
 
-xxx
+![Viewpermissions](/_images/docbits/Settings/Groups and Permissions/image_3_view_permissions.png)
 
 ## Group permissions
 
