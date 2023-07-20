@@ -10,11 +10,11 @@ tags:
   - Mapping
 ---
 
-#### Mapping File
+## Mapping File
 
 Mapping files provided by us can be found [here](https://github.com/Fellow-Consulting-AG/docbits)
 
-**Here you can find an explanation how the file is structured.**
+## File structure
 
 In the first block, all static values will be defined. Fields that would need an adjustment are "LogicalID" and "AccountingEntityID".
 
