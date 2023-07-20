@@ -3,3 +3,5 @@ site
 generated
 dj/.env
 .DS_Store
+../.DS_Store
+../docs/.DS_Store
