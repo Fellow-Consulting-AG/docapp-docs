@@ -11,7 +11,7 @@ tags:
 
 ## Willkommen bei
 
-![Logo](/_images/docbits/LOGO_DocBits-01.png){ loading=lazy, alt="DocBits (DOC²) Logo" } 
+![Logo](/_images/docbits/Index/DocBits_logo.png){ loading=lazy, alt="DocBits (DOC²) Logo" } 
 
 Die intelligente Lösung zur Digitalisierung von Dokumenten.
 
