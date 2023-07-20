@@ -289,14 +289,14 @@ nav:
     - Ephesoft External Application: te2/ephesoft-external-application.md
     - Infor LN BOD Mapping: te2/ln_bodmapping.md
     - Feedback Function: te2/enable-feedback-function.md
-  - OCR²:
-    - Overview: ocr/overview.md
-    - Installation & Config: ocr/installation-config.md
-    - Getting Started: ocr/get-started.md
-    - OCR Server Process: ocr/ocrserverprocess.md
-    - Detect inside pages: ocr/detect-inside-pages.md
-    - Merge/Split PDF: ocr/merge-split-pdf.md
-    - API: ocr/ocr-api.md
+  # - OCR²:
+  #   - Overview: ocr/overview.md
+  #   - Installation & Config: ocr/installation-config.md
+  #   - Getting Started: ocr/get-started.md
+  #   - OCR Server Process: ocr/ocrserverprocess.md
+  #   - Detect inside pages: ocr/detect-inside-pages.md
+  #   - Merge/Split PDF: ocr/merge-split-pdf.md
+  #   - API: ocr/ocr-api.md
   - Roadmap: 
     - Roadmap: roadmap.md
     - Api: api.md
