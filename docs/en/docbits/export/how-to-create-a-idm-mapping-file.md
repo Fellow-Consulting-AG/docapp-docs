@@ -9,6 +9,11 @@ tags:
   - IDM
   - Mapping
 ---
+
+## Mapping File
+
+Mapping files provided by us can be found [here](https://github.com/Fellow-Consulting-AG/docbits)
+
 ## Define the name of document type
 
 `Invoice=LN_SupplierInvoice OR Invoice=M3_SupplierInvoice (Depends on whether you are using M3 or LN)`
@@ -35,9 +40,8 @@ Check the name of the document type as it should be in InforOS, this can be done
 - The Entity ID (SF_MDS_EntityType), this value should be the same as it was in the BOD Mapping File.
 - IndexFieldFromEphesoft=IDMAttributeID.
 
-## Mapping Files
 
-Mapping files provided by us can be found [here](https://github.com/Fellow-Consulting-AG/docbits)
+
 
 
 
