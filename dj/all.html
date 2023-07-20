@@ -1,0 +1,3724 @@
+<p>::: video-container
+<code>&lt;iframe src='https://www.youtube.com/embed/VIDEO_ID_HERE' frameborder='0' allowfullscreen&gt;</code>{=html}<code>&lt;/iframe&gt;</code>{=html}
+:::</p>
+<h2>How to Import Documents from Email Inbox with DocBits (DOC²)</h2>
+<p>If you're tired of manually importing documents from your email inbox,
+DocBits (DOC²) has got you covered. With our email import feature, you
+can automate the process and save time. Here's how:</p>
+<ol>
+<li>Go to the settings menu and select "Import".</li>
+</ol>
+<p><img alt="Settings" src="/_images/docbits/Import/Email%20Import/image_1_settings_import.png" />
+2. Scroll to the bottom of teh page and select the <code>NEW</code> button to
+create a new email import.</p>
+<p><img alt="New Email
+Import" src="/_images/docbits/Import/Email%20Import/image_2_email_import_new.png" />
+3. After pressing <code>NEW</code>, the following menu will be shown to you</p>
+<p><img alt="Email Import
+Menu" src="/_images/docbits/Import/Email%20Import/image_3_email_import_menu.png" /></p>
+<p>Here you can select which <code>Protocol</code> you would like:</p>
+<p><img alt="Protocol" src="/_images/docbits/Import/Email%20Import/image_4_protocol.png" /></p>
+<ul>
+<li>IMAP: here you just need to enter the required information for your
+    email provider, encryption, server name, port, username, email
+    address, password as well as the email folder.</li>
+</ul>
+<p><img alt="IMAP" src="/_images/docbits/Import/Email%20Import/image_5_IMAP.png" /></p>
+<ul>
+<li>POP3: here you just need to enter the required information for your
+    email provider, encryption, server name, port, username, email
+    address and password</li>
+</ul>
+<p><img alt="POP3" src="/_images/docbits/Import/Email%20Import/image_6_POP3.png" /></p>
+<ul>
+<li>OAuth Office365: here you just need to enter your desired
+    sub-organization and press <code>Authenticate</code></li>
+</ul>
+<p><img alt="OAuth
+Office365" src="/_images/docbits/Import/Email%20Import/image_7_OAuth_Office365.png" /></p>
+<p>You will be taken to this Microsoft page and you will need to enter a
+code.</p>
+<p><img alt="Microsoft
+Page" src="/_images/docbits/Import/Email%20Import/image_8_microsoft_page.png" /></p>
+<p>This code can be found by clicking back to DOC² and the code will be
+displayed there like this, simply copy the code and enter it into the
+microsoft page. Thereafter you will need to enter your own Microsoft
+credentials.</p>
+<p><img alt="DOC2 Code" src="/_images/docbits/Import/Email%20Import/image_9_code.png" /> 4.
+Save the data and test the login to ensure everything is working
+correctly.</p>
+<p><img alt="Save and
+Test" src="/_images/docbits/Import/Email%20Import/image_10_save_and_test.png" />
+5. Click the <code>IMPORT</code> button to fetch the documents from your mailbox
+and import them into DocBits (DOC²).</p>
+<p>It's that simple! With just a few clicks, you can streamline your
+document management process and save time.</p>
+<p>::: video-container
+<code>&lt;iframe src='https://www.youtube.com/embed/VIDEO_ID_HERE' frameborder='0' allowfullscreen&gt;</code>{=html}<code>&lt;/iframe&gt;</code>{=html}
+:::</p>
+<h2>Take Your Document Management to the Next Level with Workflow²</h2>
+<p>If you want to take your document management to the next level, consider
+using our Workflow² app. With Workflow², you can automate your document
+workflows and save even more time. Check out our <a href="https://docs.polydocs.io/example/gmail-import/">Gmail import
+workflow</a> to learn how
+to automatically import your documents from your email inbox to DocBits
+(DOC²).</p>
+<p>Start streamlining your document management process today with DocBits
+(DOC²) and Workflow²!</p><h2>Amount Settings for Invoices with Rounding Errors</h2>
+<p>If you process invoices in countries where rounding is a matter, you may
+encounter rounding errors after the decimal point in certain amounts.
+This is because some documents contain three digits after the decimal
+point, but are shown on the invoice with only two decimal places.</p>
+<p>DocBits (DOC²)'s amount settings feature can help you handle these
+rounding errors. Here's an example to illustrate:</p>
+<p><img alt="Example of rounding error in invoice
+amount" src="/_images/docbits/Settings_Amount_2.png" title="Example of rounding error in invoice amount" /></p>
+<p>To enable this feature, simply turn on the selection in the settings:</p>
+<p><img alt="Enable amount settings in DocBits
+(DOC²)" src="/_images/docbits/Settings_Amount_4.png" title="Enable amount settings in DocBits (DOC²)" /></p>
+<p>If you don't process invoices where rounding is a matter, you can leave
+this selection off.</p>
+<p>Make sure your invoices are accurate and error-free with DocBits
+(DOC²)'s amount settings feature. Try it out today!</p><p>With the Webhook API provided below, you can easily transfer documents
+directly to DocBits (DOC²) with a simple POST request. This API is
+designed to simplify the process of uploading files to DocBits (DOC²),
+and all the necessary parameters are already filled in for you.</p>
+<p>To get started, simply download the
+<a href="https://docs.cloudintegration.eu/wp-content/uploads/2022/04/Webhook-Doc2.postman_collection.json_.zip">Webhook-Doc2.postman_collection.json_</a>
+file and make a call to the API using your API key and system URL. You
+can also include the file you want to upload as a parameter in your
+call.</p>
+<p>Using the Webhook API is a fast and efficient way to transfer documents
+to DocBits (DOC²), and it can help streamline your workflow. Try it out
+today and see how it can benefit your business!</p><h2>All DocBits (DOC²) Document Status List</h2>
+<p>If you're using DocBits (DOC²) software for document processing, it's
+essential to understand the different document statuses that your files
+can have. Here's a complete list of all the possible document statuses
+in DocBits (DOC²):</p>
+<ul>
+<li><code>WatchDog Start</code>: The Watchdog module is starting.</li>
+<li><code>WatchDog Split</code>: The document is being split in Watchdog.</li>
+<li><code>WatchDog Upload</code>: The document is being uploaded in Watchdog.</li>
+<li><code>Upload</code>: The document is being uploaded.</li>
+<li><code>OCR</code>: Optical Character Recognition (OCR) is currently running on
+    the document.</li>
+<li><code>Classification</code>: The document is being classified.</li>
+<li><code>Zugferd import</code>: A Zugferd document is being imported.</li>
+<li><code>Ready for Validation</code>: The document is ready for validation.</li>
+<li><code>Zugferd export</code>: A Zugferd document is being exported.</li>
+<li><code>Workflow</code>: A workflow is currently running with this document.</li>
+<li><code>Pending approval</code>: The document needs to be approved.</li>
+<li><code>Pending second approval</code>: The document needs to be approved a
+    second time.</li>
+<li><code>Auto Accounting</code>: Automatic accounting is running.</li>
+<li><code>Export</code>: The document is being exported.</li>
+<li><code>Error</code>: An error occurred in the document.</li>
+</ul>
+<h2>Upload and Classify</h2><h1>Export and Download Documents as ZUGFeRD-PDF and Peppol BIS Billing</h1>
+<p>With DocBits (DOC²), you can easily export and download your documents
+as ZUGFeRD-PDF and Peppol BIS Billing. Follow the steps below to set up
+the necessary export settings.</p>
+<h2>Import ZUGFeRD to DocBits (DOC²)</h2>
+<p>Learn how to import ZUGFeRD to DocBits (DOC²) by watching this video:</p>
+<p>::: video-container
+```{=html}</p>
+<iframe width="840" height="472.5" src="https://www.youtube-nocookie.com/embed/e9ekKDj0rMU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+```
+```{=html}
+</iframe>
+<p>```
+:::</p>
+<h2>Export ZUGFeRD to IDM</h2>
+<p>Learn how to export ZUGFeRD to IDM by watching this video:</p>
+<p>::: video-container
+```{=html}</p>
+<iframe width="840" height="472.5" src="https://www.youtube-nocookie.com/embed/JUzkgCYdBU4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+```
+```{=html}
+</iframe>
+<p>```
+:::</p>
+<p>Find more helpful videos on our <a href="https://www.youtube.com/channel/UC19DwHXz5nwU2KBdtNr734g">YouTube
+channel</a>.</p>
+<h3>Set up the necessary export settings as follows</h3>
+<ol>
+<li>Navigate to <strong>SETTINGS</strong> above the dashboard.</li>
+<li>Navigate to the <strong>Export</strong> menu item in the settings.</li>
+<li>Create a new configuration via the <strong>NEW</strong> button.</li>
+<li>Select <strong>ZUGFeRD</strong> in the following screen.</li>
+<li>Enter the necessary information and click on <code>SAVE</code>.</li>
+</ol>
+<p><img alt="DOC2 ZUGFeRD Export
+Settings" src="/_images/docbits/DOC2_ExportSettings_Zugferd.png" /></p>
+<p>Don't forget to enter your <strong>Company Information</strong> in the <a href="/docbits/company-information/">settings
+overview</a>.</p>
+<p>When everything is set up correctly, a new download button will appear
+in the dashboard after a document is finished.</p>
+<p><img alt="Download ZUGFeRD" src="/_images/docbits/DOC2_Download_ZugferdPDF.png" /></p>
+<p>Sign up for a 30-day free trial of DocBits (DOC²) today and start
+exporting and downloading your documents as ZUGFeRD-PDF and Peppol BIS
+Billing!</p><h1>How to Manage Users in DocBits (DOC²): Adding and Resetting Passwords</h1>
+<p>Managing users in DocBits (DOC²) is easy with our simple step-by-step
+guide. Follow these instructions to add new users and reset passwords.</p>
+<h2>Adding a User</h2>
+<p>To add a new user to your DocBits (DOC²) account, follow these steps:</p>
+<ol>
+<li>Log in to your DocBits (DOC²) account and navigate to the
+    <strong>Settings</strong> page.</li>
+<li>Click on <strong>Users</strong> to access the user management page.</li>
+<li>Click on <strong>Add User</strong> to create a new user.</li>
+<li>Enter the user's information, including their name, email address,
+    and password.</li>
+<li>If the user is an administrator, check the "Admin" box.</li>
+<li>Click <strong>Save</strong> to create the new user.</li>
+</ol>
+<p><img alt="Adding a User in DocBits
+(DOC²)" src="/_images/docbits/Settings/Users/Image_1_add_user.png" title="Adding a User in DocBits (DOC²)" /></p>
+<h2>Resetting a Password</h2>
+<p>If a user forgets their password, you can easily reset it by following
+these steps:</p>
+<ol>
+<li>Go to the DocBits (DOC²) login page and click on <strong>Forgot
+    Password</strong>.</li>
+<li>Enter the user's email address and click <strong>Submit</strong>.</li>
+<li>The user will receive an email with a link to reset their password.</li>
+<li>Click on the link in the email and follow the instructions to reset
+    the password.</li>
+</ol>
+<p><img alt="Resetting a Password in DocBits
+(DOC²)" src="/_images/docbits/Settings/Users/Image_2_reset_password.png" title="Resetting a Password in DocBits (DOC²)" /></p>
+<p>By following these simple steps, you can easily manage your users in
+DocBits (DOC²). Sign up for a 30-day free trial today to see how DocBits
+(DOC²) can help streamline your document management process.</p>
+<p>::: video-container
+<code>&lt;iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen&gt;</code>{=html}<code>&lt;/iframe&gt;</code>{=html}
+:::</p><h1>Maximizing Productivity with Keyboard Shortcuts in DocBits (DOC²)</h1>
+<p>Keyboard shortcuts can significantly enhance your productivity and user
+experience in DocBits (DOC²). In this guide, we will cover the
+functionality of the Enter key and Arrow keys.</p>
+<h2>Enter Key</h2>
+<p>The Enter key is a primary interaction key in DocBits (DOC²). It enables
+you to perform the following actions:</p>
+<ul>
+<li><strong>Export document</strong>: Press the Enter key to export your document,
+    provided there are no validation errors or required fields left
+    unattended.</li>
+</ul>
+<h2>Arrow Keys</h2>
+<p>The Arrow keys, specifically the Arrow Down key, allow you to navigate
+through fields that require validation or have exceptions. Using the
+Arrow keys, you can:</p>
+<ul>
+<li><strong>Accept field data</strong>: Press the Arrow Down key to accept data in
+    fields that require validation or have other exceptions.</li>
+</ul>
+<h2>Tips for Improved Productivity</h2>
+<ul>
+<li>Familiarize yourself with the keyboard shortcuts available in
+    DocBits (DOC²) to streamline your workflow.</li>
+<li>Regularly review and update your shortcuts knowledge, as new
+    features may introduce additional shortcuts.</li>
+</ul>
+<p>By leveraging the keyboard support in DocBits (DOC²), you can improve
+your productivity and enhance your overall user experience.</p>
+<p>::: video-container
+<code>&lt;iframe src='https://www.youtube.com/embed/VIDEO_ID' frameborder='0' allowfullscreen&gt;</code>{=html}<code>&lt;/iframe&gt;</code>{=html}
+:::</p><p>If you're looking to import documents manually into DocBits (DOC²),
+follow these simple steps:</p>
+<ol>
+<li>Click on the <code>Upload</code> button on the DocBits (DOC²) Dashboard.</li>
+</ol>
+<p><img alt="Upload button on DocBits (DOC²)
+Dashboard" src="/_images/docbits/Dashboard/Manual%20Import/DOC2_1.png" title="Upload button on DocBits (DOC²) Dashboard" /></p>
+<ol>
+<li>A window will appear where you can upload your documents via file
+    browser or drag and drop. You can upload up to 10 documents at once.</li>
+</ol>
+<p><img alt="Upload window on DocBits (DOC²)
+Dashboard" src="/_images/docbits/Dashboard/Manual%20Import/DOC2_2.png" title="Upload window on DocBits (DOC²) Dashboard" /></p>
+<ol>
+<li>
+<p>To upload documents via file browser, click on the
+    <code>Upload Documents</code> button and select the files you want to upload.
+    Once you've selected the files, click on <code>Confirm</code> to start the
+    upload process.</p>
+</li>
+<li>
+<p>Alternatively, you can drag and drop your files onto the DocBits
+    (DOC²) import window.</p>
+</li>
+</ol>
+<p>::: video-container
+```{=html}</p>
+<iframe width="840" height="472.5" src="https://www.youtube-nocookie.com/embed/Wwg86UY8JbE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+```
+```{=html}
+</iframe>
+<p>```
+:::</p>
+<ol>
+<li>After the files have been uploaded, they will have the initial
+    status of "Running". During this time, the upload is being processed
+    and editing the file is not possible. The processing time may vary
+    depending on the size and complexity of the file.</li>
+</ol>
+<p><img alt="Running status on DocBits (DOC²)
+Dashboard" src="/_images/docbits/Dashboard/Manual%20Import/DOC2_3.png" title="Running status on DocBits (DOC²) Dashboard" /></p>
+<ol>
+<li>Once the file has been processed, it will receive the status of
+    "Ready For Validation". You can now start the validation process.</li>
+</ol>
+<p><img alt="Ready for Validation status on DocBits (DOC²)
+Dashboard" src="/_images/docbits/Dashboard/Manual%20Import/DOC2_4.png" title="Ready for Validation status on DocBits (DOC²) Dashboard" /></p>
+<p>For more information on the validation process, please refer to our
+<a href="/docbits/document-validation/">Document Validation</a> guide.</p>
+<p>By following these steps, you can easily import your documents manually
+into DocBits (DOC²). Start using DocBits (DOC²) today and streamline
+your document management process!</p><h2>List of Supported Languages</h2>
+<p><strong>LangCode</strong>   <strong>Language</strong></p>
+<hr />
+<p>afr            Afrikaans
+  amh            Amharic
+  ara            Arabic
+  asm            Assamese
+  aze            Azerbaijani
+  aze_cyrl       Azerbaijani - Cyrilic
+  bel            Belarusian
+  ben            Bengali
+  bod            Tibetan
+  bos            Bosnian
+  bre            Breton
+  bul            Bulgarian
+  cat            Catalan; Valencian
+  ceb            Cebuano
+  ces            Czech
+  chi_sim        Chinese - Simplified
+  chi_tra        Chinese - Traditional
+  chr            Cherokee
+  cos            Corsican
+  cym            Welsh
+  dan            Danish
+  dan_frak       Danish - Fraktur (contrib)
+  deu            German
+  deu_frak       German - Fraktur (contrib)
+  dzo            Dzongkha
+  ell            Greek, Modern (1453-)
+  eng            English
+  enm            English, Middle (1100-1500)
+  epo            Esperanto
+  equ            Math / equation detection module
+  est            Estonian
+  eus            Basque
+  fao            Faroese
+  fas            Persian
+  fil            Filipino (old - Tagalog)
+  fin            Finnish
+  fra            French
+  frk            German - Fraktur
+  frm            French, Middle (ca.1400-1600)
+  fry            Western Frisian
+  gla            Scottish Gaelic
+  gle            Irish
+  glg            Galician
+  grc            Greek, Ancient (to 1453) (contrib)
+  guj            Gujarati
+  hat            Haitian; Haitian Creole
+  heb            Hebrew
+  hin            Hindi
+  hrv            Croatian
+  hun            Hungarian
+  hye            Armenian
+  iku            Inuktitut
+  ind            Indonesian
+  isl            Icelandic
+  ita            Italian
+  ita_old        Italian - Old
+  jav            Javanese
+  jpn            Japanese
+  kan            Kannada
+  kat            Georgian
+  kat_old        Georgian - Old
+  kaz            Kazakh
+  khm            Central Khmer
+  kir            Kirghiz; Kyrgyz
+  kmr            Kurmanji (Kurdish - Latin Script)
+  kor            Korean
+  kor_vert       Korean (vertical)
+  kur            Kurdish (Arabic Script)
+  lao            Lao
+  lat            Latin
+  lav            Latvian
+  lit            Lithuanian
+  ltz            Luxembourgish
+  mal            Malayalam
+  mar            Marathi
+  mkd            Macedonian
+  mlt            Maltese
+  mon            Mongolian
+  mri            Maori
+  msa            Malay
+  mya            Burmese
+  nep            Nepali
+  nld            Dutch; Flemish
+  nor            Norwegian
+  oci            Occitan (post 1500)
+  ori            Oriya
+  osd            Orientation and script detection module
+  pan            Panjabi; Punjabi
+  pol            Polish
+  por            Portuguese
+  pus            Pushto; Pashto
+  que            Quechua
+  ron            Romanian; Moldavian; Moldovan
+  rus            Russian
+  san            Sanskrit
+  sin            Sinhala; Sinhalese
+  slk            Slovak
+  slk_frak       Slovak - Fraktur (contrib)
+  slv            Slovenian
+  snd            Sindhi
+  spa            Spanish; Castilian
+  spa_old        Spanish; Castilian - Old
+  sqi            Albanian
+  srp            Serbian
+  srp_latn       Serbian - Latin
+  sun            Sundanese
+  swa            Swahili
+  swe            Swedish
+  syr            Syriac
+  tam            Tamil
+  tat            Tatar
+  tel            Telugu
+  tgk            Tajik
+  tgl            Tagalog (new - Filipino)
+  tha            Thai
+  tir            Tigrinya
+  ton            Tonga
+  tur            Turkish
+  uig            Uighur; Uyghur
+  ukr            Ukrainian
+  urd            Urdu
+  uzb            Uzbek
+  uzb_cyrl       Uzbek - Cyrilic
+  vie            Vietnamese
+  yid            Yiddish
+  yor            Yoruba</p><h2>Streamline Your Workflow with DocBits (DOC²)</h2>
+<p>Watch this video to see how easy it is to use DocBits (DOC²) to
+streamline your workflow and increase productivity:</p>
+<p>::: video-container
+<code>&lt;iframe width="840" height="472.5" src="https://www.youtube-nocookie.com/embed/Zk8_pNfXBhM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;</code>{=html}<code>&lt;/iframe&gt;</code>{=html}
+:::</p>
+<p>For more helpful videos, check out our <a href="https://www.youtube.com/channel/UC19DwHXz5nwU2KBdtNr734g">YouTube
+channel</a>.</p>
+<p>Ready to try DocBits (DOC²) for yourself? Sign up for a 30-day free
+trial today and start streamlining your workflow and increasing
+productivity!</p>
+<p><a href="https://app.polydocs.io">Sign up now</a>{.md-button .md-button--primary}</p>
+<p><code>&lt;img src="https://example.com/doc2-workflow.jpg" alt="DocBits (DOC²) Workflow" title="DocBits (DOC²) Workflow" /&gt;</code>{=html}</p>
+<p><code>&lt;img src="https://example.com/doc2-productivity.jpg" alt="DocBits (DOC²) Productivity" title="DocBits (DOC²) Productivity" /&gt;</code>{=html}</p><p>In DocBits (DOC²) you will find the "SETTINGS" menu in the "DASHBOARD".
+Open this menu.</p>
+<p><img alt="" src="/_images/docbits/image-44-1024x396.png" /></p>
+<p>There you will find the menu item "Modules". Open this menu.</p>
+<p><img alt="" src="/_images/docbits/image-45-1024x355.png" /></p>
+<p>There you will find the option "PURCHASE ORDER" with which you can
+switch PO matching on/off.</p>
+<p><img alt="" src="/_images/docbits/image-46.png" /></p>
+<p>Furthermore you can define which documents should be matched via the
+option "Select PO Matching". There are three ways to match your purchase
+order. For details please check PO Matching documentation: <a href="/docbits/pomatching/po-matching/">PO
+Matching</a></p>
+<p><img alt="" src="/_images/docbits/image-47.png" /></p>
+<p>Via the menu item "Table Extraction" the table extraction can be
+switched on/off. Furthermore, the version to be used with this account
+can be defined.</p>
+<p><img alt="" src="/_images/docbits/image-48.png" /></p><h2>How to Deploy DocBits (DOC²): A Step-by-Step Guide</h2>
+<p>Deploying DocBits (DOC²) is a breeze with our easy-to-follow guide. All
+you need is the URL <a href="https://app.polydocs.io/">App</a> and the login
+details that you received from us. With admin rights, you can capture,
+work, and manage your imported documents with ease.</p>
+<h2>Prerequisites</h2>
+<p>To get started, you'll need a computer with internet access. Once you
+have that, follow these simple steps:</p>
+<ol>
+<li>Go to the URL <a href="https://app.polydocs.io/">App</a> and enter your admin
+    login details.</li>
+<li>Once you're logged in, you'll be redirected to the DASHBOARD
+    homepage of DocBits (DOC²). This is where you can manage all your
+    imported documents.</li>
+<li>If you see the following screen, you're ready to go! All further
+    details and necessary steps can be found
+    <a href="https://docs.polydocs.io/docbits/document-validation/">here</a>.</li>
+</ol>
+<p><img alt="DOC2
+Login" src="/_images/docbits/Deployment/DOC2_Deployment_Dashboard.png" />{
+loading=lazy, alt: "DOC2 Dashboard" }</p>
+<h2>Get Started Today!</h2>
+<p>With DocBits (DOC²), managing your imported documents has never been
+easier. Follow our step-by-step guide and get started today!</p>
+<p>::: video-container
+<code>&lt;iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen&gt;</code>{=html}<code>&lt;/iframe&gt;</code>{=html}
+:::</p><p>In DocBits (DOC²) you will find the <code>SETTINGS</code> menu in the upper bar on
+<code>HOME</code> screen.</p>
+<p><img alt="Dashboard" src="/_images/docbits/Settings/Document%20Types/Image_1_settings.png" /></p>
+<p>If you are logged in to DocBits (DOC²) as an admin, you will find all
+fields of a document that can be extracted under the respective document
+type.</p>
+<p>Open the menu <strong>Document Types</strong>.</p>
+<p><img alt="Menu" src="/_images/docbits/Settings/Document%20Types/Image_2_doc_types_location.png" /></p>
+<p>In the following overview you will find all standard document types
+available for you:</p>
+<p><img alt="DocumentTypes" src="/_images/docbits/Settings/Document%20Types/Image_3.png" /></p>
+<p>To see which fields can be extracted, for example from an invoice, click
+on <code>FIELDS</code> for this document type.</p>
+<p><img alt="Fields" src="/_images/docbits/Settings/Document%20Types/Image_4_fields.png" /></p>
+<h3>FIELD SETTINGS</h3>
+<p>Here you will find all the fields that can be extracted:</p>
+<hr />
+<p>INVOICE DETAILS   PAYMENT DETAILS    VAT &amp; AMOUNTS    VENDOR DETAILS</p>
+<hr />
+<p>INVOICE NUMBER         IBAN            CURRENCY           ADDRESS</p>
+<pre><code>INVOICE DATE      PAYMENT TERMS    NET AMOUNT FULL    SUPPLIER NAME
+
+DELIVERY DATE                        NET AMOUNT         VENDOR ID
+                                       REDUCED
+
+  PO NUMBER                        NET AMOUNT FREE     VENDOR VAT
+
+ ORDER DATE                        TAX AMOUNT FULL
+
+                                     TAX AMOUNT     
+                                       REDUCED
+
+                                   TAX AMOUNT FREE
+
+                                    VAT RATE FULL
+
+                                  VAT RATE REDUCED
+
+                                    VAT RATE FREE
+
+                                  TOTAL NET AMOUNT
+
+                                  TOTAL TAX AMOUNT
+
+                                    TOTAL AMOUNT
+</code></pre>
+<hr />
+<p>For every overpoint you can also <strong>CREATE FIELD</strong>s like freight, postage
+or any field with an amount you want to extract from your invoices.</p>
+<p>For each field you can check the boxes if they are</p>
+<ul>
+<li>
+<p>REQUIRED: Here you can define if the field must contain a value to
+    continue.</p>
+</li>
+<li>
+<p>READ ONLY: Here you can define if a field can only be displayed but
+    not edited.</p>
+</li>
+<li>
+<p>HIDDEN: Here you can define whether a field should be hidden or
+    displayed in the extraction view.</p>
+</li>
+<li>
+<p>FORCE VALIDATION: Here you can define whether a field must always be
+    validated manually, even if it has been read 100% by DocBits (DOC²).</p>
+</li>
+<li>
+<p>OCR and MATCH SCORE: Setting as described below, per field.</p>
+</li>
+<li>
+<p>FORMULA: Creation of a formula per field.</p>
+</li>
+</ul>
+<p><img alt="FieldSettings" src="/_images/docbits/Settings/Document%20Types/Image_5_field_settings.png" /></p>
+<p>If all settings are made and should be saved, please confirm this with
+the <code>SAVE SETTINGS</code> button, otherwise the settings will not be applied.</p>
+<p><img alt="Save" src="/_images/docbits/Settings/Document%20Types/Image_6_save_settings.png" /></p>
+<h3>RECOGNITION SETTINGS</h3>
+<p><img alt="Recognition" src="/_images/docbits/Settings/Document%20Types/Image_7_recog_settings.png" /></p>
+<p><strong>OCR:</strong></p>
+<p>Here you can set the sensitivity of the OCR (Optical Character
+Recognition) function for all fields at once. This value determines the
+sensitivity with which a field is marked in red if it could not be
+extracted with 100% certainty (OCR related!).</p>
+<p><strong>MATCH SCORE:</strong></p>
+<p>Here you can set the sensitivity of the MATCH SCORE function for all
+fields at once. This value determines from when a field is marked in red
+if DocBits (DOC²) has not extracted the field with 100% probability. In
+this case the field needs to be validated manually.</p>
+<p>The button <code>RESTORE DEFAULTS</code> will set back both values to "50".</p>
+<p><img alt="OCR" src="/_images/docbits/Settings/Document%20Types/Image_8_ocr_matchscore_slider.png" /></p>
+<h3>PROFILE</h3>
+<p>Here you can define the profile that shall be used. Either Default or
+ZUGFeRD.<code>&lt;br&gt;</code>{=html} In profile ZUGFeRD there are predefined fields
+that are mandatory for this type of invoice.<code>&lt;br&gt;</code>{=html} If you do not
+explicitly use ZUGFeRD, please select "Default".</p>
+<p><img alt="Profiles" src="/_images/docbits/Settings/Document%20Types/Image_9_profiles.png" /></p><p><img alt="DocBits (DOC²)
+Logo" src="/_images/docbits/doc2-1024x415.png" />{loading="lazy,"}</p>
+<p>Every business process starts, contains, or ends with a document.
+Regardless of whether it's in paper form or already as a file, this is
+called unstructured data. Although the information is on or in the
+document, it cannot be automatically integrated into the work processes,
+as it is simply not recognized by all software.</p>
+<p>DocBits (DOC²) is the latest software and solution for document capture
+that was developed by FellowPro AG. It is a completely cloud-based
+solution that uses Artificial Intelligence and Machine Learning to
+precisely identify, classify, analyze, and read your documents. No
+matter if paper or file. DocBits (DOC²) learns independently, the level
+of experience increases with each document. DocBits (DOC²) uses swarm
+intelligence for this.</p>
+<h2>The Advantages of DocBits (DOC²) at a Glance:</h2>
+<ul>
+<li>Recognizes the required data - even handwritten information and
+    information in tables reliably and is self-learning, even through
+    corrections by the user</li>
+<li>With swarm intelligence, you benefit continuously from the
+    experiences of other customers</li>
+<li>Improves the accuracy and quality of the recognized data</li>
+<li>Enables an automated process without ongoing corrections and
+    interventions</li>
+<li>Simple intuitive interface</li>
+<li>No IT resources/specialists required</li>
+<li>Ensures a robust and consistent work process</li>
+<li>No sensitive data is stored or shared</li>
+<li>Saves time in the digital inbox</li>
+<li>Reduces errors caused by manual processing</li>
+</ul>
+<h2>How to Use DocBits (DOC²):</h2>
+<ol>
+<li>Scanning and Recognition of all types of documents (Invoices,
+    Contracts, Forms, Medical Prescriptions, etc.)</li>
+<li>Reliable extraction of the data in the document and integration and
+    further processing in the ERP, RPA, or CRM system)</li>
+<li>Validation of the extracted data and verification against other
+    systems from internal and public sources</li>
+<li>Integration into your system landscape (e.g. ERP System, Document
+    Management, Workflow System, etc.)</li>
+</ol>
+<h2>Why DocBits (DOC²) is Just Right for You:</h2>
+<p>Many companies have recognized that processing incoming invoices, for
+example, can be very time-consuming. They are trying to increase
+productivity and optimize the purchase-to-pay process by introducing
+products for the "digitization" of invoices.</p>
+<p>In addition, DocBits (DOC²) uses swarm intelligence. What does that
+mean? You benefit from the experiences of other customers and their
+"learning curve" without sharing sensitive data. With the cloud-based
+rule engine, we ensure continuous improvement of the application. You
+don't need any developers or data scientists, because the system learns
+from the input of the user and the process runs without interruptions.</p>
+<p>With the help of deep learning algorithms, not only simple header data
+of a document can be recorded, but also complicated structures such as
+tables. Of course, not only invoices are processed, but all types of
+documents. Regardless of whether it is waybills, membership
+applications, medical prescriptions, and many more.</p>
+<h2>Start Your Free 30-Day Trial Now!</h2>
+<p>Start your free 30-day trial of DocBits (DOC²) today and experience the
+benefits of intelligent document capture for yourself.</p>
+<p><a href="https://polydocs.io/free-trial/">Start Now</a>{.md-button
+.md-button--primary}</p><h2>Fill in Your Company Information</h2>
+<p>To fill in your company information, follow these steps:</p>
+<ol>
+<li>Go to the Company Information section in DocBits (DOC²).</li>
+<li>Enter your company-specific information, such as your company name,
+    address, and contact details.</li>
+<li>Click on <code>SAVE</code> when you're done.</li>
+</ol>
+<p><img alt="Fill in Your Company Information in DocBits
+(DOC²)" src="/_images/docbits/Settings/Company%20Information/Image_3_example_info.png" title="Fill in Your Company Information in DocBits (DOC²)" /></p>
+<h2>Subscription Plan and Usage</h2>
+<p>In the Company Information section, you can also find information about
+your subscription plan, including the start and end dates. You can also
+view your processed pages for a selected period using the calendar.</p>
+<p><img alt="View Your Subscription Plan and Usage in DocBits
+(DOC²)" src="/_images/docbits/Settings/Company%20Information/Image_2_info_page.png" title="View Your Subscription Plan and Usage in DocBits (DOC²)" /></p>
+<p>Make sure to keep your subscription plan up-to-date to ensure
+uninterrupted access to DocBits (DOC²)'s features and services.</p>
+<h2>Exporting with ZUGFeRD</h2>
+<p>If you want to export your documents in <a href="/docbits/zugpferd/">ZUGFeRD</a>
+format, you need to fill in your company information in DocBits (DOC²).
+This will ensure that your exports are successful and compliant with
+ZUGFeRD standards. Please note that a valid address is required for the
+export to work.</p>
+<p>Exporting your documents to ZUGFeRD format has never been easier with
+DocBits (DOC²). Follow these simple steps to get started today!</p><p>DocBits (DOC²) offers a powerful solution for accurate document
+extraction. By uploading your master data, you can take advantage of
+automatic mapping of supplier data from your ERP system. This means that
+the VAT number or supplier name extracted from the document can be used
+to identify the supplier data record from your ERP system, streamlining
+your workflow and saving you time.</p>
+<p>To learn more about master data validation and how it can benefit your
+business, check out our comprehensive documentation: <a href="/docbits/document-validation/master-data-validation/">Master Data
+Validation</a>.</p>
+<p>To upload your master data to DocBits (DOC²), simply navigate to the
+settings from the dashboard and select "Supplier Validation". From
+there, you can easily import your CSV file and define your separator
+preferences. Click "Save" to apply your changes and start taking
+advantage of the benefits of master data validation.</p>
+<p>::: video-container
+<code>&lt;iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen&gt;</code>{=html}<code>&lt;/iframe&gt;</code>{=html}
+:::</p>
+<p>Don't let inaccurate data slow down your workflow. Try DocBits (DOC²)'s
+master data validation today and experience the benefits for yourself.</p><h1>SSO Settings</h1>
+<ul>
+<li>Once you have received your Login Details from us, you will find all
+    the details you need for SSO configuration here.</li>
+</ul>
+<p><strong>To access the SSO SERVICE PROVIDER SETTINGS in DocBits (DOC²)</strong></p>
+<p>1. Log in on URL <a href="https://app.polydocs.io/">https://app.polydocs.io/</a> with the login details you
+received from us.</p>
+<p>2. Go to SETTINGS, GLOBAL SETTINGS and select INTEGRATION.</p>
+<p>Here you will find all the information you need for the following steps:</p>
+<p><img alt="DOC2 -
+SSO" src="/_images/docbits/Settings/Integration/SSO%20Settings/Image_1_SSO_Service_Provider_Settings.png" /></p>
+<p><img alt="" src="/_images/docbits/Settings/Integration/SSO%20Settings/Image_2_Identity_Service_Provider_Settings.png" /></p>
+<p>The step by step guide to configure SSO in Infor Cloud can be found
+<a href="/docbits/doc2-with-infor/configuring-sso-in-cloud/">here</a>.</p>
+<p>More helpful documentation can be found <a href="/docbits/sso/">here</a>.</p><h1>DocBits (DOC²) OnBoarding Guide for Productivity</h1>
+<p>Welcome to the DocBits (DOC²) OnBoarding Guide! This guide will help you
+learn the basics of DocBits (DOC²) and get up and running with an IPS
+that will maximize your productivity.</p>
+<h2>Performing Initial Setup</h2>
+<p>To access and configure your system, go to <a href="https://app.polydocs.io/">https://app.polydocs.io/</a>.
+Please note that DocBits (DOC²) does not work in Tenant, and all
+customers use the same cluster hosted in Frankfurt, Germany.</p>
+<p>Here are the two ways to access the system:</p>
+<ol>
+<li>Contact your FellowPro AG representative or reach out to
+    <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#112;&#111;&#108;&#121;&#100;&#111;&#99;&#115;&#46;&#105;&#111;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#112;&#111;&#108;&#121;&#100;&#111;&#99;&#115;&#46;&#105;&#111;</a> to register your company.</li>
+<li>Once you have received the onboarding email, you are the first user
+    and therefore the admin of your organization.</li>
+</ol>
+<p>Here is your step-by-step guide to set up:</p>
+<ol>
+<li>Go to the <a href="https://app.polydocs.io/">App</a>. We recommend bookmarking
+    this URL for future reference.</li>
+<li>Log in with the credentials provided in your onboarding email.</li>
+</ol>
+<h3>Step 2: Adding Users</h3>
+<p>After logging in, you'll need to add users to your tenant. When you add
+a user, they'll receive an onboarding email with a username and
+temporary password.</p>
+<p>You can add users from <strong>Settings</strong> > <strong>Users</strong>. For help, refer to
+<a href="/docbits/settings-users/">Adding Users</a>.</p>
+<h2>Understanding Document Review</h2>
+<p>After the initial setup is complete, most of your time in DocBits (DOC²)
+will be spent reviewing example invoices.</p>
+<h3>Sending Document to DocBits (DOC²)</h3>
+<p>You can send documents to DocBits (DOC²) in the following ways:</p>
+<ol>
+<li>Manual Upload</li>
+<li>Email</li>
+<li>API</li>
+<li>Use our WatchDog for Directories</li>
+</ol>
+<h3>Reviewing Extracted Results</h3>
+<p>If a document is not automatically processed, it will be stopped for
+manual review. This means you will need to edit or approve fields the
+system wasn't confident in, or couldn't find.</p>
+<p>To review extracted results:</p>
+<ol>
+<li>On the <strong>Dashboard</strong>, click <strong>on the document</strong> to assign the 10
+    oldest invoices in the system to yourself. You'll be taken to the
+    <strong>Review</strong> screen.</li>
+<li>Review the extracted results. Refer to reviewing your document for
+    more information.</li>
+<li>When you're satisfied, click <strong>Complete Review</strong>.</li>
+</ol>
+<p>Improve your productivity with DocBits (DOC²) today! Contact FellowPro
+AG for more information.</p><h2>How to Access this feature</h2>
+<p>In Settings, Global Settings → Groups, Users and Permissions →
+Sub-Organizations as shown below.</p>
+<p><img alt="Access" src="/_images/docbits/Settings/Sub%20Organizations/image_1_access.png" /></p>
+<p>You will then be taken to a page that looks similar to this</p>
+<p><img alt="Menu" src="/_images/docbits/Settings/Sub%20Organizations/image_2_menu.png" /></p>
+<p>This is where you will find your previously created sub-organizations,
+as well as where you can create new sub-organizations.</p>
+<h2>How to create a Sub-Organization</h2>
+<ul>
+<li>Click on the <code>+ NEW</code> button</li>
+</ul>
+<p><img alt="+NEW" src="/_images/docbits/Settings/Sub%20Organizations/image_3_+new.png" /></p>
+<ul>
+<li>The following menu will be displayed</li>
+</ul>
+<p><img alt="New
+Menu" src="/_images/docbits/Settings/Sub%20Organizations/image_4_new_menu.png" /></p>
+<ul>
+<li>Enter the details of the sub-organization you want to create, the
+    name and description, then click on the <code>SAVE</code> button. You should
+    then find your newly created sub-organization at the bottom of the
+    list of existing sub-organizations.</li>
+</ul><h2>How to access this feature</h2>
+<p>This feature allows you to create and store different lists or sets of
+related information that can be used to create a drop-down box on the
+validation screen.</p>
+<p>In order to create a list, navigate to the DocBits (DOC²) Dashboard →
+Settings as shown below.</p>
+<p><img alt="" src="/_images/docbits/List%20of%20Values%20-%20Images/image_1_lov.png" /></p>
+<p>Document processing → List of Values</p>
+<p><img alt="" src="/_images/docbits/List%20of%20Values%20-%20Images/image_2_lov.png" /></p>
+<p>On this screen you have access to existing lists as well as the ability
+to create new lists</p>
+<p><img alt="" src="/_images/docbits/List%20of%20Values%20-%20Images/image_3_lov.png" /></p>
+<h2>How to enable this feature for a field in a layout?</h2>
+<p>DocBits (DOC²) Dashboard → Settings</p>
+<p><img alt="" src="/_images/docbits/List%20of%20Values%20-%20Images/image_4_lov.png" /></p>
+<p>Global Settings → Document Types</p>
+<p><img alt="" src="/_images/docbits/List%20of%20Values%20-%20Images/image_5_lov.png" /></p>
+<p>Select the document type you wish to add the the list of values too and,
+once in the document type, select the field that should contain the list
+of values on the validation screen.</p>
+<p>Once you have clicked on the field, the following menu will appear on
+the left of your screen.</p>
+<p><img alt="" src="/_images/docbits/List%20of%20Values%20-%20Images/image_6_lov.png" /></p>
+<p>At the bottom, select the appropriate list of values from the dropdown
+box that you wish to attach to the field and then save the changes.</p><h2>What is Infor Document Management (IDM)?</h2>
+<p>Infor Document Management (IDM) is an enterprise document management
+application deployed and integrated within the Infor Operating Service
+portal.</p>
+<p>IDM is one of several Infor applications that uses the user interface of
+Infor Ming.leTM.</p>
+<p>IDM is a central repository where you can manage your common business
+rules for creating, storing, and managing documents -- such as invoices,
+vendor document, and employee records. You can view, edit, create, and
+store the physical files.</p>
+<p>You can extend IDM with DocBits (DOC²). It provides optical character
+recognition (OCR) and intelligent character recognition (ICR)
+capabilities. These tools enable more complete and improved document
+capture processes. You can scan and connect your documents through a
+standard web browser and connect the documents to your business process.
+With IDM you can find the documents you require and you are always
+working with the latest, most complete version of a document. With
+access to all your critical business information in-context, DocBits
+(DOC²) further automates your document workflows through automatic
+categorization and retrieval of key document metadata.</p>
+<h2>Accessing IDM</h2>
+<p>Access the application with the IDM URL.</p>
+<p>By accessing the system through this URL, you are ensured that the
+required libraries are loaded during the page load. Otherwise, several
+features such as Shortcuts and Context Sharing, do not work properly.
+The IDM URL is provided to your IDM administrator.</p>
+<p>After logging in you can access the client application through the app
+switcher in the Infor Ming.le portal.</p>
+<h3>Control Center</h3>
+<p>To access the Control Center, click the options menu next to the <strong>+ Add
+Document</strong> button on the <strong>Document Management</strong> landing page and select
+<strong>Control Center</strong>.</p>
+<p><img alt="" src="/_images/docbits/Infor/IDM_Control%20Center.png" /></p>
+<p>If you have the <code>IDM-AdvancedUser</code> role or higher, you can perform these
+actions from the control center:</p>
+<ol>
+<li>
+<p>Configure the Exporter/Importer. (See below)</p>
+</li>
+<li>
+<p>Synchronize the data model. Through this action the systems can
+    self-heal by synchronizing the data model.</p>
+</li>
+</ol>
+<p>For all other actions in the control center, see the <em>Infor Document
+Management Administration Guide -- Cloud Edition</em>. These actions are
+only available for users with the <code>IDM-Administrator</code> role.</p>
+<h3>Configuration Exporter / Importer</h3>
+<p><img alt="" src="/_images/docbits/Infor/IDM_ControlCenter_Document%20Type_Import.png" /></p>
+<p>Configuration Exporter and Importer allows the user to export / import
+the Configuration parts of Control Center (Document Types Filter, Result
+List, Business Context Model, and ION Configuration) using XML
+documents.</p>
+<p>The xml files for all common document types can be downloaded here.</p>
+<ul>
+<li>Order Confirmation:
+    <code>&lt;a href="assets/images/docbits/Infor/IDMconfiguration_OrderConfirmation.xml" download&gt;</code>{=html}IDMconfiguration_OrderConfirmation<code>&lt;/a&gt;</code>{=html}</li>
+<li>Delivery Note:
+    <code>&lt;a href="assets/images/docbits/Infor/IDMconfiguration_DeliveryNote.xml" download&gt;</code>{=html}IDMconfiguration_DeliveryNote<code>&lt;/a&gt;</code>{=html}</li>
+<li>Invoice:
+    <code>&lt;a href="assets/images/docbits/Infor/IDMconfiguration_Invoice.xml" download&gt;</code>{=html}IDMconfiguration_Invoice<code>&lt;/a&gt;</code>{=html}</li>
+</ul>
+<p>If you are using Infor LN as ERP also upload these xml files:</p>
+<ul>
+<li>Order Confirmation:
+    <code>&lt;a href="assets/images/docbits/Infor/IDMconfiguration_BusinessContext_OrderConfirmation.xml" download&gt;</code>{=html}IDMconfiguration_BusinessContext_OrderConfirmation<code>&lt;/a&gt;</code>{=html}</li>
+<li>Delivery Note:
+    <code>&lt;a href="assets/images/docbits/Infor/IDMconfiguration_BusinessContext_DeliveryNote.xml" download&gt;</code>{=html}IDMconfiguration_BusinessContext_DeliveryNote<code>&lt;/a&gt;</code>{=html}</li>
+<li>Delivery
+    Note2:<code>&lt;a href="assets/images/docbits/Infor/IDMconfiguration_BusinessContext_DeliveryNote2.xml" download&gt;</code>{=html}IDMconfiguration_BusinessContext_DeliveryNote2<code>&lt;/a&gt;</code>{=html}</li>
+<li>Invoice:
+    <code>&lt;a href="assets/images/docbits/Infor/IDMconfiguration_BusinessContext_Invoice.xml" download&gt;</code>{=html}IDMconfiguration_BusinessContext_Invoice<code>&lt;/a&gt;</code>{=html}</li>
+</ul>
+<p>You can import the files as follows:</p>
+<h3>Using the Import tab</h3>
+<ol>
+<li>Navigate to <strong>Control Center</strong> > <strong>Administration</strong> > <strong>Import /
+    Export</strong> and click the <strong>Import</strong> tab.</li>
+<li>Click <strong>Select XML file</strong> and browse for the XML file. A file
+    validation applies. Only XML files that were created by the exporter
+    are accepted. If validation fails, <strong>Import XML</strong> file remains
+    disabled.</li>
+<li>When the configuration file is uploaded, an import preview is
+    displayed and includes any or all of these parts:
+    <code>{=html}
+    &lt;table&gt;</code>
+    <code>{=html}
+    &lt;tr&gt;</code>
+    <code>{=html}
+    &lt;td style="max-width: 100%; white-space: nowrap"&gt;</code>
+    Document Types and Value Sets
+    <code>{=html}
+    &lt;/td&gt;</code>
+    <code>{=html}
+    &lt;td style="max-width: 100%; white-space: nowrap"&gt;</code>
+    The list of document types and value sets to be imported.
+    <code>{=html}
+    &lt;/td&gt;</code>
+    <code>{=html}
+    &lt;/tr&gt;</code>
+    <code>{=html}
+    &lt;tr&gt;</code>
+    <code>{=html}
+    &lt;td&gt;</code>
+    Document Type Filter
+    <code>{=html}
+    &lt;/td&gt;</code>
+    <code>{=html}
+    &lt;td&gt;</code>
+    A list of document types that is displayed for the user when
+    importing this configuration.
+    <code>{=html}
+    &lt;/td&gt;</code>
+    <code>{=html}
+    &lt;/tr&gt;</code>
+    <code>{=html}
+    &lt;tr&gt;</code>
+    <code>{=html}
+    &lt;td&gt;</code>
+    Result List
+    <code>{=html}
+    &lt;/td&gt;</code>
+    <code>{=html}
+    &lt;td&gt;</code>
+    Result list configuration to be imported.
+    <code>{=html}
+    &lt;/td&gt;</code>
+    <code>{=html}
+    &lt;/tr&gt;</code>
+    <code>{=html}
+    &lt;tr&gt;</code>
+    <code>{=html}
+    &lt;td&gt;</code>
+    Business Context Models
+    <code>{=html}
+    &lt;/td&gt;</code>
+    <code>{=html}
+    &lt;td&gt;</code>
+    Business context model configuration to be imported.
+    <code>{=html}
+    &lt;/td&gt;</code>
+    <code>{=html}
+    &lt;/tr&gt;</code>
+    <code>{=html}
+    &lt;tr&gt;</code>
+    <code>{=html}
+    &lt;td&gt;</code>
+    ION
+    <code>{=html}
+    &lt;/td&gt;</code>
+    <code>{=html}
+    &lt;td&gt;</code>
+    ION configuration to be imported.
+    <code>{=html}
+    &lt;/td&gt;</code>
+    <code>{=html}
+    &lt;/tr&gt;</code>
+    <code>{=html}
+    &lt;/table&gt;</code></li>
+<li>You can collapse or expand each part to see possible warnings or
+    information:<ul>
+<li>:fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F"
+    } Warning - yellow sign: The warning sign does not disable
+    <strong>Import XML file</strong>. We recommend that you go through all
+    warning messages before starting the importer. This could be due
+    to these situations:</li>
+<li>Some configuration parts already exist in the repository that
+    might be overwritten, for example, Result List.</li>
+<li>Some configuration parts already exist in the repository that
+    might be lost, for example, Document Type Filter.</li>
+<li>:fontawesome-solid-info:{ style="color: #eee20e" } Information -
+    blue sign: The information sign does not disable Import XML
+    file. It is usually displayed in these situations:</li>
+<li>If some parts cannot be imported, for example, Items.</li>
+<li>If some existing parts are merged with new ones from the XML
+    file, for example, Result List.</li>
+<li>A green OK sign with no message required.</li>
+</ul>
+</li>
+<li>Click <strong>Import XML file</strong> to run the importer. When the import is
+    finished, a report window is displayed with an information table
+    that summarizes the status of the import. If any error occurs during
+    the import, the error message informs the user what went wrong.</li>
+</ol>
+<p>When the import is successful, <strong>Import XML file</strong> is disabled.</p>
+<p>This is how the general Information and attributes look like in IDM
+under the corresponding document type:</p>
+<p><strong>Order Confirmation</strong></p>
+<p><img alt="" src="/_images/docbits/Infor/IDM_DocumentType_OrderConfirmation.png" />
+<img alt="" src="/_images/docbits/Infor/IDM_Attributes_OrderConfirmation.png" /></p>
+<p><strong>Delivery Note</strong></p>
+<p><img alt="" src="/_images/docbits/Infor/IDM_DocumentType_DeliveryNote.png" />
+<img alt="" src="/_images/docbits/Infor/IDM_Attributes_DeliveryNote.png" /></p>
+<p><strong>Invoice</strong></p>
+<p><img alt="" src="/_images/docbits/Infor/IDM_DocumentType_Invoice.png" />
+<img alt="" src="/_images/docbits/Infor/IDM_Attributes_Invoice.png" /></p>
+<p>When you open the <strong>Business Context Model</strong> menu item
+<img alt="" src="/_images/docbits/Infor/IDM_BusinessContextModel.png" /> you will find
+the information here as follows:</p>
+<p><strong>Order Confirmation</strong></p>
+<p><img alt="" src="/_images/docbits/Infor/BusinessContextModel_XQuery_OrderConfirmation.png" /></p>
+<p><code>oc
+/ORDER_CONFIRMATION[@MDS_EntityType = "{entityType}" AND @MDS_id1 = "{id1}"]</code></p>
+<p><strong>Delivery Note</strong></p>
+<p><img alt="" src="/_images/docbits/Infor/BusinessContextModel_XQuery_DeliveryNote.png" /></p>
+<p><code>dn
+/DELIVERY_NOTE[@MDS_EntityType = "{entityType}" AND @MDS_id1 = "{id1}"]</code></p>
+<p><img alt="" src="/_images/docbits/Infor/BusinessContextModel_XQuery_DeliveryNote2.png" /></p>
+<p><code>dn2
+/DELIVERY_NOTE[@Delivery_Note_Id="{id3}"]</code></p>
+<p><strong>Invoice</strong></p>
+<p><img alt="" src="/_images/docbits/Infor/BusinessContextModel_XQuery_Invoice.png" /></p>
+<p><code>inv
+/LN_SupplierInvoice[@MDS_EntityType = "{entityType}" AND @MDS_id1 = "{id1}"]</code></p>
+<p>All these steps connect all documents from IDM to the corresponding
+workbench in LN, where they are also displayed. And this is how it looks
+in LN:</p>
+<p><strong>Order Confirmation</strong></p>
+<p><img alt="" src="/_images/docbits/Infor/LN_Order_Order%20Confirmation.png" /></p>
+<p><strong>Delivery Note</strong></p>
+<p><img alt="" src="/_images/docbits/Infor/LN_Workbench%20Order%20volume_Delivery%20Note.png" /></p>
+<p><strong>Invoice</strong></p>
+<p><img alt="" src="/_images/docbits/Infor/LN_Workbench%20Accounts%20Payable%20Processing_Invoice.png" /></p><h2>API Integration with Infor OS &amp; Infor CloudSuite</h2>
+<p><img alt="Infor CloudSuite API Flow for DocBits
+(DOC²)" src="/_images/docbits/infor/Doc2-Infor.png" title="Infor CloudSuite API Flow for DocBits (DOC²)" /></p>
+<p>DocBits (DOC²) seamlessly integrates with Infor LN/M3 through ION API,
+ION Desk, and Infor Standard BODs. Our API integration allows us to
+export data to Infor and perform master data validation in DocBits
+(DOC²).</p>
+<h3>Exporting Data to Infor</h3>
+<p>We use the ION API to send the PDF with attributes to IDM and the BOD
+Sync.CaptureDocument to ION Desk. In ION Desk, we transform the
+Sync.CaptureDocument to the desired target BODs based on the document
+type being processed. These transformed Infor BODs are then
+automatically imported to LN or M3.</p>
+<h3>Master Data Validation in DocBits (DOC²)</h3>
+<p>To identify the supplier or compare/match purchase order lines, we
+activate a trigger in LN/M3 that sends the Sync.RemitToPartyMaster,
+Sync.SupplierPartyMaster, and Sync.PurchaseOrder BODs to DocBits (DOC²).
+We configure this process in ION Desk by defining the dataflow to a
+specific connection point to DocBits (DOC²).</p>
+<p>Explore our use cases and learn more about our API integration with
+Infor LN/M3:</p>
+<ul>
+<li><a href="/docbits/export/export-to-infor/">Exporting Data to Infor</a></li>
+<li><a href="/docbits/doc2-with-infor/IDM-business-context-model/">IDM Business Context
+    Model</a></li>
+<li><a href="/docbits/configuring-sso-in-cloud/">Infor SSO with DocBits (DOC²)</a></li>
+<li><a href="/docbits/doc2-with-infor/infrastructure/">Infor Infrastructure &amp;
+    Security</a></li>
+</ul><p>::: video-container
+<code>&lt;iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen&gt;</code>{=html}<code>&lt;/iframe&gt;</code>{=html}
+:::</p>
+<h2>Infor Infrastructure</h2>
+<p>Discover how the Infor infrastructure works with DocBits (DOC²) to
+streamline document management. Learn about integrations and explore the
+possibilities.</p>
+<p><img alt="Infor Infrastructure
+Diagram" src="/images/infor-infrastructure-diagram.jpg" title="Infor Infrastructure Diagram" /></p>
+<h2>Use Cases</h2>
+<p>Explore real-world use cases for DocBits (DOC²) with Infor. See how
+other businesses are using this powerful document management solution to
+improve their workflows.</p>
+<p><img alt="DocBits (DOC²) with Infor Use
+Cases" src="/images/doc2-infor-use-cases.jpg" title="DocBits (DOC²) with Infor Use Cases" /></p>
+<h2>IDM Business Context Model</h2>
+<p>Understand the IDM business context model and how it relates to DocBits
+(DOC²) and Infor. Get a deeper understanding of the technology behind
+the solution.</p>
+<p><img alt="IDM Business Context
+Model" src="/images/idm-business-context-model.jpg" title="IDM Business Context Model" /></p>
+<h2>Export Options</h2>
+<p>Learn about the different export options available with DocBits (DOC²)
+and Infor. See how you can easily export documents to other systems for
+seamless integration.</p>
+<p><img alt="Export
+Options" src="/images/doc2-infor-export-options.jpg" title="Export Options" /></p>
+<h2>Configuring SSO in Cloud</h2>
+<p>Get step-by-step instructions for configuring SSO in the cloud with
+DocBits (DOC²) and Infor. Ensure secure access to your documents and
+streamline your workflows.</p>
+<p><img alt="Configuring SSO in
+Cloud" src="/images/configuring-sso-in-cloud.jpg" title="Configuring SSO in Cloud" /></p><h2>Efficient Document Management with DocBits (DOC²) and Infor</h2>
+<p>DocBits (DOC²) is a powerful document management solution that can help
+you streamline your document processing workflows. With seamless
+integration with Infor LN and Infor M3, DocBits (DOC²) can help you
+manage your documents efficiently and accurately. Here are some of the
+use cases where DocBits (DOC²) can help you:</p>
+<p><code>mermaid
+graph LR
+  A[Start] --&gt; B{Invoice?};
+  Infor[Infor] --&gt; |Master Data Validation| C;
+  B --&gt;|Yes| C[Extract Header Fields];
+  C --&gt;|Optional| T[Table Fields];
+  T --&gt;C;
+  C --&gt; D[Send to Infor];
+  D --&gt; E;
+  B ----&gt;|No| E[End];</code></p>
+<p>With DocBits (DOC²) you can do more</p>
+<p><code>mermaid
+graph LR
+  A[Start] --&gt; B{Invoice?};
+  B --&gt;|Yes| C[Extract];
+  C --&gt;|Optional| T[Table Extract];
+  T --&gt;C;
+  Infor[Infor] --&gt; |Master Data Validation| C;
+  C --&gt; D[Convert to ZUGFeRD];
+  D --&gt; F[Send to Infor];
+  F --&gt; Z;
+  B ----&gt;|No| Z[End];</code></p>
+<h3>Simple Invoice Processing</h3>
+<p>This is the most common use case for DocBits (DOC²). With its advanced
+OCR capabilities, DocBits (DOC²) can extract relevant information from
+invoices and send it to Infor for further processing. Here's how it
+works:</p>
+<h3>Invoice and Delivery Note</h3>
+<p><code>mermaid
+graph LR
+  A[Start] --&gt; B{Classification?};
+  B --&gt;|Invoice| Extract[Extract];
+  B --&gt;|Delivery Note| Extract;
+  Extract --&gt;|Optional| T[Table Extract];
+  T --&gt;Extract;
+  Infor --&gt; |Master Data Validation| Extract;
+  Extract --&gt; ION[Infor ION &amp; IDM];
+  B --&gt;|Else| G[Only OCR];
+  G --&gt;IDM[Send PDF to Infor IDM];
+  IDM --&gt; Infor;
+  ION --&gt; Infor;
+  Infor --&gt; End[End];</code></p>
+<h3>Invoice and Orders incl. PO Matching and ZUGFeRD and Order-X</h3>
+<p><code>mermaid
+graph LR
+  A[Start] --&gt; B{Classification?};
+  B --&gt;|Invoice| Extract[Extract];
+  B --&gt;|Delivery Note| Extract;
+  B ----&gt;|Order confirmation| Extract;
+  Extract --&gt;T[Table Fields];
+  T --&gt;Extract;
+  Extract ---&gt; D[Convert to ZUGFeRD];
+  Extract --&gt; PO;
+  D --&gt; F[Send to Infor PDF + ION];
+  F --&gt; Infor;
+  PO --&gt; |Confirm PO|Infor;
+  B --&gt;|Else| G[Only OCR];
+  G --&gt;H[Send PDF to Infor IDM];
+  H --&gt; Infor[Infor];
+  Infor[Infor] --&gt; |Purchase Order|PO[PO Matching];
+  Infor[Infor] --&gt; |Master Data Validation| Extract;
+  PO --&gt; Order-X[Order-X];
+  Extract --&gt; Order-X;
+  Infor --&gt; Order-X;
+  Order-X --&gt; Supplier[Supplier];
+  Supplier --&gt; End;
+  Infor --&gt; End;</code></p>
+<h1>Add Infor ION API</h1>
+<p>::: video-container
+```{=html}</p>
+<iframe width="840" height="472.5" src="https://www.youtube-nocookie.com/embed/N64jzntUMao" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+```
+```{=html}
+</iframe>
+<p>```
+:::</p>
+<h1>Add Connection Points in Infor OS</h1>
+<p>::: video-container
+```{=html}</p>
+<iframe width="840" height="472.5" src="https://www.youtube-nocookie.com/embed/ZMVqpRRkv48" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+```
+```{=html}
+</iframe>
+<p>```
+:::</p>
+<h1>Add Connection Points in Infor OS</h1>
+<p>::: video-container
+```{=html}</p>
+<iframe width="840" height="472.5" src="https://www.youtube-nocookie.com/embed/sYST3GLn1IY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+```
+```{=html}
+</iframe>
+<p>```
+:::</p>
+<h1>Purchase Order</h1>
+<p>::: video-container
+```{=html}</p>
+<iframe width="840" height="472.5" src="https://www.youtube-nocookie.com/embed/fkJrEDuG5Nw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+```
+```{=html}
+</iframe>
+<p>```
+:::</p>
+<h1>Delivery Note</h1>
+<p>::: video-container
+```{=html}</p>
+<iframe width="840" height="472.5" src="https://www.youtube-nocookie.com/embed/4KsliipUFx8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+```
+```{=html}
+</iframe>
+<p>```
+:::</p>
+<h1>Invoice</h1>
+<p>::: video-container
+```{=html}</p>
+<iframe width="840" height="472.5" src="https://www.youtube-nocookie.com/embed/k9z586vsLZs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+```
+```{=html}
+</iframe>
+<p>```
+:::</p><h1>Application Infrastructure</h1>
+<h3>Open port</h3>
+<ul>
+<li>443</li>
+</ul>
+<h3>Communication with the Database</h3>
+<p>Kubernetes and our Databases are inside the same VPC. We only access the
+database via the local IP, this way the transferred data never leaves
+the local network. Additionally, we only use SSL secured connections to
+communicate with the database.</p>
+<h3>Spaces</h3>
+<p>The uploaded documents are stored in a Space. The traffic is secured via
+SSL and multiple keys are required to access the stored files.</p>
+<h3>Traffic Security</h3>
+<p>We only allow https secured connections to communicate with our servers.
+This ensures that the transferred data is encrypted and secure.</p>
+<h2>Infor Cloud</h2>
+<p><img alt="cloud-infor" src="/_images/security/infra-cloud.png" /></p>
+<h2>Infor On-Prem</h2>
+<p>With our On-Prem solution, you don't have to open any ports. This
+ensures that the security of your network is not compromised.
+<img alt="on-prem-infor" src="/_images/security/infra-on-prem.png" /></p><h1>Configuring SSO in Infor Cloud</h1>
+<h2>Step by step guide</h2>
+<h3><strong>Prerequisites</strong></h3>
+<p>```{=html}</p>
+<table>
+```
+```{=html}
+<tbody>
+```
+```{=html}
+<tr>
+```
+```{=html}
+<td>
+```
+`<strong>`{=html}Required Information`</strong>`{=html}
+```{=html}
+</td>
+```
+```{=html}
+<td>
+```
+`<strong>`{=html}Description`</strong>`{=html}
+```{=html}
+</td>
+```
+```{=html}
+</tr>
+```
+```{=html}
+<tr>
+```
+```{=html}
+<td>
+```
+Login Details to Cloud
+```{=html}
+</td>
+```
+```{=html}
+<td>
+```
+Credentials are mandatory for accessing the Infor Cloud
+environment.`<br>`{=html}The user should have the roles
+"Infor-SystemAdministrator" and "UserAdmin".
+```{=html}
+</td>
+```
+```{=html}
+</tr>
+```
+```{=html}
+<tr>
+```
+```{=html}
+<td>
+```
+Config Admin Details (DocBits (DOC²))
+```{=html}
+</td>
+```
+```{=html}
+<td>
+```
+You should have received an email from FellowPro AG with the login
+details for the DocBits (DOC²) SSO Settings
+page.`<br>`{=html}`<br>`{=html}You will need login and
+password.`<br>`{=html}
+```{=html}
+</td>
+```
+```{=html}
+</tr>
+```
+```{=html}
+<tr>
+```
+```{=html}
+<td>
+```
+Certificate
+```{=html}
+</td>
+```
+```{=html}
+<td>
+```
+You can download the certificate in DocBits (DOC²) under SSO Service
+Provider Settings
+```{=html}
+</td>
+```
+```{=html}
+</tr>
+```
+```{=html}
+</tbody>
+```
+```{=html}
+</table>
+<p>```
+<strong>1. Get access to the Cloud and check your access</strong></p>
+<p>URL starts with
+<a href="https://mingle-portal.eu1.inforcloudsuite.com/">https://mingle-portal.eu1.inforcloudsuite.com/\&lt;TENANT_NAME</a>>
+followed by your personal extension</p>
+<p><img alt="" src="/_images/docbits/infor-signin-1024x520.png" />{loading="lazy"}</p>
+<p>a)  Choose the option Cloud Identities and use your login details</p>
+<p><img alt="" src="/_images/docbits/LogIn-infor-1024x640.png" />{loading="lazy"}</p>
+<p>b)  After login you will have access to the Infor Cloud. In this case we
+    enter this page, but on the burger menu you will find access to all
+    application.</p>
+<p><img alt="" src="/_images/docbits/Welcome-to-infor-Ming.le_-1024x585.png" />{loading="lazy"}</p>
+<p><img alt="" src="/_images/docbits/infor_Burger-Menu-1024x586.png" />{loading="lazy"}</p>
+<p><strong>2. Open User Management for adding new Service Provider</strong></p>
+<p>On the right hand side of the bar menu, you will find the user menu and
+there you can access the user management</p>
+<p><img alt="" src="/_images/docbits/infor_User-Management-1024x548.png" />{loading="lazy"}</p>
+<p>a)  Then you need to select in the left hand side menu the option
+    <strong>Security Administration</strong> and <strong>Service Provider</strong>.</p>
+<p><img alt="" src="/_images/docbits/infor_Service-Provider-1024x523.png" />{loading="lazy"}</p>
+<p>b.  You will see this window with the Service Providers.</p>
+<p><img alt="" src="/_images/docbits/infor_Service-Provider_2-1-1024x479.png" />{loading="lazy"}</p>
+<p>c.  Now click on the "+" sign and add our DocBits (DOC²) as Service
+    Provider. (View step 4)</p>
+<p><img alt="" src="/_images/docbits/infor6.png" />{loading="lazy"}</p>
+<p><strong>3. Access the SSO SERVICE PROVIDER SETTINGS in DocBits (DOC²)</strong></p>
+<p>a)  Log in on URL <a href="https://app.polydocs.io/">https://app.polydocs.io/</a> with the login details you
+    received from us.</p>
+<p>b)  Go to SETTINGS (on top bar) and choose SSO Settings down at the
+    bottom of the list.</p>
+<p>Here you will find all the information you need for the following steps</p>
+<p>c)  Download the certificate</p>
+<p><img alt="" src="/_images/docbits/DOC2_SSO-Service-Provider-Settings-1024x640.png" />{loading="lazy"}</p>
+<p><strong>4. Filling the Service Provider with the help of SSO Service Provider
+Settings in DocBits (DOC²)</strong></p>
+<p><img alt="" src="/_images/docbits/infor_Service-Provider_3-1024x891.png" /></p>
+<p>```{=html}</p>
+<table>
+```
+```{=html}
+<tbody>
+```
+```{=html}
+<tr>
+```
+```{=html}
+<td>
+```
+`<strong>`{=html}Field`</strong>`{=html}
+```{=html}
+</td>
+```
+```{=html}
+<td>
+```
+`<strong>`{=html}Value`</strong>`{=html}
+```{=html}
+</td>
+```
+```{=html}
+</tr>
+```
+```{=html}
+<tr>
+```
+```{=html}
+<td>
+```
+`<strong>`{=html}Application Type`</strong>`{=html}
+```{=html}
+</td>
+```
+```{=html}
+<td>
+```
+DEFAULT_SAML
+```{=html}
+</td>
+```
+```{=html}
+</tr>
+```
+```{=html}
+<tr>
+```
+```{=html}
+<td>
+```
+`<strong>`{=html}Display Name`</strong>`{=html}
+```{=html}
+</td>
+```
+```{=html}
+<td>
+```
+DocBits (DOC²)
+```{=html}
+</td>
+```
+```{=html}
+</tr>
+```
+```{=html}
+<tr>
+```
+```{=html}
+<td>
+```
+`<strong>`{=html}Entity ID`</strong>`{=html}
+```{=html}
+</td>
+```
+```{=html}
+<td>
+```
+See Entity ID under SSO SERVICE SETTINGS
+```{=html}
+</td>
+```
+```{=html}
+</tr>
+```
+```{=html}
+<tr>
+```
+```{=html}
+<td>
+```
+`<strong>`{=html}SSO Endpoint`</strong>`{=html}
+```{=html}
+</td>
+```
+```{=html}
+<td>
+```
+Copy the SSO URL from SSO SERVICE SETTINGS and paste it in the
+`<strong>`{=html}SSO Endpoint `</strong>`{=html}field.
+```{=html}
+</td>
+```
+```{=html}
+</tr>
+```
+```{=html}
+<tr>
+```
+```{=html}
+<td>
+```
+`<strong>`{=html}SLO Endpoint`</strong>`{=html}
+```{=html}
+</td>
+```
+```{=html}
+<td>
+```
+Copy SLO URL from SSO SERVICE SETTINGS and paste it in the
+`<strong>`{=html}SLO Endpoint `</strong>`{=html}field.
+```{=html}
+</td>
+```
+```{=html}
+</tr>
+```
+```{=html}
+<tr>
+```
+```{=html}
+<td>
+```
+`<strong>`{=html}Signing Certificate`</strong>`{=html}
+```{=html}
+</td>
+```
+```{=html}
+<td>
+```
+Upload the appropriate .cer file you have downloaded in step 3c) from
+SSO SERVICE SETTINGS
+```{=html}
+</td>
+```
+```{=html}
+</tr>
+```
+```{=html}
+<tr>
+```
+```{=html}
+<td>
+```
+`<strong>`{=html}Name ID Format and Mapping`</strong>`{=html}
+```{=html}
+</td>
+```
+```{=html}
+<td>
+```
+emailaddress
+```{=html}
+</td>
+```
+```{=html}
+</tr>
+```
+```{=html}
+</tbody>
+```
+```{=html}
+</table>
+<p>```
+<img alt="" src="/_images/docbits/infor_Service-Provider_completed-956x1024.png" /></p>
+<p>a)  When you have filled out everything remember to save it with the
+    disk icon above Application Type</p>
+<p>b)  Then, enter the service provider DocBits (DOC²) again.</p>
+<p>c)  Click on view the Identity Provider Information underneath.</p>
+<p><img alt="" src="/_images/docbits/infor_Identity-Provider-Information-copy-1024x559.png" />{loading="lazy"}</p>
+<p><img alt="" src="/_images/docbits/infor_Identity-Provider-Information-806x1024.png" />{loading="lazy"}</p>
+<p>d)  Export the <strong>SAML METADATA.</strong></p>
+<p>File looks like this: ServiceProviderSAMLMetadata_10_20_2021.xml</p>
+<p><strong>5. Import the SAML METADATA in the SSO Settings.</strong></p>
+<p>Go to IDENTITY SERVICE PROVIDER SETTINGS, enter your Tenant ID
+(e.g. FELLOWCONSULTING_DEV and underneath that line you see Upload file
+and the IMPORT Button, where you need to upload the previously exported
+SAML METADATA file.</p>
+<p>a)  Click on IMPORT an then choose the METADATA file that you have
+    already downloaded from the SSO SERVICE PROVIDER SETTINGS</p>
+<p>b)  Click on CONFIGURE</p>
+<p><img alt="" src="/_images/docbits/DOC2_identity-service-provider-settings_completed-1024x316.png" />{loading="lazy"}</p>
+<p>This part is successfully completed when you see the following popup</p>
+<p><img alt="" src="/_images/docbits/DOC2_File-successfully-saved.png" />{loading="lazy"}</p>
+<p><strong>6. Add new Application in infor Ming.le</strong></p>
+<p>a)  got to Admin settings and</p>
+<p><img alt="" src="/_images/docbits/infor_Admin-Settings_Manage-Applications-1024x528.png" />{loading="lazy"}</p>
+<p>b)  click on ADD APPLICATION top right</p>
+<p><img alt="" src="/_images/docbits/infor_Add-Application.png" />{loading="lazy"}</p>
+<p>c)  fill out all fields like on following picture but with your own SSO
+    Url, don't forget to choose icon and click on SAVE</p>
+<p><img alt="" src="/_images/docbits/infor_Add-New-Application.png" />{loading="lazy"}</p>
+<p><strong>And now the last step:</strong></p>
+<ul>
+<li>Log out of DocBits (DOC²).</li>
+<li>Go back to the burger menu in infor and select the icon you just
+    created.</li>
+<li>And you are already on the dashboard of DocBits (DOC²).</li>
+</ul>
+<p><img alt="" src="/_images/docbits/Sign-in-over-SSO-1024x640.png" />{loading="lazy"}</p><p>::: video-container
+<code>&lt;iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen&gt;</code>{=html}<code>&lt;/iframe&gt;</code>{=html}
+:::</p>
+<h1>Customize DocBits (DOC²) to Your Company with These Settings</h1>
+<p>In this section, you'll find all the settings you need to customize
+DocBits (DOC²) to your company's needs. From global settings to document
+processing options, DocBits (DOC²) has everything you need to improve
+your document management.</p>
+<h2>Global Settings</h2>
+<ul>
+<li><a href="/docbits/company-information/">Company Information</a> - Add your
+    company's information to personalize DocBits (DOC²).</li>
+<li><a href="/security/privileges/">Groups, Users and Permissions</a> - Manage user
+    access and permissions.</li>
+<li><a href="/docbits/settings/integration/">Integration</a> - Integrate DocBits
+    (DOC²) with other tools and software.</li>
+<li><a href="/docbits/settings-document-types/">Document Types</a> - Customize
+    document types to fit your needs.</li>
+<li><a href="/docbits/settings/email-notification/">Email Notification</a> - Set up
+    email notifications for important events.</li>
+</ul>
+<h2>Document Processing</h2>
+<ul>
+<li><a href="/docbits/import/">Import</a> - Import documents into DocBits (DOC²).</li>
+<li><a href="/docbits/document-validation/ocr-view/">OCR Settings</a> - Customize
+    OCR settings for accurate document processing.</li>
+<li><a href="/docbits/document-validation/">Classification and Extraction</a> -
+    Classify and extract data from documents.</li>
+<li><a href="/docbits/settings-master-data-validation/">Supplier Validation</a> -
+    Validate supplier data for accurate processing.</li>
+<li><a href="/docbits/export/">Export</a> - Export processed documents.</li>
+<li><a href="/example/approval/">Approval</a> - Approve documents for further
+    processing.</li>
+</ul>
+<p>Improve your document management with DocBits (DOC²). Watch the video
+above to learn more about how DocBits (DOC²) can help your business.</p><p>In this section you can configure all types of email notifications for
+your document types. Easily set employees to be notified when a document
+has a certain status.</p>
+<p>Go to Settings and open the <strong>Email notification</strong> menu.</p>
+<p><img alt="Settings" src="/_images/docbits/Settings/Email%20Notification/Image_1_email_location.png" /></p>
+<p>To add a new notification, click <code>+ NEW</code> in the top right corner and the
+following window will open.</p>
+<p><img alt="Menu" src="/_images/docbits/Settings/Email%20Notification/Image_2_new_email.png" /></p>
+<p>In this you can define a custom name for the notification, select the
+document type and status as well as the time unit and enter the e-mail
+address of the person who should receive the corresponding notification.</p>
+<p><code>{=html}
+&lt;ins&gt;</code>
+The following status can be selected:
+<code>{=html}
+&lt;/ins&gt;</code>
+-   Ready For Validation
+-   Pending Approval
+-   Pending Second Approval</p>
+<p>:fontawesome-solid-circle-info:{ style="color: #0F17E4" }More will
+follow</p>
+<p><code>{=html}
+&lt;ins&gt;</code>
+Time Units to choose are:
+<code>{=html}
+&lt;/ins&gt;</code>
+-   Minutes
+-   Hours
+-   Days</p>
+<p>The Delay hast to be set to a minimum of 5 minutes as the email server
+will need that time to respond.</p>
+<p>The email will be sent after selected time duration, if document status
+remains unchanged.</p>
+<p><code>{=html}
+&lt;ins&gt;</code>
+This is what the corresponding email notifications look like:
+<code>{=html}
+&lt;/ins&gt;</code>
+<img alt="Ready For
+Validation" src="/_images/docbits/DOC2_email_readyforvalidation.png" /></p>
+<p><img alt="Pending Approval" src="/_images/docbits/DOC2_email_forapproval.png" /></p><h3>API Calls for Document Upload and Status Check</h3>
+<p>API integration provides functions and services that connect
+applications and processes. In this guide, we will show you how to make
+API calls through api.polydocs.io for document upload and status check.</p>
+<h2>Authentication</h2>
+<p>To make API calls, authentication is the first step. Follow the steps
+below to authenticate:</p>
+<ol>
+<li>Open <a href="https://api.polydocs.io/docs">api.polydocs.io</a>.</li>
+<li>Click on <strong>Authorize</strong> in the upper right corner.</li>
+<li>Enter your <a href="/docbits/settings/integration/api-integration/">API Key</a>
+    and confirm by clicking <code>Authorize</code>.</li>
+</ol>
+<p><img alt="Authorize API
+Key" src="/_images/docbits/Settings/Integration/API%20calls%20examples/1-admin_guides_doc2-api-authorize.png" />{loading="lazy"}</p>
+<h2>Upload Document</h2>
+<p>To upload a document, follow the steps below:</p>
+<ol>
+<li>After authentication, scroll down to the <strong>POST /document/process</strong>
+    endpoint.</li>
+<li>Open the tab and click on <code>Try it out</code> in the upper right corner.</li>
+<li>Enter the following value in the <code>source</code> field:
+    <code>email:{Pattern name}</code>.</li>
+<li>Select the file you want to upload and click <code>Execute</code>.</li>
+</ol>
+<p>Your document will be uploaded to your dashboard with the rules you set
+in <a href="https://app.polydocs.io/settings/classify-extract">DocBits (DOC²)</a>.</p>
+<p><img alt="Classification
+Rules" src="/_images/docbits/Settings/Integration/API%20calls%20examples/5-classification_rules.png" />{loading="lazy"}
+<img alt="Uploaded Document on
+Dashboard" src="/_images/docbits/Settings/Integration/API%20calls%20examples/6-dashboard_mango.png" />{loading="lazy"}</p>
+<h2>Document Status Check</h2>
+<p>To check the status of a document, follow the steps below:</p>
+<ol>
+<li>After authentication, scroll down to the <strong>GET /document/status</strong>
+    endpoint.</li>
+<li>Open the tab and click on <code>Try it out</code> in the upper right corner.</li>
+<li>Enter the document ID in the <code>doc-id</code> field. You can find the
+    document ID when you open the document on the dashboard. This is the
+    last part of the URL when the document is open.</li>
+</ol>
+<p><img alt="Document
+ID" src="/_images/docbits/Settings/Integration/API%20calls%20examples/8-DOC2_API_GET_Document-Status_doc_id.png" />{loading="lazy"}</p>
+<p>You will receive the following response:</p>
+<p><img alt="Document Status
+Response" src="/_images/docbits/Settings/Integration/API%20calls%20examples/9-DOC2_API_GET_Document-Status_Response.png" />{loading="lazy"}</p>
+<p>If the status is "Ready For Validation," it means that the user can
+check the document.</p>
+<h2>Upload Document with Metadata</h2>
+<p>To upload a document with metadata, follow the steps below:</p>
+<ol>
+<li>After authentication, scroll down to one of these endpoints:
+    <code>/document/process_documents</code>, <code>/document/process</code>, or
+    <code>/document/process_base64</code>.</li>
+<li>Open the tab and click on <code>Try it out</code> in the upper right corner.</li>
+<li>Enter the metadata in the <code>metadata</code> field. The metadata needs to be
+    in a valid JSON format. An example of a metadata entry would be:
+    <code>{"custom-key": "the custom value", "custom_doc_id": "8a5cf33b-c923-4879-96ca-94d69965d508"}</code>.</li>
+<li>Select a file to upload.</li>
+<li>Click <code>Execute</code>.</li>
+<li>Wait for the response. If the metadata field is not a valid JSON, an
+    error message will appear. If "success": true, then your document
+    will be uploaded to your dashboard with the rules you set in
+    <a href="https://app.polydocs.io/settings/classify-extract">DocBits (DOC²)</a>.</li>
+</ol>
+<p>By following these simple steps, you can easily make API calls for
+document upload and status check using api.polydocs.io. For more
+information, visit <a href="https://polydocs.io/">Polydocs</a>.</p><p>::: video-container
+<code>&lt;iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen&gt;</code>{=html}<code>&lt;/iframe&gt;</code>{=html}
+:::</p>
+<h2>API Integration</h2>
+<p>To integrate with DocBits (DOC²) using API Key, follow these steps:</p>
+<ol>
+<li>Go to <a href="/docbits/settings/integration/api-integration/">API Key
+    settings</a></li>
+<li>Generate a new API Key</li>
+<li>Use the API Key to make API calls</li>
+</ol>
+<p>For examples of API calls, see <a href="/docbits/settings/integration/api-calls-examples/">API Calls
+Examples</a>.</p>
+<h2>SSO Integration</h2>
+<p>To integrate with DocBits (DOC²) using SSO Service Provider Settings,
+follow these steps:</p>
+<ol>
+<li>Go to <a href="/docbits/settings-sso-settings/">SSO Service Provider
+    Settings</a></li>
+<li>Follow the step-by-step instructions to set up SSO</li>
+</ol>
+<p>By integrating with DocBits (DOC²) using API Key and SSO Service
+Provider Settings, you can streamline your workflow and improve
+productivity. Contact us for any questions or support needed.</p><p>::: video-container
+<code>&lt;iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen&gt;</code>{=html}<code>&lt;/iframe&gt;</code>{=html}
+:::</p>
+<h2>What is API Integration?</h2>
+<p>API Integration is the process of connecting two or more applications
+via APIs to enable them to communicate with each other. This allows the
+applications to perform a common function or exchange information,
+ensuring data integrity.</p>
+<p>To access the full Polydocs API menu, click
+<a href="https://doc2api.cloudintegration.eu/docs">here</a>.</p>
+<h2>How to Get Your API Key</h2>
+<p>To get started with API Integration in DocBits (DOC²), you will need
+your API Key. You can find your API Key in the Integration menu item in
+the settings. Simply copy and paste your API Key into your application
+to start integrating with DocBits (DOC²).</p>
+<p><img alt="API Key in DocBits (DOC²)
+Settings" src="/_images/docbits/Settings/Integration/API/Image_1_api_key.png" title="API Key in DocBits (DOC²) Settings" /></p>
+<h2>API Calls Examples</h2>
+<p>Looking for examples of API calls? Check out our <a href="/docbits/settings/integration/api-calls-examples/">API Calls
+Examples</a> page for
+various examples to help you get started.</p>
+<p>Start integrating your applications with DocBits (DOC²) today using API
+Integration and streamline your workflow!</p><h2>Approval Before Export</h2>
+<p>This feature can be accessed via Settings > Document Processing >
+Module.</p>
+<p><img alt="Settings" src="/_images/docbits/Settings/Module/Approval/Image_1.png" /></p>
+<p><img alt="Creating Groups and
+Permissions" src="/_images/docbits/Settings/Module/Approval/Image_3.png" /></p>
+<p>To modify the permissions, select "View Permissions" and you will be
+directed to this screen. Here, select the permissions you wish to
+assign.</p>
+<p><img alt="View permissions
+Interface" src="/_images/docbits/Settings/Module/Approval/Image_4.png" /></p>
+<p>Now you can customize the Approval features according to your
+requirements.</p>
+<h1>Understanding the Document Exporting Process in Docbits</h1>
+<p>When you are ready to export a document, select an export option from
+the dropdown at the document's bottom.</p>
+<p><img alt="Confirm and Export
+Option" src="/_images/docbits/Settings/Module/Approval/Image_5.png" /></p>
+<p>If the feature is enabled, the document's status will change to "Pending
+Approval".</p>
+<p><img alt="Pending
+Approval" src="/_images/docbits/Settings/Module/Approval/Image_6.png" /></p>
+<p>The document is now in queue for approval.</p>
+<p>Assign the approver using the "assign" button on the Dashboard. You can
+also manage e-mail notifications for the approver(s) through Settings >
+Email Notification.</p>
+<p><img alt="Email Notification
+1" src="/_images/docbits/Settings/Module/Approval/Image_7.png" /></p>
+<p><img alt="Email Notification
+2" src="/_images/docbits/Settings/Module/Approval/Image_8.png" /></p>
+<p>Use the Approval Before Export feature to streamline your document
+management process in Docbits, making your workflows more efficient.</p><p>If you want to use scripts that, for example, convert currency
+characters or written-out currency names into ISO codes, please activate
+this first in the settings under Module > Document Type > Doc Script.</p>
+<p>\&lt;Script_Settings_Module_Doc Script.png></p>
+<p>After that, go to the desired document type - in our example Invoice,
+open Scripts , copy the script below and overwrite the example with this
+one. Then click on SAVE.</p>
+<p>\&lt;Script_Invoice_Scripts.png></p>
+<p>The result should look like this:</p>
+<p>\&lt;Script_added.png></p>
+<pre><code> currency_map = {
+ "€": "EUR",
+ "EURO": "EUR",
+ "$": "USD",
+ "£": "GBP"
+ }
+
+ currency_value = get_field_value(fields_dict, "currency", None)
+
+ if currency_value:
+     currency_value = currency_value.upper()
+     currency_value = currency_map.get(currency_value, currency_value)
+     set_field_value(fields_dict, "currency", currency_value)
+</code></pre>
+<p>In the next step, upload a document with one of the following criteria:
+"€", "EURO", "\$" or "£".</p>
+<p>When the document is ready for validation, open this and click in the
+Currency validation field. You will be prompted to select the
+appropriate area on the image. Now do this with the € sign.</p>
+<p>\&lt;Script_Currency_select area on image€.png></p>
+<p>You will then immediately see that € is converted to EUR by the script.</p>
+<p>\&lt;Script_conversion_currency_1.png></p>
+<p>The same is done by the script when you mark EURO on the invoice.</p>
+<p>\&lt;Script_Currency_select area on imageEURO.png></p>
+<p>\&lt;Script_conversion_currency_2.png></p><p>Already using DOC² and want to upload documents to your dashboard right
+after scanning? This is how it works:</p>
+<h2>Download Scanner Software</h2>
+<p>Click Scan Document on DOC² Dashboard</p>
+<p><img alt="Dashboard" src="/_images/docbits/Settings/Module/Doc%20Scan/Image_1_DOC2-dashboard-scan-document.png" /></p>
+<p>As your scanner is not installed yet, you'll get the following message</p>
+<p><img alt="Download Scanner
+Message" src="/_images/docbits/Settings/Module/Doc%20Scan/Image_2_doc_scan_installer.png" /></p>
+<p>:fontawesome-solid-circle-info:{ style="color: #0F17E4" } Depending on
+which operating system you use, press the appropriate button to
+download.</p>
+<p>Open the installation file and you will see the following</p>
+<p><img alt="Installer" src="/_images/docbits/Settings/Module/Doc%20Scan/Image_3_installer_2.png" /></p>
+<p>Click on <code>Continue</code>, accept the Software License Agreement with <code>Agree</code>
+and continue to install the software.</p>
+<p>:fontawesome-solid-circle-info:{ style="color: #0F17E4" }Installing this
+software requires 33,6 MB of space. You can change the install location
+before clicking <code>Install</code> in the next step.</p>
+<p>As soon as following screen is displayed you're almost done.</p>
+<p><img alt="Installer" src="/_images/docbits/Settings/Module/Doc%20Scan/Image_4_DOC2-Scan-Manager-installation-completed.png" /></p>
+<p>Open web browser to test if the app works by entering:
+https://local.polydocs.io:12500/ If you see this message on the screen,
+you must first configure some settings in your FritzBox network settings
+if you are using one.</p>
+<p><img alt="Browser" src="/_images/docbits/Settings/Module/Doc%20Scan/Image_5_fritzbox.png" /></p>
+<p>When you see this screen you are ready to click on Doc².</p>
+<p><img alt="HomePage" src="/_images/docbits/Settings/Module/Doc%20Scan/Image_6_homepage.png" /></p>
+<p>You will be redirected to the DocBits (DOC²) login page where you can
+enter your credentials to access your dashboard.</p>
+<p><img alt="Login" src="/_images/docbits/Settings/Module/Doc%20Scan/image_7_docbits_login.png" /></p>
+<p>All you have to do now is activate Doc Scan in the settings under
+Modules.</p>
+<p><img alt="Settings" src="/_images/docbits/Settings/Module/Doc%20Scan/Image_8_Settings-Modules-Doc%20Scan.png" /></p>
+<h2>FritzBox network settings</h2>
+<p>If you get the following error after installing and calling up the url
+https://local.polydocs.io:12500/ , here are the reasons: - DNS
+resolution of private IP addresses not possible. - DNS resolution for
+domain names that refer to private IP addresses in the FRITZ!Box home
+network is not possible via the FRITZ!Box. This means that server
+services in the FRITZ!Box home network cannot be accessed via the domain
+name.</p>
+<p>You may see one of the following error messages: "DNS timed out" "DNS
+request timed out"</p>
+<p><em>Caused</em></p>
+<p>For security reasons, the FRITZ!Box suppresses DNS responses that refer
+to IP addresses in your own home network. This is a security feature of
+the FRITZ!Box to protect against so-called DNS rebinding attacks.</p>
+<p>If you use a FritzBox, you must first make the following settings in the
+FritzBox menu:</p>
+<ol>
+<li>In the FRITZ!Box user interface, click on <code>Heimnetz</code>.</li>
+<li><code>Heimnetz</code> Click in the menu <code>Netzwerk</code>.</li>
+<li>Click on the tab <code>Netzwerkeinstellungen</code>.</li>
+</ol>
+<p>In the Hostname exceptions <code>DNS-Rebind-Schutz section</code>, enter
+local.polydocs.io for which DNS rebind protection should not apply.
+Confirm with . <code>Übernehmen</code></p>
+<h2>Uninstall Doc2Scan Service Manager</h2>
+<p>Run the following command to uninstall Doc2Scan Manager:</p>
+<pre><code> sudo bash /Library/doc2scan/uninstall.sh
+</code></pre>
+<h2>Scanner Compatability</h2>
+<p>Legend:</p>
+<ul>
+<li>Yes - device works perfectly</li>
+<li>No - protocol not supported by device</li>
+<li>? - device works with sane-airscan, but protocol is not reported by
+    user</li>
+<li>Space - author has no information on this mode/device combination</li>
+</ul>
+<p>Definition:</p>
+<ul>
+<li>
+<p>eSCL stands for Airscan is a SANE WebScan frontend that supports
+    Apple's AirScan protocol. The scanners are automatically detected
+    and published via mDNS.</p>
+</li>
+<li>
+<p>WSD stands for "Web Services on Devices" and is a network
+    communication protocol used for printer discovery and management
+    over a local area network. In WSD mode, printers can be
+    automatically discovered and added to a computer system without
+    requiring manual configuration or installing additional printer
+    drivers. It enables easy setup and printing to compatible printers
+    over a network. WSD mode is commonly used in Windows operating
+    systems to discover and connect printers on the network.</p>
+</li>
+</ul>
+<p><strong>Device</strong>                            <strong>eSCL mode</strong>   <strong>WSD mode</strong></p>
+<hr />
+<p>Brother ADS-2700W                     No              Yes
+  Brother DCP-7055W                     No              Yes
+  Brother DCP-9020CDW                   No              Yes
+  Brother DCP-J552DW                    No              Yes
+  Brother DCP-L2540DW                   No              Yes
+  Brother DCP-L2550DN / DCP-L2550DW     Yes           <br />
+  Brother HL-L2380DW series             No              Yes
+  Brother HL-L2395DW series             Yes           <br />
+  Brother MFC-7360N                     No              Yes
+  Brother MFC-8710DW                    No              Yes
+  Brother MFC-J1012DW                   Yes           <br />
+  Brother MFC-J1300DW                   Yes           <br />
+  Brother MFC-J4410DW                   No              Yes
+  Brother MFC-J4620DW                   No              Yes
+  Brother MFC-J485DW                    Yes           <br />
+  Brother MFC-J625DW                    No              Yes
+  Brother MFC-L2700DW                   No              Yes
+  Brother MFC-L2710DW                   Yes             Yes
+  Brother MFC-L2720DW                   No              Yes
+  Brother MFC-L2750DW                   Yes             Yes
+  Canon D570                            Yes           <br />
+  Canon G600 series                     Yes           <br />
+  Canon imageCLASS MF642C/643C/644C     Yes           <br />
+  Canon imageCLASS MF743cdw             Yes1          <br />
+  Canon imageRUNNER 2625/2630           Yes             Yes
+  Canon imageRUNNER ADVANCE 4545/4551   Yes             Yes
+  Canon imageRUNNER ADV C5550/5560      Yes           <br />
+  Canon imageRUNNER C3120L              Yes             Yes
+  Canon i-SENSYS MF4780w                No              Yes
+  Canon i-SENSYS MF641C                 No              Yes
+  Canon LiDE 300                        Yes           <br />
+  Canon LiDE 400                        Yes           <br />
+  Canon MB5100 series                   Yes           <br />
+  Canon MB5400 series                   Yes             Yes
+  Canon MF110/910                       Yes           <br />
+  Canon MF240 Series                    No              Yes
+  Canon MF260 Series                    Yes             Yes
+  Canon MF410 Series                    Yes             Yes
+  Canon MF440 Series                    Yes             Yes
+  Canon MF645Cx                         Yes           <br />
+  Canon MF745C/746C                     Yes             Yes
+  Canon MG5300 series                   No              Yes
+  Canon PIXMA G3000 series              No              Yes
+  Canon PIXMA MG3600 series             Yes           <br />
+  Canon PIXMA MG5500 Series             No              Yes
+  Canon PIXMA MG7700 Series             Yes           <br />
+  Canon PIXMA TS5000 Series             Yes           <br />
+  Canon PIXMA TS 9550 Series            Yes           <br />
+  Canon TR4529 (PIXMA TR4500 Series)    Yes             Yes
+  Canon TR7500 Series                   No              Yes
+  Canon TR8600 Scanner                  Yes           <br />
+  Canon TS 3100                         Yes           <br />
+  Canon TS 3300                         Yes           <br />
+  Canon TS 3400                         Yes           <br />
+  Canon TS 6151                         Yes           <br />
+  Canon TS 6200 series                  Yes             Yes
+  Canon TS 6400 series                  Yes           <br />
+  Canon TS 8230 series                  No              Yes
+  Dell C1765nfw Color MFP               No              Yes
+  Dell C2665dnf Color Laser Printer     No              Yes
+  Dell C3765dnf Color MFP               No              Yes
+  EPSON ET-2710 Series                  No              Yes
+  EPSON ET-2750 Series                  Yes           <br />
+  EPSON ET-2760 Series                  Yes           <br />
+  EPSON ET-2810 Series                  No              Yes
+  EPSON ET-2850 Series                  Yes           <br />
+  EPSON ET-3750 Series                  Yes           <br />
+  EPSON ET-4850 Series                  Yes           <br />
+  EPSON ET-M2170 Series                 Yes           <br />
+  EPSON Stylus SX535WD                  No              Yes
+  EPSON WF-7710 Series                  No              Yes
+  EPSON XP-2100 Series                  No              Yes
+  EPSON XP-340 Series                   Yes           <br />
+  EPSON XP-442 445 Series               Yes           <br />
+  EPSON XP-5100 Series                  Yes           <br />
+  EPSON XP-6100 Series                  Yes           <br />
+  EPSON XP-7100 Series                  Yes           <br />
+  EPSON XP-8600 Series                  Yes           <br />
+  HP Color Laserjet MFP m178-m181       Yes           <br />
+  HP Color LaserJet MFP M182nw          Yes           <br />
+  HP Color LaserJet MFP M281fdw         Yes           <br />
+  HP Color LaserJet MFP M283fdw         Yes           <br />
+  HP Color LaserJet MFP M477fdw         Yes             Yes
+  HP Color LaserJet Pro M478f-9f        Yes           <br />
+  HP Color LaserJet Pro MFP M277dw      Yes           <br />
+  HP DeskJet 2540                       Yes           <br />
+  HP DeskJet 2600 series                Yes           <br />
+  HP DeskJet 2700 series                Yes           <br />
+  HP DeskJet 3700 series                Yes           <br />
+  HP DeskJet 5000 series                Yes           <br />
+  HP DeskJet 5200 series                Yes           <br />
+  HP ENVY 4500                          Yes           <br />
+  HP ENVY 5055 series                   Yes           <br />
+  HP ENVY 5530 series                   Yes           <br />
+  HP ENVY 5540                          Yes           <br />
+  HP ENVY 5640                          Yes           <br />
+  HP ENVY Photo 6200 series             Yes           <br />
+  HP ENVY Photo 7800 series             Yes           <br />
+  HP ENVY Pro 6400 series               Yes           <br />
+  HP LaserJet 200 colorMFP M276n        No              Yes
+  HP LaserJet MFP E62655                Yes           <br />
+  HP LaserJet MFP M130fw                No              Yes
+  HP LaserJet MFP M227sdn               Yes           <br />
+  HP LaserJet MFP M426dw                Yes           <br />
+  HP LaserJet MFP M630                  Yes           <br />
+  HP LaserJet Pro M28a                  Yes3          <br />
+  HP LaserJet Pro M28w                  Yes             Yes
+  HP LaserJet Pro M329                  Yes9          <br />
+  HP LaserJet Pro MFP 148fdw            Yes           <br />
+  HP LaserJet Pro MFP M125 series       No              Yes
+  HP LaserJet Pro MFP M225dn            No              Yes
+  HP LaserJet Pro MFP M428dw            Yes           <br />
+  HP LaserJet Pro MFP M521 series       No              Yes
+  HP Laser MFP 131 133 135-138          Yes           <br />
+  HP Neverstop Laser MFP 1202nw         Yes           <br />
+  HP OfficeJet 3830 series              Yes           <br />
+  HP Officejet 4630                     Yes           <br />
+  HP Officejet Pro 6970                 Yes           <br />
+  HP OfficeJet Pro 6978                 Yes           <br />
+  HP OfficeJet Pro 7740                 Yes             No
+  HP OfficeJet Pro 8010 series          Yes           <br />
+  HP OfficeJet Pro 8020 Series          Yes           <br />
+  HP OfficeJet Pro 8730                 Yes             Yes
+  HP OfficeJet Pro 9010 series          Yes           <br />
+  HP ScanJet Pro 3500 fn1               Yes3          <br />
+  HP ScanJet Pro 4500 fn1               Yes           <br />
+  HP Smart Tank Plus 550 series         Yes           <br />
+  Kyocera ECOSYS M2035dn                No              Yes
+  Kyocera ECOSYS M2040dn                Yes             Yes
+  Kyocera ECOSYS M5521cdw               Yes             Yes
+  Kyocera ECOSYS M5526cdw               Yes           <br />
+  Lexmark CX317dn                       Yes             Yes
+  Lexmark MB2236adw                     Yes           <br />
+  Lexmark MC2535adwe                    Yes           <br />
+  Lexmark MC3224adwe                    Yes           <br />
+  Lexmark MC3326adwe                    Yes           <br />
+  OKI-MC853                             Yes           <br />
+  Panasonic KV-S1058Y                   No              Yes
+  Pantum M6500W series                  Yes           <br />
+  Ricoh MP C3003                        No              Yes
+  Samsung M2070 Series                  No              Yes
+  Samsung M267x 287x Series             No              Yes
+  Samsung M288x Series                  No              Yes
+  Samsung M337x 387x 407x Series        No              Yes
+  Samsung SCX-3400 Series               No              Yes
+  SHARP MX-3060N                        Yes           <br />
+  Xerox B205                            Yes             Yes
+  Xerox B215                            Yes           <br />
+  Xerox C235                            Yes           <br />
+  Xerox VersaLink B405                  Yes           <br />
+  Xerox WorkCentre 3025                 No              Yes</p><h1>INDEX</h1>
+<h2>Here you can find the specific module settings and the corresponding articles.</h2>
+<ul>
+<li><a href="layout-builder/">Layout Builder</a></li>
+<li><a href="approval/">Approval</a></li>
+<li><a href="doc-script/">Doc Script</a></li>
+<li><a href="doc-scan/">Doc Scan</a></li>
+<li><a href="idm-acl-updater/">IDM ACL Updater</a></li>
+</ul><h2>Accessing the Layout Builder</h2>
+<p>First of all, ensure that the Layout Manager feature is activated. This
+can be done by navigating to Settings > Document Processing > Module
+> Document Type and ensure that the Layout Builder slider is set too
+active as shown below.</p>
+<p><img alt="Access Layout
+Builder" src="/_images/docbits/Settings/Module/Layout%20Builder/Image%201%20-%20Accessing%20Layout%20Manager.png" /></p>
+<p>After this is done you can access the Layout Manager via Settings >
+Document Types, once on this page you can select from the various
+document types you have created and either select "Edit Layout" as shown
+below</p>
+<p><img alt="Edit
+Layout" src="/_images/docbits/Settings/Module/Layout%20Builder/Image%202%20-%20Edit%20Layout.png" /></p>
+<p>or if you have sub-document types within a created document type you can
+select "Document Sub Types" and select "Edit Layout" for the sub
+document type layout you wish to edit as shown below.</p>
+<p><img alt="Edit Sub Document
+Types" src="/_images/docbits/Settings/Module/Layout%20Builder/Image%203%20-%20Doc%20Sub%20Types.png" /></p>
+<h2>Basics of the Layout Manager</h2>
+<p>After following the previous steps you will reach a page like the one
+shown below.</p>
+<h3>Uploading a document</h3>
+<p>In order to upload a document to the layout builder, simply navigate to
+the right on the screen</p>
+<p><img alt="Upload
+Document" src="/_images/docbits/Settings/Module/Layout%20Builder/Image%204%20-%20Uploading%20a%20Doc%201.png" /></p>
+<p>Click on the "Upload Documents" button or drag and drop your desired
+document into the provided area</p>
+<p><img alt="Upload
+Document" src="/_images/docbits/Settings/Module/Layout%20Builder/Image%205%20-%20Uploading%20a%20Doc%202.png" /></p>
+<h3>Groups</h3>
+<p>Groups can be created by selecting the following icon.</p>
+<p><img alt="Create
+Group" src="/_images/docbits/Settings/Module/Layout%20Builder/Image%206%20-%20Groups%201.png" /></p>
+<p>Groups allow you to create different sections on a layout, this makes it
+easier to separate different groups of data or information to make a
+layout easier to follow. You can create a title for each group so that a
+user can know what information they will find in that group.</p>
+<p><img alt="Groups" src="/_images/docbits/Settings/Module/Layout%20Builder/Image%207%20-%20Groups%202.png" /></p>
+<h3>Form Elements</h3>
+<p><img alt="Form
+Elements" src="/_images/docbits/Settings/Module/Layout%20Builder/Image%208%20-%20Form%20Elements.png" /></p>
+<p>These are a set of default fields that can be dragged and dropped into
+the layout builder and are available to you to create your desired
+layout. These include:</p>
+<p>Text - This is a text box which creates a field in the layout that can
+have text entered into it once on the validation screen.</p>
+<p>Label - This is a field that can be used to create uneditable text, this
+could be used to create sub-headings or any other desired uneditable
+text when on the validation screen.</p>
+<p>Checkbox - This creates a boolean type field which can be checked or
+unchecked.</p>
+<p>Multi Checkbox - This functions the same way as the "Checkbox" but can
+be used when the user knows they will be adding multiple checkboxes in
+one section.</p>
+<p>Horizontal Separator - This creates a horizontal line on the layout that
+can be used to split up sections within a group on the layout.</p>
+<p>Table of Checkboxes - This lets the user create a table of checkboxes
+consisting of custom x- and y-axis values, eg.</p>
+<p><img alt="Table of
+Checkboxes" src="/_images/docbits/Settings/Module/Layout%20Builder/Image%209%20-%20Table%20of%20Checkboxes.png" /></p>
+<p>Button - This creates a clickable button on the validation screen within
+the layout that can be set to one of three functions, including: Export,
+Export mit Sonderwunsch or Reject.</p>
+<h3>Creating document specific fields</h3>
+<p>The user is able to create their own custom groups and fields for a
+document type, this can be done when originally creating a document type
+but also by selecting "Fields" when on the Document Types page in
+Settings.</p>
+<p><img alt="Fields" src="/_images/docbits/Settings/Module/Layout%20Builder/Image%2010%20-%20Blank%20Spaces%201.png" /></p>
+<h3>Creating blank spaces</h3>
+<h4>The 100 percent rule</h4>
+<p><img alt="Blank
+Spaces" src="/_images/docbits/Settings/Module/Layout%20Builder/Image%2011%20-%20Blank%20Spaces%202.png" /></p>
+<p>In order to create the above space on the layout, a "Label" from the
+Form Elements must be used in a special way. The reason for this is that
+the Layout Manager operates according to a 100 space per line system in
+that 1 space represents 1 percent of a line, this means that fields can
+only take up 100 spaces per line as show below.</p>
+<p><img alt="Blank
+Spaces" src="/_images/docbits/Settings/Module/Layout%20Builder/Image%2012%20-%20Blank%20Spaces%203png.png" /></p>
+<p>This means that the user must build the layout line by line according to
+this rule. For example lets say you would like to add the fields "Name"
+and "Date" in the same line but would like the "Name" field to be
+larger. This can be done by dragging and dropping the "Text" field from
+the Field Elements drop down and naming each field "Name" and "Date" as
+shown.</p>
+<p><img alt="Blank
+Spaces" src="/_images/docbits/Settings/Module/Layout%20Builder/Image%2013%20-%20Blank%20Spaces%204.png" /></p>
+<p>The problem now exists that they are both the same size of 33 (this is
+the default size of all dragged and dropped fields) but you would like
+the "Name" field to be larger than the "Date" field and both fields
+should take up the entire line on the layout. Therefore, by following
+the 100 percent rule, you can set the "Name" and "Date" fields to any
+combination of 100 that you would desire. This of course depends on how
+large you would like each individual field but for the purpose of this
+example we will set the "Name" field to 70 and the "Date" field to 30,
+the results are:</p>
+<p><img alt="Blank
+Spaces" src="/_images/docbits/Settings/Module/Layout%20Builder/Image%2014%20-%20Blank%20Spaces%205.png" /></p>
+<p>This same rule applies to all fields in the Layout Manager.</p>
+<h4>Creating Blank Spaces</h4>
+<p>Now that this rule has been explained, creating blank spaces will make
+more sense. As previously mentioned, in order to create a blank space
+you have to use a "Label" from the Form Elements.</p>
+<p>For example, let's say that you would like to create a blank space
+between these two fields.</p>
+<p><img alt="Blank
+Spaces" src="/_images/docbits/Settings/Module/Layout%20Builder/Image%2015%20-%20Blank%20Spaces%206.png" /></p>
+<p>Step one is to drag and drop a "Label" between these two fields, once
+added you can click on the "Label" field you just added and on the left
+you will be presented with the properties of the field. Now, in the same
+way you would create or change the name of a field as shown previously,
+you will remove any name from the "Label" property like so</p>
+<p><img alt="Blank
+Spaces" src="/_images/docbits/Settings/Module/Layout%20Builder/Image%2016%20-%20Blank%20Spaces%207.png" /></p>
+<p>The result from doing this will then be</p>
+<p><img alt="Blank
+Spaces" src="/_images/docbits/Settings/Module/Layout%20Builder/Image%2017%20-%20Blank%20Spaces%208.png" /></p>
+<p>There is now a gap between the two fields. This gap can be extended or
+shortened according to the 100 percent rule discussed earlier, and with
+these functions you can create any desired layout.</p>
+<h3>Field Grouping</h3>
+<p>This feature allows you to group multiple fields together so that only
+one field from each group can be selected at a time on the validation
+screen.</p>
+<p><img alt="Field
+Grouping" src="/_images/docbits/Settings/Module/Layout%20Builder/Image%2018%20-%20Field%20Grouping.png" /></p>
+<p>For example, if you had multiple checkboxes all belonging to a group
+name "1" then only one checkbox from group "1" can be ticked on the
+validation screen.</p>
+<h3>KI Model Types</h3>
+<p><img alt="KI
+Models" src="/_images/docbits/Settings/Module/Layout%20Builder/Image%2019%20-%20KI%20Models%201.png" /></p>
+<p>This dropdown gives you the choice of training a specific field
+according to a KI model. Possible options can be seen below.</p>
+<p><img alt="KI
+Models" src="/_images/docbits/Settings/Module/Layout%20Builder/Image%2020%20-%20KI%20Models%202.png" /></p>
+<p>KI model training can lead to more accurate extraction results on the
+validation screen.</p><h2>What does it do?</h2>
+<p>This is a feature which, every 6 hours, uses the ION-API file to connect
+to your Infor-IDM and check through the newest/latest documents of the
+IDM-document-type(s) the DocBits (DOC²) team has configured at your
+request, and if the document type has an incorrect ACL-Setting (for
+example public), it will then be changed to the ACL-Setting you want
+(for example private). The image below illustrates the configuration of
+the API performing this feature:</p>
+<p><img alt="Dataflow" src="/_images/docbits/Settings/Module/IDM:ACL%20Updater/image_1_data_flow.png" /></p>
+<p>The API is called "DOC2-Error" and is situated at the end in the above
+dataflow. The endpoint mapped to the API (DOC2_Import) is the endpoint
+which carries out the functions discussed earlier.</p>
+<p>```{=html}</p>
+<!-- ![API Configuration](/_images/docbits/Settings/Module/IDM:ACL Updater/image_2_api_config_1.png)
+![API Configuration](/_images/docbits/Settings/Module/IDM:ACL Updater/image_3_api_config_2.png) -->
+<p>```</p>
+<h2>How to enable the IDM ACL Updater</h2>
+<p>To enable this feature, from the Dashboard, go to Settings.</p>
+<p><img alt="Settings" src="/_images/docbits/Settings/Module/IDM:ACL%20Updater/image_4_settings.png" /></p>
+<p>Navigate to Document processing → Module</p>
+<p><img alt="Module" src="/_images/docbits/Settings/Module/IDM:ACL%20Updater/image_5_module.png" /></p>
+<p>Once in the Module menu, you will find the slider to enable the IDM ACL
+Updater at the bottom of the page.</p>
+<p><img alt="Slider" src="/_images/docbits/Settings/Module/IDM:ACL%20Updater/image_6_enable_slider.png" /></p>
+<p>Simply click the slider so that it moves to the right to enable the
+feature.</p><p>::: video-container
+<code>&lt;iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen&gt;</code>{=html}<code>&lt;/iframe&gt;</code>{=html}
+:::</p>
+<p>Are you struggling to manage user roles and permissions for your
+organization's documents? DocBits (DOC²) has got you covered! With our
+user-friendly interface, you can easily manage users and their roles,
+create sub-organizations, and configure groups and permissions for
+different document types.</p>
+<p>Our user management system allows you to:</p>
+<ul>
+<li>Add and remove users</li>
+<li>Assign roles and permissions</li>
+<li>Create sub-organizations for better organization</li>
+<li>Configure groups and permissions for different document types</li>
+</ul>
+<p>With DocBits (DOC²), you can ensure that your organization's documents
+are secure and accessible only to authorized personnel. Say goodbye to
+the hassle of managing user roles and permissions manually and switch to
+DocBits (DOC²) today!</p>
+<p><code>&lt;img src="https://example.com/user-management.png" alt="DocBits (DOC²) User Management Interface"&gt;</code>{=html}</p>
+<p>Ready to take control of your organization's document management? Sign
+up for DocBits (DOC²) today and start managing your users and
+permissions with ease!</p><p>If quantity of the ordered item(s) does not match the quantity on the
+invoice you need to start the match with received Delivery Note.</p>
+<h2>Upload the Delivery Note in DocBits (DOC²)</h2>
+<p><a href="https://app.polydocs.io">Sign up for a 30 days free trail</a>{.md-button
+.md-button--primary}</p>
+<p><img alt="" src="/_images/docbits/DOC2_POM_DN_1.png" /></p>
+<p>Here you will also find the red symbol, because the quantity on the
+delivery note does not match the quantity of the purchase order.</p>
+<p><img alt="" src="/_images/docbits/DOC2_POM_DN_2.png" /></p>
+<p>Access the matching overview by clicking on the Matching Symbol on the
+dashboard.</p>
+<p><img alt="" src="/_images/docbits/DOC2_POM_DN_3.png" /></p>
+<p>Or by choosing <strong>PO MATCHING</strong> in the lower right corner when you have
+opened the document.</p>
+<p><img alt="" src="/_images/docbits/DOC2_POM_DN_4.png" /></p>
+<p>The matches can now be corrected:</p>
+<p>The "x" would delete the match on the delivery note.</p>
+<p>A new match from the purchase order can be added to the delivery note by
+dragging and dropping the appropriate data row(s).</p>
+<p><img alt="" src="/_images/docbits/DOC2_POM_DN_5.png" /></p>
+<p>You need to confirm the mismatched properties.</p>
+<p><img alt="" src="/_images/docbits/DOC2_POM_DN_6.png" /></p>
+<p><img alt="" src="/_images/docbits/DOC2_POM_DN_7.png" /></p>
+<p>Save to apply all changes.</p>
+<p><img alt="" src="/_images/docbits/DOC2_POM_DN_8.png" /></p>
+<p>Once everything is correct the document can be validated and exported.</p><p>If quantity of the ordered item(s) does not match the quantity on the
+invoice you need to start the match with received Order Confirmation.</p>
+<h2>Upload the Order Confirmation in DocBits (DOC²)</h2>
+<p><a href="https://app.polydocs.io">Sign up for a 30 days free trail</a>{.md-button
+.md-button--primary}</p>
+<p><img alt="" src="/_images/docbits/DOC2_POM_OC_1.png" /></p>
+<p>Here you will also find the red symbol, because the quantity on the
+Order Confirmation does not match the quantity of the purchase order.</p>
+<p><img alt="" src="/_images/docbits/DOC2_POM_OC_2.png" /></p>
+<p>Access the matching overview by clicking on the Matching Symbol on the
+dashboard.</p>
+<p><img alt="" src="/_images/docbits/DOC2_POM_OC_3.png" /></p>
+<p>Or by choosing <strong>PO MATCHING</strong> in the lower right corner when you have
+opened the document.</p>
+<p><img alt="" src="/_images/docbits/DOC2_POM_DN_4.png" /></p>
+<p>The matches can now be corrected:</p>
+<p>The "x" would delete the match on the delivery note.</p>
+<p>A new match from the purchase order can be added to the delivery note by
+dragging and dropping the appropriate data row(s).</p>
+<p><img alt="" src="/_images/docbits/DOC2_POM_OC_5.png" /></p>
+<p>You need to confirm the mismatched properties.</p>
+<p><img alt="" src="/_images/docbits/DOC2_POM_DN_6.png" /></p>
+<p><img alt="" src="/_images/docbits/DOC2_POM_DN_7.png" /></p>
+<p>Save to apply all changes.</p>
+<p><img alt="" src="/_images/docbits/DOC2_POM_DN_8.png" /></p>
+<p>Once everything is correct the document can be validated and exported.</p><h1>PO Matching - Invoices: A Step-by-Step Guide</h1>
+<p>If you're looking to streamline your invoice processing, PO matching is
+a crucial step. In this guide, we'll walk you through the process of PO
+matching for invoices, from creating a purchase order in LN to checking
+the receipt of the invoice in LN.</p>
+<h2>Create a Purchase Order in LN</h2>
+<p>To get started, open LN and go to the Purchase Order Intake Workbench.
+From there, select Purchase Orders and add a new one by choosing the +
+symbol. You can then create the document and the corresponding table and
+its values. First, add the Business Partner via the search function, and
+then add the order lines. After that, save the purchase order and
+approve it so that the settings are relayed to the system.</p>
+<h2>Upload the Invoice in DocBits (DOC²)</h2>
+<p>Once you've created the purchase order in LN, it's time to upload the
+invoice in DocBits (DOC²). The symbol under MATCHED indicates the
+current matching status -- green for matched and red for not matched.
+Ideally, it is already green. Open the document and validate the
+extracted fields. After validating all extracted fields, open the
+matching overview by clicking on PO MATCHING. Here, you can see the
+current matching status and make any necessary corrections.</p>
+<h3>Case 1: Matched</h3>
+<p>If the quantity of items ordered matches the quantity on the invoice,
+the match and thus the document can be validated and exported.</p>
+<h3>Case 2: Not Matched</h3>
+<p>If the quantity of the ordered item does not match the quantity on the
+invoice, you can correct the matches by deleting the match on the
+invoice or adding a new match from the purchase order. Once everything
+is correct, the document can be validated and exported.</p>
+<h2>Check the Receipt of the Invoice in LN</h2>
+<p>To see if the process was successful, you can check this in LN by
+choosing "Process Payables Workbench" and searching by invoice number in
+the corresponding field. If you click on the icon to open the overview,
+you will see the order and the assigned invoice.</p>
+<p>Don't let invoice processing slow down your business. With this
+step-by-step guide on PO matching for invoices, you can streamline your
+processes and save time and money. Sign up for a 30-day free trial of
+DocBits (DOC²) today and see the difference for yourself.</p><p>There are three ways you can match your Purchase Order</p>
+<ol>
+<li>with the corresponding
+    <a href="/docbits/pomatching/po-matching-invoices/">invoice</a></li>
+<li>with the corresponding <a href="/docbits/pomatching/po-matching-delivery-notes/">delivery
+    note</a> and <a href="/docbits/pomatching/po-matching-order-confirmation/">order
+    confirmation</a><code>&lt;br&gt;</code>{=html}
+    All three components must match within agreed-upon tolerance levels.
+    It is then entered into the AP system.</li>
+<li>with all the above documents, but also requires control information
+    such as actual number of items delivered and their quality control.
+    Once all 4 components match, the invoice is entered into the AP
+    database.</li>
+</ol>
+<h4>Corresponding settings must be made in DocBits (DOC²) under Settings - Modules - Purchase Order</h4>
+<p><img alt="" src="/_images/docbits/DOC2_POM_1_Modules.png" /></p>
+<p>On documents, the Purchase Order is listed either in the headers or, for
+some, in the table rows.</p>
+<p>During validation, the supplier's PO must be extracted correctly.</p>
+<hr />
+<p>Create the table from Purchase Order with one klick. See how easy that
+is:</p>
+<p>::: video-container
+```{=html}</p>
+<iframe width="840" height="472.5" src="https://www.youtube-nocookie.com/embed/9FsRoGZDfZE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+```
+```{=html}
+</iframe>
+<p>```
+:::</p>
+<hr />
+<h2>Keyboard accessibility for PO</h2>
+<p>1. Click on the PO Matching required Button of your Document on
+dashboard</p>
+<p><img alt="" src="/_images/docbits/DOC2_POM_2.png" /></p>
+<p>2. You will find the Keyboard Shortcuts by clicking on the keyboard
+icon</p>
+<p><img alt="" src="/_images/docbits/DOC2_POM_3_Keyboard.png" /></p>
+<h3>These are all the keyboard shortcuts you can use on the PO Matching screen:</h3>
+<p><img alt="" src="/_images/docbits/DOC2_POM_4_Keyboardshortcuts_1.png" />
+<img alt="" src="/_images/docbits/DOC2_POM_4_Keyboardshortcuts_2.png" /></p><h1>Save and Delete Rules for Table Extraction in DocBits (DOC²)</h1>
+<p>If you're using DocBits (DOC²) for document/table extraction, it's
+important to save and delete rules properly to ensure your data is
+extracted accurately. This guide will walk you through the process.</p>
+<h2>Save Rules</h2>
+<p>Once you've trained a document in DocBits (DOC²) and defined all the
+rules for table extraction, you can save those rules for future imports.
+This means that the tables in your documents will be extracted
+automatically, without any manual training required.</p>
+<p>To save your rules, simply click the "SAVE RULES" button. You'll see a
+rule indicator that shows how many rules have been defined and saved for
+that document.</p>
+<p><img alt="Save Rules
+Button" src="/_images/docbits/Table-Extraction/9-Save%20and%20delete%20rules/Image_47_save_rules.png" title="Save Rules Button" /></p>
+<h2>Delete Rules</h2>
+<p>If you need to delete rules for a document, you can do so using the
+"DELETE RULES" button. This may be necessary if rules have been saved
+incorrectly or if you need to retrain a document.</p>
+<p>However, it's important to note that deleting rules will affect all
+documents with the same or similar format. This means that you'll need
+to retrain those documents from scratch. So, be sure to use this feature
+with caution.</p>
+<p><img alt="Delete Rules
+Button" src="/_images/docbits/Table-Extraction/9-Save%20and%20delete%20rules/Image_49_delete_rules.png" title="Delete Rules Button" /></p>
+<h2>Sign Up for a Free Trial</h2>
+<p>Ready to try DocBits (DOC²) for yourself? Sign up for a 30-day free
+trial today and see how easy it is to extract tables from your
+documents.</p>
+<p>::: video-container
+<code>&lt;iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen&gt;</code>{=html}<code>&lt;/iframe&gt;</code>{=html}
+:::</p><h1>Manual row selection</h1>
+<p>It is possible that on some documents text in rows is not only written
+under one column. It might happen that it is written through different
+columns like in the example below:</p>
+<p><img alt="Document
+Example" src="/_images/docbits/Table-Extraction/7-Manual%20row%20selection/Image_23_doc_example.png" /></p>
+<p>On the screenshot you can see that the table and columns have already
+been defined. Having a detailed look on the highlighted information
+(PRAEF) you will recognize that the text is written through columns
+"Bezeichnung", "Menge", "ME" and "Preis in EUR".</p>
+<p><a href="https://app.polydocs.io">Sign up for a 30 days free trail</a>{.md-button
+.md-button--primary}</p>
+<p>In that case it is not possible for the system to automatically define
+to which column the information belongs.</p>
+<p>To solve this issue DocBits (DOC²) offers a possibility to manually
+select and map information on a document to any column.</p>
+<p>First of all make sure training mode is activated:</p>
+<p><img alt="Training
+Mode" src="/_images/docbits/Table-Extraction/7-Manual%20row%20selection/Image_24_training_mode_on.png" /></p>
+<p>In addition you need to activate the row edit mode:</p>
+<p><img alt="Edit Row
+Data" src="/_images/docbits/Table-Extraction/7-Manual%20row%20selection/Image_25_Row_data_edit_on.png" /></p>
+<p>Please note that the manual mapping of text to a column is only possible
+for extractable columns (blue colour):</p>
+<p><img alt="Result" src="/_images/docbits/Table-Extraction/7-Manual%20row%20selection/Image_25(1)_result.png" /></p>
+<p>The violet ones can not be mapped manually as the mapping has already
+been done via the columns defined on the document.</p>
+<p>Extractable columns need to be created first. You will learn here how
+that works: <a href="/docbits/table/add-new-table-column/">Add new table column</a></p>
+<p>Once the column has been created, training mode and row edit mode are
+activated you can map text on the document to the column as shown in the
+video below:</p>
+<p>In the video you can see how to:</p>
+<ul>
+<li>select an area with your mouse</li>
+<li>double click a value to select the area (only possible for values
+    without spaces)</li>
+<li>delete mapping and re-map the area</li>
+</ul><h1>Group function to extract data from tables</h1>
+<p>Once a table has been extracted via DocBits (DOC²) and the columns have
+been mapped (<a href="/docbits/table-extraction/mapping-of-columns/">Mapping of
+columns</a>) the obtained
+data can be grouped to get a structured result set of all extracted
+data.</p>
+<p><a href="https://app.polydocs.io">Sign up for a 30 days free trail</a>{.md-button
+.md-button--primary}</p>
+<h2>What does this mean in detail?</h2>
+<p>All documents from order confirmations to invoices can vary enormously
+in complexity from company to company. For example, in documents,
+information may be presented in tables in some columns across multiple
+rows and in other columns across only one row.</p>
+<p>As an example, you can see the German invoice below, where the
+information in column "Bezeichnung" extends over several lines
+(positions).</p>
+<p><img alt="Grouping
+Example" src="/_images/docbits/Table-Extraction/6-Group%20Function/Image_20_grouping_example.png" />{loading="lazy"}</p>
+<p>At this point, another advantage of DocBits (DOC²) comes into play. It
+extracts the data in the first step 1 to 1. The result looks like this:</p>
+<p><img alt="DocBits (DOC²) Grouping
+Example" src="/_images/docbits/Table-Extraction/6-Group%20Function/Image_21_grouping_example_doc2.png" />{loading="lazy"}</p>
+<p>BUT: Now there is the possibility to group data based on a specific
+column. That means in this case it can be grouped by the column
+"Position" as shown in the following video. This in turn groups the rows
+of the "Description" column into one row. So that at the end you get a
+structured overall picture of the export and the data can now be
+processed further.</p>
+<p>If the grouping was created by mistake, it can be removed at any time,
+as also shown in the video.</p>
+<p>The result of grouping looks like this:</p>
+<p><img alt="Grouping
+Result" src="/_images/docbits/Table-Extraction/6-Group%20Function/Image_22_grouping_result.png" />{loading="lazy"}</p><p>Mapping columns is a crucial step in accurate table extraction using
+DocBits (DOC²). Once you've extracted data from a document, you can map
+the extracted columns with the columns given by DocBits (DOC²). This
+ensures that the extracted data is correctly placed in the corresponding
+columns.</p>
+<p>To map columns, simply select the header of a column in the extraction
+view. A dropdown menu will appear, allowing you to select the column you
+want to map. If you've mapped a column incorrectly, you can easily
+re-map it by clicking the dropdown menu again.</p>
+<p>Check out our tutorial video below for a detailed guide on how to map
+and re-map columns in DocBits (DOC²):</p>
+<p>::: video-container
+<code>&lt;iframe src='https://www.youtube.com/embed/your-video-id' frameborder='0' allowfullscreen&gt;</code>{=html}<code>&lt;/iframe&gt;</code>{=html}
+:::</p>
+<p>By following these simple steps, you can ensure accurate table
+extraction and save time on manual data entry. Try it out with DocBits
+(DOC²) today!</p><h2>Table Extraction Training</h2>
+<p>Table extraction can be a complex process, but with the right training,
+you can learn how to define tables and columns, use advanced settings,
+and more. Here are some of the key topics covered in our table
+extraction training:</p>
+<ul>
+<li><a href="/docbits/table-extraction/define-table-and-columns/">Defining Tables and
+    Columns</a>: Learn
+    how to identify and define tables and columns in your documents.</li>
+<li><a href="/docbits/table-extraction/advanced-settings/">Advanced Settings</a>:
+    Discover advanced settings that can help you fine-tune your table
+    extraction results.</li>
+<li><a href="/docbits/table-extraction/mapping-of-columns/">Mapping of Columns</a>:
+    Understand how to map columns to specific data types and formats.</li>
+<li><a href="/docbits/table-extraction/group-function/">Group Function</a>: Learn
+    how to group data in your tables based on specific criteria.</li>
+<li><a href="/docbits/table-extraction/manual-row-selection/">Manual Row
+    Selection</a>: Find
+    out how to manually select rows in your tables for extraction.</li>
+<li><a href="/docbits/table-extraction/add-new-table-column/">Adding New Table
+    Columns</a>: Learn how
+    to add new columns to your tables as needed.</li>
+<li><a href="/docbits/table-extraction/save-rules-and-delete-rules/">Saving and Deleting
+    Rules</a>:
+    Discover how to save and delete rules for future use.</li>
+</ul>
+<h2>Training Mode vs Correction Mode</h2>
+<p>When using our table extraction tool, you can choose between training
+mode and correction mode. Here's what you need to know about each mode:</p>
+<h3>Training Mode</h3>
+<p>In training mode, mapped columns are read-only, and you cannot manually
+change the text. Additionally, the delete row button is not visible.</p>
+<p><img alt="Table Extraction Training
+Mode" src="/_images/docbits/Table-Extraction/2-Training%20table%20extraction/Image_3_training_mode.png" />{
+loading=lazy, alt: "Table Extraction Training Mode" }</p>
+<h3>Correction Mode</h3>
+<p>In correction mode, you can delete and add rows, and you can manually
+change the text of mapped columns.</p>
+<p><img alt="Table Extraction Correction
+Mode" src="/_images/docbits/Table-Extraction/2-Training%20table%20extraction/Image_4_correction_mode.png" />{
+loading=lazy, alt: "Table Extraction Correction Mode" }</p>
+<p>Here's an example of a table in correction mode, with the first row
+deleted and a new row added:</p>
+<p><img alt="Table Extraction Correction Mode Edited
+Table" src="/_images/docbits/Table-Extraction/2-Training%20table%20extraction/Image_5_result.png" />{
+loading=lazy, alt: "Table Extraction Correction Mode Edited Table" }</p>
+<h2>Start Your Table Extraction Training Today</h2>
+<p>Ready to learn how to extract tables from your documents like a pro?
+Sign up for our table extraction training today and get started!</p><p><strong>Define tables</strong></p>
+<p>To define tables and columns on a document please import a document,
+open it and go to the table extraction view like already known (via
+"Line Items").</p>
+<p>You will end up in following screen where you can activate the Training
+Mode:</p>
+<p><img alt="Activate Training
+Mode" src="/_images/docbits/Table-Extraction/3-Define%20tables%20and%20columns/Image_6_activate_training_mode.png" /></p>
+<p>Via the "Edit" button table selection mode will be activated and you
+will be able to edit the document shown on the left side:</p>
+<p><img alt="Edit
+Button" src="/_images/docbits/Table-Extraction/3-Define%20tables%20and%20columns/Image_7_edit_button.png" /></p>
+<p>In general your are now able to use the autodetect tables functionality
+and the system will automatically define the tables on the document:</p>
+<p><img alt="Auto
+Detect" src="/_images/docbits/Table-Extraction/3-Define%20tables%20and%20columns/Image_8_auto_detect_button.png" /></p>
+<p>If the system is not able to find the tables automatically you can
+manually define the tables on the document like shown in the video
+below:</p>
+<p><strong>Define columns</strong></p>
+<p>Once the tables are defined you can manually define the columns via the
+following button:</p>
+<p><img alt="Add
+Column" src="/_images/docbits/Table-Extraction/3-Define%20tables%20and%20columns/Image_9_add_column_button.png" /></p>
+<p>Define and sort the columns via drag and drop on the document like shown
+in the video below:</p>
+<p>Repeat this for the tables on the other pages as well. As an alternative
+if the tables are equal on each page you can use the following button to
+use the same column for all tables defined in the document. This
+functionality copies the columns that you have defined to all other
+pages as well:</p>
+<p><img alt="Repeat
+Columns" src="/_images/docbits/Table-Extraction/3-Define%20tables%20and%20columns/Image_10_repeat_columns_button.png" /></p>
+<p>If the document is very confusing, it can be zoomed in and out using the
+"Zoom in" and "Zoom out" functionality. This is helpful, for example,
+when a lot of information is close together and this makes it difficult
+to define the columns:</p>
+<p><img alt="Zoom
+Button" src="/_images/docbits/Table-Extraction/3-Define%20tables%20and%20columns/Image_11_zoom.png" /></p>
+<p>If you defined a column by mistake it can be selected by clicking it and
+deleted again via the following button:</p>
+<p><img alt="Delete
+Column" src="/_images/docbits/Table-Extraction/3-Define%20tables%20and%20columns/Image_12_delete_column.png" /></p>
+<p>Note: The button is only visible if the column is selected.</p>
+<p>If you are done defining all tables and all columns on your document use
+the "Save" button to activate your changes and to extract the data from
+the document:</p>
+<p><img alt="Save
+Button" src="/_images/docbits/Table-Extraction/3-Define%20tables%20and%20columns/Image_13_save_button.png" /></p>
+<p>The data of all defined areas will be extracted and shown on the right
+side:</p>
+<p><img alt="Table Data
+Area" src="/_images/docbits/Table-Extraction/3-Define%20tables%20and%20columns/Images_14_table_data_area.png" /></p>
+<p>In the next section you will learn how to adjust the data that has been
+extracted.</p><h1>Table Extraction with DocBits (DOC²)</h1>
+<p>Extracting tables from PDF-Files has never been easier with DocBits
+(DOC²)'s Line Items functionality. Whether it's Invoices, Contracts,
+Forms, Medical Prescriptions, or any other type of document, you can
+extract tables quickly and efficiently.</p>
+<h2>How to Extract Tables with DocBits (DOC²)</h2>
+<p>Follow these simple steps to extract tables from your PDF-Files:</p>
+<ol>
+<li>Log in to your DocBits (DOC²) account using your email and password.</li>
+<li>Import your PDF-File to the dashboard.</li>
+<li>Click on the document to open it.</li>
+<li>Scroll down to the "Line Items" section on the extracted fields
+    page.</li>
+<li>Click on the table icon inside the textbox.</li>
+</ol>
+<p><img alt="Table Extraction with DocBits
+(DOC²)" src="/_images/docbits/Table-Extraction/1-Table%20Extraction/Image_1_line_items.png" title="Table Extraction with DocBits (DOC²)" /></p>
+<p>You will be taken to the table extraction view. DocBits (DOC²) can
+automatically detect and extract simple tables, but for more complex
+tables, you can train the table extraction functionality manually.</p>
+<h2>Training the Table Extraction Functionality</h2>
+<p>DocBits (DOC²) offers several ways to train the table extraction
+functionality and achieve the best possible result, even with demanding
+tables. Here are some of the functionalities available for manual
+training:</p>
+<ul>
+<li><strong>Table Selection:</strong> Select the table you want to extract by
+    clicking and dragging over it.</li>
+<li><strong>Column Selection:</strong> Select the columns of the table by clicking
+    and dragging over them.</li>
+<li><strong>Row Selection:</strong> Select the rows of the table by clicking and
+    dragging over them.</li>
+<li><strong>Header Selection:</strong> Select the header of the table by clicking and
+    dragging over it.</li>
+<li><strong>Footer Selection:</strong> Select the footer of the table by clicking and
+    dragging over it.</li>
+</ul>
+<p>With these functionalities, you can train the table extraction
+functionality to accurately extract tables from your PDF-Files.</p>
+<h2>Conclusion</h2>
+<p>Extracting tables from PDF-Files is a breeze with DocBits (DOC²)'s Line
+Items functionality. With its easy-to-use interface and powerful table
+extraction capabilities, you can extract tables from any type of
+document quickly and efficiently. Try it out today and see the
+difference for yourself!</p><p>In the table extraction view, you will find the menu item <code>Settings</code> in
+the upper action bar (make sure that the training mode is activated). If
+you click on the gear icon, a window will open in which you will find
+the <code>Advanced Settings</code>.</p>
+<p><img alt="Advanced
+Settings" src="/_images/docbits/Table-Extraction/8-Advanced%20settings/Image_27_settings_icon.png" />{loading="lazy"}</p>
+<p><img alt="Advanced
+Settings" src="/_images/docbits/Table-Extraction/8-Advanced%20settings/Image_28_advanced_settings_dropdown.png" />{loading="lazy"}</p>
+<h2>Below functionalities are available in general settings:</h2>
+<h4>Header row count</h4>
+<p>Here you can define the number of lines of a table header. For example,
+the table header line can be two lines:</p>
+<p><img alt="Advanced
+Settings" src="/_images/docbits/Table-Extraction/8-Advanced%20settings/Image_29_header_row_example.png" />{loading="lazy"}</p>
+<p>Accordingly, the value in "Header row count" is set to two:</p>
+<p><img alt="Advanced
+Settings" src="/_images/docbits/Table-Extraction/8-Advanced%20settings/Image_30_header_row_settings.png" />{loading="lazy"}</p>
+<p>Why is this needed? It might be that DocBits (DOC²) does not recognize
+the second line in the table header as header line. In this case, it
+incorrectly inserts it into the table as extracted value. This can be
+easily prevented with this function.</p>
+<p><code>{=html}
+&lt;ins&gt;</code>
+Example before
+<code>{=html}
+&lt;/ins&gt;</code>
+:</p>
+<p><img alt="Advanced
+Settings" src="/_images/docbits/Table-Extraction/8-Advanced%20settings/Image_31_example_before.png" />{loading="lazy"}</p>
+<p><code>{=html}
+&lt;ins&gt;</code>
+Example after
+<code>{=html}
+&lt;/ins&gt;</code>
+:</p>
+<p><img alt="Advanced
+Settings" src="/_images/docbits/Table-Extraction/8-Advanced%20settings/Image_32_example_after.png" />{loading="lazy"}</p>
+<h4>Move Extra Rows to</h4>
+<p>In this example, the item description in the table spans several rows,
+but you only need the first one. To extract only this and include it in
+the Description column, select <code>Move Extra Rows to</code> <code>Trash</code>.</p>
+<p><img alt="Advanced
+Settings" src="/_images/docbits/Table-Extraction/8-Advanced%20settings/Image_33_move_extra_row_example.png" />{loading="lazy"}
+<img alt="Advanced
+Settings" src="/_images/docbits/Table-Extraction/8-Advanced%20settings/Image_34_trash.png" />{loading="lazy"}</p>
+<p>After naming the columns and mapping them to position, you get the
+following result:</p>
+<p><img alt="Advanced
+Settings" src="/_images/docbits/Table-Extraction/8-Advanced%20settings/Image_35_rows_to_trash.png" />{loading="lazy"}</p>
+<h2>Below functionalities are available in the advanced settings:</h2>
+<p><img alt="Advanced
+Settings" src="/_images/docbits/Table-Extraction/8-Advanced%20settings/Image_36_advanced_settings.png" />{loading="lazy"}</p>
+<h4>Minimum grouped rows</h4>
+<p>Enter the minimum number of rows in your grouped column here.</p>
+<p><img alt="Advanced
+Settings" src="/_images/docbits/Table-Extraction/8-Advanced%20settings/Image_37_m_grouped_rows_example.png" />{loading="lazy"}</p>
+<p>In this table you see six rows of which only three are relevant for you.
+In the first two columns there are two criteria that have to be
+extracted separately. These will be your mapped columns all the other
+ones have to be trained as custom columns. <code>&lt;br&gt;</code>{=html} And this is how
+it works step by step:</p>
+<p>Select the two <a href="/docbits/table-extraction/advanced-settings/#header-row-count">header
+rows</a> as
+well as two minimum grouped rows as these should be grouped to one row.</p>
+<p><img alt="Advanced
+Settings" src="/_images/docbits/Table-Extraction/8-Advanced%20settings/Image_38_settings.png" />{loading="lazy"}
+<img alt="Advanced
+Settings" src="/_images/docbits/Table-Extraction/8-Advanced%20settings/Image_39_result1.png" />{loading="lazy"}</p>
+<p>Also select the <code>Move extra rows to</code> <code>Trash</code> option to be able to train
+all the other columns as custom columns.</p>
+<p><img alt="Advanced
+Settings" src="/_images/docbits/Table-Extraction/8-Advanced%20settings/Image_40_rows2trash.png" />{loading="lazy"}</p>
+<p>Name first column Postition and group on that one.</p>
+<p><img alt="Advanced
+Settings" src="/_images/docbits/Table-Extraction/8-Advanced%20settings/Image_41_result.png" />{loading="lazy"}</p>
+<p>After naming all the columns and training the values, this is your
+result:</p>
+<p><img alt="Advanced
+Settings" src="/_images/docbits/Table-Extraction/8-Advanced%20settings/Image_42_result2.png" />{loading="lazy"}</p>
+<p>```{=html}</p>
+<!--
+
+##### Maximum grouped rows
+
+Enter the maximum number of rows in your grouped column here.
+
+#### Distinct group columns
+
+If you want only unique values for your grouped column, check the box here.
+
+-->
+<p>```</p>
+<h4>Reverse grouping</h4>
+<p>If you want to combine all the rows above the grouped attribute, check
+the box here.</p>
+<p>In this example, the table starts with a row that is above all other
+information but also needs to be extracted along with the information
+below it. It could be that DocBits (DOC²) extracts this row as an
+additional row and the grouping of the information, e.g. by position,
+does not work properly.</p>
+<p><img alt="Reverse
+Grouping" src="/_images/docbits/Table-Extraction/8-Advanced%20settings/Image_43_rev_grouping1.png" />{loading="lazy"}
+<img alt="Reverse
+Grouping" src="/_images/docbits/Table-Extraction/8-Advanced%20settings/Image_44_rev_grouping2.png" />{loading="lazy"}</p>
+<p>After grouping on net amount, checking the box, selecting the
+<code>Move extra rows to</code> <code>Trash</code> option</p>
+<p><img alt="Reverse
+Grouping" src="/_images/docbits/Table-Extraction/8-Advanced%20settings/Image_45_rev_grouping3_settings.png" />{loading="lazy"}</p>
+<p>and naming all columns this is your result:</p>
+<p><img alt="Reverse
+Grouping" src="/_images/docbits/Table-Extraction/8-Advanced%20settings/Image_46_rev_grouping4_result.png" />{loading="lazy"}
+`&lt;!--</p>
+<h4>Split Text</h4>
+<p>If you want to split the text exactly at the column separator, check the box here. --&gt;`{=html}</p><h1>How to Add a New Column to a Table in DocBits (DOC²)</h1>
+<p>If you need to manually map columns to rows (fields) on an extracted
+document, you can do so easily in DocBits (DOC²). Follow our
+step-by-step guide below to learn how to add a new column to a table in
+DocBits (DOC²).</p>
+<h2>Step 1: Open the Table Extraction View</h2>
+<p>To get started, import your document into DocBits (DOC²) and open it.
+Then, navigate to the table extraction view by clicking on the "LINE
+ITEMS" button.</p>
+<p><img alt="Table Extraction View in DocBits
+(DOC²)" src="/_images/docbits/Table-Extraction/4-Add%20new%20column/Image_15_table_train_button.png" />{
+loading=lazy, alt: "Table Extraction View in DocBits (DOC²)" }</p>
+<h2>Step 2: Activate Training Mode</h2>
+<p>To add a new column to your table, you'll need to activate training
+mode. Click on the "TRAINING MODE" button to do so.</p>
+<p><img alt="Activate Training Mode in DocBits
+(DOC²)" src="/_images/docbits/Table-Extraction/4-Add%20new%20column/Image_16_new_table_column_button.png" />{
+loading=lazy, alt: "Activate Training Mode in DocBits (DOC²)" }</p>
+<h2>Step 3: Create a New Column</h2>
+<p>Once you're in training mode, you can create a new column by clicking on
+the "ADD COLUMN" button. In the window that appears, you can specify a
+name for the column, set whether it's optional or mandatory, and choose
+the column type (STRING, AMOUNT, or DATE).</p>
+<p><img alt="Create a New Column in DocBits
+(DOC²)" src="/_images/docbits/Table-Extraction/4-Add%20new%20column/Image_17_new_table_column_page.png" />{
+loading:lazy, alt: "Create a New Column in DocBits (DOC²)" }</p>
+<h2>Step 4: Use the New Column for Manual Mappings</h2>
+<p>After you've created your new column, you can use it for manual mappings
+by following our guide on <a href="/docbits/table/manual-row-selection/">Manual Row
+Selection</a>.</p>
+<p><img alt="Use the New Column for Manual Mappings in DocBits
+(DOC²)" src="/_images/docbits/Table-Extraction/4-Add%20new%20column/Image_18_proceed.png" />{
+loading:lazy, alt: "Use the New Column for Manual Mappings in DocBits
+(DOC²)" }</p>
+<p>And that's it! You now know how to add a new column to a table in
+DocBits (DOC²). Sign up for a 30-day free trial to try it out for
+yourself.</p>
+<p>::: video-container
+<code>&lt;!-- Your video embed code goes here --&gt;</code>{=html}
+:::</p><h1>Watchdog for macOS: Easy Fileshare Import to DocBits (DOC²)</h1>
+<p>If you're looking for a simple and efficient way to import your local
+documents to DocBits (DOC²), Watchdog for macOS is the perfect solution.
+Follow these steps to configure Watchdog and start importing your files
+today.</p>
+<h2>Download Watchdog for macOS</h2>
+<p>To get started, download the Watchdog for macOS file
+<a href="insert-download-link">here</a>.</p>
+<h2>Folder Configuration</h2>
+<p>Once you've downloaded Watchdog, you'll need to configure the following
+folders:</p>
+<ul>
+<li><strong>Read folder</strong>: This is where the documents that are exported to
+    DocBits (DOC²) will be uploaded.</li>
+<li><strong>Error folder</strong>: Any documents that encounter an error during the
+    export process will be saved here.</li>
+<li><strong>Processed folder</strong>: Successfully processed documents will be
+    stored in this folder.</li>
+</ul>
+<p>To configure these folders, select the <strong>Settings folder</strong> and press
+<code>Browse</code> for each folder.</p>
+<p><img alt="Watchdog Folder
+Configuration" src="/path/to/image.png" title="Watchdog Folder Configuration" /></p>
+<h2>General Configuration</h2>
+<p>Next, you'll need to configure some general parameters:</p>
+<ul>
+<li><strong>Environment</strong>: Choose where you want to export the documents. You
+    can choose between exporting only to DocBits (DOC²) or checking for
+    export orders for Infor OS On-Premise issued by DocBits (DOC²) and
+    then exporting the document to IDM.</li>
+<li><strong>API key</strong>: This key can be found under Integration settings in
+    your DocBits (DOC²) account.</li>
+</ul>
+<p>There are also two more specific parameters:</p>
+<ul>
+<li><strong>When exporting to Infor OS</strong>: Choose from three different document
+    types.</li>
+</ul>
+<p><img alt="Watchdog General
+Configuration" src="/path/to/image.png" title="Watchdog General Configuration" /></p>
+<h2>Start Importing Your Files</h2>
+<p>With Watchdog for macOS configured, you're ready to start importing your
+local documents to DocBits (DOC²). Simply add your files to the <strong>Read
+folder</strong> and Watchdog will take care of the rest.</p>
+<p>Don't wait any longer to streamline your document import process.
+Download Watchdog for macOS and start importing your files today.</p><h3><a href="/docbits/fileshare/watchdog-windows/">Watchdog - for Windows</a></h3>
+<p>Looking for a comprehensive guide on fileshare import options for
+multiple export options? Look no further than DocBits (DOC²)! Our
+step-by-step guide will show you how to configure fileshare import
+options for common operating systems, including Windows, and get the
+most out of your exports.</p>
+<p>With DocBits (DOC²), you can easily import files from your fileshare and
+choose from a variety of export options to suit your needs. Whether
+you're looking to export to PDF, Word, or another format, our guide will
+walk you through the process and help you get the results you need.</p>
+<p>Ready to get started? Check out our guide on Watchdog for Windows and
+start importing and exporting with ease today!</p><p>Watchdog.exe ui</p><p>::: video-container
+<code>&lt;iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen&gt;</code>{=html}<code>&lt;/iframe&gt;</code>{=html}
+:::</p>
+<h2>Introduction</h2>
+<p>After logging in with your credentials, you will be redirected to the
+DocBits (DOC²) Dashboard homepage. This is the main page where you can
+manage all your imported documents.</p>
+<h2>Filter Documents by Status</h2>
+<p><img alt="DocBits (DOC²) Dashboard - Filter Documents by
+Status" src="/_images/docbits/Dashboard/Dashboard%20Index%20-%20Images/image_1_dashboard_heading.png" />{
+loading="lazy", alt="DocBits (DOC²) Dashboard - Filter Documents by
+Status" }</p>
+<p>The first upper bar is a simple reporting tool that allows you to filter
+documents by week, month, year, or more. You can view the status of
+documents that are in progress, pending, pending approval, completed, or
+have errors. By clicking on any of these boxes, you can find the
+specific documents you are searching for.</p>
+<h2>Overview of Uploaded Documents</h2>
+<p><img alt="DocBits (DOC²) Dashboard - Overview of Uploaded
+Documents" src="/_images/docbits/Dashboard/Dashboard%20Index%20-%20Images/Image_2_dashboard_docs.png" />{
+loading="lazy", alt="DocBits (DOC²) Dashboard - Overview of Uploaded
+Documents" }</p>
+<p>The second part of the dashboard is an overview of all the uploaded
+documents. You can view all documents or just the ones assigned to you.
+You can also search for documents by name.</p>
+<p>To start importing an invoice manually, click on the UPLOAD button and
+choose the document you want to upload. You can also drag and drop files
+anywhere on the dashboard to upload them.</p>
+<p><img alt="DocBits (DOC²) Dashboard - Upload
+Documents" src="/_images/docbits/Dashboard/Dashboard%20Index%20-%20Images/image_3_upload_doc.png" />{
+loading="lazy", alt="DocBits (DOC²) Dashboard - Upload Documents" }</p>
+<p>Meaningful data will be extracted within seconds, and the status will
+change from running to ready for validation.</p>
+<h2>Validate Extracted Fields</h2>
+<p><img alt="DocBits (DOC²) Dashboard - Validate Extracted
+Fields" src="/_images/docbits/Dashboard/Dashboard%20Index%20-%20Images/image_4_dashboard_overview.png" />{
+loading="lazy", alt="DocBits (DOC²) Dashboard - Validate Extracted
+Fields" }</p>
+<p>The validation screen allows you to check, edit, and validate all the
+imported documents. You can see the name of the document, how many pages
+it consists of, the date it was imported, and its status. The Actions
+button allows you to assign, restart, validate, or delete the document.</p>
+<p><img alt="DocBits (DOC²) Dashboard - Document
+Actions" src="/_images/docbits/Dashboard/Dashboard%20Index%20-%20Images/image_5_dashboard_action.gif" />{
+loading="lazy", alt="DocBits (DOC²) Dashboard - Document Actions" }</p>
+<h2>Change Dashboard Columns</h2>
+<p>From the Dashboard, click on the Advanced Settings icon as shown below</p>
+<p><img alt="Advanced
+Settings" src="/_images/docbits/Dashboard/Dashboard%20Index%20-%20Images/image_6_change_column_1.png" /></p>
+<p>The following menu will then be displayed</p>
+<p><img alt="Advanced Settings
+Menu" src="/_images/docbits/Dashboard/Dashboard%20Index%20-%20Images/image_7_change_column_2.png" /></p>
+<p>Select the button labelled "Set dashboard columns for organization" and
+the a list of all the column names will be shown.</p>
+<p><img alt="List of
+Columns" src="/_images/docbits/Dashboard/Dashboard%20Index%20-%20Images/image_10_change_column_3png.png" /></p>
+<p>From this menu, you can select the column names and use the arrows to
+add and remove the columns you desire.</p>
+<p><img alt="Select
+Columns" src="/_images/docbits/Dashboard/Dashboard%20Index%20-%20Images/image_11_change_column_4.png" /></p>
+<p><img alt="Select Columns
+Result" src="/_images/docbits/Dashboard/Dashboard%20Index%20-%20Images/image_12_change_column_5.png" /></p>
+<h2>Conclusion</h2>
+<p>The DocBits (DOC²) Dashboard is a powerful tool that allows you to
+manage your imported documents with ease. By filtering documents by
+status, viewing an overview of all uploaded documents, and validating
+extracted fields, you can streamline your document management process.
+Start using DocBits (DOC²) today!</p><h1>Configure Azure Active Directory</h1>
+<h2>Create SAML SSO in Azure AD</h2>
+<p>Perform the following steps to add SAML SSO in Azure AD:</p>
+<p><strong>1.</strong> In Azure, go to your <code>Azure Active Directory</code> console</p>
+<p><img alt="" src="/_images/docbits/SSO/Azure_1.png" /></p>
+<p><strong>2.</strong> In the left panel, click <code>Enterprise applications</code></p>
+<p><img alt="" src="/_images/docbits/SSO/Azure_2.png" /></p>
+<p><strong>3.</strong> Click <code>+ New application</code></p>
+<p><img alt="" src="/_images/docbits/SSO/Azure_3.png" /></p>
+<p><strong>4.</strong> Click <code>+ Create your own application</code></p>
+<p><img alt="" src="/_images/docbits/SSO/Azure_4.png" /></p>
+<p><strong>5.</strong> Enter a name for your application. Keep the remaining default
+selections.</p>
+<p><img alt="" src="/_images/docbits/SSO/Azure_5.png" /></p>
+<p><strong>6.</strong> Click on <code>Create</code></p>
+<h2>Assign Users to the SSO Configuration</h2>
+<p>Next, assign users or groups to the SSO configuration.</p>
+<p>:fontawesome-solid-triangle-exclamation:{ style="color: #EE0F0F" }
+Important: You should already have created users and groups in Azure AD.
+If you don't have any users or groups, create them now before
+proceeding. :fontawesome-solid-triangle-exclamation:{ style="color:</p>
+<h1>EE0F0F" }</h1>
+<p><strong>1.</strong> Under <code>Getting Started</code>, click <code>Assign Users and Groups</code>.</p>
+<p><strong>2.</strong> Click <code>+ Add user</code></p>
+<p><img alt="" src="/_images/docbits/SSO/Azure_6.png" /></p>
+<p><strong>3.</strong> Select the users and groups you want to assign to this SSO
+configuration. These users will be able to authenticate DocBits (DOC²)
+using SSO.</p>
+<p><img alt="" src="/_images/docbits/SSO/Azure_7.png" /></p>
+<p><strong>4.</strong> Click <code>Select</code></p>
+<p><strong>5.</strong> When you're satisfied with your selection, click <code>Assign</code></p>
+<p><img alt="" src="/_images/docbits/SSO/Azure_8.png" /></p>
+<p><img alt="" src="/_images/docbits/SSO/Azure_9.png" /></p>
+<p><strong>6.</strong> Go to the <code>Groups</code> view list and find the assigned groups.</p>
+<h2>Set up SSO in Azure</h2>
+<p>Next, you need to finish setting up single-sign-on in Azure.</p>
+<p><strong>1.</strong> In the left panel, click <code>Single sign-on</code></p>
+<p><img alt="" src="/_images/docbits/SSO/Azure_10.png" /></p>
+<p><strong>2.</strong> Click <code>SAML</code></p>
+<p><img alt="" src="/_images/docbits/SSO/Azure_11.png" /></p>
+<p><strong>3.</strong> Click <code>Upload metadata file</code></p>
+<p><img alt="" src="/_images/docbits/SSO/Azure_12.png" /></p>
+<p><strong>4.</strong> Upload the DocBits (DOC²) <strong>metadata.xml</strong>, which you can find in
+the Settings menu <strong>Integration</strong><code>&lt;br&gt;</code>{=html} under <strong>SSO Service
+Provider Settings</strong> of your DocBits (DOC²) account.</p>
+<p><img alt="" src="/_images/docbits/SSO/Azure_Metadata.png" /></p>
+<p><strong>5.</strong> Edit the <code>Basic SAML Configuration</code></p>
+<p><img alt="" src="/_images/docbits/SSO/Azure_13.png" /></p>
+<p><strong>6.</strong> Check if the <code>Entity ID</code>, <code>ACS URL</code>, <code>Sign on URL</code> and
+<code>Logout URL</code> are populated right.</p>
+<p><img alt="" src="/_images/docbits/SSO/Azure_13.1.png" /></p>
+<p><strong>7.</strong> Download the newly generated <strong>Federation Metadata XML</strong>.</p>
+<p><img alt="" src="/_images/docbits/SSO/Azure_14.png" /></p>
+<p><strong>8.</strong> Upload the FederationMetadata.xml into the <strong>Identity Service
+Provider Settings</strong> of your DocBits (DOC²) account which you can find in
+the Settings menu <strong>Integration</strong>.</p>
+<p><img alt="" src="/_images/docbits/SSO/Azure_15.png" /></p><h2>markdown</h2>
+<p>title: "Single Sign On (SSO) Configuration for Infor Cloud and Azure AD"
+description: "Learn how to configure Single Sign On (SSO) for Infor
+Cloud and Azure Active Directory (AD) to improve productivity, security,
+and IT efficiency. Find helpful documentation and guides here." tags: -
+SSO - Configuration - Infor Cloud - Azure AD - Productivity - Security -
+IT Efficiency ---</p>
+<h2>What is Single Sign On (SSO)?</h2>
+<p>Single Sign On (SSO) allows users to access multiple applications with a
+single set of credentials, eliminating the need to remember and enter
+different usernames and passwords. SSO improves productivity, security,
+and IT efficiency.</p>
+<h3>Benefits of SSO</h3>
+<ul>
+<li>Faster login</li>
+<li>Higher productivity</li>
+<li>Advanced security</li>
+<li>Greater IT efficiency</li>
+</ul>
+<h3>SSO Configuration Guides</h3>
+<ul>
+<li><a href="/docbits/doc2-with-infor/configuring-sso-in-cloud/">Configuring SSO in Infor
+    Cloud</a> - Learn
+    how to configure SSO for Infor Cloud.</li>
+<li><a href="/docbits/sso/sso-for-azure-ad/">SSO for Azure AD with DocBits
+    (DOC²)</a> - Learn how to configure SSO
+    for Azure Active Directory (AD) with DocBits (DOC²).</li>
+<li><a href="/docbits/settings-sso-settings/">SSO Service Provider Settings in DocBits
+    (DOC²)</a> - Learn how to configure
+    SSO service provider settings in DocBits (DOC²).</li>
+</ul>
+<p>Improve your productivity, security, and IT efficiency by configuring
+Single Sign On (SSO) for Infor Cloud and Azure AD. Find helpful
+documentation and guides here.</p><p>::: video-container
+<code>&lt;iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen&gt;</code>{=html}<code>&lt;/iframe&gt;</code>{=html}
+:::</p>
+<h2>How to Use the AI Indicators in DocBits (DOC²)</h2>
+<p>DocBits (DOC²) offers powerful AI indicators that allow you to measure
+the quality of extraction for your documents. Here's how to use them:</p>
+<ol>
+<li>Open a document from the dashboard.</li>
+<li>
+<p>In document view, you'll see two indicators for the quality of
+    extraction:</p>
+<ul>
+<li>
+<p>Extraction quality in percent per field and current document</p>
+</li>
+<li>
+<p>Overall extraction quality including previous extractions of
+    documents of the same type.</p>
+<p><img alt="Extraction quality in percent per field and current
+document" src="/_images/docbits/Document%20Validation/4-AI%20Indicator/Image_3_Field_Accuracy.png" />
+3.  For each field, there is a value available on the right side that
+    indicates the quality of extraction for the current document. A
+    percentage value will be displayed.
+4.  Furthermore, there is a graph that shows the quality of all previous
+    extractions for a document type. This refers in each case to the
+    extraction value with the lowest quality.</p>
+</li>
+</ul>
+</li>
+</ol>
+<figure>
+<img
+src="/_images/docbits/Document%20Validation/4-AI%20Indicator/Image_4_AI_Indicator_Icon.png"
+title="Overall extraction quality including previous extractions of documents of the same type"
+loading="lazy" width="600" height="400"
+alt="AI indicator for overall extraction quality including previous extractions of documents of the same type" />
+<figcaption>Overall extraction quality including previous extractions of
+documents of the same type</figcaption>
+</figure>
+
+<h2>Explanation of the AI Indicator</h2>
+<p>The AI indicator shows how well a document is trained. This is done via
+an internal score. As soon as a document is read in and the fields
+extracted by DocBits (DOC²) are confirmed by the user, this score is
+increased. The higher the score, the further the display of the AI
+indicator will be in the green area. If fields are changed manually by
+the user after the export, this score will decrease again, and the
+display of the AI indicator will fall back into the red area. Only when
+the document has been taught and the extraction has determined the
+correct value for some imports without manual intervention will the
+score reach 100%.</p>
+<h2>Improve Your Document Processing with DocBits (DOC²)</h2>
+<p>DocBits (DOC²) is a powerful tool that can help you streamline your
+document processing and improve your workflow. With its advanced AI
+indicators, you can measure the quality of extraction for your documents
+and make adjustments as needed. Try DocBits (DOC²) today and see how it
+can help you work smarter, not harder.</p><h3>How to Validate a document</h3>
+<p>After you have uploaded a document as described
+<a href="/docbits/dashboard/">here</a> and perform the following steps to validate
+it:</p>
+<p>1. Go to <code>HOME</code> where you will find the DASHBOARD with uploaded
+documents</p>
+<p><img alt="Dashboard" src="/_images/docbits/Document%20Validation/1-Index/DOC2_dashboard_1.png" /></p>
+<p>2. Click on the bar to open the document. In this case it doesn't
+matter if you click on the document name or the status.</p>
+<p><img alt="Document" src="/_images/docbits/Document%20Validation/1-Index/DOC2_invoice-details_2.png" /></p>
+<p>On the left-hand side, you can see the documents preview, where you can
+also jump from one to the other page when you document has more than
+just one page. In the middle part of the screen, you have the big
+overview of the document where you can also see the extracted values
+marked in purple. And, finally, on the right-hand side you have all the
+segments of the extracted values.</p>
+<p>Let's focus on this last part.</p>
+<p>Firstly, on the top right side you can define the document origin if
+needed:</p>
+<p><img alt="Amount/Date" src="/_images/docbits/Document%20Validation/1-Index/DOC2_amount-and-date-format_3.png" /></p>
+<p>For different origins the document can have different amount and date
+formats. To be sure dates and figures/amounts will be extracted
+correctly make sure the document origin is set properly.</p>
+<p>Now, we get the basic information like invoice number, date etc. If you
+click on the field of invoice number for example, you get directly
+marked where on the invoice it was extracted.</p>
+<p><img alt="Invoice
+Number" src="/_images/docbits/Document%20Validation/1-Index/DOC2_invoice-number_4.png" /></p>
+<p>You can now check if the number was extracted correctly. All values that
+were correctly extracted you confirm with the checkmark. You can do this
+with every single field. Another important point is that on the right
+side of each field you get a percentage of the confidence level of the
+DocBits (DOC²).</p>
+<p>All values that have been correctly extracted and confirmed with the
+check mark will have a green bar at the beginning of the field.</p>
+<p><img alt="Fields" src="/_images/docbits/Document%20Validation/1-Index/DOC2_correct-fields_5.png" /></p>
+<p>A great example is on the next segment of field IBAN, where the IBAN is
+not even extracted, as confidence level is equal to 0. To train and
+extract the value, just enter the field and mark the IBAN on the
+invoice. You get this message if you are sure of your selection, so
+click yes.</p>
+<p><img alt="Field Training
+Confirmation" src="/_images/docbits/Document%20Validation/1-Index/DOC2_confirm_field_6.png" /></p>
+<p>The selected value will be extracted to the IBAN field and displayed on
+the invoice. Please confirm the value with the checkmark to finalize it.</p>
+<p><img alt="Confirmation" src="/_images/docbits/Document%20Validation/1-Index/DOC2_click-check_7.png" /></p>
+<p>The procedure for each extracted or non-extracted value is always the
+same. Here are some examples of the values extracted from an invoice:</p>
+<p><img alt="VAT
+Rate" src="/_images/docbits/Document%20Validation/1-Index/DOC2_vat-rate_8.png" /></p>
+<p><img alt="Supplier" src="/_images/docbits/Document%20Validation/1-Index/DOC2_supplier-name_9.png" /></p>
+<p>For the vendor details we have configured the Fuzzy search, where the
+supplier identification is matched by the master data imported from your
+ERP system. If for example the supplier's name was missing you could
+also look it up in this table. Everything is set up very easily and
+user-friendly so this job of making the validation is faster.</p>
+<p>After checking all the fields available for extraction, you can confirm
+the changes and export directly. If you have to interrupt editing,
+e.g. because of a last-minute appointment or a phone call, you can also
+save the changes you have confirmed up to that point and continue later.</p>
+<p><img alt="Save" src="/_images/docbits/Document%20Validation/1-Index/DOC2_save_10.png" /></p>
+<p>When you have saved the changes, the document remains in the Ready for
+Validation status.</p>
+<p><img alt="Ready for Validation
+Status" src="/_images/docbits/Document%20Validation/1-Index/DOC2_dashboard_11.png" /></p>
+<p>Find more details in the following sections:</p><p>::: video-container
+<code>&lt;iframe src='https://www.youtube.com/embed/VIDEO_ID_HERE' frameborder='0' allowfullscreen&gt;</code>{=html}<code>&lt;/iframe&gt;</code>{=html}
+:::</p>
+<h2>Master Data Validation for Streamlined Document Processing</h2>
+<p>DocBits (DOC²) offers a powerful solution for efficient document
+processing: master data validation. With this feature, supplier data
+extracted from documents can be matched with your ERP system's master
+data, automatically assigning the document to the correct supplier
+without any manual work.</p>
+<h3>Matching by VAT Number</h3>
+<p>One way to match supplier data is by using the VAT number extracted from
+the document. DocBits (DOC²) automatically matches the VAT number with
+the supplier master data you've uploaded to the system. The supplier ID
+and corresponding data, such as name and address, are then determined
+automatically.</p>
+<p>If needed, you can manually intervene at any time and call up the
+supplier provided. This is done via the following button:</p>
+<p><img alt="Call up supplier
+data" src="/_images/docbits/Document%20Validation/2%20-%20Master%20Data%20Validation/image_1_fuzzy_search.png" /></p>
+<h3>Finding by Supplier Name</h3>
+<p>Another way to find the correct supplier is by searching for their name
+in the supplier master data. Simply click the button in the supplier
+name field and search for the supplier in the master data.</p>
+<p><img alt="Search for supplier in master
+data" src="/_images/docbits/Document%20Validation/2%20-%20Master%20Data%20Validation/image_2_search_supplier_name.png" /></p>
+<h3>Tax Country</h3>
+<p>Based on the ISO Code alpha-2 field, the Tax Country field gets filled
+with the first section of this element, for example DE for Germany. The
+Tax Code field is filled with the second section of this element.</p>
+<h2>Simplify Your Document Processing with DocBits (DOC²)</h2>
+<p>DocBits (DOC²)'s master data validation feature is just one of the many
+ways we help streamline document processing for businesses. Contact us
+today to learn more about how we can help your organization save time
+and resources.</p><p>In the document view of DocBits (DOC²), you can open the OCR view for a
+document to improve data extraction accuracy. Simply import a document
+and open it in document view. Then, click the "OCR" button to open the
+document in pure OCR view without any formatting or similar.</p>
+<p>This feature is particularly useful when troubleshooting data extraction
+issues. By viewing the document in pure OCR view, you can see the actual
+values contained in the document and identify any extraction errors.</p>
+<p>To further improve accuracy, you can switch to debug view to see how
+DocBits (DOC²) extracts individual values in the background. This allows
+you to identify any recognition errors and fine-tune your extraction
+settings.</p>
+<p>To switch back to document view, simply click the corresponding button.</p>
+<p>Try DocBits (DOC²) today and streamline your document data extraction
+process!</p><p>If you want to achieve the best results in document classification with
+DocBits (DOC²), it's important to use exception filters. These filters
+allow you to exclude certain elements that may be interfering with the
+AI and regex classification system.</p>
+<p>To set up exception filters in DocBits (DOC²), simply open the document
+view for any document and click on the "Exception Filters" button. From
+there, you can set up the appropriate filters and apply them to your
+documents.</p>
+<p>Basically, documents in DocBits (DOC²) are classified/defined via AI and
+regex. However, there a few exceptions, you need an additional negative
+filter (exception filter) that allows you to exclude certain things.
+Exception filters are important to achieve the best results.</p>
+<p>To define an exception filter, open document view for any document:</p>
+<p><img alt="" src="/_images/docbits/image-66-1024x409.png" /></p>
+<p>There you have the option of calling up the exception filters via the
+"Exception Filters" button:</p>
+<p><img alt="" src="/_images/docbits/image-65-1024x359.png" /></p>
+<p>You can then set the appropriate filters and apply them via "Apply":</p>
+<p><img alt="" src="/_images/docbits/image-67.png" /></p><h1>Define Name of document #Example:</h1>
+<p><code>&lt;Doc2DocumentType&gt;</code>{=html}=<code>&lt;IDMDocumentType&gt;</code>{=html}</p>
+<h1>Invoice=LN_SupplierInvoice INVOICE=LN_SupplierInvoice</h1><h4></h4>
+<p>Export to Infor Document Management with publishing the document values
+in a seperate BOD</p>
+<p>Step by Step guide how to export documents to Infor Document Management
+(IDM) with publishing the values in a seperate Sync.CaptureDocument BOD.</p>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>An admin user für InforOS with the security roles "ION Desk Admin",
+    "ION API Admin", "IDM Admin".</li>
+<li>An ION API file to create the communication between DocBits (DOC²)
+    and Infor IDM. Follow the documentation here: <a href="/docbits/export/create-a-infor-ion-file/">How to create an
+    Infor ION file</a></li>
+<li>A IDM document type where the documents shall be exported to.</li>
+</ul>
+<h4>DocBits (DOC²) steps</h4>
+<p>Login to DocBits (DOC²), click on settings and select "Export".</p>
+<p><img alt="This image has an empty alt attribute; its file name is
+image-1-1024x695.png" src="/_images/docbits/image-1-1024x695.png" /></p>
+<p>Settings - Export</p>
+<p>Click on "Add integration"</p>
+<p><img alt="This image has an empty alt attribute; its file name is
+image-7-1024x751.png" src="/_images/docbits/image-7-1024x751.png" /></p>
+<p>Settings - Export - Add integration</p>
+<p>Choose "Infor ION"</p>
+<p><img alt="" src="/_images/docbits/image-31-1024x342.png" /></p>
+<p>Click on the ION API File section and select the ION API file that you
+want to use for the communication between DocBits (DOC²) and IDM. If you
+don't have a ION API file follow this documentation to create one: <a href="/docbits/export/create-a-infor-ion-file/">How
+to create an Infor ION file</a></p>
+<p><img alt="" src="/_images/docbits/image-32-1024x347.png" /></p>
+<p>Click on the IDM Mapping file section and choose the IDM Mapping file
+you want to use for the export. You find a example of the IDM mapping
+file on this page: <a href="/docbits/export/how-to-create-a-idm-mapping-file/">How to create a IDM mapping
+file</a></p>
+<p><img alt="" src="/_images/docbits/image-33-1024x344.png" /></p>
+<p>Click on the BOD Mapping file section and choose the BOD Mapping file
+you want to use for the export. You find a example of the BOD mapping
+file on this page: <a href="/docbits/export/how-to-create-a-bod-mapping-file/">How to create a BOD mapping
+file</a></p>
+<p><img alt="" src="/_images/docbits/image-34-1024x343.png" /></p>
+<p>Click "Save" to the save the export setting.</p>
+<h4>Infor ION steps</h4>
+<p>Open "Infor ION API", select "Authorized Apps" and click on the DocBits
+(DOC²) application.</p>
+<p><img alt="" src="/_images/docbits/image-35.png" /></p>
+<p>Copy and store the "Client ID", this ID will be required later.</p>
+<p><img alt="" src="/_images/docbits/image-36.png" /></p>
+<p>Open "ION Desk", open the burger menu, select "Connect" and click on
+"Connection points"</p>
+<p>Click on "+Add" and choose "IMS via ION API"</p>
+<p><img alt="" src="/_images/docbits/image-37.png" /></p>
+<p>Enter the name meaningful "Doc2Export" and give it a meaningful
+description.</p>
+<p>Uncheck the box "Application has IMS EndPoint" and enter the "Client ID"
+copied from ION API.</p>
+<p><img alt="" src="/_images/docbits/image-39-1024x438.png" /></p>
+<p>Change to the "Documents" tab.</p>
+<p>Click on the "+" icon and enter to the filter field
+"Sync.CaptureDocument". The list should show the correct BOD now, check
+the box in front of "Sync.CaptureDocument" and click "OK".</p>
+<p><img alt="" src="/_images/docbits/image-40-1024x944.png" /></p>
+<p>Click the disk icon to save the settings.</p>
+<p><img alt="" src="/_images/docbits/image-41.png" /></p>
+<p>Change to "Data Flows" and click on "+Add" and select "Document Flow".</p>
+<p><img alt="" src="/_images/docbits/image-43.png" /></p>
+<p>Enter a meaningful name and description.</p>
+<p>Drag and drop an "Application" to the flow and name it "Doc2".</p>
+<p><img alt="" src="/_images/docbits/image-44.png" /></p>
+<p>Click on the "+" icon and select the "Doc2" application, in this case
+"Doc2Export" and click "OK".</p>
+<p><img alt="" src="/_images/docbits/image-45.png" /></p>
+<p>Click on the disk icon to save the new document flow.</p>
+<p><img alt="" src="/_images/docbits/image-46.png" /></p><h4>Export to Infor Document Management without publishing the document values in a seperate BOD</h4>
+<p>Step by Step guide how to export documents to Infor Document Management
+(IDM) without publishing the values in a seperate BOD.</p>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>An admin user für InforOS with the security roles "ION Desk Admin",
+    "ION API Admin", "IDM Admin".</li>
+<li>An ION API file to create the communication between DocBits (DOC²)
+    and Infor IDM. Follow the documentation here: <a href="/docbits/export/create-a-infor-ion-file/">How to create an
+    Infor ION file</a></li>
+<li>A IDM document type where the documents shall be exported to.</li>
+<li>A IDM Mapping file which IDM uses to know which document content
+    represents which information. You find a example of the IDM mapping
+    file on this page: <a href="/docbits/export/how-to-create-a-idm-mapping-file/">How to create a IDM mapping
+    file</a></li>
+</ul>
+<p>Login to DocBits (DOC²), click on settings and select "Export".</p>
+<p><img alt="" src="/_images/docbits/ExportToInforIDM_1.png" /></p>
+<p>Settings - Export</p>
+<p>Click on "Add integration"</p>
+<p><img alt="" src="/_images/docbits/ExportToInforIDM_2.png" /></p>
+<p>Settings - Export - Add integration</p>
+<p>Choose "Infor IDM"</p>
+<p><img alt="" src="/_images/docbits/ExportToInforIDM_3.png" /></p>
+<p>Click on the ION API File section and select the ION API file that you
+want to use for the communation between DocBits (DOC²) and IDM. If you
+don´t have a ION API file follow this documentation to create one: <a href="/docbits/export/create-a-infor-ion-file/">How
+to create an Infor ION file</a></p>
+<p>On normal exports you will have to pick "CLOUD" on the left slider. With
+the right slider you can choose if you want to export the normal PDF
+Invoice to Infor or if you want to export the Invoice as ZUGfERD (PDF
+with X-Rechnung format ZUGfERD XML attachment).
+<img alt="" src="/_images/docbits/ExportToInforIDM_4_PDF_Cloud.png" />
+<img alt="" src="/_images/docbits/ExportToInforIDM_4_ZUGfERD_Cloud.png" /> On exports
+using <a href="/docbits/fileshare/">Watchdog</a>, you will have to pick "ONPREM" on
+the left slider. <img alt="" src="/_images/docbits/ExportToInforIDM_4_PDF_OnPrem.png" />
+<img alt="" src="/_images/docbits/ExportToInforIDM_4_ZUGfERD_OnPrem.png" /></p>
+<p>Click on the IDM Mapping file section and choose the IDM Mapping file
+you want to use for the export. You find a example of the IDM mapping
+file on this page: <a href="/docbits/export/how-to-create-a-idm-mapping-file/">How to create a IDM mapping
+file</a>
+<img alt="" src="/_images/docbits/ExportToInforIDM_5_PDF_Cloud.png" />
+<img alt="" src="/_images/docbits/ExportToInforIDM_5_ZUGfERD_Cloud.png" />
+<img alt="" src="/_images/docbits/ExportToInforIDM_5_PDF_OnPrem.png" />
+<img alt="" src="/_images/docbits/ExportToInforIDM_5_ZUGfERD_OnPrem.png" /></p>
+<p>Click "Save" to the save the export setting.</p><h1>How to Create an Infor ION API File for Exporting from DocBits (DOC²)</h1>
+<p>If you're looking to export from DocBits (DOC²) to Infor, you'll need to
+create an Infor ION API file with the necessary permissions for InforOS
+users. Follow our step-by-step guide below to learn how.</p>
+<h2>Prerequisites</h2>
+<p>Before you get started, make sure you have the following:</p>
+<ul>
+<li>An admin user for InforOS with the security roles <code>ION Desk Admin</code>,
+    <code>ION API Admin</code>, and <code>IDM Admin</code>.</li>
+<li>An InforOS user that can be used as a service account with the
+    security roles <code>IDM-AdvancedUser</code>, <code>Infor-SuiteUser</code>, and
+    <code>MingleEnterprise</code>.</li>
+</ul>
+<h2>Step-by-Step Guide</h2>
+<ol>
+<li>Log in to InforOS with an admin user and navigate to the <strong>Infor ION
+    API</strong> screen. Click on <strong>Authorized Apps</strong> and then on the <code>+</code>
+    button.</li>
+</ol>
+<p><img alt="Infor ION API Step 1" src="/assets/images/infor-ion-api-1.png" /></p>
+<ol>
+<li>Enter a meaningful name and description for your app, such as
+    'Doc2Export'. Choose <code>Backend Service</code> and click on the disk icon to
+    save.</li>
+</ol>
+<p><img alt="Infor ION API Step 2" src="/assets/images/infor-ion-api-2.png" /></p>
+<ol>
+<li>Once the entries are saved, click the button <strong>Download
+    Credentials</strong>.</li>
+</ol>
+<p><img alt="Infor ION API Step 3" src="/assets/images/infor-ion-api-3.png" /></p>
+<ol>
+<li>Switch on <code>Create Service Account</code> and enter the service user name
+    into the box.</li>
+</ol>
+<p><img alt="Infor ION API Step 4" src="/assets/images/infor-ion-api-4.png" /></p>
+<ol>
+<li>Click <code>DOWNLOAD</code> to get the ION API file.</li>
+</ol>
+<p>And that's it! You've successfully created an Infor ION API file for
+exporting from DocBits (DOC²) to Infor with the necessary permissions
+for InforOS users. If you have any questions or need further assistance,
+don't hesitate to contact us.</p><h1>Export to FLOW²: A Step-by-Step Guide for DocBits (DOC²) Users</h1>
+<p>If you're a DocBits (DOC²) user looking to streamline your document
+management process, integrating with FLOW² is a great option. Follow
+these simple steps to export your documents from DocBits (DOC²) to
+FLOW²:</p>
+<h2>Step 1: Access Export Settings</h2>
+<p>Log in to your DocBits (DOC²) account and navigate to the settings menu.
+From there, select "Export."</p>
+<p><img alt="DocBits (DOC²) Export
+Settings" src="/_images/docbits/DOC2_Settings_Export-1024x612.png" title="DocBits (DOC²) Export Settings" /></p>
+<h2>Step 2: Add Integration</h2>
+<p>Click on the "Add integration" button to begin the integration process.</p>
+<p><img alt="Add Integration
+Button" src="/_images/docbits/DOC2_Add-integration-1024x537.png" title="Add Integration Button" /></p>
+<h2>Step 3: Select FLOW²</h2>
+<p>Choose "Flow" from the list of integration options.</p>
+<p><img alt="Select
+FLOW²" src="/_images/docbits/DOC2_select-integration_FLOW2--1024x349.png" title="Select FLOW²" /></p>
+<h2>Step 4: Configure Integration</h2>
+<p>Select the integration for the document type "INVOICE" and choose
+"Invoice verification" and "Incoming invoice." Then, upload the mapping
+file.</p>
+<p><img alt="Configure
+Integration" src="/_images/docbits/DOC2_Export-to-Flow_invoice-received-1024x515.png" title="Configure Integration" /></p>
+<p>You can download the mapping file
+<a href="https://docs.cloudintegration.eu/wp-content/uploads/2021/11/FLOW2_Mappings.txt">here</a>.</p>
+<h2>Step 5: Save Settings</h2>
+<p>Click "SAVE" to save your integration settings.</p>
+<p><img alt="Save
+Settings" src="/_images/docbits/DOC2_integration_FLOW2_invoice_saved-settings-1024x552.png" title="Save Settings" /></p>
+<p>With these settings in place, you're ready to start exporting your
+documents from DocBits (DOC²) to FLOW².</p>
+<hr />
+<p>By following these simple steps, you can easily integrate your DocBits
+(DOC²) and FLOW² accounts and streamline your document management
+process. Once your integration is complete, you can upload, validate,
+and export your documents from DocBits (DOC²) and find them in FLOW²'s
+"Recently Created" section. For more information on configuring your
+FLOW² account, visit our <a href="/flow2/import-from-docbits/">import from DocBits
+(DOC²)</a> page.</p><h4>Exporting data via a webhook</h4>
+<p>A webhook is an easy way to exchange data between online applications.</p>
+<p>Follow the steps to configure the webhook export.</p>
+<p>Login to DocBits (DOC²), click on settings and select "Export".</p>
+<p><img alt="" src="/_images/docbits/image-1-1024x695.png" /></p>
+<p>Settings - Export</p>
+<p>Click on "Add integration"</p>
+<p><img alt="" src="/_images/docbits/image-7-1024x751.png" /></p>
+<p>Settings - Export - Add integration</p>
+<p>Choose "Webhook"</p>
+<p><img alt="" src="/_images/docbits/image-10-1024x344.png" /></p>
+<p>Settings - Export - Add integration - Webhook</p>
+<p>Enter the webhook URL and click on "Save"</p>
+<p><img alt="" src="/_images/docbits/image-11-1024x350.png" /></p>
+<p>Settings - Export - Add integration - Webhook - Webhook settings</p><h2>Export Options for DocBits (DOC²) Documents</h2>
+<p>If you're looking to export documents from DocBits (DOC²) to other
+environments, we've got you covered. Below, you'll find links to
+step-by-step guides and documentation for each export option.</p>
+<h3>Export via Webhook</h3>
+<p>Learn how to export documents from DocBits (DOC²) via Webhook. Our guide
+will walk you through the process step-by-step.</p>
+<p><a href="/docbits/export/webhook/" title="Export Documents from DocBits (DOC²) via Webhook">Export via
+Webhook</a></p>
+<h3>Export to Infor</h3>
+<p>Exporting documents from DocBits (DOC²) to Infor is easy with our
+step-by-step guide. Learn how to do it here.</p>
+<p><a href="/docbits/export/export-to-infor/" title="Export Documents from DocBits (DOC²) to Infor">Export to
+Infor</a></p>
+<h3>Export to FLOW²</h3>
+<p>Need to export documents from DocBits (DOC²) to FLOW²? Our guide will
+show you how to do it step-by-step.</p>
+<p><a href="/docbits/export/export-to-flow2/" title="Export Documents from DocBits (DOC²) to FLOW²">Export to
+FLOW²</a></p>
+<p>By following these guides, you'll be able to export your DocBits (DOC²)
+documents to other environments quickly and easily. If you have any
+questions or need further assistance, please don't hesitate to contact
+us.</p><h4>Step by step guide how to create a BOD mapping file.</h4>
+<p>You can download a example mapping file here:</p>
+<p><a href="https://docs.cloudintegration.eu/wp-content/uploads/2021/11/BOD_Mappings.txt">BOD mapping
+example</a><a href="https://docs.cloudintegration.eu/wp-content/uploads/2021/11/BOD_Mappings.txt">Download</a></p>
+<p>To use the example file, rename the file from "BOD_Mapping.txt" to
+"BOD_Mapping.properties".</p>
+<p>****Here you can find an explanation how the file is
+structured.****</p>
+<p>In the first block, all static values will be defined. Fields that would
+need an adjustment are "LogicalID" and "AccountingEntityID".</p>
+<p>The "LogicalID" must be set to the logical ID of the IMS connection
+point that was defined for the DocBits (DOC²) BOD export.</p>
+<p>The "AccountingEnity" must be set to the accounting entity of the target
+Infor ERP system.</p>
+<pre><code>#All static field attributes.
+Static_Fields=AlternateDocSchema,AlternateDocLocation,LogicalID,ConfirmationCode,actionCode,AccountingEntityID
+
+SFP_AlternateDocSchema=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\AlternateDocumentID\\ID\\schemeName
+SFV_AlternateDocSchema=CorrelationID
+
+SFP_AlternateDocLocation=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\AlternateDocumentID\\ID\\location
+SFV_AlternateDocLocation=doc2
+
+SFP_LogicalID=SyncCaptureDocumentType\\ApplicationArea\\Sender\\LogicalID
+SFV_LogicalID=lid://infor.ims.doc2export
+
+SFP_ConfirmationCode=SyncCaptureDocumentType\\ApplicationArea\\Sender\\ConfirmationCode
+SFV_ConfirmationCode=OnError
+
+SFP_actionCode=SyncCaptureDocumentType\\DataArea\\Sync\\ActionCriteria\\ActionExpression\\actionCode
+SFV_actionCode=Add
+
+SFP_AccountingEntityID=SyncCaptureDocumentType\\DataArea\\Sync\\AccountingEntityID
+SFV_AccountingEntityID=infor.ln.100
+</code></pre>
+<p>In the second block you can adjust the document type mapping. On the
+left side you have the document type of DocBits (DOC²) and on the right
+side the document type of the BOD.</p>
+<pre><code>#All generated fields.
+Generated_Fields=CreationDateTime,BODID
+
+GFP_BODID=SyncCaptureDocumentType\\ApplicationArea\\BODID
+GFV_BODID=BODID
+
+GFP_CreationDateTime=SyncCaptureDocumentType\\ApplicationArea\\CreationDateTime
+GFV_CreationDateTime=CurrentDate
+
+#Document Type path.
+DT_Path=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\DocumentType
+
+#Mapping between doc2 document and IDM document.
+Document_Types=Invoice
+Invoice=SupplierInvoice
+</code></pre>
+<p>In the third block you can adjust the field mapping. On the left side
+are the fields of DocBits (DOC²) and on the right side the field names
+of the BOD.</p>
+<pre><code>#Index Field Mapping
+Index_Fields=INVOICE_TYPE,PURCHASE_ORDER,INVOICE_NUMBER,INVOICE_DATE,DELIVERY_DATE,PAYMENT_TERMS,TAX_RATE,TAX_AMOUNT,NET_AMOUNT,TOTAL_AMOUNT,CURRENCY,VENDOR_ID,VENDOR_NAME,VAT_NO_EXTRACTED,IBAN_EXTRACTED,ACCOUNTING_ENTITY,CORRELATION_ID
+IF_INVOICE_TYPE=InvoiceType
+IF_PURCHASE_ORDER=PurchaseOrder
+IF_INVOICE_NUMBER=InvoiceNumber
+IF_INVOICE_DATE=InvoiceDate
+IF_DELIVERY_DATE=DeliveryDate
+IF_PAYMENT_TERMS=PaymentTerms
+IF_TAX_RATE=VatPercent
+IF_TAX_AMOUNT=VATAmount
+IF_NET_AMOUNT=NetAmount
+IF_TOTAL_AMOUNT=TotalAmount
+IF_CURRENCY=Currency
+IF_VENDOR_ID=SupplierID
+IF_VENDOR_NAME=SupplierName
+IF_IBAN_EXTRACTED=AccountNumber
+IF_VAT_NO_EXTRACTED=VATRegNo
+#IF_ACCOUNTING_ENTITY=AccountingEntityID
+IF_CORRELATION_ID=AlternateDocumentID
+#IF_VENDOR_IBAN=BankAccount
+</code></pre>
+<p>In the rest of the file should stay as is and does not need any
+modification.</p>
+<pre><code>#If index field value is to be used somewhere else define path here.
+
+IFP_CORRELATION_ID=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\AlternateDocumentID\\ID
+IFP_INVOICE_NUMBER=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\DocumentID\\ID
+IFP_INVOICE_DATE=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\DocumentDateTime
+#IFP_ACCOUNTING_ENTITY=SyncCaptureDocumentType\\DataArea\\Sync\\AccountingEntityID
+
+#Index field common path
+IF_COMMON_PATH=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\DocumentField
+
+IF_Attributes=languageID
+
+IFP_languageID=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\DocumentField\\Name\\languageID
+IFV_languageID=en-us
+
+
+#IF_Elements=name,value,fieldOrderNumber,datatype,category,pageID,fieldEnumeration
+IF_Elements=name,value,fieldOrderNumber,page,fieldEnumeration
+IFP_name=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\DocumentField\\Name
+IFP_value=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\DocumentField\\Value
+IFP_fieldOrderNumber=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\DocumentField\\FieldOrderNumber
+IFP_page=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\DocumentField\\PageID
+IFP_fieldEnumeration=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\DocumentField\\FieldValueEnumerationString
+
+
+Pages_COMMON_PATH=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\DocumentPage
+
+Page_Elements=pageID,sourceFileName,fileMimeType
+PFP_pageID=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\DocumentPage\\PageID
+PFP_sourceFileName=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\DocumentPage\\SourceFileName
+PFP_fileMimeType=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\DocumentPage\\SourceMimeType
+
+Batch_Level_Properties=fileSize,lastModificationPerson,lastModifiedDateTime
+
+#Path_CreatePerson=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\CreationPerson\\Name
+Path_fileSize=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\FileSize
+Path_lastModificationPerson=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\LastModificationPerson\\Name
+Path_lastModifiedDateTime=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\LastModificationDateTime
+</code></pre><h1>Export to Infor :fontawesome-solid-file-export:</h1>
+<p><code>mermaid
+graph LR
+  A[Start] --&gt; B{Invoice?};
+  B --&gt;|Yes| C[Extraction];
+  C --&gt; D[Infor LN or M3];
+  D --&gt; E[Send to IDM];
+  B ----&gt;|No| E[Send to IDM];
+  E --&gt; F[End];</code></p>
+<p>Here you can find all the useful pages to connect your infor environment
+correctly:</p>
+<ul>
+<li><a href="/docbits/export/how-to-create-a-bod-mapping-file/">:octicons-file-24: How to create a BOD mapping
+    file</a></li>
+<li><a href="/docbits/export/infor-ion/">:fontawesome-solid-file-export: Export to Infor ION and
+    IDM</a></li>
+<li><a href="/docbits/export/how-to-create-a-idm-mapping-file/">:octicons-file-24: How to create a IDM mapping
+    file</a></li>
+<li><a href="/docbits/export/create-a-infor-ion-api-file/">:octicons-file-24: How to create an Infor ION API
+    file</a></li>
+<li><a href="/docbits/export/infor-idm/">:fontawesome-solid-file-export: Export to Infor
+    IDM</a></li>
+</ul><h2>DocBits (DOC²) Import Options</h2>
+<p>Importing documents into DocBits (DOC²) is easy and convenient with our
+various import options. Choose the method that works best for you:</p>
+<h3>E-Mail Import</h3>
+<p>With E-Mail import, you can easily forward documents to your unique
+DocBits (DOC²) email address and they will automatically be added to
+your account. Learn more about <a href="/docbits/e-mail/">E-Mail Import</a> and
+start streamlining your document management process today.</p>
+<h3>Manual Import</h3>
+<p>For documents that can't be sent via email, manual import is a great
+option. Simply upload your files directly to DocBits (DOC²) and they
+will be added to your account. Learn more about <a href="/docbits/manual-import/">Manual
+Import</a> and start organizing your documents
+more efficiently.</p>
+<h3>API Integration</h3>
+<p>For businesses with more complex document management needs, API
+integration allows for seamless integration with other systems. Learn
+more about <a href="/docbits/settings/integration/api-integration/">API
+Integration</a> and start
+streamlining your document management process today.</p>
+<h3>File Sharing</h3>
+<p>With file sharing, you can easily collaborate with others by sharing
+documents directly from DocBits (DOC²). Learn more about <a href="/docbits/fileshare/">File
+Sharing</a> and start collaborating more efficiently
+today.</p>
+<p>Choose the import option that works best for you and start streamlining
+your document management process with DocBits (DOC²) today.</p><h1>Postman for DocBits (DOC²)</h1>
+<p>This guide will show you how to make HTTP requests to your DocBits
+(DOC²) organization via Postman. It is easy to use and very useful for
+organization administrators.</p>
+<h2>Setup</h2>
+<p>First, <a href="https://www.postman.com/downloads/">download Postman</a> to your
+system and sign in/register.</p>
+<p>Now follow this step-by-step guide to learn how HTTP requests work in
+Postman.</p>
+<h2>Authorization</h2>
+<h3>In Postman</h3>
+<p>Before you can create your HTTP requests, you need to enter your API key
+from DocBits (DOC²) to authorize them.</p>
+<p><strong>1.</strong> Click on the <code>Authorization</code> tab und choose <code>API Key</code> as
+authorization type.</p>
+<p><img alt="Picture" src="/_images/docbits/admin_guides_authorization_API%20Key.png" />{loading="lazy"}</p>
+<p><strong>2.</strong> Fill in the values. Enter "x-api-key" in the <code>Key</code> field and your
+API Key as value (found in DocBits (DOC²) Settings menu <strong>Integration</strong>)
+Select the Add to <code>Header</code>.</p>
+<p>It should look like this:</p>
+<p><img alt="Picture" src="/_images/docbits/admin_guides_authorize_finish.png" />{loading="lazy"}</p>
+<h3>On <code>&lt;a href="https://api.polydocs.io"&gt;</code>{=html}api.polydocs.io<code>&lt;/a&gt;</code>{=html}</h3>
+<p><strong>1.</strong> Click on <strong>Authorize</strong> in the upper right corner</p>
+<p><img alt="Picture" src="/_images/docbits/admin_guides_doc2-api-authorize.png" />{loading="lazy"}</p>
+<p><strong>2.</strong> Enter your API Key and confirm by clicking <code>Authorize</code></p>
+<p><img alt="Picture" src="/_images/docbits/admin_guides_doc2-api-authorize_key.png" />{loading="lazy"}</p>
+<h2>Create a new Workspace in Postman</h2>
+<p><strong>1.</strong> Click on Workspaces and create a new workspace (you can name it
+whatever you want).<code>&lt;br&gt;</code>{=html}</p>
+<p><img alt="Picture" src="/_images/docbits/admin_guides_postman_guide_workspace_1.png" />{loading="lazy"}</p>
+<p><strong>2.</strong> You have to select the visibility which determines who can access
+this workspace.</p>
+<p><img alt="Picture" src="/_images/docbits/admin_guides_postman_guide_create-workspace-visibility.png" />{loading="lazy"}</p>
+<p><strong>3.</strong> After making your selection and clicking <code>Create Workspace</code>
+select Collections on the left side of the application and create a new
+collection for your HTTP requests by clicking <code>+</code>.</p>
+<p><img alt="Picture" src="/_images/docbits/admin_guides_postman_guide_new%20collection.png" />{loading="lazy"}</p>
+<p>In this collection, you can add multiple HTTP requests. To do this,
+click on the 3 points of the collection and select <code>Add request</code>.</p>
+<p><img alt="Picture" src="/_images/docbits/admin_guides_add_request.png" />{loading="lazy"}</p>
+<h2>"GET" Method example</h2>
+<p>The GET method is very useful to get information about users,
+sub-organizations, processed documents and much more.</p>
+<p><strong>1.</strong> Choose the GET method in your HTTP request.<code>&lt;br&gt;</code>{=html} <strong>2.</strong>
+Authorize yourself as described
+<a href="/docbits/admin-guides/postman-projects/#authorization">above</a>.<code>&lt;br&gt;</code>{=html}
+<strong>3.</strong> Open
+<code>&lt;a href="https://api.polydocs.io"&gt;</code>{=html}api.polydocs.io<code>&lt;/a&gt;</code>{=html}
+and add the path of the function behind the polydocs URL. For example:</p>
+<p><img alt="Picture" src="/_images/docbits/admin_guide_get_api.png" />{loading="lazy"}</p>
+<pre><code>    https://api.polydocs.io/users/get_users
+</code></pre>
+<p><strong>4.</strong> Now paste this link in the text box next to the GET method in
+Postman.</p>
+<p>Click <code>Send</code> and you should receive all the information about every user
+in your organization.</p>
+<h2>"POST" Method examples</h2>
+<p>The POST method is usually used to create users or organizations, for
+example. This method inserts information into the database.</p>
+<h3>Create User</h3>
+<p><strong>1.</strong> Select the POST Method.<code>&lt;br&gt;</code>{=html} <strong>2.</strong> Authorize yourself as
+described
+<a href="/docbits/admin-guides/postman-projects/#authorization">above</a>.<code>&lt;br&gt;</code>{=html}
+<strong>3.</strong> Open
+<code>&lt;a href="https://api.polydocs.io"&gt;</code>{=html}api.polydocs.io<code>&lt;/a&gt;</code>{=html}
+and add the path of the function behind the polydocs URL. In this case:</p>
+<p><img alt="Picture" src="/_images/docbits/admin_guides_post_api.png" />{loading="lazy"}</p>
+<pre><code>https://api.polydocs.io/users/create
+</code></pre>
+<p><strong>4.</strong> Now paste this link into the text box next to the POST method in
+Postman.<code>&lt;br&gt;</code>{=html} <strong>5.</strong> Select the <code>Body</code> tab in your HTTP request
+and enter the keys and the values ​​for each credential that has a red
+asterisk next to its name.</p>
+<p>When you're done, it should look like this:</p>
+<p><img alt="Picture" src="/_images/docbits/admin_guide_post_body.png" />{loading="lazy"}</p>
+<p>If you want to create an admin account, set the <code>is_admin</code> value to
+<strong>true</strong>.</p>
+<p>Finally, click <code>Send</code> and you can see all the credentials you set in the
+response below. This means the user has been created.</p>
+<p><img alt="Picture" src="/_images/docbits/admin_guides_post_response.png" />{loading="lazy"}</p>
+<h3>Upload document</h3>
+<p>You can also use the POST method to upload a document to DocBits (DOC²).</p>
+<p><strong>1.</strong> Select the POST Method.<code>&lt;br&gt;</code>{=html} <strong>2.</strong> Authorize yourself as
+described
+<a href="/docbits/admin-guides/postman-projects/#authorization">above</a>.<code>&lt;br&gt;</code>{=html}
+<strong>3.</strong> Open
+<code>&lt;a href="https://api.polydocs.io"&gt;</code>{=html}api.polydocs.io<code>&lt;/a&gt;</code>{=html}
+and add the path of the function behind the polydocs URL. In this case:</p>
+<p><img alt="Picture" src="/_images/docbits/admin_guides_post_document-process.png" />{loading="lazy"}</p>
+<pre><code>https://api.polydocs.io/document/process
+</code></pre>
+<p><strong>4.</strong> Now paste this link into the text box next to the POST method in
+Postman.<code>&lt;br&gt;</code>{=html} <strong>5.</strong> Select the <code>Body</code> tab in your HTTP request
+and choose <code>form-data</code>
+<img alt="Picture" src="/_images/docbits/admin_guides_post_document-process_body-form-data-file.png" />{loading="lazy"}
+<img alt="Picture" src="/_images/docbits/admin_guides_post_document-process_key-value-send.png" />{loading="lazy"}
+<strong>6.</strong> Enter <strong>file</strong> into the <code>KEY</code> field where you will find the
+hidden File dropdown. Select <code>File</code> and move to the <code>VALUE</code> field where
+you are able to select your file by clicking <code>Select Files</code>. <strong>7.</strong> When
+you click <code>Send</code>, you should see "success": true in the response.</p>
+<p>It should look like this:</p>
+<p><img alt="Picture" src="/_images/docbits/admin_guides_upload_body.png" />{loading="lazy"}</p>
+<h2>"DELETE" Method example</h2>
+<p>The DELETE method is used to delete, for example, users, organizations
+and so on.</p>
+<p><strong>1.</strong> Select the DELETE Method.<code>&lt;br&gt;</code>{=html} <strong>2.</strong> Authorize yourself
+as described
+<a href="/docbits/admin-guides/postman-projects/#authorization">above</a>.<code>&lt;br&gt;</code>{=html}
+<strong>3.</strong> Open
+<code>&lt;a href="https://api.polydocs.io"&gt;</code>{=html}api.polydocs.io<code>&lt;/a&gt;</code>{=html}
+and add the path of the function behind the polydocs URL. For example:</p>
+<p><img alt="Picture" src="/_images/docbits/admin_guides_delete_api.png" />{loading="lazy"}</p>
+<pre><code>https://api.polydocs.io/users/delete/{user_id}
+</code></pre>
+<p><strong>4.</strong> Now paste this link in the text box next to the DELETE method in
+Postman.<code>&lt;br&gt;</code>{=html} <strong>5.</strong> Replace the {user_id} at the end of the URL
+with the actual user ID you want to delete. (You can get the user_id
+using the GET method).<code>&lt;br&gt;</code>{=html} <strong>6.</strong> If you included the user_id
+in the URL, you don't need to add a body key and value for it. <strong>7.</strong>
+When you click <code>Send</code>, you should see "success": true in the response.</p>
+<p>It should look like this:</p>
+<p><img alt="Picture" src="/_images/docbits/admin_guides_delete_body.png" />{loading="lazy"}</p>
+<h2>"PUT" Method example</h2>
+<p>The PUT method is mainly used to update user or organization data. It is
+very easy to understand and use.</p>
+<p><strong>1.</strong> Select the PUT Method.<code>&lt;br&gt;</code>{=html} <strong>2.</strong> Authorize yourself as
+described
+<a href="/docbits/admin-guides/postman-projects/#authorization">above</a>.<code>&lt;br&gt;</code>{=html}
+<strong>3.</strong> Open
+<code>&lt;a href="https://api.polydocs.io"&gt;</code>{=html}api.polydocs.io<code>&lt;/a&gt;</code>{=html}
+and add the path of the function behind the polydocs URL. For example:</p>
+<p><img alt="Picture" src="/_images/docbits/admin_guides_put_api.png" />{loading="lazy"}</p>
+<pre><code>https://api.polydocs.io/users/update/{user_id}
+</code></pre>
+<p><strong>4.</strong> Now paste this link in the text box next to the PUT method in
+Postman.<code>&lt;br&gt;</code>{=html} <strong>5.</strong> Replace the {user_id} at the end of the URL
+with the actual user ID you want to delete. (You can get the user_id
+using the GET method).</p>
+<p>Suppose you want to change the email address of a user in your
+organization.</p>
+<p><strong>1.</strong> In the body, enter "email" as the key and the new email address
+as the value.<code>&lt;br&gt;</code>{=html} <strong>2.</strong> Then just press <code>Send</code> and you should
+see "success" in the response.</p>
+<p>If you'd like to have this all more visualized and interactive, you can
+download the Postman project
+<code>&lt;a href="/example/downloadables/doc2app.postman_collection.json" download&gt;</code>{=html}here<code>&lt;/a&gt;</code>{=html}
+to try it all out. Just click the Import button and select this file to
+get started right away.</p>
+<p><img alt="Picture" src="/_images/docbits/admin_guides_import_json.png" />{loading="lazy"}</p>
