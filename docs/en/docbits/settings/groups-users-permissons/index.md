@@ -16,10 +16,9 @@ Are you struggling to manage user roles and permissions for your organization's 
 
 Our user management system allows you to:
 
-- Add and remove users
-- Assign roles and permissions
-- Create sub-organizations for better organization
-- Configure groups and permissions for different document types
+[Users](https://en.docs.fellowpro.com/docbits/settings-users/): Add and remove users
+[Sub-organizations](https://en.docs.fellowpro.com/docbits/settings-sub-organizations/):Create sub-organizations for better organization
+[Groups and Permissions]():Configure groups and permissions for different document types
 
 With DocBits (DOC²), you can ensure that your organization's documents are secure and accessible only to authorized personnel. Say goodbye to the hassle of managing user roles and permissions manually and switch to DocBits (DOC²) today!
 
