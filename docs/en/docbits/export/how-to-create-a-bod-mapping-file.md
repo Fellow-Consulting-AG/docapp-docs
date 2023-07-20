@@ -12,11 +12,7 @@ tags:
 
 #### Step by step guide how to create a BOD mapping file.
 
-You can download a example mapping file here:
-
-[BOD mapping example](https://docs.cloudintegration.eu/wp-content/uploads/2021/11/BOD_Mappings.txt)[Download](https://docs.cloudintegration.eu/wp-content/uploads/2021/11/BOD_Mappings.txt)
-
-To use the example file, rename the file from “BOD\_Mapping.txt” to “BOD\_Mapping.properties”.
+Mapping files provided by us can be found [here](https://github.com/Fellow-Consulting-AG/docbits)
 
 **Here you can find an explanation how the file is structured.**
 
@@ -136,6 +132,4 @@ Path_fileSize=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\FileSize
 Path_lastModificationPerson=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\LastModificationPerson\\Name
 Path_lastModifiedDateTime=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\LastModificationDateTime
 ```
-## Mapping Files
 
-Mapping files provided by us can be found [here](https://github.com/Fellow-Consulting-AG/docbits)
