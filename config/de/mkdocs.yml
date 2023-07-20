@@ -7,7 +7,7 @@ site_description: Auf diesen Seiten erfahren Sie viel über unsere verschiedenen
 theme:
   name: material
   logo: _images/LOGO.svg
-  favicon: _images/LOGO.svg
+  favicon: _images/fav.svg
   font:
     text: Montserrat
   language: de
