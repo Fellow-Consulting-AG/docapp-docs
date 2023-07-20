@@ -55,8 +55,8 @@ Exporting documents is only possible if the user has the update permission.
 ### Delete
 Permission to delete documents.
 
-### [First Approval] (https://en.docs.fellowpro.com/docbits/settings/module/approval/)
-Permission to grant the first approval, if configured.
+### First Approval 
+Permission to grant the first approval, if configured. Learn more [here] (https://en.docs.fellowpro.com/docbits/settings/module/approval/).
 
-### [Second Approval] (https://en.docs.fellowpro.com/docbits/settings/module/approval/)
-Permission to grant the second approval, if configured.
+### Second Approval
+Permission to grant the second approval, if configured. Learn more [here] (https://en.docs.fellowpro.com/docbits/settings/module/approval/).
