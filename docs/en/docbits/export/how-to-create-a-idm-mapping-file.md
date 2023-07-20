@@ -14,7 +14,7 @@ tags:
 
 Mapping files provided by us can be found [here](https://github.com/Fellow-Consulting-AG/docbits)
 
-## Define the name of document type
+## File Structure
 
 `Invoice=LN_SupplierInvoice OR Invoice=M3_SupplierInvoice (Depends on whether you are using M3 or LN)`
 
