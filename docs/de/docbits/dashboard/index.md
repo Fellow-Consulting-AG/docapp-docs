@@ -62,7 +62,7 @@ In der rechten Spalte sehen Sie die verfügbaren `Aktionen`. Wenn Sie darauf kli
 
 ![DocBits (DOC²) Aktionsschaltflächen](/_images/docbits/dashboard/dashboard-aktionen_dokument.gif)
 
-## **Verlassen mit ESC**
+## **Zurück mit ESC**
 
 Wenn Sie während der Navigation durch Ihre Dokumente in DocBits (DOC²) zum Hauptbereich des Dashboards zurückkehren möchten, können Sie einfach die Escape-Taste (ESC) auf Ihrer Tastatur drücken und gelangen so zum Hauptmenü des Dashboards (auf der Seite, auf der Sie das gerade verlassene Dokument eingegeben haben).
 
