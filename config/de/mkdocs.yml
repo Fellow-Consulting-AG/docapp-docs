@@ -3,7 +3,7 @@ docs_dir: '../../docs/de'                           # Where to find the English 
 site_dir: '../../generated/de'                      # Where to put the English HTML files
 site_url: https://de.docs.fellowpro.com
 site_author: Daniel Jordan
-site_description: Auf diesen Seiten erfahren Sie viel über unsere verschiedenen Softwarelösungen, die Sie bei der Digitalisierung und der digitalen Transformation in Ihrem Unternehmen unterstützen.
+site_description: Optimieren Sie Ihre Infor ERP mit Docbits - der wegweisenden IDP-Lösung. Gewinnen Sie Kontrolle über Informationen, minimieren Sie Risiken und steigern Sie die Produktivität. Entdecken Sie jetzt!
 theme:
   name: material
   logo: _images/LOGO.svg
