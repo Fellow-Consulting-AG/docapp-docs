@@ -60,7 +60,7 @@ Zudem können Sie entweder alle oder nur die Ihnen zugewiesenen Dokumente sehen,
 
 In der rechten Spalte sehen Sie die verfügbaren `Aktionen`. Wenn Sie darauf klicken, werden folgende Optionen geöffnet: Herunterladen, Dokument-Flow ansehen, Zuweisen, Neu starten, Validieren und Löschen.
 
-![DocBits (DOCs²) Aktionsschaltflächen](/_images/docbits/dashboard/dashboard-aktionen_dokument.gif)
+![DocBits (DOC²) Aktionsschaltflächen](/_images/docbits/dashboard/dashboard-aktionen_dokument.gif)
 
 ## **Verlassen mit ESC**
 
