@@ -12,7 +12,7 @@ tags:
 
 ## Mapping File
 
-Mapping files provided by us can be found [here](https://github.com/Fellow-Consulting-AG/docbits)
+Mapping files provided by us can be found [here](https://github.com/Fellow-Consulting-AG/docbits).
 
 ## File Structure
 
