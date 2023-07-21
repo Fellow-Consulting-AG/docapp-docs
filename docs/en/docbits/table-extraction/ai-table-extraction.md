@@ -19,7 +19,7 @@ Well, then you are in luck!
 
 Introducing AI Table extraction feature from DocBits (DOC2). This feature allows you to effortlessly train documents using artificial intelligence and FELLOWPRO expertise.
 
-## How does it work?
+## AI Extaction
 
 It would usually take you a few minutes to train a table like the one below,
 
