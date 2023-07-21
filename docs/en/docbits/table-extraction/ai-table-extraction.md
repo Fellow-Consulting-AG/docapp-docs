@@ -13,9 +13,9 @@ Have you ever wondered how much time you could save if you didn’t need to manu
 
 Well, then you are in luck!
 
-<div class='video-container'>
-  <iframe src='https://www.youtube.com/watch?v=GX0Sjvq9ruA' frameborder='0' allowfullscreen></iframe>
-</div> 
+<div class="video-container">
+<iframe width="840" height="472.5" src="https://www.youtube.com/watch?v=GX0Sjvq9ruA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 Introducing AI Table extraction feature from DocBits (DOC2). This feature allows you to effortlessly train documents using artificial intelligence and FELLOWPRO expertise.
 
