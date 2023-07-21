@@ -13,6 +13,10 @@ Have you ever wondered how much time you could save if you didn’t need to manu
 
 Well, then you are in luck!
 
+<div class='video-container'>
+  <iframe src='https://www.youtube.com/watch?v=GX0Sjvq9ruA' frameborder='0' allowfullscreen></iframe>
+</div> 
+
 Introducing AI Table extraction feature from DocBits (DOC2). This feature allows you to effortlessly train documents using artificial intelligence and FELLOWPRO expertise.
 
 ## How does it work?
