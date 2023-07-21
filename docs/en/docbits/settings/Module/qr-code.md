@@ -15,7 +15,7 @@ This feature extracts the QR code from a document (for example, a Swiss invoice)
 
 This way information is automatically extracted from the document.
 
-![Example](/_images/docbits/Settings/Module/QR-code/image_1_eg_doc.png)
+![Example](/_images/docbits/Settings/Module/QR-code/image_1_ex_doc.png)
 
 ## How to enable this feature
 
