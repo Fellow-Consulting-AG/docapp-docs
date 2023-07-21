@@ -19,22 +19,22 @@ Introducing AI Table extraction feature from DocBits (DOC2). This feature allows
 
 It would usually take you a few minutes to train a table like the one below,
 
-xxx
+![Example](/_images/docbits/Table-Extraction/10-AI/image_1_example.png)
 
 With AI Table extraction, all it takes is to upload your document and the table will automatically be extracted and displayed on the validation screen to you.
 
-xxx
+![ValidationScreen](/_images/docbits/Table-Extraction/10-AI/image_2_validation_screen.png)
 
 AI Table extraction can handle most tables but when it comes to more complex tables with unique layouts, there may be complications. For this reason we have added a prompt area underneath the extracted table.
 
 ## Prompt Area
 
-xxx
+![PromptArea](/_images/docbits/Table-Extraction/10-AI/image_3_prompt_area.png)
 
 In the provided space, you can write certain prompts that help inform the automated table extraction system how to better extract the table.
 
 In the example below, the following prompt was used to extract a field.
 
-xxx
+![PromptAreaExample](/_images/docbits/Table-Extraction/10-AI/image_4_prompt_area_example.png)
 
 By typing in what the extracted value should be for Position 3s Quantity, the exact value can be extracted. This is useful when a table is very complex.
