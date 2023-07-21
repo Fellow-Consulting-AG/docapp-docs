@@ -175,6 +175,7 @@ nav:
     # - E-Text: docbits/document-validation/E-Text.md
     - Table Extraction:
       - docbits/table-extraction/index.md
+      - AI Table Extraction: docbits/table-extraction/ai-table-extraction.md
       - Training table extraction: docbits/table-extraction/training-of-table-extraction.md
       - Define tables and columns: docbits/table-extraction/define-table-and-columns.md
       - Add new Column: docbits/table-extraction/add-new-table-column.md
