@@ -41,3 +41,7 @@ By following these simple steps, you can easily manage your users in DocBits (DO
 <!-- <div class='video-container'>
   <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
 </div> -->
+
+## Add User with AZURE AD SSO
+
+If you are looking to add a user to your AZURE AD SSO then follow our documentation on this, available [here](https://en.docs.fellowpro.com/docbits/sso/sso-for-azure-ad/#assign-users-to-the-sso-configuration).
