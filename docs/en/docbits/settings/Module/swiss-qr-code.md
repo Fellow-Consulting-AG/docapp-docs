@@ -6,7 +6,7 @@ tags:
   - DocBits (DOC²)
   - Settings
   - Module
-  - QR Code
+  - Swiss QR Code
   - QR Code Extraction
 ---
 ## How it works
