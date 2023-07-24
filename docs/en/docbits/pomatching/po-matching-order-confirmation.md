@@ -24,7 +24,7 @@ Access the matching overview by clicking on the Matching Symbol on the dashboard
 
 Or by choosing **PO MATCHING** in the lower right corner when you have opened the document.
 
-![](/_images/docbits/PO Matching/Order Confirmation/image_3_po_validation_screen.png)
+![](/_images/docbits/PO Matching/Order Confirmation/image_3_po_matching_validation_screen.png)
 
 The matches can now be corrected:
 
