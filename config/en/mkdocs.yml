@@ -248,8 +248,8 @@ nav:
     - PO Matching:
       - docbits/pomatching/po-matching/index.md
       - Invoice: docbits/pomatching/po-matching-invoices.md
-      - Delivery Note: docbits/pomatching/po-matching-delivery-notes.md
       - Order Confirmation: docbits/pomatching/po-matching-order-confirmation.md
+      - Delivery Note: docbits/pomatching/po-matching-delivery-notes.md
 
     - ZUGFeRD: docbits/zugpferd.md
 
