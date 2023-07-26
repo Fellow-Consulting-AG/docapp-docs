@@ -87,7 +87,7 @@ For PO matching the best tool is DocBits (DOC²), which can be easily automated.
 
 ![](/_images/docbits/PO Matching/DocBits PO Matching/image_11_po_match_screen.png)
 
-### Scenario 1: When the PO gets matched
+### Scenario 1: PO gets matched
 
 ![](/_images/docbits/PO Matching/DocBits PO Matching/image_12_exported_dashboard.png)
 
@@ -105,7 +105,7 @@ Once the matched Order Confirmation is exported in DocBits(DOC²), the next cruc
 
 ![](/_images/docbits/PO Matching/DocBits PO Matching/image_14_po_not_matched.png)
 
-### Scenario 2: When the PO does not get matched
+### Scenario 2: PO does not get matched
 
 - As the purchase order not matched against the Order confirmation. 
 
