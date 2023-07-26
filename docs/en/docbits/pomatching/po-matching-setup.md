@@ -7,7 +7,6 @@ tags:
   - PO Matching
   - Order Confirmation
   - Delivery Note
-  - Invoice
 ---
 
 # PO Matching Process/Setup
