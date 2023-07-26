@@ -1,61 +1,38 @@
-# THE PLATFORM OF DIGITALIZATION
+# DocBits - Intelligent Document Processing Solution for Infor CloudSuite, LN, and M3
 ## For Business Process Automation - Including Documents
 
-## Digitization
-Digitization refers to creating a digital representation of physical objects or attributes. For instance, we scan a paper document and save it as a digital document (e.g., PDF). In other words, digitization is about converting
-something non-digital into a digital representation or artifact.
+DocBits is an innovative cloud-based Intelligent Document Processing (IDP) solution that automates the extraction of critical business data from documents using artificial intelligence.
 
 
 
 [Sign up for a 30 days free trial](https://app.polydocs.io){ .md-button .md-button--primary }
 
-## Digitalization
+Built specifically for Infor ERPs like CloudSuite, LN, and M3, DocBits streamlines document processing workflows and connects seamlessly with your existing systems.
 
-Digitalization refers to enabling or improving processes by leveraging digital technologies and digitized
-data. Therefore, digitalization presumes digitization.
-Digitalization improves an existing business process or processes but doesn’t change or transform them. It takes a process from a human-driven event or series of events to softwaredriven.
+## The Power of AI-Driven Document Processing
 
-## Digital Transformation
+DocBits uses advanced machine learning and deep learning algorithms to automatically identify, classify, and extract data from all types of documents including invoices, purchase orders, quotes, HR forms etc.
 
-Digital transformation is about the entire transformation of the company. Digital transformation includes other changes brought about by digitalization. New business areas or
-business models can open along the way.
+Key benefits:
 
-Every business process starts, contains or ends with a document. Regardless of whether in paper form or already as a file. This is called unstructured data. Although the information is on or in the document, it cannot be automatically integrated into the work processes, as it is simply not recognized by all software.
+- Accurately extracts data from structured and unstructured documents even if handwritten or in tables
+- Continuous self-learning - improves over time based on user feedback
+- Leverages swarm intelligence - gets smarter from collective experience without sharing sensitive data
+- Requires no IT resources to maintain - quick and easy setup
+- Ensures consistent and error-free document processing
+- Saves significant time on document data entry
 
-## What is DocBits (DOC²)?
+## Seamless Integration with Infor ERPs
 
-DocBits (DOC²) is the latest software and solution for document capture that was developed by PolyDocs GmbH. It is a completely cloud-based solution that uses Artificial Intelligence and Machine Learning to precisely identify, classify, analyze and read your documents. No matter if on paper or a file. DocBits (DOC²) learns independently, the level of experience increases with each document. DocBits (DOC²) accomplishes this through swarm intelligence.
+As a certified [Infor marketplace IDP solution](https://marketplace.infor.com/en-US/apps/404801/docbits-(doc%C2%B2))  for Infor, DocBits provides out-of-the-box integration with Infor CloudSuite, LN, M3 and other ERPs.
+It fits perfectly into your existing Infor workflows enabling true end-to-end process automation. Critical business data from documents is automatically extracted and validated before syncing with your Infor system.
 
-<ins>The Advantages of DocBits (DOC²) at a glance:</ins>
 
-  -  Recognizes the required data – even handwritten information and information in tables reliably and is self-learning, even through corrections by the user
-  -  With swarm intelligence, you benefit continuously from the experiences of other customers
-  -  Improves the accuracy and quality of the recognized data
-  -  Enables an automated process without ongoing corrections and interventions
-  -  Simple and intuitive interface
-  -  No IT resources / specialists required
-  -  Ensures a robust and consistent work process
-  -  No sensitive data is stored or shared
-  -  Saves time in the digital inbox
-  -  Reduces errors caused by manual processing
+## Start Automating Your Document Processing Today
+Stop struggling with manual data entry and unleash the power of AI to automate document processing with DocBits.
 
-## How do you use DocBits (DOC²):
+## Sign up now for a 30-day free trial and experience the benefits firsthand.
 
-  -  Scanning and Recognition of all types of documents (invoices, contracts, forms, medical prescriptions etc.)
-  -  Reliable extraction of the data in the document and integration and further processing in the ERP, RPA or CRM system)
-  -  Validation of the extracted data and verification against other systems from internal and public sources
-  -  Integration into your system landscape (e.g. ERP System, Document Management, Workflow System etc)
-
-## Why DocBits (DOC²) is just right for you
-
-  -   Many companies have recognized that processing incoming invoices, for example, can be very time-consuming. They are trying to increase productivity and optimize
-      the purchase-to-pay process by introducing products for the “digitization” of invoices.
-
-  -  In addition, DocBits (DOC²) uses swarm intelligence. What does that mean? You benefit from the experiences of other customers and their “learning curve” without sharing sensitive
-     data. With the cloud-based rule engine, we ensure continuous improvement of the application. You don’t need any developers or data scientists, because the system learns from the input of the user and the process runs without interruptions.
-
-  -  With the help of deep learning algorithms, not only simple header data of a document can be recorded, but also complicated structures such as tables. Of course, not
-     only invoices are processed, but all types of documents. Regardless of whether it is waybills, membership applications, medical prescriptions and many more.
-
+Contact our experts to learn how DocBits can help improve productivity, reduce costs and transform document workflows for your business.
 
 [:octicons-heart-fill-24:{ .heart } Sign up for a 30 days free trail ](https://app.polydocs.io){ .md-button .md-button--primary }
