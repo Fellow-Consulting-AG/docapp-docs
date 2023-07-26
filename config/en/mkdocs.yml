@@ -247,9 +247,10 @@ nav:
       # - Supported Languages: docbits/settings-supported-languages.md
     - PO Matching:
       - docbits/pomatching/po-matching/index.md
-      - Invoice: docbits/pomatching/po-matching-invoices.md
-      - Order Confirmation: docbits/pomatching/po-matching-order-confirmation.md
-      - Delivery Note: docbits/pomatching/po-matching-delivery-notes.md
+      - Setup: docbits/pomatching/po-matching-setup.md
+      # - Invoice: docbits/pomatching/po-matching-invoices.md
+      # - Order Confirmation: docbits/pomatching/po-matching-order-confirmation.md
+      # - Delivery Note: docbits/pomatching/po-matching-delivery-notes.md
 
     - ZUGFeRD: docbits/zugpferd.md
 
