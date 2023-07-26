@@ -248,7 +248,7 @@ nav:
     - PO Matching:
       - docbits/pomatching/po-matching/index.md
       - Setup: docbits/pomatching/po-matching-setup.md
-      # - Invoice: docbits/pomatching/po-matching-invoices.md
+      - Invoice: docbits/pomatching/po-matching-invoices.md
       # - Order Confirmation: docbits/pomatching/po-matching-order-confirmation.md
       # - Delivery Note: docbits/pomatching/po-matching-delivery-notes.md
 
