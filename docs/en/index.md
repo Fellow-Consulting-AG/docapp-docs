@@ -33,6 +33,6 @@ Stop struggling with manual data entry and unleash the power of AI to automate d
 
 ## Sign up now for a 30-day free trial and experience the benefits firsthand.
 
-Contact our experts to learn how DocBits can help improve productivity, reduce costs and transform document workflows for your business.
+[Contact](https://fellowpro.com/fellow/contact-us-fellowpro-ag/)  our experts to learn how DocBits can help improve productivity, reduce costs and transform document workflows for your business.
 
 [:octicons-heart-fill-24:{ .heart } Sign up for a 30 days free trail ](https://app.polydocs.io){ .md-button .md-button--primary }
