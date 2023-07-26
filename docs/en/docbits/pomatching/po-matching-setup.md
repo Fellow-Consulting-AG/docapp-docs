@@ -25,7 +25,7 @@ After successful “Sign In”, User’s are logged on to the server.
 **Override directly to any desired step in Infor LN workbench application**: 
 User’s can now go to any step in Infor LN workbench applications directly by writing the system generated parameters of each business enhancements based on server location, username and workbench application. The parameters are shown in lower right side of screen. 
 
-Choose  **Menu → Options → Run Program**:
+Choose  **Menu → Options → Run Program**
 
 Shortcut is here “gr” on the keyboard
 
@@ -63,7 +63,7 @@ Once the Purchase Order is delivered to the supplier, the supplier sends backs a
 
 This order confirmation needs to be matched against the PO. 
 
-**PO Matching**:
+**PO Matching**
 
 The process of matching PO against the Order Confirmation is called “PO matching”.
 
