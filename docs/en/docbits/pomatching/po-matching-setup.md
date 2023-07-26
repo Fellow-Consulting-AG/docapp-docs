@@ -10,7 +10,7 @@ tags:
   - Invoice
 ---
 
-## PO Matching Process/Setup
+# PO Matching Process/Setup
 
 1. Sign in to [Infor Ming.le](https://mingle-sso.eu1.inforcloudsuite.com/inforsts/AB5C7D2B7902464D8D7BC9C471DFCE6D/idp/wsfed?wtrealm=urn%3Amingle12f-portal_core_443%3Aportal&wa=wsignin1.0&wreply=https%3A%2F%2Fmingle-portal.eu1.inforcloudsuite.com%2Fsignin-wsfed&wctx=CfDJ8DmYSJds8XROmddbMpIJ8lnf7B2vqzZ-xoTtf3KKUV35dOR3fNrXM_CLah__BKZQ6HF38Acx2rWocqPni0dSQ5p_5U7pvnXyv-qoIZMYxzrfyggIDVNYTkfT2bDtt2Ei31uXuoAFGHiZZQV-1bCKrdJMoQxDse9BKrb8m4C6F9f3vF6l313EPYeA6XhUFOK9sLSMILJU7vXJc_D-q7LwofWaFvcLwIJy2EdRX5ZFn3gB0rp6L6pps_B5ynS1xzxungruIZQPvsJmiTuhzsbC5r8)
 
@@ -39,7 +39,7 @@ Shortcut is here “gr” on the keyboard
 
 In this section, we will provide a brief explanation of the sales-related enhancements.
 
-1. Generate Purchase Order:
+## Generate Purchase Order
 
 - In order to generate a new Purchase Order Click on Workbench Bestellungsaufkommen
 
@@ -57,7 +57,7 @@ In this section, we will provide a brief explanation of the sales-related enhanc
 
 ![](/_images/docbits/PO Matching/DocBits PO Matching/image_7_diagram.png)
 
-2. Order Confirmation
+## Order Confirmation
 
 Once the Purchase Order is delivered to the supplier, the supplier sends backs an “Order Confirmation”. 
 
@@ -87,7 +87,7 @@ For PO matching the best tool is DocBits (DOC²), which can be easily automated.
 
 ![](/_images/docbits/PO Matching/DocBits PO Matching/image_11_po_match_screen.png)
 
-## Scenario 1: When the PO gets matched
+### Scenario 1: When the PO gets matched
 
 ![](/_images/docbits/PO Matching/DocBits PO Matching/image_12_exported_dashboard.png)
 
@@ -123,7 +123,7 @@ Once the unmatched Order Confirmation is exported in DocBits(DOC²), the status 
 
 ![](/_images/docbits/PO Matching/DocBits PO Matching/image_17_ln.png)
 
-3. Delivery Note
+## Delivery Note
 
 As the Buyer confirm it in Infor LN, only then supplier sends a delivery note to Warehouse, for inventory shipment to buyer address. This Delivery Note needs to be matched against the PO. 
 
