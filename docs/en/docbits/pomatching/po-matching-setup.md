@@ -1,5 +1,5 @@
 ---
-title: "PO Matching"
+title: "PO Matching Demo"
 description: There are three ways you can match your Purchase Order. With corresponding invoice, delivery note and/or order confirmation.
 date: "2022-01-24"
 tags:
@@ -7,9 +7,10 @@ tags:
   - PO Matching
   - Order Confirmation
   - Delivery Note
+  - Demo
 ---
 
-# PO Matching Process/Setup
+# PO Matching Demo Walkthrough
 
 1. Sign in to [Infor Ming.le](https://mingle-sso.eu1.inforcloudsuite.com/inforsts/AB5C7D2B7902464D8D7BC9C471DFCE6D/idp/wsfed?wtrealm=urn%3Amingle12f-portal_core_443%3Aportal&wa=wsignin1.0&wreply=https%3A%2F%2Fmingle-portal.eu1.inforcloudsuite.com%2Fsignin-wsfed&wctx=CfDJ8DmYSJds8XROmddbMpIJ8lnf7B2vqzZ-xoTtf3KKUV35dOR3fNrXM_CLah__BKZQ6HF38Acx2rWocqPni0dSQ5p_5U7pvnXyv-qoIZMYxzrfyggIDVNYTkfT2bDtt2Ei31uXuoAFGHiZZQV-1bCKrdJMoQxDse9BKrb8m4C6F9f3vF6l313EPYeA6XhUFOK9sLSMILJU7vXJc_D-q7LwofWaFvcLwIJy2EdRX5ZFn3gB0rp6L6pps_B5ynS1xzxungruIZQPvsJmiTuhzsbC5r8)
 
