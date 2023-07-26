@@ -8,6 +8,7 @@ theme:
   name: material
   logo: _images/LOGO.svg
   favicon: _images/fav.svg
+  #custom_dir: material/.overrides
   font:
     text: Montserrat
   language: en
