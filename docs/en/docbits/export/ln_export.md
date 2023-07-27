@@ -1,6 +1,6 @@
 ---
-title: "M3: Export to Infor ION and IDM"
-description: Step by Step guide how to export documents from DocBits (DOC²) to Infor Document Management (IDM) with pM3.
+title: "LN: Export to Infor ION and IDM"
+description: Step by Step guide how to export documents from DocBits (DOC²) to Infor Document Management (IDM) with LN.
 date: "2021-10-22"
 tags:
   - DocBits (DOC²)
@@ -9,13 +9,13 @@ tags:
   - Infor OS
   - ION
   - IDM
-  - M3
+  - LN
 ---
 
 ####
 Export to Infor Document Management with publishing the document values in a seperate BOD
 
-Step by Step guide how to export documents to Infor Document Management (IDM) with M3.
+Step by Step guide how to export documents to Infor Document Management (IDM) with LN.
 
 **Prerequisites:**
 
@@ -78,13 +78,13 @@ Click the disk icon to save the settings.
 
 ![](/_images/docbits/image-41.png)
 
-#### M3
+#### LN
 
 The process of creating this application for the dataflow is very similar but, instead of the documents added for DocBits, documents can vary as in this section it depends on which BODs you plan to receive/send in/to M3 so there will be variations depending on the use case. The documents added here will look similar to what is displayed below.
 
 ![](/_images/docbits/Export to Infor/Exporting with M3/image_2_m3_connectionpoint.gif)
 
-### M3 Dataflow
+### LN Dataflow
 
 Change to "Data Flows" and click on "+Add" and select "Document Flow".
 
@@ -122,15 +122,7 @@ The configuration for this mapping should look as follows
 
 ![](/_images/docbits/Export to Infor/Exporting with M3/image_6_mapping2.png)
 
-#### Mapping 3 
-
-**Load.SupplierInvoice → Process.SupplierInvoice**
-
-The configuration for this mapping should look as follows
-
-![](/_images/docbits/Export to Infor/Exporting with M3/image_7_mapping3.png)
-
-####  M3
+####  LN
 
 This is the endpoint for the data in this dataflow as M3 is the application we are using in this instance.
 
