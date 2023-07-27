@@ -139,4 +139,4 @@ Here is an example of what the information stored in this connection point may l
 
 Once you have finished all the above configurations, click on the "Activate" button to activate the dataflow.
 
-![](/_images/docbits/Export to Infor/Exporting with M3/image_9_activate.png) 
+![](/_images/docbits/Export to Infor/Exporting with LN/image_8_activate.png) 
