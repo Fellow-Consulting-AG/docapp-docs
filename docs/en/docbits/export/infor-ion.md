@@ -136,4 +136,8 @@ This is the endpoint for the data in this dataflow as M3 is the application we a
 
 Here is an example of what the information stored in this connection point may look like, this can vary from user to user. It should contain the connection point you created for the application, along with the unique name you assigned it.
 
-![](/_images/docbits/Export to Infor/Exporting with M3/image_8_m3.png)
+![](/_images/docbits/Export to Infor/Exporting with M3/image_8_m3.png)  
+
+Once you have finished all the above configurations, click on the "Activate" button to activate the dataflow.
+
+![](/_images/docbits/Export to Infor/Exporting with M3/image_9_activate.png) 
