@@ -25,13 +25,15 @@ Step by Step guide how to export documents to Infor Document Management (IDM) wi
 
 ## DocBits (DOC²) steps
 
-1. Login to DocBits (DOC²), click on settings and select "Export".
+Login to DocBits (DOC²), click on settings and select "Export".
 
 ![Settings](/_images/docbits/Export to Infor/Export to Infor ION and IDM/image_1_settings.png)
-2. Click on "+ NEW"
+
+Click on "+ NEW"
 
 ![ADD](/_images/docbits/Export to Infor/Export to Infor ION and IDM/image_2_add.png)
-3. Choose "Infor IDM + ION BOD"
+
+Choose "Infor IDM + ION BOD"
 
 ![](/_images/docbits/Export to Infor/Export to Infor ION and IDM/image_3_idm_ion.png)
 
@@ -42,7 +44,8 @@ Step by Step guide how to export documents to Infor Document Management (IDM) wi
 - Click on the BOD Mapping file section and choose the BOD Mapping file you want to use for the export. You find a example of the BOD mapping file on this page: [How to create a BOD mapping file](/docbits/export/how-to-create-a-bod-mapping-file/)
 
 ![](/_images/docbits/Export to Infor/Export to Infor ION and IDM/image_4_mapping_files.png)
-4. Click "Save" to the save the export setting.
+
+Click "Save" to the save the export setting.
 
 ## Infor ION steps
 
