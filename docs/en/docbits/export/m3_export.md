@@ -46,7 +46,7 @@ Step by Step guide how to export documents to Infor Document Management (IDM) wi
 
 ## Infor ION steps
 
-### Create Applications
+### Connection Points
 
 Open "Infor ION API", select "Authorized Apps" and click on the DocBits (DOC²) application.
 
