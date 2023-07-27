@@ -80,7 +80,7 @@ Click the disk icon to save the settings.
 
 #### M3
 
-The process of creating this application for the dataflow is very similar but, instead of the documents added for DocBits, documents can vary as in this section it depends on which BODs you plan to receive/send in/to M3 so there will be variations depending on the use case. The documents added here will look similar to what is displayed below.
+The process of creating this connection point for the dataflow is very similar but, instead of the documents added for DocBits, documents can vary as in this section it depends on which BODs you plan to receive/send in/to M3 so there will be variations depending on the use case. The documents added here will look similar to what is displayed below.
 
 ![](/_images/docbits/Export to Infor/Exporting with M3/image_2_m3_connectionpoint.gif)
 
