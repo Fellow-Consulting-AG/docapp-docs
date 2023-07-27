@@ -72,7 +72,7 @@ Uncheck the box "Application has IMS EndPoint" and enter the "Client ID" copied 
 
 Change to the "Documents" tab. Once you have added all the necessary documents, it should contain the following
 
-![](/_images/docbits/Export to Infor/Exporting with M3/image_1_docbits_connectionpoint.png)
+![](/_images/docbits/Export to Infor/Exporting with LN/image_1_docbits_connectionpoint.png)
 
 Click the disk icon to save the settings.
 
@@ -80,9 +80,7 @@ Click the disk icon to save the settings.
 
 #### LN
 
-The process of creating this application for the dataflow is very similar but, instead of the documents added for DocBits, documents can vary as in this section it depends on which BODs you plan to receive/send in/to M3 so there will be variations depending on the use case. The documents added here will look similar to what is displayed below.
-
-![](/_images/docbits/Export to Infor/Exporting with M3/image_2_m3_connectionpoint.gif)
+The process of creating this application for the dataflow is very similar but, instead of the documents added for DocBits, documents can vary as in this section it depends on which BODs you plan to receive/send in/to M3 so there will be variations depending on the use case. 
 
 ### LN Dataflow
 
@@ -92,9 +90,15 @@ Change to "Data Flows" and click on "+Add" and select "Document Flow".
 
 Enter a meaningful name and description.
 
-The most simple dataflow from DocBits (DOC²) to M3 will look as follows
+The most simple dataflow from DocBits (DOC²) to LN will look as follows
 
-![](/_images/docbits/Export to Infor/Exporting with M3/image_3_dataflow.png)
+![](/_images/docbits/Export to Infor/Exporting with LN/image_2_ln_dataflow.png)
+
+In practical use cases, a dataflow from DocBits (DOC²) to LN will look more similar to what is shown below
+
+![](/_images/docbits/Export to Infor/Exporting with LN/image_7_practical_dataflow.png)
+
+The increase in branches and data is due to the amount of document types and departments you may need. This can be seen in the first mapping connection point as each point has a different document type listed which will then be taken to its unique second mapping file which has a unique LN location as each document type will be sent to a different department within the organisation. In this way, no documents are sent to a member of the organisation unnecessarily and  therefore there is more internal control.
 
 #### DocBits (DOC²)
 
@@ -112,7 +116,7 @@ Click on the "+" icon and select the "Doc2" application, in this case "Doc2Expor
 
 The configuration for this mapping should look as follows
 
-![](/_images/docbits/Export to Infor/Exporting with M3/image_5_mapping1.png)
+![](/_images/docbits/Export to Infor/Exporting with LN/image_4_ln_mapping1.png)
 
 #### Mapping 2 
 
@@ -120,15 +124,15 @@ The configuration for this mapping should look as follows
 
 The configuration for this mapping should look as follows
 
-![](/_images/docbits/Export to Infor/Exporting with M3/image_6_mapping2.png)
+![](/_images/docbits/Export to Infor/Exporting with LN/image_5_ln_mapping2.png)
 
 ####  LN
 
-This is the endpoint for the data in this dataflow as M3 is the application we are using in this instance.
+This is the endpoint for the data in this dataflow as LN is the application we are using in this instance.
 
 Here is an example of what the information stored in this connection point may look like, this can vary from user to user. It should contain the connection point you created for the application, along with the unique name you assigned it.
 
-![](/_images/docbits/Export to Infor/Exporting with M3/image_8_m3.png)  
+![](/_images/docbits/Export to Infor/Exporting with LN/image_6_ln.png)  
 
 Once you have finished all the above configurations, click on the "Activate" button to activate the dataflow.
 
