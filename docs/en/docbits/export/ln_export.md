@@ -123,7 +123,7 @@ The configuration for this mapping should look as follows
 
 #### Mapping 2 
 
-**Sync.SupplierInvoice → Load.SupplierInvoice**
+**Load.SupplierInvoice → Process.SupplierInvoice**
 
 The configuration for this mapping should look as follows
 
