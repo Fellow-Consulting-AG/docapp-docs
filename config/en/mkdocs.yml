@@ -233,11 +233,12 @@ nav:
         - docbits/export/index.md
         - Export to Infor:
           - docbits/export/export-to-infor/index.md
-          - Export to Infor ION and IDM: docbits/export/infor-ion.md
+          - M3: Export to Infor ION and IDM: docbits/export/m3_export.md
+          - LN: Export to Infor ION and IDM: docbits/export/ln_export.md
+          - Infor ION API File: docbits/export/create-a-infor-ion-api-file.md
           - How to create a BOD mapping file: docbits/export/how-to-create-a-bod-mapping-file.md
           - How to create a IDM mapping file: docbits/export/how-to-create-a-idm-mapping-file.md
           # - Export to Infor IDM: docbits/export/infor-idm.md
-          - Infor ION API File: docbits/export/create-a-infor-ion-api-file.md
           # - Export to Infor ION and IDM: docbits/export/infor-ion.md
         - Webhook: docbits/export/webhook.md
         # - Export to Flow²: docbits/export/export-to-flow2.md
