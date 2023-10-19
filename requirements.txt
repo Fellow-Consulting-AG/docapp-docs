@@ -47,7 +47,7 @@ pyyaml_env_tag==0.1
 requests==2.27.1
 six==1.16.0
 tinycss2==1.1.1
-urllib3==1.26.9
+urllib3==1.26.18
 watchdog==2.1.7
 webencodings==0.5.1
 zipp==3.8.0
