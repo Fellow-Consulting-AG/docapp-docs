@@ -39,7 +39,7 @@ packaging==21.3
 Pillow==9.1.0
 pycparser==2.21
 Pygments==2.12.0
-pymdown-extensions==9.4
+pymdown-extensions==10.16.1
 pyparsing==3.0.8
 python-dateutil==2.8.2
 PyYAML==6.0
